@@ -15,8 +15,24 @@
 </head>
 
 <body>
-  <script src="build/bundle.js"></script>
   <h1>Guillaume Gomez<h1>
+   <h1 data-translatable>
+    <span>Hello world</span>
+    <span>Bonjour le monde</span>
+  </h1>
   <div id="react"></div>
+
+    <script src="bundle.js"></script>
+  <script src="external/dom-i18n.min.js"></script>
+   <script>
+   var i18n = window.domI18n({
+  selector: '[data-translatable]',
+  separator: ' // ',
+  languages: ['en', 'fr'],
+  defaultLanguage: 'en'
+});
+
+i18n.changeLanguage('fr');
+  </script>
 </body>
 </html>
