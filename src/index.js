@@ -1,1 +1,2 @@
-import i18n from dom-i18n;
+'use strict';
+// nothing to do right now
