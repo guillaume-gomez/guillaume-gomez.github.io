@@ -3,11 +3,15 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-
   <title>Guillaume Gomez</title>
   <meta name="author" content="Guillaume Gomez">
-
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+  <style>
+    body {font-family: "Raleway", Arial, sans-serif}
+    .w3-row img{margin-bottom:-8px}
+  </style>
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -15,17 +19,80 @@
 </head>
 
 <body>
-  <h1  data-translatable>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+  <!-- Header -->
+  <header class="w3-container w3-xlarge w3-padding-24">
+    <a href="#" class="w3-left w3-btn w3-white"></a>
+    <a href="#about" class="w3-right w3-btn w3-white" data-translatable>
+      <span>
+        About me
+      </span>
+      <span>
+        A propos de moi
+      </span>
+    </a>
+  </header>
+
+  <!-- Photo Grid -->
+  <div class="w3-row">
+    <div class="w3-half">
+      <img src="/w3images/streetart.jpg" style="width:100%">
+      <img src="/w3images/streetart2.jpg" style="width:100%">
+      <img src="/w3images/streetart5.jpg" style="width:100%">
+    </div>
+
+    <div class="w3-half">
+      <img src="/w3images/streetart3.jpg" style="width:100%">
+      <img src="/w3images/streetart4.jpg" style="width:100%">
+    </div>
+  </div>
+
+  <!-- integrate  react component here -->
+  <div id="react"></div>
+  <script src="bundle.js"></script>
+<!-- End Page Content -->
+</div>
+
+<!-- Footer / About Section -->
+<footer class="w3-light-grey w3-padding-64 w3-center" id="about">
+  <h2>About</h2>
+  <img src="/w3images/boy.jpg" class="w3-image w3-padding-32" width="300" height="300">
+  <form style="margin:auto;width:60%" action="form.asp" target="_blank">
+  <h1 data-translatable>
     <span>Hi I'm Guillaume Gomez</span>
     <span>Salut Je suis Guillaume Gomez</span>
   <h1>
-  <h2  data-translatable>
-    <span>What can I do for you</span>
-    <span>Que puis-je faire pour vous</span>
-  </h2>
-   <div id="react"></div>
+    <p data-translatable>
+      <span>
+        Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+      </span>
+      <span>
+        Rien a dire, des fois c'est mieux de se taire non
+      </span>
+    </p>
+    <p class="w3-large w3-text-pink">Do not hesitate to contact me!</p>
+    <div class="w3-group">
+      <label><b>Name</b></label>
+      <input class="w3-input w3-border" type="text" required name="Name">
+    </div>
+    <div class="w3-group">
+      <label><b>Email</b></label>
+      <input class="w3-input w3-border" type="text" required name="Email">
+    </div>
+    <div class="w3-group">
+      <label><b>Message</b></label>
+      <input class="w3-input w3-border" required name="Message">
+    </div>
+    <button type="submit" class="w3-btn w3-btn-block w3-padding-12 w3-dark-grey">Send</button>
+  </form>
+  <br>
+  <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
 
-    <script src="bundle.js"></script>
+
   <script src="external/dom-i18n.min.js"></script>
    <script>
    var i18n = window.domI18n({
@@ -35,6 +102,8 @@
   defaultLanguage: 'en'
 });
 
-  </script>
+</script>
 </body>
 </html>
+
+
