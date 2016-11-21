@@ -7,102 +7,178 @@
   <meta name="author" content="Guillaume Gomez">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-  <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
-  <style>
-    body {font-family: "Raleway", Arial, sans-serif}
-    .w3-row img{margin-bottom:-8px}
-  </style>
-
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
-<body>
+<body class="w3-content" style="max-width:1300px">
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-content" style="max-width:1500px">
-
-  <!-- Header -->
-  <header class="w3-container w3-xlarge w3-padding-24">
-    <a href="#" class="w3-left w3-btn w3-white"></a>
-    <a href="#about" class="w3-right w3-btn w3-white" data-translatable>
-      <span>
-        About me
-      </span>
-      <span>
-        A propos de moi
-      </span>
-    </a>
-  </header>
-
-  <!-- Photo Grid -->
-  <div class="w3-row">
-    <div class="w3-half">
-      <img src="/w3images/streetart.jpg" style="width:100%">
-      <img src="/w3images/streetart2.jpg" style="width:100%">
-      <img src="/w3images/streetart5.jpg" style="width:100%">
-    </div>
-
-    <div class="w3-half">
-      <img src="/w3images/streetart3.jpg" style="width:100%">
-      <img src="/w3images/streetart4.jpg" style="width:100%">
-    </div>
-  </div>
-
-  <!-- integrate  react component here -->
-  <div id="react"></div>
-  <script src="bundle.js"></script>
-<!-- End Page Content -->
-</div>
-
-<!-- Footer / About Section -->
-<footer class="w3-light-grey w3-padding-64 w3-center" id="about">
-  <h2>About</h2>
-  <img src="/w3images/boy.jpg" class="w3-image w3-padding-32" width="300" height="300">
-  <form style="margin:auto;width:60%" action="form.asp" target="_blank">
-  <h1 data-translatable>
-    <span>Hi I'm Guillaume Gomez</span>
-    <span>Salut Je suis Guillaume Gomez</span>
-  <h1>
-    <p data-translatable>
-      <span>
-        Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
-      </span>
-      <span>
-        Rien a dire, des fois c'est mieux de se taire non
-      </span>
-    </p>
-    <p class="w3-large w3-text-pink">Do not hesitate to contact me!</p>
-    <div class="w3-group">
-      <label><b>Name</b></label>
-      <input class="w3-input w3-border" type="text" required name="Name">
-    </div>
-    <div class="w3-group">
-      <label><b>Email</b></label>
-      <input class="w3-input w3-border" type="text" required name="Email">
-    </div>
-    <div class="w3-group">
-      <label><b>Message</b></label>
-      <input class="w3-input w3-border" required name="Message">
-    </div>
-    <button type="submit" class="w3-btn w3-btn-block w3-padding-12 w3-dark-grey">Send</button>
-  </form>
-  <br>
-  <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
+	<!-- integrate  react component here -->
+  	<div id="react"></div>
+  	<script src="bundle.js"></script>
 
 
-  <script src="external/dom-i18n.min.js"></script>
-   <script>
-   var i18n = window.domI18n({
-  selector: '[data-translatable]',
-  separator: ' // ',
-  languages: ['en', 'fr'],
-  defaultLanguage: 'en'
-});
+	<!-- First Grid: Logo & About -->
+	<div class="w3-row">
+	  <div class="w3-half w3-black w3-container w3-center" style="height:700px">
+	    <div class="w3-padding-64">
+	       <h1 data-translatable>
+    			<span>Hi I'm Guillaume Gomez MYLOGO</span>
+    			<span>Salut Je suis Guillaume Gomez MYLOGO</span>
+  			<h1>
+	    </div>
+	    <div class="w3-padding-64">
+	      <a href="#" class="w3-btn w3-btn-block w3-hover-blue-grey w3-padding-16">Home</a>
+	      <a href="#work" class="w3-btn w3-btn-block w3-hover-teal w3-padding-16">My Work</a>
+	      <a href="#work" class="w3-btn w3-btn-block w3-hover-dark-grey w3-padding-16">Resume</a>
+	      <a href="#contact" class="w3-btn w3-btn-block w3-hover-brown w3-padding-16">Contact</a>
+	    </div>
+	  </div>
+	  <div class="w3-half w3-blue-grey w3-container" style="height:700px">
+	    <div class="w3-padding-64 w3-center">
+	      <h1>About Me</h1>
+	      <img src="/w3images/avatar3.png" class="w3-margin w3-circle" alt="Person" style="width:50%">
+	      <div class="w3-left-align w3-padding-xxlarge">
+	        <p>Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+	        <p>Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
-</script>
+	<!-- Second Grid: Work & Resume -->
+	<div class="w3-row">
+	  <div class="w3-half w3-light-grey w3-center" style="min-height:800px" id="work">
+	    <div class="w3-padding-64">
+	      <h2>My Work</h2>
+	      <p>Some of my latest projects.</p>
+	    </div>
+	    <div class="w3-row">
+	      <div class="w3-half">
+	        <img src="/w3images/coffee.jpg" style="width:100%">
+	      </div>
+	      <div class="w3-half">
+	        <img src="/w3images/workbench.jpg" style="width:100%">
+	      </div>
+	    </div>
+	    <div class="w3-row w3-hide-small">
+	      <div class="w3-half">
+	        <img src="/w3images/workbench.jpg" style="width:100%">
+	      </div>
+	      <div class="w3-half">
+	        <img src="/w3images/coffee.jpg" style="width:100%">
+	      </div>
+	    </div>
+
+	    <div class="w3-row w3-hide-small">
+	      <div class="w3-half">
+	        <img src="/w3images/sound.jpg" style="width:100%">
+	      </div>
+	      <div class="w3-half">
+	        <img src="/w3images/workbench.jpg" style="width:100%">
+	      </div>
+	    </div><br>
+	    <p>Just call me awesome.</p>
+	  </div>
+	  <div class="w3-half w3-indigo w3-container" style="min-height:800px">
+	    <div class="w3-padding-64 w3-center">
+	      <h2>Resume</h2>
+	      <p>A draft from my CV</p>
+	      <div class="w3-container w3-responsive">
+	        <table class="w3-table">
+	          <tr>
+	            <th>Year</th>
+	            <th>Title</th>
+	            <th>Where</th>
+	          </tr>
+	          <tr class="w3-white">
+	            <td>2012-2016</td>
+	            <td>The rest is history..</td>
+	            <td>Lorem ipsum</td>
+	          </tr>
+	          <tr>
+	            <td>2009-2012</td>
+	            <td>Started my own company</td>
+	            <td>My Garage</td>
+	          </tr>
+	          <tr class="w3-white">
+	            <td>2008-2009</td>
+	            <td>Started working for Lorem</td>
+	            <td>London, UK</td>
+	          </tr>
+	          <tr>
+	            <td>2005-2008</td>
+	            <td>Degree in Bachelor of Design</td>
+	            <td>Harvard, USA</td>
+	          </tr>
+	          <tr class="w3-white">
+	            <td>2002-2005</td>
+	            <td>Degree in Bachelor of Business</td>
+	            <td>RMIT University, Melbourne, Australia</td>
+	          </tr>
+	          <tr class="w3-hide-medium">
+	            <td>2002-2005</td>
+	            <td>Degree in Bachelor of Business</td>
+	            <td>RMIT University, Melbourne, Australia</td>
+	          </tr>
+	        </table>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Third Grid: Swing By & Contact -->
+	<div class="w3-row" id="contact">
+	  <div class="w3-half w3-dark-grey w3-container w3-center" style="height:700px">
+	    <div class="w3-padding-64">
+	      <h1>Swing By</h1>
+	    </div>
+	    <div class="w3-padding-64">
+	      <p>..for a cup of coffee, or whatever.</p>
+	      <p>Chicago, US</p>
+	      <p>+00 1515151515</p>
+	      <p>test@test.com</p>
+	    </div>
+	  </div>
+	  <div class="w3-half w3-teal w3-container" style="height:700px">
+	    <div class="w3-padding-64 w3-padding-xxlarge">
+	      <h1>Contact</h1>
+	      <p class="w3-opacity">GET IN TOUCH</p>
+	      <form class="w3-container w3-card-2 w3-padding-32 w3-white" action="form.asp" target="_blank">
+	        <div class="w3-group">
+	          <label>Name</label>
+	          <input class="w3-input" style="width:100%;" type="text" required name="Name">
+	        </div>
+	        <div class="w3-group">
+	          <label>Email</label>
+	          <input class="w3-input" style="width:100%;" type="text" required name="Email">
+	        </div>
+	        <div class="w3-group">
+	          <label>Message</label>
+	          <input class="w3-input" style="width:100%;" type="text" required name="Message">
+	        </div>
+	        <button type="submit" class="w3-btn w3-padding w3-right">Send</button>
+	      </form>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="w3-container w3-black w3-padding-16">
+	  <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+	</footer>
+
+
+	 <script src="external/dom-i18n.min.js"></script>
+	 <script>
+	   var i18n = window.domI18n({
+	  selector: '[data-translatable]',
+	  separator: ' // ',
+	  languages: ['en', 'fr'],
+	  defaultLanguage: 'en'
+	});
+	</script>
 </body>
 </html>
 
