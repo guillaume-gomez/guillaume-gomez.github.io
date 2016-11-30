@@ -76,76 +76,128 @@
 	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
 	
 	    _this.renderNavBar = _this.renderNavBar.bind(_this);
+	    _this.renderAboutMe = _this.renderAboutMe.bind(_this);
+	    _this.seeAboutMe = _this.seeAboutMe.bind(_this);
+	
+	    _this.state = { currentPage: "home" };
 	    return _this;
 	  }
 	
 	  _createClass(App, [{
+	    key: 'seeAboutMe',
+	    value: function seeAboutMe() {
+	      this.setState({ currentPage: "aboutMe" });
+	    }
+	  }, {
+	    key: 'renderAboutMe',
+	    value: function renderAboutMe() {
+	      if (this.state.currentPage == "aboutMe") {
+	        return _react2.default.createElement(
+	          'div',
+	          { className: ' w3-blue-grey w3-container' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'w3-padding-64 w3-center' },
+	            _react2.default.createElement(
+	              'h1',
+	              null,
+	              'About Me'
+	            ),
+	            _react2.default.createElement('img', { src: '/w3images/avatar3.png', className: 'w3-margin w3-circle', alt: 'Person', style: { width: "50%" } }),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'w3-padding-xxlarge' },
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                'Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                'Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.'
+	              )
+	            )
+	          )
+	        );
+	      }
+	    }
+	  }, {
 	    key: 'renderNavBar',
 	    value: function renderNavBar() {
 	      return _react2.default.createElement(
-	        _reactBootstrap.Navbar,
-	        { inverse: true, collapseOnSelect: true },
+	        'div',
+	        null,
 	        _react2.default.createElement(
-	          _reactBootstrap.Navbar.Header,
-	          null,
+	          _reactBootstrap.Navbar,
+	          { inverse: true, collapseOnSelect: true },
 	          _react2.default.createElement(
-	            _reactBootstrap.Navbar.Brand,
+	            _reactBootstrap.Navbar.Header,
 	            null,
 	            _react2.default.createElement(
-	              'a',
-	              { href: '#' },
-	              'Guillaume Gomez'
-	            )
+	              _reactBootstrap.Navbar.Brand,
+	              null,
+	              _react2.default.createElement(
+	                'a',
+	                { href: '#' },
+	                'Guillaume Gomez'
+	              )
+	            ),
+	            _react2.default.createElement(_reactBootstrap.Navbar.Toggle, null)
 	          ),
-	          _react2.default.createElement(_reactBootstrap.Navbar.Toggle, null)
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Navbar.Collapse,
-	          null,
 	          _react2.default.createElement(
-	            _reactBootstrap.Nav,
+	            _reactBootstrap.Navbar.Collapse,
 	            null,
 	            _react2.default.createElement(
-	              _reactBootstrap.NavItem,
-	              { eventKey: 1, href: '#' },
-	              'About me'
-	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.NavItem,
-	              { eventKey: 2, href: '#' },
-	              'Resume'
-	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.NavDropdown,
-	              { eventKey: 3, title: 'My Work', id: 'basic-nav-dropdown' },
+	              _reactBootstrap.Nav,
+	              null,
 	              _react2.default.createElement(
-	                _reactBootstrap.MenuItem,
-	                { eventKey: 3.1 },
-	                'Student Project'
+	                _reactBootstrap.NavItem,
+	                { eventKey: 1, href: '#', onClick: this.seeAboutMe },
+	                _react2.default.createElement(
+	                  'span',
+	                  { 'data-translatable': true },
+	                  ' About me // A propos '
+	                )
 	              ),
 	              _react2.default.createElement(
-	                _reactBootstrap.MenuItem,
-	                { eventKey: 3.2 },
-	                'Personnal Project'
+	                _reactBootstrap.NavItem,
+	                { eventKey: 2, href: '#' },
+	                'Resume'
 	              ),
-	              _react2.default.createElement(_reactBootstrap.MenuItem, { divider: true }),
 	              _react2.default.createElement(
-	                _reactBootstrap.MenuItem,
-	                { eventKey: 3.3 },
-	                'Contribution'
+	                _reactBootstrap.NavDropdown,
+	                { eventKey: 3, title: 'My Work', id: 'basic-nav-dropdown' },
+	                _react2.default.createElement(
+	                  _reactBootstrap.MenuItem,
+	                  { eventKey: 3.1 },
+	                  'Student Project'
+	                ),
+	                _react2.default.createElement(
+	                  _reactBootstrap.MenuItem,
+	                  { eventKey: 3.2 },
+	                  'Personnal Project'
+	                ),
+	                _react2.default.createElement(_reactBootstrap.MenuItem, { divider: true }),
+	                _react2.default.createElement(
+	                  _reactBootstrap.MenuItem,
+	                  { eventKey: 3.3 },
+	                  'Contribution'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Nav,
+	              { pullRight: true },
+	              _react2.default.createElement(
+	                _reactBootstrap.NavItem,
+	                { eventKey: 1, href: '#' },
+	                'Contact'
 	              )
 	            )
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Nav,
-	            { pullRight: true },
-	            _react2.default.createElement(
-	              _reactBootstrap.NavItem,
-	              { eventKey: 1, href: '#' },
-	              'Contact'
-	            )
 	          )
-	        )
+	        ),
+	        this.renderAboutMe()
 	      );
 	    }
 	  }, {
