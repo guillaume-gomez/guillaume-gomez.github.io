@@ -3,15 +3,21 @@ import { Navbar, MenuItem, Nav, NavDropdown, NavItem } from 'react-bootstrap';
 import { render } from 'react-dom';
 
 import AboutMe from "./AboutMe.react";
+import Resume from "./Resume.react";
 
 class App extends React.Component {
 
   constructor(){
     super();
-    this.renderNavBar = this.renderNavBar.bind(this);
-    this.renderAboutMe = this.renderAboutMe.bind(this);
-    this.seeAboutMe = this.seeAboutMe.bind(this);
-
+    [
+      "renderNavBar",
+      "renderAboutMe",
+      "renderResume",
+      "seeAboutMe",
+      "seeResume"
+    ].forEach(item => {
+      this[item] = this[item].bind(this);
+    });
     this.state = { currentPage: "home" };
   }
 
@@ -19,10 +25,20 @@ class App extends React.Component {
     this.setState({ currentPage: "aboutMe" });
   }
 
+  seeResume() {
+    this.setState({ currentPage: "resume" });
+  }
+
   renderAboutMe() {
     if(this.state.currentPage == "aboutMe") {
       return (<AboutMe />);
     }
+  }
+
+  renderResume() {
+    if(this.state.currentPage == "resume") {
+      return (<Resume />);
+    } 
   }
 
   renderNavBar() {
@@ -37,10 +53,10 @@ class App extends React.Component {
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav>
-              <NavItem eventKey={1} href="#" onClick={this.seeAboutMe}>
+              <NavItem eventKey={1} onClick={this.seeAboutMe}>
                 <span data-translatable> About me // A propos </span>
               </NavItem>
-              <NavItem eventKey={2} href="#">Resume</NavItem>
+              <NavItem eventKey={2} onClick={this.seeResume}>Resume</NavItem>
               <NavDropdown eventKey={3} title="My Work" id="basic-nav-dropdown">
                 <MenuItem eventKey={3.1}>Student Project</MenuItem>
                 <MenuItem eventKey={3.2}>Personnal Project</MenuItem>
@@ -54,6 +70,7 @@ class App extends React.Component {
           </Navbar.Collapse>
         </Navbar>
         {this.renderAboutMe()}
+        {this.renderResume()}
       </div>
     );
   }

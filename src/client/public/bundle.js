@@ -63,6 +63,10 @@
 	
 	var _AboutMe2 = _interopRequireDefault(_AboutMe);
 	
+	var _Resume = __webpack_require__(/*! ./Resume.react */ 431);
+	
+	var _Resume2 = _interopRequireDefault(_Resume);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -79,10 +83,9 @@
 	
 	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
 	
-	    _this.renderNavBar = _this.renderNavBar.bind(_this);
-	    _this.renderAboutMe = _this.renderAboutMe.bind(_this);
-	    _this.seeAboutMe = _this.seeAboutMe.bind(_this);
-	
+	    ["renderNavBar", "renderAboutMe", "renderResume", "seeAboutMe", "seeResume"].forEach(function (item) {
+	      _this[item] = _this[item].bind(_this);
+	    });
 	    _this.state = { currentPage: "home" };
 	    return _this;
 	  }
@@ -93,10 +96,22 @@
 	      this.setState({ currentPage: "aboutMe" });
 	    }
 	  }, {
+	    key: 'seeResume',
+	    value: function seeResume() {
+	      this.setState({ currentPage: "resume" });
+	    }
+	  }, {
 	    key: 'renderAboutMe',
 	    value: function renderAboutMe() {
 	      if (this.state.currentPage == "aboutMe") {
 	        return _react2.default.createElement(_AboutMe2.default, null);
+	      }
+	    }
+	  }, {
+	    key: 'renderResume',
+	    value: function renderResume() {
+	      if (this.state.currentPage == "resume") {
+	        return _react2.default.createElement(_Resume2.default, null);
 	      }
 	    }
 	  }, {
@@ -130,7 +145,7 @@
 	              null,
 	              _react2.default.createElement(
 	                _reactBootstrap.NavItem,
-	                { eventKey: 1, href: '#', onClick: this.seeAboutMe },
+	                { eventKey: 1, onClick: this.seeAboutMe },
 	                _react2.default.createElement(
 	                  'span',
 	                  { 'data-translatable': true },
@@ -139,7 +154,7 @@
 	              ),
 	              _react2.default.createElement(
 	                _reactBootstrap.NavItem,
-	                { eventKey: 2, href: '#' },
+	                { eventKey: 2, onClick: this.seeResume },
 	                'Resume'
 	              ),
 	              _react2.default.createElement(
@@ -174,7 +189,8 @@
 	            )
 	          )
 	        ),
-	        this.renderAboutMe()
+	        this.renderAboutMe(),
+	        this.renderResume()
 	      );
 	    }
 	  }, {
@@ -41782,6 +41798,257 @@
 	}(_react2.default.Component);
 	
 	exports.default = AboutMe;
+
+/***/ },
+/* 431 */
+/*!****************************************!*\
+  !*** ./src/client/app/Resume.react.js ***!
+  \****************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Resume = function (_React$Component) {
+	  _inherits(Resume, _React$Component);
+	
+	  function Resume(props) {
+	    _classCallCheck(this, Resume);
+	
+	    return _possibleConstructorReturn(this, (Resume.__proto__ || Object.getPrototypeOf(Resume)).call(this, props));
+	  }
+	
+	  _createClass(Resume, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "w3-indigo w3-container", style: { minHeight: 800 } },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "w3-padding-64 w3-center" },
+	          _react2.default.createElement(
+	            "h2",
+	            { "data-translatable": true },
+	            _react2.default.createElement(
+	              "span",
+	              null,
+	              "Resume"
+	            ),
+	            _react2.default.createElement(
+	              "span",
+	              null,
+	              "Curricul vitae"
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            { "data-translatable": true },
+	            _react2.default.createElement(
+	              "span",
+	              null,
+	              "A draft from my CV"
+	            ),
+	            _react2.default.createElement(
+	              "span",
+	              null,
+	              "travail en cours sur mon CV :)"
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "w3-container w3-responsive" },
+	            _react2.default.createElement(
+	              "table",
+	              { className: "w3-table" },
+	              _react2.default.createElement(
+	                "tr",
+	                null,
+	                _react2.default.createElement(
+	                  "th",
+	                  { "data-translatable": true },
+	                  _react2.default.createElement(
+	                    "span",
+	                    null,
+	                    "Year"
+	                  ),
+	                  _react2.default.createElement(
+	                    "span",
+	                    null,
+	                    "Ann\xE9e"
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  "th",
+	                  { "data-translatable": true },
+	                  _react2.default.createElement(
+	                    "span",
+	                    null,
+	                    "Title"
+	                  ),
+	                  _react2.default.createElement(
+	                    "span",
+	                    null,
+	                    "Titre"
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  "th",
+	                  { "data-translatable": true },
+	                  _react2.default.createElement(
+	                    "span",
+	                    null,
+	                    "Where"
+	                  ),
+	                  _react2.default.createElement(
+	                    "span",
+	                    null,
+	                    "Lieu"
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "tr",
+	                { className: "w3-white" },
+	                _react2.default.createElement(
+	                  "td",
+	                  null,
+	                  "2015-2016"
+	                ),
+	                _react2.default.createElement(
+	                  "td",
+	                  null,
+	                  "The rest is history.."
+	                ),
+	                _react2.default.createElement(
+	                  "td",
+	                  null,
+	                  "Lorem ipsum"
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "tr",
+	                null,
+	                _react2.default.createElement(
+	                  "td",
+	                  null,
+	                  "2009-2012"
+	                ),
+	                _react2.default.createElement(
+	                  "td",
+	                  null,
+	                  "Started my own company"
+	                ),
+	                _react2.default.createElement(
+	                  "td",
+	                  null,
+	                  "My Garage"
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "tr",
+	                { className: "w3-white" },
+	                _react2.default.createElement(
+	                  "td",
+	                  null,
+	                  "2008-2009"
+	                ),
+	                _react2.default.createElement(
+	                  "td",
+	                  null,
+	                  "Started working for Lorem"
+	                ),
+	                _react2.default.createElement(
+	                  "td",
+	                  null,
+	                  "London, UK"
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "tr",
+	                null,
+	                _react2.default.createElement(
+	                  "td",
+	                  null,
+	                  "2005-2008"
+	                ),
+	                _react2.default.createElement(
+	                  "td",
+	                  null,
+	                  "Degree in Bachelor of Design"
+	                ),
+	                _react2.default.createElement(
+	                  "td",
+	                  null,
+	                  "Harvard, USA"
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "tr",
+	                { className: "w3-white" },
+	                _react2.default.createElement(
+	                  "td",
+	                  null,
+	                  "2002-2005"
+	                ),
+	                _react2.default.createElement(
+	                  "td",
+	                  null,
+	                  "Degree in Bachelor of Business"
+	                ),
+	                _react2.default.createElement(
+	                  "td",
+	                  null,
+	                  "RMIT University, Melbourne, Australia"
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "tr",
+	                { className: "w3-hide-medium" },
+	                _react2.default.createElement(
+	                  "td",
+	                  null,
+	                  "2002-2005"
+	                ),
+	                _react2.default.createElement(
+	                  "td",
+	                  null,
+	                  "Degree in Bachelor of Business"
+	                ),
+	                _react2.default.createElement(
+	                  "td",
+	                  null,
+	                  "RMIT University, Melbourne, Australia"
+	                )
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return Resume;
+	}(_react2.default.Component);
+	
+	exports.default = Resume;
 
 /***/ }
 /******/ ]);
