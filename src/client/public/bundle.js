@@ -41846,30 +41846,20 @@
 	          { className: "w3-padding-64 w3-center" },
 	          _react2.default.createElement(
 	            "h2",
-	            { "data-translatable": true },
+	            null,
 	            _react2.default.createElement(
 	              "span",
-	              null,
-	              "Resume"
-	            ),
-	            _react2.default.createElement(
-	              "span",
-	              null,
-	              "Curricul vitae"
+	              { "data-translatable": true },
+	              " Resume // Curricul vitae "
 	            )
 	          ),
 	          _react2.default.createElement(
 	            "p",
-	            { "data-translatable": true },
+	            null,
 	            _react2.default.createElement(
 	              "span",
-	              null,
-	              "A draft from my CV"
-	            ),
-	            _react2.default.createElement(
-	              "span",
-	              null,
-	              "travail en cours sur mon CV :)"
+	              { "data-translatable": true },
+	              " A draft from my CV // Travail en cours sur mon CV :) "
 	            )
 	          ),
 	          _react2.default.createElement(
@@ -41883,44 +41873,29 @@
 	                null,
 	                _react2.default.createElement(
 	                  "th",
-	                  { "data-translatable": true },
+	                  null,
 	                  _react2.default.createElement(
 	                    "span",
-	                    null,
-	                    "Year"
-	                  ),
-	                  _react2.default.createElement(
-	                    "span",
-	                    null,
-	                    "Ann\xE9e"
+	                    { "data-translatable": true },
+	                    " Year // Ann\xE9e "
 	                  )
 	                ),
 	                _react2.default.createElement(
 	                  "th",
-	                  { "data-translatable": true },
+	                  null,
 	                  _react2.default.createElement(
 	                    "span",
-	                    null,
-	                    "Title"
-	                  ),
-	                  _react2.default.createElement(
-	                    "span",
-	                    null,
-	                    "Titre"
+	                    { "data-translatable": true },
+	                    " Title // Titre "
 	                  )
 	                ),
 	                _react2.default.createElement(
 	                  "th",
-	                  { "data-translatable": true },
+	                  null,
 	                  _react2.default.createElement(
 	                    "span",
-	                    null,
-	                    "Where"
-	                  ),
-	                  _react2.default.createElement(
-	                    "span",
-	                    null,
-	                    "Lieu"
+	                    { "data-translatable": true },
+	                    "Where // Lieu "
 	                  )
 	                )
 	              ),

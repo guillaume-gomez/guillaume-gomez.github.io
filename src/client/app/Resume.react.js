@@ -10,28 +10,23 @@ class Resume extends React.Component {
     return (
       <div className="w3-indigo w3-container" style={{ minHeight: 800 }}>
         <div className="w3-padding-64 w3-center">
-          <h2 data-translatable>
-            <span>Resume</span>
-            <span>Curricul vitae</span>
+          <h2>
+            <span data-translatable> Resume // Curricul vitae </span>
           </h2>
-          <p data-translatable>
-            <span>A draft from my CV</span>
-            <span>travail en cours sur mon CV :)</span>
+          <p>
+            <span data-translatable> A draft from my CV // Travail en cours sur mon CV :) </span>
           </p>
           <div className="w3-container w3-responsive">
             <table className="w3-table">
               <tr>
-                <th data-translatable>
-                 <span>Year</span>
-                 <span>Année</span>
+                <th>
+                  <span data-translatable> Year // Année </span>
                 </th>
-                <th data-translatable>
-                 <span>Title</span>
-                 <span>Titre</span>
+                <th>
+                  <span data-translatable> Title // Titre </span>
                 </th>
-                <th data-translatable>
-                 <span>Where</span>
-                 <span>Lieu</span>
+                <th>
+                  <span data-translatable>Where // Lieu </span>
                 </th>
               </tr>
               <tr className="w3-white">
