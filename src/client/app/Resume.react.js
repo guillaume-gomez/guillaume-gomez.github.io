@@ -8,7 +8,7 @@ class Resume extends React.Component {
   
   render () {
     return (
-      <div className="w3-indigo w3-container" style={{ minHeight: 800 }}>
+      <div className="w3-indigo w3-container">
         <div className="w3-padding-64 w3-center">
           <h2>
             <span data-translatable> Resume // Curricul vitae </span>
@@ -30,34 +30,34 @@ class Resume extends React.Component {
                 </th>
               </tr>
               <tr className="w3-white">
-                <td>2015-2016</td>
-                <td>The rest is history..</td>
-                <td>Lorem ipsum</td>
+                <td>08/15 - 01/17</td>
+                <td>Back-end ingineer at <a href="http://applidget.com"> Applidget </a></td>
+                <td>Paris, France</td>
               </tr>
               <tr>
-                <td>2009-2012</td>
-                <td>Started my own company</td>
-                <td>My Garage</td>
+                <td>02/15 - 07/15</td>
+                <td>3D software programmer internship at <a href="https://masa-group.biz/"> Masa Group</a></td>
+                <td>Paris, France</td>
               </tr>
               <tr className="w3-white">
-                <td>2008-2009</td>
-                <td>Started working for Lorem</td>
-                <td>London, UK</td>
+                <td>09/13 - 02/14</td>
+                <td>Software programmer internship at <a href="http://www.multiposting.fr/fr/"> Multiposting</a></td>
+                <td>Paris, France</td>
               </tr>
               <tr>
-                <td>2005-2008</td>
-                <td>Degree in Bachelor of Design</td>
-                <td>Harvard, USA</td>
+                <td>2012 - 2015</td>
+                <td>Master's Degree in Computer Engineering</td>
+                <td>Université de Compiègne, France</td>
               </tr>
               <tr className="w3-white">
-                <td>2002-2005</td>
-                <td>Degree in Bachelor of Business</td>
-                <td>RMIT University, Melbourne, Australia</td>
+                <td>2010 - 2012</td>
+                <td>2-year engineering diploma in Computer Science</td>
+                <td>UIT D'Arles, France</td>
               </tr>
               <tr className="w3-hide-medium">
-                <td>2002-2005</td>
-                <td>Degree in Bachelor of Business</td>
-                <td>RMIT University, Melbourne, Australia</td>
+                <td>2007 - 2010</td>
+                <td>French Baccalauréat</td>
+                <td>Avignon, France</td>
               </tr>
             </table>
           </div>

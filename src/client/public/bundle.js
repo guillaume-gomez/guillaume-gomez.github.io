@@ -41771,8 +41771,8 @@
 	          { className: "w3-padding-64 w3-center" },
 	          _react2.default.createElement(
 	            "h1",
-	            null,
-	            "About Me"
+	            { "data-translatable": true },
+	            "About Me // Super "
 	          ),
 	          _react2.default.createElement("img", { src: "/w3images/avatar3.png", className: "w3-margin w3-circle", alt: "Person", style: { width: "50%" } }),
 	          _react2.default.createElement(
@@ -41840,7 +41840,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        "div",
-	        { className: "w3-indigo w3-container", style: { minHeight: 800 } },
+	        { className: "w3-indigo w3-container" },
 	        _react2.default.createElement(
 	          "div",
 	          { className: "w3-padding-64 w3-center" },
@@ -41905,17 +41905,22 @@
 	                _react2.default.createElement(
 	                  "td",
 	                  null,
-	                  "2015-2016"
+	                  "08/15 - 01/17"
 	                ),
 	                _react2.default.createElement(
 	                  "td",
 	                  null,
-	                  "The rest is history.."
+	                  "Back-end ingineer at ",
+	                  _react2.default.createElement(
+	                    "a",
+	                    { href: "http://applidget.com" },
+	                    " Applidget "
+	                  )
 	                ),
 	                _react2.default.createElement(
 	                  "td",
 	                  null,
-	                  "Lorem ipsum"
+	                  "Paris, France"
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -41924,17 +41929,22 @@
 	                _react2.default.createElement(
 	                  "td",
 	                  null,
-	                  "2009-2012"
+	                  "02/15 - 07/15"
 	                ),
 	                _react2.default.createElement(
 	                  "td",
 	                  null,
-	                  "Started my own company"
+	                  "3D software programmer internship at ",
+	                  _react2.default.createElement(
+	                    "a",
+	                    { href: "https://masa-group.biz/" },
+	                    " Masa Group"
+	                  )
 	                ),
 	                _react2.default.createElement(
 	                  "td",
 	                  null,
-	                  "My Garage"
+	                  "Paris, France"
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -41943,17 +41953,22 @@
 	                _react2.default.createElement(
 	                  "td",
 	                  null,
-	                  "2008-2009"
+	                  "09/13 - 02/14"
 	                ),
 	                _react2.default.createElement(
 	                  "td",
 	                  null,
-	                  "Started working for Lorem"
+	                  "Software programmer internship at ",
+	                  _react2.default.createElement(
+	                    "a",
+	                    { href: "http://www.multiposting.fr/fr/" },
+	                    " Multiposting"
+	                  )
 	                ),
 	                _react2.default.createElement(
 	                  "td",
 	                  null,
-	                  "London, UK"
+	                  "Paris, France"
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -41962,17 +41977,17 @@
 	                _react2.default.createElement(
 	                  "td",
 	                  null,
-	                  "2005-2008"
+	                  "2012 - 2015"
 	                ),
 	                _react2.default.createElement(
 	                  "td",
 	                  null,
-	                  "Degree in Bachelor of Design"
+	                  "Master's Degree in Computer Engineering"
 	                ),
 	                _react2.default.createElement(
 	                  "td",
 	                  null,
-	                  "Harvard, USA"
+	                  "Universit\xE9 de Compi\xE8gne, France"
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -41981,17 +41996,17 @@
 	                _react2.default.createElement(
 	                  "td",
 	                  null,
-	                  "2002-2005"
+	                  "2010 - 2012"
 	                ),
 	                _react2.default.createElement(
 	                  "td",
 	                  null,
-	                  "Degree in Bachelor of Business"
+	                  "2-year engineering diploma in Computer Science"
 	                ),
 	                _react2.default.createElement(
 	                  "td",
 	                  null,
-	                  "RMIT University, Melbourne, Australia"
+	                  "UIT D'Arles, France"
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -42000,17 +42015,17 @@
 	                _react2.default.createElement(
 	                  "td",
 	                  null,
-	                  "2002-2005"
+	                  "2007 - 2010"
 	                ),
 	                _react2.default.createElement(
 	                  "td",
 	                  null,
-	                  "Degree in Bachelor of Business"
+	                  "French Baccalaur\xE9at"
 	                ),
 	                _react2.default.createElement(
 	                  "td",
 	                  null,
-	                  "RMIT University, Melbourne, Australia"
+	                  "Avignon, France"
 	                )
 	              )
 	            )
