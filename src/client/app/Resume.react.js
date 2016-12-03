@@ -8,14 +8,31 @@ class Resume extends React.Component {
   constructor(props){
     super(props);
   }
+
+  renderDownloadResume() {
+
+    const href = () => { 
+      window.location = `${Path}CV_EN.pdf`
+    };
+
+    return(
+    <button className="btn btn-secondary btn-sm resume-accent-color" role="button" onClick={href}>
+      <span className="resume-text-primary-color">Download my Resume {" "}</span>
+      <img src={Path + "attachment.svg"} />
+    </button>
+    );
+  }
   
   render () {
     return (
       <div className="resume-default-primary-color w3-container">
+        <div className="row">
+          {this.renderDownloadResume()}
+        </div>
         <div className="w3-padding-64 w3-center">
           <div className="resume-text-primary-color">
             <h2>
-              <span data-translatable> Resume // Curricul vitae </span>
+              <span data-translatable> Resume // Curriculum vitae </span>
             </h2>
             <p>
               <span data-translatable> A draft from my CV // Travail en cours sur mon CV :) </span>
