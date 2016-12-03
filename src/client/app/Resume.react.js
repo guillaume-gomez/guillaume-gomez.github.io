@@ -1,5 +1,8 @@
 import React from 'react';
 
+const Path = "../../res/";
+const StarSize = 24;
+
 class Resume extends React.Component {
 
   constructor(props){
@@ -63,6 +66,97 @@ class Resume extends React.Component {
               </tr>
             </table>
           </div>
+          <div className="w3-padding-8 w3-center">
+          <div className="resume-text-primary-color row">
+            <h4>
+              <span data-translatable> Programming </span>
+            </h4>
+            <div className="w3-container w3-responsive">
+            <table className="w3-table col-md-6 col-md-offset-3">
+              <tr className="resume-light-primary-color">
+                <td className="resume-text-primary-color">C++</td>
+                <td>
+                  <img src={Path + "star_fill.svg"} height={StarSize}/>
+                  <img src={Path + "star_fill.svg"} height={StarSize}/>
+                  <img src={Path + "star_fill.svg"} height={StarSize}/>
+                  <img src={Path + "star_fill.svg"} height={StarSize}/>
+                  <img src={Path + "star_empty.svg"} height={StarSize}/>
+                </td>
+              </tr>
+              <tr>
+                <td className="resume-text-primary-color">Javascript/ ES6</td>
+                <td>
+                  <img src={Path + "star_fill.svg"} height={StarSize}/>
+                  <img src={Path + "star_fill.svg"} height={StarSize}/>
+                  <img src={Path + "star_fill.svg"} height={StarSize}/>
+                  <img src={Path + "star_fill.svg"} height={StarSize}/>
+                  <img src={Path + "star_empty.svg"} height={StarSize}/>
+                </td>
+              </tr>
+              <tr className="resume-light-primary-color">
+                <td className="resume-text-primary-color">Ruby</td>
+                <td>
+                  <img src={Path + "star_fill.svg"} height={StarSize}/>
+                  <img src={Path + "star_fill.svg"} height={StarSize}/>
+                  <img src={Path + "star_fill.svg"} height={StarSize}/>
+                  <img src={Path + "star_half.svg"} height={StarSize}/>
+                  <img src={Path + "star_empty.svg"} height={StarSize}/>
+                </td>
+              </tr>
+              <tr>
+                <td className="resume-text-primary-color">Java</td>
+                <td>
+                  <img src={Path + "star_fill.svg"} height={StarSize}/>
+                  <img src={Path + "star_fill.svg"} height={StarSize}/>
+                  <img src={Path + "star_fill.svg"} height={StarSize}/>
+                  <img src={Path + "star_half.svg"} height={StarSize}/>
+                  <img src={Path + "star_empty.svg"} height={StarSize}/>
+                </td>
+              </tr>
+              <tr className="resume-light-primary-color">
+                <td className="resume-text-primary-color">Golang</td>
+                <td>
+                  <img src={Path + "star_fill.svg"} height={StarSize}/>
+                  <img src={Path + "star_fill.svg"} height={StarSize}/>
+                  <img src={Path + "star_fill.svg"} height={StarSize}/>
+                  <img src={Path + "star_half.svg"} height={StarSize}/>
+                  <img src={Path + "star_empty.svg"} height={StarSize}/>
+                </td>
+              </tr>
+              <tr>
+                <td className="resume-text-primary-color">Rust</td>
+                <td>
+                  <img src={Path + "star_fill.svg"} height={StarSize}/>
+                  <img src={Path + "star_fill.svg"} height={StarSize}/>
+                  <img src={Path + "star_half.svg"} height={StarSize}/>
+                  <img src={Path + "star_empty.svg"} height={StarSize}/>
+                  <img src={Path + "star_empty.svg"} height={StarSize}/>
+                </td>
+              </tr>
+               <tr className="resume-light-primary-color">
+                <td className="resume-text-primary-color">HTML5/Css3</td>
+                <td>
+                  <img src={Path + "star_fill.svg"} height={StarSize}/>
+                  <img src={Path + "star_fill.svg"} height={StarSize}/>
+                  <img src={Path + "star_fill.svg"} height={StarSize}/>
+                  <img src={Path + "star_half.svg"} height={StarSize}/>
+                  <img src={Path + "star_empty.svg"} height={StarSize}/>
+                </td>
+              </tr>
+              <tr className="w3-hide-medium">
+                <td className="resume-text-primary-color">PHP</td>
+                <td>
+                  <img src={Path + "star_fill.svg"} height={StarSize}/>
+                  <img src={Path + "star_fill.svg"} height={StarSize}/>
+                  <img src={Path + "star_fill.svg"} height={StarSize}/>
+                  <img src={Path + "star_half.svg"} height={StarSize}/>
+                  <img src={Path + "star_empty.svg"} height={StarSize}/>
+                </td>
+              </tr>
+            </table>
+          </div>
+          </div>
+        </div>
         </div>
       </div>
     );
