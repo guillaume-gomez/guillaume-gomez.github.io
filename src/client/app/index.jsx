@@ -18,7 +18,7 @@ class App extends React.Component {
     ].forEach(item => {
       this[item] = this[item].bind(this);
     });
-    this.state = { currentPage: "home" };
+    this.state = { currentPage: "home", locale: "fr" };
   }
 
   seeAboutMe() {
@@ -31,13 +31,13 @@ class App extends React.Component {
 
   renderAboutMe() {
     if(this.state.currentPage == "aboutMe") {
-      return (<AboutMe />);
+      return (<AboutMe locale={this.state.locale} />);
     }
   }
 
   renderResume() {
     if(this.state.currentPage == "resume") {
-      return (<Resume />);
+      return (<Resume locale={this.state.locale} />);
     } 
   }
 
