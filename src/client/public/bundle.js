@@ -41818,7 +41818,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Translations = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./Translations\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _Translations = __webpack_require__(/*! ./Translations */ 432);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -41903,29 +41903,17 @@
 	                _react2.default.createElement(
 	                  "th",
 	                  { className: "resume-text-primary-color" },
-	                  _react2.default.createElement(
-	                    "span",
-	                    { "data-translatable": true },
-	                    " Year // Ann\xE9e "
-	                  )
+	                  (0, _Translations.t)(locale, "resume_array_year")
 	                ),
 	                _react2.default.createElement(
 	                  "th",
 	                  { className: "resume-text-primary-color" },
-	                  _react2.default.createElement(
-	                    "span",
-	                    { "data-translatable": true },
-	                    " Title // Titre "
-	                  )
+	                  (0, _Translations.t)(locale, "resume_array_title")
 	                ),
 	                _react2.default.createElement(
 	                  "th",
 	                  { className: "resume-text-primary-color" },
-	                  _react2.default.createElement(
-	                    "span",
-	                    { "data-translatable": true },
-	                    "Where // Lieu "
-	                  )
+	                  (0, _Translations.t)(locale, "resume_array_location")
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -41939,7 +41927,10 @@
 	                _react2.default.createElement(
 	                  "td",
 	                  { className: "resume-text-primary-color" },
-	                  "Back-end engineer at ",
+	                  (0, _Translations.t)(locale, "resume_applidget"),
+	                  " ",
+	                  (0, _Translations.t)(locale, "at"),
+	                  " ",
 	                  _react2.default.createElement(
 	                    "a",
 	                    { href: "http://applidget.com" },
@@ -41963,11 +41954,14 @@
 	                _react2.default.createElement(
 	                  "td",
 	                  { className: "resume-text-primary-color" },
-	                  "3D software programmer internship at ",
+	                  (0, _Translations.t)(locale, "resume_masa"),
+	                  " ",
+	                  (0, _Translations.t)(locale, "at"),
+	                  " ",
 	                  _react2.default.createElement(
 	                    "a",
 	                    { href: "https://masa-group.biz/" },
-	                    " Masa Group"
+	                    " Masa Group "
 	                  )
 	                ),
 	                _react2.default.createElement(
@@ -41987,7 +41981,10 @@
 	                _react2.default.createElement(
 	                  "td",
 	                  { className: "resume-text-primary-color" },
-	                  "Software programmer internship at ",
+	                  (0, _Translations.t)(locale, "resume_multiposting"),
+	                  " ",
+	                  (0, _Translations.t)(locale, "at"),
+	                  " ",
 	                  _react2.default.createElement(
 	                    "a",
 	                    { href: "http://www.multiposting.fr/fr/" },
@@ -42011,7 +42008,7 @@
 	                _react2.default.createElement(
 	                  "td",
 	                  { className: "resume-text-primary-color" },
-	                  "Master's Degree in Computer Engineering"
+	                  (0, _Translations.t)(locale, "resume_utc")
 	                ),
 	                _react2.default.createElement(
 	                  "td",
@@ -42030,7 +42027,7 @@
 	                _react2.default.createElement(
 	                  "td",
 	                  { className: "resume-text-primary-color" },
-	                  "2-year engineering diploma in Computer Science"
+	                  (0, _Translations.t)(locale, "resume_iut")
 	                ),
 	                _react2.default.createElement(
 	                  "td",
@@ -42049,7 +42046,7 @@
 	                _react2.default.createElement(
 	                  "td",
 	                  { className: "resume-text-primary-color" },
-	                  "French Baccalaur\xE9at"
+	                  (0, _Translations.t)(locale, "resume_bac")
 	                ),
 	                _react2.default.createElement(
 	                  "td",
@@ -42068,11 +42065,7 @@
 	              _react2.default.createElement(
 	                "h4",
 	                null,
-	                _react2.default.createElement(
-	                  "span",
-	                  { "data-translatable": true },
-	                  " Programming "
-	                )
+	                (0, _Translations.t)(locale, "resume_programming")
 	              ),
 	              _react2.default.createElement(
 	                "div",
@@ -42237,6 +42230,68 @@
 	}(_react2.default.Component);
 	
 	exports.default = Resume;
+
+/***/ },
+/* 432 */
+/*!****************************************!*\
+  !*** ./src/client/app/Translations.js ***!
+  \****************************************/
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.t = t;
+	
+	var translations = {
+	  "fr": {
+	    at: "à",
+	    resume_title: "Curriculum Vitae",
+	    resume_sub_title: "Un court extrait de mon CV",
+	    resume_download_resume: "Télécharger mon CV complet",
+	    resume_array_title: "Titre",
+	    resume_array_year: "Année",
+	    resume_array_location: "Where",
+	    resume_applidget: "Ingénieur Back-end",
+	    resume_masa: "Stagiare programmeur 3D ",
+	    resume_multiposting: "Stagiare developpeur Back-end ",
+	    resume_utc: "Diplôme d'Ingénieur en informatique",
+	    resume_iut: "Diplome D'iut en informatique",
+	    resume_bac: "Baccalauréat scientifique",
+	    resume_programming: "Programmation"
+	  },
+	  "en": {
+	    a: "at",
+	    resume_title: "Resume",
+	    resume_sub_title: "A draft from my CV",
+	    resume_download_resume: "Download my full resume",
+	    resume_array_title: "Title",
+	    resume_array_year: "Year",
+	    resume_array_location: "Lieu",
+	    resume_applidget: "Back-end engineer",
+	    resume_masa: "3D software programmer internship",
+	    resume_multiposting: "Software programmer internship ",
+	    resume_utc: "Master's Degree in Computer Engineering",
+	    resume_iut: "2-year engineering diploma in Computer Science",
+	    resume_bac: "French baccalauréat",
+	    resume_programming: "Programming"
+	
+	  }
+	};
+	
+	function t(locale, key) {
+	  if (!locale || !Object.keys(translations).includes(locale)) {
+	    return "Error : the locale " + locale + " does not exist yet";
+	  }
+	  var translation = translations[locale][key];
+	  if (!translation) {
+	    return "Error : the key " + key + " does not exist";
+	  }
+	
+	  return translation;
+	}
 
 /***/ }
 /******/ ]);
