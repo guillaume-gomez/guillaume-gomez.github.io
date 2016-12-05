@@ -15,6 +15,9 @@ const translations = {
     resume_iut: "Diplome D'iut en informatique",
     resume_bac: "Baccalauréat scientifique",
     resume_programming: "Programmation",
+    about_me_title: "Quelques mots",
+    about_me_content: "Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.",
+
   },
   "en" : {
     a: "at",
@@ -31,6 +34,8 @@ const translations = {
     resume_iut: "2-year engineering diploma in Computer Science",
     resume_bac: "French baccalauréat",
     resume_programming: "Programming",
+    about_me_title: "About me",
+    about_me_content: "Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.",
 
   }
 }

@@ -41743,6 +41743,8 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _Translations = __webpack_require__(/*! ./Translations */ 432);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -41763,6 +41765,8 @@
 	  _createClass(AboutMe, [{
 	    key: "render",
 	    value: function render() {
+	      var locale = this.props.locale;
+	
 	      return _react2.default.createElement(
 	        "div",
 	        { className: "about-me-default-primary-color w3-container" },
@@ -41771,8 +41775,8 @@
 	          { className: "w3-padding-64 w3-center" },
 	          _react2.default.createElement(
 	            "h1",
-	            { className: "about-me-text-primary-color", "data-translatable": true },
-	            "About Me // Super "
+	            { className: "about-me-text-primary-color" },
+	            (0, _Translations.t)(locale, "about_me_title")
 	          ),
 	          _react2.default.createElement("img", { src: "../../res/profile.jpeg", className: "w3-margin w3-circle", alt: "Person", style: { width: "15%" } }),
 	          _react2.default.createElement(
@@ -41781,12 +41785,7 @@
 	            _react2.default.createElement(
 	              "p",
 	              null,
-	              "Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla."
-	            ),
-	            _react2.default.createElement(
-	              "p",
-	              null,
-	              "Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla."
+	              (0, _Translations.t)(locale, "about_me_content")
 	            )
 	          )
 	        )
@@ -42260,7 +42259,10 @@
 	    resume_utc: "Diplôme d'Ingénieur en informatique",
 	    resume_iut: "Diplome D'iut en informatique",
 	    resume_bac: "Baccalauréat scientifique",
-	    resume_programming: "Programmation"
+	    resume_programming: "Programmation",
+	    about_me_title: "Quelques mots",
+	    about_me_content: "Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla."
+	
 	  },
 	  "en": {
 	    a: "at",
@@ -42276,7 +42278,9 @@
 	    resume_utc: "Master's Degree in Computer Engineering",
 	    resume_iut: "2-year engineering diploma in Computer Science",
 	    resume_bac: "French baccalauréat",
-	    resume_programming: "Programming"
+	    resume_programming: "Programming",
+	    about_me_title: "About me",
+	    about_me_content: "Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla."
 	
 	  }
 	};
