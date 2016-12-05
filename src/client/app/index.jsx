@@ -5,6 +5,8 @@ import { render } from 'react-dom';
 import AboutMe from "./AboutMe.react";
 import Resume from "./Resume.react";
 
+import { t } from "./Translations";
+
 class App extends React.Component {
 
   constructor(){
@@ -42,6 +44,7 @@ class App extends React.Component {
   }
 
   renderNavBar() {
+    const { locale } = this.state;
     return (
       <div>
         <Navbar inverse collapseOnSelect>
@@ -54,14 +57,14 @@ class App extends React.Component {
           <Navbar.Collapse>
             <Nav>
               <NavItem eventKey={1} onClick={this.seeAboutMe}>
-                <span data-translatable> About me // A propos </span>
+                {t(locale, "index_about_me")}
               </NavItem>
-              <NavItem eventKey={2} onClick={this.seeResume}>Resume</NavItem>
-              <NavDropdown eventKey={3} title="My Work" id="basic-nav-dropdown">
-                <MenuItem eventKey={3.1}>Student Project</MenuItem>
-                <MenuItem eventKey={3.2}>Personnal Project</MenuItem>
+              <NavItem eventKey={2} onClick={this.seeResume}>{t(locale, "index_resume")}</NavItem>
+              <NavDropdown eventKey={3} title={t(locale, "index_work")} id="basic-nav-dropdown">
+                <MenuItem eventKey={3.1}>{t(locale, "index_student_project")}</MenuItem>
+                <MenuItem eventKey={3.2}>{t(locale, "index_personal_project")}</MenuItem>
                 <MenuItem divider />
-                <MenuItem eventKey={3.3}>Contribution</MenuItem>
+                <MenuItem eventKey={3.3}>{t(locale, "index_contribution")}</MenuItem>
               </NavDropdown>
             </Nav>
             <Nav pullRight>

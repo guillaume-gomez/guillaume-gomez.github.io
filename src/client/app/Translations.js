@@ -17,7 +17,12 @@ const translations = {
     resume_programming: "Programmation",
     about_me_title: "Quelques mots",
     about_me_content: "Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.",
-
+    index_about_me: "A propos",
+    index_resume: "CV",
+    index_work:"Mes travaux",
+    index_student_project: "Projets Etudiants",
+    index_personal_project: "Projets Personnels",
+    index_contribution: "Contribution",
   },
   "en" : {
     a: "at",
@@ -36,6 +41,12 @@ const translations = {
     resume_programming: "Programming",
     about_me_title: "About me",
     about_me_content: "Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.",
+    index_about_me: "About me",
+    index_resume: "Resume",
+    index_work:"My work",
+    index_student_project: "Student Projects",
+    index_personal_project: "Personnal Projects",
+    index_contribution: "Contribution",
 
   }
 }
