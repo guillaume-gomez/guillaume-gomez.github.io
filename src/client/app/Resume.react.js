@@ -37,7 +37,7 @@ class Resume extends React.Component {
           <div className="resume-text-primary-color">
             <h2>{t(locale, "resume_title")}</h2>
             <p>
-              <span data-translatable> A draft from my CV // Travail en cours sur mon CV :) </span>
+              {t(locale, "resume_sub_title")}
             </p>
           </div>
           <div className="w3-container w3-responsive">

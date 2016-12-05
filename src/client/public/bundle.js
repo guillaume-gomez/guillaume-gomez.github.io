@@ -41818,7 +41818,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Translations = __webpack_require__(/*! ./Translations */ 432);
+	var _Translations = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./Translations\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -41888,11 +41888,7 @@
 	            _react2.default.createElement(
 	              "p",
 	              null,
-	              _react2.default.createElement(
-	                "span",
-	                { "data-translatable": true },
-	                " A draft from my CV // Travail en cours sur mon CV :) "
-	              )
+	              (0, _Translations.t)(locale, "resume_sub_title")
 	            )
 	          ),
 	          _react2.default.createElement(
@@ -42241,43 +42237,6 @@
 	}(_react2.default.Component);
 	
 	exports.default = Resume;
-
-/***/ },
-/* 432 */
-/*!****************************************!*\
-  !*** ./src/client/app/Translations.js ***!
-  \****************************************/
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.t = t;
-	
-	var translations = {
-	  "fr": {
-	    resume_title: "Curriculum Vitae",
-	    resume_download_resume: "Télécharger mon CV complet"
-	  },
-	  "en": {
-	    resume_title: "Resume",
-	    resume_download_resume: "Download my full resume"
-	  }
-	};
-	
-	function t(locale, key) {
-	  if (!locale || !Object.keys(translations).includes(locale)) {
-	    return "Error : the locale " + locale + " does not exist yet";
-	  }
-	  var translation = translations[locale][key];
-	  if (!translation) {
-	    return "Error : the key " + key + " does not exist";
-	  }
-	
-	  return translation;
-	}
 
 /***/ }
 /******/ ]);
