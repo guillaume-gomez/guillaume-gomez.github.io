@@ -15,7 +15,7 @@ class Resume extends React.Component {
     const { locale } = this.props;
 
     const href = () => { 
-      window.location = `${Path}CV_EN.pdf`;
+      window.location = `${Path}CV_${locale.toUpperCase()}.pdf`;
     };
 
     return(

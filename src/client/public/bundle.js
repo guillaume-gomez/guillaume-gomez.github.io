@@ -67,6 +67,8 @@
 	
 	var _Resume2 = _interopRequireDefault(_Resume);
 	
+	var _Translations = __webpack_require__(/*! ./Translations */ 432);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -117,6 +119,8 @@
 	  }, {
 	    key: 'renderNavBar',
 	    value: function renderNavBar() {
+	      var locale = this.state.locale;
+	
 	      return _react2.default.createElement(
 	        'div',
 	        null,
@@ -146,35 +150,31 @@
 	              _react2.default.createElement(
 	                _reactBootstrap.NavItem,
 	                { eventKey: 1, onClick: this.seeAboutMe },
-	                _react2.default.createElement(
-	                  'span',
-	                  { 'data-translatable': true },
-	                  ' About me // A propos '
-	                )
+	                (0, _Translations.t)(locale, "index_about_me")
 	              ),
 	              _react2.default.createElement(
 	                _reactBootstrap.NavItem,
 	                { eventKey: 2, onClick: this.seeResume },
-	                'Resume'
+	                (0, _Translations.t)(locale, "index_resume")
 	              ),
 	              _react2.default.createElement(
 	                _reactBootstrap.NavDropdown,
-	                { eventKey: 3, title: 'My Work', id: 'basic-nav-dropdown' },
+	                { eventKey: 3, title: (0, _Translations.t)(locale, "index_work"), id: 'basic-nav-dropdown' },
 	                _react2.default.createElement(
 	                  _reactBootstrap.MenuItem,
 	                  { eventKey: 3.1 },
-	                  'Student Project'
+	                  (0, _Translations.t)(locale, "index_student_project")
 	                ),
 	                _react2.default.createElement(
 	                  _reactBootstrap.MenuItem,
 	                  { eventKey: 3.2 },
-	                  'Personnal Project'
+	                  (0, _Translations.t)(locale, "index_personal_project")
 	                ),
 	                _react2.default.createElement(_reactBootstrap.MenuItem, { divider: true }),
 	                _react2.default.createElement(
 	                  _reactBootstrap.MenuItem,
 	                  { eventKey: 3.3 },
-	                  'Contribution'
+	                  (0, _Translations.t)(locale, "index_contribution")
 	                )
 	              )
 	            ),
@@ -41846,7 +41846,7 @@
 	
 	
 	      var href = function href() {
-	        window.location = Path + "CV_EN.pdf";
+	        window.location = Path + "CV_" + locale.toUpperCase() + ".pdf";
 	      };
 	
 	      return _react2.default.createElement(
@@ -42261,8 +42261,13 @@
 	    resume_bac: "Baccalauréat scientifique",
 	    resume_programming: "Programmation",
 	    about_me_title: "Quelques mots",
-	    about_me_content: "Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla."
-	
+	    about_me_content: "Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.",
+	    index_about_me: "A propos",
+	    index_resume: "CV",
+	    index_work: "Mes travaux",
+	    index_student_project: "Projets Etudiants",
+	    index_personal_project: "Projets Personnels",
+	    index_contribution: "Contribution"
 	  },
 	  "en": {
 	    a: "at",
@@ -42280,7 +42285,13 @@
 	    resume_bac: "French baccalauréat",
 	    resume_programming: "Programming",
 	    about_me_title: "About me",
-	    about_me_content: "Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla."
+	    about_me_content: "Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.",
+	    index_about_me: "About me",
+	    index_resume: "Resume",
+	    index_work: "My work",
+	    index_student_project: "Student Projects",
+	    index_personal_project: "Personnal Projects",
+	    index_contribution: "Contribution"
 	
 	  }
 	};
