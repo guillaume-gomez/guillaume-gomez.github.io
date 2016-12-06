@@ -4,6 +4,7 @@ import { render } from 'react-dom';
 
 import AboutMe from "./AboutMe.react";
 import Resume from "./Resume.react";
+import ArticlesContainer from "./ArticlesContainer.react";
 
 import { t } from "./Translations";
 
@@ -15,8 +16,10 @@ class App extends React.Component {
       "renderNavBar",
       "renderAboutMe",
       "renderResume",
+      "renderArticlesContainer",
       "seeAboutMe",
-      "seeResume"
+      "seeResume",
+      "seeArticlesContainer"
     ].forEach(item => {
       this[item] = this[item].bind(this);
     });
@@ -31,6 +34,10 @@ class App extends React.Component {
     this.setState({ currentPage: "resume" });
   }
 
+  seeArticlesContainer() {
+    this.setState({ currentPage: "articleContainer" });
+  }
+
   renderAboutMe() {
     if(this.state.currentPage == "aboutMe") {
       return (<AboutMe locale={this.state.locale} />);
@@ -41,6 +48,12 @@ class App extends React.Component {
     if(this.state.currentPage == "resume") {
       return (<Resume locale={this.state.locale} />);
     } 
+  }
+
+  renderArticlesContainer() {
+    if(this.state.currentPage == "articleContainer") {
+      return (<ArticlesContainer locale={this.state.locale} />);
+    }
   }
 
   renderNavBar() {
@@ -61,7 +74,7 @@ class App extends React.Component {
               </NavItem>
               <NavItem eventKey={2} onClick={this.seeResume}>{t(locale, "index_resume")}</NavItem>
               <NavDropdown eventKey={3} title={t(locale, "index_work")} id="basic-nav-dropdown">
-                <MenuItem eventKey={3.1}>{t(locale, "index_student_project")}</MenuItem>
+                <MenuItem eventKey={3.1} onClick={this.seeArticlesContainer} >{t(locale, "index_student_project")}</MenuItem>
                 <MenuItem eventKey={3.2}>{t(locale, "index_personal_project")}</MenuItem>
                 <MenuItem divider />
                 <MenuItem eventKey={3.3}>{t(locale, "index_contribution")}</MenuItem>
@@ -74,6 +87,7 @@ class App extends React.Component {
         </Navbar>
         {this.renderAboutMe()}
         {this.renderResume()}
+        {this.renderArticlesContainer()}
       </div>
     );
   }
