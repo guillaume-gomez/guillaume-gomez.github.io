@@ -63,11 +63,15 @@
 	
 	var _AboutMe2 = _interopRequireDefault(_AboutMe);
 	
-	var _Resume = __webpack_require__(/*! ./Resume.react */ 431);
+	var _Resume = __webpack_require__(/*! ./Resume.react */ 432);
 	
 	var _Resume2 = _interopRequireDefault(_Resume);
 	
-	var _Translations = __webpack_require__(/*! ./Translations */ 432);
+	var _StudentProjects = __webpack_require__(/*! ./StudentProjects.react */ 435);
+	
+	var _StudentProjects2 = _interopRequireDefault(_StudentProjects);
+	
+	var _Translations = __webpack_require__(/*! ./Translations */ 431);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -85,7 +89,7 @@
 	
 	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
 	
-	    ["renderNavBar", "renderAboutMe", "renderResume", "seeAboutMe", "seeResume"].forEach(function (item) {
+	    ["renderNavBar", "renderAboutMe", "renderResume", "renderArticlesContainer", "seeAboutMe", "seeResume", "seeArticlesContainer"].forEach(function (item) {
 	      _this[item] = _this[item].bind(_this);
 	    });
 	    _this.state = { currentPage: "home", locale: "fr" };
@@ -103,6 +107,11 @@
 	      this.setState({ currentPage: "resume" });
 	    }
 	  }, {
+	    key: 'seeArticlesContainer',
+	    value: function seeArticlesContainer() {
+	      this.setState({ currentPage: "studentProjects" });
+	    }
+	  }, {
 	    key: 'renderAboutMe',
 	    value: function renderAboutMe() {
 	      if (this.state.currentPage == "aboutMe") {
@@ -114,6 +123,13 @@
 	    value: function renderResume() {
 	      if (this.state.currentPage == "resume") {
 	        return _react2.default.createElement(_Resume2.default, { locale: this.state.locale });
+	      }
+	    }
+	  }, {
+	    key: 'renderArticlesContainer',
+	    value: function renderArticlesContainer() {
+	      if (this.state.currentPage == "studentProjects") {
+	        return _react2.default.createElement(_StudentProjects2.default, { locale: this.state.locale });
 	      }
 	    }
 	  }, {
@@ -162,7 +178,7 @@
 	                { eventKey: 3, title: (0, _Translations.t)(locale, "index_work"), id: 'basic-nav-dropdown' },
 	                _react2.default.createElement(
 	                  _reactBootstrap.MenuItem,
-	                  { eventKey: 3.1 },
+	                  { eventKey: 3.1, onClick: this.seeArticlesContainer },
 	                  (0, _Translations.t)(locale, "index_student_project")
 	                ),
 	                _react2.default.createElement(
@@ -190,7 +206,8 @@
 	          )
 	        ),
 	        this.renderAboutMe(),
-	        this.renderResume()
+	        this.renderResume(),
+	        this.renderArticlesContainer()
 	      );
 	    }
 	  }, {
@@ -41743,7 +41760,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Translations = __webpack_require__(/*! ./Translations */ 432);
+	var _Translations = __webpack_require__(/*! ./Translations */ 431);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -41778,7 +41795,7 @@
 	            { className: "about-me-text-primary-color" },
 	            (0, _Translations.t)(locale, "about_me_title")
 	          ),
-	          _react2.default.createElement("img", { src: "../../res/profile.jpeg", className: "w3-margin w3-circle", alt: "Person", style: { width: "15%" } }),
+	          _react2.default.createElement("img", { src: "res/profile.jpeg", className: "w3-margin w3-circle", alt: "Person", style: { width: "15%" } }),
 	          _react2.default.createElement(
 	            "div",
 	            { className: "about-me-text-primary-color w3-padding-xxlarge" },
@@ -41801,6 +41818,85 @@
 /***/ },
 /* 431 */
 /*!****************************************!*\
+  !*** ./src/client/app/Translations.js ***!
+  \****************************************/
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.t = t;
+	
+	var translations = {
+	  "fr": {
+	    at: "à",
+	    resume_title: "Curriculum Vitae",
+	    resume_sub_title: "Un court extrait de mon CV",
+	    resume_download_resume: "Télécharger mon CV complet",
+	    resume_array_title: "Titre",
+	    resume_array_year: "Année",
+	    resume_array_location: "Where",
+	    resume_applidget: "Ingénieur Back-end",
+	    resume_masa: "Stagiare programmeur 3D ",
+	    resume_multiposting: "Stagiare developpeur Back-end ",
+	    resume_utc: "Diplôme d'Ingénieur en informatique",
+	    resume_iut: "Diplome D'iut en informatique",
+	    resume_bac: "Baccalauréat scientifique",
+	    resume_programming: "Programmation",
+	    about_me_title: "Quelques mots",
+	    about_me_content: "Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.",
+	    index_about_me: "A propos",
+	    index_resume: "CV",
+	    index_work: "Mes travaux",
+	    index_student_project: "Projets Etudiants",
+	    index_personal_project: "Projets Personnels",
+	    index_contribution: "Contribution",
+	    student_project_title: "Projets Etudiants"
+	  },
+	  "en": {
+	    a: "at",
+	    resume_title: "Resume",
+	    resume_sub_title: "A draft from my CV",
+	    resume_download_resume: "Download my full resume",
+	    resume_array_title: "Title",
+	    resume_array_year: "Year",
+	    resume_array_location: "Lieu",
+	    resume_applidget: "Back-end engineer",
+	    resume_masa: "3D software programmer internship",
+	    resume_multiposting: "Software programmer internship ",
+	    resume_utc: "Master's Degree in Computer Engineering",
+	    resume_iut: "2-year engineering diploma in Computer Science",
+	    resume_bac: "French baccalauréat",
+	    resume_programming: "Programming",
+	    about_me_title: "About me",
+	    about_me_content: "Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.",
+	    index_about_me: "About me",
+	    index_resume: "Resume",
+	    index_work: "My work",
+	    index_student_project: "Student Projects",
+	    index_personal_project: "Personnal Projects",
+	    index_contribution: "Contribution",
+	    student_project_title: "Student Projects"
+	  }
+	};
+	
+	function t(locale, key) {
+	  if (!locale || !Object.keys(translations).includes(locale)) {
+	    return "Error : the locale " + locale + " does not exist yet";
+	  }
+	  var translation = translations[locale][key];
+	  if (!translation) {
+	    return "Error : the key " + key + " does not exist";
+	  }
+	
+	  return translation;
+	}
+
+/***/ },
+/* 432 */
+/*!****************************************!*\
   !*** ./src/client/app/Resume.react.js ***!
   \****************************************/
 /***/ function(module, exports, __webpack_require__) {
@@ -41817,7 +41913,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Translations = __webpack_require__(/*! ./Translations */ 432);
+	var _Translations = __webpack_require__(/*! ./Translations */ 431);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -41827,7 +41923,7 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var Path = "../../res/";
+	var Path = "res/";
 	var StarSize = 24;
 	
 	var Resume = function (_React$Component) {
@@ -42231,82 +42327,330 @@
 	exports.default = Resume;
 
 /***/ },
-/* 432 */
-/*!****************************************!*\
-  !*** ./src/client/app/Translations.js ***!
-  \****************************************/
-/***/ function(module, exports) {
+/* 433 */
+/*!***************************************************!*\
+  !*** ./src/client/app/ArticlesContainer.react.js ***!
+  \***************************************************/
+/***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.t = t;
 	
-	var translations = {
-	  "fr": {
-	    at: "à",
-	    resume_title: "Curriculum Vitae",
-	    resume_sub_title: "Un court extrait de mon CV",
-	    resume_download_resume: "Télécharger mon CV complet",
-	    resume_array_title: "Titre",
-	    resume_array_year: "Année",
-	    resume_array_location: "Where",
-	    resume_applidget: "Ingénieur Back-end",
-	    resume_masa: "Stagiare programmeur 3D ",
-	    resume_multiposting: "Stagiare developpeur Back-end ",
-	    resume_utc: "Diplôme d'Ingénieur en informatique",
-	    resume_iut: "Diplome D'iut en informatique",
-	    resume_bac: "Baccalauréat scientifique",
-	    resume_programming: "Programmation",
-	    about_me_title: "Quelques mots",
-	    about_me_content: "Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.",
-	    index_about_me: "A propos",
-	    index_resume: "CV",
-	    index_work: "Mes travaux",
-	    index_student_project: "Projets Etudiants",
-	    index_personal_project: "Projets Personnels",
-	    index_contribution: "Contribution"
-	  },
-	  "en": {
-	    a: "at",
-	    resume_title: "Resume",
-	    resume_sub_title: "A draft from my CV",
-	    resume_download_resume: "Download my full resume",
-	    resume_array_title: "Title",
-	    resume_array_year: "Year",
-	    resume_array_location: "Lieu",
-	    resume_applidget: "Back-end engineer",
-	    resume_masa: "3D software programmer internship",
-	    resume_multiposting: "Software programmer internship ",
-	    resume_utc: "Master's Degree in Computer Engineering",
-	    resume_iut: "2-year engineering diploma in Computer Science",
-	    resume_bac: "French baccalauréat",
-	    resume_programming: "Programming",
-	    about_me_title: "About me",
-	    about_me_content: "Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.",
-	    index_about_me: "About me",
-	    index_resume: "Resume",
-	    index_work: "My work",
-	    index_student_project: "Student Projects",
-	    index_personal_project: "Personnal Projects",
-	    index_contribution: "Contribution"
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _Translations = __webpack_require__(/*! ./Translations */ 431);
+	
+	var _Article = __webpack_require__(/*! ./Article.react */ 434);
+	
+	var _Article2 = _interopRequireDefault(_Article);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var nbArticles = 5;
+	
+	var ArticlesContainer = function (_React$Component) {
+	  _inherits(ArticlesContainer, _React$Component);
+	
+	  function ArticlesContainer(props) {
+	    _classCallCheck(this, ArticlesContainer);
+	
+	    var _this = _possibleConstructorReturn(this, (ArticlesContainer.__proto__ || Object.getPrototypeOf(ArticlesContainer)).call(this, props));
+	
+	    _this.renderPagination = _this.renderPagination.bind(_this);
+	    _this.renderChildren = _this.renderChildren.bind(_this);
+	    return _this;
 	  }
+	
+	  _createClass(ArticlesContainer, [{
+	    key: "renderPagination",
+	    value: function renderPagination() {
+	      var children = this.props.children;
+	
+	      var nodes = children.map(function (child, index) {
+	        return _react2.default.createElement(
+	          "li",
+	          { key: index },
+	          _react2.default.createElement(
+	            "a",
+	            { href: "" },
+	            index + 1
+	          )
+	        );
+	      });
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "row text-center" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "col-sm-12" },
+	          _react2.default.createElement(
+	            "ul",
+	            { className: "pagination" },
+	            _react2.default.createElement(
+	              "li",
+	              { key: "first" },
+	              _react2.default.createElement(
+	                "a",
+	                { href: "" },
+	                "\xAB"
+	              )
+	            ),
+	            nodes,
+	            _react2.default.createElement(
+	              "li",
+	              { key: "last" },
+	              _react2.default.createElement(
+	                "a",
+	                { href: "" },
+	                "\xBB"
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }, {
+	    key: "renderChildren",
+	    value: function renderChildren() {
+	      var children = this.props.children;
+	
+	      return children.map(function (child, index) {
+	        return _react2.default.createElement(
+	          "span",
+	          { key: index },
+	          child,
+	          _react2.default.createElement("hr", null)
+	        );
+	      });
+	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+	      var _props = this.props,
+	          locale = _props.locale,
+	          title = _props.title,
+	          children = _props.children;
+	
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "container" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "row" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "col-md-12" },
+	            _react2.default.createElement(
+	              "h1",
+	              { className: "page-header" },
+	              title
+	            )
+	          )
+	        ),
+	        this.renderChildren()
+	      );
+	    }
+	  }]);
+	
+	  return ArticlesContainer;
+	}(_react2.default.Component);
+	
+	ArticlesContainer.propTypes = {
+	  title: _react2.default.PropTypes.string
 	};
 	
-	function t(locale, key) {
-	  if (!locale || !Object.keys(translations).includes(locale)) {
-	    return "Error : the locale " + locale + " does not exist yet";
-	  }
-	  var translation = translations[locale][key];
-	  if (!translation) {
-	    return "Error : the key " + key + " does not exist";
+	ArticlesContainer.defaultProps = {
+	  title: 'Page header'
+	};
+	
+	exports.default = ArticlesContainer;
+
+/***/ },
+/* 434 */
+/*!*****************************************!*\
+  !*** ./src/client/app/Article.react.js ***!
+  \*****************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Article = function (_React$Component) {
+	  _inherits(Article, _React$Component);
+	
+	  function Article(props) {
+	    _classCallCheck(this, Article);
+	
+	    return _possibleConstructorReturn(this, (Article.__proto__ || Object.getPrototypeOf(Article)).call(this, props));
 	  }
 	
-	  return translation;
-	}
+	  _createClass(Article, [{
+	    key: "render",
+	    value: function render() {
+	      var _props = this.props,
+	          title = _props.title,
+	          subtitle = _props.subtitle,
+	          content = _props.content,
+	          buttonText = _props.buttonText,
+	          href = _props.href;
+	
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "row" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "col-md-7" },
+	          _react2.default.createElement("img", { className: "image-responsive", src: href }),
+	          _react2.default.createElement("a", { href: "#" })
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "col-md-5" },
+	          _react2.default.createElement(
+	            "h3",
+	            null,
+	            " ",
+	            title
+	          ),
+	          _react2.default.createElement(
+	            "h4",
+	            null,
+	            " ",
+	            subtitle,
+	            " "
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            content
+	          ),
+	          _react2.default.createElement(
+	            "a",
+	            { className: "btn btn-primary", href: "#" },
+	            buttonText,
+	            _react2.default.createElement("span", { className: "glyphicon glyphicon-chevron-right" })
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return Article;
+	}(_react2.default.Component);
+	
+	Article.propTypes = {
+	  title: _react2.default.PropTypes.string,
+	  subtitle: _react2.default.PropTypes.string,
+	  content: _react2.default.PropTypes.string,
+	  buttonText: _react2.default.PropTypes.string,
+	  href: _react2.default.PropTypes.string
+	};
+	
+	Article.defaultProps = {
+	  title: 'Big Project',
+	  subtitle: "",
+	  content: "Super content",
+	  buttonText: "View Project",
+	  href: "http://placehold.it/600x300"
+	};
+	
+	exports.default = Article;
+
+/***/ },
+/* 435 */
+/*!*************************************************!*\
+  !*** ./src/client/app/StudentProjects.react.js ***!
+  \*************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _Translations = __webpack_require__(/*! ./Translations */ 431);
+	
+	var _ArticlesContainer = __webpack_require__(/*! ./ArticlesContainer.react */ 433);
+	
+	var _ArticlesContainer2 = _interopRequireDefault(_ArticlesContainer);
+	
+	var _Article = __webpack_require__(/*! ./Article.react */ 434);
+	
+	var _Article2 = _interopRequireDefault(_Article);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var StudentProjects = function (_React$Component) {
+	  _inherits(StudentProjects, _React$Component);
+	
+	  function StudentProjects(props) {
+	    _classCallCheck(this, StudentProjects);
+	
+	    return _possibleConstructorReturn(this, (StudentProjects.__proto__ || Object.getPrototypeOf(StudentProjects)).call(this, props));
+	  }
+	
+	  _createClass(StudentProjects, [{
+	    key: "render",
+	    value: function render() {
+	      var locale = this.props.locale;
+	
+	      return _react2.default.createElement(
+	        _ArticlesContainer2.default,
+	        { locale: locale, title: (0, _Translations.t)(locale, "student_project_title") },
+	        _react2.default.createElement(_Article2.default, null),
+	        _react2.default.createElement(_Article2.default, null),
+	        _react2.default.createElement(_Article2.default, null)
+	      );
+	    }
+	  }]);
+	
+	  return StudentProjects;
+	}(_react2.default.Component);
+	
+	exports.default = StudentProjects;
 
 /***/ }
 /******/ ]);
