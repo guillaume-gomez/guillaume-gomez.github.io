@@ -2,7 +2,7 @@ import React from 'react';
 
 import { t } from "./Translations";
 
-const Path = "../../res/";
+const Path = "res/";
 const StarSize = 24;
 
 class Resume extends React.Component {
