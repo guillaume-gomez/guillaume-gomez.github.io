@@ -23,6 +23,7 @@ const translations = {
     index_student_project: "Projets Etudiants",
     index_personal_project: "Projets Personnels",
     index_contribution: "Contribution",
+    student_project_title: "Projets Etudiants"
   },
   "en" : {
     a: "at",
@@ -47,7 +48,7 @@ const translations = {
     index_student_project: "Student Projects",
     index_personal_project: "Personnal Projects",
     index_contribution: "Contribution",
-
+    student_project_title: "Student Projects"
   }
 }
 

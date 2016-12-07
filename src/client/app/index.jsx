@@ -4,7 +4,7 @@ import { render } from 'react-dom';
 
 import AboutMe from "./AboutMe.react";
 import Resume from "./Resume.react";
-import ArticlesContainer from "./ArticlesContainer.react";
+import StudentProjects from "./StudentProjects.react";
 
 import { t } from "./Translations";
 
@@ -35,7 +35,7 @@ class App extends React.Component {
   }
 
   seeArticlesContainer() {
-    this.setState({ currentPage: "articleContainer" });
+    this.setState({ currentPage: "studentProjects" });
   }
 
   renderAboutMe() {
@@ -51,8 +51,8 @@ class App extends React.Component {
   }
 
   renderArticlesContainer() {
-    if(this.state.currentPage == "articleContainer") {
-      return (<ArticlesContainer locale={this.state.locale} />);
+    if(this.state.currentPage == "studentProjects") {
+      return (<StudentProjects locale={this.state.locale} />);
     }
   }
 
