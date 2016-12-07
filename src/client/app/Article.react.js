@@ -7,11 +7,11 @@ class Article extends React.Component {
   }
 
   render () {
-    const { title, subtitle, content, buttonText } = this.props;
+    const { title, subtitle, content, buttonText, href } = this.props;
     return (
       <div className="row">
         <div className="col-md-7">
-          <img className="image-responsive" src="http://placehold.it/600x300"/>
+          <img className="image-responsive" src={href}/>
           <a href="#"></a>
         </div>
         <div className="col-md-5">
@@ -33,13 +33,15 @@ Article.propTypes = {
   subtitle: React.PropTypes.string,
   content: React.PropTypes.string,
   buttonText: React.PropTypes.string,
+  href: React.PropTypes.string
 };
 
 Article.defaultProps = {
   title: 'Big Project',
   subtitle: "",
   content: "Super content",
-  buttonText: "View Project"
+  buttonText: "View Project",
+  href: "http://placehold.it/600x300"
 };
 
 export default Article;
