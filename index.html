@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html lang="fr">
 <head>
   <meta charset="utf-8">
@@ -7,205 +6,31 @@
   <meta name="author" content="Guillaume Gomez">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="res/css/stylesheet.css">
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
-<body class="w3-content" style="max-width:1300px">
+	<body class="w3-content" style="max-width:1300px">
+		<div id="app" />
+	    <script src="src/client/public/bundle.js" type="text/javascript"></script>
+		<!-- Footer -->
+		<footer class="w3-container w3-black w3-padding-16">
+		  <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+		</footer>
 
-	<!-- integrate  react component here -->
-  	<div id="react"></div>
-  	<script src="bundle.js"></script>
-
-
-	<!-- First Grid: Logo & About -->
-	<div class="w3-row">
-	  <div class="w3-half w3-black w3-container w3-center" style="height:700px">
-	    <div class="w3-padding-64">
-	       <h1 data-translatable>
-    			<span>Hi I'm Guillaume Gomez MYLOGO</span>
-    			<span>Salut Je suis Guillaume Gomez MYLOGO</span>
-  			<h1>
-	    </div>
-	    <div class="w3-padding-64">
-	      <a href="#" class="w3-btn w3-btn-block w3-hover-blue-grey w3-padding-16" data-translatable>
-        <span>Home</span>
-        <span>Accueil</span>
-        </a>
-	      <a href="#work" class="w3-btn w3-btn-block w3-hover-teal w3-padding-16" data-translatable>
-        <span>My Work</span>
-        <span>Mes projets</span>
-        </a>
-	      <a href="#work" class="w3-btn w3-btn-block w3-hover-dark-grey w3-padding-16" data-translatable>
-        <span>Resume</span>
-        <span>Curriculum vitae</span>
-        </a>
-	      <a href="#contact" class="w3-btn w3-btn-block w3-hover-brown w3-padding-16" data-translatable>
-        <span>Contact</span>
-        <span>Contact</span>
-        </a>
-	    </div>
-	  </div>
-	  <div class="w3-half w3-blue-grey w3-container" style="height:700px">
-	    <div class="w3-padding-64 w3-center">
-	      <h1>About Me</h1>
-	      <img src="/w3images/avatar3.png" class="w3-margin w3-circle" alt="Person" style="width:50%">
-	      <div class="w3-left-align w3-padding-xxlarge">
-	        <p>Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-	        <p>Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-
-	<!-- Second Grid: Work & Resume -->
-	<div class="w3-row">
-	  <div class="w3-half w3-light-grey w3-center" style="min-height:800px" id="work">
-	    <div class="w3-padding-64">
-	      <h2>My Work</h2>
-	      <p>Some of my latest projects.</p>
-	    </div>
-	    <div class="w3-row">
-	      <div class="w3-half">
-	        <img src="/w3images/coffee.jpg" style="width:100%">
-	      </div>
-	      <div class="w3-half">
-	        <img src="/w3images/workbench.jpg" style="width:100%">
-	      </div>
-	    </div>
-	    <div class="w3-row w3-hide-small">
-	      <div class="w3-half">
-	        <img src="/w3images/workbench.jpg" style="width:100%">
-	      </div>
-	      <div class="w3-half">
-	        <img src="/w3images/coffee.jpg" style="width:100%">
-	      </div>
-	    </div>
-
-	    <div class="w3-row w3-hide-small">
-	      <div class="w3-half">
-	        <img src="/w3images/sound.jpg" style="width:100%">
-	      </div>
-	      <div class="w3-half">
-	        <img src="/w3images/workbench.jpg" style="width:100%">
-	      </div>
-	    </div><br>
-	    <p>Just call me awesome.</p>
-	  </div>
-	  <div class="w3-half w3-indigo w3-container" style="min-height:800px">
-	    <div class="w3-padding-64 w3-center">
-	      <h2 data-translatable>
-          <span>Resume</span>
-          <span>Curricul vitae</span>
-        </h2>
-	      <p data-translatable>
-          <span>A draft from my CV</span>
-          <span>travail en cours sur mon CV :)</span>
-        </p>
-	      <div class="w3-container w3-responsive">
-	        <table class="w3-table">
-	          <tr>
-	            <th data-translatable>
-	             <span>Year</span>
-	             <span>Année</span>
-	            </th>
-	            <th data-translatable>
-	             <span>Title</span>
-	             <span>Titre</span>
-	            </th>
-	            <th data-translatable>
-	             <span>Where</span>
-	             <span>Lieu</span>
-	            </th>
-	          </tr>
-	          <tr class="w3-white">
-	            <td>2015-2016</td>
-	            <td>The rest is history..</td>
-	            <td>Lorem ipsum</td>
-	          </tr>
-	          <tr>
-	            <td>2009-2012</td>
-	            <td>Started my own company</td>
-	            <td>My Garage</td>
-	          </tr>
-	          <tr class="w3-white">
-	            <td>2008-2009</td>
-	            <td>Started working for Lorem</td>
-	            <td>London, UK</td>
-	          </tr>
-	          <tr>
-	            <td>2005-2008</td>
-	            <td>Degree in Bachelor of Design</td>
-	            <td>Harvard, USA</td>
-	          </tr>
-	          <tr class="w3-white">
-	            <td>2002-2005</td>
-	            <td>Degree in Bachelor of Business</td>
-	            <td>RMIT University, Melbourne, Australia</td>
-	          </tr>
-	          <tr class="w3-hide-medium">
-	            <td>2002-2005</td>
-	            <td>Degree in Bachelor of Business</td>
-	            <td>RMIT University, Melbourne, Australia</td>
-	          </tr>
-	        </table>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-
-	<!-- Third Grid: Swing By & Contact -->
-	<div class="w3-row" id="contact">
-	  <div class="w3-half w3-dark-grey w3-container w3-center" style="height:700px">
-	    <div class="w3-padding-64">
-	      <h1>Swing By</h1>
-	    </div>
-	    <div class="w3-padding-64">
-	      <p>..for a cup of coffee, or whatever.</p>
-	      <p><a href="https://github.com/guillaume-gomez">github</a></p>
-	      <p><a href="mailto:guillaume.gomez846@gmail.com">guillaume.gomez846@gmail.com</a></p>
-	    </div>
-	  </div>
-	  <div class="w3-half w3-teal w3-container" style="height:700px">
-	    <div class="w3-padding-64 w3-padding-xxlarge">
-	      <h1>Contact</h1>
-	      <p class="w3-opacity">GET IN TOUCH</p>
-	      <form class="w3-container w3-card-2 w3-padding-32 w3-white" action="form.asp" target="_blank">
-	        <div class="w3-group">
-	          <label>Name</label>
-	          <input class="w3-input" style="width:100%;" type="text" required name="Name">
-	        </div>
-	        <div class="w3-group">
-	          <label>Email</label>
-	          <input class="w3-input" style="width:100%;" type="text" required name="Email">
-	        </div>
-	        <div class="w3-group">
-	          <label>Message</label>
-	          <input class="w3-input" style="width:100%;" type="text" required name="Message">
-	        </div>
-	        <button type="submit" class="w3-btn w3-padding w3-right">Send</button>
-	      </form>
-	    </div>
-	  </div>
-	</div>
-
-	<!-- Footer -->
-	<footer class="w3-container w3-black w3-padding-16">
-	  <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-	</footer>
-
-
-	 <script src="external/dom-i18n.min.js"></script>
-	 <script>
-	   var i18n = window.domI18n({
-	  selector: '[data-translatable]',
-	  separator: ' // ',
-	  languages: ['en', 'fr'],
-	  defaultLanguage: 'en'
-	});
-	</script>
-</body>
+    
+		 <script src="external/dom-i18n.min.js"></script>
+		 <script>
+		   var i18n = window.domI18n({
+		  selector: '[data-translatable]',
+		  separator: ' // ',
+		  languages: ['en', 'fr'],
+		  defaultLanguage: 'fr'
+		});
+		</script>
+    
+	</body>
 </html>
-
-
