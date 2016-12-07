@@ -8,6 +8,19 @@ class ArticlesContainer extends React.Component {
     super(props);
   }
 
+  renderPagination(){
+    return (
+      <div className="row text-center">
+        <div className="col-sm-12">
+          <ul className="pagination">
+            <li><a href="">«</a></li>
+            <li><a href="">»</a></li>
+          </ul>
+        </div>
+      </div>
+    );
+  }
+
   render () {
     const { locale } = this.props;
     return (
@@ -19,7 +32,7 @@ class ArticlesContainer extends React.Component {
         </div>
         <div className="row">
           <div className="col-md-7">
-            <img className="image-responsive" src="http://placehold.it/700x300"/>
+            <img className="image-responsive" src="http://placehold.it/600x300"/>
             <a href="#"></a>
           </div>
           <div className="col-md-5">
