@@ -5,6 +5,7 @@ import { render } from 'react-dom';
 import AboutMe from "./AboutMe.react";
 import Resume from "./Resume.react";
 import StudentProjects from "./StudentProjects.react";
+import PersonalProjects from "./PersonalProjects.react";
 
 import { t } from "./Translations";
 
@@ -16,10 +17,12 @@ class App extends React.Component {
       "renderNavBar",
       "renderAboutMe",
       "renderResume",
-      "renderArticlesContainer",
+      "renderStudentProjects",
+      "renderPersonnalProjects",
       "seeAboutMe",
       "seeResume",
-      "seeArticlesContainer"
+      "seeStudentProjects",
+      "seePersonalProjects"
     ].forEach(item => {
       this[item] = this[item].bind(this);
     });
@@ -34,8 +37,12 @@ class App extends React.Component {
     this.setState({ currentPage: "resume" });
   }
 
-  seeArticlesContainer() {
+  seeStudentProjects() {
     this.setState({ currentPage: "studentProjects" });
+  }
+
+  seePersonalProjects() {
+    this.setState( { currentPage: "personalProjects" });
   }
 
   renderAboutMe() {
@@ -47,12 +54,18 @@ class App extends React.Component {
   renderResume() {
     if(this.state.currentPage == "resume") {
       return (<Resume locale={this.state.locale} />);
-    } 
+    }
   }
 
-  renderArticlesContainer() {
+  renderStudentProjects() {
     if(this.state.currentPage == "studentProjects") {
       return (<StudentProjects locale={this.state.locale} />);
+    }
+  }
+
+  renderPersonnalProjects() {
+    if(this.state.currentPage == "personalProjects") {
+      return (<PersonalProjects locale={this.state.locale} />);
     }
   }
 
@@ -74,8 +87,8 @@ class App extends React.Component {
               </NavItem>
               <NavItem eventKey={2} onClick={this.seeResume}>{t(locale, "index_resume")}</NavItem>
               <NavDropdown eventKey={3} title={t(locale, "index_work")} id="basic-nav-dropdown">
-                <MenuItem eventKey={3.1} onClick={this.seeArticlesContainer} >{t(locale, "index_student_project")}</MenuItem>
-                <MenuItem eventKey={3.2}>{t(locale, "index_personal_project")}</MenuItem>
+                <MenuItem eventKey={3.1} onClick={this.seeStudentProjects} >{t(locale, "index_student_project")}</MenuItem>
+                <MenuItem eventKey={3.2} onClick={this.seePersonalProjects}>{t(locale, "index_personal_project")}</MenuItem>
                 <MenuItem divider />
                 <MenuItem eventKey={3.3}>{t(locale, "index_contribution")}</MenuItem>
               </NavDropdown>
@@ -87,7 +100,8 @@ class App extends React.Component {
         </Navbar>
         {this.renderAboutMe()}
         {this.renderResume()}
-        {this.renderArticlesContainer()}
+        {this.renderStudentProjects()}
+        {this.renderPersonnalProjects()}
       </div>
     );
   }
