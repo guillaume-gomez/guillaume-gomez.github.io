@@ -13,7 +13,7 @@ class PersonalProjects extends React.Component {
   render () {
     const { locale } = this.props;
     return (
-      <ArticlesContainer locale={locale} title={t(locale, "student_project_title")}>
+      <ArticlesContainer locale={locale} title={t(locale, "personal_project_title")}>
         <Article />
         <Article />
         <Article />

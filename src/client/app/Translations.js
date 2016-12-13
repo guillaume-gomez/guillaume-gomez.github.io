@@ -23,7 +23,14 @@ const translations = {
     index_student_project: "Projets Etudiants",
     index_personal_project: "Projets Personnels",
     index_contribution: "Contribution",
-    student_project_title: "Projets Etudiants"
+    student_project_title: "Projets Etudiants",
+    personal_project_title: "Projets Personnels",
+    student_project_rep_code_title: "Project étudiant de traitement d'images",
+    student_project_rep_code_subtitle: "Librairie 2D de génération d'images",
+    student_project_rep_code_content: "Premier project en dut traitant de traitement d'images. Le but ici était de se perfectionner sur l'apprentisage du C++(11) et de toucher des concepts du developpement 2D : la structure des données des images, les transformation de bases, réalisation d'algorithme de traitement simple. Bref un des premiers de mes travaux abouti dans mon cursus",
+    student_project_rep_code_buttonText: "Voir le repo",
+    student_project_rep_code_href: "",
+    student_project_rep_code_githubUrl: "https://github.com/guillaume-gomez/Rep-Code",
   },
   "en" : {
     a: "at",
@@ -48,7 +55,14 @@ const translations = {
     index_student_project: "Student Projects",
     index_personal_project: "Personnal Projects",
     index_contribution: "Contribution",
-    student_project_title: "Student Projects"
+    student_project_title: "Student Projects",
+    personal_project_title: "Personal Projects",
+    student_project_rep_code_title: "",
+    student_project_rep_code_subtitle: "",
+    student_project_rep_code_content: "",
+    student_project_rep_code_buttonText: "",
+    student_project_rep_code_href: "",
+    student_project_rep_code_githubUrl: "",
   }
 }
 

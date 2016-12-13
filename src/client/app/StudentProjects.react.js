@@ -14,7 +14,14 @@ class StudentProjects extends React.Component {
     const { locale } = this.props;
     return (
       <ArticlesContainer locale={locale} title={t(locale, "student_project_title")}>
-        <Article />
+        <Article 
+          title={t(locale, "student_project_rep_code_title")}
+          subtitle={t(locale, "student_project_rep_code_subtitle")}
+          content={t(locale, "student_project_rep_code_content")}
+          buttonText={t(locale, "student_project_rep_code_buttonText")}
+          href={t(locale, "student_project_rep_code_href")}
+          githubUrl={t(locale, "student_project_rep_code_githubUrl")}
+        />
         <Article />
         <Article />
       </ArticlesContainer>
