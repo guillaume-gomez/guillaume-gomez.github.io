@@ -67,7 +67,7 @@
 	
 	var _Resume2 = _interopRequireDefault(_Resume);
 	
-	var _StudentProjects = __webpack_require__(/*! ./StudentProjects.react */ 435);
+	var _StudentProjects = __webpack_require__(/*! ./StudentProjects.react */ 433);
 	
 	var _StudentProjects2 = _interopRequireDefault(_StudentProjects);
 	
@@ -42328,6 +42328,72 @@
 
 /***/ },
 /* 433 */
+/*!*************************************************!*\
+  !*** ./src/client/app/StudentProjects.react.js ***!
+  \*************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _Translations = __webpack_require__(/*! ./Translations */ 431);
+	
+	var _ArticlesContainer = __webpack_require__(/*! ./ArticlesContainer.react */ 434);
+	
+	var _ArticlesContainer2 = _interopRequireDefault(_ArticlesContainer);
+	
+	var _Article = __webpack_require__(/*! ./Article.react */ 435);
+	
+	var _Article2 = _interopRequireDefault(_Article);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var StudentProjects = function (_React$Component) {
+	  _inherits(StudentProjects, _React$Component);
+	
+	  function StudentProjects(props) {
+	    _classCallCheck(this, StudentProjects);
+	
+	    return _possibleConstructorReturn(this, (StudentProjects.__proto__ || Object.getPrototypeOf(StudentProjects)).call(this, props));
+	  }
+	
+	  _createClass(StudentProjects, [{
+	    key: "render",
+	    value: function render() {
+	      var locale = this.props.locale;
+	
+	      return _react2.default.createElement(
+	        _ArticlesContainer2.default,
+	        { locale: locale, title: (0, _Translations.t)(locale, "student_project_title") },
+	        _react2.default.createElement(_Article2.default, null),
+	        _react2.default.createElement(_Article2.default, null),
+	        _react2.default.createElement(_Article2.default, null)
+	      );
+	    }
+	  }]);
+	
+	  return StudentProjects;
+	}(_react2.default.Component);
+	
+	exports.default = StudentProjects;
+
+/***/ },
+/* 434 */
 /*!***************************************************!*\
   !*** ./src/client/app/ArticlesContainer.react.js ***!
   \***************************************************/
@@ -42347,7 +42413,7 @@
 	
 	var _Translations = __webpack_require__(/*! ./Translations */ 431);
 	
-	var _Article = __webpack_require__(/*! ./Article.react */ 434);
+	var _Article = __webpack_require__(/*! ./Article.react */ 435);
 	
 	var _Article2 = _interopRequireDefault(_Article);
 	
@@ -42479,7 +42545,7 @@
 	exports.default = ArticlesContainer;
 
 /***/ },
-/* 434 */
+/* 435 */
 /*!*****************************************!*\
   !*** ./src/client/app/Article.react.js ***!
   \*****************************************/
@@ -42585,72 +42651,6 @@
 	};
 	
 	exports.default = Article;
-
-/***/ },
-/* 435 */
-/*!*************************************************!*\
-  !*** ./src/client/app/StudentProjects.react.js ***!
-  \*************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(/*! react */ 1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _Translations = __webpack_require__(/*! ./Translations */ 431);
-	
-	var _ArticlesContainer = __webpack_require__(/*! ./ArticlesContainer.react */ 433);
-	
-	var _ArticlesContainer2 = _interopRequireDefault(_ArticlesContainer);
-	
-	var _Article = __webpack_require__(/*! ./Article.react */ 434);
-	
-	var _Article2 = _interopRequireDefault(_Article);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var StudentProjects = function (_React$Component) {
-	  _inherits(StudentProjects, _React$Component);
-	
-	  function StudentProjects(props) {
-	    _classCallCheck(this, StudentProjects);
-	
-	    return _possibleConstructorReturn(this, (StudentProjects.__proto__ || Object.getPrototypeOf(StudentProjects)).call(this, props));
-	  }
-	
-	  _createClass(StudentProjects, [{
-	    key: "render",
-	    value: function render() {
-	      var locale = this.props.locale;
-	
-	      return _react2.default.createElement(
-	        _ArticlesContainer2.default,
-	        { locale: locale, title: (0, _Translations.t)(locale, "student_project_title") },
-	        _react2.default.createElement(_Article2.default, null),
-	        _react2.default.createElement(_Article2.default, null),
-	        _react2.default.createElement(_Article2.default, null)
-	      );
-	    }
-	  }]);
-	
-	  return StudentProjects;
-	}(_react2.default.Component);
-	
-	exports.default = StudentProjects;
 
 /***/ }
 /******/ ]);
