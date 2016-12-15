@@ -41870,7 +41870,20 @@
 	    index_student_project: "Projets Etudiants",
 	    index_personal_project: "Projets Personnels",
 	    index_contribution: "Contribution",
-	    student_project_title: "Projets Etudiants"
+	    student_project_title: "Projets Etudiants",
+	    personal_project_title: "Projets Personnels",
+	    student_project_rep_code_title: "Project étudiant de traitement d'images",
+	    student_project_rep_code_subtitle: "Librairie 2D de génération d'images",
+	    student_project_rep_code_content: "Premier project en dut traitant de traitement d'images. Le but ici était de se perfectionner sur l'apprentisage du C++(11) et de toucher des concepts du developpement 2D : la structure des données des images, les transformation de bases, réalisation d'algorithme de traitement simple. Bref un des premiers de mes travaux abouti dans mon cursus",
+	    student_project_rep_code_buttonText: "Voir le repo",
+	    student_project_rep_code_href: "",
+	    student_project_rep_code_githubUrl: "https://github.com/guillaume-gomez/Rep-Code",
+	    student_project_nf11_title: "Production d'un compilateur Logo",
+	    student_project_nf11_subtitle: "Travaux pratiques sur la théorie des langages",
+	    student_project_nf11_content: "Le but de se projet était de pratiquer fondamentaux de la théorie des langages. Ce projet contenait un squelette avec un analyseur syntaxique ainsi qu'un outil de build(un projet netbeans). Le projet m'a permis de comprendre les notions vues en cours de maniere ludique(on peut faire pleins de dessins rapidement en Logo :))",
+	    student_project_nf11_buttonText: "Voir le repo",
+	    student_project_nf11_href: "https://github.com/guillaume-gomez/NF11-project/blob/67798b057eea3d7204dd82e8abed0d95544911a6/example.png",
+	    student_project_nf11_githubUrl: "https://github.com/guillaume-gomez/NF11-project"
 	  },
 	  "en": {
 	    a: "at",
@@ -41895,7 +41908,20 @@
 	    index_student_project: "Student Projects",
 	    index_personal_project: "Personnal Projects",
 	    index_contribution: "Contribution",
-	    student_project_title: "Student Projects"
+	    student_project_title: "Student Projects",
+	    personal_project_title: "Personal Projects",
+	    student_project_rep_code_title: "",
+	    student_project_rep_code_subtitle: "",
+	    student_project_rep_code_content: "",
+	    student_project_rep_code_buttonText: "",
+	    student_project_rep_code_href: "",
+	    student_project_rep_code_githubUrl: "",
+	    student_project_nf11_title: "",
+	    student_project_nf11_subtitle: "",
+	    student_project_nf11_content: "",
+	    student_project_nf11_buttonText: "",
+	    student_project_nf11_href: "",
+	    student_project_nf11_githubUrl: ""
 	  }
 	};
 	
@@ -42397,8 +42423,22 @@
 	      return _react2.default.createElement(
 	        _ArticlesContainer2.default,
 	        { locale: locale, title: (0, _Translations.t)(locale, "student_project_title") },
-	        _react2.default.createElement(_Article2.default, null),
-	        _react2.default.createElement(_Article2.default, null),
+	        _react2.default.createElement(_Article2.default, {
+	          title: (0, _Translations.t)(locale, "student_project_rep_code_title"),
+	          subtitle: (0, _Translations.t)(locale, "student_project_rep_code_subtitle"),
+	          content: (0, _Translations.t)(locale, "student_project_rep_code_content"),
+	          buttonText: (0, _Translations.t)(locale, "student_project_rep_code_buttonText"),
+	          href: (0, _Translations.t)(locale, "student_project_rep_code_href"),
+	          githubUrl: (0, _Translations.t)(locale, "student_project_rep_code_githubUrl")
+	        }),
+	        _react2.default.createElement(_Article2.default, {
+	          title: (0, _Translations.t)(locale, "student_project_nf11_title"),
+	          subtitle: (0, _Translations.t)(locale, "student_project_nf11_subtitle"),
+	          content: (0, _Translations.t)(locale, "student_project_nf11_content"),
+	          buttonText: (0, _Translations.t)(locale, "student_project_nf11_buttonText"),
+	          href: (0, _Translations.t)(locale, "student_project_nf11_href"),
+	          githubUrl: (0, _Translations.t)(locale, "student_project_nf11_githubUrl")
+	        }),
 	        _react2.default.createElement(_Article2.default, null)
 	      );
 	    }
@@ -42605,7 +42645,8 @@
 	          subtitle = _props.subtitle,
 	          content = _props.content,
 	          buttonText = _props.buttonText,
-	          href = _props.href;
+	          href = _props.href,
+	          githubUrl = _props.githubUrl;
 	
 	      return _react2.default.createElement(
 	        "div",
@@ -42639,7 +42680,7 @@
 	          ),
 	          _react2.default.createElement(
 	            "a",
-	            { className: "btn btn-primary", href: "#" },
+	            { className: "btn btn-primary", href: githubUrl },
 	            buttonText,
 	            _react2.default.createElement("span", { className: "glyphicon glyphicon-chevron-right" })
 	          )
@@ -42656,7 +42697,8 @@
 	  subtitle: _react2.default.PropTypes.string,
 	  content: _react2.default.PropTypes.string,
 	  buttonText: _react2.default.PropTypes.string,
-	  href: _react2.default.PropTypes.string
+	  href: _react2.default.PropTypes.string,
+	  githubUrl: _react2.default.PropTypes.string
 	};
 	
 	Article.defaultProps = {
@@ -42664,7 +42706,9 @@
 	  subtitle: "",
 	  content: "Super content",
 	  buttonText: "View Project",
-	  href: "http://placehold.it/600x300"
+	  href: "http://placehold.it/600x300",
+	  githubUrl: "https://github.com/guillaume-gomez"
+	
 	};
 	
 	exports.default = Article;
@@ -42722,7 +42766,7 @@
 	
 	      return _react2.default.createElement(
 	        _ArticlesContainer2.default,
-	        { locale: locale, title: (0, _Translations.t)(locale, "student_project_title") },
+	        { locale: locale, title: (0, _Translations.t)(locale, "personal_project_title") },
 	        _react2.default.createElement(_Article2.default, null),
 	        _react2.default.createElement(_Article2.default, null),
 	        _react2.default.createElement(_Article2.default, null)

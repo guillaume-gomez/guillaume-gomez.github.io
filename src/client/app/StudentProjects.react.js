@@ -22,7 +22,14 @@ class StudentProjects extends React.Component {
           href={t(locale, "student_project_rep_code_href")}
           githubUrl={t(locale, "student_project_rep_code_githubUrl")}
         />
-        <Article />
+        <Article
+          title={t(locale, "student_project_nf11_title")}
+          subtitle={t(locale, "student_project_nf11_subtitle")}
+          content={t(locale, "student_project_nf11_content")}
+          buttonText={t(locale, "student_project_nf11_buttonText")}
+          href={t(locale, "student_project_nf11_href")}
+          githubUrl={t(locale, "student_project_nf11_githubUrl")} 
+        />
         <Article />
       </ArticlesContainer>
     );

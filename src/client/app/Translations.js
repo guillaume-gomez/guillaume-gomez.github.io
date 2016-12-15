@@ -31,6 +31,12 @@ const translations = {
     student_project_rep_code_buttonText: "Voir le repo",
     student_project_rep_code_href: "",
     student_project_rep_code_githubUrl: "https://github.com/guillaume-gomez/Rep-Code",
+    student_project_nf11_title: "Production d'un compilateur Logo",
+    student_project_nf11_subtitle: "Travaux pratiques sur la théorie des langages",
+    student_project_nf11_content: "Le but de se projet était de pratiquer fondamentaux de la théorie des langages. Ce projet contenait un squelette avec un analyseur syntaxique ainsi qu'un outil de build(un projet netbeans). Le projet m'a permis de comprendre les notions vues en cours de maniere ludique(on peut faire pleins de dessins rapidement en Logo :))",
+    student_project_nf11_buttonText: "Voir le repo",
+    student_project_nf11_href: "https://github.com/guillaume-gomez/NF11-project/blob/67798b057eea3d7204dd82e8abed0d95544911a6/example.png",
+    student_project_nf11_githubUrl: "https://github.com/guillaume-gomez/NF11-project"
   },
   "en" : {
     a: "at",
@@ -63,6 +69,12 @@ const translations = {
     student_project_rep_code_buttonText: "",
     student_project_rep_code_href: "",
     student_project_rep_code_githubUrl: "",
+    student_project_nf11_title: "",
+    student_project_nf11_subtitle: "",
+    student_project_nf11_content: "",
+    student_project_nf11_buttonText: "",
+    student_project_nf11_href: "",
+    student_project_nf11_githubUrl: ""
   }
 }
 
