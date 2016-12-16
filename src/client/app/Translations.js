@@ -61,7 +61,7 @@ const translations = {
     personal_project_LD35_content: "Ma première participation au ludum dare, et ma dernière utilisation du moteur Jaws js. L'idée était de faire un jeu dans lequel la transformation physique du personnage aurait un impact sur le gameplay(gravité, colission, vitesse...)",
     personal_project_LD35_buttonText: "Jouer",
     personal_project_LD35_href: "https://raw.githubusercontent.com/guillaume-gomez/LD35/master/css/screen-shot.png",
-    personal_project_LD35_githubUrl: "https://guillaume-gomez.github.io/LD35",
+    personal_project_LD36_githubUrl: "https://guillaume-gomez.github.io/LD35",
     personal_project_LD36_title: "Ludum Dare 36",
     personal_project_LD36_subtitle: "Theme : Ancient Technology",
     personal_project_LD36_content: "Ma seconde participation, et ma premiere avec Phaser. J'ai aussi ajouté une chaine de build pour coder en ES6. J'ai voulu traduire l'idée que la Technologie avance parfois tellement vite que l'on perd la connaissance d'outil qui ne sont pas si antique que ca. J'ai tenté de rendre hommage à certains outils issu des 80's",
