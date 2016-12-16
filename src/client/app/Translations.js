@@ -39,7 +39,7 @@ const translations = {
     student_project_nf11_githubUrl: "https://github.com/guillaume-gomez/NF11-project",
     student_project_nf29_title: "Redaction d'un convertiseur de MindMapping vers Hdoc",
     student_project_nf29_subtitle: "Initiation à Ingénierie documentaire",
-    student_project_nf29_content: "Dans le cadre d'une U.V traitant de l'Ingénierie documentaire. Les etudiants ont du travailler sur des problématique de conversion de data pour centraliser, formaliser, et sauvegarder de l'information. Le convertiseur en question permet de transformer une mind map(carte heuristique) vers un format permettant de rédiger du contenu et de l'exporter dans différents format(doc, pdf, web, presentation, ...)",
+    student_project_nf29_content: "Dans le cadre d'une U.V traitant de l'Ingénierie documentaire. Ce cours permettait de travailler sur des problématique de conversion de data pour centraliser, formaliser, et sauvegarder de l'information. Le convertiseur en question permet de transformer une mind map(carte heuristique) vers un format permettant de rédiger du contenu et de l'exporter dans différents format(doc, pdf, web, presentation, ...)",
     student_project_nf29_buttonText: "Voir le repo",
     student_project_nf29_href: "",
     student_project_nf29_githubUrl: "https://github.com/guillaume-gomez/NF29-XmlConverter"
