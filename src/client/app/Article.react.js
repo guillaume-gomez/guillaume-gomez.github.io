@@ -11,7 +11,7 @@ class Article extends React.Component {
     return (
       <div className="row">
         <div className="col-md-7">
-          <img className="image-responsive" src={href}/>
+          <img className="image-responsive" src={href} width="650"/>
           <a href="#"></a>
         </div>
         <div className="col-md-5">
