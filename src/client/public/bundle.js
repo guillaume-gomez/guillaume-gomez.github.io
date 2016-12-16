@@ -41844,10 +41844,15 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+	
+	var _fr;
+	
 	exports.t = t;
 	
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+	
 	var translations = {
-	  "fr": {
+	  "fr": (_fr = {
 	    at: "à",
 	    resume_title: "Curriculum Vitae",
 	    resume_sub_title: "Un court extrait de mon CV",
@@ -41890,7 +41895,8 @@
 	    student_project_nf29_buttonText: "Voir le repo",
 	    student_project_nf29_href: "",
 	    student_project_nf29_githubUrl: "https://github.com/guillaume-gomez/NF29-XmlConverter"
-	  },
+	
+	  }, _defineProperty(_fr, "student_project_nf29_title", "Redaction d'un convertiseur de MindMapping vers Hdoc"), _defineProperty(_fr, "student_project_nf29_subtitle", "Initiation à Ingénierie documentaire"), _defineProperty(_fr, "student_project_nf29_content", "Dans le cadre d'une U.V traitant de l'Ingénierie documentaire. Ce cours permettait de travailler sur des problématique de conversion de data pour centraliser, formaliser, et sauvegarder de l'information. Le convertiseur en question permet de transformer une mind map(carte heuristique) vers un format permettant de rédiger du contenu et de l'exporter dans différents format(doc, pdf, web, presentation, ...)"), _defineProperty(_fr, "student_project_nf29_buttonText", "Voir le repo"), _defineProperty(_fr, "student_project_nf29_href", ""), _defineProperty(_fr, "student_project_nf29_githubUrl", "https://github.com/guillaume-gomez/NF29-XmlConverter"), _defineProperty(_fr, "participation_project_LD34_title", ""), _defineProperty(_fr, "participation_project_LD34_subtitle", ""), _defineProperty(_fr, "participation_project_LD34_content", ""), _defineProperty(_fr, "pparticipation_project_LD34_buttonText", ""), _defineProperty(_fr, "participation_project_LD34_href", ""), _defineProperty(_fr, "participation_project_LD34_githubUrl", ""), _defineProperty(_fr, "personal_project_LD35_title", "Ludum Dare 35"), _defineProperty(_fr, "personal_project_LD35_subtitle", "Theme : Shapeshift"), _defineProperty(_fr, "personal_project_LD35_content", "Ma première participation au ludum dare, et ma dernière utilisation du moteur Jaws js. L'idée était de faire un jeu dans lequel la transformation physique du personnage aurait un impact sur le gameplay(gravité, colission, vitesse...)"), _defineProperty(_fr, "personal_project_LD35_buttonText", "Jouer"), _defineProperty(_fr, "personal_project_LD35_href", "https://raw.githubusercontent.com/guillaume-gomez/LD35/master/css/screen-shot.png"), _defineProperty(_fr, "personal_project_LD35_githubUrl", "https://guillaume-gomez.github.io/LD35"), _defineProperty(_fr, "personal_project_LD36_title", "Ludum Dare 36"), _defineProperty(_fr, "personal_project_LD36_subtitle", "Theme : Ancient Technology"), _defineProperty(_fr, "personal_project_LD36_content", "Ma seconde participation, et ma premiere avec Phaser. J'ai aussi ajouté une chaine de build pour coder en ES6. J'ai voulu traduire l'idée que la Technologie avance parfois tellement vite que l'on perd la connaissance d'outil qui ne sont pas si antique que ca. J'ai tenté de rendre hommage à certains outils issu des 80's"), _defineProperty(_fr, "personal_project_LD36_buttonText", "Jouer"), _defineProperty(_fr, "personal_project_LD36_href", "https://raw.githubusercontent.com/guillaume-gomez/LD36/master/preview.png"), _defineProperty(_fr, "personal_project_LD36_githubUrl", "https://guillaume-gomez.github.io/LD36"), _defineProperty(_fr, "personal_project_LD37_title", "Ludum Dare 37"), _defineProperty(_fr, "personal_project_LD37_subtitle", "Theme : One room"), _defineProperty(_fr, "personal_project_LD37_content", "Dernière participation de l'année 2016. Toujours en phaser avec une chaine de build pour coder en ES6. Le jeu genere un salle randomisé, les ennemies peuvent pousser les blocs de la salle mais pas le hero. Pour gagner le personnage doit soit sortir de la salle(en laissant entrer les enemies), soit tous les eliminer."), _defineProperty(_fr, "personal_project_LD37_buttonText", "Jouer (bientôt)"), _defineProperty(_fr, "personal_project_LD37_href", ""), _defineProperty(_fr, "personal_project_LD37_githubUrl", "https://guillaume-gomez.github.io/LD37"), _fr),
 	  "en": {
 	    a: "at",
 	    resume_title: "Resume",
@@ -41933,7 +41939,32 @@
 	    student_project_nf29_content: "",
 	    student_project_nf29_buttonText: "",
 	    student_project_nf29_href: "",
-	    student_project_nf29_githubUrl: ""
+	    student_project_nf29_githubUrl: "",
+	    participation_project_LD34_title: "",
+	    participation_project_LD34_subtitle: "",
+	    participation_project_LD34_content: "",
+	    pparticipation_project_LD34_buttonText: "",
+	    participation_project_LD34_href: "",
+	    participation_project_LD34_githubUrl: "",
+	    personal_project_LD35_title: "",
+	    personal_project_LD35_subtitle: "",
+	    personal_project_LD35_content: "",
+	    personal_project_LD35_buttonText: "",
+	    personal_project_LD35_href: "",
+	    personal_project_LD35_githubUrl: "",
+	    personal_project_LD36_title: "",
+	    personal_project_LD36_subtitle: "",
+	    personal_project_LD36_content: "",
+	    personal_project_LD36_buttonText: "",
+	    personal_project_LD36_href: "",
+	    personal_project_LD36_githubUrl: "",
+	    personal_project_LD37_title: "",
+	    personal_project_LD37_subtitle: "",
+	    personal_project_LD37_content: "",
+	    personal_project_LD37_buttonText: "",
+	    personal_project_LD37_href: "",
+	    personal_project_LD37_githubUrl: ""
+	
 	  }
 	};
 	
