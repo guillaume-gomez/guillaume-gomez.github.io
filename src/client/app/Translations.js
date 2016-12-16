@@ -36,7 +36,13 @@ const translations = {
     student_project_nf11_content: "Le but de se projet était de pratiquer fondamentaux de la théorie des langages. Ce projet contenait un squelette avec un analyseur syntaxique ainsi qu'un outil de build(un projet netbeans). Le projet m'a permis de comprendre les notions vues en cours de maniere ludique(on peut faire pleins de dessins rapidement en Logo :))",
     student_project_nf11_buttonText: "Voir le repo",
     student_project_nf11_href: "https://raw.githubusercontent.com/guillaume-gomez/NF11-project/master/example.png?raw=true",
-    student_project_nf11_githubUrl: "https://github.com/guillaume-gomez/NF11-project"
+    student_project_nf11_githubUrl: "https://github.com/guillaume-gomez/NF11-project",
+    student_project_nf29_title: "Redaction d'un convertiseur de MindMapping vers Hdoc",
+    student_project_nf29_subtitle: "Initiation à Ingénierie documentaire",
+    student_project_nf29_content: "Dans le cadre d'une U.V traitant de l'Ingénierie documentaire. Les etudiants ont du travailler sur des problématique de conversion de data pour centraliser, formaliser, et sauvegarder de l'information. Le convertiseur en question permet de transformer une mind map(carte heuristique) vers un format permettant de rédiger du contenu et de l'exporter dans différents format(doc, pdf, web, presentation, ...)",
+    student_project_nf29_buttonText: "Voir le repo",
+    student_project_nf29_href: "",
+    student_project_nf29_githubUrl: "https://github.com/guillaume-gomez/NF29-XmlConverter"
   },
   "en" : {
     a: "at",
@@ -74,7 +80,13 @@ const translations = {
     student_project_nf11_content: "",
     student_project_nf11_buttonText: "",
     student_project_nf11_href: "",
-    student_project_nf11_githubUrl: ""
+    student_project_nf11_githubUrl: "",
+    student_project_nf29_title: "",
+    student_project_nf29_subtitle: "",
+    student_project_nf29_content: "",
+    student_project_nf29_buttonText: "",
+    student_project_nf29_href: "",
+    student_project_nf29_githubUrl: ""
   }
 }
 
