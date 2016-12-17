@@ -6,6 +6,7 @@ import AboutMe from "./AboutMe.react";
 import Resume from "./Resume.react";
 import StudentProjects from "./StudentProjects.react";
 import PersonalProjects from "./PersonalProjects.react";
+import Contribution from "./Contribution.react";
 
 import { t } from "./Translations";
 
@@ -19,10 +20,12 @@ class App extends React.Component {
       "renderResume",
       "renderStudentProjects",
       "renderPersonnalProjects",
+      "renderContribution",
       "seeAboutMe",
       "seeResume",
       "seeStudentProjects",
-      "seePersonalProjects"
+      "seePersonalProjects",
+      "seeContribution"
     ].forEach(item => {
       this[item] = this[item].bind(this);
     });
@@ -45,27 +48,37 @@ class App extends React.Component {
     this.setState( { currentPage: "personalProjects" });
   }
 
+  seeContribution() {
+    this.setState( { currentPage: "contribution" });
+  }
+
   renderAboutMe() {
-    if(this.state.currentPage == "aboutMe") {
+    if(this.state.currentPage === "aboutMe") {
       return (<AboutMe locale={this.state.locale} />);
     }
   }
 
   renderResume() {
-    if(this.state.currentPage == "resume") {
+    if(this.state.currentPage === "resume") {
       return (<Resume locale={this.state.locale} />);
     }
   }
 
   renderStudentProjects() {
-    if(this.state.currentPage == "studentProjects") {
+    if(this.state.currentPage === "studentProjects") {
       return (<StudentProjects locale={this.state.locale} />);
     }
   }
 
   renderPersonnalProjects() {
-    if(this.state.currentPage == "personalProjects") {
+    if(this.state.currentPage === "personalProjects") {
       return (<PersonalProjects locale={this.state.locale} />);
+    }
+  }
+
+  renderContribution() {
+    if(this.state.currentPage === "contribution") {
+      return (<Contribution locale={this.state.locale} />);
     }
   }
 
@@ -90,7 +103,7 @@ class App extends React.Component {
                 <MenuItem eventKey={3.1} onClick={this.seeStudentProjects} >{t(locale, "index_student_project")}</MenuItem>
                 <MenuItem eventKey={3.2} onClick={this.seePersonalProjects}>{t(locale, "index_personal_project")}</MenuItem>
                 <MenuItem divider />
-                <MenuItem eventKey={3.3}>{t(locale, "index_contribution")}</MenuItem>
+                <MenuItem eventKey={3.3} onClick={this.seeContribution}>{t(locale, "index_contribution")}</MenuItem>
               </NavDropdown>
             </Nav>
             <Nav pullRight>
@@ -102,6 +115,7 @@ class App extends React.Component {
         {this.renderResume()}
         {this.renderStudentProjects()}
         {this.renderPersonnalProjects()}
+        {this.renderContribution()}
       </div>
     );
   }
