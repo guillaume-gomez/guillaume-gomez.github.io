@@ -54,7 +54,7 @@ const translations = {
     participation_project_LD34_title: "Ludum Dare 34",
     participation_project_LD34_subtitle: "Two Button Controls",
     participation_project_LD34_content: "J'ai participé à la gestion des ennemies(graphisme, mouvement, IA), qui avait été commencé. Malheureseument le projet n'a jamais été terminé.",
-    pparticipation_project_LD34_buttonText: "Lien vers le repo",
+    participation_project_LD34_buttonText: "Lien vers le repo",
     participation_project_LD34_href: "res/LD34.png",
     participation_project_LD34_githubUrl: "https://github.com/RMEx/LD34",
     personal_project_LD35_title: "Ludum Dare 35",
