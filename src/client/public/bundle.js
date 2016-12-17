@@ -75,6 +75,10 @@
 	
 	var _PersonalProjects2 = _interopRequireDefault(_PersonalProjects);
 	
+	var _Contribution = __webpack_require__(/*! ./Contribution.react */ 437);
+	
+	var _Contribution2 = _interopRequireDefault(_Contribution);
+	
 	var _Translations = __webpack_require__(/*! ./Translations */ 431);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -93,7 +97,7 @@
 	
 	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
 	
-	    ["renderNavBar", "renderAboutMe", "renderResume", "renderStudentProjects", "renderPersonnalProjects", "seeAboutMe", "seeResume", "seeStudentProjects", "seePersonalProjects"].forEach(function (item) {
+	    ["renderNavBar", "renderAboutMe", "renderResume", "renderStudentProjects", "renderPersonnalProjects", "renderContribution", "seeAboutMe", "seeResume", "seeStudentProjects", "seePersonalProjects", "seeContribution"].forEach(function (item) {
 	      _this[item] = _this[item].bind(_this);
 	    });
 	    _this.state = { currentPage: "home", locale: "fr" };
@@ -121,31 +125,43 @@
 	      this.setState({ currentPage: "personalProjects" });
 	    }
 	  }, {
+	    key: 'seeContribution',
+	    value: function seeContribution() {
+	      this.setState({ currentPage: "contribution" });
+	    }
+	  }, {
 	    key: 'renderAboutMe',
 	    value: function renderAboutMe() {
-	      if (this.state.currentPage == "aboutMe") {
+	      if (this.state.currentPage === "aboutMe") {
 	        return _react2.default.createElement(_AboutMe2.default, { locale: this.state.locale });
 	      }
 	    }
 	  }, {
 	    key: 'renderResume',
 	    value: function renderResume() {
-	      if (this.state.currentPage == "resume") {
+	      if (this.state.currentPage === "resume") {
 	        return _react2.default.createElement(_Resume2.default, { locale: this.state.locale });
 	      }
 	    }
 	  }, {
 	    key: 'renderStudentProjects',
 	    value: function renderStudentProjects() {
-	      if (this.state.currentPage == "studentProjects") {
+	      if (this.state.currentPage === "studentProjects") {
 	        return _react2.default.createElement(_StudentProjects2.default, { locale: this.state.locale });
 	      }
 	    }
 	  }, {
 	    key: 'renderPersonnalProjects',
 	    value: function renderPersonnalProjects() {
-	      if (this.state.currentPage == "personalProjects") {
+	      if (this.state.currentPage === "personalProjects") {
 	        return _react2.default.createElement(_PersonalProjects2.default, { locale: this.state.locale });
+	      }
+	    }
+	  }, {
+	    key: 'renderContribution',
+	    value: function renderContribution() {
+	      if (this.state.currentPage === "contribution") {
+	        return _react2.default.createElement(_Contribution2.default, { locale: this.state.locale });
 	      }
 	    }
 	  }, {
@@ -205,7 +221,7 @@
 	                _react2.default.createElement(_reactBootstrap.MenuItem, { divider: true }),
 	                _react2.default.createElement(
 	                  _reactBootstrap.MenuItem,
-	                  { eventKey: 3.3 },
+	                  { eventKey: 3.3, onClick: this.seeContribution },
 	                  (0, _Translations.t)(locale, "index_contribution")
 	                )
 	              )
@@ -224,7 +240,8 @@
 	        this.renderAboutMe(),
 	        this.renderResume(),
 	        this.renderStudentProjects(),
-	        this.renderPersonnalProjects()
+	        this.renderPersonnalProjects(),
+	        this.renderContribution()
 	      );
 	    }
 	  }, {
@@ -41877,6 +41894,7 @@
 	    index_contribution: "Contribution",
 	    student_project_title: "Projets Etudiants",
 	    personal_project_title: "Projets Personnels",
+	    contribution_title: "Contribution",
 	    student_project_rep_code_title: "Project étudiant de traitement d'images",
 	    student_project_rep_code_subtitle: "Librairie 2D de génération d'images",
 	    student_project_rep_code_content: "Premier project en dut traitant de traitement d'images. Le but ici était de se perfectionner sur l'apprentisage du C++(11) et de toucher des concepts du developpement 2D : la structure des données des images, les transformation de bases, réalisation d'algorithme de traitement simple. Bref un des premiers de mes travaux abouti dans mon cursus",
@@ -41896,7 +41914,7 @@
 	    student_project_nf29_href: "",
 	    student_project_nf29_githubUrl: "https://github.com/guillaume-gomez/NF29-XmlConverter"
 	
-	  }, _defineProperty(_fr, "student_project_nf29_title", "Redaction d'un convertiseur de MindMapping vers Hdoc"), _defineProperty(_fr, "student_project_nf29_subtitle", "Initiation à Ingénierie documentaire"), _defineProperty(_fr, "student_project_nf29_content", "Dans le cadre d'une U.V traitant de l'Ingénierie documentaire. Ce cours permettait de travailler sur des problématique de conversion de data pour centraliser, formaliser, et sauvegarder de l'information. Le convertiseur en question permet de transformer une mind map(carte heuristique) vers un format permettant de rédiger du contenu et de l'exporter dans différents format(doc, pdf, web, presentation, ...)"), _defineProperty(_fr, "student_project_nf29_buttonText", "Voir le repo"), _defineProperty(_fr, "student_project_nf29_href", ""), _defineProperty(_fr, "student_project_nf29_githubUrl", "https://github.com/guillaume-gomez/NF29-XmlConverter"), _defineProperty(_fr, "participation_project_LD34_title", ""), _defineProperty(_fr, "participation_project_LD34_subtitle", ""), _defineProperty(_fr, "participation_project_LD34_content", ""), _defineProperty(_fr, "pparticipation_project_LD34_buttonText", ""), _defineProperty(_fr, "participation_project_LD34_href", ""), _defineProperty(_fr, "participation_project_LD34_githubUrl", ""), _defineProperty(_fr, "personal_project_LD35_title", "Ludum Dare 35"), _defineProperty(_fr, "personal_project_LD35_subtitle", "Theme : Shapeshift"), _defineProperty(_fr, "personal_project_LD35_content", "Ma première participation au ludum dare, et ma dernière utilisation du moteur Jaws js. L'idée était de faire un jeu dans lequel la transformation physique du personnage aurait un impact sur le gameplay(gravité, colission, vitesse...)"), _defineProperty(_fr, "personal_project_LD35_buttonText", "Jouer"), _defineProperty(_fr, "personal_project_LD35_href", "https://raw.githubusercontent.com/guillaume-gomez/LD35/master/css/screen-shot.png"), _defineProperty(_fr, "personal_project_LD35_githubUrl", "https://guillaume-gomez.github.io/LD35"), _defineProperty(_fr, "personal_project_LD36_title", "Ludum Dare 36"), _defineProperty(_fr, "personal_project_LD36_subtitle", "Theme : Ancient Technology"), _defineProperty(_fr, "personal_project_LD36_content", "Ma seconde participation, et ma premiere avec Phaser. J'ai aussi ajouté une chaine de build pour coder en ES6. J'ai voulu traduire l'idée que la Technologie avance parfois tellement vite que l'on perd la connaissance d'outil qui ne sont pas si antique que ca. J'ai tenté de rendre hommage à certains outils issu des 80's"), _defineProperty(_fr, "personal_project_LD36_buttonText", "Jouer"), _defineProperty(_fr, "personal_project_LD36_href", "https://raw.githubusercontent.com/guillaume-gomez/LD36/master/preview.png"), _defineProperty(_fr, "personal_project_LD36_githubUrl", "https://guillaume-gomez.github.io/LD36"), _defineProperty(_fr, "personal_project_LD37_title", "Ludum Dare 37"), _defineProperty(_fr, "personal_project_LD37_subtitle", "Theme : One room"), _defineProperty(_fr, "personal_project_LD37_content", "Dernière participation de l'année 2016. Toujours en phaser avec une chaine de build pour coder en ES6. Le jeu genere un salle randomisé, les ennemies peuvent pousser les blocs de la salle mais pas le hero. Pour gagner le personnage doit soit sortir de la salle(en laissant entrer les enemies), soit tous les eliminer."), _defineProperty(_fr, "personal_project_LD37_buttonText", "Jouer (bientôt)"), _defineProperty(_fr, "personal_project_LD37_href", ""), _defineProperty(_fr, "personal_project_LD37_githubUrl", "https://guillaume-gomez.github.io/LD37"), _fr),
+	  }, _defineProperty(_fr, "student_project_nf29_title", "Redaction d'un convertiseur de MindMapping vers Hdoc"), _defineProperty(_fr, "student_project_nf29_subtitle", "Initiation à Ingénierie documentaire"), _defineProperty(_fr, "student_project_nf29_content", "Dans le cadre d'une U.V traitant de l'Ingénierie documentaire. Ce cours permettait de travailler sur des problématique de conversion de data pour centraliser, formaliser, et sauvegarder de l'information. Le convertiseur en question permet de transformer une mind map(carte heuristique) vers un format permettant de rédiger du contenu et de l'exporter dans différents format(doc, pdf, web, presentation, ...)"), _defineProperty(_fr, "student_project_nf29_buttonText", "Voir le repo"), _defineProperty(_fr, "student_project_nf29_href", ""), _defineProperty(_fr, "student_project_nf29_githubUrl", "https://github.com/guillaume-gomez/NF29-XmlConverter"), _defineProperty(_fr, "participation_project_LD34_title", "Ludum Dare 34"), _defineProperty(_fr, "participation_project_LD34_subtitle", "Two Button Controls"), _defineProperty(_fr, "participation_project_LD34_content", "J'ai participé à la gestion des ennemies(graphisme, mouvement, IA), qui avait été commencé. Malheureseument le projet n'a jamais été terminé."), _defineProperty(_fr, "participation_project_LD34_buttonText", "Lien vers le repo"), _defineProperty(_fr, "participation_project_LD34_href", "res/LD34.png"), _defineProperty(_fr, "participation_project_LD34_githubUrl", "https://github.com/RMEx/LD34"), _defineProperty(_fr, "personal_project_LD35_title", "Ludum Dare 35"), _defineProperty(_fr, "personal_project_LD35_subtitle", "Theme : Shapeshift"), _defineProperty(_fr, "personal_project_LD35_content", "Ma première participation au ludum dare, et ma dernière utilisation du moteur Jaws js. L'idée était de faire un jeu dans lequel la transformation physique du personnage aurait un impact sur le gameplay(gravité, colission, vitesse...)"), _defineProperty(_fr, "personal_project_LD35_buttonText", "Jouer"), _defineProperty(_fr, "personal_project_LD35_href", "https://raw.githubusercontent.com/guillaume-gomez/LD35/master/css/screen-shot.png"), _defineProperty(_fr, "personal_project_LD36_githubUrl", "https://guillaume-gomez.github.io/LD35"), _defineProperty(_fr, "personal_project_LD36_title", "Ludum Dare 36"), _defineProperty(_fr, "personal_project_LD36_subtitle", "Theme : Ancient Technology"), _defineProperty(_fr, "personal_project_LD36_content", "Ma seconde participation, et ma premiere avec Phaser. J'ai aussi ajouté une chaine de build pour coder en ES6. J'ai voulu traduire l'idée que la Technologie avance parfois tellement vite que l'on perd la connaissance d'outil qui ne sont pas si antique que ca. J'ai tenté de rendre hommage à certains outils issu des 80's"), _defineProperty(_fr, "personal_project_LD36_buttonText", "Jouer"), _defineProperty(_fr, "personal_project_LD36_href", "https://raw.githubusercontent.com/guillaume-gomez/LD36/master/preview.png"), _defineProperty(_fr, "personal_project_LD36_githubUrl", "https://guillaume-gomez.github.io/LD36"), _defineProperty(_fr, "personal_project_LD37_title", "Ludum Dare 37"), _defineProperty(_fr, "personal_project_LD37_subtitle", "Theme : One room"), _defineProperty(_fr, "personal_project_LD37_content", "Dernière participation de l'année 2016. Toujours en phaser avec une chaine de build pour coder en ES6. Le jeu genere une salle randomisé, les ennemies peuvent pousser les blocs de la salle mais pas le hero. Pour gagner le personnage doit soit sortir de la salle(en laissant entrer les enemies), soit tous les eliminer."), _defineProperty(_fr, "personal_project_LD37_buttonText", "Jouer (bientôt)"), _defineProperty(_fr, "personal_project_LD37_href", ""), _defineProperty(_fr, "personal_project_LD37_githubUrl", "https://guillaume-gomez.github.io/LD37"), _fr),
 	  "en": {
 	    a: "at",
 	    resume_title: "Resume",
@@ -41922,6 +41940,7 @@
 	    index_contribution: "Contribution",
 	    student_project_title: "Student Projects",
 	    personal_project_title: "Personal Projects",
+	    contribution_title: "Contribution",
 	    student_project_rep_code_title: "",
 	    student_project_rep_code_subtitle: "",
 	    student_project_rep_code_content: "",
@@ -42467,14 +42486,6 @@
 	        _ArticlesContainer2.default,
 	        { locale: locale, title: (0, _Translations.t)(locale, "student_project_title") },
 	        _react2.default.createElement(_Article2.default, {
-	          title: (0, _Translations.t)(locale, "student_project_rep_code_title"),
-	          subtitle: (0, _Translations.t)(locale, "student_project_rep_code_subtitle"),
-	          content: (0, _Translations.t)(locale, "student_project_rep_code_content"),
-	          buttonText: (0, _Translations.t)(locale, "student_project_rep_code_buttonText"),
-	          href: (0, _Translations.t)(locale, "student_project_rep_code_href"),
-	          githubUrl: (0, _Translations.t)(locale, "student_project_rep_code_githubUrl")
-	        }),
-	        _react2.default.createElement(_Article2.default, {
 	          title: (0, _Translations.t)(locale, "student_project_nf11_title"),
 	          subtitle: (0, _Translations.t)(locale, "student_project_nf11_subtitle"),
 	          content: (0, _Translations.t)(locale, "student_project_nf11_content"),
@@ -42489,6 +42500,14 @@
 	          buttonText: (0, _Translations.t)(locale, "student_project_nf29_buttonText"),
 	          href: (0, _Translations.t)(locale, "student_project_nf29_href"),
 	          githubUrl: (0, _Translations.t)(locale, "student_project_nf29_githubUrl")
+	        }),
+	        _react2.default.createElement(_Article2.default, {
+	          title: (0, _Translations.t)(locale, "student_project_rep_code_title"),
+	          subtitle: (0, _Translations.t)(locale, "student_project_rep_code_subtitle"),
+	          content: (0, _Translations.t)(locale, "student_project_rep_code_content"),
+	          buttonText: (0, _Translations.t)(locale, "student_project_rep_code_buttonText"),
+	          href: (0, _Translations.t)(locale, "student_project_rep_code_href"),
+	          githubUrl: (0, _Translations.t)(locale, "student_project_rep_code_githubUrl")
 	        })
 	      );
 	    }
@@ -42552,6 +42571,9 @@
 	    value: function renderPagination() {
 	      var children = this.props.children;
 	
+	      if (!Array.isArray(children)) {
+	        return null;
+	      }
 	      var nodes = children.map(function (child, index) {
 	        return _react2.default.createElement(
 	          "li",
@@ -42599,6 +42621,10 @@
 	    key: "renderChildren",
 	    value: function renderChildren() {
 	      var children = this.props.children;
+	
+	      if (!Array.isArray(children)) {
+	        return children;
+	      }
 	
 	      return children.map(function (child, index) {
 	        return _react2.default.createElement(
@@ -42704,7 +42730,7 @@
 	        _react2.default.createElement(
 	          "div",
 	          { className: "col-md-7" },
-	          _react2.default.createElement("img", { className: "image-responsive", src: href }),
+	          _react2.default.createElement("img", { className: "image-responsive", src: href, width: "650" }),
 	          _react2.default.createElement("a", { href: "#" })
 	        ),
 	        _react2.default.createElement(
@@ -42817,9 +42843,30 @@
 	      return _react2.default.createElement(
 	        _ArticlesContainer2.default,
 	        { locale: locale, title: (0, _Translations.t)(locale, "personal_project_title") },
-	        _react2.default.createElement(_Article2.default, null),
-	        _react2.default.createElement(_Article2.default, null),
-	        _react2.default.createElement(_Article2.default, null)
+	        _react2.default.createElement(_Article2.default, {
+	          title: (0, _Translations.t)(locale, "personal_project_LD35_title"),
+	          subtitle: (0, _Translations.t)(locale, "personal_project_LD35_subtitle"),
+	          content: (0, _Translations.t)(locale, "personal_project_LD35_content"),
+	          buttonText: (0, _Translations.t)(locale, "personal_project_LD35_buttonText"),
+	          href: (0, _Translations.t)(locale, "personal_project_LD35_href"),
+	          githubUrl: (0, _Translations.t)(locale, "personal_project_LD35_githubUrl")
+	        }),
+	        _react2.default.createElement(_Article2.default, {
+	          title: (0, _Translations.t)(locale, "personal_project_LD36_title"),
+	          subtitle: (0, _Translations.t)(locale, "personal_project_LD36_subtitle"),
+	          content: (0, _Translations.t)(locale, "personal_project_LD36_content"),
+	          buttonText: (0, _Translations.t)(locale, "personal_project_LD36_buttonText"),
+	          href: (0, _Translations.t)(locale, "personal_project_LD36_href"),
+	          githubUrl: (0, _Translations.t)(locale, "personal_project_LD36_githubUrl")
+	        }),
+	        _react2.default.createElement(_Article2.default, {
+	          title: (0, _Translations.t)(locale, "personal_project_LD37_title"),
+	          subtitle: (0, _Translations.t)(locale, "personal_project_LD37_subtitle"),
+	          content: (0, _Translations.t)(locale, "personal_project_LD37_content"),
+	          buttonText: (0, _Translations.t)(locale, "personal_project_LD37_buttonText"),
+	          href: (0, _Translations.t)(locale, "personal_project_LD37_href"),
+	          githubUrl: (0, _Translations.t)(locale, "personal_project_LD37_githubUrl")
+	        })
 	      );
 	    }
 	  }]);
@@ -42828,6 +42875,77 @@
 	}(_react2.default.Component);
 	
 	exports.default = PersonalProjects;
+
+/***/ },
+/* 437 */
+/*!**********************************************!*\
+  !*** ./src/client/app/Contribution.react.js ***!
+  \**********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _Translations = __webpack_require__(/*! ./Translations */ 431);
+	
+	var _ArticlesContainer = __webpack_require__(/*! ./ArticlesContainer.react */ 434);
+	
+	var _ArticlesContainer2 = _interopRequireDefault(_ArticlesContainer);
+	
+	var _Article = __webpack_require__(/*! ./Article.react */ 435);
+	
+	var _Article2 = _interopRequireDefault(_Article);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Contribution = function (_React$Component) {
+	  _inherits(Contribution, _React$Component);
+	
+	  function Contribution(props) {
+	    _classCallCheck(this, Contribution);
+	
+	    return _possibleConstructorReturn(this, (Contribution.__proto__ || Object.getPrototypeOf(Contribution)).call(this, props));
+	  }
+	
+	  _createClass(Contribution, [{
+	    key: "render",
+	    value: function render() {
+	      var locale = this.props.locale;
+	
+	      return _react2.default.createElement(
+	        _ArticlesContainer2.default,
+	        { locale: locale, title: (0, _Translations.t)(locale, "contribution_title") },
+	        _react2.default.createElement(_Article2.default, {
+	          title: (0, _Translations.t)(locale, "participation_project_LD34_title"),
+	          subtitle: (0, _Translations.t)(locale, "participation_project_LD34_subtitle"),
+	          content: (0, _Translations.t)(locale, "participation_project_LD34_content"),
+	          buttonText: (0, _Translations.t)(locale, "participation_project_LD34_buttonText"),
+	          href: (0, _Translations.t)(locale, "participation_project_LD34_href"),
+	          githubUrl: (0, _Translations.t)(locale, "participation_project_LD34_githubUrl")
+	        })
+	      );
+	    }
+	  }]);
+	
+	  return Contribution;
+	}(_react2.default.Component);
+	
+	exports.default = Contribution;
 
 /***/ }
 /******/ ]);

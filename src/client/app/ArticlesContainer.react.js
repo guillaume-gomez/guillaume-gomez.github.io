@@ -15,6 +15,9 @@ class ArticlesContainer extends React.Component {
 
   renderPagination(){
     const { children } = this.props;
+     if(!Array.isArray(children)) {
+      return null;
+    }
     const nodes = children.map((child, index) => {
       return (<li key={index}><a href="">{index+1}</a></li>);
     })
@@ -33,6 +36,10 @@ class ArticlesContainer extends React.Component {
 
   renderChildren() {
     const { children } = this.props;
+    if(!Array.isArray(children)) {
+      return children;
+    }
+
     return children.map((child, index) => {
       return (
         <span key={index}>
