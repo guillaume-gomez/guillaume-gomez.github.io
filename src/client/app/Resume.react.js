@@ -158,7 +158,7 @@ class Resume extends React.Component {
                   <img src={Path + "star_fill.svg"} height={StarSize}/>
                   <img src={Path + "star_fill.svg"} height={StarSize}/>
                   <img src={Path + "star_fill.svg"} height={StarSize}/>
-                  <img src={Path + "star_half.svg"} height={StarSize}/>
+                  <img src={Path + "star_empty.svg"} height={StarSize}/>
                   <img src={Path + "star_empty.svg"} height={StarSize}/>
                 </td>
               </tr>
@@ -167,8 +167,8 @@ class Resume extends React.Component {
                 <td>
                   <img src={Path + "star_fill.svg"} height={StarSize}/>
                   <img src={Path + "star_fill.svg"} height={StarSize}/>
-                  <img src={Path + "star_fill.svg"} height={StarSize}/>
                   <img src={Path + "star_half.svg"} height={StarSize}/>
+                  <img src={Path + "star_empty.svg"} height={StarSize}/>
                   <img src={Path + "star_empty.svg"} height={StarSize}/>
                 </td>
               </tr>
