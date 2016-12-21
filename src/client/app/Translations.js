@@ -61,7 +61,7 @@ const translations = {
     participation_project_camlCompiler_subtitle: "Compilateur d'ocaml en C++",
     participation_project_camlCompiler_content: "Ce projet étudiant est principalement programmé par Adrien Jarretier. Je suis intervenu sur le developpement de tests unitaires et intégration d'un hook pour lancer les tests à chaque pull request avec tracis.ci",
     participation_project_camlCompiler_buttonText: "Lien vers le repo",
-    participation_project_camlCompiler_href: "",
+    participation_project_camlCompiler_href: "https://www.lexifi.com/files/images/csml_winforms_client.jpg",
     participation_project_camlCompiler_githubUrl: "https://github.com/AdrienJarretier/CamlCompiler",
     personal_project_LD35_title: "Ludum Dare 35",
     personal_project_LD35_subtitle: "Theme : Shapeshift",
