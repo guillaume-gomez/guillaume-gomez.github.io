@@ -15,6 +15,14 @@ class PersonalProjects extends React.Component {
     return (
       <ArticlesContainer locale={locale} title={t(locale, "personal_project_title")}>
          <Article
+          title={t(locale, "personal_project_projet_math_title")}
+          subtitle={t(locale, "personal_project_projet_math_subtitle")}
+          content={t(locale, "personal_project_projet_math_content")}
+          buttonText={t(locale, "personal_project_projet_math_buttonText")}
+          href={t(locale, "personal_project_projet_math_href")}
+          githubUrl={t(locale, "personal_project_projet_math_githubUrl")}
+        />
+         <Article
           title={t(locale, "personal_project_LD35_title")}
           subtitle={t(locale, "personal_project_LD35_subtitle")}
           content={t(locale, "personal_project_LD35_content")}
