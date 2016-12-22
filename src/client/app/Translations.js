@@ -81,12 +81,12 @@ const translations = {
     personal_project_LD37_buttonText: "Jouer (bientôt)",
     personal_project_LD37_href: "",
     personal_project_LD37_githubUrl: "https://guillaume-gomez.github.io/LD37",
-    personal_project_projet_math_title: "Projet Math",
+    personal_project_projet_math_title: "Math game",
     personal_project_projet_math_subtitle: "Nom définitif à definir :)",
     personal_project_projet_math_content: "Le but était ici de faire un jeu vidéo basé sur l'utilisation de concepts mathématiques. Le tout en ajoutant des mécaniques de plateforme 2D. Ce projet est toujours en cours d'amélioration.",
     personal_project_projet_math_buttonText: "Voir le repo",
-    personal_project_projet_math_href: "",
-    personal_project_projet_math_githubUrl: "https://guillaume-gomez.github.io/LD37"
+    personal_project_projet_math_href: "https://raw.githubusercontent.com/guillaume-gomez/MathGame/master/resReadme/in-game3.png",
+    personal_project_projet_math_githubUrl: "https://guillaume-gomez.github.io/MathGame"
   },
   "en" : {
     a: "at",
