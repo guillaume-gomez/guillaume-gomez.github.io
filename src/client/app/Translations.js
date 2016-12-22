@@ -80,7 +80,13 @@ const translations = {
     personal_project_LD37_content: "Dernière participation de l'année 2016. Toujours en phaser avec une chaine de build pour coder en ES6. Le jeu genere une salle randomisé, les ennemies peuvent pousser les blocs de la salle mais pas le hero. Pour gagner le personnage doit soit sortir de la salle(en laissant entrer les enemies), soit tous les eliminer.",
     personal_project_LD37_buttonText: "Jouer (bientôt)",
     personal_project_LD37_href: "",
-    personal_project_LD37_githubUrl: "https://guillaume-gomez.github.io/LD37"
+    personal_project_LD37_githubUrl: "https://guillaume-gomez.github.io/LD37",
+    personal_project_projet_math_title: "Projet Math",
+    personal_project_projet_math_subtitle: "Nom définitif à definir :)",
+    personal_project_projet_math_content: "Le but était ici de faire un jeu vidéo basé sur l'utilisation de concepts mathématiques. Le tout en ajoutant des mécaniques de plateforme 2D. Ce projet est toujours en cours d'amélioration.",
+    personal_project_projet_math_buttonText: "Voir le repo",
+    personal_project_projet_math_href: "",
+    personal_project_projet_math_githubUrl: "https://guillaume-gomez.github.io/LD37"
   },
   "en" : {
     a: "at",
@@ -155,8 +161,13 @@ const translations = {
     personal_project_LD37_content: "",
     personal_project_LD37_buttonText: "",
     personal_project_LD37_href: "",
-    personal_project_LD37_githubUrl: ""
-
+    personal_project_LD37_githubUrl: "",
+    personal_project_projet_math_title: "",
+    personal_project_projet_math_subtitle: "",
+    personal_project_projet_math_content: "",
+    personal_project_projet_math_buttonText: "",
+    personal_project_projet_math_href: "",
+    personal_project_projet_math_githubUrl: ""
   }
 }
 
