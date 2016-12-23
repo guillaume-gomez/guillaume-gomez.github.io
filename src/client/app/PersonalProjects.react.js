@@ -21,6 +21,7 @@ class PersonalProjects extends React.Component {
           buttonText={t(locale, "personal_project_projet_math_buttonText")}
           href={t(locale, "personal_project_projet_math_href")}
           githubUrl={t(locale, "personal_project_projet_math_githubUrl")}
+          languages="C++, SFML, Thor"
         />
          <Article
           title={t(locale, "personal_project_LD35_title")}
@@ -29,6 +30,7 @@ class PersonalProjects extends React.Component {
           buttonText={t(locale, "personal_project_LD35_buttonText")}
           href={t(locale, "personal_project_LD35_href")}
           githubUrl={t(locale, "personal_project_LD35_githubUrl")}
+          languages="Javascript, Jaws Js"
         />
         <Article
           title={t(locale, "personal_project_LD36_title")}
@@ -37,6 +39,7 @@ class PersonalProjects extends React.Component {
           buttonText={t(locale, "personal_project_LD36_buttonText")}
           href={t(locale, "personal_project_LD36_href")}
           githubUrl={t(locale, "personal_project_LD36_githubUrl")}
+          languages="Javascript ES6, Phaser"
         />
         <Article
           title={t(locale, "personal_project_LD37_title")}
@@ -45,6 +48,7 @@ class PersonalProjects extends React.Component {
           buttonText={t(locale, "personal_project_LD37_buttonText")}
           href={t(locale, "personal_project_LD37_href")}
           githubUrl={t(locale, "personal_project_LD37_githubUrl")}
+          languages="Javascript ES6, Phaser"
         />
       </ArticlesContainer>
     );

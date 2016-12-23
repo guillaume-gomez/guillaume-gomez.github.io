@@ -21,6 +21,7 @@ class StudentProjects extends React.Component {
           buttonText={t(locale, "student_project_nf11_buttonText")}
           href={t(locale, "student_project_nf11_href")}
           githubUrl={t(locale, "student_project_nf11_githubUrl")}
+          languages="Java"
         />
         <Article
           title={t(locale, "student_project_nf29_title")}
@@ -29,6 +30,7 @@ class StudentProjects extends React.Component {
           buttonText={t(locale, "student_project_nf29_buttonText")}
           href={t(locale, "student_project_nf29_href")}
           githubUrl={t(locale, "student_project_nf29_githubUrl")}
+          languages="XSLT"
         />
         <Article
           title={t(locale, "student_project_rep_code_title")}
@@ -37,6 +39,7 @@ class StudentProjects extends React.Component {
           buttonText={t(locale, "student_project_rep_code_buttonText")}
           href={t(locale, "student_project_rep_code_href")}
           githubUrl={t(locale, "student_project_rep_code_githubUrl")}
+          languages="C++, Lib jpeg"
         />
       </ArticlesContainer>
     );
