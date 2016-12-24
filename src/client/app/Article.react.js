@@ -18,7 +18,7 @@ class Article extends React.Component {
           <h3> {title}</h3>
           <h4> {subtitle} </h4>
           <p>{content}</p>
-          <p><small>{languages}</small></p>
+          <p>Technologies : <small>{languages}</small></p>
           <a className="btn btn-primary" href={githubUrl}>
             {buttonText} 
             <span className="glyphicon glyphicon-chevron-right"></span>

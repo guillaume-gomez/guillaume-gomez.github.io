@@ -42772,6 +42772,7 @@
 	          _react2.default.createElement(
 	            "p",
 	            null,
+	            "Technologies : ",
 	            _react2.default.createElement(
 	              "small",
 	              null,
