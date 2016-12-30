@@ -21,7 +21,7 @@ class Contribution extends React.Component {
           buttonText={t(locale, "participation_project_camlCompiler_buttonText")}
           href={t(locale, "participation_project_camlCompiler_href")}
           githubUrl={t(locale, "participation_project_camlCompiler_githubUrl")}
-          languages="C++, Google Test"
+          languages="C++, Google Test, Travis ci"
         />
         <Article
           title={t(locale, "participation_project_LD34_title")}
