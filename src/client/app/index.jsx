@@ -29,7 +29,7 @@ class App extends React.Component {
     ].forEach(item => {
       this[item] = this[item].bind(this);
     });
-    this.state = { currentPage: "home", locale: "fr" };
+    this.state = { currentPage: "aboutMe", locale: "fr" };
   }
 
   seeAboutMe() {
@@ -89,21 +89,18 @@ class App extends React.Component {
         <Navbar inverse collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#">Guillaume Gomez</a>
+              <a href="#" onClick={this.seeAboutMe}>Guillaume Gomez</a>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav>
-              <NavItem eventKey={1} onClick={this.seeAboutMe}>
-                {t(locale, "index_about_me")}
-              </NavItem>
-              <NavItem eventKey={2} onClick={this.seeResume}>{t(locale, "index_resume")}</NavItem>
-              <NavDropdown eventKey={3} title={t(locale, "index_work")} id="basic-nav-dropdown">
-                <MenuItem eventKey={3.1} onClick={this.seeStudentProjects} >{t(locale, "index_student_project")}</MenuItem>
-                <MenuItem eventKey={3.2} onClick={this.seePersonalProjects}>{t(locale, "index_personal_project")}</MenuItem>
+              <NavItem eventKey={1} onClick={this.seeResume}>{t(locale, "index_resume")}</NavItem>
+              <NavDropdown eventKey={2} title={t(locale, "index_work")} id="basic-nav-dropdown">
+                <MenuItem eventKey={2.1} onClick={this.seeStudentProjects} >{t(locale, "index_student_project")}</MenuItem>
+                <MenuItem eventKey={2.2} onClick={this.seePersonalProjects}>{t(locale, "index_personal_project")}</MenuItem>
                 <MenuItem divider />
-                <MenuItem eventKey={3.3} onClick={this.seeContribution}>{t(locale, "index_contribution")}</MenuItem>
+                <MenuItem eventKey={2.3} onClick={this.seeContribution}>{t(locale, "index_contribution")}</MenuItem>
               </NavDropdown>
             </Nav>
             <Nav pullRight>

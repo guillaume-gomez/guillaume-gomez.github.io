@@ -100,7 +100,7 @@
 	    ["renderNavBar", "renderAboutMe", "renderResume", "renderStudentProjects", "renderPersonnalProjects", "renderContribution", "seeAboutMe", "seeResume", "seeStudentProjects", "seePersonalProjects", "seeContribution"].forEach(function (item) {
 	      _this[item] = _this[item].bind(_this);
 	    });
-	    _this.state = { currentPage: "home", locale: "fr" };
+	    _this.state = { currentPage: "aboutMe", locale: "fr" };
 	    return _this;
 	  }
 	
@@ -183,7 +183,7 @@
 	              null,
 	              _react2.default.createElement(
 	                'a',
-	                { href: '#' },
+	                { href: '#', onClick: this.seeAboutMe },
 	                'Guillaume Gomez'
 	              )
 	            ),
@@ -197,31 +197,26 @@
 	              null,
 	              _react2.default.createElement(
 	                _reactBootstrap.NavItem,
-	                { eventKey: 1, onClick: this.seeAboutMe },
-	                (0, _Translations.t)(locale, "index_about_me")
-	              ),
-	              _react2.default.createElement(
-	                _reactBootstrap.NavItem,
-	                { eventKey: 2, onClick: this.seeResume },
+	                { eventKey: 1, onClick: this.seeResume },
 	                (0, _Translations.t)(locale, "index_resume")
 	              ),
 	              _react2.default.createElement(
 	                _reactBootstrap.NavDropdown,
-	                { eventKey: 3, title: (0, _Translations.t)(locale, "index_work"), id: 'basic-nav-dropdown' },
+	                { eventKey: 2, title: (0, _Translations.t)(locale, "index_work"), id: 'basic-nav-dropdown' },
 	                _react2.default.createElement(
 	                  _reactBootstrap.MenuItem,
-	                  { eventKey: 3.1, onClick: this.seeStudentProjects },
+	                  { eventKey: 2.1, onClick: this.seeStudentProjects },
 	                  (0, _Translations.t)(locale, "index_student_project")
 	                ),
 	                _react2.default.createElement(
 	                  _reactBootstrap.MenuItem,
-	                  { eventKey: 3.2, onClick: this.seePersonalProjects },
+	                  { eventKey: 2.2, onClick: this.seePersonalProjects },
 	                  (0, _Translations.t)(locale, "index_personal_project")
 	                ),
 	                _react2.default.createElement(_reactBootstrap.MenuItem, { divider: true }),
 	                _react2.default.createElement(
 	                  _reactBootstrap.MenuItem,
-	                  { eventKey: 3.3, onClick: this.seeContribution },
+	                  { eventKey: 2.3, onClick: this.seeContribution },
 	                  (0, _Translations.t)(locale, "index_contribution")
 	                )
 	              )
