@@ -16,7 +16,7 @@ const translations = {
     resume_bac: "Baccalauréat scientifique",
     resume_programming: "Programmation",
     about_me_title: "Quelques mots",
-    about_me_content: "Developpeur depuis environ 10 ans; j'ai codé mes premieres lignes de code en C, pour ensuite decouvrir beaucoup d'autres langages que ce soit à travers mon cursus universitaire ou professionel. Je conçois des outils pour repondre aux besoins des utilisateurs. Passioné par l'aspect creatif que peut être l'informatique, j'essaye à travers des projets personnels d'entrevoir d'autres technologies ainsi que d'autres algorithmes. Je suis par ailleurs un dingue de sport. Idem pour ma musique avec lequel je partage une grande partie de ma vie(au travail, sur le chemin du travail, entre deux seances de sport...). Je laisse donc en lien mon compte senscritque pour parler musique ou autres; en plus des classique github et linkedin :)",
+    about_me_content: "Developpeur depuis environ 10 ans; j'ai codé mes premieres lignes de code en C, pour ensuite découvrir beaucoup d'autres langages que ce soit à travers mon cursus universitaire ou professionel. Je conçois des outils pour répondre aux besoins des utilisateurs. Passioné par l'aspect creatif que peut être l'informatique, j'essaye à travers des projets personnels d'entrevoir d'autres technologies ainsi que d'autres algorithmes. Je suis par ailleurs un dingue de sport. Idem pour ma musique avec lequel je partage une grande partie de ma vie(au travail, sur le chemin du travail, entre deux seances de sport...). Je laisse donc en lien mon compte senscritque pour parler musique ou autres; en plus des classique github et linkedin :)",
     index_about_me: "A propos",
     index_resume: "CV",
     index_work:"Mes travaux",
