@@ -18,6 +18,11 @@ class AboutMe extends React.Component {
           <div className="about-me-text-primary-color w3-padding-xxlarge">
             <p>{t(locale, "about_me_content")}</p>
           </div>
+          <div>
+            <a href="https://github.com/guillaume-gomez"><i className="fa fa-github-square fa-2x" aria-hidden="true" style={{padding: 3}}></i></a>
+            <a href="https://www.linkedin.com/in/guillaume-gomez-252a14a3"><i className="fa fa-linkedin-square fa-2x" aria-hidden="true" style={{padding: 3}}></i></a>
+            <a href="http://www.senscritique.com/musirama"><img src="res/sc-logo.jpg" width="32" style={{padding: 3, marginTop: -18}}></img></a>
+          </div>
         </div>
       </div>
     )

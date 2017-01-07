@@ -41833,6 +41833,25 @@
 	              null,
 	              (0, _Translations.t)(locale, "about_me_content")
 	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement(
+	              "a",
+	              { href: "https://github.com/guillaume-gomez" },
+	              _react2.default.createElement("i", { className: "fa fa-github-square fa-2x", "aria-hidden": "true", style: { padding: 3 } })
+	            ),
+	            _react2.default.createElement(
+	              "a",
+	              { href: "https://www.linkedin.com/in/guillaume-gomez-252a14a3" },
+	              _react2.default.createElement("i", { className: "fa fa-linkedin-square fa-2x", "aria-hidden": "true", style: { padding: 3 } })
+	            ),
+	            _react2.default.createElement(
+	              "a",
+	              { href: "http://www.senscritique.com/musirama" },
+	              _react2.default.createElement("img", { src: "res/sc-logo.jpg", width: "32", style: { padding: 3, marginTop: -18 } })
+	            )
 	          )
 	        )
 	      );
@@ -41880,7 +41899,7 @@
 	    resume_bac: "Baccalauréat scientifique",
 	    resume_programming: "Programmation",
 	    about_me_title: "Quelques mots",
-	    about_me_content: "Developpeur depuis environ 10 ans; j'ai codé mes premieres lignes de code en C, pour ensuite decouvrir beaucoup d'autres langages que ce soit à travers mon cursus universitaire ou professionel. Je conçois des outils pour repondre aux besoins des utilisateurs. Passioné par l'aspect creatif que peut être l'informatique, j'essaye à travers des projets personnels d'entrevoir d'autres technologies ainsi que d'autres algorithmes. Je suis par ailleurs un dingue de sport. Idem pour ma musique avec lequel je partage une grande partie de ma vie(au travail, sur le chemin du travail, entre deux seances de sport...). Je laisse donc en lien mon compte senscritque pour parler musique ou autres; en plus des classique github et linkedin :)",
+	    about_me_content: "Developpeur depuis environ 10 ans; j'ai codé mes premieres lignes de code en C, pour ensuite découvrir beaucoup d'autres langages que ce soit à travers mon cursus universitaire ou professionel. Je conçois des outils pour répondre aux besoins des utilisateurs. Passioné par l'aspect creatif que peut être l'informatique, j'essaye à travers des projets personnels d'entrevoir d'autres technologies ainsi que d'autres algorithmes. Je suis par ailleurs un dingue de sport. Idem pour ma musique avec lequel je partage une grande partie de ma vie(au travail, sur le chemin du travail, entre deux seances de sport...). Je laisse donc en lien mon compte senscritque pour parler musique ou autres; en plus des classique github et linkedin :)",
 	    index_about_me: "A propos",
 	    index_resume: "CV",
 	    index_work: "Mes travaux",
@@ -41931,7 +41950,7 @@
 	    personal_project_LD36_content: "Ma seconde participation, et ma premiere avec Phaser. J'ai aussi ajouté une chaine de build pour coder en ES6. J'ai voulu traduire l'idée que la Technologie avance parfois tellement vite que l'on perd la connaissance d'outil qui ne sont pas si antique que ca. J'ai tenté de rendre hommage à certains outils issu des 80's",
 	    personal_project_LD36_buttonText: "Jouer",
 	    personal_project_LD36_href: "https://raw.githubusercontent.com/guillaume-gomez/LD36/master/preview.png"
-	  }, _defineProperty(_fr, "personal_project_LD36_githubUrl", "https://guillaume-gomez.github.io/LD36"), _defineProperty(_fr, "personal_project_LD37_title", "Ludum Dare 37"), _defineProperty(_fr, "personal_project_LD37_subtitle", "Theme : One room"), _defineProperty(_fr, "personal_project_LD37_content", "Dernière participation de l'année 2016. Toujours en phaser avec une chaine de build pour coder en ES6. Le jeu genere une salle randomisé, les ennemies peuvent pousser les blocs de la salle mais pas le hero. Pour gagner le personnage doit soit sortir de la salle(en laissant entrer les enemies), soit tous les eliminer."), _defineProperty(_fr, "personal_project_LD37_buttonText", "Jouer (bientôt)"), _defineProperty(_fr, "personal_project_LD37_href", ""), _defineProperty(_fr, "personal_project_LD37_githubUrl", "https://guillaume-gomez.github.io/LD37"), _defineProperty(_fr, "personal_project_projet_math_title", "Math game"), _defineProperty(_fr, "personal_project_projet_math_subtitle", "Nom définitif à definir :)"), _defineProperty(_fr, "personal_project_projet_math_content", "Le but était ici de faire un jeu vidéo basé sur l'utilisation de concepts mathématiques. Le tout en ajoutant des mécaniques de plateforme 2D. Ce projet est toujours en cours d'amélioration."), _defineProperty(_fr, "personal_project_projet_math_buttonText", "Voir le repo"), _defineProperty(_fr, "personal_project_projet_math_href", "https://raw.githubusercontent.com/guillaume-gomez/MathGame/master/resReadme/in-game3.png"), _defineProperty(_fr, "personal_project_projet_math_githubUrl", "https://guillaume-gomez.github.io/MathGame"), _fr),
+	  }, _defineProperty(_fr, "personal_project_LD36_githubUrl", "https://guillaume-gomez.github.io/LD36"), _defineProperty(_fr, "personal_project_LD37_title", "Ludum Dare 37"), _defineProperty(_fr, "personal_project_LD37_subtitle", "Theme : One room"), _defineProperty(_fr, "personal_project_LD37_content", "Dernière participation de l'année 2016. Toujours en phaser avec une chaine de build pour coder en ES6. Le jeu genere une salle randomisé, les ennemies peuvent pousser les blocs de la salle mais pas le hero. Pour gagner le personnage doit soit sortir de la salle(en laissant entrer les enemies), soit tous les eliminer."), _defineProperty(_fr, "personal_project_LD37_buttonText", "Jouer"), _defineProperty(_fr, "personal_project_LD37_href", "https://raw.githubusercontent.com/guillaume-gomez/LD37/master/preview.png"), _defineProperty(_fr, "personal_project_LD37_githubUrl", "https://guillaume-gomez.github.io/LD37"), _defineProperty(_fr, "personal_project_projet_math_title", "Math game"), _defineProperty(_fr, "personal_project_projet_math_subtitle", "Nom définitif à definir :)"), _defineProperty(_fr, "personal_project_projet_math_content", "Le but était ici de faire un jeu vidéo basé sur l'utilisation de concepts mathématiques. Le tout en ajoutant des mécaniques de plateforme 2D. Ce projet est toujours en cours d'amélioration."), _defineProperty(_fr, "personal_project_projet_math_buttonText", "Voir le repo"), _defineProperty(_fr, "personal_project_projet_math_href", "https://raw.githubusercontent.com/guillaume-gomez/MathGame/master/resReadme/in-game3.png"), _defineProperty(_fr, "personal_project_projet_math_githubUrl", "https://guillaume-gomez.github.io/MathGame"), _fr),
 	  "en": (_en = {
 	    a: "at",
 	    resume_title: "Resume",
