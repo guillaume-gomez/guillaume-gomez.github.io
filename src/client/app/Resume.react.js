@@ -90,8 +90,8 @@ class Resume extends React.Component {
               <h4>
                 {t(locale, "resume_programming")}
               </h4>
-                <div className="w3-container w3-responsive">
-                <table className="w3-table col-md-6 col-md-offset-3">
+                <div className="container w3-responsive">
+                <table className="w3-table col-md-6">
                   <tr className="resume-light-primary-color">
                     <td className="resume-text-primary-color">C++</td>
                     <td>

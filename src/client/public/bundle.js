@@ -42294,10 +42294,10 @@
 	              ),
 	              _react2.default.createElement(
 	                "div",
-	                { className: "w3-container w3-responsive" },
+	                { className: "container w3-responsive" },
 	                _react2.default.createElement(
 	                  "table",
-	                  { className: "w3-table col-md-6 col-md-offset-3" },
+	                  { className: "w3-table col-md-6" },
 	                  _react2.default.createElement(
 	                    "tr",
 	                    { className: "resume-light-primary-color" },
