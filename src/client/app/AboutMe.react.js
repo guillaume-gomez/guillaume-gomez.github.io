@@ -19,9 +19,9 @@ class AboutMe extends React.Component {
             <p>{t(locale, "about_me_content")}</p>
           </div>
           <div>
-            <a href="https://github.com/guillaume-gomez"><i className="fa fa-github-square fa-2x" aria-hidden="true" style={{padding: 3}}></i></a>
-            <a href="https://www.linkedin.com/in/guillaume-gomez-252a14a3"><i className="fa fa-linkedin-square fa-2x" aria-hidden="true" style={{padding: 3}}></i></a>
-            <a href="http://www.senscritique.com/musirama"><img src="res/sc-logo.jpg" width="32" style={{padding: 3, marginTop: -18}}></img></a>
+            <a href="https://github.com/guillaume-gomez"><img src="res/github-logo.png" width="40"style={{padding: 3}}></img></a>
+            <a href="https://www.linkedin.com/in/guillaume-gomez-252a14a3"><img src="res/linkedin-logo.png" width="40" style={{padding: 3}}></img></a>
+            <a href="http://www.senscritique.com/musirama"><img src="res/sc-logo.jpg" width="40" style={{padding: 3}}></img></a>
           </div>
         </div>
       </div>
