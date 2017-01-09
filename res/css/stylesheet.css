@@ -366,3 +366,24 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .resume-secondary-text-color  { color: #757575; }
 .resume-divider-color         { border-color: #BDBDBD; }
 
+
+a.darken {
+    display: inline-block;
+    
+    padding: 0;
+}
+
+a.darken img {
+    display: block;
+
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+a.darken:hover img {
+    opacity: 0.6;
+
+}
