@@ -357,15 +357,25 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .about-me-divider-color         { border-color: #BDBDBD; }
 
 
-.resume-dark-primary-color    { background: #303F9F; }
-.resume-default-primary-color { background: #3F51B5; }
-.resume-light-primary-color   { background: #b3b8d6; }
+.resume-dark-primary-color    { background: #673ab7; }
+.resume-default-primary-color { background: #7e57c2; }
+.resume-light-primary-color   { background: #b39ddb; }
 .resume-text-primary-color    { color: #FFFFFF; }
 .resume-accent-color          { background: #7c4dff; }
 .resume-primary-text-color    { color: #212121; }
 .resume-secondary-text-color  { color: #757575; }
 .resume-divider-color         { border-color: #BDBDBD; }
 
+.work-background              { background: #eceff1; }
+
+hr.work { 
+	display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
 
 a.darken {
     display: inline-block;

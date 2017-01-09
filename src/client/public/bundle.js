@@ -220,15 +220,6 @@
 	                  (0, _Translations.t)(locale, "index_contribution")
 	                )
 	              )
-	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.Nav,
-	              { pullRight: true },
-	              _react2.default.createElement(
-	                _reactBootstrap.NavItem,
-	                { eventKey: 1, href: '#' },
-	                'Contact'
-	              )
 	            )
 	          )
 	        ),
@@ -42668,7 +42659,7 @@
 	          "span",
 	          { key: index },
 	          child,
-	          _react2.default.createElement("hr", null)
+	          _react2.default.createElement("hr", { className: "work" })
 	        );
 	      });
 	    }
@@ -42682,7 +42673,7 @@
 	
 	      return _react2.default.createElement(
 	        "div",
-	        { className: "container" },
+	        { className: "w3-container work-background" },
 	        _react2.default.createElement(
 	          "div",
 	          { className: "row" },

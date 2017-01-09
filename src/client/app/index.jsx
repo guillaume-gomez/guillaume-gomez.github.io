@@ -103,9 +103,6 @@ class App extends React.Component {
                 <MenuItem eventKey={2.3} onClick={this.seeContribution}>{t(locale, "index_contribution")}</MenuItem>
               </NavDropdown>
             </Nav>
-            <Nav pullRight>
-              <NavItem eventKey={1} href="#">Contact</NavItem>
-            </Nav>
           </Navbar.Collapse>
         </Navbar>
         {this.renderAboutMe()}

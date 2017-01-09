@@ -44,7 +44,7 @@ class ArticlesContainer extends React.Component {
       return (
         <span key={index}>
           {child}
-          <hr/>
+          <hr className="work"></hr>
         </span>
       );
     });
@@ -53,7 +53,7 @@ class ArticlesContainer extends React.Component {
   render () {
     const { locale, title, children } = this.props;
     return (
-      <div className="container">
+      <div className="w3-container work-background">
         <div className="row">
           <div className="col-md-12">
             <h1 className="page-header">{title}</h1>
