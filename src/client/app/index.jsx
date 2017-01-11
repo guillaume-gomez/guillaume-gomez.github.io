@@ -86,7 +86,7 @@ class App extends React.Component {
     const { locale } = this.state;
     return (
       <div>
-        <Navbar inverse collapseOnSelect>
+        <Navbar inverse collapseOnSelect className="navbar-static-top">
           <Navbar.Header>
             <Navbar.Brand>
               <a href="#" onClick={this.seeAboutMe}>Guillaume Gomez</a>
