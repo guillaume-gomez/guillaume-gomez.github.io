@@ -174,7 +174,7 @@
 	        null,
 	        _react2.default.createElement(
 	          _reactBootstrap.Navbar,
-	          { inverse: true, collapseOnSelect: true },
+	          { inverse: true, collapseOnSelect: true, className: 'navbar-static-top' },
 	          _react2.default.createElement(
 	            _reactBootstrap.Navbar.Header,
 	            null,
