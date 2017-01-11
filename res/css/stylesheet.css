@@ -357,11 +357,11 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .about-me-divider-color         { border-color: #BDBDBD; }
 
 
-.resume-dark-primary-color    { background: #673ab7; }
-.resume-default-primary-color { background: #7e57c2; }
-.resume-light-primary-color   { background: #b39ddb; }
+.resume-dark-primary-color    { background: #42a5f5; }
+.resume-default-primary-color { background: #64b5f6; }
+.resume-light-primary-color   { background: #90caf9; }
 .resume-text-primary-color    { color: #FFFFFF; }
-.resume-accent-color          { background: #7c4dff; }
+.resume-accent-color          { background: #1e88e5; }
 .resume-primary-text-color    { color: #212121; }
 .resume-secondary-text-color  { color: #757575; }
 .resume-divider-color         { border-color: #BDBDBD; }
