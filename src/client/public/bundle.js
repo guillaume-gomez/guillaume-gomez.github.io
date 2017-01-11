@@ -42898,22 +42898,13 @@
 	        _ArticlesContainer2.default,
 	        { locale: locale, title: (0, _Translations.t)(locale, "personal_project_title") },
 	        _react2.default.createElement(_Article2.default, {
-	          title: (0, _Translations.t)(locale, "personal_project_projet_math_title"),
-	          subtitle: (0, _Translations.t)(locale, "personal_project_projet_math_subtitle"),
-	          content: (0, _Translations.t)(locale, "personal_project_projet_math_content"),
-	          buttonText: (0, _Translations.t)(locale, "personal_project_projet_math_buttonText"),
-	          href: (0, _Translations.t)(locale, "personal_project_projet_math_href"),
-	          githubUrl: (0, _Translations.t)(locale, "personal_project_projet_math_githubUrl"),
-	          languages: "C++, SFML, Thor"
-	        }),
-	        _react2.default.createElement(_Article2.default, {
-	          title: (0, _Translations.t)(locale, "personal_project_LD35_title"),
-	          subtitle: (0, _Translations.t)(locale, "personal_project_LD35_subtitle"),
-	          content: (0, _Translations.t)(locale, "personal_project_LD35_content"),
-	          buttonText: (0, _Translations.t)(locale, "personal_project_LD35_buttonText"),
-	          href: (0, _Translations.t)(locale, "personal_project_LD35_href"),
-	          githubUrl: (0, _Translations.t)(locale, "personal_project_LD35_githubUrl"),
-	          languages: "Javascript, Jaws Js"
+	          title: (0, _Translations.t)(locale, "personal_project_LD37_title"),
+	          subtitle: (0, _Translations.t)(locale, "personal_project_LD37_subtitle"),
+	          content: (0, _Translations.t)(locale, "personal_project_LD37_content"),
+	          buttonText: (0, _Translations.t)(locale, "personal_project_LD37_buttonText"),
+	          href: (0, _Translations.t)(locale, "personal_project_LD37_href"),
+	          githubUrl: (0, _Translations.t)(locale, "personal_project_LD37_githubUrl"),
+	          languages: "Javascript ES6, Phaser"
 	        }),
 	        _react2.default.createElement(_Article2.default, {
 	          title: (0, _Translations.t)(locale, "personal_project_LD36_title"),
@@ -42925,13 +42916,22 @@
 	          languages: "Javascript ES6, Phaser"
 	        }),
 	        _react2.default.createElement(_Article2.default, {
-	          title: (0, _Translations.t)(locale, "personal_project_LD37_title"),
-	          subtitle: (0, _Translations.t)(locale, "personal_project_LD37_subtitle"),
-	          content: (0, _Translations.t)(locale, "personal_project_LD37_content"),
-	          buttonText: (0, _Translations.t)(locale, "personal_project_LD37_buttonText"),
-	          href: (0, _Translations.t)(locale, "personal_project_LD37_href"),
-	          githubUrl: (0, _Translations.t)(locale, "personal_project_LD37_githubUrl"),
-	          languages: "Javascript ES6, Phaser"
+	          title: (0, _Translations.t)(locale, "personal_project_LD35_title"),
+	          subtitle: (0, _Translations.t)(locale, "personal_project_LD35_subtitle"),
+	          content: (0, _Translations.t)(locale, "personal_project_LD35_content"),
+	          buttonText: (0, _Translations.t)(locale, "personal_project_LD35_buttonText"),
+	          href: (0, _Translations.t)(locale, "personal_project_LD35_href"),
+	          githubUrl: (0, _Translations.t)(locale, "personal_project_LD35_githubUrl"),
+	          languages: "Javascript, Jaws Js"
+	        }),
+	        _react2.default.createElement(_Article2.default, {
+	          title: (0, _Translations.t)(locale, "personal_project_projet_math_title"),
+	          subtitle: (0, _Translations.t)(locale, "personal_project_projet_math_subtitle"),
+	          content: (0, _Translations.t)(locale, "personal_project_projet_math_content"),
+	          buttonText: (0, _Translations.t)(locale, "personal_project_projet_math_buttonText"),
+	          href: (0, _Translations.t)(locale, "personal_project_projet_math_href"),
+	          githubUrl: (0, _Translations.t)(locale, "personal_project_projet_math_githubUrl"),
+	          languages: "C++, SFML, Thor"
 	        })
 	      );
 	    }

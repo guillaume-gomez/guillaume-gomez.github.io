@@ -14,23 +14,14 @@ class PersonalProjects extends React.Component {
     const { locale } = this.props;
     return (
       <ArticlesContainer locale={locale} title={t(locale, "personal_project_title")}>
-         <Article
-          title={t(locale, "personal_project_projet_math_title")}
-          subtitle={t(locale, "personal_project_projet_math_subtitle")}
-          content={t(locale, "personal_project_projet_math_content")}
-          buttonText={t(locale, "personal_project_projet_math_buttonText")}
-          href={t(locale, "personal_project_projet_math_href")}
-          githubUrl={t(locale, "personal_project_projet_math_githubUrl")}
-          languages="C++, SFML, Thor"
-        />
-         <Article
-          title={t(locale, "personal_project_LD35_title")}
-          subtitle={t(locale, "personal_project_LD35_subtitle")}
-          content={t(locale, "personal_project_LD35_content")}
-          buttonText={t(locale, "personal_project_LD35_buttonText")}
-          href={t(locale, "personal_project_LD35_href")}
-          githubUrl={t(locale, "personal_project_LD35_githubUrl")}
-          languages="Javascript, Jaws Js"
+        <Article
+          title={t(locale, "personal_project_LD37_title")}
+          subtitle={t(locale, "personal_project_LD37_subtitle")}
+          content={t(locale, "personal_project_LD37_content")}
+          buttonText={t(locale, "personal_project_LD37_buttonText")}
+          href={t(locale, "personal_project_LD37_href")}
+          githubUrl={t(locale, "personal_project_LD37_githubUrl")}
+          languages="Javascript ES6, Phaser"
         />
         <Article
           title={t(locale, "personal_project_LD36_title")}
@@ -42,13 +33,22 @@ class PersonalProjects extends React.Component {
           languages="Javascript ES6, Phaser"
         />
         <Article
-          title={t(locale, "personal_project_LD37_title")}
-          subtitle={t(locale, "personal_project_LD37_subtitle")}
-          content={t(locale, "personal_project_LD37_content")}
-          buttonText={t(locale, "personal_project_LD37_buttonText")}
-          href={t(locale, "personal_project_LD37_href")}
-          githubUrl={t(locale, "personal_project_LD37_githubUrl")}
-          languages="Javascript ES6, Phaser"
+          title={t(locale, "personal_project_LD35_title")}
+          subtitle={t(locale, "personal_project_LD35_subtitle")}
+          content={t(locale, "personal_project_LD35_content")}
+          buttonText={t(locale, "personal_project_LD35_buttonText")}
+          href={t(locale, "personal_project_LD35_href")}
+          githubUrl={t(locale, "personal_project_LD35_githubUrl")}
+          languages="Javascript, Jaws Js"
+        />
+        <Article
+          title={t(locale, "personal_project_projet_math_title")}
+          subtitle={t(locale, "personal_project_projet_math_subtitle")}
+          content={t(locale, "personal_project_projet_math_content")}
+          buttonText={t(locale, "personal_project_projet_math_buttonText")}
+          href={t(locale, "personal_project_projet_math_href")}
+          githubUrl={t(locale, "personal_project_projet_math_githubUrl")}
+          languages="C++, SFML, Thor"
         />
       </ArticlesContainer>
     );
