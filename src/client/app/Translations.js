@@ -3,7 +3,7 @@ const translations = {
   "fr" : {
     at: "à",
     resume_title: "Curriculum Vitae",
-    resume_sub_title: "Un court extrait de mon CV",
+    resume_sub_title: "Expérience professionelle",
     resume_download_resume: "Télécharger mon CV complet",
     resume_array_title: "Titre",
     resume_array_year: "Année",
