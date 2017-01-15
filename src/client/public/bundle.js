@@ -41969,7 +41969,14 @@
 	    personal_project_node_race_content: "L'objectif de ce projet était principalement instructif. L'idée etait donc de developper en NodeJs une application web dynamique. A travers le concept de jeu, ce projet a permis d'entrevoir les problématiques de base des jeux en ligne(synchronisation, optimisation des messages, prédiction des données...",
 	    personal_project_node_race_buttonText: "Voir le repo",
 	    personal_project_node_race_href: "https://raw.githubusercontent.com/guillaume-gomez/NodeRace/master/preview.png",
-	    personal_project_node_race_githubUrl: "https://github.com/guillaume-gomez/NodeRace"
+	    personal_project_node_race_githubUrl: "https://github.com/guillaume-gomez/NodeRace",
+	
+	    personal_project_path_tracer_title: "PathTracer",
+	    personal_project_path_tracer_subtitle: "un path tracer en Golang",
+	    personal_project_path_tracer_content: "Je voulais réaliser un ray traceur lorsque j'étais étudiant. Je voulais aussi découvrir le Golang. J'ai donc décidé de réaliser un traceur en Golang en m'inspirant d'un blog. Le projet est toujours en cours, et mon objectif est d'ajouter d'autres primitives.",
+	    personal_project_path_tracer_buttonText: "Voir le repo",
+	    personal_project_path_tracer_href: "https://raw.githubusercontent.com/guillaume-gomez/pathTracer-golang/master/preview.png",
+	    personal_project_path_tracer_githubUrl: "https://github.com/guillaume-gomez/pathTracer-golang"
 	  },
 	  "en": (_en = {
 	    a: "at",
@@ -42930,6 +42937,15 @@
 	          href: (0, _Translations.t)(locale, "personal_project_LD36_href"),
 	          githubUrl: (0, _Translations.t)(locale, "personal_project_LD36_githubUrl"),
 	          languages: "Javascript ES6, Phaser"
+	        }),
+	        _react2.default.createElement(_Article2.default, {
+	          title: (0, _Translations.t)(locale, "personal_project_path_tracer_title"),
+	          subtitle: (0, _Translations.t)(locale, "personal_project_path_tracer_subtitle"),
+	          content: (0, _Translations.t)(locale, "personal_project_path_tracer_content"),
+	          buttonText: (0, _Translations.t)(locale, "personal_project_path_tracer_buttonText"),
+	          href: (0, _Translations.t)(locale, "personal_project_path_tracer_href"),
+	          githubUrl: (0, _Translations.t)(locale, "personal_project_path_tracer_githubUrl"),
+	          languages: "Golang"
 	        }),
 	        _react2.default.createElement(_Article2.default, {
 	          title: (0, _Translations.t)(locale, "personal_project_LD35_title"),

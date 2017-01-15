@@ -33,6 +33,15 @@ class PersonalProjects extends React.Component {
           languages="Javascript ES6, Phaser"
         />
         <Article
+          title={t(locale, "personal_project_path_tracer_title")}
+          subtitle={t(locale, "personal_project_path_tracer_subtitle")}
+          content={t(locale, "personal_project_path_tracer_content")}
+          buttonText={t(locale, "personal_project_path_tracer_buttonText")}
+          href={t(locale, "personal_project_path_tracer_href")}
+          githubUrl={t(locale, "personal_project_path_tracer_githubUrl")}
+          languages="Golang"
+        />
+        <Article
           title={t(locale, "personal_project_LD35_title")}
           subtitle={t(locale, "personal_project_LD35_subtitle")}
           content={t(locale, "personal_project_LD35_content")}
