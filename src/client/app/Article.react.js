@@ -15,12 +15,12 @@ class Article extends React.Component {
           <a href="#"></a>
         </div>
         <div className="col-md-5">
-          <h3> {title}</h3>
-          <h4> {subtitle} </h4>
+          <h2> <b> {title} </b> </h2>
+          <h4> <em> {subtitle} </em></h4>
           <p>{content}</p>
           <p>Technologies : <small>{languages}</small></p>
-          <a className="btn btn-primary" target="_blank" href={githubUrl}>
-            {buttonText} 
+          <a className="btn btn-primary my-button" target="_blank" href={githubUrl}>
+            {buttonText}
             <span className="glyphicon glyphicon-chevron-right"></span>
           </a>
         </div>

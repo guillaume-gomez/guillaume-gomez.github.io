@@ -41934,7 +41934,7 @@
 	    student_project_rep_code_subtitle: "Librairie 2D de génération d'images",
 	    student_project_rep_code_content: "Premier project en dut traitant de traitement d'images. Le but ici était de se perfectionner sur l'apprentisage du C++(11) et de toucher des concepts du developpement 2D : la structure des données des images, les transformation de bases, réalisation d'algorithme de traitement simple. Bref un des premiers de mes travaux abouti dans mon cursus",
 	    student_project_rep_code_buttonText: "Voir le repo",
-	    student_project_rep_code_href: "http://jquery-custom-scrollbar.rocketmind.pl/images/lena.png",
+	    student_project_rep_code_href: "https://www.cosy.sbg.ac.at/~pmeerw/Watermarking/lena_color.gif",
 	    student_project_rep_code_githubUrl: "https://github.com/guillaume-gomez/Rep-Code",
 	
 	    student_project_nf11_title: "Production d'un compilateur Logo",
@@ -42831,17 +42831,29 @@
 	          "div",
 	          { className: "col-md-5" },
 	          _react2.default.createElement(
-	            "h3",
+	            "h2",
 	            null,
 	            " ",
-	            title
+	            _react2.default.createElement(
+	              "b",
+	              null,
+	              " ",
+	              title,
+	              " "
+	            ),
+	            " "
 	          ),
 	          _react2.default.createElement(
 	            "h4",
 	            null,
 	            " ",
-	            subtitle,
-	            " "
+	            _react2.default.createElement(
+	              "em",
+	              null,
+	              " ",
+	              subtitle,
+	              " "
+	            )
 	          ),
 	          _react2.default.createElement(
 	            "p",
@@ -42860,7 +42872,7 @@
 	          ),
 	          _react2.default.createElement(
 	            "a",
-	            { className: "btn btn-primary", target: "_blank", href: githubUrl },
+	            { className: "btn btn-primary my-button", target: "_blank", href: githubUrl },
 	            buttonText,
 	            _react2.default.createElement("span", { className: "glyphicon glyphicon-chevron-right" })
 	          )

@@ -27,8 +27,8 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 ::-webkit-input-placeholder{color:inherit;opacity:0.54}
 ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
 /* End extract */
-html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
-h1,h2,h3,h4,h5,h6,.w3-slim,.w3-wide{font-family:"Segoe UI",Arial,sans-serif}
+html,body{font-family:Roboto,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+h1,h2,h3,h4,h5,h6,.w3-slim,.w3-wide{font-family:"Segoe UI",Arial,sans-serif, font-weight: 300}
 h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
 .w3-serif{font-family:"Times New Roman",Times,serif}
 h1,h2,h3,h4,h5,h6{font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
@@ -357,18 +357,18 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .about-me-divider-color         { border-color: #BDBDBD; }
 
 
-.resume-dark-primary-color    { background: #42a5f5; }
-.resume-default-primary-color { background: #64b5f6; }
-.resume-light-primary-color   { background: #90caf9; }
+.resume-dark-primary-color    { background: #01579b; }
+.resume-default-primary-color { background: #0277bd; }
+.resume-light-primary-color   { background: #0288d1; }
 .resume-text-primary-color    { color: #FFFFFF; }
-.resume-accent-color          { background: #1e88e5; }
+.resume-accent-color          { background: #0091ea; }
 .resume-primary-text-color    { color: #212121; }
 .resume-secondary-text-color  { color: #757575; }
 .resume-divider-color         { border-color: #BDBDBD; }
 
 .work-background              { background: #eceff1; }
 
-hr.work { 
+hr.work {
 	display: block;
     height: 1px;
     border: 0;
@@ -379,7 +379,6 @@ hr.work {
 
 a.darken {
     display: inline-block;
-    
     padding: 0;
 }
 
@@ -398,4 +397,19 @@ a.darken:hover img {
 
 }
 
-.navbar { margin-bottom: 0 }
+.navbar {
+  margin-bottom: 0;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.my-button {
+  border: 0px !important;
+  padding: .85rem 2.13rem;
+  border-radius: 2px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+p {
+  font-size: 17px;
+}
