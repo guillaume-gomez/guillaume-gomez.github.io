@@ -10,6 +10,8 @@ import Contribution from "./Contribution.react";
 
 import { t } from "./Translations";
 
+const Pages = [ "aboutMe" , "resume", "studentProjects", "personalProjects", "contribution"];
+
 class App extends React.Component {
 
   constructor(){
@@ -33,7 +35,10 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({ currentPage: this.getParams(window.location.search) });
+    const params = this.getParams(window.location.search);
+    if(Pages.includes(params)) {
+      this.setState({ currentPage: params });
+    }
   }
 
   getParams(data) {
