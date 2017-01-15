@@ -32,24 +32,44 @@ class App extends React.Component {
     this.state = { currentPage: "aboutMe", locale: "fr" };
   }
 
+  componentDidMount() {
+    this.setState({ currentPage: this.getParams(window.location.search) });
+  }
+
+  getParams(data) {
+    return data.substring(1);
+  }
+
+  updateQueryString(params) {
+    if (window.history.pushState) {
+      var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + `?${params}`;
+      window.history.pushState({path:newurl},'',newurl);
+    }
+  }
+
   seeAboutMe() {
     this.setState({ currentPage: "aboutMe" });
+    this.updateQueryString("aboutMe");
   }
 
   seeResume() {
     this.setState({ currentPage: "resume" });
+    this.updateQueryString("resume");
   }
 
   seeStudentProjects() {
     this.setState({ currentPage: "studentProjects" });
+    this.updateQueryString("studentProjects");
   }
 
   seePersonalProjects() {
     this.setState( { currentPage: "personalProjects" });
+    this.updateQueryString("personalProjects");
   }
 
   seeContribution() {
     this.setState( { currentPage: "contribution" });
+    this.updateQueryString("contribution");
   }
 
   renderAboutMe() {
