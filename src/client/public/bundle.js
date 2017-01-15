@@ -42831,7 +42831,7 @@
 	          ),
 	          _react2.default.createElement(
 	            "a",
-	            { className: "btn btn-primary", href: githubUrl },
+	            { className: "btn btn-primary", target: "_blank", href: githubUrl },
 	            buttonText,
 	            _react2.default.createElement("span", { className: "glyphicon glyphicon-chevron-right" })
 	          )
