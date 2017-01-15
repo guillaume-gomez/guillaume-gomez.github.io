@@ -42,12 +42,13 @@ class App extends React.Component {
   }
 
   getParams(data) {
-    return data.substring(1);
+    //remove ?pages=
+    return data.substring(6);
   }
 
   updateQueryString(params) {
     if (window.history.pushState) {
-      var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + `?${params}`;
+      var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + `?page=${params}`;
       window.history.pushState({path:newurl},'',newurl);
     }
   }
@@ -114,7 +115,7 @@ class App extends React.Component {
         <Navbar inverse collapseOnSelect className="navbar-static-top">
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#" onClick={this.seeAboutMe}>Guillaume Gomez</a>
+              <a href="" onClick={this.seeAboutMe}>Guillaume Gomez</a>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>

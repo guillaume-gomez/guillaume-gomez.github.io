@@ -89,6 +89,8 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
+	var Pages = ["aboutMe", "resume", "studentProjects", "personalProjects", "contribution"];
+	
 	var App = function (_React$Component) {
 	  _inherits(App, _React$Component);
 	
@@ -107,18 +109,22 @@
 	  _createClass(App, [{
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
-	      this.setState({ currentPage: this.getParams(window.location.search) });
+	      var params = this.getParams(window.location.search);
+	      if (Pages.includes(params)) {
+	        this.setState({ currentPage: params });
+	      }
 	    }
 	  }, {
 	    key: 'getParams',
 	    value: function getParams(data) {
-	      return data.substring(1);
+	      //remove ?pages=
+	      return data.substring(6);
 	    }
 	  }, {
 	    key: 'updateQueryString',
 	    value: function updateQueryString(params) {
 	      if (window.history.pushState) {
-	        var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + ('?' + params);
+	        var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + ('?page=' + params);
 	        window.history.pushState({ path: newurl }, '', newurl);
 	      }
 	    }
@@ -206,7 +212,7 @@
 	              null,
 	              _react2.default.createElement(
 	                'a',
-	                { href: '#', onClick: this.seeAboutMe },
+	                { href: '', onClick: this.seeAboutMe },
 	                'Guillaume Gomez'
 	              )
 	            ),
@@ -41913,7 +41919,7 @@
 	    resume_bac: "Baccalauréat scientifique",
 	    resume_programming: "Programmation",
 	    about_me_title: "Quelques mots",
-	    about_me_content: "Développeur depuis environ 10 ans ; j'ai codé mes premières lignes de code en C, pour ensuite découvrir beaucoup d'autres langages que ce soit à travers mon cursus universitaire ou professionel. Passioné par l'aspect créatif que peut être l'informatique, j'essaye à travers des projets personnels d'entrevoir d'autres technologies ainsi que d'autres algorithmes. Quand je ne programme pas, je fais du sport. Et il m'arrive très souvent de faire l'une des deux activitées en musique. Je laisse donc en lien mon compte senscritique pour parler musique ou autres ; en plus des classiques github et linkedin :)",
+	    about_me_content: "Codeur depuis environ 10 ans ; j'ai écrit mes premières lignes de code en C, pour ensuite découvrir beaucoup d'autres langages que ce soit à travers mon cursus universitaire ou professionel. Passioné par l'aspect créatif que peut être l'informatique, j'essaye à travers des projets personnels d'entrevoir d'autres technologies ainsi que d'autres algorithmes. Quand je ne programme pas, je fais du sport. Et il m'arrive très souvent de faire l'une des deux activitées en musique. Je laisse donc en lien mon compte senscritique pour parler musique ou autres ; en plus des classiques github et linkedin :)",
 	    index_about_me: "A propos",
 	    index_resume: "CV",
 	    index_work: "Mes travaux",
