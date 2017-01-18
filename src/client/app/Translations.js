@@ -12,7 +12,7 @@ const translations = {
     resume_masa: "Stagiare programmeur 3D ",
     resume_multiposting: "Stagiaire developpeur Back-end ",
     resume_utc: "Diplôme d'Ingénieur en informatique",
-    resume_iut: "Diplome D'iut en informatique",
+    resume_iut: "Diplome D'IUT en informatique option imagerie numérique",
     resume_bac: "Baccalauréat scientifique",
     resume_programming: "Programmation",
     about_me_title: "Quelques mots",

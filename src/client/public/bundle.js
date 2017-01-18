@@ -41915,7 +41915,7 @@
 	    resume_masa: "Stagiare programmeur 3D ",
 	    resume_multiposting: "Stagiaire developpeur Back-end ",
 	    resume_utc: "Diplôme d'Ingénieur en informatique",
-	    resume_iut: "Diplome D'iut en informatique",
+	    resume_iut: "Diplome D'IUT en informatique option imagerie numérique",
 	    resume_bac: "Baccalauréat scientifique",
 	    resume_programming: "Programmation",
 	    about_me_title: "Quelques mots",
@@ -42142,7 +42142,7 @@
 	
 	      return _react2.default.createElement(
 	        "button",
-	        { className: "btn btn-secondary btn-sm resume-accent-color", role: "button", onClick: href },
+	        { className: "btn btn-secondary btn-sm resume-accent-color my-resume-button", role: "button", onClick: href },
 	        _react2.default.createElement(
 	          "span",
 	          { className: "resume-text-primary-color" },
@@ -42748,7 +42748,11 @@
 	            _react2.default.createElement(
 	              "h1",
 	              { className: "page-header" },
-	              title
+	              _react2.default.createElement(
+	                "b",
+	                null,
+	                title
+	              )
 	            )
 	          )
 	        ),

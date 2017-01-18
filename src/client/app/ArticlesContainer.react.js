@@ -56,7 +56,7 @@ class ArticlesContainer extends React.Component {
       <div className="w3-container work-background">
         <div className="row">
           <div className="col-md-12">
-            <h1 className="page-header">{title}</h1>
+            <h1 className="page-header"><b>{title}</b></h1>
           </div>
         </div>
         {this.renderChildren()}
