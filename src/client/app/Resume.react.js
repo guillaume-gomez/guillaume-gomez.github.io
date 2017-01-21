@@ -19,7 +19,7 @@ class Resume extends React.Component {
     };
 
     return(
-    <button className="btn btn-secondary btn-sm resume-accent-color" role="button" onClick={href}>
+    <button className="btn btn-secondary btn-sm resume-accent-color my-resume-button" role="button" onClick={href}>
       <span className="resume-text-primary-color">{ t(locale, "resume_download_resume") +" "}</span>
       <img style={{ marginTop: -6 }} src={Path + "attachment.svg"} />
     </button>
