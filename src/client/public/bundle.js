@@ -41951,6 +41951,13 @@
 	    student_project_nf29_href: "res/NF29.png",
 	    student_project_nf29_githubUrl: "https://github.com/guillaume-gomez/NF29-XmlConverter",
 	
+	    student_project_ia02_title: "Création d'un jeu de plateau",
+	    student_project_ia02_subtitle: "Réalisation d'une intelligence artificielle",
+	    student_project_ia02_content: "Il fallait concevoir une intelligence capable de jouer à un jeu de plateau(Okiya) en implémentant l'algorithme Min-Max dans un langage de programmation à base de règles.",
+	    student_project_ia02_buttonText: "Voir le repo",
+	    student_project_ia02_href: "",
+	    student_project_ia02_githubUrl: "https://github.com/guillaume-gomez/ia02",
+	
 	    participation_project_LD34_title: "Ludum Dare 34",
 	    participation_project_LD34_subtitle: "Theme : Two Button Controls",
 	    participation_project_LD34_content: "J'ai participé à la gestion des ennemies(graphisme, mouvement, IA), qui avait été commencé. Malheureuseument le projet n'a jamais été terminé.",
@@ -42051,6 +42058,13 @@
 	    student_project_nf29_buttonText: "see the repository",
 	    student_project_nf29_href: "res/NF29.png",
 	    student_project_nf29_githubUrl: "https://github.com/guillaume-gomez/NF29-XmlConverter",
+	
+	    student_project_ia02_title: "",
+	    student_project_ia02_subtitle: "",
+	    student_project_ia02_content: "",
+	    student_project_ia02_href: "",
+	    student_project_ia02_githubUrl: "https://github.com/guillaume-gomez/ia02",
+	
 	    participation_project_LD34_title: "Ludum Dare 34",
 	    participation_project_LD34_subtitle: "Theme : Two Button Controls",
 	    participation_project_LD34_content: "",
@@ -42592,6 +42606,15 @@
 	          href: (0, _Translations.t)(locale, "student_project_nf29_href"),
 	          githubUrl: (0, _Translations.t)(locale, "student_project_nf29_githubUrl"),
 	          languages: "XSLT"
+	        }),
+	        _react2.default.createElement(_Article2.default, {
+	          title: (0, _Translations.t)(locale, "student_project_ia02_title"),
+	          subtitle: (0, _Translations.t)(locale, "student_project_ia02_subtitle"),
+	          content: (0, _Translations.t)(locale, "student_project_ia02_content"),
+	          buttonText: (0, _Translations.t)(locale, "student_project_ia02_buttonText"),
+	          href: (0, _Translations.t)(locale, "student_project_ia02_href"),
+	          githubUrl: (0, _Translations.t)(locale, "student_project_ia02_githubUrl"),
+	          languages: "Prolog"
 	        }),
 	        _react2.default.createElement(_Article2.default, {
 	          title: (0, _Translations.t)(locale, "student_project_rep_code_title"),
