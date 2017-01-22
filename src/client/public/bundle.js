@@ -41955,7 +41955,7 @@
 	    student_project_ia02_subtitle: "Réalisation d'une intelligence artificielle",
 	    student_project_ia02_content: "Il fallait concevoir une intelligence capable de jouer à un jeu de plateau(Okiya) en implémentant l'algorithme Min-Max dans un langage de programmation à base de règles.",
 	    student_project_ia02_buttonText: "Voir le repo",
-	    student_project_ia02_href: "",
+	    student_project_ia02_href: "https://raw.githubusercontent.com/guillaume-gomez/ia02/master/preview.png",
 	    student_project_ia02_githubUrl: "https://github.com/guillaume-gomez/ia02",
 	
 	    participation_project_LD34_title: "Ludum Dare 34",
