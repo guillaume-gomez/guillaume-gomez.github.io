@@ -143,12 +143,14 @@ const translations = {
     student_project_rep_code_buttonText: "see the repository",
     student_project_rep_code_href: "",
     student_project_rep_code_githubUrl: "https://github.com/guillaume-gomez/Rep-Code",
+
     student_project_nf11_title: "Partial logo compiler",
     student_project_nf11_subtitle: "Practical work about languages theory",
     student_project_nf11_content: "",
     student_project_nf11_buttonText: "see the repository",
     student_project_nf11_href: "https://raw.githubusercontent.com/guillaume-gomez/NF11-project/master/example.png?raw=true",
     student_project_nf11_githubUrl: "https://github.com/guillaume-gomez/NF11-project",
+
     student_project_nf29_title: "Development of a MindMapping to Hdoc converter",
     student_project_nf29_subtitle: "",
     student_project_nf29_content: "",
@@ -158,8 +160,8 @@ const translations = {
 
     student_project_ia02_title: "",
     student_project_ia02_subtitle: "",
-    student_project_ia02_content: "",
-    student_project_ia02_href: "",
+    student_project_ia02_content: "see the repository",
+    student_project_ia02_href: "https://raw.githubusercontent.com/guillaume-gomez/ia02/master/preview.png",
     student_project_ia02_githubUrl: "https://github.com/guillaume-gomez/ia02",
 
     participation_project_LD34_title: "Ludum Dare 34",
@@ -168,17 +170,20 @@ const translations = {
     pparticipation_project_LD34_buttonText: "see the repository",
     participation_project_LD34_href: "res/LD34.png",
     participation_project_LD34_githubUrl: "https://github.com/RMEx/LD34",
+
     participation_project_camlCompiler_title: "Caml Compiler",
     participation_project_camlCompiler_subtitle: "Ocaml compiler coded in C++",
     participation_project_camlCompiler_content: "",
     participation_project_camlCompiler_buttonText: "",
     participation_project_camlCompiler_href: "https://www.lexifi.com/files/images/csml_winforms_client.jpg",
     participation_project_camlCompiler_githubUrl: "https://github.com/AdrienJarretier/CamlCompiler",
+
     personal_project_LD35_title: "Ludum Dare 35",
     personal_project_LD35_subtitle: "Theme : Shapeshift",
     personal_project_LD35_content: "",
     personal_project_LD35_buttonText: "Play",
     personal_project_LD35_href: "https://raw.githubusercontent.com/guillaume-gomez/LD35/master/css/screen-shot.png",
+
     personal_project_LD36_githubUrl: "https://guillaume-gomez.github.io/LD35",
     personal_project_LD36_title: "Ludum Dare 36",
     personal_project_LD36_subtitle: "Theme : Ancient Technology",
@@ -186,18 +191,21 @@ const translations = {
     personal_project_LD36_buttonText: "Play",
     personal_project_LD36_href: "https://raw.githubusercontent.com/guillaume-gomez/LD36/master/preview.png",
     personal_project_LD36_githubUrl: "https://guillaume-gomez.github.io/LD36",
+
     personal_project_LD37_title: "Ludum Dare 37",
     personal_project_LD37_subtitle: "Theme : One room",
     personal_project_LD37_content: "",
     personal_project_LD37_buttonText: "Play (soon)",
     personal_project_LD37_href: "",
     personal_project_LD37_githubUrl: "https://guillaume-gomez.github.io/LD37",
+
     personal_project_projet_math_title: "Math game",
     personal_project_projet_math_subtitle: "",
     personal_project_projet_math_content: "",
     personal_project_projet_math_buttonText: "go to repository",
     personal_project_projet_math_href: "https://raw.githubusercontent.com/guillaume-gomez/MathGame/master/resReadme/in-game3.png",
     personal_project_projet_math_githubUrl: "https://github.com/guillaume-gomez/MathGame",
+
     personal_project_node_race_title: "NodeRace",
     personal_project_node_race_subtitle: "Multiplayer game",
     personal_project_node_race_content: "",
