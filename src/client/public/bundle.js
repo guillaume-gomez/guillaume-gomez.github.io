@@ -42046,12 +42046,14 @@
 	    student_project_rep_code_buttonText: "see the repository",
 	    student_project_rep_code_href: "",
 	    student_project_rep_code_githubUrl: "https://github.com/guillaume-gomez/Rep-Code",
+	
 	    student_project_nf11_title: "Partial logo compiler",
 	    student_project_nf11_subtitle: "Practical work about languages theory",
 	    student_project_nf11_content: "",
 	    student_project_nf11_buttonText: "see the repository",
 	    student_project_nf11_href: "https://raw.githubusercontent.com/guillaume-gomez/NF11-project/master/example.png?raw=true",
 	    student_project_nf11_githubUrl: "https://github.com/guillaume-gomez/NF11-project",
+	
 	    student_project_nf29_title: "Development of a MindMapping to Hdoc converter",
 	    student_project_nf29_subtitle: "",
 	    student_project_nf29_content: "",
@@ -42071,17 +42073,20 @@
 	    pparticipation_project_LD34_buttonText: "see the repository",
 	    participation_project_LD34_href: "res/LD34.png",
 	    participation_project_LD34_githubUrl: "https://github.com/RMEx/LD34",
+	
 	    participation_project_camlCompiler_title: "Caml Compiler",
 	    participation_project_camlCompiler_subtitle: "Ocaml compiler coded in C++",
 	    participation_project_camlCompiler_content: "",
 	    participation_project_camlCompiler_buttonText: "",
 	    participation_project_camlCompiler_href: "https://www.lexifi.com/files/images/csml_winforms_client.jpg",
 	    participation_project_camlCompiler_githubUrl: "https://github.com/AdrienJarretier/CamlCompiler",
+	
 	    personal_project_LD35_title: "Ludum Dare 35",
 	    personal_project_LD35_subtitle: "Theme : Shapeshift",
 	    personal_project_LD35_content: "",
 	    personal_project_LD35_buttonText: "Play",
 	    personal_project_LD35_href: "https://raw.githubusercontent.com/guillaume-gomez/LD35/master/css/screen-shot.png",
+	
 	    personal_project_LD36_githubUrl: "https://guillaume-gomez.github.io/LD35",
 	    personal_project_LD36_title: "Ludum Dare 36",
 	    personal_project_LD36_subtitle: "Theme : Ancient Technology",
