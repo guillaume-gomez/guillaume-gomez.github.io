@@ -51,6 +51,15 @@ class PersonalProjects extends React.Component {
           languages="Javascript, Jaws Js"
         />
         <Article
+          title={t(locale, "personal_project_langton_title")}
+          subtitle={t(locale, "personal_project_langton_subtitle")}
+          content={t(locale, "personal_project_langton_content")}
+          buttonText={t(locale, "personal_project_langton_buttonText")}
+          href={t(locale, "personal_project_langton_href")}
+          githubUrl={t(locale, "personal_project_langton_githubUrl")}
+          languages="Javascript, Phaser Js"
+        />
+        <Article
           title={t(locale, "personal_project_projet_math_title")}
           subtitle={t(locale, "personal_project_projet_math_subtitle")}
           content={t(locale, "personal_project_projet_math_content")}
