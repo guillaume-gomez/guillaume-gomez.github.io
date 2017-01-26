@@ -42063,8 +42063,8 @@
 	
 	    student_project_ia02_title: "",
 	    student_project_ia02_subtitle: "",
-	    student_project_ia02_content: "",
-	    student_project_ia02_href: "",
+	    student_project_ia02_content: "see the repository",
+	    student_project_ia02_href: "https://raw.githubusercontent.com/guillaume-gomez/ia02/master/preview.png",
 	    student_project_ia02_githubUrl: "https://github.com/guillaume-gomez/ia02",
 	
 	    participation_project_LD34_title: "Ludum Dare 34",
@@ -42207,160 +42207,164 @@
 	              "table",
 	              { className: "w3-table" },
 	              _react2.default.createElement(
-	                "tr",
-	                { className: "resume-dark-primary-color" },
-	                _react2.default.createElement(
-	                  "th",
-	                  { className: "resume-text-primary-color" },
-	                  (0, _Translations.t)(locale, "resume_array_year")
-	                ),
-	                _react2.default.createElement(
-	                  "th",
-	                  { className: "resume-text-primary-color" },
-	                  (0, _Translations.t)(locale, "resume_array_title")
-	                ),
-	                _react2.default.createElement(
-	                  "th",
-	                  { className: "resume-text-primary-color" },
-	                  (0, _Translations.t)(locale, "resume_array_location")
-	                )
-	              ),
-	              _react2.default.createElement(
-	                "tr",
-	                { className: "resume-light-primary-color" },
-	                _react2.default.createElement(
-	                  "td",
-	                  { className: "resume-text-primary-color" },
-	                  "08/15 - 01/17"
-	                ),
-	                _react2.default.createElement(
-	                  "td",
-	                  { className: "resume-text-primary-color" },
-	                  (0, _Translations.t)(locale, "resume_applidget"),
-	                  " ",
-	                  (0, _Translations.t)(locale, "at"),
-	                  " ",
-	                  _react2.default.createElement(
-	                    "a",
-	                    { href: "http://applidget.com" },
-	                    " Applidget "
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  "td",
-	                  { className: "resume-text-primary-color" },
-	                  "Paris, France"
-	                )
-	              ),
-	              _react2.default.createElement(
-	                "tr",
+	                "tbody",
 	                null,
 	                _react2.default.createElement(
-	                  "td",
-	                  { className: "resume-text-primary-color" },
-	                  "02/15 - 07/15"
-	                ),
-	                _react2.default.createElement(
-	                  "td",
-	                  { className: "resume-text-primary-color" },
-	                  (0, _Translations.t)(locale, "resume_masa"),
-	                  " ",
-	                  (0, _Translations.t)(locale, "at"),
-	                  " ",
+	                  "tr",
+	                  { className: "resume-dark-primary-color" },
 	                  _react2.default.createElement(
-	                    "a",
-	                    { href: "https://masa-group.biz/" },
-	                    " Masa Group "
+	                    "th",
+	                    { className: "resume-text-primary-color" },
+	                    (0, _Translations.t)(locale, "resume_array_year")
+	                  ),
+	                  _react2.default.createElement(
+	                    "th",
+	                    { className: "resume-text-primary-color" },
+	                    (0, _Translations.t)(locale, "resume_array_title")
+	                  ),
+	                  _react2.default.createElement(
+	                    "th",
+	                    { className: "resume-text-primary-color" },
+	                    (0, _Translations.t)(locale, "resume_array_location")
 	                  )
 	                ),
 	                _react2.default.createElement(
-	                  "td",
-	                  { className: "resume-text-primary-color" },
-	                  "Paris, France"
-	                )
-	              ),
-	              _react2.default.createElement(
-	                "tr",
-	                { className: "resume-light-primary-color" },
-	                _react2.default.createElement(
-	                  "td",
-	                  { className: "resume-text-primary-color" },
-	                  "09/13 - 02/14"
-	                ),
-	                _react2.default.createElement(
-	                  "td",
-	                  { className: "resume-text-primary-color" },
-	                  (0, _Translations.t)(locale, "resume_multiposting"),
-	                  " ",
-	                  (0, _Translations.t)(locale, "at"),
-	                  " ",
+	                  "tr",
+	                  { className: "resume-light-primary-color" },
 	                  _react2.default.createElement(
-	                    "a",
-	                    { href: "http://www.multiposting.fr/fr/" },
-	                    " Multiposting"
+	                    "td",
+	                    { className: "resume-text-primary-color" },
+	                    "08/15 - 01/17"
+	                  ),
+	                  _react2.default.createElement(
+	                    "td",
+	                    { className: "resume-text-primary-color" },
+	                    (0, _Translations.t)(locale, "resume_applidget"),
+	                    " ",
+	                    (0, _Translations.t)(locale, "at"),
+	                    " ",
+	                    _react2.default.createElement(
+	                      "a",
+	                      { href: "http://applidget.com" },
+	                      " Applidget "
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    "td",
+	                    { className: "resume-text-primary-color" },
+	                    "Paris, France"
 	                  )
 	                ),
 	                _react2.default.createElement(
-	                  "td",
-	                  { className: "resume-text-primary-color" },
-	                  "Paris, France"
-	                )
-	              ),
-	              _react2.default.createElement(
-	                "tr",
-	                null,
-	                _react2.default.createElement(
-	                  "td",
-	                  { className: "resume-text-primary-color" },
-	                  "2012 - 2015"
+	                  "tr",
+	                  null,
+	                  _react2.default.createElement(
+	                    "td",
+	                    { className: "resume-text-primary-color" },
+	                    "02/15 - 07/15"
+	                  ),
+	                  _react2.default.createElement(
+	                    "td",
+	                    { className: "resume-text-primary-color" },
+	                    (0, _Translations.t)(locale, "resume_masa"),
+	                    " ",
+	                    (0, _Translations.t)(locale, "at"),
+	                    " ",
+	                    _react2.default.createElement(
+	                      "a",
+	                      { href: "https://masa-group.biz/" },
+	                      " Masa Group "
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    "td",
+	                    { className: "resume-text-primary-color" },
+	                    "Paris, France"
+	                  )
 	                ),
 	                _react2.default.createElement(
-	                  "td",
-	                  { className: "resume-text-primary-color" },
-	                  (0, _Translations.t)(locale, "resume_utc")
+	                  "tr",
+	                  { className: "resume-light-primary-color" },
+	                  _react2.default.createElement(
+	                    "td",
+	                    { className: "resume-text-primary-color" },
+	                    "09/13 - 02/14"
+	                  ),
+	                  _react2.default.createElement(
+	                    "td",
+	                    { className: "resume-text-primary-color" },
+	                    (0, _Translations.t)(locale, "resume_multiposting"),
+	                    " ",
+	                    (0, _Translations.t)(locale, "at"),
+	                    " ",
+	                    _react2.default.createElement(
+	                      "a",
+	                      { href: "http://www.multiposting.fr/fr/" },
+	                      " Multiposting"
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    "td",
+	                    { className: "resume-text-primary-color" },
+	                    "Paris, France"
+	                  )
 	                ),
 	                _react2.default.createElement(
-	                  "td",
-	                  { className: "resume-text-primary-color" },
-	                  "Universit\xE9 de Compi\xE8gne, France"
-	                )
-	              ),
-	              _react2.default.createElement(
-	                "tr",
-	                { className: "resume-light-primary-color" },
-	                _react2.default.createElement(
-	                  "td",
-	                  { className: "resume-text-primary-color" },
-	                  "2010 - 2012"
+	                  "tr",
+	                  null,
+	                  _react2.default.createElement(
+	                    "td",
+	                    { className: "resume-text-primary-color" },
+	                    "2012 - 2015"
+	                  ),
+	                  _react2.default.createElement(
+	                    "td",
+	                    { className: "resume-text-primary-color" },
+	                    (0, _Translations.t)(locale, "resume_utc")
+	                  ),
+	                  _react2.default.createElement(
+	                    "td",
+	                    { className: "resume-text-primary-color" },
+	                    "Universit\xE9 de Compi\xE8gne, France"
+	                  )
 	                ),
 	                _react2.default.createElement(
-	                  "td",
-	                  { className: "resume-text-primary-color" },
-	                  (0, _Translations.t)(locale, "resume_iut")
+	                  "tr",
+	                  { className: "resume-light-primary-color" },
+	                  _react2.default.createElement(
+	                    "td",
+	                    { className: "resume-text-primary-color" },
+	                    "2010 - 2012"
+	                  ),
+	                  _react2.default.createElement(
+	                    "td",
+	                    { className: "resume-text-primary-color" },
+	                    (0, _Translations.t)(locale, "resume_iut")
+	                  ),
+	                  _react2.default.createElement(
+	                    "td",
+	                    { className: "resume-text-primary-color" },
+	                    "UIT D'Arles, France"
+	                  )
 	                ),
 	                _react2.default.createElement(
-	                  "td",
-	                  { className: "resume-text-primary-color" },
-	                  "UIT D'Arles, France"
-	                )
-	              ),
-	              _react2.default.createElement(
-	                "tr",
-	                { className: "w3-hide-medium" },
-	                _react2.default.createElement(
-	                  "td",
-	                  { className: "resume-text-primary-color" },
-	                  "2007 - 2010"
-	                ),
-	                _react2.default.createElement(
-	                  "td",
-	                  { className: "resume-text-primary-color" },
-	                  (0, _Translations.t)(locale, "resume_bac")
-	                ),
-	                _react2.default.createElement(
-	                  "td",
-	                  { className: "resume-text-primary-color" },
-	                  "Avignon, France"
+	                  "tr",
+	                  { className: "w3-hide-medium" },
+	                  _react2.default.createElement(
+	                    "td",
+	                    { className: "resume-text-primary-color" },
+	                    "2007 - 2010"
+	                  ),
+	                  _react2.default.createElement(
+	                    "td",
+	                    { className: "resume-text-primary-color" },
+	                    (0, _Translations.t)(locale, "resume_bac")
+	                  ),
+	                  _react2.default.createElement(
+	                    "td",
+	                    { className: "resume-text-primary-color" },
+	                    "Avignon, France"
+	                  )
 	                )
 	              )
 	            )
@@ -42383,147 +42387,151 @@
 	                  "table",
 	                  { className: "w3-table col-md-6" },
 	                  _react2.default.createElement(
-	                    "tr",
-	                    { className: "resume-light-primary-color" },
-	                    _react2.default.createElement(
-	                      "td",
-	                      { className: "resume-text-primary-color" },
-	                      "C++"
-	                    ),
-	                    _react2.default.createElement(
-	                      "td",
-	                      null,
-	                      _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    "tr",
+	                    "tbody",
 	                    null,
 	                    _react2.default.createElement(
-	                      "td",
-	                      { className: "resume-text-primary-color" },
-	                      "Javascript/ ES6"
+	                      "tr",
+	                      { className: "resume-light-primary-color" },
+	                      _react2.default.createElement(
+	                        "td",
+	                        { className: "resume-text-primary-color" },
+	                        "C++"
+	                      ),
+	                      _react2.default.createElement(
+	                        "td",
+	                        null,
+	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
+	                      )
 	                    ),
 	                    _react2.default.createElement(
-	                      "td",
+	                      "tr",
 	                      null,
-	                      _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    "tr",
-	                    { className: "resume-light-primary-color" },
-	                    _react2.default.createElement(
-	                      "td",
-	                      { className: "resume-text-primary-color" },
-	                      "Ruby"
+	                      _react2.default.createElement(
+	                        "td",
+	                        { className: "resume-text-primary-color" },
+	                        "Javascript/ ES6"
+	                      ),
+	                      _react2.default.createElement(
+	                        "td",
+	                        null,
+	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
+	                      )
 	                    ),
 	                    _react2.default.createElement(
-	                      "td",
-	                      null,
-	                      _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_half.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    "tr",
-	                    null,
-	                    _react2.default.createElement(
-	                      "td",
-	                      { className: "resume-text-primary-color" },
-	                      "Java"
+	                      "tr",
+	                      { className: "resume-light-primary-color" },
+	                      _react2.default.createElement(
+	                        "td",
+	                        { className: "resume-text-primary-color" },
+	                        "Ruby"
+	                      ),
+	                      _react2.default.createElement(
+	                        "td",
+	                        null,
+	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_half.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
+	                      )
 	                    ),
 	                    _react2.default.createElement(
-	                      "td",
+	                      "tr",
 	                      null,
-	                      _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_half.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    "tr",
-	                    { className: "resume-light-primary-color" },
-	                    _react2.default.createElement(
-	                      "td",
-	                      { className: "resume-text-primary-color" },
-	                      "Golang"
+	                      _react2.default.createElement(
+	                        "td",
+	                        { className: "resume-text-primary-color" },
+	                        "Java"
+	                      ),
+	                      _react2.default.createElement(
+	                        "td",
+	                        null,
+	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_half.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
+	                      )
 	                    ),
 	                    _react2.default.createElement(
-	                      "td",
-	                      null,
-	                      _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_half.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    "tr",
-	                    null,
-	                    _react2.default.createElement(
-	                      "td",
-	                      { className: "resume-text-primary-color" },
-	                      "Rust"
+	                      "tr",
+	                      { className: "resume-light-primary-color" },
+	                      _react2.default.createElement(
+	                        "td",
+	                        { className: "resume-text-primary-color" },
+	                        "Golang"
+	                      ),
+	                      _react2.default.createElement(
+	                        "td",
+	                        null,
+	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_half.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
+	                      )
 	                    ),
 	                    _react2.default.createElement(
-	                      "td",
+	                      "tr",
 	                      null,
-	                      _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_half.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    "tr",
-	                    { className: "resume-light-primary-color" },
-	                    _react2.default.createElement(
-	                      "td",
-	                      { className: "resume-text-primary-color" },
-	                      "HTML5/Css3"
+	                      _react2.default.createElement(
+	                        "td",
+	                        { className: "resume-text-primary-color" },
+	                        "Rust"
+	                      ),
+	                      _react2.default.createElement(
+	                        "td",
+	                        null,
+	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_half.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
+	                      )
 	                    ),
 	                    _react2.default.createElement(
-	                      "td",
-	                      null,
-	                      _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    "tr",
-	                    null,
-	                    _react2.default.createElement(
-	                      "td",
-	                      { className: "resume-text-primary-color" },
-	                      "PHP"
+	                      "tr",
+	                      { className: "resume-light-primary-color" },
+	                      _react2.default.createElement(
+	                        "td",
+	                        { className: "resume-text-primary-color" },
+	                        "HTML5/Css3"
+	                      ),
+	                      _react2.default.createElement(
+	                        "td",
+	                        null,
+	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
+	                      )
 	                    ),
 	                    _react2.default.createElement(
-	                      "td",
+	                      "tr",
 	                      null,
-	                      _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_half.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize }),
-	                      _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
+	                      _react2.default.createElement(
+	                        "td",
+	                        { className: "resume-text-primary-color" },
+	                        "PHP"
+	                      ),
+	                      _react2.default.createElement(
+	                        "td",
+	                        null,
+	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_half.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize }),
+	                        _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
+	                      )
 	                    )
 	                  )
 	                )
