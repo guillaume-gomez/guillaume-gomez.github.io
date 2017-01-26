@@ -10,7 +10,7 @@ import Contribution from "./Contribution.react";
 
 import { t } from "./Translations";
 
-const Pages = [ "aboutMe" , "resume", "studentProjects", "personalProjects", "contribution"];
+const Pages = [ "aboutMe" , "resume", "studentProjects", "personalProjects", "contributions"];
 
 class App extends React.Component {
 
@@ -74,8 +74,8 @@ class App extends React.Component {
   }
 
   seeContribution() {
-    this.setState( { currentPage: "contribution" });
-    this.updateQueryString("contribution");
+    this.setState( { currentPage: "contributions" });
+    this.updateQueryString("contributions");
   }
 
   renderAboutMe() {
@@ -103,7 +103,7 @@ class App extends React.Component {
   }
 
   renderContribution() {
-    if(this.state.currentPage === "contribution") {
+    if(this.state.currentPage === "contributions") {
       return (<Contribution locale={this.state.locale} />);
     }
   }
@@ -126,7 +126,7 @@ class App extends React.Component {
                 <MenuItem eventKey={2.1} onClick={this.seeStudentProjects} >{t(locale, "index_student_project")}</MenuItem>
                 <MenuItem eventKey={2.2} onClick={this.seePersonalProjects}>{t(locale, "index_personal_project")}</MenuItem>
                 <MenuItem divider />
-                <MenuItem eventKey={2.3} onClick={this.seeContribution}>{t(locale, "index_contribution")}</MenuItem>
+                <MenuItem eventKey={2.3} onClick={this.seeContribution}>{t(locale, "index_contributions")}</MenuItem>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
