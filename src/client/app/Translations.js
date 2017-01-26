@@ -9,7 +9,7 @@ const translations = {
     resume_array_year: "Année",
     resume_array_location: "Where",
     resume_applidget: "Ingénieur Back-end",
-    resume_masa: "Stagiare programmeur 3D ",
+    resume_masa: "Stagiaire programmeur 3D ",
     resume_multiposting: "Stagiaire developpeur Back-end ",
     resume_utc: "Diplôme d'Ingénieur en informatique",
     resume_iut: "Diplome D'IUT en informatique option imagerie numérique",
