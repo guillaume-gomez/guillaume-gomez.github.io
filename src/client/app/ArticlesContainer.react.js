@@ -54,9 +54,11 @@ class ArticlesContainer extends React.Component {
     const { locale, title, children } = this.props;
     return (
       <div className="w3-container work-background">
-        <div className="row">
-          <div className="col-md-12">
-            <h1 className="page-header"><b>{title}</b></h1>
+        <div className=" my-container">
+          <div className="row">
+            <div className="col-md-12">
+              <h1 className="page-header"><b>{title}</b></h1>
+            </div>
           </div>
         </div>
         {this.renderChildren()}

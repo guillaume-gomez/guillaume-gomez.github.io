@@ -10,7 +10,7 @@ a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:
 dfn{font-style:italic}mark{background:#ff0;color:#000}
 small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
 sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}
-img{border-style:none}svg:not(:root){overflow:hidden}
+
 code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
 hr{box-sizing:content-box;height:0;overflow:visible}
 button,input,select,textarea{font:inherit;margin:0}optgroup{font-weight:bold}
@@ -413,6 +413,23 @@ a.darken:hover img {
 	font-size: 18px;
 }
 
+.my-container {
+  width: 1140px;
+  max-width: 100%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.fadein img{
+  opacity:1;
+  transition: 1s ease;
+}
+.fadein img:hover{
+  opacity:0.5;
+  transition: 1s ease;
+}
+
+
 p {
   font-size: 19px;
 }
@@ -423,3 +440,5 @@ h3{font-size:28px}
 h4{font-size:24px}
 h5{font-size:18px}
 h6{font-size:16px}
+
+img{border-style:none;border-radius: 2px}svg:not(:root){overflow:hidden}

@@ -10,7 +10,7 @@ class Article extends React.Component {
     const { title, subtitle, content, buttonText, href, githubUrl, languages} = this.props;
     return (
       <div className="row">
-        <div className="col-md-7">
+        <div className="col-md-7 fadein">
           <img className="image-responsive" src={href} width="650"/>
           <a href="#"></a>
         </div>

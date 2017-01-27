@@ -42786,17 +42786,21 @@
 	        { className: "w3-container work-background" },
 	        _react2.default.createElement(
 	          "div",
-	          { className: "row" },
+	          { className: " my-container" },
 	          _react2.default.createElement(
 	            "div",
-	            { className: "col-md-12" },
+	            { className: "row" },
 	            _react2.default.createElement(
-	              "h1",
-	              { className: "page-header" },
+	              "div",
+	              { className: "col-md-12" },
 	              _react2.default.createElement(
-	                "b",
-	                null,
-	                title
+	                "h1",
+	                { className: "page-header" },
+	                _react2.default.createElement(
+	                  "b",
+	                  null,
+	                  title
+	                )
 	              )
 	            )
 	          )
@@ -42872,7 +42876,7 @@
 	        { className: "row" },
 	        _react2.default.createElement(
 	          "div",
-	          { className: "col-md-7" },
+	          { className: "col-md-7 fadein" },
 	          _react2.default.createElement("img", { className: "image-responsive", src: href, width: "650" }),
 	          _react2.default.createElement("a", { href: "#" })
 	        ),
