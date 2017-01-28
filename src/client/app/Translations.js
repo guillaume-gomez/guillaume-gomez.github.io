@@ -148,7 +148,7 @@ const translations = {
         student_project_rep_code_subtitle: "2D library to generate images",
         student_project_rep_code_content: "",
         student_project_rep_code_buttonText: "see the repository",
-        student_project_rep_code_href: "",
+        student_project_rep_code_href: "https://www.cosy.sbg.ac.at/~pmeerw/Watermarking/lena_color.gif",
         student_project_rep_code_githubUrl: "https://github.com/guillaume-gomez/Rep-Code",
 
         student_project_nf11_title: "Partial logo compiler",
@@ -202,9 +202,9 @@ const translations = {
         personal_project_LD37_title: "Ludum Dare 37",
         personal_project_LD37_subtitle: "Theme : One room",
         personal_project_LD37_content: "",
-        personal_project_LD37_buttonText: "Play (soon)",
-        personal_project_LD37_href: "",
-        personal_project_LD37_githubUrl: "https://guillaume-gomez.github.io/LD37",
+        personal_project_LD37_buttonText: "Play",
+        personal_project_LD37_href: "https://raw.githubusercontent.com/guillaume-gomez/LD37/master/preview.png",
+        personal_project_LD37_githubUrl: "https://guillaume-gomez.github.io/LD37/build/",
 
         personal_project_projet_math_title: "Math game",
         personal_project_projet_math_subtitle: "",
