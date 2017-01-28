@@ -42052,7 +42052,7 @@
 	        student_project_rep_code_subtitle: "2D library to generate images",
 	        student_project_rep_code_content: "",
 	        student_project_rep_code_buttonText: "see the repository",
-	        student_project_rep_code_href: "",
+	        student_project_rep_code_href: "https://www.cosy.sbg.ac.at/~pmeerw/Watermarking/lena_color.gif",
 	        student_project_rep_code_githubUrl: "https://github.com/guillaume-gomez/Rep-Code",
 	
 	        student_project_nf11_title: "Partial logo compiler",
@@ -42101,7 +42101,7 @@
 	        personal_project_LD36_content: "",
 	        personal_project_LD36_buttonText: "Play",
 	        personal_project_LD36_href: "https://raw.githubusercontent.com/guillaume-gomez/LD36/master/preview.png"
-	    }, _defineProperty(_en, "personal_project_LD36_githubUrl", "https://guillaume-gomez.github.io/LD36"), _defineProperty(_en, "personal_project_LD37_title", "Ludum Dare 37"), _defineProperty(_en, "personal_project_LD37_subtitle", "Theme : One room"), _defineProperty(_en, "personal_project_LD37_content", ""), _defineProperty(_en, "personal_project_LD37_buttonText", "Play (soon)"), _defineProperty(_en, "personal_project_LD37_href", ""), _defineProperty(_en, "personal_project_LD37_githubUrl", "https://guillaume-gomez.github.io/LD37"), _defineProperty(_en, "personal_project_projet_math_title", "Math game"), _defineProperty(_en, "personal_project_projet_math_subtitle", ""), _defineProperty(_en, "personal_project_projet_math_content", ""), _defineProperty(_en, "personal_project_projet_math_buttonText", "go to repository"), _defineProperty(_en, "personal_project_projet_math_href", "https://raw.githubusercontent.com/guillaume-gomez/MathGame/master/resReadme/in-game3.png"), _defineProperty(_en, "personal_project_projet_math_githubUrl", "https://github.com/guillaume-gomez/MathGame"), _defineProperty(_en, "personal_project_node_race_title", "NodeRace"), _defineProperty(_en, "personal_project_node_race_subtitle", "Multiplayer game"), _defineProperty(_en, "personal_project_node_race_content", ""), _defineProperty(_en, "personal_project_node_race_buttonText", ""), _defineProperty(_en, "personal_project_node_race_href", "https://raw.githubusercontent.com/guillaume-gomez/NodeRace/master/preview.png"), _defineProperty(_en, "personal_project_node_race_githubUrl", "https://github.com/guillaume-gomez/NodeRace"), _defineProperty(_en, "personal_project_langton_title", "Langton ant's"), _defineProperty(_en, "personal_project_langton_subtitle", ""), _defineProperty(_en, "personal_project_langton_content", ""), _defineProperty(_en, "personal_project_langton_buttonText", "Go to the site"), _defineProperty(_en, "personal_project_langton_href", "https://raw.githubusercontent.com/guillaume-gomez/langton-ant-phaser/master/static/res/preview.png"), _defineProperty(_en, "personal_project_langton_githubUrl", "https://guillaume-gomez.github.io/langton-ant-phaser/build/"), _en)
+	    }, _defineProperty(_en, "personal_project_LD36_githubUrl", "https://guillaume-gomez.github.io/LD36"), _defineProperty(_en, "personal_project_LD37_title", "Ludum Dare 37"), _defineProperty(_en, "personal_project_LD37_subtitle", "Theme : One room"), _defineProperty(_en, "personal_project_LD37_content", ""), _defineProperty(_en, "personal_project_LD37_buttonText", "Play"), _defineProperty(_en, "personal_project_LD37_href", "https://raw.githubusercontent.com/guillaume-gomez/LD37/master/preview.png"), _defineProperty(_en, "personal_project_LD37_githubUrl", "https://guillaume-gomez.github.io/LD37/build/"), _defineProperty(_en, "personal_project_projet_math_title", "Math game"), _defineProperty(_en, "personal_project_projet_math_subtitle", ""), _defineProperty(_en, "personal_project_projet_math_content", ""), _defineProperty(_en, "personal_project_projet_math_buttonText", "go to repository"), _defineProperty(_en, "personal_project_projet_math_href", "https://raw.githubusercontent.com/guillaume-gomez/MathGame/master/resReadme/in-game3.png"), _defineProperty(_en, "personal_project_projet_math_githubUrl", "https://github.com/guillaume-gomez/MathGame"), _defineProperty(_en, "personal_project_node_race_title", "NodeRace"), _defineProperty(_en, "personal_project_node_race_subtitle", "Multiplayer game"), _defineProperty(_en, "personal_project_node_race_content", ""), _defineProperty(_en, "personal_project_node_race_buttonText", ""), _defineProperty(_en, "personal_project_node_race_href", "https://raw.githubusercontent.com/guillaume-gomez/NodeRace/master/preview.png"), _defineProperty(_en, "personal_project_node_race_githubUrl", "https://github.com/guillaume-gomez/NodeRace"), _defineProperty(_en, "personal_project_langton_title", "Langton ant's"), _defineProperty(_en, "personal_project_langton_subtitle", ""), _defineProperty(_en, "personal_project_langton_content", ""), _defineProperty(_en, "personal_project_langton_buttonText", "Go to the site"), _defineProperty(_en, "personal_project_langton_href", "https://raw.githubusercontent.com/guillaume-gomez/langton-ant-phaser/master/static/res/preview.png"), _defineProperty(_en, "personal_project_langton_githubUrl", "https://guillaume-gomez.github.io/langton-ant-phaser/build/"), _en)
 	};
 	
 	function t(locale, key) {
@@ -42253,9 +42253,13 @@
 	                    (0, _Translations.t)(locale, "at"),
 	                    " ",
 	                    _react2.default.createElement(
-	                      "a",
-	                      { href: "http://applidget.com" },
-	                      " Applidget "
+	                      "u",
+	                      null,
+	                      _react2.default.createElement(
+	                        "a",
+	                        { href: "http://applidget.com" },
+	                        " Applidget "
+	                      )
 	                    )
 	                  ),
 	                  _react2.default.createElement(
@@ -42280,9 +42284,13 @@
 	                    (0, _Translations.t)(locale, "at"),
 	                    " ",
 	                    _react2.default.createElement(
-	                      "a",
-	                      { href: "https://masa-group.biz/" },
-	                      " Masa Group "
+	                      "u",
+	                      null,
+	                      _react2.default.createElement(
+	                        "a",
+	                        { href: "https://masa-group.biz/" },
+	                        " Masa Group "
+	                      )
 	                    )
 	                  ),
 	                  _react2.default.createElement(
@@ -42307,9 +42315,13 @@
 	                    (0, _Translations.t)(locale, "at"),
 	                    " ",
 	                    _react2.default.createElement(
-	                      "a",
-	                      { href: "http://www.multiposting.fr/fr/" },
-	                      " Multiposting"
+	                      "u",
+	                      null,
+	                      _react2.default.createElement(
+	                        "a",
+	                        { href: "http://www.multiposting.fr/fr/" },
+	                        " Multiposting"
+	                      )
 	                    )
 	                  ),
 	                  _react2.default.createElement(

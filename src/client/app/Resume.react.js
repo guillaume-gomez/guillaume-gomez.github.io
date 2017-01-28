@@ -56,17 +56,17 @@ class Resume extends React.Component {
                 </tr>
                 <tr className="resume-light-primary-color">
                   <td className="resume-text-primary-color">08/15 - 01/17</td>
-                  <td className="resume-text-primary-color">{t(locale, "resume_applidget")} {t(locale, "at")} <a href="http://applidget.com"> Applidget </a></td>
+                  <td className="resume-text-primary-color">{t(locale, "resume_applidget")} {t(locale, "at")} <u><a href="http://applidget.com"> Applidget </a></u></td>
                   <td className="resume-text-primary-color">Paris, France</td>
                 </tr>
                 <tr>
                   <td className="resume-text-primary-color">02/15 - 07/15</td>
-                  <td className="resume-text-primary-color">{t(locale, "resume_masa")} {t(locale, "at")} <a href="https://masa-group.biz/"> Masa Group </a></td>
+                  <td className="resume-text-primary-color">{t(locale, "resume_masa")} {t(locale, "at")} <u><a href="https://masa-group.biz/"> Masa Group </a></u></td>
                   <td className="resume-text-primary-color">Paris, France</td>
                 </tr>
                 <tr className="resume-light-primary-color">
                   <td className="resume-text-primary-color">09/13 - 02/14</td>
-                  <td className="resume-text-primary-color">{t(locale, "resume_multiposting")} {t(locale, "at")} <a href="http://www.multiposting.fr/fr/"> Multiposting</a></td>
+                  <td className="resume-text-primary-color">{t(locale, "resume_multiposting")} {t(locale, "at")} <u><a href="http://www.multiposting.fr/fr/"> Multiposting</a></u></td>
                   <td className="resume-text-primary-color">Paris, France</td>
                 </tr>
                 <tr>
