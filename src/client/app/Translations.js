@@ -54,12 +54,12 @@ const translations = {
         student_project_ia02_href: "https://raw.githubusercontent.com/guillaume-gomez/ia02/master/preview.png",
         student_project_ia02_githubUrl: "https://github.com/guillaume-gomez/ia02",
 
-        student_project_nf26_title: "Devellopement d'une application pensé UX",
-        student_project_nf26_subtitle: "",
-        student_project_nf26_content: "",
-        student_project_nf26_buttonText: "",
-        student_project_nf26_href: "image.png",
-        student_project_nf26_githubUrl: "",
+        student_project_nf28_title: "One Thumb Control",
+        student_project_nf28_subtitle: "Développement d'une application android",
+        student_project_nf28_content: "Par groupe de 4 étudiants, nous devions développer une application qui se focalise sur l'optimisation homme-machine. L'equipe a choisi de concevoir une application android pour réaliser des actions rapides sur son téléphone avec une seule main. On peut donc lancer la musique, chercher un fichier, envoyer un sms ou appeler quelqu'un, lancer des applications ... Je me suis occupé de la partie conception du concept et de la lecture de musiques.",
+        student_project_nf28_buttonText: "lien vers le play store",
+        student_project_nf28_href: "res/one-thumb-control.png",
+        student_project_nf28_githubUrl: "https://play.google.com/store/apps/details?id=com.nf28.aotc",
 
         participation_project_LD34_title: "Ludum Dare 34",
         participation_project_LD34_subtitle: "Theme : Two Button Controls",

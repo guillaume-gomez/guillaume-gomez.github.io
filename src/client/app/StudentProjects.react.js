@@ -33,6 +33,15 @@ class StudentProjects extends React.Component {
           languages="XSLT"
         />
         <Article
+          title={t(locale, "student_project_nf28_title")}
+          subtitle={t(locale, "student_project_nf28_subtitle")}
+          content={t(locale, "student_project_nf28_content")}
+          buttonText={t(locale, "student_project_nf28_buttonText")}
+          href={t(locale, "student_project_nf28_href")}
+          githubUrl={t(locale, "student_project_nf28_githubUrl")}
+          languages="Android, Java"
+        />
+        <Article
           title={t(locale, "student_project_ia02_title")}
           subtitle={t(locale, "student_project_ia02_subtitle")}
           content={t(locale, "student_project_ia02_content")}
