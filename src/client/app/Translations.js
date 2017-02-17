@@ -54,6 +54,13 @@ const translations = {
         student_project_ia02_href: "https://raw.githubusercontent.com/guillaume-gomez/ia02/master/preview.png",
         student_project_ia02_githubUrl: "https://github.com/guillaume-gomez/ia02",
 
+        student_project_nf26_title: "Devellopement d'une application pensé UX",
+        student_project_nf26_subtitle: "",
+        student_project_nf26_content: "",
+        student_project_nf26_buttonText: "",
+        student_project_nf26_href: "image.png",
+        student_project_nf26_githubUrl: "",
+
         participation_project_LD34_title: "Ludum Dare 34",
         participation_project_LD34_subtitle: "Theme : Two Button Controls",
         participation_project_LD34_content: "J'ai participé à la gestion des ennemies(graphisme, mouvement, IA), qui avait été commencé. Malheureuseument le projet n'a jamais été terminé.",
