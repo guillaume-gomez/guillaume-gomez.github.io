@@ -35,6 +35,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+    console.log("componentDidMount")
     const params = this.getParams(window.location.search);
     if(Pages.includes(params)) {
       this.setState({ currentPage: params });
@@ -115,7 +116,7 @@ class App extends React.Component {
         <Navbar inverse collapseOnSelect className="navbar-static-top">
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="" onClick={this.seeAboutMe}>Guillaume Gomez</a>
+              <a href="#" onClick={this.seeAboutMe}>Guillaume Gomez</a>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>

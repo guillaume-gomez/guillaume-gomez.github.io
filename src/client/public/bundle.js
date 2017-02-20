@@ -109,6 +109,7 @@
 	  _createClass(App, [{
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
+	      console.log("componentDidMount");
 	      var params = this.getParams(window.location.search);
 	      if (Pages.includes(params)) {
 	        this.setState({ currentPage: params });
@@ -212,7 +213,7 @@
 	              null,
 	              _react2.default.createElement(
 	                'a',
-	                { href: '', onClick: this.seeAboutMe },
+	                { href: '#', onClick: this.seeAboutMe },
 	                'Guillaume Gomez'
 	              )
 	            ),
