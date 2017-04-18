@@ -41933,14 +41933,14 @@
 	
 	        student_project_rep_code_title: "Projet étudiant de traitement d'images",
 	        student_project_rep_code_subtitle: "Librairie 2D de génération d'images",
-	        student_project_rep_code_content: "Premier project en dut traitant de traitement d'images. Le but ici était de se perfectionner sur l'apprentisage du C++(11) et de toucher des concepts du developpement 2D : la structure des données des images, les transformation de bases, réalisation d'algorithme de traitement simple. Bref un des premiers de mes travaux abouti dans mon cursus",
+	        student_project_rep_code_content: "Premier project en dut traitant de traitement d'images. Le but ici était de se perfectionner sur l'apprentissage du C++(11) et de toucher des concepts du developpement 2D : la structure des données des images, les transformations de bases, réalisation d'algorithmes de traitements simple. Bref un des premiers de mes travaux abouti dans mon cursus",
 	        student_project_rep_code_buttonText: "Voir le repo",
 	        student_project_rep_code_href: "https://raw.githubusercontent.com/guillaume-gomez/Rep-Code/master/chat.png",
 	        student_project_rep_code_githubUrl: "https://github.com/guillaume-gomez/Rep-Code",
 	
 	        student_project_nf11_title: "Production d'un compilateur Logo",
 	        student_project_nf11_subtitle: "Travaux pratiques sur la théorie des langages",
-	        student_project_nf11_content: "Le but de se projet était de pratiquer fondamentaux de la théorie des langages. Ce projet contenait un squelette avec un analyseur syntaxique ainsi qu'un outil de build(un projet netbeans). Le projet m'a permis de comprendre les notions vues en cours de maniere ludique(on peut faire pleins de dessins rapidement en Logo :))",
+	        student_project_nf11_content: "Le but de ce projet était de pratiquer les fondamentaux de la théorie des langages. Ce projet contenait un squelette avec un analyseur syntaxique ainsi qu'un outil de build(un projet netbeans). Le projet m'a permis de comprendre les notions vues en cours de maniere ludique(on peut faire pleins de dessins rapidement en Logo :))",
 	        student_project_nf11_buttonText: "Voir le repo",
 	        student_project_nf11_href: "https://raw.githubusercontent.com/guillaume-gomez/NF11-project/master/example.png",
 	        student_project_nf11_githubUrl: "https://github.com/guillaume-gomez/NF11-project",
@@ -41996,7 +41996,7 @@
 	
 	        personal_project_LD37_title: "Ludum Dare 37",
 	        personal_project_LD37_subtitle: "Theme : One room",
-	        personal_project_LD37_content: "Dernière participation de l'année 2016. Toujours en phaser avec une chaine de build pour coder en ES6. Le jeu genere une salle randomisé, les ennemies peuvent pousser les blocs de la salle mais pas le hero. Pour gagner le personnage doit soit sortir de la salle(en laissant entrer les enemies), soit tous les eliminer.",
+	        personal_project_LD37_content: "Dernière participation de l'année 2016. Toujours en phaser avec une chaine de build pour coder en ES6. Le jeu genere une salle randomisé, les ennemies peuvent pousser les blocs de la salle mais pas le héro. Pour gagner le personnage doit ƒsoit sortir de la salle(en laissant entrer les enemies), soit tous les eliminer.",
 	        personal_project_LD37_buttonText: "Jouer",
 	        personal_project_LD37_href: "https://raw.githubusercontent.com/guillaume-gomez/LD37/master/preview.png",
 	        personal_project_LD37_githubUrl: "https://guillaume-gomez.github.io/LD37/build/",
