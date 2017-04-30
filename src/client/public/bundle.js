@@ -42001,6 +42001,13 @@
 	        personal_project_LD37_href: "https://raw.githubusercontent.com/guillaume-gomez/LD37/master/preview.png",
 	        personal_project_LD37_githubUrl: "https://guillaume-gomez.github.io/LD37/build/",
 	
+	        personal_project_LD38_title: "Ludum Dare 38",
+	        personal_project_LD38_subtitle: "Theme : A small world",
+	        personal_project_LD38_content: "Première participation de l'année au ludum dare. J'ai gardé les mêmes technologies que pour les precedentes 'jam'. Pour la première fois j'étais en équipe. Cela m'a permis de mettre en place un projet plus ambitieux, tout en devant gerer l'avancement de chacuns dans leur domaine( graphisme, level design, game design....).",
+	        personal_project_LD38_buttonText: "Jouer",
+	        personal_project_LD38_href: "https://raw.githubusercontent.com/guillaume-gomez/LD38/master/screenshots/title.png",
+	        personal_project_LD38_githubUrl: "https://guillaume-gomez.github.io/LD38/build/",
+	
 	        personal_project_projet_math_title: "Math game",
 	        personal_project_projet_math_subtitle: "Nom définitif à definir :)",
 	        personal_project_projet_math_content: "Le but était ici de faire un jeu vidéo basé sur l'utilisation de concepts mathématiques. Le tout en ajoutant des mécaniques de plateforme 2D. Ce projet est toujours en cours d'amélioration.",
@@ -42109,7 +42116,7 @@
 	        personal_project_LD36_content: "",
 	        personal_project_LD36_buttonText: "Play",
 	        personal_project_LD36_href: "https://raw.githubusercontent.com/guillaume-gomez/LD36/master/preview.png"
-	    }, _defineProperty(_en, "personal_project_LD36_githubUrl", "https://guillaume-gomez.github.io/LD36"), _defineProperty(_en, "personal_project_LD37_title", "Ludum Dare 37"), _defineProperty(_en, "personal_project_LD37_subtitle", "Theme : One room"), _defineProperty(_en, "personal_project_LD37_content", ""), _defineProperty(_en, "personal_project_LD37_buttonText", "Play"), _defineProperty(_en, "personal_project_LD37_href", "https://raw.githubusercontent.com/guillaume-gomez/LD37/master/preview.png"), _defineProperty(_en, "personal_project_LD37_githubUrl", "https://guillaume-gomez.github.io/LD37/build/"), _defineProperty(_en, "personal_project_projet_math_title", "Math game"), _defineProperty(_en, "personal_project_projet_math_subtitle", ""), _defineProperty(_en, "personal_project_projet_math_content", ""), _defineProperty(_en, "personal_project_projet_math_buttonText", "go to repository"), _defineProperty(_en, "personal_project_projet_math_href", "https://raw.githubusercontent.com/guillaume-gomez/MathGame/master/resReadme/in-game3.png"), _defineProperty(_en, "personal_project_projet_math_githubUrl", "https://github.com/guillaume-gomez/MathGame"), _defineProperty(_en, "personal_project_node_race_title", "NodeRace"), _defineProperty(_en, "personal_project_node_race_subtitle", "Multiplayer game"), _defineProperty(_en, "personal_project_node_race_content", ""), _defineProperty(_en, "personal_project_node_race_buttonText", ""), _defineProperty(_en, "personal_project_node_race_href", "https://raw.githubusercontent.com/guillaume-gomez/NodeRace/master/preview.png"), _defineProperty(_en, "personal_project_node_race_githubUrl", "https://github.com/guillaume-gomez/NodeRace"), _defineProperty(_en, "personal_project_langton_title", "Langton ant's"), _defineProperty(_en, "personal_project_langton_subtitle", ""), _defineProperty(_en, "personal_project_langton_content", ""), _defineProperty(_en, "personal_project_langton_buttonText", "Go to the site"), _defineProperty(_en, "personal_project_langton_href", "https://raw.githubusercontent.com/guillaume-gomez/langton-ant-phaser/master/static/res/preview.png"), _defineProperty(_en, "personal_project_langton_githubUrl", "https://guillaume-gomez.github.io/langton-ant-phaser/build/"), _en)
+	    }, _defineProperty(_en, "personal_project_LD36_githubUrl", "https://guillaume-gomez.github.io/LD36"), _defineProperty(_en, "personal_project_LD37_title", "Ludum Dare 37"), _defineProperty(_en, "personal_project_LD37_subtitle", "Theme : One room"), _defineProperty(_en, "personal_project_LD37_content", ""), _defineProperty(_en, "personal_project_LD37_buttonText", "Play"), _defineProperty(_en, "personal_project_LD37_href", "https://raw.githubusercontent.com/guillaume-gomez/LD37/master/preview.png"), _defineProperty(_en, "personal_project_LD37_githubUrl", "https://guillaume-gomez.github.io/LD37/build/"), _defineProperty(_en, "personal_project_projet_math_title", "Math game"), _defineProperty(_en, "personal_project_projet_math_subtitle", ""), _defineProperty(_en, "personal_project_projet_math_content", ""), _defineProperty(_en, "personal_project_projet_math_buttonText", "go to repository"), _defineProperty(_en, "personal_project_projet_math_href", "https://raw.githubusercontent.com/guillaume-gomez/MathGame/master/resReadme/in-game3.png"), _defineProperty(_en, "personal_project_projet_math_githubUrl", "https://github.com/guillaume-gomez/MathGame"), _defineProperty(_en, "personal_project_node_race_title", "NodeRace"), _defineProperty(_en, "personal_project_node_race_subtitle", "Multiplayer game"), _defineProperty(_en, "personal_project_node_race_content", ""), _defineProperty(_en, "personal_project_node_race_buttonText", ""), _defineProperty(_en, "personal_project_node_race_href", "https://raw.githubusercontent.com/guillaume-gomez/NodeRace/master/preview.png"), _defineProperty(_en, "personal_project_node_race_githubUrl", "https://github.com/guillaume-gomez/NodeRace"), _defineProperty(_en, "personal_project_langton_title", "Langton ant's"), _defineProperty(_en, "personal_project_langton_subtitle", ""), _defineProperty(_en, "personal_project_langton_content", ""), _defineProperty(_en, "personal_project_langton_buttonText", "Go to the site"), _defineProperty(_en, "personal_project_langton_href", "https://raw.githubusercontent.com/guillaume-gomez/langton-ant-phaser/master/static/res/preview.png"), _defineProperty(_en, "personal_project_langton_githubUrl", "https://guillaume-gomez.github.io/langton-ant-phaser/build/"), _defineProperty(_en, "personal_project_LD38_title", "Ludum Dare 38"), _defineProperty(_en, "personal_project_LD38_subtitle", "Theme : A small world"), _defineProperty(_en, "personal_project_LD38_content", ""), _defineProperty(_en, "personal_project_LD38_buttonText", ""), _defineProperty(_en, "personal_project_LD38_href", ""), _defineProperty(_en, "personal_project_LD38_githubUrl", "https://guillaume-gomez.github.io/LD38/build/"), _en)
 	};
 	
 	function t(locale, key) {
@@ -43043,6 +43050,15 @@
 	      return _react2.default.createElement(
 	        _ArticlesContainer2.default,
 	        { locale: locale, title: (0, _Translations.t)(locale, "personal_project_title") },
+	        _react2.default.createElement(_Article2.default, {
+	          title: (0, _Translations.t)(locale, "personal_project_LD38_title"),
+	          subtitle: (0, _Translations.t)(locale, "personal_project_LD38_subtitle"),
+	          content: (0, _Translations.t)(locale, "personal_project_LD38_content"),
+	          buttonText: (0, _Translations.t)(locale, "personal_project_LD38_buttonText"),
+	          href: (0, _Translations.t)(locale, "personal_project_LD38_href"),
+	          githubUrl: (0, _Translations.t)(locale, "personal_project_LD38_githubUrl"),
+	          languages: "Javascript ES6, Phaser"
+	        }),
 	        _react2.default.createElement(_Article2.default, {
 	          title: (0, _Translations.t)(locale, "personal_project_LD37_title"),
 	          subtitle: (0, _Translations.t)(locale, "personal_project_LD37_subtitle"),
