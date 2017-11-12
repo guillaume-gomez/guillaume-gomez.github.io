@@ -12,9 +12,13 @@ import { t } from "./Translations";
 
 const Pages = [ "aboutMe" , "resume", "studentProjects", "personalProjects", "contributions"];
 
+//up, up, down, down, left, right, left, right, B, A
+const KonamiCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+    
+
 class App extends React.Component {
 
-  constructor(){
+  constructor() {
     super();
     [
       "renderNavBar",
@@ -27,25 +31,54 @@ class App extends React.Component {
       "seeResume",
       "seeStudentProjects",
       "seePersonalProjects",
-      "seeContribution"
+      "seeContribution",
+      "checkKonamiCode"
     ].forEach(item => {
       this[item] = this[item].bind(this);
     });
-    this.state = { currentPage: "aboutMe", locale: "fr" };
+    this.state = { currentPage: "aboutMe", locale: "fr", konamiCodeIndex: 0 };
   }
 
   componentDidMount() {
-    console.log("componentDidMount")
     const params = this.getParams(window.location.search);
     if(Pages.includes(params)) {
       this.setState({ currentPage: params });
     }
+    window.addEventListener('keydown', this.checkKonamiCode);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('keydown', this.checkKonamiCode);
+  }
+
+  checkKonamiCode(e) {
+    const { konamiCodeIndex } = this.state;
+    let newKonamiCodeIndex = konamiCodeIndex;
+    console.log(newKonamiCodeIndex);
+    console.log(KonamiCode[newKonamiCodeIndex]);
+    if (e.keyCode === KonamiCode[newKonamiCodeIndex]) {
+      newKonamiCodeIndex = newKonamiCodeIndex + 1;
+      if (newKonamiCodeIndex === KonamiCode.length) {
+        //ADD stuff :)
+        newKonamiCodeIndex = 0;
+      }
+    }
+    else {
+      newKonamiCodeIndex = 0;
+    }
+    this.setState({konamiCodeIndex: newKonamiCodeIndex});
+    console.log(newKonamiCodeIndex)
   }
 
   getParams(data) {
     //remove ?pages=
     return data.substring(6);
   }
+
+    handleKeyDown(event) {
+    console.log('handling a key press');
+  }
+
 
   updateQueryString(params) {
     if (window.history.pushState) {
