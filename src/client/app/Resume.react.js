@@ -54,9 +54,14 @@ class Resume extends React.Component {
                     {t(locale, "resume_array_location")}
                   </th>
                 </tr>
+                <tr>
+                  <td className="resume-text-primary-color">11/17 - current</td>
+                  <td className="resume-text-primary-color">{t(locale, "resume_amuse")} {t(locale, "at")} <u><a href="https://www.amusenetwork.com/"> Amuse </a></u></td>
+                  <td className="resume-text-primary-color">Paris, France</td>
+                </tr>
                 <tr className="resume-light-primary-color">
-                  <td className="resume-text-primary-color">08/15 - 01/17</td>
-                  <td className="resume-text-primary-color">{t(locale, "resume_applidget")} {t(locale, "at")} <u><a href="http://applidget.com"> Applidget </a></u></td>
+                  <td className="resume-text-primary-color">08/15 - 11/17</td>
+                  <td className="resume-text-primary-color">{t(locale, "resume_applidget")} {t(locale, "at")} <u><a href="http://applidget.com"> EventMaker </a></u></td>
                   <td className="resume-text-primary-color">Paris, France</td>
                 </tr>
                 <tr>

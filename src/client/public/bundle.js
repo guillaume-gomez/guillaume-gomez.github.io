@@ -43230,6 +43230,7 @@
 	        resume_array_year: "Année",
 	        resume_array_location: "Where",
 	        resume_applidget: "Ingénieur Back-end",
+	        resume_amuse: "Ingénieur Back-end",
 	        resume_masa: "Stagiaire programmeur 3D ",
 	        resume_multiposting: "Stagiaire developpeur Back-end ",
 	        resume_utc: "Diplôme d'Ingénieur en informatique",
@@ -43571,11 +43572,42 @@
 	                ),
 	                _react2.default.createElement(
 	                  "tr",
+	                  null,
+	                  _react2.default.createElement(
+	                    "td",
+	                    { className: "resume-text-primary-color" },
+	                    "11/17 - current"
+	                  ),
+	                  _react2.default.createElement(
+	                    "td",
+	                    { className: "resume-text-primary-color" },
+	                    (0, _Translations.t)(locale, "resume_amuse"),
+	                    " ",
+	                    (0, _Translations.t)(locale, "at"),
+	                    " ",
+	                    _react2.default.createElement(
+	                      "u",
+	                      null,
+	                      _react2.default.createElement(
+	                        "a",
+	                        { href: "https://www.amusenetwork.com/" },
+	                        " Amuse "
+	                      )
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    "td",
+	                    { className: "resume-text-primary-color" },
+	                    "Paris, France"
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  "tr",
 	                  { className: "resume-light-primary-color" },
 	                  _react2.default.createElement(
 	                    "td",
 	                    { className: "resume-text-primary-color" },
-	                    "08/15 - 01/17"
+	                    "08/15 - 11/17"
 	                  ),
 	                  _react2.default.createElement(
 	                    "td",
@@ -43590,7 +43622,7 @@
 	                      _react2.default.createElement(
 	                        "a",
 	                        { href: "http://applidget.com" },
-	                        " Applidget "
+	                        " EventMaker "
 	                      )
 	                    )
 	                  ),
