@@ -14,6 +14,15 @@ class PersonalProjects extends React.Component {
     const { locale } = this.props;
     return (
       <ArticlesContainer locale={locale} title={t(locale, "personal_project_title")}>
+        <Article
+          title={t(locale, "personal_project_phaser_sandbox_title")}
+          subtitle={t(locale, "personal_project_phaser_sandbox_subtitle")}
+          content={t(locale, "personal_project_phaser_sandbox_content")}
+          buttonText={t(locale, "personal_project_phaser_sandbox_buttonText")}
+          href={t(locale, "personal_project_phaser_sandbox_href")}
+          githubUrl={t(locale, "personal_project_phaser_sandbox_githubUrl")}
+          languages="Javascript ES6, Phaser"
+        />
          <Article
           title={t(locale, "personal_project_LD38_title")}
           subtitle={t(locale, "personal_project_LD38_subtitle")}

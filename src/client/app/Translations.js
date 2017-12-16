@@ -132,6 +132,13 @@ const translations = {
         personal_project_langton_href: "https://raw.githubusercontent.com/guillaume-gomez/langton-ant-phaser/master/static/res/preview.png",
         personal_project_langton_githubUrl: "https://guillaume-gomez.github.io/langton-ant-phaser/build/",
 
+        personal_project_phaser_sandbox_title: "Phaser sandbox",
+        personal_project_phaser_sandbox_subtitle:"",
+        personal_project_phaser_sandbox_content:"Ce repo contient toutes les 'expériences' que j'ai voulu faire sur Phaser. Je retiendrai un générateur de labyrinthe qui malgré quelques bugs arrivent à des résultats probants",
+        personal_project_phaser_sandbox_buttonText: "Voir l'exemple du générateur de labyrinthe",
+        personal_project_phaser_sandbox_href:"https://raw.githubusercontent.com/guillaume-gomez/phaserEs6Tutorials/master/preview.png",
+        personal_project_phaser_sandbox_githubUrl: "https://guillaume-gomez.github.io/phaserEs6Tutorials/build/map-generator.html",
+
     },
     "en": {
         a: "at",
@@ -242,13 +249,19 @@ const translations = {
         personal_project_langton_href: "https://raw.githubusercontent.com/guillaume-gomez/langton-ant-phaser/master/static/res/preview.png",
         personal_project_langton_githubUrl: "https://guillaume-gomez.github.io/langton-ant-phaser/build/",
 
-
         personal_project_LD38_title: "Ludum Dare 38",
         personal_project_LD38_subtitle: "Theme : A small world",
         personal_project_LD38_content: "",
         personal_project_LD38_buttonText: "",
         personal_project_LD38_href: "",
         personal_project_LD38_githubUrl: "https://guillaume-gomez.github.io/LD38/build/",
+
+        personal_project_phaser_sandbox_title: "Phaser sandbox",
+        personal_project_phaser_sandbox_subtitle:"",
+        personal_project_phaser_sandbox_content:"",
+        personal_project_phaser_sandbox_buttonText: "",
+        personal_project_phaser_sandbox_href:"https://raw.githubusercontent.com/guillaume-gomez//phaserEs6Tutorials/preview.png",
+        personal_project_phaser_sandbox_githubUrl: "https://guillaume-gomez.github.io/phaserEs6Tutorials/build/map-generator.html",
     }
 }
 
