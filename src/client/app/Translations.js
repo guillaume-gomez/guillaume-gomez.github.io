@@ -139,6 +139,13 @@ const translations = {
         personal_project_phaser_sandbox_href:"https://raw.githubusercontent.com/guillaume-gomez/phaserEs6Tutorials/master/preview.png",
         personal_project_phaser_sandbox_githubUrl: "https://guillaume-gomez.github.io/phaserEs6Tutorials/build/map-generator.html",
 
+        personal_project_rust_tilt_shift_title: "Tilt Shift",
+        personal_project_rust_tilt_shift_subtitle:"Traitement d'image en Rust",
+        personal_project_rust_tilt_shift_content:"Je voulais commencer à coder en Rust pour mieux connaitre ce langage. J'ai donc decidé d'utiliser la libraire graphique Clap pour réaliser un algo générant un tilt shift.",
+        personal_project_rust_tilt_shift_buttonText: "Voir le repo",
+        personal_project_rust_tilt_shift_href:"https://raw.githubusercontent.com/guillaume-gomez/tilt-shift-rust/master/velodromeTiltShift.png",
+        personal_project_rust_tilt_shift_githubUrl: "https://github.com/guillaume-gomez/tilt-shift-rust",
+
     },
     "en": {
         a: "at",
@@ -262,6 +269,13 @@ const translations = {
         personal_project_phaser_sandbox_buttonText: "",
         personal_project_phaser_sandbox_href:"https://raw.githubusercontent.com/guillaume-gomez//phaserEs6Tutorials/preview.png",
         personal_project_phaser_sandbox_githubUrl: "https://guillaume-gomez.github.io/phaserEs6Tutorials/build/map-generator.html",
+
+        personal_project_rust_tilt_shift_title: "Tilt Shift",
+        personal_project_rust_tilt_shift_subtitle:"",
+        personal_project_rust_tilt_shift_content:"",
+        personal_project_rust_tilt_shift_buttonText: "",
+        personal_project_rust_tilt_shift_href:"https://raw.githubusercontent.com/guillaume-gomez/tilt-shift-rust/master/velodromeTiltShift.png",
+        personal_project_rust_tilt_shift_githubUrl: "https://github.com/guillaume-gomez/tilt-shift-rust",
     }
 }
 
