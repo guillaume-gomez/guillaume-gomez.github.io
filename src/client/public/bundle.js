@@ -44268,7 +44268,8 @@
 	          buttonText = _props.buttonText,
 	          href = _props.href,
 	          githubUrl = _props.githubUrl,
-	          languages = _props.languages;
+	          languages = _props.languages,
+	          year = _props.year;
 	
 	      return _react2.default.createElement(
 	        "div",
@@ -44323,6 +44324,15 @@
 	            )
 	          ),
 	          _react2.default.createElement(
+	            "p",
+	            null,
+	            _react2.default.createElement(
+	              "small",
+	              null,
+	              year
+	            )
+	          ),
+	          _react2.default.createElement(
 	            "a",
 	            { className: "btn btn-primary my-button", target: "_blank", href: githubUrl },
 	            buttonText,
@@ -44343,7 +44353,8 @@
 	  buttonText: _react2.default.PropTypes.string,
 	  href: _react2.default.PropTypes.string,
 	  githubUrl: _react2.default.PropTypes.string,
-	  languages: _react2.default.PropTypes.string
+	  languages: _react2.default.PropTypes.string,
+	  year: _react2.default.PropTypes.number
 	};
 	
 	Article.defaultProps = {
@@ -44353,7 +44364,8 @@
 	  buttonText: "View Project",
 	  href: "http://placehold.it/600x300",
 	  githubUrl: "https://github.com/guillaume-gomez",
-	  languages: ""
+	  languages: "",
+	  year: ""
 	
 	};
 	

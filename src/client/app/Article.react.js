@@ -7,7 +7,7 @@ class Article extends React.Component {
   }
 
   render () {
-    const { title, subtitle, content, buttonText, href, githubUrl, languages} = this.props;
+    const { title, subtitle, content, buttonText, href, githubUrl, languages, year } = this.props;
     return (
       <div className="row">
         <div className="col-md-7 fadein">
@@ -19,6 +19,7 @@ class Article extends React.Component {
           <h4> <em> {subtitle} </em></h4>
           <p>{content}</p>
           <p>Technologies : <small>{languages}</small></p>
+          <p><small>{year}</small></p>
           <a className="btn btn-primary my-button" target="_blank" href={githubUrl}>
             {buttonText}
             <span className="glyphicon glyphicon-chevron-right"></span>
@@ -36,7 +37,8 @@ Article.propTypes = {
   buttonText: React.PropTypes.string,
   href: React.PropTypes.string,
   githubUrl: React.PropTypes.string,
-  languages: React.PropTypes.string
+  languages: React.PropTypes.string,
+  year: React.PropTypes.number,
 };
 
 Article.defaultProps = {
@@ -46,7 +48,8 @@ Article.defaultProps = {
   buttonText: "View Project",
   href: "http://placehold.it/600x300",
   githubUrl: "https://github.com/guillaume-gomez",
-  languages: ""
+  languages: "",
+  year: ""
 
 };
 
