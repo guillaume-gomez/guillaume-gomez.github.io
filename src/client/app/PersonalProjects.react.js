@@ -22,6 +22,7 @@ class PersonalProjects extends React.Component {
           href={t(locale, "personal_project_rust_tilt_shift_href")}
           githubUrl={t(locale, "personal_project_rust_tilt_shift_githubUrl")}
           languages="Rust, Cargo, Clap"
+          year={2017}
         />
 
         <Article
@@ -32,6 +33,7 @@ class PersonalProjects extends React.Component {
           href={t(locale, "personal_project_phaser_sandbox_href")}
           githubUrl={t(locale, "personal_project_phaser_sandbox_githubUrl")}
           languages="Javascript ES6, Phaser"
+          year={2017}
         />
          <Article
           title={t(locale, "personal_project_LD38_title")}
@@ -41,6 +43,7 @@ class PersonalProjects extends React.Component {
           href={t(locale, "personal_project_LD38_href")}
           githubUrl={t(locale, "personal_project_LD38_githubUrl")}
           languages="Javascript ES6, Phaser"
+          year={2017}
         />
         <Article
           title={t(locale, "personal_project_LD37_title")}
@@ -50,6 +53,7 @@ class PersonalProjects extends React.Component {
           href={t(locale, "personal_project_LD37_href")}
           githubUrl={t(locale, "personal_project_LD37_githubUrl")}
           languages="Javascript ES6, Phaser"
+          year={2017}
         />
         <Article
           title={t(locale, "personal_project_LD36_title")}
@@ -59,6 +63,7 @@ class PersonalProjects extends React.Component {
           href={t(locale, "personal_project_LD36_href")}
           githubUrl={t(locale, "personal_project_LD36_githubUrl")}
           languages="Javascript ES6, Phaser"
+          year={2017}
         />
         <Article
           title={t(locale, "personal_project_path_tracer_title")}
@@ -68,6 +73,7 @@ class PersonalProjects extends React.Component {
           href={t(locale, "personal_project_path_tracer_href")}
           githubUrl={t(locale, "personal_project_path_tracer_githubUrl")}
           languages="Golang"
+          year={2017}
         />
         <Article
           title={t(locale, "personal_project_LD35_title")}
@@ -77,6 +83,7 @@ class PersonalProjects extends React.Component {
           href={t(locale, "personal_project_LD35_href")}
           githubUrl={t(locale, "personal_project_LD35_githubUrl")}
           languages="Javascript, Jaws Js"
+          year={2016}
         />
         <Article
           title={t(locale, "personal_project_langton_title")}
@@ -86,6 +93,7 @@ class PersonalProjects extends React.Component {
           href={t(locale, "personal_project_langton_href")}
           githubUrl={t(locale, "personal_project_langton_githubUrl")}
           languages="Javascript, Phaser Js"
+          year={2016}
         />
         <Article
           title={t(locale, "personal_project_projet_math_title")}
@@ -95,6 +103,7 @@ class PersonalProjects extends React.Component {
           href={t(locale, "personal_project_projet_math_href")}
           githubUrl={t(locale, "personal_project_projet_math_githubUrl")}
           languages="C++, SFML, Thor"
+          year={2012}
         />
         <Article
           title={t(locale, "personal_project_node_race_title")}
@@ -104,6 +113,7 @@ class PersonalProjects extends React.Component {
           href={t(locale, "personal_project_node_race_href")}
           githubUrl={t(locale, "personal_project_node_race_githubUrl")}
           languages="Javascript, NodeJs, Jaws Js"
+          year={2013}
         />
       </ArticlesContainer>
     );

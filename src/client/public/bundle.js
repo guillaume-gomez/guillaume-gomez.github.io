@@ -44432,7 +44432,8 @@
 	          buttonText: (0, _Translations.t)(locale, "personal_project_rust_tilt_shift_buttonText"),
 	          href: (0, _Translations.t)(locale, "personal_project_rust_tilt_shift_href"),
 	          githubUrl: (0, _Translations.t)(locale, "personal_project_rust_tilt_shift_githubUrl"),
-	          languages: "Rust, Cargo, Clap"
+	          languages: "Rust, Cargo, Clap",
+	          year: 2017
 	        }),
 	        _react2.default.createElement(_Article2.default, {
 	          title: (0, _Translations.t)(locale, "personal_project_phaser_sandbox_title"),
@@ -44441,7 +44442,8 @@
 	          buttonText: (0, _Translations.t)(locale, "personal_project_phaser_sandbox_buttonText"),
 	          href: (0, _Translations.t)(locale, "personal_project_phaser_sandbox_href"),
 	          githubUrl: (0, _Translations.t)(locale, "personal_project_phaser_sandbox_githubUrl"),
-	          languages: "Javascript ES6, Phaser"
+	          languages: "Javascript ES6, Phaser",
+	          year: 2017
 	        }),
 	        _react2.default.createElement(_Article2.default, {
 	          title: (0, _Translations.t)(locale, "personal_project_LD38_title"),
@@ -44450,7 +44452,8 @@
 	          buttonText: (0, _Translations.t)(locale, "personal_project_LD38_buttonText"),
 	          href: (0, _Translations.t)(locale, "personal_project_LD38_href"),
 	          githubUrl: (0, _Translations.t)(locale, "personal_project_LD38_githubUrl"),
-	          languages: "Javascript ES6, Phaser"
+	          languages: "Javascript ES6, Phaser",
+	          year: 2017
 	        }),
 	        _react2.default.createElement(_Article2.default, {
 	          title: (0, _Translations.t)(locale, "personal_project_LD37_title"),
@@ -44459,7 +44462,8 @@
 	          buttonText: (0, _Translations.t)(locale, "personal_project_LD37_buttonText"),
 	          href: (0, _Translations.t)(locale, "personal_project_LD37_href"),
 	          githubUrl: (0, _Translations.t)(locale, "personal_project_LD37_githubUrl"),
-	          languages: "Javascript ES6, Phaser"
+	          languages: "Javascript ES6, Phaser",
+	          year: 2017
 	        }),
 	        _react2.default.createElement(_Article2.default, {
 	          title: (0, _Translations.t)(locale, "personal_project_LD36_title"),
@@ -44468,7 +44472,8 @@
 	          buttonText: (0, _Translations.t)(locale, "personal_project_LD36_buttonText"),
 	          href: (0, _Translations.t)(locale, "personal_project_LD36_href"),
 	          githubUrl: (0, _Translations.t)(locale, "personal_project_LD36_githubUrl"),
-	          languages: "Javascript ES6, Phaser"
+	          languages: "Javascript ES6, Phaser",
+	          year: 2017
 	        }),
 	        _react2.default.createElement(_Article2.default, {
 	          title: (0, _Translations.t)(locale, "personal_project_path_tracer_title"),
@@ -44477,7 +44482,8 @@
 	          buttonText: (0, _Translations.t)(locale, "personal_project_path_tracer_buttonText"),
 	          href: (0, _Translations.t)(locale, "personal_project_path_tracer_href"),
 	          githubUrl: (0, _Translations.t)(locale, "personal_project_path_tracer_githubUrl"),
-	          languages: "Golang"
+	          languages: "Golang",
+	          year: 2017
 	        }),
 	        _react2.default.createElement(_Article2.default, {
 	          title: (0, _Translations.t)(locale, "personal_project_LD35_title"),
@@ -44486,7 +44492,8 @@
 	          buttonText: (0, _Translations.t)(locale, "personal_project_LD35_buttonText"),
 	          href: (0, _Translations.t)(locale, "personal_project_LD35_href"),
 	          githubUrl: (0, _Translations.t)(locale, "personal_project_LD35_githubUrl"),
-	          languages: "Javascript, Jaws Js"
+	          languages: "Javascript, Jaws Js",
+	          year: 2016
 	        }),
 	        _react2.default.createElement(_Article2.default, {
 	          title: (0, _Translations.t)(locale, "personal_project_langton_title"),
@@ -44495,7 +44502,8 @@
 	          buttonText: (0, _Translations.t)(locale, "personal_project_langton_buttonText"),
 	          href: (0, _Translations.t)(locale, "personal_project_langton_href"),
 	          githubUrl: (0, _Translations.t)(locale, "personal_project_langton_githubUrl"),
-	          languages: "Javascript, Phaser Js"
+	          languages: "Javascript, Phaser Js",
+	          year: 2016
 	        }),
 	        _react2.default.createElement(_Article2.default, {
 	          title: (0, _Translations.t)(locale, "personal_project_projet_math_title"),
@@ -44504,7 +44512,8 @@
 	          buttonText: (0, _Translations.t)(locale, "personal_project_projet_math_buttonText"),
 	          href: (0, _Translations.t)(locale, "personal_project_projet_math_href"),
 	          githubUrl: (0, _Translations.t)(locale, "personal_project_projet_math_githubUrl"),
-	          languages: "C++, SFML, Thor"
+	          languages: "C++, SFML, Thor",
+	          year: 2012
 	        }),
 	        _react2.default.createElement(_Article2.default, {
 	          title: (0, _Translations.t)(locale, "personal_project_node_race_title"),
@@ -44513,7 +44522,8 @@
 	          buttonText: (0, _Translations.t)(locale, "personal_project_node_race_buttonText"),
 	          href: (0, _Translations.t)(locale, "personal_project_node_race_href"),
 	          githubUrl: (0, _Translations.t)(locale, "personal_project_node_race_githubUrl"),
-	          languages: "Javascript, NodeJs, Jaws Js"
+	          languages: "Javascript, NodeJs, Jaws Js",
+	          year: 2013
 	        })
 	      );
 	    }
