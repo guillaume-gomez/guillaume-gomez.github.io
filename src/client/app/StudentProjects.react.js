@@ -22,6 +22,7 @@ class StudentProjects extends React.Component {
           href={t(locale, "student_project_nf11_href")}
           githubUrl={t(locale, "student_project_nf11_githubUrl")}
           languages="Java"
+          year={2014}
         />
         <Article
           title={t(locale, "student_project_nf29_title")}
@@ -31,6 +32,7 @@ class StudentProjects extends React.Component {
           href={t(locale, "student_project_nf29_href")}
           githubUrl={t(locale, "student_project_nf29_githubUrl")}
           languages="XSLT"
+          year={2014}
         />
         <Article
           title={t(locale, "student_project_nf28_title")}
@@ -49,6 +51,7 @@ class StudentProjects extends React.Component {
           href={t(locale, "student_project_ia02_href")}
           githubUrl={t(locale, "student_project_ia02_githubUrl")}
           languages="Prolog"
+          year={2013}
         />
         <Article
           title={t(locale, "student_project_rep_code_title")}
@@ -58,6 +61,7 @@ class StudentProjects extends React.Component {
           href={t(locale, "student_project_rep_code_href")}
           githubUrl={t(locale, "student_project_rep_code_githubUrl")}
           languages="C++, Lib jpeg"
+          year={2012}
         />
       </ArticlesContainer>
     );

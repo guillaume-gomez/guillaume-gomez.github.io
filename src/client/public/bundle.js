@@ -44008,7 +44008,8 @@
 	          buttonText: (0, _Translations.t)(locale, "student_project_nf11_buttonText"),
 	          href: (0, _Translations.t)(locale, "student_project_nf11_href"),
 	          githubUrl: (0, _Translations.t)(locale, "student_project_nf11_githubUrl"),
-	          languages: "Java"
+	          languages: "Java",
+	          year: 2014
 	        }),
 	        _react2.default.createElement(_Article2.default, {
 	          title: (0, _Translations.t)(locale, "student_project_nf29_title"),
@@ -44017,7 +44018,8 @@
 	          buttonText: (0, _Translations.t)(locale, "student_project_nf29_buttonText"),
 	          href: (0, _Translations.t)(locale, "student_project_nf29_href"),
 	          githubUrl: (0, _Translations.t)(locale, "student_project_nf29_githubUrl"),
-	          languages: "XSLT"
+	          languages: "XSLT",
+	          year: 2014
 	        }),
 	        _react2.default.createElement(_Article2.default, {
 	          title: (0, _Translations.t)(locale, "student_project_nf28_title"),
@@ -44035,7 +44037,8 @@
 	          buttonText: (0, _Translations.t)(locale, "student_project_ia02_buttonText"),
 	          href: (0, _Translations.t)(locale, "student_project_ia02_href"),
 	          githubUrl: (0, _Translations.t)(locale, "student_project_ia02_githubUrl"),
-	          languages: "Prolog"
+	          languages: "Prolog",
+	          year: 2013
 	        }),
 	        _react2.default.createElement(_Article2.default, {
 	          title: (0, _Translations.t)(locale, "student_project_rep_code_title"),
@@ -44044,7 +44047,8 @@
 	          buttonText: (0, _Translations.t)(locale, "student_project_rep_code_buttonText"),
 	          href: (0, _Translations.t)(locale, "student_project_rep_code_href"),
 	          githubUrl: (0, _Translations.t)(locale, "student_project_rep_code_githubUrl"),
-	          languages: "C++, Lib jpeg"
+	          languages: "C++, Lib jpeg",
+	          year: 2012
 	        })
 	      );
 	    }
