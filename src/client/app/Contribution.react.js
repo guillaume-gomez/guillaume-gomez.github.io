@@ -22,6 +22,7 @@ class Contribution extends React.Component {
           href={t(locale, "participation_project_camlCompiler_href")}
           githubUrl={t(locale, "participation_project_camlCompiler_githubUrl")}
           languages="C++, Google Test, Travis ci"
+          year={2016}
         />
         <Article
           title={t(locale, "participation_project_LD34_title")}
@@ -31,6 +32,7 @@ class Contribution extends React.Component {
           href={t(locale, "participation_project_LD34_href")}
           githubUrl={t(locale, "participation_project_LD34_githubUrl")}
           languages="Javascript, Sat Js"
+          year={2016}
         />
       </ArticlesContainer>
     );
