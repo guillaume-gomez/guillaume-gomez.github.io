@@ -29,7 +29,7 @@ const translations = {
 
         student_project_rep_code_title: "Projet étudiant de traitement d'images",
         student_project_rep_code_subtitle: "Librairie 2D de génération d'images",
-        student_project_rep_code_content: "Premier projet en dut traitant de traitement d'images. Le but ici était de se perfectionner sur l'apprentissage du C++(11) et de toucher des concepts du développement 2D : la structure des données des images, les transformations de bases, réalisation d'algorithmes de traitements simple. Bref un des premiers de mes travaux abouti dans mon cursus",
+        student_project_rep_code_content: "Premier projet en DUT traitant de traitement d'images. Le but ici était de se perfectionner sur l'apprentissage du C++(11) et de toucher des concepts du développement 2D : la structure des données des images, les transformations de bases, réalisation d'algorithmes de traitements simple. Bref un des premiers de mes travaux abouti dans mon cursus",
         student_project_rep_code_buttonText: "Voir le repo",
         student_project_rep_code_href: "https://raw.githubusercontent.com/guillaume-gomez/Rep-Code/master/chat.png",
         student_project_rep_code_githubUrl: "https://github.com/guillaume-gomez/Rep-Code",
@@ -134,7 +134,7 @@ const translations = {
 
         personal_project_phaser_sandbox_title: "Phaser sandbox",
         personal_project_phaser_sandbox_subtitle:"",
-        personal_project_phaser_sandbox_content:"Ce repo contient toutes les 'expériences' que j'ai voulu faire sur Phaser. Je retiendrai un générateur de labyrinthe qui malgré quelques bugs arrivent à des résultats probants",
+        personal_project_phaser_sandbox_content:"Ce repo contient toutes les 'expériences' que j'ai voulu faire sur Phaser. Je retiendrai un générateur de labyrinthe qui malgré quelques bugs arrive à des résultats probants",
         personal_project_phaser_sandbox_buttonText: "Voir l'exemple du générateur de labyrinthe",
         personal_project_phaser_sandbox_href:"https://raw.githubusercontent.com/guillaume-gomez/phaserEs6Tutorials/master/preview.png",
         personal_project_phaser_sandbox_githubUrl: "https://guillaume-gomez.github.io/phaserEs6Tutorials/build/map-generator.html",
