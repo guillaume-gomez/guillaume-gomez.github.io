@@ -146,6 +146,13 @@ const translations = {
         personal_project_rust_tilt_shift_href:"https://raw.githubusercontent.com/guillaume-gomez/tilt-shift-rust/master/velodromeTiltShift.png",
         personal_project_rust_tilt_shift_githubUrl: "https://github.com/guillaume-gomez/tilt-shift-rust",
 
+        personal_project_music_mooc_title: "Music Mooc",
+        personal_project_music_mooc_subtitle:"MOOC sur comment faire de la musique en JS",
+        personal_project_music_mooc_content:"J'ai voulu faire ce mooc pour voir comment on peut faire de la musique avec de le programmation.",
+        personal_project_music_mooc_buttonText: "Voir le repo",
+        personal_project_music_mooc_href:"https://ugc.futurelearn.com/uploads/images/30/2c/promo_large_302cde48-b7ca-40d9-bd83-ccbbe927f765.jpg",
+        personal_project_music_mooc_githubUrl: "hhttps://github.com/guillaume-gomez/music-mooc",
+
     },
     "en": {
         a: "at",
@@ -276,6 +283,14 @@ const translations = {
         personal_project_rust_tilt_shift_buttonText: "",
         personal_project_rust_tilt_shift_href:"https://raw.githubusercontent.com/guillaume-gomez/tilt-shift-rust/master/velodromeTiltShift.png",
         personal_project_rust_tilt_shift_githubUrl: "https://github.com/guillaume-gomez/tilt-shift-rust",
+
+        personal_project_music_mooc_title: "Music Mooc",
+        personal_project_music_mooc_subtitle:"MOOC sur comment faire de la musique en JS",
+        personal_project_music_mooc_content:"J'ai voulu faire ce mooc pour voir comment on peut faire de la musique avec de le programmation.",
+        personal_project_music_mooc_buttonText: "Voir le repo",
+        personal_project_music_mooc_href:"https://ugc.futurelearn.com/uploads/images/30/2c/promo_large_302cde48-b7ca-40d9-bd83-ccbbe927f765.jpg",
+        personal_project_music_mooc_githubUrl: "hhttps://github.com/guillaume-gomez/music-mooc",
+
     }
 }
 
