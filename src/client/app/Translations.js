@@ -153,6 +153,13 @@ const translations = {
         personal_project_music_mooc_href:"https://ugc.futurelearn.com/uploads/images/30/2c/promo_large_302cde48-b7ca-40d9-bd83-ccbbe927f765.jpg",
         personal_project_music_mooc_githubUrl: "hhttps://github.com/guillaume-gomez/music-mooc",
 
+        personal_project_LD41_title: "LD 41",
+        personal_project_LD41_subtitle:"Theme: Combine 2 Incompatible Genres",
+        personal_project_LD41_content:"Deuxième expérience avec une team de graphiste. Le résultat graphiquement est très beau. Par contre d'un point de vue gameplay, le résultat est plus mitigé :p",
+        personal_project_LD41_buttonText: "Voir le repo",
+        personal_project_LD41_href:"https://github.com/guillaume-gomez/LD41/blob/a8e4b079b416bd6a892b96a675fd952c3f5f8095/GitHubResources/front.png",
+        personal_project_LD41_githubUrl: "https://github.com/guillaume-gomez/LD41",
+
     },
     "en": {
         a: "at",
@@ -285,12 +292,18 @@ const translations = {
         personal_project_rust_tilt_shift_githubUrl: "https://github.com/guillaume-gomez/tilt-shift-rust",
 
         personal_project_music_mooc_title: "Music Mooc",
-        personal_project_music_mooc_subtitle:"MOOC sur comment faire de la musique en JS",
+        personal_project_music_mooc_subtitle:"",
         personal_project_music_mooc_content:"",
         personal_project_music_mooc_buttonText: "Voir le repo",
         personal_project_music_mooc_href:"https://ugc.futurelearn.com/uploads/images/30/2c/promo_large_302cde48-b7ca-40d9-bd83-ccbbe927f765.jpg",
         personal_project_music_mooc_githubUrl: "hhttps://github.com/guillaume-gomez/music-mooc",
 
+        personal_project_LD41_title: "LD 41",
+        personal_project_LD41_subtitle:"Theme: Combine 2 Incompatible Genres",
+        personal_project_LD41_content:"",
+        personal_project_LD41_buttonText: "Voir le repo",
+        personal_project_LD41_href:"https://github.com/guillaume-gomez/LD41/blob/a8e4b079b416bd6a892b96a675fd952c3f5f8095/GitHubResources/front.png",
+        personal_project_LD41_githubUrl: "https://github.com/guillaume-gomez/LD41",
     }
 }
 
