@@ -15,13 +15,24 @@ class PersonalProjects extends React.Component {
     return (
       <ArticlesContainer locale={locale} title={t(locale, "personal_project_title")}>
         <Article
+          title={t(locale, "personal_project_LD41_title")}
+          subtitle={t(locale, "personal_project_LD41_subtile")}
+          content={t(locale, "personal_project_LD41_content")}
+          buttonText={t(locale, "personal_project_LD41_buttton_text")}
+          href={t(locale, "personal_project_LD41_href")}
+          githubUrl={t(locale, "personal_project_LD41_githubUrl")}
+          languages="C#, Unity"
+          year={2018}
+        />
+
+        <Article
           title={t(locale, "personal_project_music_mooc_title")}
           subtitle={t(locale, "personal_project_music_mooc_subtitle")}
           content={t(locale, "personal_project_music_mooc_content")}
           buttonText={t(locale, "personal_project_music_mooc_buttonText")}
           href={t(locale, "personal_project_music_mooc_href")}
           githubUrl={t(locale, "personal_project_music_mooc_githubUrl")}
-          languages="Javascript, Es6, "
+          languages="Javascript, Es6"
           year={2017}
         />
 
