@@ -15,51 +15,31 @@ class StudentProjects extends React.Component {
     return (
       <ArticlesContainer locale={locale} title={t(locale, "student_project_title")}>
         <Article
-          title={t(locale, "student_project_nf11_title")}
-          subtitle={t(locale, "student_project_nf11_subtitle")}
-          content={t(locale, "student_project_nf11_content")}
-          buttonText={t(locale, "student_project_nf11_buttonText")}
-          href={t(locale, "student_project_nf11_href")}
-          githubUrl={t(locale, "student_project_nf11_githubUrl")}
+          locale={locale}
+          name="student_project_nf11"
           languages="Java"
           year={2014}
         />
         <Article
-          title={t(locale, "student_project_nf29_title")}
-          subtitle={t(locale, "student_project_nf29_subtitle")}
-          content={t(locale, "student_project_nf29_content")}
-          buttonText={t(locale, "student_project_nf29_buttonText")}
-          href={t(locale, "student_project_nf29_href")}
-          githubUrl={t(locale, "student_project_nf29_githubUrl")}
+          locale={locale}
+          name={"student_project_nf29"}
           languages="XSLT"
           year={2014}
         />
         <Article
-          title={t(locale, "student_project_nf28_title")}
-          subtitle={t(locale, "student_project_nf28_subtitle")}
-          content={t(locale, "student_project_nf28_content")}
-          buttonText={t(locale, "student_project_nf28_buttonText")}
-          href={t(locale, "student_project_nf28_href")}
-          githubUrl={t(locale, "student_project_nf28_githubUrl")}
+          locale={locale}
+          name={"student_project_nf28"}
           languages="Android, Java"
         />
         <Article
-          title={t(locale, "student_project_ia02_title")}
-          subtitle={t(locale, "student_project_ia02_subtitle")}
-          content={t(locale, "student_project_ia02_content")}
-          buttonText={t(locale, "student_project_ia02_buttonText")}
-          href={t(locale, "student_project_ia02_href")}
-          githubUrl={t(locale, "student_project_ia02_githubUrl")}
+          locale={locale}
+          name={"student_project_ia02"}
           languages="Prolog"
           year={2013}
         />
         <Article
-          title={t(locale, "student_project_rep_code_title")}
-          subtitle={t(locale, "student_project_rep_code_subtitle")}
-          content={t(locale, "student_project_rep_code_content")}
-          buttonText={t(locale, "student_project_rep_code_buttonText")}
-          href={t(locale, "student_project_rep_code_href")}
-          githubUrl={t(locale, "student_project_rep_code_githubUrl")}
+          locale={locale}
+          name={"student_project_rep_code"}
           languages="C++, Lib jpeg"
           year={2012}
         />
