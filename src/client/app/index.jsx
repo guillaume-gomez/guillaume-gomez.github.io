@@ -157,8 +157,8 @@ class App extends React.Component {
             <Nav>
               <NavItem eventKey={1} onClick={this.seeResume}>{t(locale, "index_resume")}</NavItem>
               <NavDropdown eventKey={2} title={t(locale, "index_work")} id="basic-nav-dropdown">
-                <MenuItem eventKey={2.1} onClick={this.seeStudentProjects} >{t(locale, "index_student_project")}</MenuItem>
                 <MenuItem eventKey={2.2} onClick={this.seePersonalProjects}>{t(locale, "index_personal_project")}</MenuItem>
+                <MenuItem eventKey={2.1} onClick={this.seeStudentProjects} >{t(locale, "index_student_project")}</MenuItem>
                 <MenuItem divider />
                 <MenuItem eventKey={2.3} onClick={this.seeContribution}>{t(locale, "index_contributions")}</MenuItem>
               </NavDropdown>
