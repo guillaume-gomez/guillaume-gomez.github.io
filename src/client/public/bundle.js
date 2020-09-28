@@ -43605,7 +43605,7 @@
 	                ),
 	                _react2.default.createElement(
 	                  "tr",
-	                  null,
+	                  { className: "resume-light-primary-color" },
 	                  _react2.default.createElement(
 	                    "td",
 	                    { className: "resume-text-primary-color" },
@@ -43832,155 +43832,159 @@
 	              ),
 	              _react2.default.createElement(
 	                "div",
-	                { className: "container w3-responsive" },
+	                { className: "w3-container w3-responsive" },
 	                _react2.default.createElement(
-	                  "table",
-	                  { className: "w3-table col-md-6" },
+	                  "div",
+	                  { className: "w3-container" },
 	                  _react2.default.createElement(
-	                    "tbody",
-	                    null,
+	                    "table",
+	                    { className: "w3-table col-md-6" },
 	                    _react2.default.createElement(
-	                      "tr",
-	                      { className: "resume-light-primary-color" },
-	                      _react2.default.createElement(
-	                        "td",
-	                        { className: "resume-text-primary-color" },
-	                        "C++"
-	                      ),
-	                      _react2.default.createElement(
-	                        "td",
-	                        null,
-	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "tr",
+	                      "tbody",
 	                      null,
 	                      _react2.default.createElement(
-	                        "td",
-	                        { className: "resume-text-primary-color" },
-	                        "Javascript/ ES6"
+	                        "tr",
+	                        { className: "resume-light-primary-color" },
+	                        _react2.default.createElement(
+	                          "td",
+	                          { className: "resume-text-primary-color" },
+	                          "C++"
+	                        ),
+	                        _react2.default.createElement(
+	                          "td",
+	                          null,
+	                          _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
+	                        )
 	                      ),
 	                      _react2.default.createElement(
-	                        "td",
+	                        "tr",
 	                        null,
-	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "tr",
-	                      { className: "resume-light-primary-color" },
-	                      _react2.default.createElement(
-	                        "td",
-	                        { className: "resume-text-primary-color" },
-	                        "Ruby"
+	                        _react2.default.createElement(
+	                          "td",
+	                          { className: "resume-text-primary-color" },
+	                          "Javascript/ ES6"
+	                        ),
+	                        _react2.default.createElement(
+	                          "td",
+	                          null,
+	                          _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
+	                        )
 	                      ),
 	                      _react2.default.createElement(
-	                        "td",
-	                        null,
-	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_half.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "tr",
-	                      null,
-	                      _react2.default.createElement(
-	                        "td",
-	                        { className: "resume-text-primary-color" },
-	                        "Java"
+	                        "tr",
+	                        { className: "resume-light-primary-color" },
+	                        _react2.default.createElement(
+	                          "td",
+	                          { className: "resume-text-primary-color" },
+	                          "Ruby"
+	                        ),
+	                        _react2.default.createElement(
+	                          "td",
+	                          null,
+	                          _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_half.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
+	                        )
 	                      ),
 	                      _react2.default.createElement(
-	                        "td",
+	                        "tr",
 	                        null,
-	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_half.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "tr",
-	                      { className: "resume-light-primary-color" },
-	                      _react2.default.createElement(
-	                        "td",
-	                        { className: "resume-text-primary-color" },
-	                        "Golang"
+	                        _react2.default.createElement(
+	                          "td",
+	                          { className: "resume-text-primary-color" },
+	                          "Java"
+	                        ),
+	                        _react2.default.createElement(
+	                          "td",
+	                          null,
+	                          _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_half.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
+	                        )
 	                      ),
 	                      _react2.default.createElement(
-	                        "td",
-	                        null,
-	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_half.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "tr",
-	                      null,
-	                      _react2.default.createElement(
-	                        "td",
-	                        { className: "resume-text-primary-color" },
-	                        "Rust"
+	                        "tr",
+	                        { className: "resume-light-primary-color" },
+	                        _react2.default.createElement(
+	                          "td",
+	                          { className: "resume-text-primary-color" },
+	                          "Golang"
+	                        ),
+	                        _react2.default.createElement(
+	                          "td",
+	                          null,
+	                          _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_half.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
+	                        )
 	                      ),
 	                      _react2.default.createElement(
-	                        "td",
+	                        "tr",
 	                        null,
-	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_half.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "tr",
-	                      { className: "resume-light-primary-color" },
-	                      _react2.default.createElement(
-	                        "td",
-	                        { className: "resume-text-primary-color" },
-	                        "HTML5/Css3"
+	                        _react2.default.createElement(
+	                          "td",
+	                          { className: "resume-text-primary-color" },
+	                          "Rust"
+	                        ),
+	                        _react2.default.createElement(
+	                          "td",
+	                          null,
+	                          _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_half.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
+	                        )
 	                      ),
 	                      _react2.default.createElement(
-	                        "td",
-	                        null,
-	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "tr",
-	                      null,
-	                      _react2.default.createElement(
-	                        "td",
-	                        { className: "resume-text-primary-color" },
-	                        "PHP"
+	                        "tr",
+	                        { className: "resume-light-primary-color" },
+	                        _react2.default.createElement(
+	                          "td",
+	                          { className: "resume-text-primary-color" },
+	                          "HTML5/Css3"
+	                        ),
+	                        _react2.default.createElement(
+	                          "td",
+	                          null,
+	                          _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
+	                        )
 	                      ),
 	                      _react2.default.createElement(
-	                        "td",
+	                        "tr",
 	                        null,
-	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_half.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize }),
-	                        _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
+	                        _react2.default.createElement(
+	                          "td",
+	                          { className: "resume-text-primary-color" },
+	                          "PHP"
+	                        ),
+	                        _react2.default.createElement(
+	                          "td",
+	                          null,
+	                          _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_fill.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_half.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize }),
+	                          _react2.default.createElement("img", { src: Path + "star_empty.svg", height: StarSize })
+	                        )
 	                      )
 	                    )
 	                  )
