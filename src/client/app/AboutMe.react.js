@@ -7,7 +7,7 @@ class AboutMe extends React.Component {
   constructor(props){
     super(props);
   }
-  
+
   render () {
     const { locale } = this.props;
     return (

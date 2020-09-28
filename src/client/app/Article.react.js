@@ -10,6 +10,8 @@ class Article extends React.Component {
 
   render () {
     const { languages, year, name, locale } = this.props;
+    console.log(locale)
+    console.log(name)
     return (
       <div className="row">
         <div className="col-md-7 fadein">

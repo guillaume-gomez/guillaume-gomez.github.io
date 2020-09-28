@@ -22,24 +22,24 @@ class StudentProjects extends React.Component {
         />
         <Article
           locale={locale}
-          name={"student_project_nf29"}
+          name="student_project_nf29"
           languages="XSLT"
           year={2014}
         />
         <Article
           locale={locale}
-          name={"student_project_nf28"}
+          name="student_project_nf28"
           languages="Android, Java"
         />
         <Article
           locale={locale}
-          name={"student_project_ia02"}
+          name="student_project_ia02"
           languages="Prolog"
           year={2013}
         />
         <Article
           locale={locale}
-          name={"student_project_rep_code"}
+          name="student_project_rep_code"
           languages="C++, Lib jpeg"
           year={2012}
         />

@@ -18,7 +18,7 @@ const translations = {
         resume_bac: "Baccalauréat scientifique",
         resume_programming: "Programmation",
         about_me_title: "Quelques mots",
-        about_me_content: "Codeur depuis environ 10 ans ; j'ai écrit mes premières lignes de code en C, pour ensuite découvrir beaucoup d'autres langages que ce soit à travers mon cursus universitaire ou professionnel. Passionné par l'aspect créatif que peut être l'informatique, j'essaye à travers des projets personnels d'entrevoir d'autres technologies ainsi que d'autres algorithmes. Quand je ne programme pas, je fais du sport. Et il m'arrive très souvent de faire l'une des deux activités en musique. Je laisse donc en lien mon compte senscritique pour parler musique ou autres ; en plus des classiques github et linkedin :)",
+        about_me_content: "Codeur depuis environ mes 15 ans ; j'ai écrit mes premières lignes de code en C, pour ensuite découvrir beaucoup d'autres langages que ce soit à travers mon cursus universitaire ou professionnel. Passionné par l'aspect créatif que peut être l'informatique, j'essaye à travers des projets personnels d'entrevoir d'autres technologies ainsi que d'autres algorithmes. Quand je ne programme pas, je fais du sport. Et il m'arrive très souvent de faire l'une des deux activités en musique. Je laisse donc en lien mon compte senscritique pour parler musique ou autres ; en plus des classiques github et linkedin :)",
         index_about_me: "A propos",
         index_resume: "CV",
         index_work: "Mes travaux",
@@ -75,7 +75,7 @@ const translations = {
         participation_project_camlCompiler_subtitle: "Compilateur d'ocaml en C++",
         participation_project_camlCompiler_content: "Ce projet étudiant est principalement programmé par Adrien Jarretier. Je suis intervenu sur le développement de tests unitaires et intégration d'un hook pour lancer les tests à chaque pull request avec tracis.ci",
         participation_project_camlCompiler_buttonText: "Lien vers le repo",
-        participation_project_camlCompiler_href: "https://www.lexifi.com/files/images/csml_winforms_client.jpg",
+        participation_project_camlCompiler_href: "https://media.geeksforgeeks.org/wp-content/uploads/compilerDesign.jpg",
         participation_project_camlCompiler_githubUrl: "https://github.com/AdrienJarretier/CamlCompiler",
 
         personal_project_LD35_title: "Ludum Dare 35",
@@ -159,7 +159,7 @@ const translations = {
         personal_project_LD41_subtitle:"Theme: Combine 2 Incompatible Genres",
         personal_project_LD41_content:"Deuxième expérience avec une team de graphiste. Le résultat graphiquement est très beau. Par contre d'un point de vue gameplay, le résultat est plus mitigé :p",
         personal_project_LD41_buttonText: "Voir le repo",
-        personal_project_LD41_href:"https://github.com/guillaume-gomez/LD41/blob/a8e4b079b416bd6a892b96a675fd952c3f5f8095/GitHubResources/front.png",
+        personal_project_LD41_href:"https://github.com/guillaume-gomez/LD41/blob/a8e4b079b416bd6a892b96a675fd952c3f5f8095/GitHubResources/front.png?raw=true",
         personal_project_LD41_githubUrl: "https://github.com/guillaume-gomez/LD41",
 
     },
@@ -230,7 +230,7 @@ const translations = {
         participation_project_camlCompiler_subtitle: "Ocaml compiler coded in C++",
         participation_project_camlCompiler_content: "",
         participation_project_camlCompiler_buttonText: "",
-        participation_project_camlCompiler_href: "https://www.lexifi.com/files/images/csml_winforms_client.jpg",
+        participation_project_camlCompiler_href: "https://media.geeksforgeeks.org/wp-content/uploads/compilerDesign.jpg",
         participation_project_camlCompiler_githubUrl: "https://github.com/AdrienJarretier/CamlCompiler",
 
         personal_project_LD35_title: "Ludum Dare 35",
@@ -307,7 +307,7 @@ const translations = {
         personal_project_LD41_subtitle:"Theme: Combine 2 Incompatible Genres",
         personal_project_LD41_content:"",
         personal_project_LD41_buttonText: "Voir le repo",
-        personal_project_LD41_href:"https://github.com/guillaume-gomez/LD41/blob/a8e4b079b416bd6a892b96a675fd952c3f5f8095/GitHubResources/front.png",
+        personal_project_LD41_href:"https://github.com/guillaume-gomez/LD41/blob/a8e4b079b416bd6a892b96a675fd952c3f5f8095/GitHubResources/front.png?raw=true",
         personal_project_LD41_githubUrl: "https://github.com/guillaume-gomez/LD41",
     }
 }

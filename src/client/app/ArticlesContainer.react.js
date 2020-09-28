@@ -42,7 +42,7 @@ class ArticlesContainer extends React.Component {
 
     return children.map((child, index) => {
       return (
-        <span key={index}>
+        <span className="my-container" key={index}>
           {child}
           <hr className="work"></hr>
         </span>
@@ -54,7 +54,7 @@ class ArticlesContainer extends React.Component {
     const { locale, title, children } = this.props;
     return (
       <div className="w3-container work-background">
-        <div className=" my-container">
+        <div className="my-container">
           <div className="row">
             <div className="col-md-12">
               <h1 className="page-header"><b>{title}</b></h1>
