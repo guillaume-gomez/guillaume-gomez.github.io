@@ -1,5 +1,6 @@
 const translations = {
     "fr": {
+        current: "courant",
         at: "à",
         resume_title: "Curriculum Vitae",
         resume_sub_title: "Expérience professionelle",
@@ -9,6 +10,7 @@ const translations = {
         resume_array_location: "Where",
         resume_applidget: "Ingénieur Back-end",
         resume_amuse: "Ingénieur Back-end",
+        resume_amuse2: "CTO",
         resume_masa: "Stagiaire programmeur 3D ",
         resume_multiposting: "Stagiaire developpeur Back-end ",
         resume_utc: "Diplôme d'Ingénieur en informatique",
@@ -162,6 +164,7 @@ const translations = {
 
     },
     "en": {
+        current: "current",
         a: "at",
         resume_title: "Resume",
         resume_sub_title: "A draft from my CV",
@@ -170,6 +173,8 @@ const translations = {
         resume_array_year: "Year",
         resume_array_location: "Lieu",
         resume_applidget: "Back-end engineer",
+        resume_amuse2: "CTO",
+        resume_amuse: "Back-end engineer",
         resume_masa: "3D software programmer internship",
         resume_multiposting: "Software programmer internship ",
         resume_utc: "Master's Degree in Computer Engineering",

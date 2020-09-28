@@ -25,7 +25,7 @@ class Resume extends React.Component {
     </button>
     );
   }
-  
+
   render () {
     const { locale } = this.props;
     return (
@@ -55,7 +55,12 @@ class Resume extends React.Component {
                   </th>
                 </tr>
                 <tr>
-                  <td className="resume-text-primary-color">11/17 - current</td>
+                  <td className="resume-text-primary-color">02/19 - {t(locale, "current")}</td>
+                  <td className="resume-text-primary-color">{t(locale, "resume_amuse2")} {t(locale, "at")} <u><a href="https://www.amusenetwork.com/"> Amuse </a></u></td>
+                  <td className="resume-text-primary-color">Paris, France</td>
+                </tr>
+                <tr>
+                  <td className="resume-text-primary-color">11/17 - 02/19</td>
                   <td className="resume-text-primary-color">{t(locale, "resume_amuse")} {t(locale, "at")} <u><a href="https://www.amusenetwork.com/"> Amuse </a></u></td>
                   <td className="resume-text-primary-color">Paris, France</td>
                 </tr>
