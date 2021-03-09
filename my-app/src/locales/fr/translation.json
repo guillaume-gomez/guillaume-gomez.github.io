@@ -1,9 +1,9 @@
 {
   "header": {
-    "cv": "CV",
-    "work": "Mes travaux",
-    "personnal-projects": "Project Personnels",
-    "contribution": "Contribution",
-    "student-projects": "Project Etudiants"
+    "resume": "CV",
+    "contact": "Contact",
+    "portfolio": "Portfolio",
+    "skills": "Competences",
+    "experience": "Experience"
   }
 }
