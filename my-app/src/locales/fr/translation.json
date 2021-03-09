@@ -1,3 +1,9 @@
 {
-  "cv": "CV"
+  "header": {
+    "cv": "CV",
+    "work": "Mes travaux",
+    "personnal-projects": "Project Personnels",
+    "contribution": "Contribution",
+    "student-projects": "Project Etudiants"
+  }
 }
