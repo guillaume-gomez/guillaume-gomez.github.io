@@ -1,11 +1,11 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 
 import './App.css';
 
 function App() {
+  const { t } = useTranslation();
   return (
     <div className="App">
      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -13,7 +13,7 @@ function App() {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="#features">Features</Nav.Link>
+          <Nav.Link href="#features">{t("cv")}</Nav.Link>
           <Nav.Link href="#pricing">Pricing</Nav.Link>
           <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
