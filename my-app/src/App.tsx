@@ -24,10 +24,10 @@ function App() {
           </NavDropdown>
         </Nav>
         <Nav>
-          <Nav.Link eventKey={2} href="#memes">
+          <Nav.Link eventKey={2} href="https://www.linkedin.com/in/guillaume-gomez-252a14a3">
             <FontAwesomeIcon icon={faLinkedin} />
           </Nav.Link>
-          <Nav.Link eventKey={2} href="#memes">
+          <Nav.Link eventKey={2} href="https://github.com/guillaume-gomez">
             <FontAwesomeIcon icon={faGithub} />
           </Nav.Link>
         </Nav>
