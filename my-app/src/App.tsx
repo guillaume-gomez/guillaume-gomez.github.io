@@ -2,6 +2,9 @@ import React from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+
 import './App.css';
 
 function App() {
@@ -21,9 +24,11 @@ function App() {
           </NavDropdown>
         </Nav>
         <Nav>
-          <Nav.Link href="#deets">More deets</Nav.Link>
           <Nav.Link eventKey={2} href="#memes">
-            Dank memes
+            <FontAwesomeIcon icon={faLinkedin} />
+          </Nav.Link>
+          <Nav.Link eventKey={2} href="#memes">
+            <FontAwesomeIcon icon={faGithub} />
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
