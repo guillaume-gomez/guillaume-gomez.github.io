@@ -4,8 +4,10 @@ import profile from "./profile.jpeg";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 import "./AboutMe.css";
+import { GITHUB, LINKEDIN, MAIL } from './constants';
 
 function AboutMe() {
   const { t } = useTranslation();
@@ -15,13 +17,20 @@ function AboutMe() {
         <img className="avatar-img" src={profile} loading="lazy" alt="profile image"/>
         <ul className="icons">
           <li>
-            <FontAwesomeIcon icon={faGithub} />
+            <a href={GITHUB}>
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+              
           </li>
           <li>
-            <FontAwesomeIcon icon={faLinkedin} />
+            <a href={LINKEDIN}>
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
           </li>
           <li>
-            <FontAwesomeIcon icon={faLinkedin} />
+            <a href={`mailto:${MAIL}`}>
+              <FontAwesomeIcon icon={faEnvelope} />
+            </a>
           </li>
          </ul>
       </div>

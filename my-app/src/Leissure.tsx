@@ -4,6 +4,7 @@ import profile from "./profile.jpeg";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faRunning, faMusic, faFilm } from '@fortawesome/free-solid-svg-icons';
 
 import "./Leissure.css";
 
@@ -14,15 +15,15 @@ function Leissure() {
       <h2 className="leissure-title">Hobbies</h2>
       <ul className="leissure-icons">
         <li>
-          <FontAwesomeIcon icon={faGithub} size="2x" />
+          <FontAwesomeIcon icon={faRunning} size="lg" />
           <p>Sports</p>
         </li>
         <li>
-          <FontAwesomeIcon icon={faLinkedin} size="2x"/>
+          <FontAwesomeIcon icon={faMusic} size="lg"/>
           <p>Music</p>
         </li>
         <li>
-          <FontAwesomeIcon icon={faLinkedin} size="2x"/>
+          <FontAwesomeIcon icon={faFilm} size="lg"/>
           <p>Cinema</p>
         </li>
        </ul>

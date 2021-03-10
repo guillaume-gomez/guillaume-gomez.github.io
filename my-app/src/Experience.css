@@ -1,4 +1,20 @@
 .experience-content {
   border: 2px solid purple;
-  background: lightyellow;
+  display: flex;
+  flex-direction: column;
 }
+
+.experience-jobs {
+  max-width: 1200px;
+}
+
+.experience-title {
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .experience-content {
+      align-items: center;
+  justify-content: center;
+  }
+} 

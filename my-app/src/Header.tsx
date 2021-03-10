@@ -5,6 +5,8 @@ import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
+import { LINKEDIN, GITHUB } from "./constants";
+
 function Header() {
   const { t } = useTranslation();
   return (   
@@ -20,10 +22,10 @@ function Header() {
           <Nav.Link href="#features">{t("header.contact")}</Nav.Link>
           <span style={{border: "1px solid var(--secondary)", margin: "10px"}}>
           </span>
-          <Nav.Link eventKey={2} href="https://www.linkedin.com/in/guillaume-gomez-252a14a3">
+          <Nav.Link eventKey={2} href={LINKEDIN}>
             <FontAwesomeIcon icon={faLinkedin} />
           </Nav.Link>
-          <Nav.Link eventKey={2} href="https://github.com/guillaume-gomez">
+          <Nav.Link eventKey={2} href={GITHUB}>
             <FontAwesomeIcon icon={faGithub} />
           </Nav.Link>
         </Nav>

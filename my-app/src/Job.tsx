@@ -2,7 +2,15 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 import "./Job.css";
 
-function Job() {
+interface JobInterface {
+  begin: string;
+  end: string;
+  company: string;
+  jobTitle: string;
+  jobDescription: string;
+}
+
+function Job({begin, end, jobTitle, jobDescription, company} : JobInterface) {
   return (
      <div className="job-container job-right">
        <Card
@@ -10,14 +18,14 @@ function Job() {
           text="light"
           className="job-content"
         >
-          <Card.Header>Header</Card.Header>
+          <Card.Header>{company}</Card.Header>
           <Card.Body>
-            <Card.Title>Card Title </Card.Title>
+            <Card.Title>{jobTitle}</Card.Title>
             <Card.Text>
-              Some quick example text to build on the card title and make up the bulk
-              of the card's content.
+              {jobDescription}
             </Card.Text>
           </Card.Body>
+           <Card.Footer className="text-muted">{begin} - {end}</Card.Footer>
         </Card>
     </div>
   );
