@@ -1,12 +1,9 @@
 .App {
 }
 
-.App-content {
-  padding: 50px 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid green;
+.App-container {
+  padding: 16px;
+  border: 2px solid blue;
 }
 
 #blue {

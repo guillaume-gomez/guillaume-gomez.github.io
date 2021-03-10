@@ -1,0 +1,50 @@
+/* Container around content */
+.job-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.job-container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: var(--secondary);
+  border: 4px solid var(--dark);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.job-container::before {
+  left: 60px;
+  border: medium solid var(--dark);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--dark) transparent transparent;
+  }
+
+  /* Place the container to the right */
+.job-right {
+  left: 50%;
+}
+
+/* Add arrows to the right container (pointing left) */
+.job-right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--dark) transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.job-right::after {
+  left: -16px;
+}
