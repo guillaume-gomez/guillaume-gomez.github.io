@@ -11,19 +11,19 @@ function Leissure() {
   const { t } = useTranslation();
   return (
     <section className="hobbies-content">
-      <h2 className="hobbies-title">Hobbies</h2>
+      <h2 className="hobbies-title">{t("hobbies.hobbies")}</h2>
       <ul className="hobbies-icons">
         <li>
           <FontAwesomeIcon icon={faRunning} size="lg" />
-          <p>Sports</p>
+          <p>{t("hobbies.sports")}</p>
         </li>
         <li>
           <FontAwesomeIcon icon={faMusic} size="lg"/>
-          <p>Music</p>
+          <p>{t("hobbies.music")}</p>
         </li>
         <li>
           <FontAwesomeIcon icon={faFilm} size="lg"/>
-          <p>Cinema</p>
+          <p>{t("hobbies.cinema")}</p>
         </li>
        </ul>
     </section>

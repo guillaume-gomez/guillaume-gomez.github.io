@@ -49,3 +49,8 @@
 .job-right::after {
   left: -16px;
 }
+
+.job-card-header{
+  display: flex;
+  justify-content: space-between;
+}
