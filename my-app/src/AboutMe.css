@@ -1,0 +1,21 @@
+.about-me-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". .";
+}
+
+.avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  border: 5px solid var(--dark)
+}
+
+.avatar-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
