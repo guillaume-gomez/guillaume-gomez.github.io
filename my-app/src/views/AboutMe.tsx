@@ -1,21 +1,21 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import profile from "./profile.jpeg";
+import profile from "../profile.jpeg";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 import "./AboutMe.css";
-import { GITHUB, LINKEDIN, MAIL } from './constants';
+import { GITHUB, LINKEDIN, MAIL } from '../constants';
 
 function AboutMe() {
   const { t } = useTranslation();
   return (
     <section className="about-me-content">
-      <div className="avatar">
-        <img className="avatar-img" src={profile} loading="lazy" alt="profile image"/>
-        <ul className="icons">
+      <div className="about-me-avatar">
+        <img className="about-me-avatar-img" src={profile} loading="lazy" alt="profile image"/>
+        <ul className="about-me-icons">
           <li>
             <a href={GITHUB}>
               <FontAwesomeIcon icon={faGithub} />
@@ -34,8 +34,8 @@ function AboutMe() {
           </li>
          </ul>
       </div>
-      <div className="text">
-        <h1 className="wave-hand">👋, {t("about-me.i-am")} <strong className="text-primary">Guillaume Gomez</strong></h1>
+      <div className="about-me-text">
+        <h1 className="about-me-wave-hand">👋, {t("about-me.i-am")} <strong className="text-primary">Guillaume Gomez</strong></h1>
         <p>{t("about-me.content")}</p>
       </div>
     </section>

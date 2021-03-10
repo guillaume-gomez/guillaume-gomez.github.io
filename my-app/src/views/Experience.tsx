@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Experience.css";
-import Timeline from "./Timeline";
-import Job from "./Job";
+import Timeline from "../components/Timeline";
+import Job from "../components/Job";
 
 function Experience() {
   return (

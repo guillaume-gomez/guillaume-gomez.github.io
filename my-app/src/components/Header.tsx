@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
-import { LINKEDIN, GITHUB } from "./constants";
+import { LINKEDIN, GITHUB } from "../constants";
 
 function Header() {
   const { t } = useTranslation();

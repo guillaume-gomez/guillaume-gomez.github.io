@@ -1,19 +1,18 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import profile from "./profile.jpeg";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faRunning, faMusic, faFilm } from '@fortawesome/free-solid-svg-icons';
 
-import "./Leissure.css";
+import "./Hobbies.css";
 
 function Leissure() {
   const { t } = useTranslation();
   return (
-    <section className="leissure-content">
-      <h2 className="leissure-title">Hobbies</h2>
-      <ul className="leissure-icons">
+    <section className="hobbies-content">
+      <h2 className="hobbies-title">Hobbies</h2>
+      <ul className="hobbies-icons">
         <li>
           <FontAwesomeIcon icon={faRunning} size="lg" />
           <p>Sports</p>

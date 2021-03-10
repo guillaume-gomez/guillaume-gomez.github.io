@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from "./Header";
-import AboutMe from "./AboutMe";
-import Leissure from "./Leissure";
-import Experience from "./Experience";
+import Header from "./components/Header";
+import AboutMe from "./views/AboutMe";
+import Hobbies from "./views/Hobbies";
+import Experience from "./views/Experience";
 
 import './App.css';
 
@@ -12,7 +12,7 @@ function App() {
       <Header/>
       <div className="App-container">
         <AboutMe/>
-        <Leissure />
+        <Hobbies />
         <Experience />
       </div>
     </div>

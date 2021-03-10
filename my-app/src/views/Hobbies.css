@@ -1,12 +1,12 @@
-.leissure-content {
-  border: 2px solid purple;
+.hobbies-content {
+  //border: 2px solid purple;
 }
 
-.leissure-title {
+.hobbies-title {
   text-align: center;
 }
 
-.leissure-icons {
+.hobbies-icons {
   display: flex;
   width: 100%;
   margin: 0;
@@ -15,7 +15,7 @@
   list-style-type: none;
 }
 
-.leissure-icons > li {
+.hobbies-icons > li {
   display: flex;
   flex-direction: column;
   align-items: center;
