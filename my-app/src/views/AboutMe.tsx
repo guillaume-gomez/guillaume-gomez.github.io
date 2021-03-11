@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import profile from "../profile.jpeg";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -36,7 +36,11 @@ function AboutMe() {
       </div>
       <div className="about-me-text">
         <h1 className="about-me-wave-hand">👋, {t("about-me.i-am")} <strong className="text-primary">Guillaume Gomez</strong></h1>
-        <p>{t("about-me.content")}</p>
+        <p>
+         <Trans i18nKey="about-me.content">
+           {[<i className="text-primary"/>]}
+         </Trans>
+        </p>
       </div>
     </section>
   );

@@ -9,13 +9,14 @@
   },
   "about-me": {
     "i-am": "Je m'appelle",
-    "content": "Hi! I’m Chris Chin, a full-stack web developer and software engineer based in Brooklyn, NY. After working as an accountant for almost 7 years, I’ve decided to take the leap to pursue a career in software engineering. I’ve enrolled in a full-time immersive software engineering program at Fullstack Academy in NYC. Having just graduated from this rigorous program, I can say that applying to a coding bootcamp has been the best decision I have ever made in my life. I love to learn new technologies and flex my creativity to create amazing things."
+    "content": "un developpeur <0>Full stack</0>. J'ai écrit mes premières lignes de code en C, pour ensuite découvrir beaucoup d'autres langages que ce soit à travers mon cursus universitaire ou professionnel. Passionné par l'informatique, j'essaye à travers des projets personnels d'entrevoir d'autres technologies allant de petites applications, aux jeux vidéos en passant par d'autres concepts farfelus qui me viennent sur le moment :) . Quand je ne programme pas, je fais du sport. Et il m'arrive très souvent de faire l'une des ses deux activités en musique."
   },
   "hobbies": {
     "hobbies": "Centre d'intérêts",
     "music": "Musique",
     "sports": "Sports",
-    "cinema": "Cinema"
+    "cinema": "Cinema",
+    "video-games": "Jeux vidéos"
   },
   "experience": {
     "experience": "Expériences",

@@ -1,5 +1,5 @@
 .skills-content {
-  border: 2px solid purple;
+  //border: 2px solid purple;
 }
 
 .skills-title {
@@ -7,14 +7,14 @@
 }
 
 .skills-stats {
-  border: 2px solid green;
+  //border: 2px solid green;
   display: flex;
   flex-direction: column;
 }
 
 .skills-progress-bars {
   width: 100%;
-  border: 5px solid orange;
+  //border: 5px solid orange;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -27,7 +27,7 @@
 }
 
 .skills-progress-bars-content {
-  border: 5px solid red;
+  //border: 5px solid red;
   width: 100%;
 }
 
@@ -37,7 +37,7 @@
   align-items: center;
   width: 100%;
   min-width: 0;
-  border: 2px solid blue
+  //border: 2px solid blue
 }
 
 @media (min-width: 1200px) {
@@ -45,6 +45,6 @@
     flex-direction: row;
   }
   .skills-progress-bars-content {
-    width: unset;
+    width: 600px;
   }
 } 

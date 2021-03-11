@@ -6,6 +6,10 @@
   width: 90%;
 }
 
+.job-content {
+  //width: 1000px;
+}
+
 /* The circles on the timeline */
 .job-container::after {
   content: '';
@@ -38,7 +42,7 @@
   position: absolute;
   top: 22px;
   width: 0;
-  z-index: 1;
+  z-index: 10;
   left: 25px;
   border-width: 15px 15px 15px 0;
   border-color: transparent var(--dark) transparent transparent;
