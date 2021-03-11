@@ -7,14 +7,44 @@
 }
 
 .skills-stats {
+  border: 2px solid green;
   display: flex;
   flex-direction: column;
 }
 
+.skills-progress-bars {
+  width: 100%;
+  border: 5px solid orange;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.skills-progress-bars > h3 {
+  //border: 4px solid green;
+  text-align: center;
+  width: 100%;
+}
+
+.skills-progress-bars-content {
+  border: 5px solid red;
+  width: 100%;
+}
+
+.skills-pie-chart
+{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-width: 0;
+  border: 2px solid blue
+}
 
 @media (min-width: 1200px) {
   .skills-stats {
     flex-direction: row;
-    justify-content: space-between;
+  }
+  .skills-progress-bars-content {
+    width: unset;
   }
 } 

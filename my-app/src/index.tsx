@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
+// labels for react chartjs plugin
+import 'chartjs-plugin-datalabels';
 
 import "./i18n";
 

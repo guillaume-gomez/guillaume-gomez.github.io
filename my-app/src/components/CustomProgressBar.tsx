@@ -12,7 +12,7 @@ function CustomProgressBar({label, value} : CustomProgressBarInterface) {
   return (
     <div className="ProgressBar-content">
       <div className="ProgressBar-label">
-        {label}
+        <h6>{label}</h6>
       </div>
       <div className="ProgressBar-value">
          <ProgressBar now={value} />
