@@ -1,13 +1,22 @@
 .ProgressBar-content {
-  border: 1px solid green;
+  //border: 1px solid green;
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
 .ProgressBar-label {
-  width: 25%;
+  padding: 8px;
+  //border: 1px solid blue;
 }
 
 .ProgressBar-value {
-  width: 25%;
+  padding: 8px;
+  min-width: 200px;
 }
+
+@media (min-width: 1200px) {
+  .ProgressBar-content {
+    flex-direction: row;
+    align-items: center;
+  }
+} 

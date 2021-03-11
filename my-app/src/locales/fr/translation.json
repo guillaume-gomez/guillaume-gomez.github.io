@@ -82,6 +82,7 @@
     }
   },
   "skills": {
-    "skills": "Compétences"
+    "skills": "Compétences",
+    "languages": "Langages"
   }
 }

@@ -1,7 +1,20 @@
 .skills-content {
-  //border: 2px solid purple;
+  border: 2px solid purple;
 }
 
 .skills-title {
   text-align: center;
 }
+
+.skills-stats {
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media (min-width: 1200px) {
+  .skills-stats {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+} 
