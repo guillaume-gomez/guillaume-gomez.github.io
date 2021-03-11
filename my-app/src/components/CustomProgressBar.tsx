@@ -10,11 +10,11 @@ interface CustomProgressBarInterface {
 
 function CustomProgressBar({label, value} : CustomProgressBarInterface) {
   return (
-    <div className="ProgressBar-content">
-      <div className="ProgressBar-label">
+    <div className="ProgressBar-content w-100">
+      <div className="ProgressBar-label w-100">
         <h6>{label}</h6>
       </div>
-      <div className="ProgressBar-value">
+      <div className="ProgressBar-value w-100">
          <ProgressBar now={value} />
       </div>
     </div>
