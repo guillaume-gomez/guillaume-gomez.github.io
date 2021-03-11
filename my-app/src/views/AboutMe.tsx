@@ -12,10 +12,10 @@ import { GITHUB, LINKEDIN, MAIL } from '../constants';
 function AboutMe() {
   const { t } = useTranslation();
   return (
-    <section className="about-me-content">
-      <div className="about-me-avatar">
-        <img className="about-me-avatar-img" src={profile} loading="lazy" alt="profile image"/>
-        <ul className="about-me-icons">
+    <section className="d-flex flex-column align-self-center flex-xl-row justify-content-xl-center border border-primary" style={{width: 800}}>
+      <div className="about-me-avatar d-flex flex-column justify-content-center m-2">
+        <img className="about-me-avatar-img border-dark mb-2 rounded" src={profile} loading="lazy" alt="profile image"/>
+        <ul className="about-me-icons d-flex w-100 m-0 p-0 justify-content-around">
           <li>
             <a href={GITHUB}>
               <FontAwesomeIcon icon={faGithub} />
@@ -34,8 +34,8 @@ function AboutMe() {
           </li>
          </ul>
       </div>
-      <div className="about-me-text">
-        <h1 className="about-me-wave-hand">👋, {t("about-me.i-am")} <strong className="text-primary">Guillaume Gomez</strong></h1>
+      <div className="text-center">
+        <h1>👋, {t("about-me.i-am")} <strong className="text-primary">Guillaume Gomez</strong></h1>
         <p>{t("about-me.content")}</p>
       </div>
     </section>

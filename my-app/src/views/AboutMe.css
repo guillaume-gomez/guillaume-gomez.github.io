@@ -1,28 +1,9 @@
-.about-me-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .about-me-avatar {
   width: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 8px;
 }
 
 .about-me-icons {
-  display: flex;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  justify-content: space-around;
   list-style-type: none;
-}
-
-.about-me-text {
-  text-align: center;
 }
 
 .about-me-avatar-img {
@@ -30,7 +11,6 @@
   height: 300px;
   border-radius: 10px;
   border: 5px solid var(--dark);
-  margin-bottom: 8px;
 }
 
 @media (min-width: 1200px) {
