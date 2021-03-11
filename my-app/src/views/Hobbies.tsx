@@ -7,7 +7,7 @@ import { faRunning, faMusic, faFilm } from '@fortawesome/free-solid-svg-icons';
 
 import "./Hobbies.css";
 
-function Leissure() {
+function Hobbies() {
   const { t } = useTranslation();
   return (
     <section className="hobbies-content">
@@ -30,4 +30,4 @@ function Leissure() {
   );
 }
 
-export default Leissure;
+export default Hobbies;

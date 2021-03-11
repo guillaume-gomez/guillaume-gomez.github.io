@@ -67,5 +67,21 @@
       "bloc1": "Création d'un site internet en PHP pour automatiser la création d'arrêtés municipaux.",
       "bloc2": "Récupération de l'ancienne Base de données et la création d'une nouvelle."
     }
+  },
+  "education": {
+    "education": "Formation",
+    "u_t_c": {
+      "company": "Université de Technologie de Compiègne",
+      "location": "Compiègne",
+      "job-title": "Diplôme d'ingénieur"
+    },
+    "i_u_t": {
+      "company": "IUT d'Aix Marseille",
+      "location": "Arles",
+      "job-title": "DUT Informatique, Conception et synthèse d'image 2D-3D"
+    }
+  },
+  "skills": {
+    "skills": "Compétences"
   }
 }

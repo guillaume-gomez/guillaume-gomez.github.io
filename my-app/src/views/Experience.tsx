@@ -98,6 +98,32 @@ function Experience() {
 
         </Timeline>
       </div>
+
+      <h2 className="experience-title">{t("education.education")}</h2>
+      <div className="experience-jobs">
+        <Timeline>
+          <Job 
+            company={t("education.u_t_c.company")}
+            companyUrl="https://www.utc.fr/"
+            location={t("education.u_t_c.location")}
+            begin={new Date(2015,1,1)}
+            end={new Date(2012,8,1)}
+            jobTitle={t("education.u_t_c.job-title")}
+            >
+              gdklmgkdfkl
+            </Job>
+            <Job
+            company={t("education.i_u_t.company")}
+            companyUrl="https://iut.univ-amu.fr/sites/arles"
+            location={t("education.i_u_t.location")}
+            begin={new Date(2010,8,1)}
+            end={new Date(2012,5,1)}
+            jobTitle={t("education.i_u_t.job-title")}
+            >
+              jdsklfjdjfkljdj
+            </Job>
+        </Timeline>
+      </div>
     </div>
   );
 }

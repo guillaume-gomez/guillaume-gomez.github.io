@@ -1,0 +1,13 @@
+.ProgressBar-content {
+  border: 1px solid green;
+  display: flex;
+  align-items: center;
+}
+
+.ProgressBar-label {
+  width: 25%;
+}
+
+.ProgressBar-value {
+  width: 25%;
+}
