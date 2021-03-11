@@ -14,20 +14,17 @@
 
 .skills-progress-bars {
   width: 100%;
-  //border: 5px solid orange;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
 .skills-progress-bars > h3 {
-  //border: 4px solid green;
   text-align: center;
   width: 100%;
 }
 
 .skills-progress-bars-content {
-  //border: 5px solid red;
   width: 100%;
 }
 
