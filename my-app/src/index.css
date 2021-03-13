@@ -12,3 +12,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: local('Inconsolata'), url('./fonts/Inconsolata-VariableFont_wdth,wght.ttf') format('truetype');
+}
