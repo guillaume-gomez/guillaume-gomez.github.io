@@ -1,0 +1,25 @@
+.welcome-page-content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #FA8BFF;
+  background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+}
+
+.welcome-page-top {
+  border: 5px solid orange;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.welcome-page-windows {
+  border: 5px solid green;
+}
+
+.welcome-page-bottom {
+  border: 5px solid blue;
+}

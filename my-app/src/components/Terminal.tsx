@@ -4,9 +4,13 @@ import "./Terminal.css";
 
 const data = [
   "ruby",
-  "javascript",
+  "ruby on rails",
+  "typescript",
+  "react",
   "rust",
-  "C++"
+  "C++",
+  "C#",
+  "Unity"
 ]
 
 function Terminal() {
@@ -22,9 +26,12 @@ function Terminal() {
                 state.elements.cursor.style.display = 'none';
               }).
               pauseFor(5000 * (index + 1)).
+              callFunction((state) => {
+                state.elements.cursor.style.display = '';
+              }).
               typeString('>').
               pauseFor(100).
-              typeString(` apt get install ${d}`).
+              typeString(` apt-get install ${d}`).
               callFunction((state) => {
                 state.elements.cursor.style.display = 'none';
               });
