@@ -17,6 +17,7 @@
   position: relative;
   color: #FFF;
   text-decoration: none;
+  text-transform: capitalize;
 }
 
 .projects-header > li > a:hover {
@@ -43,4 +44,5 @@
 
 .projects-grid {
   background: purple;
+  height: 100vh;
 }

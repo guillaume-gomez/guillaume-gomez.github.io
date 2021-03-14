@@ -8,188 +8,215 @@ export const projectsData = [
     githubPage: "http:github.com/guillaume-gomez",
     demo: "http:github.com/guillaume-gomez/try",
     preview: "http:github.com/guillaume-gomez/try",
-    tags: ["C++", "rust", "javascript"]
+    tags: ["C++", "rust", "javascript", "ruby"],
+    theme: "art"
   },
   {
     name: "ben vas 2",
     githubPage: "http:github.com/guillaume-gomez",
     demo: "http:github.com/guillaume-gomez/try",
     preview: "http:github.com/guillaume-gomez/try",
-    tags: ["C++", "javascript"]
+    tags: ["C++", "javascript"],
+    theme: "video games"
   },
     {
     name: "ben",
     githubPage: "http:github.com/guillaume-gomez",
     demo: "http:github.com/guillaume-gomez/try",
     preview: "http:github.com/guillaume-gomez/try",
-    tags: ["javascript"]
+    tags: ["javascript"],
+    theme: "WTF"
   },
     {
     name: "ben vas alors",
     githubPage: "http:github.com/guillaume-gomez",
     demo: "http:github.com/guillaume-gomez/try",
     preview: "http:github.com/guillaume-gomez/try",
-    tags: ["C++", "rust", "javascript"]
+    tags: ["C++", "rust", "javascript"],
+    theme: "art"
   },
   {
     name: "ben vas 2",
     githubPage: "http:github.com/guillaume-gomez",
     demo: "http:github.com/guillaume-gomez/try",
     preview: "http:github.com/guillaume-gomez/try",
-    tags: ["C++", "javascript"]
+    tags: ["C++", "javascript"],
+    theme: "video games"
   },
     {
     name: "ben",
     githubPage: "http:github.com/guillaume-gomez",
     demo: "http:github.com/guillaume-gomez/try",
     preview: "http:github.com/guillaume-gomez/try",
-    tags: ["javascript"]
+    tags: ["javascript"],
+    theme: "art"
   },
     {
     name: "ben vas alors",
     githubPage: "http:github.com/guillaume-gomez",
     demo: "http:github.com/guillaume-gomez/try",
     preview: "http:github.com/guillaume-gomez/try",
-    tags: ["C++", "rust", "javascript"]
+    tags: ["C++", "rust", "javascript"],
+    theme: "art"
   },
   {
     name: "ben vas 2",
     githubPage: "http:github.com/guillaume-gomez",
     demo: "http:github.com/guillaume-gomez/try",
     preview: "http:github.com/guillaume-gomez/try",
-    tags: ["C++", "javascript"]
+    tags: ["C++", "javascript"],
+    theme: "video games"
   },
     {
     name: "ben",
     githubPage: "http:github.com/guillaume-gomez",
     demo: "http:github.com/guillaume-gomez/try",
     preview: "http:github.com/guillaume-gomez/try",
-    tags: ["javascript"]
+    tags: ["javascript"],
+        theme: "video games"
   },
     {
     name: "ben vas alors",
     githubPage: "http:github.com/guillaume-gomez",
     demo: "http:github.com/guillaume-gomez/try",
     preview: "http:github.com/guillaume-gomez/try",
-    tags: ["C++", "rust", "javascript"]
+    tags: ["C++", "rust", "javascript"],
+        theme: "video games"
   },
   {
     name: "ben vas 2",
     githubPage: "http:github.com/guillaume-gomez",
     demo: "http:github.com/guillaume-gomez/try",
     preview: "http:github.com/guillaume-gomez/try",
-    tags: ["C++", "javascript"]
+    tags: ["C++", "javascript"],
+        theme: "video games"
   },
     {
     name: "ben",
     githubPage: "http:github.com/guillaume-gomez",
     demo: "http:github.com/guillaume-gomez/try",
     preview: "http:github.com/guillaume-gomez/try",
-    tags: ["javascript"]
+    tags: ["javascript"],
+        theme: "video games"
   },
     {
     name: "ben vas alors",
     githubPage: "http:github.com/guillaume-gomez",
     demo: "http:github.com/guillaume-gomez/try",
     preview: "http:github.com/guillaume-gomez/try",
-    tags: ["C++", "rust", "javascript"]
+    tags: ["C++", "rust", "javascript"],
+        theme: "WTF"
   },
   {
     name: "ben vas 2",
     githubPage: "http:github.com/guillaume-gomez",
     demo: "http:github.com/guillaume-gomez/try",
     preview: "http:github.com/guillaume-gomez/try",
-    tags: ["C++", "javascript"]
+    tags: ["C++", "javascript"],
+    theme: "tools"
   },
     {
     name: "ben",
     githubPage: "http:github.com/guillaume-gomez",
     demo: "http:github.com/guillaume-gomez/try",
     preview: "http:github.com/guillaume-gomez/try",
-    tags: ["javascript"]
+    tags: ["javascript"],
+    theme: "tools"
   },
     {
     name: "ben vas alors",
     githubPage: "http:github.com/guillaume-gomez",
     demo: "http:github.com/guillaume-gomez/try",
     preview: "http:github.com/guillaume-gomez/try",
-    tags: ["C++", "rust", "javascript"]
+    tags: ["C++", "javascript"],
+    theme: "tools"
   },
   {
     name: "ben vas 2",
     githubPage: "http:github.com/guillaume-gomez",
     demo: "http:github.com/guillaume-gomez/try",
     preview: "http:github.com/guillaume-gomez/try",
-    tags: ["C++", "javascript"]
+    tags: ["C++", "javascript"],
+    theme: "tools"
   },
     {
     name: "ben",
     githubPage: "http:github.com/guillaume-gomez",
     demo: "http:github.com/guillaume-gomez/try",
     preview: "http:github.com/guillaume-gomez/try",
-    tags: ["javascript"]
+    tags: ["javascript"],
+    theme: "tools"
   },
     {
     name: "ben vas alors",
     githubPage: "http:github.com/guillaume-gomez",
     demo: "http:github.com/guillaume-gomez/try",
     preview: "http:github.com/guillaume-gomez/try",
-    tags: ["C++", "rust", "javascript"]
+    tags: ["C++", "javascript"],
+    theme: "tools"
   },
   {
     name: "ben vas 2",
     githubPage: "http:github.com/guillaume-gomez",
     demo: "http:github.com/guillaume-gomez/try",
     preview: "http:github.com/guillaume-gomez/try",
-    tags: ["C++", "javascript"]
+    tags: ["C++", "javascript"],
+    theme: "tools"
   },
     {
     name: "ben",
     githubPage: "http:github.com/guillaume-gomez",
     demo: "http:github.com/guillaume-gomez/try",
     preview: "http:github.com/guillaume-gomez/try",
-    tags: ["javascript"]
+    tags: ["javascript"],
+    theme: "tools"
   },
     {
     name: "ben vas alors",
     githubPage: "http:github.com/guillaume-gomez",
     demo: "http:github.com/guillaume-gomez/try",
     preview: "http:github.com/guillaume-gomez/try",
-    tags: ["C++", "rust", "javascript"]
+    tags: ["C++", "javascript"],
+    theme: "tools"
   },
   {
     name: "ben vas 2",
     githubPage: "http:github.com/guillaume-gomez",
     demo: "http:github.com/guillaume-gomez/try",
     preview: "http:github.com/guillaume-gomez/try",
-    tags: ["C++", "javascript"]
+    tags: ["C++", "javascript"],
+    theme: "tools"
   },
     {
     name: "ben",
     githubPage: "http:github.com/guillaume-gomez",
     demo: "http:github.com/guillaume-gomez/try",
     preview: "http:github.com/guillaume-gomez/try",
-    tags: ["javascript"]
+    tags: ["javascript"],
+    theme: "tools"
   },
     {
     name: "ben vas alors",
     githubPage: "http:github.com/guillaume-gomez",
     demo: "http:github.com/guillaume-gomez/try",
     preview: "http:github.com/guillaume-gomez/try",
-    tags: ["C++", "rust", "javascript"]
+    tags: ["C++", "javascript"],
+    theme: "tools"
   },
   {
     name: "ben vas 2",
     githubPage: "http:github.com/guillaume-gomez",
     demo: "http:github.com/guillaume-gomez/try",
     preview: "http:github.com/guillaume-gomez/try",
-    tags: ["C++", "javascript"]
+    tags: ["C++", "javascript"],
+    theme: "tools"
   },
     {
     name: "ben",
     githubPage: "http:github.com/guillaume-gomez",
     demo: "http:github.com/guillaume-gomez/try",
     preview: "http:github.com/guillaume-gomez/try",
-    tags: ["javascript"]
+    tags: ["javascript"],
+    theme: "tools"
   },
 ];

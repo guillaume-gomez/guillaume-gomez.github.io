@@ -5,11 +5,12 @@ import ProjectCell from "./ProjectCell";
 import { useAnimation, motion } from "framer-motion";
 
 interface ProjectData {
-  name: string,
-  githubPage: string,
-  demo: string,
-  preview: string,
-  tags: string[]
+  name: string;
+  githubPage: string;
+  demo: string;
+  preview: string;
+  tags: string[];
+  theme: string;
 }
 
 
@@ -24,7 +25,7 @@ function ProjectsGrid({projectsData} : ProjectGridInterface) {
   const controls = useAnimation();
   const generatedProjectCells = projectsData.map((data, index) => {
     return (
-      <motion.div custom={Math.trunc(index /widthGrid) % widthGrid} animate={controls} >
+      <motion.div key={index} custom={Math.trunc(index /widthGrid) % widthGrid} animate={controls} >
         <ProjectCell {...data}/>
       </motion.div>);
   });

@@ -19,7 +19,7 @@ function WelcomePage() {
         <Window x={"70%"} y={"60vh"} width={500} height={300} backgroundColor="black">
           <Terminal />
         </Window>
-        <Window x={"2%"} y={"65vh"} width={600} height={400} backgroundColor="black">
+        <Window x={"2%"} y={"60vh"} width={600} height={450} backgroundColor="black">
           <Trello/>
         </Window>
       </div>
