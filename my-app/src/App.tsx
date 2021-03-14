@@ -4,6 +4,7 @@ import AboutMe from "./views/AboutMe";
 import Hobbies from "./views/Hobbies";
 import Experience from "./views/Experience";
 import Skills from "./views/Skills";
+import Projects from "./views/Projects";
 import WelcomePage from "./views/WelcomePage";
 
 import './App.css';
@@ -13,9 +14,10 @@ function App() {
     <div className="App">
       <Header/>
       <div className="App-container">
-      <WelcomePage />
-       
-        {/*<AboutMe/>
+         <WelcomePage />
+         <Projects />
+        {/*
+          
         <Hobbies />
         <Experience />
         <Skills />*/}

@@ -12,7 +12,7 @@ interface WindowInterface {
 
 function Window({x = 0, y = 0, width = 0, height = 0, backgroundColor, children} : WindowInterface) {
   return (
-    <div className="window-content" style={{
+    <div className="window-content scale-up-center" style={{
       position: "absolute",
       borderRadius: 17,
       left: x,
