@@ -33,7 +33,7 @@ function ProjectsGrid({projectsData} : ProjectGridInterface) {
   useEffect(() => {
   controls.start(i => ({
     opacity: [0, 1],
-    translateY: [1000, 0],
+    translateY: [100, 0],
     transition: { delay: i * 0.2 },
   }))
 }, [projectsData])

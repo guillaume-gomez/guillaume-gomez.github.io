@@ -23,13 +23,21 @@ function Projects() {
       () => uniq(projectsDataFiltered
         .reduce<string[]>((acc, curValue) => [...acc, ...curValue.tags], []))
   , [projectsDataFiltered]);
+
   const themes = useMemo(() => uniq(projectsData.map(data => data.theme)),[projectsData]);
+
+  function onChangeTheme(theme: string) {
+    setTheme(theme);
+    //remove selected filter
+    setFilter("")
+  }
+
   return (
     <section className="projects-content">
       
       <ul className="projects-header">
         {
-          themes.map(theme => <li key={theme} onClick={()=> setTheme(theme)}><a>{t(theme)}</a></li>)
+          themes.map(theme => <li key={theme} onClick={() => onChangeTheme(theme)}><a>{t(theme)}</a></li>)
         }
       </ul>
       <div className="projects-grid">

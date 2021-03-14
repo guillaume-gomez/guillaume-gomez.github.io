@@ -14,7 +14,7 @@ interface ProjectCellInterface {
 function ProjectCell({name, githubPage, demo, preview, tags} : ProjectCellInterface) {
   return (
   <motion.div
-    whileHover={{ scale: 1.1, rotate: Math.random() > 0.5 ? 2 : -2, boxShadow: "10px 10px 0 rgba(0, 0, 0, 0.2)"}}
+    whileHover={{ scale: 1.1, rotate: Math.random() > 0.5 ? 1 : -1, boxShadow: "0px 2px 50px rgba(0, 0, 0, 0.25)"}}
   >
     <div className="project-cell-content">
       <div>{name}</div>
