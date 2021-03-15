@@ -24,6 +24,10 @@
   color: #FFF;
 }
 
+a:visited {
+  background-color: red;
+}
+
 .projects-header > li > a:before {
   content: "";
   position: absolute;

@@ -1,6 +1,38 @@
 .grid-container {
-  border: 5px solid green;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 20px 20px;
 }
+
+
+/* ipad pro */
+@media (max-width: 1025px) {
+  .grid-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+
+/* ipad pro */
+@media (max-width: 769px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+/* iphone 6 */
+@media (max-width: 376px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* iphone 6 */
+@media (max-width: 415px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
