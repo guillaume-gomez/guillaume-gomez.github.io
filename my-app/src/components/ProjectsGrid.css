@@ -1,3 +1,6 @@
 .grid-container {
+  border: 5px solid green;
   display: flex;
+  flex-wrap: wrap;
+  padding: 16px;
 }

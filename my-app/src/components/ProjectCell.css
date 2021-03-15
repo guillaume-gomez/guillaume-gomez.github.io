@@ -3,6 +3,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  //padding: 8px;
   border: 5px dashed orange;
   height: 200px;
+}
+
+
+@media (max-width: 1280px) {
+  .project-cell-content {
+    width: 50%;
+  }
 }
