@@ -1,6 +1,5 @@
 import React, { useState, useMemo } from 'react';
 import { uniq } from "lodash";
-import { Form } from "react-bootstrap";
 import { useTranslation } from 'react-i18next';
 import "./Projects.css";
 import ProjectsGrid from "../components/ProjectsGrid";
@@ -9,13 +8,21 @@ import { projectsData } from "../constants";
 function Projects() {
   const { t } = useTranslation();
   const [filter, setFilter] = useState<string>("");
-  const [theme, setTheme] = useState<string>(projectsData[0].theme);
+  const [theme, setTheme] = useState<string>("");
 
   const projectsDataFiltered = useMemo(() => {
+    if(theme === "" && filter === "") {
+      return projectsData;
+    }
+    if(theme === "" && filter !== "") {
+      return projectsData.filter(data => data.tags.includes(filter));
+    }
+   
     const dataByTheme = projectsData.filter(data => data.theme === theme);
-    if(filter === "") {
+    if(theme !== "" && filter === "") {
       return dataByTheme;
     }
+    // if theme !== "" && filter !== ""
     return dataByTheme.filter(data => data.tags.includes(filter))
   }, [filter, theme]);
 
@@ -34,21 +41,19 @@ function Projects() {
 
   return (
     <section className="projects-content">
-      
       <ul className="projects-header">
+        <li key={"all"} onClick={() => onChangeTheme("")}><a>{t("projects.theme.all")}</a></li>
         {
           themes.map(theme => <li key={theme} onClick={() => onChangeTheme(theme)}><a>{t(theme)}</a></li>)
         }
       </ul>
       <div className="projects-grid">
-        <div>
-          <Form.Group controlId="exampleForm.ControlSelect2">
-            <Form.Label>Tags</Form.Label>
-            <Form.Control as="select" onChange={(e) => setFilter(e.target.value)}>
-              <option value="">No filter</option>
-              {tags.map(tag => <option key={tag}>{tag}</option>)}
-            </Form.Control>
-          </Form.Group>
+        <div className="project-filter">
+          <span>Tags</span>
+          <select onChange={(e) => setFilter(e.target.value)} value={filter}>
+            <option value="">No filter</option>
+            {tags.map(tag => <option key={tag}>{tag}</option>)}
+          </select>
         </div>
         <ProjectsGrid projectsData={projectsDataFiltered} />
       </div>

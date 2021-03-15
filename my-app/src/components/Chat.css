@@ -7,17 +7,21 @@
   background: var(--primary);
   align-self: flex-end;
   text-align: right;
+  color: var(--text-primary);
 }
 
 .chat-dots {
   align-self: center;
-    background: var(--primary);
-    text-align: center;
+  background: var(--primary);
+  text-align: center;
+  color: var(--text-primary);
 }
 .chat-message {
   align-self: flex-start;
   background: var(--secondary);
+  color: var(--text-secondary);
   text-align: left;
+
 }
 .chat-bubble {
   border-radius: 1.5em;

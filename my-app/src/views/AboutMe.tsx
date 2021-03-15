@@ -17,25 +17,24 @@ function AboutMe() {
         <img className="about-me-avatar-img" src={profile} loading="lazy" alt="profile image"/>
         <ul className="about-me-icons">
           <li>
-            <a href={GITHUB}>
+            <a className="icons" href={GITHUB}>
               <FontAwesomeIcon icon={faGithub} />
             </a>
               
           </li>
           <li>
-            <a href={LINKEDIN}>
+            <a className="icons" href={LINKEDIN}>
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </li>
           <li>
-            <a href={`mailto:${MAIL}`}>
+            <a className="icons" href={`mailto:${MAIL}`}>
               <FontAwesomeIcon icon={faEnvelope} />
             </a>
           </li>
          </ul>
       </div>
       <div className="about-me-text">
-        <h1 className="about-me-wave-hand">👋, {t("about-me.i-am")} <strong className="text-primary">Guillaume Gomez</strong></h1>
         <p>
          <Trans i18nKey="about-me.content">
            {[<i className="text-primary"/>]}

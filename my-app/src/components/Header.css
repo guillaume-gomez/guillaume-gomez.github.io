@@ -1,0 +1,25 @@
+.header-container {
+  background: var(--primary-dark);
+  height: 65px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-name {
+  //border: 5px solid green;
+}
+
+.header-name > a {
+  padding: 8px;
+  font-weight: bold;
+}
+
+.header-links {
+  //border: 5px solid blue;
+}
+
+.header-links > a {
+  padding: 8px;
+}

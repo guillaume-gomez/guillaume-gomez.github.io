@@ -1,24 +1,24 @@
+:root {
+  --primary: #2962ff;
+  --primary-light: #768fff;
+  --primary-dark: #0039cb;
+  --secondary: #c62828;
+  --secondary-light: #ff5f52;
+  --secondary-dark: #8e0000;
+  --text-primary: #ffffff;
+  --text-primary-dark: #000000;
+  --text-secondary: #ffffff;
+  --black: #000;
+  --grey: #454545;
+}
+
 .App {
-  background: #111417;
+  //background: #111417;
 }
 
 .App-container {
   //padding: 16px;
   //border: 2px solid blue;
-}
-
-#blue {
-  border: 1px solid blue;
-}
-
-
-#green {
-  border: 1px solid green;
-}
-
-
-#red {
-  border: 1px solid red;
 }
 
 .underline--magical {

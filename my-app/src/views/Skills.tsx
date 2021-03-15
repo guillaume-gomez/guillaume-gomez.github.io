@@ -2,8 +2,6 @@ import React, { useRef } from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import { useTranslation } from 'react-i18next';
 
-import ProgressBar from "../components/CustomProgressBar";
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faRunning, faMusic, faFilm } from '@fortawesome/free-solid-svg-icons';
@@ -67,21 +65,21 @@ function Skills() {
         <div className="skills-progress-bars">
           <div className="skills-progress-bars-content">
             <h3>Front-End</h3>
-            <ProgressBar value={75} label="HTML5/CSS" />
-            <ProgressBar value={90} label="React 16.8" />
-            <ProgressBar value={40} label="JQuery" />
+            <p>HTML5/CSS</p>
+            <p>React 16.8</p>
+            <p>JQuery</p>
             <h3>Back-End</h3>
-            <ProgressBar value={70} label="Ruby on Rails" />
-            <ProgressBar value={40} label="Node js" />
-            <ProgressBar value={80} label="GraphQL" />
+            <p>Ruby on Rails</p>
+            <p>Node JS</p>
+            <p>GraphQL</p>
             <h3>Languages</h3>
-            <ProgressBar value={75} label="Javascript (ES6)" />
-            <ProgressBar value={85} label="TypeScript" />
-            <ProgressBar value={70} label="Ruby" />
-            <ProgressBar value={60} label="C++" />
-            <ProgressBar value={50} label="Rust" />
-            <ProgressBar value={50} label="Elixir" />
-            <ProgressBar value={45} label="Erlang" />
+            <p>Javascript (Es6) </p>
+            <p>TypeScript</p>
+            <p>Ruby</p>
+            <p>C++</p>
+            <p>Rust</p>
+            <p>Elixir</p>
+            <p>Erlang</p>
           </div>
         </div>
         <div className="skills-pie-chart">

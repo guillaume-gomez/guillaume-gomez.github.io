@@ -25,7 +25,7 @@ function Terminal() {
               callFunction((state) => {
                 state.elements.cursor.style.display = 'none';
               }).
-              pauseFor(5000 * (index + 1)).
+              pauseFor(5000 * (index)).
               callFunction((state) => {
                 state.elements.cursor.style.display = '';
               }).

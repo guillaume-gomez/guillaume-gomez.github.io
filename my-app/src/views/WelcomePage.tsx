@@ -12,12 +12,12 @@ function WelcomePage() {
   return (
     <section className="welcome-page-content">
       <div className="welcome-page-top">
-        <h1 className="about-me-wave-hand">👋, {t("about-me.i-am")} <strong className="text-primary">Guillaume Gomez</strong></h1>
+        <h1> <span className="about-me-wave-hand">👋</span>, {t("about-me.i-am")} <strong className="text-primary">Guillaume Gomez</strong></h1>
         <h2> Je suis <span className="background--magical">Developpeur Full Stack</span> </h2>
       </div>
       <div className="welcome-page-windows">
         <div className="welcome-page-terminal">
-          <Window width={500} height={300} backgroundColor="black">
+          <Window width={600} height={300} backgroundColor="black">
             <Terminal />
           </Window>
         </div>

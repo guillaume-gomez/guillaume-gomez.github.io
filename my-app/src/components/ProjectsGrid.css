@@ -4,6 +4,13 @@
   gap: 20px 20px;
 }
 
+/* XL */
+@media (max-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
 
 /* ipad pro */
 @media (max-width: 1025px) {
@@ -12,11 +19,32 @@
   }
 }
 
-
-/* ipad pro */
-@media (max-width: 769px) {
+/* L */
+@media (max-width: 1000px) {
   .grid-container {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+/* M */
+@media (max-width: 650px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* S */
+@media (max-width: 481px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* iphone 6 */
+@media (max-width: 376px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

@@ -1,5 +1,5 @@
 .skills-content {
-  //border: 2px solid purple;
+  border: 2px solid purple;
 }
 
 .skills-title {
@@ -7,7 +7,7 @@
 }
 
 .skills-stats {
-  //border: 2px solid green;
+  border: 2px solid green;
   display: flex;
   flex-direction: column;
 }

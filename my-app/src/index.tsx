@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './fonts/Inconsolata-VariableFont_wdth,wght.ttf';
+import './fonts/Roboto-Regular.ttf';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 // labels for react chartjs plugin
 import 'chartjs-plugin-datalabels';

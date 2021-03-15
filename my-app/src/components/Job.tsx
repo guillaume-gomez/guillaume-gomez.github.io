@@ -3,8 +3,6 @@ import { useTranslation } from 'react-i18next';
 import { format } from 'date-fns'
 import { fr, enGB } from 'date-fns/locale'
 
-import { Card } from 'react-bootstrap';
-
 import "./Job.css";
 
 interface JobInterface {
@@ -28,28 +26,30 @@ function Job({begin, end, jobTitle, jobDescription, company, companyUrl, locatio
 
   return (
      <div className="job-container job-right">
-       <Card
-          bg="dark"
-          text="light"
+       <div
           className="job-content"
         >
-          <Card.Header>
+          <div className="job-header">
             <div className="job-card-header">
-              { companyUrl ?
-                <a href={companyUrl}>{company}</a> :
-                company
-              }
-              <em>{location}</em>
+              <h5>{jobTitle}</h5>
+                <div> 
+                { companyUrl ?
+                  <a className="job-company job-company-name" href={companyUrl}>{company}</a> :
+                  <span className="job-company-name">{ company }</span>
+                }
+                <em>({location})</em>
+              </div>
             </div>
-          </Card.Header>
-          <Card.Body>
-            <Card.Title>{jobTitle}</Card.Title>
-            <Card.Text>
+          </div>
+          <div className="job-body">
+            <div className="job-body-content">
               {jobDescription ? jobDescription : children}
-            </Card.Text>
-          </Card.Body>
-           <Card.Footer className="text-muted">{formatDate(begin)} - {formatDate(end)}</Card.Footer>
-        </Card>
+            </div>
+          </div>
+          <div className="job-footer">
+            <em>{formatDate(begin)} - {formatDate(end)}</em>
+          </div>
+        </div>
     </div>
   );
 }
