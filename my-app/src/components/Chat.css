@@ -1,0 +1,34 @@
+.chat {
+  flex-direction: column;
+  display: flex;
+}
+
+.chat-reply {
+  background: var(--primary);
+  align-self: flex-end;
+  text-align: right;
+}
+
+.chat-dots {
+  align-self: center;
+    background: var(--primary);
+    text-align: center;
+}
+.chat-message {
+  align-self: flex-start;
+  background: var(--secondary);
+  text-align: left;
+}
+.chat-bubble {
+  border-radius: 1.5em;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25em 1.5em 0.25em 1.5em;
+}
+
+.chat-dots > span {
+  padding: 0.15rem;
+}
+
+.chat-message-content {
+  padding: 0.25rem;
+}

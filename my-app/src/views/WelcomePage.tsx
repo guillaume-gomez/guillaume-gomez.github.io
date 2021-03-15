@@ -16,12 +16,16 @@ function WelcomePage() {
         <h2> Je suis <span className="background--magical">Developpeur Full Stack</span> </h2>
       </div>
       <div className="welcome-page-windows">
-        <Window x={"70%"} y={"60vh"} width={500} height={300} backgroundColor="black">
-          <Terminal />
-        </Window>
-        <Window x={"2%"} y={"60vh"} width={600} height={450} backgroundColor="black">
-          <Trello/>
-        </Window>
+        <div className="welcome-page-terminal">
+          <Window width={500} height={300} backgroundColor="black">
+            <Terminal />
+          </Window>
+        </div>
+        <div className="welcome-page-trello">
+          <Window width={600} height={450} backgroundColor="black">
+            <Trello/>
+          </Window>
+        </div>
       </div>
       <div className="welcome-page-bottom">
         en bas

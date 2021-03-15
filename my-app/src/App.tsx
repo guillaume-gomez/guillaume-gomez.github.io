@@ -6,16 +6,18 @@ import Experience from "./views/Experience";
 import Skills from "./views/Skills";
 import Projects from "./views/Projects";
 import WelcomePage from "./views/WelcomePage";
+import Chat from "./components/Chat";
 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Header/>
+      {/*<Header/> */}
       <div className="App-container">
          <WelcomePage />
          <Projects />
+         <Chat />
         {/*
           
         <Hobbies />

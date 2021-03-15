@@ -1,5 +1,8 @@
 .welcome-page-content {
+  border: 5px solid green;
+  position: relative;
   height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,16 +13,67 @@
 
 .welcome-page-top {
   border: 5px solid orange;
-  height: 30%;
+  width: inherit;
+  height: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 
 }
 
 .welcome-page-windows {
-  border: 5px solid green;
+  padding-left: 32px;
+  padding-right: 32px;
+  display: flex;
+  width: inherit;
+  justify-content: space-between;
+  height: 100%;
+  border: 5px solid pink;
 }
 
 .welcome-page-bottom {
   border: 5px solid blue;
+  position: absolute;
+  bottom: 0;
+}
+
+.welcome-page-terminal {
+  position: relative;
+  top: -8px;
+}
+
+.welcome-page-trello {
+  //border: 5px solid red;
+  position: relative;
+  top: 8px;
+}
+
+@media (max-width: 1280px) {
+  .welcome-page-content {
+    height: auto;
+  }
+  .welcome-page-windows {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .welcome-page-trello {
+    margin-bottom: 1rem;
+    position: relative;
+    top:0;
+
+  }
+  .welcome-page-terminal {
+    margin-bottom: 1rem;
+    position: relative;
+    top: 0;
+  }
+  .welcome-page-top {
+    padding: 1rem;
+  }
+  .welcome-page-bottom {
+    display: none;
+  }
+
 }

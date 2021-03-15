@@ -1,7 +1,5 @@
 .window-content {
-  box-shadow: 19px 27px 55px 4px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 19px 27px 55px 4px rgba(0,0,0,0.75);
-  -moz-box-shadow: 19px 27px 55px 4px rgba(0,0,0,0.75);
+  //box-shadow: 19px 27px 55px 4px rgba(0,0,0,0.75);
   overflow: auto;
 }
 
