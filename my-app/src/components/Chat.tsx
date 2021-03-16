@@ -66,10 +66,9 @@ function Chat({} : ChatInterface) {
       </div>
 
       <div className="chat-dots chat-bubble">
-        {/*<motion.span animate={{ translateY: -10 }}  transition={{ duration: 0.5, repeat: Infinity }}>.</motion.span>
-        <motion.span animate={{ translateY: -10 }}  transition={{ duration: 0.5, repeat: Infinity }}>.</motion.span>
-        <motion.span animate={{ translateY: -10 }}  transition={{ duration: 0.5, repeat: Infinity }}>.</motion.span>*/}
-        <span>.</span>
+        <motion.div animate={{ translateY: -10 }}  transition={{ duration: 0.6, repeat: Infinity }}>.</motion.div>
+        <motion.div animate={{ translateY: -10 }}  transition={{ duration: 0.6, repeat: Infinity, delay: 0.1}}>.</motion.div>
+        <motion.div animate={{ translateY: -10 }}  transition={{ duration: 0.6, repeat: Infinity, delay: 0.2 }}>.</motion.div>
       </div>
 
     </div>

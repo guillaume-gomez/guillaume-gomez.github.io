@@ -15,13 +15,17 @@ function App() {
     <div className="App">
       <Header/>
       <div className="App-container">
-         <WelcomePage />
+        {/*<div className="parallax dynamic-parallax bg1">*/}
+          <WelcomePage />
+        {/*</div>*/}
+        {/*<div className="parallax static-parallax">*/}
          <Projects />
-         <AboutMe />
-         <Hobbies />
-        <Experience />
-        <Skills />
-         <Chat />
+        {/*</div>*/}
+       <AboutMe />
+       <Hobbies />
+       <Experience />
+       <Skills />
+       <Chat />
       </div>
     </div>
   );

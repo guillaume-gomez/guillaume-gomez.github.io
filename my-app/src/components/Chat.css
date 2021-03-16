@@ -27,6 +27,7 @@
   border-radius: 1.5em;
   padding: 0.25rem 0.5rem;
   margin: 0.25em 1.5em 0.25em 1.5em;
+  display: flex;
 }
 
 .chat-dots > span {

@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import "./WelcomePage.scss";
 
+
 import Terminal from "../components/Terminal";
 import Window from "../components/Window";
 import Trello from "../components/Trello";
@@ -12,8 +13,8 @@ function WelcomePage() {
   return (
     <section className="welcome-page-content">
       <div className="welcome-page-top">
-        <h1> <span className="about-me-wave-hand">👋</span>, {t("about-me.i-am")} <strong className="text-primary">Guillaume Gomez</strong></h1>
-        <h2> Je suis <span className="background--magical">Developpeur Full Stack</span> </h2>
+        <h1> <span className="about-me-wave-hand">👋</span><strong className="text-primary">Guillaume Gomez</strong></h1>
+        <h2> <span className="background--magical">Developpeur Full Stack</span> </h2>
       </div>
       <div className="welcome-page-windows">
         <div className="welcome-page-terminal">
