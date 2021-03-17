@@ -65,21 +65,27 @@ function Skills() {
         <div className="skills-progress-bars">
           <div className="skills-progress-bars-content">
             <h3>Front-End</h3>
-            <p>HTML5/CSS</p>
-            <p>React 16.8</p>
-            <p>JQuery</p>
+            <ul>
+              <li>HTML5/CSS</li>
+              <li>React 16.8</li>
+              <li>JQuery</li>
+            </ul>
             <h3>Back-End</h3>
-            <p>Ruby on Rails</p>
-            <p>Node JS</p>
-            <p>GraphQL</p>
+            <ul>
+              <li>Ruby on Rails</li>
+              <li>Node JS</li>
+              <li>GraphQL</li>
+            </ul>
             <h3>Languages</h3>
-            <p>Javascript (Es6) </p>
-            <p>TypeScript</p>
-            <p>Ruby</p>
-            <p>C++</p>
-            <p>Rust</p>
-            <p>Elixir</p>
-            <p>Erlang</p>
+            <ul>
+              <li>Javascript (Es6) </li>
+              <li>TypeScript</li>
+              <li>Ruby</li>
+              <li>C++</li>
+              <li>Rust</li>
+              <li>Elixir</li>
+              <li>Erlang</li>
+            </ul>
           </div>
         </div>
         <div className="skills-pie-chart">

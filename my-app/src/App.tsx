@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Header from "./components/Header";
 import AboutMe from "./views/AboutMe";
 import Hobbies from "./views/Hobbies";
@@ -11,15 +11,18 @@ import Chat from "./components/Chat";
 import './App.css';
 
 function App() {
+  const toProject = useRef<HTMLSpanElement>(null);
   return (
     <div className="App">
       <Header/>
       <div className="App-container">
         {/*<div className="parallax dynamic-parallax bg1">*/}
-          <WelcomePage />
+          <WelcomePage refTarget={toProject}/>
         {/*</div>*/}
         {/*<div className="parallax static-parallax">*/}
+        <span ref={toProject} >
          <Projects />
+         </span>
         {/*</div>*/}
        <AboutMe />
        <Hobbies />

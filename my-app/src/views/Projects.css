@@ -79,6 +79,11 @@
   text-transform: capitalize;
 }
 
+.project-filter > select {
+    text-decoration: none;
+  text-transform: capitalize;
+}
+
 @media(max-width: 1280px) {
   .projects-grid {
     height: auto;

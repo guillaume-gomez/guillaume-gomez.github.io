@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { format } from 'date-fns'
 import { fr, enGB } from 'date-fns/locale'
+import FadeInSection from "./FadeInSection";
 
 import "./Job.css";
 
@@ -25,32 +26,34 @@ function Job({begin, end, jobTitle, jobDescription, company, companyUrl, locatio
   }
 
   return (
-     <div className="job-container job-right">
-       <div
-          className="job-content"
-        >
-          <div className="job-header">
-            <div className="job-card-header">
-              <h5>{jobTitle}</h5>
-                <div> 
-                { companyUrl ?
-                  <a className="job-company job-company-name" href={companyUrl}>{company}</a> :
-                  <span className="job-company-name">{ company }</span>
-                }
-                <em>({location})</em>
+    <FadeInSection>
+       <div className="job-container job-right">
+         <div
+            className="job-content"
+          >
+            <div className="job-header">
+              <div className="job-card-header">
+                <h5>{jobTitle}</h5>
+                  <div> 
+                  { companyUrl ?
+                    <a className="job-company job-company-name" href={companyUrl}>{company}</a> :
+                    <span className="job-company-name">{ company }</span>
+                  }
+                  <em>({location})</em>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="job-body">
-            <div className="job-body-content">
-              {jobDescription ? jobDescription : children}
+            <div className="job-body">
+              <div className="job-body-content">
+                {jobDescription ? jobDescription : children}
+              </div>
+            </div>
+            <div className="job-footer">
+              <em>{formatDate(begin)} - {formatDate(end)}</em>
             </div>
           </div>
-          <div className="job-footer">
-            <em>{formatDate(begin)} - {formatDate(end)}</em>
-          </div>
-        </div>
-    </div>
+      </div>
+    </FadeInSection>
   );
 }
 

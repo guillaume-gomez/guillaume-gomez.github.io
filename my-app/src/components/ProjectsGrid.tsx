@@ -19,7 +19,7 @@ interface ProjectGridInterface {
 }
 
 // check css rule in grid-container clas
-const widthGrid = 8;
+const widthGrid = 7;
 
 function ProjectsGrid({projectsData} : ProjectGridInterface) {
   const controls = useAnimation();

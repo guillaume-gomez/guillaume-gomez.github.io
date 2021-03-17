@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 body {
-  line-height: 1;
+  line-height: 1.25;
   font-family: 'Roboto';
 }
 h1 {
@@ -67,6 +67,7 @@ a:hover {
 
 ol, ul {
   list-style: none;
+  padding-left: 2rem
 }
 
 

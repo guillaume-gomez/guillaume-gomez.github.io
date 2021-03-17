@@ -18,18 +18,18 @@ function AboutMe() {
         <ul className="about-me-icons">
           <li>
             <a className="icons" href={GITHUB}>
-              <FontAwesomeIcon icon={faGithub} />
+              <FontAwesomeIcon icon={faGithub} size="lg" />
             </a>
               
           </li>
           <li>
             <a className="icons" href={LINKEDIN}>
-              <FontAwesomeIcon icon={faLinkedin} />
+              <FontAwesomeIcon icon={faLinkedin} size="lg" />
             </a>
           </li>
           <li>
             <a className="icons" href={`mailto:${MAIL}`}>
-              <FontAwesomeIcon icon={faEnvelope} />
+              <FontAwesomeIcon icon={faEnvelope} size="lg" />
             </a>
           </li>
          </ul>
@@ -37,7 +37,7 @@ function AboutMe() {
       <div className="about-me-text">
         <p>
          <Trans i18nKey="about-me.content">
-           {[<i className="text-primary"/>]}
+           {[<i className="var(--text-primary)"/>]}
          </Trans>
         </p>
       </div>

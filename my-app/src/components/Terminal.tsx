@@ -25,13 +25,17 @@ function Terminal() {
               callFunction((state) => {
                 state.elements.cursor.style.display = 'none';
               }).
-              pauseFor(5000 * (index)).
+              pauseFor(5100 * (index)).
               callFunction((state) => {
                 state.elements.cursor.style.display = '';
               }).
               typeString('>').
-              pauseFor(100).
-              typeString(` apt-get install ${d}`).
+              pauseFor(1000).
+              changeDelay(25).
+              typeString(` apt-get install `).
+              changeDelay(200).
+              typeString(d).
+
               callFunction((state) => {
                 state.elements.cursor.style.display = 'none';
               });

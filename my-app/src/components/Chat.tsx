@@ -27,7 +27,6 @@ function Chat({} : ChatInterface) {
         Ca va tres bien et toi
         </div>
       </div>
-
       <div className="chat-message chat-bubble">
         <div className="chat-message-content">
           <p>Hello comment ca va FJ</p>
