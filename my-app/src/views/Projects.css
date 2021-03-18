@@ -57,7 +57,7 @@
 
 .projects-grid {
   border: 5px solid purple;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .project-filter {

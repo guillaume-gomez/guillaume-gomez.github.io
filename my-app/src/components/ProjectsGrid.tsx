@@ -1,21 +1,13 @@
 import React, { useEffect } from 'react';
 import "./ProjectsGrid.css";
-import ProjectCell from "./ProjectCell";
+import ProjectCell, { ProjectCellInterface } from "./ProjectCell";
 
 import { useAnimation, motion } from "framer-motion";
 
-interface ProjectData {
-  name: string;
-  githubPage: string;
-  demo: string;
-  preview: string;
-  tags: string[];
-  theme: string;
-}
 
 
 interface ProjectGridInterface {
-  projectsData: ProjectData[]
+  projectsData: ProjectCellInterface[]
 }
 
 // check css rule in grid-container clas

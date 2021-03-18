@@ -8,3 +8,8 @@
   border-radius: 5px;
 }
 
+.project-cell-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
