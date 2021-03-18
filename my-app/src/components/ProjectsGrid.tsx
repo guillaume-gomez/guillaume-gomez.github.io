@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { orderBy } from "lodash";
 import "./ProjectsGrid.css";
 import ProjectCell, { ProjectCellInterface } from "./ProjectCell";
 
@@ -15,7 +16,8 @@ const widthGrid = 7;
 
 function ProjectsGrid({projectsData} : ProjectGridInterface) {
   const controls = useAnimation();
-  const generatedProjectCells = projectsData.map((data, index) => {
+  const generatedProjectCells = orderBy(projectsData, ["relevance"], ['desc'])
+  .map((data, index) => {
     return (
       <motion.div className="project-grid-cell" key={index} custom={Math.trunc(index /widthGrid) % widthGrid} animate={controls} >
         <ProjectCell {...data}/>

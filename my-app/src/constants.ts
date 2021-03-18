@@ -18,7 +18,7 @@ export const projectsData = [
     demo: null,
     preview: null,
     tags: ["elixir"],
-    theme: "Mooc",
+    theme: "mooc",
     relevance: 3
 
   },
@@ -46,8 +46,8 @@ export const projectsData = [
     demo: "https://guillaume-gomez.github.io/poisson-disk/",
     preview: "https://github.com/guillaume-gomez/poisson-disk/blob/6d2485c19bf066c47c6ec76e3eff6c45e70c7062/examples/example-1",
     tags: ["javascript"],
-    theme: "art",
-    relevance: 3
+    theme: "creative",
+    relevance: 5
   },
   {
     name: "Vocal Assistant Valentine",
@@ -127,7 +127,7 @@ export const projectsData = [
     demo: null,
     preview: "https://github.com/guillaume-gomez/MathGame/blob/bcf9a2f98162fc3c5605a740e5615bbbeb79aa30/resReadme/img-1.png",
     tags: ["C++", "SFML"],
-    theme: "learning",
+    theme: "video games",
     relevance: 4
   },
   {
@@ -208,7 +208,7 @@ export const projectsData = [
     demo: null,
     preview: null,
     tags: ["elixir"],
-    theme: "Mooc",
+    theme: "mooc",
     relevance: 2
   },
       {
@@ -243,7 +243,7 @@ export const projectsData = [
     githubPage: "https://github.com/guillaume-gomez/Rough-JS-x-Phaser",
     demo: "https://guillaume-gomez.github.io/phaserEs6Sandbox/build/rough.html",
     preview: "https://github.com/guillaume-gomez/Rough-JS-x-Phaser/blob/b68555d74c947df4d36a75caa1176e835efa93eb/preview-phaser.png",
-    tags: ["experiment"],
+    tags: ["javascript", "phaser"],
     theme: "video games",
     relevance: 5
   },
@@ -434,7 +434,7 @@ export const projectsData = [
     preview: "https://github.com/guillaume-gomez/langton-ant-phaser/blob/f96f9acfa6ecb6abc2d2fac91b09b85ed18f587b/static/res/preview.png",
     tags: ["javascript", "phaser"],
     theme: "experiment",
-    relevance: 2
+    relevance: 4
   },
   {
     name: "Window ray",
