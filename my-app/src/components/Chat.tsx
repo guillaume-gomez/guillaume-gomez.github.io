@@ -1,74 +1,111 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
 import "./Chat.css";
+import { GITHUB, LINKEDIN, MAIL } from '../constants';
 
 interface ChatInterface {
 }
-const variants = {
-  active: (custom:number) => ({
-    y: 0,
-    opacity: 1,
-    transition: {
-      y: { stiffness: 1000, velocity: -100, delay: custom * 0.2 }
-    }
-  }),
-};
+
+interface LoadMessageInterface {
+  position: number;
+  children: React.ReactNode;
+  typeOfMessage: "reply" | "message";
+  lastMessage: number;
+  setLastMessage: Function;
+}
+
+function LoadMessage({position, children, typeOfMessage, lastMessage, setLastMessage }:LoadMessageInterface) {
+  const [displayMessage, setDisplayMessage] = useState<boolean>(false);
+  useEffect(() => {
+    setTimeout( () => setDisplayMessage(true), position * 1000);
+  }, []);
+
+  useEffect(() => {
+    setLastMessage(lastMessage + 1);
+  }, [displayMessage])
+
+
+  if(position >= lastMessage) {
+    return <></>;
+  }
+
+  if(displayMessage) {
+    return <>{children}</>;
+  }
+  const customClassName = typeOfMessage === "message" ? "chat-message" : "chat-reply";
+
+  return (
+   <div className={`chat-bubble ${customClassName}`}>
+    <motion.div animate={{ translateY: -10 }}  transition={{ duration: 0.6, repeat: Infinity }}>.</motion.div>
+    <motion.div animate={{ translateY: -10 }}  transition={{ duration: 0.6, repeat: Infinity, delay: 0.1}}>.</motion.div>
+    <motion.div animate={{ translateY: -10 }}  transition={{ duration: 0.6, repeat: Infinity, delay: 0.2 }}>.</motion.div>
+  </div>);
+}
+
 
 function Chat({} : ChatInterface) {
+  const [lastMessage, setLastMessage] = useState<number>(1);
   return (
     <div className="chat">
-      <motion.div variants={variants} custom={3} className="chat-message chat-bubble">
-        <div className="chat-message-content">
-        Hello comment ca va ?
+      <LoadMessage position={1} typeOfMessage="message" lastMessage={lastMessage} setLastMessage={setLastMessage}>
+        <div className="chat-message chat-bubble">
+          <div className="chat-message-content">
+          Hello, tu vis ou ? 
+          </div>
         </div>
-      </motion.div>
-      <div className="chat-reply chat-bubble">
-        <div className="chat-message-content">
-        Ca va tres bien et toi
+      </LoadMessage>
+      <LoadMessage position={2} typeOfMessage="reply" lastMessage={lastMessage} setLastMessage={setLastMessage} >
+        <div className="chat-reply chat-bubble">
+          <div className="chat-message-content">
+          à Paris
+          </div>
         </div>
-      </div>
+      </LoadMessage>
+      <LoadMessage position={3} typeOfMessage="message" lastMessage={lastMessage} setLastMessage={setLastMessage} >
       <div className="chat-message chat-bubble">
         <div className="chat-message-content">
-          <p>Hello comment ca va FJ</p>
-           <p>jmfksk mfksmlfkmfl ksml skmls mskfsl</p>
+          Eh on peut on te contacter ou ?
         </div>
       </div>
+      </LoadMessage>
+      <LoadMessage position={4} typeOfMessage="reply" lastMessage={lastMessage} setLastMessage={setLastMessage}>
       <div className="chat-reply chat-bubble">
         <div className="chat-message-content">
-          <ul>
-            <li>Ca va tres bien et toim mlkqdml</li>
-            <li>oksofkslv k,lgklmskgmlmklkw lmklmkxlmkb lklmwk lwmkflwkfmlkfml k</li>
-          </ul>
+            <ul>
+              <li>Par mail à <a className="chat-underline-message" href={`mailto:${MAIL}`}><strong>guillaume.gomez846@gmail.com</strong></a></li>
+              <li>Ou via <a className="chat-underline-message" href={LINKEDIN}>Linkedin</a></li>
+            </ul>
          </div>
       </div>
-
+      </LoadMessage>
+      <LoadMessage position={5} typeOfMessage="message" lastMessage={lastMessage} setLastMessage={setLastMessage} >
       <div className="chat-message chat-bubble">
         <div className="chat-message-content">
-        Hello comment ca va ? kklk
+          Et le remote ?
         </div>
       </div>
-      <div className="chat-reply chat-bubble">
-        <div className="chat-message-content">
-        Ca va tres bien et toil lkmklm
+      </LoadMessage>
+      <LoadMessage position={6} typeOfMessage="reply" lastMessage={lastMessage} setLastMessage={setLastMessage}>
+        <div className="chat-reply chat-bubble">
+          <div className="chat-message-content">
+            Pourquoi pas ?
+          </div>
         </div>
-      </div>
-
+       </LoadMessage>
+       <LoadMessage position={7} typeOfMessage="message" lastMessage={lastMessage} setLastMessage={setLastMessage}>
       <div className="chat-message chat-bubble">
         <div className="chat-message-content">
-        Hello comment ca va ?klkl l
+          On peut voir où tes travaux ?
         </div>
       </div>
+      </LoadMessage>
+      <LoadMessage position={8} typeOfMessage="reply" lastMessage={lastMessage} setLastMessage={setLastMessage}>
       <div className="chat-reply chat-bubble">
         <div className="chat-message-content">
-        Ca va tres bien et toikl kl k
+           Ben <a className="chat-underline-message" href="#project">ici 😋</a> ou sur <a className="chat-underline-message" href={GITHUB}>mon github</a>
         </div>
       </div>
-
-      <div className="chat-dots chat-bubble">
-        <motion.div animate={{ translateY: -10 }}  transition={{ duration: 0.6, repeat: Infinity }}>.</motion.div>
-        <motion.div animate={{ translateY: -10 }}  transition={{ duration: 0.6, repeat: Infinity, delay: 0.1}}>.</motion.div>
-        <motion.div animate={{ translateY: -10 }}  transition={{ duration: 0.6, repeat: Infinity, delay: 0.2 }}>.</motion.div>
-      </div>
+      </LoadMessage>
 
     </div>
   );

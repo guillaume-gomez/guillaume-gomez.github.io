@@ -1,6 +1,11 @@
 .chat {
   flex-direction: column;
   display: flex;
+  min-height: 500px;
+}
+
+.chat-underline-message {
+  text-decoration: underline;
 }
 
 .chat-reply {
@@ -22,18 +27,11 @@
   top: 0.5em;
 }
 
-.chat-dots {
-  align-self: center;
-  background: var(--primary);
-  text-align: center;
-  color: var(--text-primary);
-}
 .chat-message {
   align-self: flex-start;
   background: var(--secondary);
   color: var(--text-secondary);
   text-align: left;
-
 }
 .chat-bubble {
   border-radius: 1.5em;

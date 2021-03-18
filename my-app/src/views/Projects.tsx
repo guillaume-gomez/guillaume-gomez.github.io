@@ -40,23 +40,25 @@ function Projects() {
   }
 
   return (
-    <section className="projects-content">
-      <ul className="projects-header">
-        <li key={"all"} onClick={() => onChangeTheme("")}><a>{t("projects.theme.all")}</a></li>
-        {
-          themes.map(theme => <li key={theme} onClick={() => onChangeTheme(theme)}><a>{t(theme)}</a></li>)
-        }
-      </ul>
-      <div className="projects-grid">
-        <div className="project-filter">
-          <span>Tags</span>
-          <select onChange={(e) => setFilter(e.target.value)} value={filter}>
-            <option value="">No filter</option>
-            {tags.map(tag => <option key={tag}>{tag}</option>)}
-          </select>
+    <section className="projects-content" id="project">
+      <a >
+        <ul className="projects-header">
+          <li key={"all"} onClick={() => onChangeTheme("")}><a>{t("projects.theme.all")}</a></li>
+          {
+            themes.map(theme => <li key={theme} onClick={() => onChangeTheme(theme)}><a>{t(theme)}</a></li>)
+          }
+        </ul>
+        <div className="projects-grid">
+          <div className="project-filter">
+            <span>Tags</span>
+            <select onChange={(e) => setFilter(e.target.value)} value={filter}>
+              <option value="">No filter</option>
+              {tags.map(tag => <option key={tag}>{tag}</option>)}
+            </select>
+          </div>
+          <ProjectsGrid projectsData={projectsDataFiltered} />
         </div>
-        <ProjectsGrid projectsData={projectsDataFiltered} />
-      </div>
+     </a>
     </section>
   );
 }
