@@ -18,7 +18,7 @@ function ProjectCell({name, githubPage, demo, preview, tags, theme, relevance} :
     whileHover={{ scale: 1.1, rotate: Math.random() > 0.5 ? 1 : -1, boxShadow: "0px 2px 50px rgba(0, 0, 0, 0.25)"}}
   >
     <div className="project-cell-content">
-      <div>{name}</div>
+      <div className="project-cell-name">{name}</div>
       <img className="project-cell-image" src={ preview ? `${preview}?raw=true` : "https://via.placeholder.com/150" }  />
     </div>
   </motion.div>

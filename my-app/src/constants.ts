@@ -146,7 +146,7 @@ export const projectsData = [
     preview: null,
     tags: ["HTML", "CSS"],
     theme: "WTF",
-    relevance: 5
+    relevance: 1
   },
   {
     name: "The Capitalist Fireman",

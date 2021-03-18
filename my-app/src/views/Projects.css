@@ -55,16 +55,23 @@
   transform: scaleX(1);
 }
 
+.projects-header-filter-and-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+
 .projects-grid {
   border: 5px solid purple;
   min-height: 100vh;
 }
 
 .project-filter {
-  //border: 5px solid green;
   justify-content: flex-end;
+
   display: flex;
-  margin-bottom: 16px;
 }
 .project-filter > span {
   padding: 8px;

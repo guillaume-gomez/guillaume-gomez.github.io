@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { uniq } from "lodash";
+import { uniq, orderBy } from "lodash";
 import { useTranslation } from 'react-i18next';
 import "./Projects.css";
 import ProjectsGrid from "../components/ProjectsGrid";
@@ -41,25 +41,29 @@ function Projects() {
 
   return (
     <section className="projects-content" id="project">
-      <a >
         <ul className="projects-header">
           <li key={"all"} onClick={() => onChangeTheme("")}><a>{t("projects.theme.all")}</a></li>
           {
-            themes.map(theme => <li key={theme} onClick={() => onChangeTheme(theme)}><a>{t(theme)}</a></li>)
+            orderBy(themes).map(theme => <li key={theme} onClick={() => onChangeTheme(theme)}><a>{t(theme)}</a></li>)
           }
         </ul>
         <div className="projects-grid">
-          <div className="project-filter">
-            <span>Tags</span>
-            <select onChange={(e) => setFilter(e.target.value)} value={filter}>
-              <option value="">No filter</option>
-              {tags.map(tag => <option key={tag}>{tag}</option>)}
-            </select>
-          </div>
+          <div className="projects-header-filter-and-stats">
+            <div className="projects-stat">
+              <strong>{projectsDataFiltered.length}</strong> projects
+            </div>
+            <div className="project-filter">
+              <span>Tags</span>
+              <select onChange={(e) => setFilter(e.target.value)} value={filter}>
+                <option value="">No filter</option>
+                {orderBy(tags).map(tag => <option key={tag}>{tag}</option>)}
+              </select>
+            </div>
+           </div>
           <ProjectsGrid projectsData={projectsDataFiltered} />
         </div>
-     </a>
     </section>
+    
   );
 }
 

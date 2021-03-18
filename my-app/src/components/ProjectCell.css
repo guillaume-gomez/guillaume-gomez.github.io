@@ -13,3 +13,11 @@
   height: 150px;
   object-fit: cover;
 }
+
+
+.project-cell-name {
+   width: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+text-overflow: ellipsis;
+}
