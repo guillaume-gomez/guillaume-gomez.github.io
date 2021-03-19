@@ -5,10 +5,10 @@ function Trello() {
   return (
   <div className="trello-ui">
     <nav className="trello-navbar trello-app">App bar</nav>
-    <nav className="trello-navbar trello-board">Board bar</nav>
+    <nav className="trello-navbar trello-board">Perso</nav>
     <div className="trello-lists">
       <div className="trello-list">
-        <header>List header</header>
+        <header>A faire</header>
         <ul className="trello-ul">
           <li>Lorem ipsum dolor sit amet</li>
           <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
@@ -18,7 +18,7 @@ function Trello() {
         <footer>Add a card...</footer>
       </div>
       <div className="trello-list">
-        <header>Header</header>
+        <header>En cours</header>
         <ul className="trello-ul">
           <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
           <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis enim sit amet</li>
@@ -39,7 +39,7 @@ function Trello() {
         <footer>Add a card...</footer>
       </div>
       <div className="trello-list">
-        <header>Another List</header>
+        <header>Fait</header>
         <ul className="trello-ul">
           <li>Just some text</li>
           <li>Just some text</li>

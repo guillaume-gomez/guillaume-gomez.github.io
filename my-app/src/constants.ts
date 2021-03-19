@@ -80,7 +80,7 @@ export const projectsData = [
     name: "Downwell Copycat",
     githubPage: "https://github.com/guillaume-gomez/downWellCopycat",
     demo: "https://guillaume-gomez.github.io/downWellCopycat/Build/",
-    preview: null,
+    preview: "https://github.com/guillaume-gomez/downWellCopycat/blob/e2c9480bae394da63a4eeeaa6f4cb1f8b6409daf/preview.png",
     tags: ["unity"],
     theme: "video games",
     relevance: 5
@@ -196,8 +196,8 @@ export const projectsData = [
   {
     name: "Gif Wall",
     githubPage: "https://github.com/guillaume-gomez/giffWall",
-    demo: null,
-    preview: null,
+    demo: "https://guillaume-gomez.github.io/giffWall/index.html",
+    preview: "https://github.com/guillaume-gomez/giffWall/blob/1fc482a8157a7a2e04b10da73cf91fc9f71ff996/preview.png",
     tags: ["javascript"],
     theme: "creative",
     relevance: 5
