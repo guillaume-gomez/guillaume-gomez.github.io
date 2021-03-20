@@ -19,16 +19,16 @@ function ProjectCell({name, githubPage, demo, preview, tags, theme, relevance} :
     whileHover={{ scale: 1.1, rotate: Math.random() > 0.5 ? 1 : -1, boxShadow: "0px 2px 50px rgba(0, 0, 0, 0.25)"}}
     whileTap={{ scale: 1.1, rotate: Math.random() > 0.5 ? 1 : -1, boxShadow: "0px 2px 50px rgba(0, 0, 0, 0.25)"}}
   >
-    <motion.img
+   { <motion.img
       className="project-cell-image"
       src={ preview ? `${preview}?raw=true` : "https://via.placeholder.com/300" }
-      whileHover={{opacity: 0.3, transition: { duration: 0.1 }}}  />
+      whileHover={{opacity: 0.3, transition: { duration: 0.1 }}}  />}
     <div className="project-cell-details">
       <div className="project-cell-name">{name}</div>
       
       <div className="project-cell-buttons">
-        <a className="project-cell-button">github</a>
-        <a className="project-cell-button strikeout">demo</a>
+        <a href={githubPage} className="project-cell-button">github</a>
+        <a href={demo ? demo : "#"} className={demo ? "project-cell-button":"project-cell-button-disabled strikeout"}>demo</a>
       </div>
       <div className="project-cell-tags">
         {  tags.map(tag =>

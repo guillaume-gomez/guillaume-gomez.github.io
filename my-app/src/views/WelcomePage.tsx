@@ -1,6 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { motion } from "framer-motion";
 import { useTranslation } from 'react-i18next';
+import { ReactComponent as MacMouse } from "../macintosh-mouse.svg";
+
 
 import "./WelcomePage.scss";
 
@@ -49,7 +51,7 @@ function WelcomePage({refTarget} : WelcomePageInterface) {
       </div>
       <div className="welcome-page-bottom" onClick={() => refTarget!.current!.scrollIntoView({behavior: "smooth"}) }>
         <motion.div whileHover={{ translateY: 5, transition: { duration: 0.5, repeat: Infinity } }}>
-        en bas
+          <MacMouse fill="var(--white)" style={{width: "45px"}}/>
         </motion.div>
       </div>
     </section>

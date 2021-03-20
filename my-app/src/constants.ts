@@ -99,7 +99,7 @@ export const projectsData = [
     githubPage: "https://github.com/guillaume-gomez/youtube-channels-shortcuts",
     demo: null,
     preview: "https://github.com/guillaume-gomez/youtube-channels-shortcuts/blob/master/screenshots/preview.png",
-    tags: ["chrome extension", "javascript", "youtube"],
+    tags: ["extension", "javascript", "youtube"],
     theme: "tool",
     relevance: 5
   },
