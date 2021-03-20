@@ -54,9 +54,9 @@ function Projects() {
             </div>
             <div className="project-filter">
               <span>Tags</span>
-              <select onChange={(e) => setFilter(e.target.value)} value={filter}>
-                <option value="">No filter</option>
-                {orderBy(tags).map(tag => <option key={tag}>{tag}</option>)}
+              <select className="custom-select" onChange={(e) => setFilter(e.target.value)} value={filter}>
+                <option className="custom-option" value="">No filter</option>
+                {orderBy(tags).map(tag => <option className="custom-option" key={tag}>{tag}</option>)}
               </select>
             </div>
            </div>

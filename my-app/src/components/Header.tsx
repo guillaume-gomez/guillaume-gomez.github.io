@@ -23,10 +23,10 @@ function Header() {
         <span style={{border: "1px solid var(--black)", margin: "10px"}}>
         </span>*/}
         <a href={LINKEDIN}>
-          <FontAwesomeIcon icon={faLinkedin} />
+          <FontAwesomeIcon icon={faLinkedin} size="2x" />
         </a>
         <a href={GITHUB}>
-          <FontAwesomeIcon icon={faGithub} />
+          <FontAwesomeIcon icon={faGithub} size="2x" />
         </a>
       </div>
     </div>

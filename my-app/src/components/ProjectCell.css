@@ -1,23 +1,115 @@
 .project-cell-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 175px;
-  border: 2px solid var(--primary);
+  display: block;
+  height: 300px;
+  width: 300px;
+  border: 2px solid var(--white);
   border-radius: 5px;
 }
 
 .project-cell-image {
-  width: 150px;
-  height: 150px;
+  position: absolute;
+  width: inherit;
+  height: inherit;
   object-fit: cover;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  background-image: url("./noise.jpg");
+  z-index: 1;
+}
+
+.project-cell-details {
+  border: 2px solid green;
+  height: inherit;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ justify-content: center;
+
+}
+
+.project-cell-name {
+  font-size: 36px;
+  height: 50%;
+  font-weight: italic;
+  border: 2px solid blue;
+  text-shadow: 0px 0px 8px #9F36B9;
+  width: inherit;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+}
+
+.project-cell-buttons {
+  border: 2px solid purple;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 0px;
 }
 
 
-.project-cell-name {
-   width: inherit;
-  white-space: nowrap;
-  overflow: hidden;
-text-overflow: ellipsis;
+
+.project-cell-button {
+  background: none;
+  border-radius: 2px;
+  border: 2px solid var(--white);
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.project-cell-button:hover, .project-cell-button:active {
+  box-shadow: 0px 0px 5px 1px #40CB70;
+  border: 2px solid #40CB70;
+  background: #121FCF;
+  background:linear-gradient(270deg, #3FD861 6.25%, #3FD761 6.26%, #4C75DD 93.75%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.project-cell-tags {
+  //border: 2px solid green;
+  margin: 5px 0;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.project-cell-tags {
+  //border: 2px solid purple;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.project-cell-tag {
+  margin: 2px;
+  padding: 5px;
+  min-width: 50px;
+  border: 2px solid var(--white);
+  border-radius: 1.5rem;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.strikeout {
+  font-size: 1em;
+  line-height: 1em;
+  position: relative;
+}
+
+.strikeout::after {
+  border-bottom: 0.25em solid black;
+  box-shadow: 0px 0px 6px rgba(159, 54, 185, 0.89);
+  content: "";
+  left: 0;
+  margin-top: calc(0.125em / 2 * -1);
+  position: absolute;
+  right: 0;
+  top: 50%;
 }

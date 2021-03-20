@@ -1,7 +1,7 @@
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 20px 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px 24px;
 }
 
 /* XL */
@@ -34,7 +34,7 @@
   }
 }
 
-/* S */
+ S 
 @media (max-width: 481px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);

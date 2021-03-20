@@ -7,8 +7,19 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  background: aqua;
 }
+
+.title-relative {
+  postion: relative;
+  top: 60px;
+}
+
+.first-gradient {
+  position: relative;
+  background: rgb(4,23,70);
+  background: linear-gradient(356deg, rgba(4,23,70,1) 67%, rgba(48,33,93,1) 79%, rgba(122,33,97,1) 97%);
+}
+
 
 .welcome-page-top {
   //border: 5px solid orange;
@@ -18,7 +29,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
 }
 
 .welcome-page-windows {
@@ -32,22 +42,21 @@
 }
 
 .welcome-page-bottom {
-  border: 5px solid blue;
+//  border: 5px solid blue;
   position: absolute;
   bottom: 25px;
 }
 
 .welcome-page-terminal {
-  position: relative;
-  right: -16px;
-  top: -8px;
+  //border: 5px solid purple;
+  display: flex;
+  padding-right: 16px;
+  align-items: center;
 }
 
 .welcome-page-trello {
   //border: 5px solid red;
-  position: relative;
-  left: -16px;
-  top: 8px;
+  padding-left: 24px;
 }
 
 @media (max-width: 1280px) {
@@ -82,7 +91,6 @@
 
 /*.about-me-wave-hand {
   animation: wave-animation 0.3s infinite;
-
 }
 
 @keyframes wave-animation {

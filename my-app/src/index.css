@@ -30,14 +30,19 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1.25;
-  font-family: 'Roboto';
+  font-size: 24px;
+  font-family: 'Barlow';
+  color: var(--white);
+  background: #121212;
 }
 h1 {
   font-size: 96px;
+  font-weight: bold;
 }
 
 h2 {
   font-size: 60px;
+  font-weight: italic;
 }
 
 h3 {
@@ -89,7 +94,7 @@ table {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Barlow', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -108,6 +113,6 @@ code {
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: local('Roboto'), url(fonts/Roboto-Regular.ttf) format('truetype');
+  font-family: 'Barlow';
+  src: local('Barlow'), url(fonts/Barlow-Regular.ttf) format('truetype');
 }

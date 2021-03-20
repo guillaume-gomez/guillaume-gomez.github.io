@@ -24,25 +24,25 @@ function WelcomePage({refTarget} : WelcomePageInterface) {
   }, []);
 
   return (
-    <section className="welcome-page-content">
+    <section className="welcome-page-content first-gradient">
       <div className="welcome-page-top">
-        <h1> <span className="about-me-wave-hand">👋</span><strong className="text-primary">Guillaume Gomez</strong></h1>
-        <h2> <span className="background--magical">Developpeur Full Stack</span> </h2>
+        <h1 className="title-relative"> <span className="about-me-wave-hand">👋</span><strong className="text-primary">Guillaume Gomez</strong></h1>
+        <h2 className="title-relative"> <span className="background--magical">Developpeur Full Stack</span> </h2>
       </div>
       <div className="welcome-page-windows">
-        <div className="welcome-page-terminal">
-          {
-            displayTerminal && 
-            <Window width={600} height={300} backgroundColor="black">
-              <Terminal />
-            </Window>
-          }
-        </div>
         <div className="welcome-page-trello">
           {
             displayTrello && 
             <Window width={600} height={450} backgroundColor="black">
               <Trello/>
+            </Window>
+          }
+        </div>
+        <div className="welcome-page-terminal">
+          {
+            displayTerminal && 
+            <Window width={600} height={300} backgroundColor="black">
+              <Terminal />
             </Window>
           }
         </div>

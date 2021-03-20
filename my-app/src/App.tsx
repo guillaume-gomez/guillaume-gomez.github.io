@@ -20,15 +20,18 @@ function App() {
           <WelcomePage refTarget={toProject}/>
         {/*</div>*/}
         {/*<div className="parallax static-parallax">*/}
+       <div className="container-fluid">
         <span ref={toProject} >
-         <Projects />
+             <Projects />
          </span>
         {/*</div>*/}
+       
        <AboutMe />
        <Hobbies />
        <Experience />
        <Skills />
        <Chat />
+          </div>
       </div>
     </div>
   );

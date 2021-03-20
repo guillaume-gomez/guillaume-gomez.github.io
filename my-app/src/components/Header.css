@@ -1,8 +1,6 @@
 .header-container {
   position: absolute;
   top: 0;
-  background: var(--primary-dark);
-  opacity: 0.5;
   height: 65px;
   width: 100%;
   display: flex;
