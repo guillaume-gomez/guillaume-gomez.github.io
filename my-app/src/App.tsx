@@ -16,22 +16,16 @@ function App() {
     <div className="App">
       <Header/>
       <div className="App-container">
-        {/*<div className="parallax dynamic-parallax bg1">*/}
-          <WelcomePage refTarget={toProject}/>
-        {/*</div>*/}
-        {/*<div className="parallax static-parallax">*/}
-       <div className="container-fluid">
-        <span ref={toProject} >
-             <Projects />
-         </span>
-        {/*</div>*/}
-       
-       <AboutMe />
-       <Hobbies />
-       <Experience />
-       <Skills />
-       <Chat />
-          </div>
+       {<WelcomePage refTarget={toProject}/>}
+       <div className="container">
+        <span ref={toProject} style={{width: "100%"}} >
+         <Projects />
+        </span>
+         <AboutMe />
+         <Hobbies />
+         <Experience />
+         <Skills />
+        </div>
       </div>
     </div>
   );

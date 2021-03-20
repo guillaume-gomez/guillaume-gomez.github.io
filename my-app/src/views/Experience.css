@@ -5,19 +5,10 @@
 }
 
 .experience-jobs {
-  max-width: 1200px;
+  max-width: 100%;
 }
 
 .experience-title {
   text-align: center;
 }
 
-@media (min-width: 1200px) {
-  .experience-content {
-    align-items: center;
-    justify-content: center;
-  }
-  .experience-jobs {
-    width: 1200px;
-  }
-} 

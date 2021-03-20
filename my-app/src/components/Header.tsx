@@ -12,7 +12,7 @@ function Header() {
   return (
     <div className="header-container">
       <div className="header-name">
-        <a href="#home">Guillaume Gomez</a>
+        <p>Guillaume Gomez</p>
       </div>
       <div className="header-links">
         {/*<a href="#features">{t("header.skills")}</a>

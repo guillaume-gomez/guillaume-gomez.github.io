@@ -10,8 +10,8 @@ import "./Hobbies.css";
 function Hobbies() {
   const { t } = useTranslation();
   return (
-    <section className="hobbies-content">
-      <h2 className="hobbies-title">{t("hobbies.hobbies")}</h2>
+    <section className="hobbies-content content">
+      <h4 className="hobbies-title">{t("hobbies.hobbies")}</h4>
       <ul className="hobbies-icons">
         <li>
           <FontAwesomeIcon icon={faRunning} size="lg" />

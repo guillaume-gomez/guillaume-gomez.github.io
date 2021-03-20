@@ -72,7 +72,7 @@ function Chat({} : ChatInterface) {
       <div className="chat-reply chat-bubble">
         <div className="chat-message-content">
             <ul>
-              <li>Par mail à <a className="chat-underline-message" href={`mailto:${MAIL}`}><strong>guillaume.gomez846@gmail.com</strong></a></li>
+              <li>Par mail à <a className="underline-link" href={`mailto:${MAIL}`}><strong>guillaume.gomez846@gmail.com</strong></a></li>
               <li>Ou via <a className="chat-underline-message" href={LINKEDIN}>Linkedin</a></li>
             </ul>
          </div>
@@ -102,7 +102,7 @@ function Chat({} : ChatInterface) {
       <LoadMessage position={8} typeOfMessage="reply" lastMessage={lastMessage} setLastMessage={setLastMessage}>
       <div className="chat-reply chat-bubble">
         <div className="chat-message-content">
-           Ben <a className="chat-underline-message" href="#project">ici 😋</a> ou sur <a className="chat-underline-message" href={GITHUB}>mon github</a>
+           Ben <a className="underline-link" href="#project">ici 😋</a> ou sur <a className="underline-link" href={GITHUB}>mon github</a>
         </div>
       </div>
       </LoadMessage>

@@ -1,5 +1,5 @@
 .timeline {
-  //border: 2px solid var(--secondary);
+  //border: 2px solid var(--white);
   position: relative;
   margin: 0 auto;
 }
@@ -8,9 +8,9 @@
   content: '';
   position: absolute;
   width: 2px;
-  background-color: var(--secondary);
+  background-color: var(--white);
   top: 0;
   bottom: 0;
-  left: 10%;
+  left: 0%;
   margin-left: -4px;
 }

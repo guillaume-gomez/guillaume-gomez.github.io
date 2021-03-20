@@ -8,7 +8,7 @@ import "./Experience.css";
 function Experience() {
   const { t } = useTranslation();
   return (
-    <div className="experience-content">
+    <div className="experience-content content">
       <h2 className="experience-title">{t("experience.experience")}</h2>
       <div className="experience-jobs">
         <Timeline>

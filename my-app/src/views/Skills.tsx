@@ -62,7 +62,7 @@ function Skills() {
       <h2 className="skills-title">{t("skills.skills")}</h2>
       
       <div className="skills-stats">
-        <div className="skills-progress-bars">
+        <div className="skills">
           <div className="skills-progress-bars-content">
             <h3>Front-End</h3>
             <ul>

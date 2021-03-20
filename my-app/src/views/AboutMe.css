@@ -1,16 +1,27 @@
 .about-me-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 50vh;
-}
-
-.about-me-avatar {
-  width: fit-content;
+  border: 5px solid blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 8px;
+  align-items: center;
+}
+
+.about-me-infos {
+  border: 5px solid orange;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: auto;
+}
+
+.about-me-avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 16px;
 }
 
 .about-me-icons {
@@ -23,7 +34,8 @@
 }
 
 .about-me-text {
-  text-align: center;
+  text-align: left;
+  line-height: 1.5em;
 }
 
 .icons {
@@ -42,17 +54,28 @@
   margin-bottom: 8px;
 }
 
-@media (min-width: 1200px) {
-  .about-me-content {
-    flex-direction: row;
-    justify-content: center
+
+@media(max-width: 1500px) {
+  .about-me-infos {
+    width: 75%;
+  }
+}
+
+@media(max-width: 1200px) {
+  .about-me-infos {
+    width: 85%;
   }
   .about-me-text {
-    width: 600px;
-    text-align: left;
+    line-height: 1.25em;
   }
-  .about-me-avatar {
-    align-items: center;
-    width: 350px;
+}
+
+
+@media(max-width: 768px) {
+  .about-me-text {
+    text-align: center; 
   }
-} 
+  .about-me-infos {
+    flex-direction: column;
+  }
+}

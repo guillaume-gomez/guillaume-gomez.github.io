@@ -13,7 +13,7 @@
   //border: 5px solid green;
 }
 
-.header-name > a {
+.header-name {
   padding: 8px;
   font-weight: bold;
 }
@@ -24,4 +24,10 @@
 
 .header-links > a {
   padding: 8px;
+}
+
+@media(max-width: 768px) {
+  .header-name {
+    visibility: hidden;
+  }
 }

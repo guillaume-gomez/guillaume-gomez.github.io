@@ -4,10 +4,6 @@
   min-height: 500px;
 }
 
-.chat-underline-message {
-  text-decoration: underline;
-}
-
 .chat-reply {
   background: var(--primary);
   align-self: flex-end;

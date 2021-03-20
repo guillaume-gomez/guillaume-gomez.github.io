@@ -12,34 +12,37 @@ import { GITHUB, LINKEDIN, MAIL } from '../constants';
 function AboutMe() {
   const { t } = useTranslation();
   return (
-    <section className="about-me-content">
-      <div className="about-me-avatar">
-        <img className="about-me-avatar-img" src={profile} loading="lazy" alt="profile image"/>
-        <ul className="about-me-icons">
-          <li>
-            <a className="icons" href={GITHUB}>
-              <FontAwesomeIcon icon={faGithub} size="lg" />
-            </a>
-              
-          </li>
-          <li>
-            <a className="icons" href={LINKEDIN}>
-              <FontAwesomeIcon icon={faLinkedin} size="lg" />
-            </a>
-          </li>
-          <li>
-            <a className="icons" href={`mailto:${MAIL}`}>
-              <FontAwesomeIcon icon={faEnvelope} size="lg" />
-            </a>
-          </li>
-         </ul>
-      </div>
-      <div className="about-me-text">
-        <p>
-         <Trans i18nKey="about-me.content">
-           {[<i className="var(--text-primary)"/>]}
-         </Trans>
-        </p>
+    <section className="about-me-content content">
+      <h2>{t("about-me.about-me")}</h2>
+      <div className="about-me-infos">
+        <div className="about-me-avatar">
+          <img className="about-me-avatar-img" src={profile} loading="lazy" alt="profile image"/>
+          <ul className="about-me-icons">
+            <li>
+              <a className="icons" href={GITHUB}>
+                <FontAwesomeIcon icon={faGithub} size="lg" />
+              </a>
+                
+            </li>
+            <li>
+              <a className="icons" href={LINKEDIN}>
+                <FontAwesomeIcon icon={faLinkedin} size="lg" />
+              </a>
+            </li>
+            <li>
+              <a className="icons" href={`mailto:${MAIL}`}>
+                <FontAwesomeIcon icon={faEnvelope} size="lg" />
+              </a>
+            </li>
+           </ul>
+        </div>
+        <div className="about-me-text">
+          <p>
+           <Trans i18nKey="about-me.content">
+             {[<i className="var(--text-primary)"/>]}
+           </Trans>
+          </p>
+        </div>
       </div>
     </section>
   );

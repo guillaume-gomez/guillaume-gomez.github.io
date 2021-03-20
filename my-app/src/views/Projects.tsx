@@ -41,6 +41,7 @@ function Projects() {
 
   return (
     <section className="projects-content" id="project">
+      <h2>{t("projects.projects")}</h2>
         <ul className="projects-header">
           <li key={"all"} onClick={() => onChangeTheme("")}><a>{t("projects.theme.all")}</a></li>
           {

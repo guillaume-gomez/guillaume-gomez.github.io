@@ -1,16 +1,14 @@
 .projects-content {
-  margin-top: 16px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .projects-header {
    display: inline;
    padding-left: 0;
    font-weight: bold;
-/*  display: flex;
-  flex-direction: row;*/
 }
 
 .projects-header > li {
@@ -83,6 +81,8 @@
 .projects-grid {
   border: 5px solid purple;
   min-height: 100vh;
+  min-width: inherit;
+  width: inherit;
 }
 
 .project-filter {
@@ -108,8 +108,14 @@
   text-transform: capitalize;
 }
 
-@media(max-width: 1280px) {
-  .projects-grid {
-    height: auto;
+
+
+
+@media(max-width: 375px) {
+  .projects-header {
+    margin: 0px;
+    font-size: 14px;
+    padding: 16px;
   }
 }
+

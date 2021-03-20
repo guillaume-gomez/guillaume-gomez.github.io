@@ -9,7 +9,7 @@
 
 .job-content {
   border-radius: 10px;
-  border: 2px solid var(--secondary);
+  border: 5px solid var(--white);
 }
 
 /* The circles on the timeline */
@@ -18,7 +18,7 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: var(--secondary);
+  background-color: var(--white);
   border: 2px solid var(--dark);
   top: 27px;
   border-radius: 50%;
@@ -34,7 +34,7 @@
 
   /* Place the container to the right */
 .job-right {
-  left: 10%;
+  left: 0%;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -47,7 +47,7 @@
   z-index: 10;
   left: 25px;
   border-width: 15px 15px 15px 0;
-  border-color: transparent var(--secondary) transparent transparent;
+  border-color: transparent var(--white) transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -93,3 +93,20 @@
   padding-right: 8px;
 }
 
+
+@media(max-width: 768px) {
+  .job-card-header {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .job-footer {
+    justify-content: center;
+  }
+  .job-body {
+    text-align: center;
+    margin: 2px;
+  }
+  .job-body-content > ul {
+    padding-left: 0;
+  }
+}

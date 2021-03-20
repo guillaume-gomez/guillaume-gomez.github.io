@@ -36,7 +36,7 @@ function Job({begin, end, jobTitle, jobDescription, company, companyUrl, locatio
                 <h5>{jobTitle}</h5>
                   <div> 
                   { companyUrl ?
-                    <a className="job-company job-company-name" href={companyUrl}>{company}</a> :
+                    <a className="underline-link job-company job-company-name" href={companyUrl}>{company}</a> :
                     <span className="job-company-name">{ company }</span>
                   }
                   <em>({location})</em>
