@@ -26,7 +26,7 @@ function Footer({refTarget} : FooterInterface) {
       
       </div>
       <div className="about-website">
-        <p>Designed by <a href="http://allanictheo.com/">Theo Allanic</a></p>
+        <p>Designed by <a className="underline-link" href="http://allanictheo.com/">Theo Allanic</a></p>
         <p>Guillaume Gomez © 2021 </p>
       </div>
     </footer>

@@ -51,7 +51,7 @@ function Projects() {
         <div className="projects-grid">
           <div className="projects-header-filter-and-stats">
             <div className="projects-stat">
-              <strong>{projectsDataFiltered.length}</strong> projects
+              <strong>{projectsDataFiltered.length}</strong> {t("projects.projects")}
             </div>
             <div className="project-filter">
               <span>Tags</span>
