@@ -16,7 +16,7 @@ function AboutMe() {
       <h2>{t("about-me.about-me")}</h2>
       <div className="about-me-infos">
         <div className="about-me-avatar">
-          <img className="about-me-avatar-img" src={profile} loading="lazy" alt="profile image"/>
+          <img className="about-me-avatar-img" src={profile} loading="lazy" alt="my face"/>
           <ul className="about-me-icons">
             <li>
               <a className="icons" href={GITHUB}>

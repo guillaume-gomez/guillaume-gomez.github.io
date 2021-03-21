@@ -2,7 +2,6 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faRunning, faMusic, faFilm, faGamepad } from '@fortawesome/free-solid-svg-icons';
 
 import "./Hobbies.css";

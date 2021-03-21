@@ -31,7 +31,7 @@ function Projects() {
         .reduce<string[]>((acc, curValue) => [...acc, ...curValue.tags], []))
   , [projectsDataFiltered]);
 
-  const themes = useMemo(() => uniq(projectsData.map(data => data.theme)),[projectsData]);
+  const themes = useMemo(() => uniq(projectsData.map(data => data.theme)),[]);
 
   function onChangeTheme(theme: string) {
     setTheme(theme);

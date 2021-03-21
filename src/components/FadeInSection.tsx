@@ -31,7 +31,7 @@ function FadeInSection({children, onlyOnce = true} : FadeInSectionInterface) {
       }
       return observer.unobserve(domRef.current);
     }
-  }, []);
+  }, [isVisible, onlyOnce]);
   
   return (
     <div

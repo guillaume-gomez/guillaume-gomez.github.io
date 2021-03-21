@@ -20,23 +20,22 @@ function Terminal() {
         <div key={d} >
           <Typewriter
             onInit={(typewriter) => {
-              typewriter.
-              start().
-              callFunction((state) => {
+              typewriter
+              .start()
+              .callFunction((state) => {
                 state.elements.cursor.style.display = 'none';
-              }).
-              pauseFor(5100 * (index)).
-              callFunction((state) => {
+              })
+              .pauseFor(5100 * (index))
+              .callFunction((state) => {
                 state.elements.cursor.style.display = '';
-              }).
-              typeString('>').
-              pauseFor(1000).
-              changeDelay(25).
-              typeString(` apt-get install `).
-              changeDelay(200).
-              typeString(d).
-
-              callFunction((state) => {
+              })
+              .typeString('>')
+              .pauseFor(1000)
+              .changeDelay(25)
+              .typeString(` apt-get install `)
+              .changeDelay(200)
+              .typeString(d)
+              .callFunction((state) => {
                 state.elements.cursor.style.display = 'none';
               });
             }}

@@ -2,10 +2,6 @@ import React, { useRef } from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import { useTranslation } from 'react-i18next';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faRunning, faMusic, faFilm } from '@fortawesome/free-solid-svg-icons';
-
 import "./Skills.css";
 const data = {
   labels: [

@@ -21,7 +21,7 @@ function Job({begin, end, jobTitle, jobDescription, company, companyUrl, locatio
   const { t, i18n: {language} } = useTranslation();
   
   function formatDate(date: Date) {
-    const locale = language == "fr" ? fr : enGB;
+    const locale = language === "fr" ? fr : enGB;
     return format(date, t("date-format"), { locale });
   }
 

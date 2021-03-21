@@ -1,6 +1,5 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from "framer-motion";
-import { useTranslation } from 'react-i18next';
 import { ReactComponent as MacMouse } from "../macintosh-mouse.svg";
 
 
@@ -16,7 +15,6 @@ interface WelcomePageInterface {
 }
 
 function WelcomePage({refTarget} : WelcomePageInterface) {
-  const { t } = useTranslation();
   const [displayTerminal, setDisplayTerminal] = useState<boolean>(false);
   const [displayTrello, setDisplayTrello] = useState<boolean>(false);
   

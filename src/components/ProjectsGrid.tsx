@@ -28,7 +28,7 @@ function ProjectsGrid({projectsData} : ProjectGridInterface) {
     translateY: [100, 0],
     transition: { delay: i * 0.02 },
   }))
-}, [projectsData])
+}, [projectsData, controls])
 
   return (
     <div className="grid-container">
