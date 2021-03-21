@@ -6,17 +6,20 @@ import Experience from "./views/Experience";
 import Skills from "./views/Skills";
 import Projects from "./views/Projects";
 import WelcomePage from "./views/WelcomePage";
-import Chat from "./components/Chat";
+import Footer from "./views/Footer";
 
 import './App.css';
 
 function App() {
   const toProject = useRef<HTMLSpanElement>(null);
+  const toHomepage = useRef<HTMLSpanElement>(null);
   return (
     <div className="App">
       <Header/>
       <div className="App-container">
-       {<WelcomePage refTarget={toProject}/>}
+       <span ref={toHomepage} style={{width: "100%"}}>
+         <WelcomePage refTarget={toProject}/>
+       </span>
        <div className="container">
         <span ref={toProject} style={{width: "100%"}} >
          <Projects />
@@ -27,6 +30,7 @@ function App() {
          <Skills />
         </div>
       </div>
+      <Footer refTarget={toHomepage}/>
     </div>
   );
 }

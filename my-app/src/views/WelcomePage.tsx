@@ -51,7 +51,7 @@ function WelcomePage({refTarget} : WelcomePageInterface) {
       </div>
       <div className="welcome-page-bottom" onClick={() => refTarget!.current!.scrollIntoView({behavior: "smooth"}) }>
         <motion.div whileHover={{ translateY: 5, transition: { duration: 0.5, repeat: Infinity } }}>
-          <MacMouse fill="var(--white)" style={{width: "45px"}}/>
+          <MacMouse fill="var(--white)" style={{width: "60px"}}/>
         </motion.div>
       </div>
     </section>

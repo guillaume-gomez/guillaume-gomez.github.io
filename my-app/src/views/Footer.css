@@ -1,0 +1,29 @@
+.footer-content {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:  center;
+  align-items: center;
+  background: linear-gradient(176deg, rgba(4,23,70,1) 67%, rgba(48,33,93,1) 79%, rgba(122,33,97,1) 97%);
+}
+
+.footer-up {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border: 2px solid var(--white);
+  border-radius: 2px;
+  width: 50px;
+  top: -20px;
+}
+
+.footer-tel {
+  width: 30%;
+}
+
+.about-website {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
