@@ -1,5 +1,5 @@
 .about-me-content {
-  border: 5px solid blue;
+  //border: 5px solid blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,7 +7,7 @@
 }
 
 .about-me-infos {
-  border: 5px solid orange;
+  //border: 5px solid orange;
   display: flex;
   flex-direction: row;
   justify-content: center;

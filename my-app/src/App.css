@@ -77,27 +77,18 @@
   width: 100%;
 }
 
-
-/*  --desktop: 1680px;
-  --laptop: 1200px;
-  --lg-tablet: 1112px;
-  --tablet: 1024px;
-  --small-tablet: 768px;
-  --lg-mobile: 568px;
-  --mobile: 375px;
-*/
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center; 
   align-items: center;
-  border: 5px solid green;
+  //border: 5px solid green;
   width: 90%;
 }
 
 @media(max-width: 1680px) {
   .container {
-    border: 5px solid yellow;
+    //border: 5px solid yellow;
     width: 85%;
   }
 }
@@ -105,49 +96,35 @@
 
 @media(max-width: 1500px) {
   .container {
-    border: 5px solid orange;
-        width: 85%;
+    //border: 5px solid orange;
+    width: 85%;
   }
 }
 
 @media(max-width: 1200px) {
   .container {
-    border: 5px solid orange;
+    width: 90%;
   }
 }
 
 
 @media(max-width: 1112px) {
   .container {
-        border: 5px solid green;
+    width: 92%;
   }
 }
 
 
 @media(max-width: 1024px) {
   .container {
-        border:5px solid green;
+    width: 94%;
   }
 }
 
 
 @media(max-width: 768px) {
   .container {
-        border: 5px solid green;
-  }
-}
-
-
-@media(max-width: 568px) {
-  .container {
-        border: 5px solid green;
-  }
-}
-
-
-@media(max-width: 375px) {
-  .container {
-        border: 5px solid green;
+    width: 96%;
   }
 }
 

@@ -17,13 +17,13 @@ function ProjectCell({name, githubPage, demo, preview, tags, theme, relevance} :
   <motion.div
     className="project-cell-content"
     whileHover={{ scale: 1.1, rotate: Math.random() > 0.5 ? 1 : -1, boxShadow: "0px 2px 50px rgba(0, 0, 0, 0.25)"}}
-    whileTap={{ scale: 1.1, rotate: Math.random() > 0.5 ? 1 : -1, boxShadow: "0px 2px 50px rgba(0, 0, 0, 0.25)"}}
   >
-   { <motion.img
+   <motion.img
       className="project-cell-image"
       src={ preview ? `${preview}?raw=true` : "https://via.placeholder.com/300" }
-      whileHover={{opacity: 0.3, transition: { duration: 0.1 }}}  />}
-    <div className="project-cell-details">
+    />  
+    <motion.div className="project-cell-details"
+      whileHover={{opacity: 1.0, transition: { duration: 0.2 }}} >
       <div className="project-cell-name">{name}</div>
       
       <div className="project-cell-buttons">
@@ -36,7 +36,7 @@ function ProjectCell({name, githubPage, demo, preview, tags, theme, relevance} :
           )
       }
       </div>
-    </div>
+    </motion.div>
   </motion.div>
   );
 }

@@ -2,38 +2,38 @@
   display: block;
   height: 300px;
   width: 300px;
-  border: 2px solid var(--white);
-  border-radius: 5px;
+  border: 1px solid var(--white);
+  box-shadow: 0px 4px 4px 0px #000000 25 %;
 }
 
 .project-cell-image {
-  position: absolute;
+  //border: 2px solid blue;
   width: inherit;
   height: inherit;
   object-fit: cover;
-  transition: .5s ease;
-  backface-visibility: hidden;
-  z-index: 1;
 }
 
 .project-cell-details {
-  //border: 2px solid green;
-  height: inherit;
-  z-index: 2;
+  opacity: 0;
+  background: #17181782;
   display: flex;
   flex-direction: column;
+  position: relative;
+  justify-content: center;
   align-items: center;
- justify-content: center;
-
+  top: -310px;
+  width: 300px;
+  height: 310px;
 }
+
 
 .project-cell-name {
   //border: 2px solid blue;
   font-size: 42px;
-  height: 50%;
   font-weight: italic;
   text-shadow: 0px 0px 8px #9F36B9;
   width: inherit;
+  height: 50%;
   overflow: hidden;
   text-align: center;
   text-overflow: ellipsis;
@@ -41,10 +41,10 @@
 
 .project-cell-buttons {
   //border: 2px solid purple;
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 5px 0px;
 }
 
@@ -69,19 +69,12 @@
 }
 
 .project-cell-tags {
-  //border: 2px solid green;
+  //border: 2px solid orange;
   margin: 5px 0;
-  width: 80%;
   display: flex;
+  width: 100%;
   flex-direction: row;
   justify-content: center;
-}
-
-.project-cell-tags {
-  //border: 2px solid purple;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
 }
 
 .project-cell-tag {
@@ -111,4 +104,10 @@
   position: absolute;
   right: 0;
   top: 50%;
+}
+
+@media (max-width: 1024px) {
+  .project-cell-details {
+    opacity: 1.0;
+  }
 }
