@@ -1,4 +1,4 @@
-#My Portfolio
+# My Portfolio
 
 [The website](https://guillaume-gomez.github.io/)
 
