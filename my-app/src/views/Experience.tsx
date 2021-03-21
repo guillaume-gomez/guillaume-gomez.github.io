@@ -110,7 +110,7 @@ function Experience() {
             end={new Date(2012,8,1)}
             jobTitle={t("education.u_t_c.job-title")}
             >
-              gdklmgkdfkl
+              <p>{t("education.u_t_c.bloc1")}</p>
             </Job>
             <Job
             company={t("education.i_u_t.company")}
@@ -120,7 +120,7 @@ function Experience() {
             end={new Date(2012,5,1)}
             jobTitle={t("education.i_u_t.job-title")}
             >
-              jdsklfjdjfkljdj
+              <p>{t("education.i_u_t.bloc1")}</p>
             </Job>
         </Timeline>
       </div>

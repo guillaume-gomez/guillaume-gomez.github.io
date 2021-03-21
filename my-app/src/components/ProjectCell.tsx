@@ -28,7 +28,13 @@ function ProjectCell({name, githubPage, demo, preview, tags, theme, relevance} :
       
       <div className="project-cell-buttons">
         <a href={githubPage} className="project-cell-button">github</a>
-        <a href={demo ? demo : "#"} className={demo ? "project-cell-button":"project-cell-button-disabled strikeout"}>demo</a>
+        {
+          demo ?
+          <a href={demo} className="project-cell-button">demo</a>
+          :
+          <div className="project-cell-button-disabled strikeout">demo</div>
+        }
+
       </div>
       <div className="project-cell-tags">
         {  tags.map(tag =>

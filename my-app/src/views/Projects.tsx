@@ -50,15 +50,15 @@ function Projects() {
         </ul>
         <div className="projects-grid">
           <div className="projects-header-filter-and-stats">
-            <div className="projects-stat">
-              <strong>{projectsDataFiltered.length}</strong> {t("projects.projects")}
-            </div>
             <div className="project-filter">
               <span>Tags</span>
               <select className="custom-select" onChange={(e) => setFilter(e.target.value)} value={filter}>
-                <option className="custom-option" value="">No filter</option>
+                <option className="custom-option" value="">{t("projects.no-filter")}</option>
                 {orderBy(tags).map(tag => <option className="custom-option" key={tag}>{tag}</option>)}
               </select>
+            </div>
+            <div className="projects-stat">
+              <strong>{projectsDataFiltered.length}</strong> {t("projects.projects")}
             </div>
            </div>
           <ProjectsGrid projectsData={projectsDataFiltered} />

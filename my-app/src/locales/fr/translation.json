@@ -74,12 +74,14 @@
     "u_t_c": {
       "company": "Université de Technologie de Compiègne",
       "location": "Compiègne",
-      "job-title": "Diplôme d'ingénieur"
+      "job-title": "Diplôme d'ingénieur",
+      "bloc1": "Option Genie Logiciel"
     },
     "i_u_t": {
       "company": "IUT d'Aix Marseille",
       "location": "Arles",
-      "job-title": "DUT Informatique, Conception et synthèse d'image 2D-3D"
+      "job-title": "DUT Informatique",
+      "bloc1" : "Conception et synthèse d'image 2D-3D"
     }
   },
   "skills": {
@@ -88,8 +90,12 @@
   },
   "projects": {
     "projects": "Projets",
+    "no-filter": "Aucun filtre",
     "theme": {
       "all": "Tout"
     }
+  },
+  "footer": {
+    "design-by":"Designed by "
   }
 }

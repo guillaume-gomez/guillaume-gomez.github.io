@@ -59,7 +59,7 @@
 
 .projects-header-filter-and-stats {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 16px;
 }
@@ -87,11 +87,12 @@
 
 .project-filter {
   justify-content: flex-end;
-
+  padding: 8px;
   display: flex;
 }
+
 .project-filter > span {
-  padding: 8px;
+  padding-right:  8px;
 }
 
 .project-filter > select {
