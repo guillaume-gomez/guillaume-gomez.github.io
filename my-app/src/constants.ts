@@ -64,7 +64,7 @@ export const projectsData = [
     demo: null,
     preview: "https://github.com/guillaume-gomez/LD39/blob/a1ec5c6aa63205dc07d28816e84a045f2898bf23/screenshots/finish-screen.png",
     tags: ["javascript"],
-    theme: "video games",
+    theme: "video-games",
     relevance: 5
   },
   {
@@ -82,7 +82,7 @@ export const projectsData = [
     demo: "https://guillaume-gomez.github.io/downWellCopycat/Build/",
     preview: "https://github.com/guillaume-gomez/downWellCopycat/blob/e2c9480bae394da63a4eeeaa6f4cb1f8b6409daf/preview.png",
     tags: ["unity"],
-    theme: "video games",
+    theme: "video-games",
     relevance: 5
   },
   {
@@ -91,7 +91,7 @@ export const projectsData = [
     demo: null,
     preview: "https://github.com/guillaume-gomez/tilt-shift-rust/blob/8cc16f071749f71b304b9470113cbcc2a5fe57e0/velodromeTiltShift.png",
     tags: ["rust"],
-    theme: "image processing",
+    theme: "image-processing",
     relevance: 5
   },
   {
@@ -127,7 +127,7 @@ export const projectsData = [
     demo: null,
     preview: "https://github.com/guillaume-gomez/MathGame/blob/bcf9a2f98162fc3c5605a740e5615bbbeb79aa30/resReadme/img-1.png",
     tags: ["C++", "SFML"],
-    theme: "video games",
+    theme: "video-games",
     relevance: 4
   },
   {
@@ -136,7 +136,7 @@ export const projectsData = [
     demo: "https://guillaume-gomez.github.io/image-to-ascii",
     preview: "https://github.com/guillaume-gomez/image-to-ascii/blob/c1f2af2ba50adeb5035e6e720c802ee2add5b209/preview.gif",
     tags: ["typescript", "react"],
-    theme: "image processing",
+    theme: "image-processing",
     relevance: 5
   },
   {
@@ -154,7 +154,7 @@ export const projectsData = [
     demo: "https://guillaume-gomez.github.io/LD44/Build/postMortemLudumDare/",
     preview: "https://github.com/guillaume-gomez/LD44/blob/b4e9255385923c05b38736cbcd59683bbe5e49c0/cover.png",
     tags: ["Unity", "LD"],
-    theme: "video games",
+    theme: "video-games",
     relevance: 3
   },
   {
@@ -163,7 +163,7 @@ export const projectsData = [
     demo: "https://guillaume-gomez.github.io/LD42/PostMortemBuild/",
     preview: "https://github.com/guillaume-gomez/LD42/blob/d89fa16c78e3113209ecc2e3030215edde2c02a0/header.png",
     tags: ["Unity", "LD"],
-    theme: "video games",
+    theme: "video-games",
     relevance: 5
   },
   {
@@ -190,7 +190,7 @@ export const projectsData = [
     demo: null,
     preview: "https://github.com/guillaume-gomez/roguelike-rust/blob/e5f5b5d9e27fefb5fc438af30b8a16bfff62da98/preview.png",
     tags: ["rust"],
-    theme: "video games",
+    theme: "video-games",
     relevance: 4
   },
   {
@@ -217,7 +217,7 @@ export const projectsData = [
     demo: "https://guillaume-gomez.github.io/GMTK_2019/",
     preview: "https://github.com/guillaume-gomez/GMTK_2019/blob/8c44f68355c307f81996673b35c63897e880bf2d/cover.png",
     tags: ["unity", "GMTK"],
-    theme: "video games",
+    theme: "video-games",
     relevance: 3
   },
   {
@@ -226,7 +226,7 @@ export const projectsData = [
     demo: null,
     preview: null,
     tags: ["unity"],
-    theme: "video games",
+    theme: "video-games",
     relevance: 3
   },
    {
@@ -235,7 +235,7 @@ export const projectsData = [
     demo: null,
     preview: "https://github.com/guillaume-gomez/rogueLevel/blob/2a0d1544cb3c5395ff5817b354a4e8089855ec07/screens/3.png",
     tags: ["unity"],
-    theme: "video games",
+    theme: "video-games",
     relevance: 4
   },
    {
@@ -244,7 +244,7 @@ export const projectsData = [
     demo: "https://guillaume-gomez.github.io/phaserEs6Sandbox/build/rough.html",
     preview: "https://github.com/guillaume-gomez/Rough-JS-x-Phaser/blob/b68555d74c947df4d36a75caa1176e835efa93eb/preview-phaser.png",
     tags: ["javascript", "phaser"],
-    theme: "video games",
+    theme: "video-games",
     relevance: 5
   },
      {
@@ -262,7 +262,7 @@ export const projectsData = [
     demo: "https://guillaume-gomez.github.io/LD35/",
     preview: "https://github.com/guillaume-gomez/LD35/blob/500a594580f91b2d41f11ca39c9a3e5e8204e8aa/css/screen-shot.png",
     tags: ["javascript", "jaws", "LD"],
-    theme: "video games",
+    theme: "video-games",
     relevance: 3
   },
     {
@@ -271,7 +271,7 @@ export const projectsData = [
     demo: null,
     preview: "https://github.com/guillaume-gomez/LD38-editor/blob/1e90fb2c9f7ee497c727408d7021fb9988d6fdce/preview.gif",
     tags: ["javascript", "jaws", "LD"],
-    theme: "video games",
+    theme: "video-games",
     relevance: 2
   },
   {
@@ -280,7 +280,7 @@ export const projectsData = [
     demo: "https://guillaume-gomez.github.io/LD38/build/",
     preview: "https://github.com/guillaume-gomez/LD38/blob/65793856f45d42f7d2ef30c45f6163ac97f345a8/screenshots/title.png",
     tags: ["javascript", "jaws", "LD"],
-    theme: "video games",
+    theme: "video-games",
     relevance: 4
   },
     {
@@ -298,7 +298,7 @@ export const projectsData = [
     demo: "https://guillaume-gomez.github.io/LD41/build/JamVersion/",
     preview: "https://github.com/guillaume-gomez/LD41/blob/a8e4b079b416bd6a892b96a675fd952c3f5f8095/GitHubResources/front.png",
     tags: ["unity", "LD"],
-    theme: "video games",
+    theme: "video-games",
     relevance: 3
   },
      {
@@ -343,7 +343,7 @@ export const projectsData = [
     demo: null,
     preview: "https://github.com/guillaume-gomez/mario_sokoban/blob/19f91d2897147c48e7638ca5991aace8acfa4412/screenshot.png",
     tags: ["C++", "SDL"],
-    theme: "video games",
+    theme: "video-games",
     relevance: 2
   },
   {
@@ -352,7 +352,7 @@ export const projectsData = [
     demo: null,
     preview: "https://github.com/guillaume-gomez/sokoban-editor/blob/fafb511c4a5b8302dfd2af932cc8ed0eeedfbc68/editor.png",
     tags: ["C++", "SDL"],
-    theme: "video games",
+    theme: "video-games",
     relevance: 1
   },
     {
@@ -379,7 +379,7 @@ export const projectsData = [
     demo: "https://guillaume-gomez.github.io/LD37/build/",
     preview: "https://github.com/guillaume-gomez/LD37/blob/e2ab4caf099dda01c1178096af2cc27aadcb3c9e/preview.png",
     tags: ["javascript", "phaser JS", "LD"],
-    theme: "video games",
+    theme: "video-games",
     relevance: 3
   },
     {
@@ -388,7 +388,7 @@ export const projectsData = [
     demo: "https://guillaume-gomez.github.io/LD36/build/",
     preview: "https://github.com/guillaume-gomez/LD36/blob/cbd83019a926fdd57222377c1d115e02979d8da5/preview.png",
     tags: ["javascript", "phaser JS", "LD"],
-    theme: "video games",
+    theme: "video-games",
     relevance: 2
   },
    {
@@ -415,7 +415,7 @@ export const projectsData = [
     demo: null,
     preview: "https://github.com/guillaume-gomez/NodeRace/blob/94a6993065735831d5db5202539eaf41c79d8cc3/preview.png",
     tags: ["javascript", "phaser", "network"],
-    theme: "video games",
+    theme: "video-games",
     relevance: 2
   },
     {
@@ -442,7 +442,7 @@ export const projectsData = [
     demo: null,
     preview: null,
     tags: ["javascript", "jaws"],
-    theme: "video games",
+    theme: "video-games",
     relevance: 1
   },
 ];

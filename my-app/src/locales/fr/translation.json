@@ -92,7 +92,16 @@
     "projects": "Projets",
     "no-filter": "Aucun filtre",
     "theme": {
-      "all": "Tout"
+      "all": "Tout",
+      "WTF":"WTF",
+      "creative": "Creation",
+      "experiment": "Expériences",
+      "image-processing": "Traitement image",
+      "learning": "Apprentissage",
+      "mooc": "MOOC",
+      "slack": "Slack",
+      "tool": "outils",
+      "video-games": "jeux-vidéos"
     }
   },
   "footer": {
