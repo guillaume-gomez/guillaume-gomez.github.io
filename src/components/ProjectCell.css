@@ -1,0 +1,113 @@
+.project-cell-content {
+  display: block;
+  height: 300px;
+  width: 300px;
+  border: 1px solid var(--white);
+  box-shadow: 0px 4px 4px 0px #000000 25 %;
+}
+
+.project-cell-image {
+  //border: 2px solid blue;
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+.project-cell-details {
+  opacity: 0;
+  background: #17181782;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  top: -310px;
+  width: 300px;
+  height: 310px;
+}
+
+
+.project-cell-name {
+  //border: 2px solid blue;
+  font-size: 42px;
+  font-weight: italic;
+  text-shadow: 0px 0px 8px #9F36B9;
+  width: inherit;
+  height: 50%;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+}
+
+.project-cell-buttons {
+  //border: 2px solid purple;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5px 0px;
+}
+
+
+.project-cell-button {
+  border-radius: 2px;
+  border: 2px solid var(--white);
+}
+
+.project-cell-button-disabled {
+  border-radius: 2px;
+  border: 2px solid var(--white);
+}
+
+.project-cell-button:hover, .project-cell-button:active {
+  box-shadow: 0px 0px 5px 1px #40CB70;
+  border: 2px solid #40CB70;
+  background: #121FCF;
+  background:linear-gradient(270deg, #3FD861 6.25%, #3FD761 6.26%, #4C75DD 93.75%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.project-cell-tags {
+  //border: 2px solid orange;
+  margin: 5px 0;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.project-cell-tag {
+  margin: 2px;
+  padding: 5px;
+  min-width: 50px;
+  border: 2px solid var(--white);
+  border-radius: 1.5rem;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.strikeout {
+  font-size: 1em;
+  line-height: 1em;
+  position: relative;
+}
+
+.strikeout::after {
+  border-bottom: 0.25em solid black;
+  box-shadow: 0px 0px 6px rgba(159, 54, 185, 0.89);
+  content: "";
+  left: 0;
+  margin-top: calc(0.125em / 2 * -1);
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+@media (max-width: 1024px) {
+  .project-cell-details {
+    opacity: 1.0;
+  }
+}

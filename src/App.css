@@ -1,0 +1,164 @@
+:root {
+  --primary: #2962ff;
+  --primary-light: #768fff;
+  --primary-dark: #0039cb;
+  --secondary: #c62828;
+  --secondary-light: #ff5f52;
+  --secondary-dark: #8e0000;
+  --text-primary: #ffffff;
+  --text-primary-dark: #000000;
+  --text-secondary: #ffffff;
+  --black: #000;
+  --white: #FFF;
+  --grey: #454545;
+}
+
+.parallax {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dynamic-parallax::after {
+  background: rgb(15, 34, 94);
+  /* Display and position the pseudo-element */
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: 100%;
+  /* Keep the image from overlapping sibling elements. */
+  z-index: -1;
+}
+
+/* The styling for the static div. */
+.static-parallax {
+  background: white;
+}
+
+.underline-link {
+  text-decoration: underline;
+}
+
+.underline--magical {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+  &:hover {
+    background-size: 100% 88%;
+  }
+}
+
+.background--magical {
+  background-image: linear-gradient(120deg, #fcec0cd4 0%, #b47700 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 90%;
+}
+
+
+.App-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  //border: 5px solid green;
+  width: 90%;
+}
+
+@media(max-width: 1680px) {
+  .container {
+    //border: 5px solid yellow;
+    width: 85%;
+  }
+}
+
+
+@media(max-width: 1500px) {
+  .container {
+    //border: 5px solid orange;
+    width: 85%;
+  }
+}
+
+@media(max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}
+
+
+@media(max-width: 1112px) {
+  .container {
+    width: 92%;
+  }
+}
+
+
+@media(max-width: 1024px) {
+  .container {
+    width: 94%;
+  }
+}
+
+
+@media(max-width: 768px) {
+  .container {
+    width: 96%;
+  }
+}
+
+
+.content {
+  width: 70%;
+}
+
+@media(max-width: 1500px) {
+  .content {
+    width: 75%;
+  }
+}
+
+@media(max-width: 1200px) {
+  .content {
+    width: 85%;
+  }
+}
+
+
+@media(max-width: 1112px) {
+  .content {
+    width: 90%;
+  }
+}
+
+
+@media(max-width: 1024px) {
+  .content {
+    width: 100%;
+  }
+}
+
+
+
+

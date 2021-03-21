@@ -1,0 +1,16 @@
+.timeline {
+  //border: 2px solid var(--white);
+  position: relative;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: var(--white);
+  top: 0;
+  bottom: 0;
+  left: 0%;
+  margin-left: -4px;
+}

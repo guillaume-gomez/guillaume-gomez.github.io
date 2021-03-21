@@ -1,0 +1,45 @@
+.chat {
+  flex-direction: column;
+  display: flex;
+  min-height: 500px;
+}
+
+.chat-reply {
+  background: var(--primary);
+  align-self: flex-end;
+  text-align: right;
+  color: var(--text-primary);
+}
+
+.chat-reply:before {
+  content: "";
+  background: #58D68D;
+  display: block;
+  position: relative;
+  border-radius: 100%;
+  height: 0.5em;
+  width: 0.5em;
+  left: -1.15em;
+  top: 0.5em;
+}
+
+.chat-message {
+  align-self: flex-start;
+  background: var(--secondary);
+  color: var(--text-secondary);
+  text-align: left;
+}
+.chat-bubble {
+  border-radius: 1.5em;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25em 1.5em 0.25em 1.5em;
+  display: flex;
+}
+
+.chat-dots > span {
+  padding: 0.15rem;
+}
+
+.chat-message-content {
+  padding: 0.25rem;
+}

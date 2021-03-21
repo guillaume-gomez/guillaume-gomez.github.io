@@ -1,0 +1,40 @@
+.hobbies-content {
+  //border: 2px solid purple;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+
+.hobbies-icons {
+  //border: 2px solid green;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.hobbies-icons > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+@media(max-width: 375px) {
+  .hobbies-content {
+    flex-direction: column;
+  }
+  .hobbies-icons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,112 @@
+/* Container around content */
+.job-container {
+  //border: 2px solid green;
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  
+}
+
+.job-content {
+  border-radius: 10px;
+  border: 5px solid var(--white);
+}
+
+/* The circles on the timeline */
+.job-container::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: var(--white);
+  border: 2px solid var(--dark);
+  top: 27px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.job-container::before {
+  left: 60px;
+  border: medium solid var(--primary);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--primary) transparent transparent;
+  }
+
+  /* Place the container to the right */
+.job-right {
+  left: 0%;
+}
+
+/* Add arrows to the right container (pointing left) */
+.job-right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 10;
+  left: 25px;
+  border-width: 15px 15px 15px 0;
+  border-color: transparent var(--white) transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.job-right::after {
+  left: -13px;
+}
+
+.job-card-header{
+  //border: 5px solid green;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px;
+}
+
+.job-card-header < a:hover {
+  color: var(--black);
+}
+
+.job-company {
+  color: var(--dark);
+}
+
+.job-company:hover {
+  color: var(--grey);
+}
+
+.job-body {
+  margin: 8px;
+}
+
+.job-card-header > h5 {
+  margin: 0;
+}
+
+.job-footer {
+  margin: 8px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.job-company-name {
+  padding-right: 8px;
+}
+
+
+@media(max-width: 768px) {
+  .job-card-header {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .job-footer {
+    justify-content: center;
+  }
+  .job-body {
+    text-align: center;
+    margin: 2px;
+  }
+  .job-body-content > ul {
+    padding-left: 0;
+  }
+}

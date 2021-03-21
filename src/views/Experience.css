@@ -1,0 +1,14 @@
+.experience-content {
+  //border: 2px solid purple;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-jobs {
+  max-width: 100%;
+}
+
+.experience-title {
+  text-align: center;
+}
+
