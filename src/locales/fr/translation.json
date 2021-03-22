@@ -5,7 +5,9 @@
     "contact": "Contact",
     "portfolio": "Portfolio",
     "skills": "Compétences",
-    "experience": "Experience"
+    "experience": "Experience",
+    "french": "Français",
+    "english": "Anglais"
   },
   "about-me": {
     "about-me": "A Propos",
