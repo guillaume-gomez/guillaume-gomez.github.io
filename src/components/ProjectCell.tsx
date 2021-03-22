@@ -21,6 +21,7 @@ function ProjectCell({name, githubPage, demo, preview, tags, theme, relevance} :
    <motion.img
       className={preview ? "project-cell-image" : "project-cell-image project-cell-gray"}
       src={ preview ? `${process.env.PUBLIC_URL}${preview}` : `${process.env.PUBLIC_URL}noise.jpg` }
+      alt={name}
     />  
     <motion.div className="project-cell-details"
       whileHover={{opacity: 1.0, transition: { duration: 0.2 }}} >

@@ -135,9 +135,11 @@ code {
 @font-face {
   font-family: 'Inconsolata';
   src: local('Inconsolata'), url('./fonts/Inconsolata-VariableFont_wdth,wght.ttf') format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Barlow';
   src: local('Barlow'), url(fonts/Barlow-Regular.ttf) format('truetype');
+  font-display: swap;
 }
