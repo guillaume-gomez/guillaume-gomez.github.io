@@ -11,12 +11,35 @@
     "about-me": "A Propos",
     "content": "Je suis developpeur <0>Full stack</0>. J'ai écrit mes premières lignes de code en C, pour ensuite découvrir beaucoup d'autres langages que ce soit à travers mon cursus universitaire ou professionnel. Passionné par l'informatique, j'essaye à travers des projets personnels d'entrevoir d'autres technologies allant de petites applications, aux jeux vidéos en passant par d'autres concepts farfelus qui me viennent sur le moment :) . Quand je ne programme pas, je fais du sport. Et il m'arrive très souvent de faire l'une de ses deux activités en musique."
   },
+  "welcome-page": {
+    "job-title": "Developpeur Full Stack"
+  },
   "hobbies": {
     "hobbies": "Centre d'intérêts",
     "music": "Musique",
     "sports": "Sports",
     "cinema": "Cinema",
     "video-games": "Jeux vidéos"
+  },
+  "trello": {
+    "trello-title": "Kanban App",
+    "trello-board": "Challenges perso",
+    "todo": "TO DO",
+    "wip": "En cours",
+    "done": "Terminé",
+    "add-card": "Ajouter une carte",
+    "release-video-game": "Sortir un jeu sur itch.io",
+    "presentation": "Faire une presentation en conférence",
+    "article": "Ecrire un article technique",
+    "open-source": "Contribuer a un projet open-source",
+    "dev-ops": "M'interesser aux challenges dev-ops",
+    "manage": "Mieux organiser et manager une équipe",
+    "front-end": "Me perfectionner en front",
+    "back-end": "Me perfectionner en back",
+    "integration": "M'améliorer en intégration",
+    "hackathon": "Faire un hackathon",
+    "portfolio": "Faire la v2 de mon portfolio",
+    "repos": "Atteindre 100 repositories sur github"
   },
   "experience": {
     "experience": "Expériences",
@@ -106,6 +129,6 @@
     "legend": "Cliquez sur le diagramme pour plus informations"
   },
   "footer": {
-    "design-by":"Designed by "
+    "design-by":"Design par "
   }
 }
