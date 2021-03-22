@@ -32,17 +32,14 @@
 }
 
 .welcome-page-windows {
-  padding-left: 32px;
-  padding-right: 32px;
   display: flex;
   width: inherit;
   justify-content: space-between;
-  height: 100%;
   //border: 5px solid pink;
 }
 
 .welcome-page-bottom {
-//  border: 5px solid blue;
+  //border: 5px solid blue;
   position: absolute;
   bottom: 25px;
 }
@@ -57,6 +54,7 @@
 .welcome-page-trello {
   //border: 5px solid red;
   padding-left: 24px;
+  min-height: 450px;
 }
 
 
@@ -74,15 +72,17 @@
     margin-bottom: 1rem;
     position: relative;
     top:0;
+    padding-left: 0;
 
   }
   .welcome-page-terminal {
     margin-bottom: 1rem;
     position: relative;
     top: 0;
+    padding-right: 0;
   }
   .welcome-page-top {
-    padding: 1rem;
+    padding: 1rem 0;
     text-align: center;
   }
   .welcome-page-bottom {
@@ -108,7 +108,7 @@
 
 @media(max-width: 375px) {
 .welcome-page-top {
-    padding: 4rem;
+    padding: 4rem 0;
   }
 }
 
