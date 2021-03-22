@@ -1,6 +1,5 @@
 import React from 'react';
 import { useTranslation, Trans } from 'react-i18next';
-import profile from "../profile.jpeg";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -16,7 +15,7 @@ function AboutMe() {
       <h2>{t("about-me.about-me")}</h2>
       <div className="about-me-infos">
         <div className="about-me-avatar">
-          <img className="about-me-avatar-img" src={profile} loading="lazy" alt="my face"/>
+          <img className="about-me-avatar-img" src={`${process.env.PUBLIC_URL}profile.jpeg`} loading="lazy" alt="my face"/>
           <ul className="about-me-icons">
             <li>
               <a className="icons" href={GITHUB}>

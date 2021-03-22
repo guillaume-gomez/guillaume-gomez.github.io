@@ -19,8 +19,8 @@ function ProjectCell({name, githubPage, demo, preview, tags, theme, relevance} :
     whileHover={{ scale: 1.1, rotate: Math.random() > 0.5 ? 1 : -1, boxShadow: "0px 2px 50px rgba(0, 0, 0, 0.25)"}}
   >
    <motion.img
-      className="project-cell-image"
-      src={ preview ? `${preview}?raw=true` : "https://via.placeholder.com/300" }
+      className={preview ? "project-cell-image" : "project-cell-image project-cell-gray"}
+      src={ preview ? `${process.env.PUBLIC_URL}${preview}` : `${process.env.PUBLIC_URL}noise.jpg` }
     />  
     <motion.div className="project-cell-details"
       whileHover={{opacity: 1.0, transition: { duration: 0.2 }}} >

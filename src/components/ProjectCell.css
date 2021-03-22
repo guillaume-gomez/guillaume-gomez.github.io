@@ -39,6 +39,10 @@
   text-overflow: ellipsis;
 }
 
+.project-cell-gray {
+  filter: grayscale(100%);
+}
+
 .project-cell-buttons {
   //border: 2px solid purple;
   width: 100%;
