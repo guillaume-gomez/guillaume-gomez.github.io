@@ -10,7 +10,7 @@ export const projectsData = [
     preview: "https://github.com/guillaume-gomez/orage-et-parapluie/blob/43e6985901a6dbfe5fad36f104ae8b30226b65c1/preview.png",
     tags: ["typescript", "canvas"],
     theme: "creative",
-    relevance: 5
+    relevance: 2
   },
   {
     name: "Workshop Elixir Paris",
@@ -107,7 +107,7 @@ export const projectsData = [
     name: "Phaser Es6 Sandbox",
     githubPage: "https://github.com/guillaume-gomez/phaserEs6Sandbox",
     demo: "https://guillaume-gomez.github.io/phaserEs6Sandbox/build/",
-    preview: null,
+    preview: "https://github.com/guillaume-gomez/phaserEs6Sandbox/blob/6becd378de2002da32f117da7294642a112beac8/preview.png",
     tags: ["phaser JS", "javascript"],
     theme: "learning",
     relevance: 4
@@ -116,7 +116,7 @@ export const projectsData = [
     name: "Advent of code 2020",
     githubPage: "https://github.com/guillaume-gomez/Advent-of-code-2020",
     demo: null,
-    preview: null,
+    preview: "https://github.com/guillaume-gomez/Advent-of-code-2020/blob/e5957cd1de755ed4482938ad2bbbc37c64ac34de/preview.png",
     tags: ["elixir"],
     theme: "learning",
     relevance: 5
@@ -134,7 +134,7 @@ export const projectsData = [
     name: "Image to Ascii",
     githubPage: "https://github.com/guillaume-gomez/image-to-ascii",
     demo: "https://guillaume-gomez.github.io/image-to-ascii",
-    preview: "https://github.com/guillaume-gomez/image-to-ascii/blob/c1f2af2ba50adeb5035e6e720c802ee2add5b209/preview.gif",
+    preview: "https://github.com/guillaume-gomez/image-to-ascii/blob/e91e5804f6548c6592c464dd3e00a9706cf1ee0f/example.png",
     tags: ["typescript", "react"],
     theme: "image-processing",
     relevance: 5
@@ -173,13 +173,13 @@ export const projectsData = [
     preview: "https://github.com/guillaume-gomez/my_watch_faces/blob/ca00313d2713330a19a952e85762b7fd3dca6e94/Joy-Division/sample-face.png",
     tags: ["smart watch"],
     theme: "creative",
-    relevance: 5
+    relevance: 4
   },
   {
     name: "Slack RATP",
     githubPage: "https://github.com/guillaume-gomez/Slack-Ratp",
     demo: null,
-    preview: null,
+    preview: "https://github.com/guillaume-gomez/Slack-Ratp/blob/a410d8a2779af5b061a704f89b5dda5092b30d0a/ratp.png",
     tags: ["slack", "ruby"],
     theme: "slack",
     relevance: 5
@@ -332,7 +332,7 @@ export const projectsData = [
     name: "Shaders links",
     githubPage: "https://github.com/guillaume-gomez/shaders_links",
     demo: null,
-    preview: null,
+    preview: "https://github.com/guillaume-gomez/shaders_links/blob/9dae0163ed5fbaefefc2215eb5ee3560ad4b9ed3/preview.png",
     tags: ["shaders", "GLSL"],
     theme: "experiment",
     relevance: 2
@@ -401,10 +401,10 @@ export const projectsData = [
     relevance: 2
   },
      {
-    name: "Elang mooc",
+    name: "Erlang mooc",
     githubPage: "https://github.com/guillaume-gomez/erlangMooc",
     demo: null,
-    preview: null,
+    preview: "https://github.com/guillaume-gomez/erlangMooc/blob/5f644f2c8a4a8fae91422bd17934d78e3dbb8556/mooc-univ.png",
     tags: ["erlang"],
     theme: "mooc",
     relevance: 4
@@ -444,5 +444,14 @@ export const projectsData = [
     tags: ["javascript", "jaws"],
     theme: "video-games",
     relevance: 1
+  },
+  {
+    name: "Avatar Generator",
+    githubPage: "https://github.com/guillaume-gomez/avatar-generator",
+    demo: "https://guillaume-gomez.github.io/avatar-generator",
+    preview: "https://github.com/guillaume-gomez/avatar-generator/blob/63dda916635a5595098eee6b3fa1b8cd79098302/example.png",
+    tags: ["typescript", "canvas"],
+    theme: "creative",
+    relevance: 3
   },
 ];
