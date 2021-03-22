@@ -84,10 +84,6 @@
       "bloc1" : "Conception et synthèse d'image 2D-3D"
     }
   },
-  "skills": {
-    "skills": "Compétences",
-    "languages": "Langages"
-  },
   "projects": {
     "projects": "Projets",
     "no-filter": "Aucun filtre",
@@ -103,6 +99,11 @@
       "tool": "outils",
       "video-games": "jeux-vidéos"
     }
+  },
+
+  "skills": {
+    "skills": "Compétences",
+    "legend": "Cliquez sur le diagramme pour plus informations"
   },
   "footer": {
     "design-by":"Designed by "

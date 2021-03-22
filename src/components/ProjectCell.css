@@ -59,6 +59,10 @@
   border: 2px solid var(--white);
 }
 
+.project-cell-button {
+  padding: 0 0.5rem;
+}
+
 .project-cell-button:hover, .project-cell-button:active {
   box-shadow: 0px 0px 5px 1px #40CB70;
   border: 2px solid #40CB70;

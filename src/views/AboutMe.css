@@ -12,7 +12,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 80%;
   height: auto;
 }
 
@@ -21,7 +21,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 16px;
+  margin: 32px;
 }
 
 .about-me-icons {
@@ -57,13 +57,13 @@
 
 @media(max-width: 1500px) {
   .about-me-infos {
-    width: 75%;
+    width: 85%;
   }
 }
 
 @media(max-width: 1200px) {
   .about-me-infos {
-    width: 85%;
+    width: 90%;
   }
   .about-me-text {
     line-height: 1.25em;

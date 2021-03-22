@@ -84,10 +84,6 @@
       "bloc1" : "Conception et synthèse d'image 2D-3D"
     }
   },
-  "skills": {
-    "skills": "Skills",
-    "languages": "Languages"
-  },
   "projects": {
     "projects": "Projects",
     "no-filter": "No filter",
@@ -103,6 +99,10 @@
       "tool": "Tools",
       "video-games": "Video games"
     }
+  },
+  "skills": {
+    "skills": "Skills",
+    "legend": "Click on the doughnut for more information"
   },
   "footer": {
     "design-by":"Designed by "

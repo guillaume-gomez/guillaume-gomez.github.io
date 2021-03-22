@@ -9,6 +9,7 @@
    display: inline;
    padding-left: 0;
    font-weight: bold;
+   padding-bottom: 2.5rem;
 }
 
 .projects-header > li {
@@ -72,6 +73,7 @@
   color: var(--white);
   font-family: 'Barlow';
   font-size: 20px;
+  padding-right:1rem;
 }
 
 .custom-option {
@@ -80,14 +82,13 @@
 
 .projects-grid {
   //border: 5px solid purple;
-  min-height: 100vh;
   min-width: inherit;
   width: inherit;
 }
 
 .project-filter {
   justify-content: flex-end;
-  padding: 8px;
+  padding: 8px 8px 8px 0;
   display: flex;
 }
 

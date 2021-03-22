@@ -1,8 +1,31 @@
 import React, { useRef } from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import { useTranslation } from 'react-i18next';
-
 import "./Skills.css";
+
+const BackEndData = [
+ "Ruby on Rails",
+ "Node JS",
+ "GraphQL",
+ "Ruby",
+ "Elixir",
+ "Erlang",
+ "Rust",
+ "C++"
+]
+
+const FrontEndData = [
+  "HTML5/CSS",
+  "React 16.8",
+  "Vue Js",
+  "JQuery",
+  "TypeScript",
+  "Javascript (Es6)"
+]
+
+const ManagementData = ["SCRUM", "Sprint"];
+
+
 const data = {
   labels: [
       'Front End',
@@ -17,11 +40,11 @@ const data = {
     '#ffc107'
     ],
     hoverBackgroundColor: [
-    '#17a2b8',
-    '#007bff',
-    '#ffc107'
+    '#128293',
+    '#0062cc',
+    '#cc9a06'
     ]
-  }]
+  }],
 };
 
 const  options = {
@@ -44,8 +67,28 @@ const  options = {
   legend: {
       display: false
    }, tooltips: {
-      enabled: false
-   }
+      enabled: true,
+      displayColors: false,
+      bodyFontSize: 16,
+      caretPadding: 1,
+      borderWidth: 2,
+      backgroundColor: "#000000FA",
+      callbacks: {
+        label: (tooltipItem: any) => {
+          let data = [];
+          if(tooltipItem.index === 0) {
+            data = FrontEndData;
+          }
+          else if(tooltipItem.index === 1) {
+            data = BackEndData;
+          }
+          else {
+            data = ManagementData;
+          }
+          return data.map(item => `- ${item}`);
+        }
+      }
+   },
 };
 
 function Skills() {
@@ -56,36 +99,12 @@ function Skills() {
   return (
     <section className="skills-content">
       <h2 className="skills-title">{t("skills.skills")}</h2>
-      
-      <div className="skills-stats">
-        <div className="skills">
-          <h3>Front-End</h3>
-          <ul>
-            <li>HTML5/CSS</li>
-            <li>React 16.8</li>
-            <li>JQuery</li>
-          </ul>
-          <h3>Back-End</h3>
-          <ul>
-            <li>Ruby on Rails</li>
-            <li>Node JS</li>
-            <li>GraphQL</li>
-          </ul>
-          <h3>Languages</h3>
-          <ul>
-            <li>Javascript (Es6) </li>
-            <li>TypeScript</li>
-            <li>Ruby</li>
-            <li>C++</li>
-            <li>Rust</li>
-            <li>Elixir</li>
-            <li>Erlang</li>
-          </ul>
-        </div>
+      <div className="skills">
         <div className="skills-pie-chart">
-          <Doughnut ref={ref} data={data} options={options}/>
+          <Doughnut ref={ref} data={data} options={options} width={500} height={500}/>
         </div>
-      </div>
+        <em>{t("skills.legend")}</em>
+     </div>
     </section>
   );
 }

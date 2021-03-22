@@ -14,10 +14,10 @@ function Header() {
       </div>
       <div className="header-links">
         <a href={LINKEDIN}>
-          <FontAwesomeIcon icon={faLinkedin} size="2x" />
+          <FontAwesomeIcon icon={faLinkedin} size="lg" />
         </a>
         <a href={GITHUB}>
-          <FontAwesomeIcon icon={faGithub} size="2x" />
+          <FontAwesomeIcon icon={faGithub} size="lg" />
         </a>
       </div>
     </div>
