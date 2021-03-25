@@ -10,6 +10,7 @@ export interface ProjectCellInterface {
   tags: string[];
   theme: string;
   relevance: number;
+  year: number;
 }
 
 function ProjectCell({name, githubPage, demo, preview, tags, theme, relevance} : ProjectCellInterface) {
