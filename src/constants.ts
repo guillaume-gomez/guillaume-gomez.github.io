@@ -11,6 +11,7 @@ export const projectsData = [
     preview: "orage-et-parapluie.png",
     tags: ["typescript", "canvas"],
     theme: "creative",
+    year: 2021,
     relevance: 2
   },
   {
@@ -20,6 +21,7 @@ export const projectsData = [
     preview: "elixir-paris.jpeg",
     tags: ["elixir"],
     theme: "mooc",
+    year: 2020,
     relevance: 3
 
   },
@@ -30,6 +32,7 @@ export const projectsData = [
     preview: "react-hook-context-reducer.png",
     tags: ["typescript", "react"],
     theme: "learning",
+    year: 2019,
     relevance: 3
   },
     {
@@ -39,6 +42,7 @@ export const projectsData = [
     preview: "linked-list.png",
     tags: ["typescript", "react"],
     theme: "learning",
+    year: 2019,
     relevance:1
   },
   {
@@ -48,6 +52,7 @@ export const projectsData = [
     preview: "poisson-disk.png",
     tags: ["javascript"],
     theme: "creative",
+    year: 2018,
     relevance: 5
   },
   {
@@ -57,15 +62,17 @@ export const projectsData = [
     preview: "vocal-assistant-clementine.png",
     tags: ["javascript"],
     theme: "learning",
+    year: 2017,
     relevance: 1
   },
   {
     name: "Pinch&Scape",
     githubPage: "https://github.com/guillaume-gomez/LD39",
-    demo: null,
+    demo: "https://www.youtube.com/watch?v=j-0KVw4JqFs",
     preview: "pinch-scape.png",
     tags: ["javascript"],
     theme: "video-games",
+    year: 2018,
     relevance: 5
   },
   {
@@ -75,6 +82,7 @@ export const projectsData = [
     preview: "last-fm-albums.png",
     tags: ["javascript", "react"],
     theme: "tool",
+    year: 2018,
     relevance: 2
   },
   {
@@ -84,6 +92,7 @@ export const projectsData = [
     preview: "downwell.png",
     tags: ["unity"],
     theme: "video-games",
+    year: 2020,
     relevance: 5
   },
   {
@@ -93,6 +102,7 @@ export const projectsData = [
     preview: "tilt-shift-rust.png",
     tags: ["rust"],
     theme: "image-processing",
+    year: 2017,
     relevance: 5
   },
   {
@@ -102,6 +112,7 @@ export const projectsData = [
     preview: "youtube-channel-switcher.png",
     tags: ["extension", "javascript", "youtube"],
     theme: "tool",
+    year: 2017,
     relevance: 5
   },
   {
@@ -111,6 +122,7 @@ export const projectsData = [
     preview: "phaser-sandbox.png",
     tags: ["phaser JS", "javascript"],
     theme: "learning",
+    year: 2016,
     relevance: 4
   },
   {
@@ -120,6 +132,7 @@ export const projectsData = [
     preview: "advent-of-code-2020.png",
     tags: ["elixir"],
     theme: "learning",
+    year: 2020,
     relevance: 5
   },
   {
@@ -129,6 +142,7 @@ export const projectsData = [
     preview: "math-game.png",
     tags: ["C++", "SFML"],
     theme: "video-games",
+    year: 2013,
     relevance: 4
   },
   {
@@ -138,6 +152,7 @@ export const projectsData = [
     preview: "image-to-ascii.png",
     tags: ["typescript", "react"],
     theme: "image-processing",
+    year: 2021,
     relevance: 5
   },
   {
@@ -147,6 +162,7 @@ export const projectsData = [
     preview: null,
     tags: ["HTML", "CSS"],
     theme: "WTF",
+    year: 2020,
     relevance: 1
   },
   {
@@ -156,6 +172,7 @@ export const projectsData = [
     preview: "LD44.png",
     tags: ["Unity", "LD"],
     theme: "video-games",
+    year: 2019,
     relevance: 3
   },
   {
@@ -165,6 +182,7 @@ export const projectsData = [
     preview: "defrag.png",
     tags: ["Unity", "LD"],
     theme: "video-games",
+    year: 2018,
     relevance: 5
   },
   {
@@ -174,6 +192,7 @@ export const projectsData = [
     preview: "my-watch-faces.png",
     tags: ["smart watch"],
     theme: "creative",
+    year: 2018,
     relevance: 4
   },
   {
@@ -183,6 +202,7 @@ export const projectsData = [
     preview: "ratp.png",
     tags: ["slack", "ruby"],
     theme: "slack",
+    year: 2018,
     relevance: 5
   },
   {
@@ -192,6 +212,7 @@ export const projectsData = [
     preview: "roguelike-rust.png",
     tags: ["rust"],
     theme: "video-games",
+    year: 2019,
     relevance: 4
   },
   {
@@ -201,6 +222,7 @@ export const projectsData = [
     preview: "giffWall.png",
     tags: ["javascript"],
     theme: "creative",
+    year: 2018,
     relevance: 5
   },
       {
@@ -210,6 +232,7 @@ export const projectsData = [
     preview: "Roboto.png",
     tags: ["unity", "GMTK"],
     theme: "video-games",
+    year: 2019,
     relevance: 3
   },
    {
@@ -219,6 +242,7 @@ export const projectsData = [
     preview: "rogueLevel.png",
     tags: ["unity"],
     theme: "video-games",
+    year: 2019,
     relevance: 4
   },
    {
@@ -228,6 +252,7 @@ export const projectsData = [
     preview: "preview-phaser.png",
     tags: ["javascript", "phaser"],
     theme: "video-games",
+    year: 2018,
     relevance: 5
   },
      {
@@ -237,6 +262,7 @@ export const projectsData = [
     preview: "preview-animate-name.png",
     tags: ["experiment"],
     theme: "creative",
+    year: 2018,
     relevance: 4
   },
   {
@@ -246,6 +272,7 @@ export const projectsData = [
     preview: "LD35.png",
     tags: ["javascript", "jaws", "LD"],
     theme: "video-games",
+    year:2016,
     relevance: 3
   },
     {
@@ -255,6 +282,7 @@ export const projectsData = [
     preview: "LD-38-editor.png",
     tags: ["javascript", "jaws", "LD"],
     theme: "video-games",
+    year: 2018,
     relevance: 2
   },
   {
@@ -264,15 +292,17 @@ export const projectsData = [
     preview: "yokai.png",
     tags: ["javascript", "jaws", "LD"],
     theme: "video-games",
+    year: 2018,
     relevance: 4
   },
     {
     name: "Another techno cover album",
     githubPage: "https://github.com/guillaume-gomez/another-techno-cover",
-    demo: "https://github.com/guillaume-gomez/another-techno-cover",
+    demo: "https://guillaume-gomez.github.io/another-techno-cover/",
     preview: "another-techno-cover.png",
     tags: ["javascript", "canvas"],
     theme: "creative",
+    year: 2018,
     relevance: 4
   },
    {
@@ -282,6 +312,7 @@ export const projectsData = [
     preview: "LD42.png",
     tags: ["unity", "LD"],
     theme: "video-games",
+    year: 2018,
     relevance: 3
   },
      {
@@ -291,6 +322,7 @@ export const projectsData = [
     preview: null,
     tags: ["slack"],
     theme: "slack",
+    year: 2018,
     relevance: 1
   },
   {
@@ -300,15 +332,17 @@ export const projectsData = [
     preview: "hacker-news-clone.png",
     tags: ["graphql", "javascript"],
     theme: "learning",
+    year: 2018,
     relevance: 1
   },
   {
     name: "Music Mooc",
     githubPage: "https://github.com/guillaume-gomez/music-mooc",
-    demo: null,
+    demo: "https://guillaume-gomez.github.io/music-mooc/src/week4/week4.html",
     preview: "music-mooc.png",
     tags: ["music", "javascript"],
     theme: "mooc",
+    year: 2017,
     relevance: 2
   },
     {
@@ -318,6 +352,7 @@ export const projectsData = [
     preview: "shader-links.png",
     tags: ["shaders", "GLSL"],
     theme: "experiment",
+    year: 2017,
     relevance: 2
   },
   {
@@ -327,6 +362,7 @@ export const projectsData = [
     preview: "mario-sokban.png",
     tags: ["C++", "SDL"],
     theme: "video-games",
+    year: 2010,
     relevance: 2
   },
   {
@@ -336,6 +372,7 @@ export const projectsData = [
     preview: "sokoban-editor.png",
     tags: ["C++", "SDL"],
     theme: "video-games",
+    year: 2010,
     relevance: 1
   },
     {
@@ -345,6 +382,7 @@ export const projectsData = [
     preview: "haskell.png",
     tags: ["haskell"],
     theme: "mooc",
+    year: 2017,
     relevance: 2
   },
       {
@@ -354,6 +392,7 @@ export const projectsData = [
     preview: "python.png",
     tags: ["python"],
     theme: "learning",
+    year: 2017,
     relevance: 1
   },
   {
@@ -363,6 +402,7 @@ export const projectsData = [
     preview: "LD37.png",
     tags: ["javascript", "phaser JS", "LD"],
     theme: "video-games",
+    year:2017,
     relevance: 3
   },
     {
@@ -372,6 +412,7 @@ export const projectsData = [
     preview: "LD36.png",
     tags: ["javascript", "phaser JS", "LD"],
     theme: "video-games",
+    year: 2017,
     relevance: 2
   },
      {
@@ -381,6 +422,7 @@ export const projectsData = [
     preview: "Erlang.png",
     tags: ["erlang"],
     theme: "mooc",
+    year: 2017,
     relevance: 4
   },
   {
@@ -390,6 +432,7 @@ export const projectsData = [
     preview: "node-race.png",
     tags: ["javascript", "phaser", "network"],
     theme: "video-games",
+    year: 2016,
     relevance: 2
   },
     {
@@ -399,6 +442,7 @@ export const projectsData = [
     preview: "NF11.png",
     tags: ["java"],
     theme: "learning",
+    year: 2016,
     relevance: 1
   },
       {
@@ -408,6 +452,7 @@ export const projectsData = [
     preview: "langton-ant-phaser.png",
     tags: ["javascript", "phaser"],
     theme: "experiment",
+    year: 2016,
     relevance: 4
   },
   {
@@ -417,6 +462,7 @@ export const projectsData = [
     preview: null,
     tags: ["javascript", "jaws"],
     theme: "video-games",
+    year: 2015,
     relevance: 1
   },
   {
@@ -426,6 +472,7 @@ export const projectsData = [
     preview: "avatar-generator.png",
     tags: ["typescript", "canvas"],
     theme: "creative",
+    year: 2021,
     relevance: 3
   },
   {
@@ -435,6 +482,7 @@ export const projectsData = [
     preview: "berMode.png",
     tags: ["ruby", "slack"],
     theme: "slack",
+    year: 2017,
     relevance: 3
   },
     {
@@ -444,6 +492,7 @@ export const projectsData = [
     preview: "p5-sandbox.png",
     tags: ["javascript", "processing"],
     theme: "creative",
+    year: 2017,
     relevance: 2
   }
 ];
