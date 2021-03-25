@@ -17,7 +17,7 @@ function ProjectCell({name, githubPage, demo, preview, tags, theme, relevance} :
   return (
   <motion.div
     className="project-cell-content"
-    whileHover={{ scale: 1.1, rotate: Math.random() > 0.5 ? 1 : -1, boxShadow: "0px 2px 50px rgba(0, 0, 0, 0.25)"}}
+    whileHover={{ scale: 1.1, rotate: Math.random() > 0.5 ? 1 : -1, boxShadow: "0px 2px 50px rgba(0, 0, 0, 0.50)"}}
   >
    <motion.img
       className={preview ? "project-cell-image" : "project-cell-image project-cell-gray"}

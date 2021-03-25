@@ -31,9 +31,9 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1.25;
   font-size: 24px;
-  font-family: 'Barlow';
+  font-family: 'Arimo';
   color: var(--white);
-  background: #121212;
+   background:  #c64826;
 }
 h1 {
   font-size: 96px;
@@ -124,6 +124,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:   #ff806d;
   color: white;
 }
 
@@ -139,7 +140,7 @@ code {
 }
 
 @font-face {
-  font-family: 'Barlow';
-  src: local('Barlow'), url(fonts/Barlow-Regular.ttf) format('truetype');
+  font-family: 'Arimo';
+  src: local('Arimo-SemiBoldItalic'), url(fonts/Arimo-SemiBoldItalic.ttf) format('truetype');
   font-display: swap;
 }
