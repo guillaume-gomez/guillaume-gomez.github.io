@@ -32,19 +32,19 @@ function WelcomePage({refTarget} : WelcomePageInterface) {
         <h2 className="title-relative"> <span className="background--magical">{t("welcome-page.job-title")}</span> </h2>
       </div>
       <div className="welcome-page-windows">
-        <div className="welcome-page-trello">
+        <div className="welcome-page-terminal">
           {
-            displayTrello && 
-            <Window width={600} height={425} backgroundColor="black">
-              <Trello/>
+            displayTerminal &&
+            <Window width={600} height={300} backgroundColor="black">
+              <Terminal />
             </Window>
           }
         </div>
-        <div className="welcome-page-terminal">
+        <div className="welcome-page-trello">
           {
-            displayTerminal && 
-            <Window width={600} height={300} backgroundColor="black">
-              <Terminal />
+            displayTrello &&
+            <Window width={600} height={425} backgroundColor="black">
+              <Trello/>
             </Window>
           }
         </div>
