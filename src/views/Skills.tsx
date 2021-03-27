@@ -23,7 +23,7 @@ const FrontEndData = [
   "Javascript (Es6)"
 ]
 
-const ManagementData = ["SCRUM", "Sprint"];
+const ManagementData = ["SCRUM", "Sprint", "6 weeks cycle"];
 
 
 const data = {

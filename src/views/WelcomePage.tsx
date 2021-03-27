@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion } from "framer-motion";
 import { ReactComponent as MacMouse } from "../macintosh-mouse.svg";
 
@@ -15,6 +16,7 @@ interface WelcomePageInterface {
 }
 
 function WelcomePage({refTarget} : WelcomePageInterface) {
+  const { t } = useTranslation();
   const [displayTerminal, setDisplayTerminal] = useState<boolean>(false);
   const [displayTrello, setDisplayTrello] = useState<boolean>(false);
   
@@ -27,13 +29,13 @@ function WelcomePage({refTarget} : WelcomePageInterface) {
     <section className="welcome-page-content first-gradient">
       <div className="welcome-page-top">
         <h1 className="title-relative"> <span className="about-me-wave-hand">👋</span><strong className="text-primary">Guillaume Gomez</strong></h1>
-        <h2 className="title-relative"> <span className="background--magical">Developpeur Full Stack</span> </h2>
+        <h2 className="title-relative"> <span className="background--magical">{t("welcome-page.job-title")}</span> </h2>
       </div>
       <div className="welcome-page-windows">
         <div className="welcome-page-trello">
           {
             displayTrello && 
-            <Window width={600} height={450} backgroundColor="black">
+            <Window width={600} height={425} backgroundColor="black">
               <Trello/>
             </Window>
           }

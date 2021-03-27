@@ -113,12 +113,21 @@
 
 
 
+@media(max-width: 768px) {
+  .projects-header {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    
+  }
+}
+
 
 @media(max-width: 375px) {
   .projects-header {
-    margin: 0px;
     font-size: 14px;
-    padding: 16px;
+    
   }
 }
 
