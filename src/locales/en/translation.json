@@ -1,7 +1,7 @@
 {
   "date-format":"MMM yyyy",
   "header": {
-    "resume": "Resume",
+    "resume": "resume",
     "contact": "Contact",
     "portfolio": "Portfolio",
     "skills": "Skills",
@@ -11,21 +11,41 @@
   },
   "about-me": {
     "about-me": "About me",
-    "content": "I'm <0>Full stack</0>. J'ai écrit mes premières lignes de code en C, pour ensuite découvrir beaucoup d'autres langages que ce soit à travers mon cursus universitaire ou professionnel. Passionné par l'informatique, j'essaye à travers des projets personnels d'entrevoir d'autres technologies allant de petites applications, aux jeux vidéos en passant par d'autres concepts farfelus qui me viennent sur le moment :) . Quand je ne programme pas, je fais du sport. Et il m'arrive très souvent de faire l'une de ses deux activités en musique."
+    "content": "I'm <0>Full stack</0>. I began with  my first lines of code in C, pour ensuite découvrir beaucoup d'autres langages que ce soit à travers mon cursus universitaire ou professionnel. Passionné par l'informatique, j'essaye à travers des projets personnels d'entrevoir d'autres technologies allant de petites applications, aux jeux vidéos en passant par d'autres concepts farfelus qui me viennent sur le moment :) . Quand je ne programme pas, je fais du sport. Et il m'arrive très souvent de faire l'une de ses deux activités en musique."
   },
   "welcome-page": {
-    "job-title": "Developpeur Full Stack"
+    "job-title": "Full Stack Developer"
   },
   "hobbies": {
     "hobbies": "Hobbies",
     "music": "Music",
     "sports": "Sports",
     "cinema": "Cinema",
-    "video-games": "Video Games"
+    "video-games": "Video games"
+  },
+  "trello": {
+    "trello-title": "Kanban App",
+    "trello-board": "Personnal Challenges",
+    "todo": "TO DO",
+    "wip": "Work in progress",
+    "done": "Done",
+    "add-card": "Add a card",
+    "release-video-game": "Release a video game on itch.io",
+    "presentation": "Make a presentation in a conference",
+    "article": "Write a blog article",
+    "open-source": "Contribute to open-source",
+    "dev-ops": "Learn more about dev-ops ",
+    "manage": "Improve my scheduling and management skills",
+    "front-end": "Improve in front end",
+    "back-end": "Improve in back-end",
+    "integration": "Keep progress in HTML/CSS",
+    "hackathon": "Attend to a hackathon",
+    "portfolio": "Upgrade my portfolio",
+    "repos": "Reach 100 repositories on github"
   },
   "experience": {
-    "experience": "Experience",
-    "current": "current",
+    "experience": "Experiences",
+    "current": "present",
     "amuse": {
       "company": "Amuse",
       "location": "Paris",
@@ -50,32 +70,32 @@
     "applidget": {
       "company": "EventMaker",
       "location": "Paris",
-      "job-title": "Back-end developer",
+      "job-title": "Back-end developper",
       "bloc": "Améliorer et maintenir l’application principale Mobichekin:\nune solution pour les organisateurs d’évènements codée en Ruby et ReactJs."
     },
     "masa": {
       "company": "Masa group",
       "location": "Paris",
-      "job-title": "Programmer 3D intern",
+      "job-title": "3D Programmer intern",
       "bloc": "Amélioration de la vue 3D codée en C++/OpenGL pour un simulateur militaire.\nLa mission fut de rendre celle ci plus intuitive, tout en ajoutant de nouvelles fonctionnalités."
     },
     "multiposting": {
       "company": "Multiposting",
       "location": "Paris",
-      "job-title": "Web developer intern",
+      "job-title": "Stagiaire Developpeur web",
       "bloc1": "Maintenance de différents programmes conçus en PHP et en Pyhton",
       "bloc2": "Récupération des offres d’emplois sur les sites clients(crawling) pour les diffuser sur les sites spécialisés"
     },
     "arles": {
-      "company": "Arles Hall town",
+      "company": "Mairie d'Arles",
       "location": "Arles",
-      "job-title": "Web developer intern",
+      "job-title": "Stagiaire Developpeur web",
       "bloc1": "Création d'un site internet en PHP pour automatiser la création d'arrêtés municipaux.",
       "bloc2": "Récupération de l'ancienne Base de données et la création d'une nouvelle."
     }
   },
   "education": {
-    "education": "Education",
+    "education": "Formation",
     "u_t_c": {
       "company": "Université de Technologie de Compiègne",
       "location": "Compiègne",
@@ -93,10 +113,10 @@
     "projects": "Projects",
     "no-filter": "No filter",
     "theme": {
-      "all": "all",
+      "all": "All",
       "WTF":"WTF",
       "creative": "Creative",
-      "experiment": "Experiment",
+      "experiment": "Experiences",
       "image-processing": "Image processing",
       "learning": "Learning",
       "mooc": "MOOC",
@@ -105,9 +125,10 @@
       "video-games": "Video games"
     }
   },
+
   "skills": {
     "skills": "Skills",
-    "legend": "Click on the doughnut for more information"
+    "legend": "Click on doughnut chart for more information"
   },
   "footer": {
     "design-by":"Designed by "
