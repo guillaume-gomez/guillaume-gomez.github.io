@@ -11,10 +11,10 @@
   },
   "about-me": {
     "about-me": "A Propos",
-    "content": "Je suis developpeur <0>Full stack</0>. J'ai écrit mes premières lignes de code en C, pour ensuite découvrir beaucoup d'autres langages que ce soit à travers mon cursus universitaire ou professionnel. Passionné par l'informatique, j'essaye à travers des projets personnels d'entrevoir d'autres technologies allant de petites applications, aux jeux vidéos en passant par d'autres concepts farfelus qui me viennent sur le moment :) . Quand je ne programme pas, je fais du sport. D'ailleurs il m'arrive très souvent de faire l'une de ses deux activités en musique."
+    "content": "Je suis développeur <0>Full stack</0>. J'ai écrit mes premières lignes de C à 15 ans, pour ensuite découvrir beaucoup d'autres langages que ce soit à travers mon cursus universitaire ou professionnel. Passionné par l'informatique, j'essaye à travers des projets personnels d'entrevoir d'autres technologies allant de petites applications aux jeux vidéos, en passant par d'autres concepts farfelus qui me viennent sur le moment :). Quand je ne programme pas, je fais du sport. D'ailleurs il m'arrive très souvent de faire l'une de ses deux activités en musique."
   },
   "welcome-page": {
-    "job-title": "Developpeur Full Stack"
+    "job-title": "Développeur Full Stack"
   },
   "hobbies": {
     "hobbies": "Centre d'intérêts",
@@ -45,53 +45,53 @@
   },
   "experience": {
     "experience": "Expériences",
-    "current": "présent",
+    "current": "présent",  // currently
     "amuse": {
       "company": "Amuse",
       "location": "Paris",
       "job-title": "Directeur Technique",
       "job-title-2": "Back-end developpeur",
-      "context": "Tout les projets au sein d'Amuse auquel j'ai participé ont eu pour but d'aider à produire le plus efficacement possibles des dessins animées pour la categorie pre-school( 0-3 ans), ainsi que leurs diffusion sur les plateformes OTT (Youtube, Amazon, Youku, Baidu, etc...)",
-      "bloc1": "Pour l'ensemble des projets, j'ai participé à la conception, l'organisation ainsi qu'au développement",
+      "context": "Tous les projets au sein d'Amuse auxquels j'ai participé ont eu pour but d'aider à produire le plus efficacement possibles des dessins animés pour la catégorie pre-school (0-3 ans), ainsi que leur diffusion sur les plateformes OTT (Youtube, Amazon, Youku, Baidu, etc...)",
+      "bloc1": "En tant que CTO j'ai eu l'opportunité de participer à la conception, l'organisation et au développement de l'ensemble des projets",
       "bloc2": "Gestion d'une équipe de 6 développeurs aux profils multiples.",
       "bloc3": "Mise en oeuvre d'une application de 'pipeline' de tâches codés avec les technologies suivantes",
-      "bloc4": "Rails + API Graphql",
+      "bloc4": "Rails + API GraphQL",
       "bloc5": "React 16.8 (hooks) + Apollo client",
-      "bloc6": "Mise en oeuvre d'une application de distribution de contenu vidéos codé en Ruby on rails",
+      "bloc6": "Mise en oeuvre d'une application de distribution de contenu vidéos codée en Ruby on rails",
       "bloc1-1": "Amélioration et maintenance d'un logiciel interne de gestion de 'pipelines' de tâches codé en Ruby on rails.",
-      "bloc1-2":"Debug",
-      "bloc1-3":"Ajout d'une nouvelles fonctionnalités",
-      "bloc1-4":"Intégration de vues en React",
-      "bloc1-5":"Développement d'une API Graphql pour communiquer des infos avec Shotgun Software",
-      "bloc1-6":"Maintenance d'autres applications parmi lesquels",
-      "bloc1-7":"une application de recrutement interne pour tester des artistes (Rails +ActiveAdmin)",
+      "bloc1-2": "Debug",
+      "bloc1-3": "Ajout d'une nouvelles fonctionnalités",
+      "bloc1-4": "Intégration de vues en React",
+      "bloc1-5": "Développement d'une API Graphql pour communiquer des infos avec Shotgun Software",
+      "bloc1-6": "Maintenance d'autres applications parmi lesquels",
+      "bloc1-7": "une application de recrutement interne pour tester des artistes (Rails + ActiveAdmin)",
       "bloc1-8": "une application de streams sur Youtube"
     },
     "applidget": {
       "company": "EventMaker",
       "location": "Paris",
       "job-title": "Back-end developpeur",
-      "bloc": "Améliorer et maintenir l’application principale Mobichekin:\nune solution pour les organisateurs d’évènements codée en Ruby et ReactJs."
+      "bloc": "Améliorer et maintenir l’application principale Mobichekin:\nune solution pour les organisateurs d’évènements codée en Ruby et ReactJS."
     },
     "masa": {
       "company": "Masa group",
       "location": "Paris",
       "job-title": "Stagiaire Programmeur 3D",
-      "bloc": "Amélioration de la vue 3D codée en C++/OpenGL pour un simulateur militaire.\nLa mission fut de rendre celle ci plus intuitive, tout en ajoutant de nouvelles fonctionnalités."
+      "bloc": "Amélioration de la vue 3D codée en C++/OpenGL pour un simulateur militaire.\nLa mission fut de rendre celle-ci plus intuitive, tout en ajoutant de nouvelles fonctionnalités."
     },
     "multiposting": {
       "company": "Multiposting",
       "location": "Paris",
       "job-title": "Stagiaire Developpeur web",
       "bloc1": "Maintenance de différents programmes conçus en PHP et en Pyhton",
-      "bloc2": "Récupération des offres d’emplois sur les sites clients(crawling) pour les diffuser sur les sites spécialisés"
+      "bloc2": "Récupération des offres d’emplois sur les sites clients (crawling) pour les diffuser sur les sites spécialisés"
     },
     "arles": {
       "company": "Mairie d'Arles",
       "location": "Arles",
       "job-title": "Stagiaire Developpeur web",
       "bloc1": "Création d'un site internet en PHP pour automatiser la création d'arrêtés municipaux.",
-      "bloc2": "Récupération de l'ancienne Base de données et la création d'une nouvelle."
+      "bloc2": "Récupération de l'ancienne base de données et la création d'une nouvelle."
     }
   },
   "education": {
@@ -100,7 +100,7 @@
       "company": "Université de Technologie de Compiègne",
       "location": "Compiègne",
       "job-title": "Diplôme d'ingénieur",
-      "bloc1": "Option Genie Logiciel"
+      "bloc1": "Option Génie Logiciel"
     },
     "i_u_t": {
       "company": "IUT d'Aix Marseille",
@@ -115,7 +115,7 @@
     "theme": {
       "all": "Tout",
       "WTF":"WTF",
-      "creative": "Creation",
+      "creative": "Création",
       "experiment": "Expériences",
       "image-processing": "Traitement image",
       "learning": "Apprentissage",
