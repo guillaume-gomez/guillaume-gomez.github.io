@@ -10,12 +10,13 @@ const data = [
   "rust",
   "C++",
   "C#",
-  "Unity"
+  "Unity",
+  "Elixir"
 ]
 
 function Terminal() {
   return (
-    <div style={{margin: "20px 20px", color: "#1FC110", fontFamily: "Inconsolata"}}>
+    <div style={{margin: "10px 20px", color: "#1FC110", fontFamily: "Inconsolata"}}>
       { data.map((d, index) => (
         <div key={d} >
           <Typewriter

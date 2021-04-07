@@ -1,100 +1,122 @@
 {
   "date-format":"MMM yyyy",
   "header": {
-    "resume": "Resume",
+    "resume": "résumé",
     "contact": "Contact",
     "portfolio": "Portfolio",
     "skills": "Skills",
-    "experience": "Experience"
+    "experience": "Experience",
+    "french": "French",
+    "english": "English"
   },
   "about-me": {
     "about-me": "About me",
-    "content": "I'm <0>Full stack</0>. J'ai écrit mes premières lignes de code en C, pour ensuite découvrir beaucoup d'autres langages que ce soit à travers mon cursus universitaire ou professionnel. Passionné par l'informatique, j'essaye à travers des projets personnels d'entrevoir d'autres technologies allant de petites applications, aux jeux vidéos en passant par d'autres concepts farfelus qui me viennent sur le moment :) . Quand je ne programme pas, je fais du sport. Et il m'arrive très souvent de faire l'une de ses deux activités en musique."
+    "content": "I'm a <0>Full stack</0> developer. I began writing my first lines in C at 15 and have learned a handful of programming languages since - be it in engineering class, for jobs, or just as a hobby. Having a passion for development and computing in general, I try to expand my IT knowledge writing small apps, video games and other oddities listed below. I spend most of my time AFK doing sports and am rarely seen without headphones."
   },
   "welcome-page": {
-    "job-title": "Developpeur Full Stack"
+    "job-title": "Full Stack Developer"
   },
   "hobbies": {
     "hobbies": "Hobbies",
     "music": "Music",
     "sports": "Sports",
     "cinema": "Cinema",
-    "video-games": "Video Games"
+    "video-games": "Video games"
+  },
+  "trello": {
+    "trello-title": "Kanban App",
+    "trello-board": "Personnal Challenges",
+    "todo": "TO DO",
+    "wip": "Work in progress",
+    "done": "Done",
+    "add-card": "Add a card",
+    "release-video-game": "Release a video game on itch.io",
+    "presentation": "Make a presentation in a conference",
+    "article": "Write a blog article",
+    "open-source": "Contribute to open-source",
+    "dev-ops": "Learn more about dev-ops ",
+    "manage": "Improve my scheduling and management skills",
+    "front-end": "Improve in front end",
+    "back-end": "Improve in back-end",
+    "integration": "Keep progress in HTML/CSS",
+    "hackathon": "Attend to a hackathon",
+    "portfolio": "Upgrade my portfolio",
+    "repos": "Reach 100 repositories on github"
   },
   "experience": {
-    "experience": "Experience",
-    "current": "current",
+    "experience": "Work experience",
+    "current": "currently",
     "amuse": {
       "company": "Amuse",
       "location": "Paris",
       "job-title": "Chief Technical Officer",
       "job-title-2": "Back-end developer",
-      "context": "Tout les projets au sein d'Amuse auquel j'ai participé ont eu pour but d'aider à produire le plus efficacement possibles des dessins animées pour la categorie pre-school( 0-3 ans), ainsi que leurs diffusion sur les plateformes OTT (Youtube, Amazon, Youku, Baidu, etc...)",
-      "bloc1": "Pour l'ensemble des projets, j'ai participé à la conception, l'organisation ainsi qu'au développement",
-      "bloc2": "Gestion d'une équipe de 6 développeurs aux profils multiples.",
-      "bloc3": "Mise en oeuvre d'une application de 'pipeline' de tâches codés avec les technologies suivantes",
-      "bloc4": "Rails + API Graphql",
+      "context": "Amuse targets animated shows for pre-school (0-3 years old) children.  Its Paris site handles both production and distribution of such shows on OTT platforms (YouTube, Amazon, Youku, Baidu...). My job in this company focuses on production and distribution pipelines, enabling artists delivering as fast and effective as possible.",
+      "bloc1": "As a Chief Technical Officer I play an active role in every phase for all our projects : product design, team management, day-to-day operations, developement...",
+      "bloc2": "Managing a pluridisciplinary team of six",
+      "bloc3": "Implemented a 'pipeline' creation app with such languages/frameworks as",
+      "bloc4": "Rails + API GraphQL",
       "bloc5": "React 16.8 (hooks) + Apollo client",
-      "bloc6": "Mise en oeuvre d'une application de distribution de contenu vidéos codé en Ruby on rails",
-      "bloc1-1": "Amélioration et maintenance d'un logiciel interne de gestion de 'pipelines' de tâches codé en Ruby on rails.",
-      "bloc1-2":"Debug",
-      "bloc1-3":"Ajout d'une nouvelles fonctionnalités",
-      "bloc1-4":"Intégration de vues en React",
-      "bloc1-5":"Développement d'une API Graphql pour communiquer des infos avec Shotgun Software",
-      "bloc1-6":"Maintenance d'autres applications parmi lesquels",
-      "bloc1-7":"une application de recrutement interne pour tester des artistes (Rails +ActiveAdmin)",
-      "bloc1-8": "une application de streams sur Youtube"
+      "bloc6": "Implemented a Ruby on rails-based video distribution app",
+      "bloc1-1": "Enhanced and maintained the company's tool managing production and distribution pipelines (Ruby on Rails).",
+      "bloc1-2": "Debugging",
+      "bloc1-3": "Implemented new features",
+      "bloc1-4": "Integrated new React views",
+      "bloc1-5": "Developed a GraphQL API exposing our data to Shotgun Software",
+      "bloc1-6": "Helped maintaining internal tools like",
+      "bloc1-7": "an automated job application software for artists (Rails + ActiveAdmin)",
+      "bloc1-8": "a streaming application on YouTube"
     },
     "applidget": {
       "company": "EventMaker",
-      "location": "Paris",
+      "location": "Paris, France",
       "job-title": "Back-end developer",
-      "bloc": "Améliorer et maintenir l’application principale Mobichekin:\nune solution pour les organisateurs d’évènements codée en Ruby et ReactJs."
+      "bloc": "Developed and maintained the company's main project, a guest registration and check-in application for professional event organizers (Ruby/ReactJS)."
     },
     "masa": {
       "company": "Masa group",
-      "location": "Paris",
-      "job-title": "Programmer 3D intern",
-      "bloc": "Amélioration de la vue 3D codée en C++/OpenGL pour un simulateur militaire.\nLa mission fut de rendre celle ci plus intuitive, tout en ajoutant de nouvelles fonctionnalités."
+      "location": "Paris, France",
+      "job-title": "3D Programmer internship",
+      "bloc": "Helped optimizing a 3D military simulation written in C++/OpenGL. Brought new features as well as a more intuitive UX."
     },
     "multiposting": {
       "company": "Multiposting",
-      "location": "Paris",
-      "job-title": "Web developer intern",
-      "bloc1": "Maintenance de différents programmes conçus en PHP et en Pyhton",
-      "bloc2": "Récupération des offres d’emplois sur les sites clients(crawling) pour les diffuser sur les sites spécialisés"
+      "location": "Paris, France",
+      "job-title": "Web development internship",
+      "bloc1": "Maintained various PHP and Python-based tools",
+      "bloc2": "Developed focus crawlers for employment websites"
     },
     "arles": {
-      "company": "Arles Hall town",
-      "location": "Arles",
-      "job-title": "Web developer intern",
-      "bloc1": "Création d'un site internet en PHP pour automatiser la création d'arrêtés municipaux.",
-      "bloc2": "Récupération de l'ancienne Base de données et la création d'une nouvelle."
+      "company": "Mairie d'Arles",
+      "location": "Arles, France",
+      "job-title": "Web development internship",
+      "bloc1": "Helped the mayor's office issuing their official statements with a PHP website.",
+      "bloc2": "Groomed and upgraded the local administration's database."
     }
   },
   "education": {
     "education": "Education",
     "u_t_c": {
       "company": "Université de Technologie de Compiègne",
-      "location": "Compiègne",
-      "job-title": "Diplôme d'ingénieur",
-      "bloc1": "Option Genie Logiciel"
+      "location": "Compiègne, France",
+      "job-title": "Degree in engineering",
+      "bloc1": "Software engineering"
     },
     "i_u_t": {
       "company": "IUT d'Aix Marseille",
-      "location": "Arles",
-      "job-title": "DUT Informatique",
-      "bloc1" : "Conception et synthèse d'image 2D-3D"
+      "location": "Arles, France",
+      "job-title": "Undergraduate university degree in IT",
+      "bloc1" : "2D/3D image design and rendering"
     }
   },
   "projects": {
     "projects": "Projects",
     "no-filter": "No filter",
     "theme": {
-      "all": "all",
+      "all": "All",
       "WTF":"WTF",
       "creative": "Creative",
-      "experiment": "Experiment",
+      "experiment": "Experiences",
       "image-processing": "Image processing",
       "learning": "Learning",
       "mooc": "MOOC",
@@ -103,9 +125,10 @@
       "video-games": "Video games"
     }
   },
+
   "skills": {
     "skills": "Skills",
-    "legend": "Click on the doughnut for more information"
+    "legend": "Click on doughnut chart for more information"
   },
   "footer": {
     "design-by":"Designed by "

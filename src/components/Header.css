@@ -9,6 +9,17 @@
   z-index: 1;
 }
 
+.header-separator {
+  border: 1px solid white;
+  height: 32px;
+  margin: 0 8px;
+}
+
+.header-links > select {
+  height: 32px;
+  width: 100px;
+}
+
 .header-name {
   //border: 5px solid green;
 }
@@ -20,6 +31,8 @@
 
 .header-links {
   //border: 5px solid blue;
+  display: flex;
+  align-items: center;
 }
 
 .header-links > a {

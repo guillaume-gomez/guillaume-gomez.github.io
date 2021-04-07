@@ -29,7 +29,7 @@ function Projects() {
   const tags = useMemo(
       () => uniq(projectsData
         .reduce<string[]>((acc, curValue) => [...acc, ...curValue.tags], []))
-  , [projectsData]);
+  , []);
 
   const themes = useMemo(() => uniq(projectsData.map(data => data.theme)),[]);
 
