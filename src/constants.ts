@@ -170,7 +170,7 @@ export const projectsData = [
     githubPage: "https://github.com/guillaume-gomez/LD44",
     demo: "https://guillaume-gomez.github.io/LD44/Build/postMortemLudumDare/",
     preview: "LD44.png",
-    tags: ["Unity", "LD"],
+    tags: ["unity", "LD"],
     theme: "video-games",
     year: 2019,
     relevance: 3
@@ -180,7 +180,7 @@ export const projectsData = [
     githubPage: "https://github.com/guillaume-gomez/LD42",
     demo: "https://guillaume-gomez.github.io/LD42/PostMortemBuild/",
     preview: "defrag.png",
-    tags: ["Unity", "LD"],
+    tags: ["unity", "LD"],
     theme: "video-games",
     year: 2018,
     relevance: 5
@@ -485,7 +485,7 @@ export const projectsData = [
     year: 2017,
     relevance: 3
   },
-    {
+  {
     name: "P5 Sandbox",
     githubPage: "https://github.com/guillaume-gomez/p5-sandbox",
     demo: null,
@@ -493,6 +493,16 @@ export const projectsData = [
     tags: ["javascript", "processing"],
     theme: "creative",
     year: 2017,
+    relevance: 2
+  },
+  {
+    name: "boostrap-treeview",
+    githubPage: "https://github.com/guillaume-gomez/boostrap-treeview",
+    demo: "https://guillaume-gomez.github.io/boostrap-treeview/",
+    preview: "preview-boostrap-treeview.png",
+    tags: ["typescript", "boostrap"],
+    theme: "tool",
+    year: 2021,
     relevance: 2
   }
 ];
