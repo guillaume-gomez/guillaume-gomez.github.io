@@ -13,6 +13,7 @@ import './App.css';
 function App() {
   const toProject = useRef<HTMLSpanElement>(null);
   const toHomepage = useRef<HTMLSpanElement>(null);
+  const toAboutMe = useRef<HTMLSpanElement>(null);
   return (
     <div className="App">
       <Header/>
@@ -22,9 +23,11 @@ function App() {
        </span>
        <div className="container">
         <span ref={toProject} style={{width: "100%"}} >
-         <Projects />
+         <Projects refTarget={toAboutMe} />
         </span>
-         <AboutMe />
+        <span ref={toAboutMe} style={{display: "flex", justifyContent: "center"}}>
+          <AboutMe />
+        </span>
          <Hobbies />
          <Experience />
          <Skills />
