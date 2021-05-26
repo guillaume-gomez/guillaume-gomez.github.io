@@ -103,7 +103,7 @@ export const projectsData = [
     tags: ["rust"],
     theme: "image-processing",
     year: 2017,
-    relevance: 5
+    relevance: 4.75
   },
   {
     name: "Youtube Channels Shortcuts",
@@ -113,7 +113,7 @@ export const projectsData = [
     tags: ["extension", "javascript", "youtube"],
     theme: "tool",
     year: 2017,
-    relevance: 5
+    relevance: 4
   },
   {
     name: "Phaser Es6 Sandbox",
@@ -133,7 +133,7 @@ export const projectsData = [
     tags: ["elixir"],
     theme: "learning",
     year: 2020,
-    relevance: 5
+    relevance: 4
   },
   {
     name: "Math Game",
@@ -153,7 +153,7 @@ export const projectsData = [
     tags: ["typescript", "react"],
     theme: "image-processing",
     year: 2021,
-    relevance: 5
+    relevance: 4.75
   },
   {
     name: "Aniki 90's",
@@ -203,7 +203,7 @@ export const projectsData = [
     tags: ["slack", "ruby"],
     theme: "slack",
     year: 2018,
-    relevance: 5
+    relevance: 4
   },
   {
     name: "Roguelike Rust",
@@ -223,7 +223,7 @@ export const projectsData = [
     tags: ["javascript"],
     theme: "creative",
     year: 2018,
-    relevance: 5
+    relevance: 4.5
   },
       {
     name: "Roboto",
@@ -253,7 +253,7 @@ export const projectsData = [
     tags: ["javascript", "phaser"],
     theme: "video-games",
     year: 2018,
-    relevance: 5
+    relevance: 4.5
   },
      {
     name: "Animate Name",
@@ -496,7 +496,7 @@ export const projectsData = [
     relevance: 2
   },
   {
-    name: "boostrap-treeview",
+    name: "Boostrap-treeview",
     githubPage: "https://github.com/guillaume-gomez/boostrap-treeview",
     demo: "https://guillaume-gomez.github.io/boostrap-treeview/",
     preview: "preview-boostrap-treeview.png",
@@ -504,5 +504,15 @@ export const projectsData = [
     theme: "tool",
     year: 2021,
     relevance: 2
+  },
+  {
+    name: "Tech' Watch",
+    githubPage: "https://github.com/guillaume-gomez/technology-watch",
+    demo: "https://technology-watch.herokuapp.com/",
+    preview: "tech-watch-preview.png",
+    tags: ["typescript", "rails", "ruby", "graphql"],
+    theme: "tool",
+    year: 2021,
+    relevance: 5
   }
 ];
