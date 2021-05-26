@@ -16,7 +16,7 @@ function App() {
   const toAboutMe = useRef<HTMLSpanElement>(null);
   return (
     <div className="App">
-      <Header/>
+      <Header refTarget={toAboutMe}/>
       <div className="App-container">
        <span ref={toHomepage} style={{width: "100%"}}>
          <WelcomePage refTarget={toProject}/>

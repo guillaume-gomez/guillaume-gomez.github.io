@@ -9,7 +9,12 @@ import { LINKEDIN, GITHUB } from "../constants";
 
 import "./Header.css";
 
-function Header() {
+interface HeaderInterface {
+  refTarget: React.RefObject<HTMLSpanElement>
+}
+
+
+function Header({refTarget} : HeaderInterface) {
    const { t } = useTranslation();
   function onChangeLanguage(e: any) {
     i18n.changeLanguage(e.target.value)
@@ -20,6 +25,7 @@ function Header() {
         <p>Guillaume Gomez</p>
       </div>
       <div className="header-links">
+      <a onClick={() => refTarget!.current!.scrollIntoView({behavior: "smooth"})}>{t("header.about-me")}</a>
       <select onChange={onChangeLanguage}>
         <option value="fr">{t("header.french")}</option>
         <option value="en">{t("header.english")}</option>
