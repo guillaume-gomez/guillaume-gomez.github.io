@@ -46,6 +46,8 @@ function Projects({refTarget} : ProjectInterface) {
     setFilter("")
   }
 
+  console.log(orderBy(themes).sort())
+
   return (
     <section className="projects-content" id="project">
       <h2>{t("projects.projects")}</h2>

@@ -114,7 +114,7 @@
     "no-filter": "Aucun filtre",
     "theme": {
       "all": "Tout",
-      "WTF":"WTF",
+      "wtf":"WTF",
       "creative": "Création",
       "experiment": "Expériences",
       "image-processing": "Traitement image",

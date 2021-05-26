@@ -161,7 +161,7 @@ export const projectsData = [
     demo: null,
     preview: null,
     tags: ["HTML", "CSS"],
-    theme: "WTF",
+    theme: "wtf",
     year: 2020,
     relevance: 1
   },
