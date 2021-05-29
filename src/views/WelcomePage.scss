@@ -1,7 +1,7 @@
 .welcome-page-content {
   //border: 5px solid green;
   position: relative;
-  height: 100vh;
+  height: 300vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -21,96 +21,24 @@
 }
 
 
-.welcome-page-top {
-  //border: 5px solid orange;
-  width: inherit;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+
+
+//
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 2.5fr 1fr 1fr;
+  gap: 200px 0px;
+  grid-template-areas:
+    "Title Title Title Title Title Title Title Title Title Title Title Title"
+    "TextFullStack TextFullStack TextFullStack TextFullStack TextFullStack TextFullStack terminal terminal terminal terminal terminal terminal"
+    "trello trello trello trello trello trello textCTO textCTO textCTO textCTO textCTO textCTO";
 }
-
-.welcome-page-windows {
-  display: flex;
-  width: inherit;
-  justify-content: space-between;
-  //border: 5px solid pink;
-}
-
-.welcome-page-bottom {
-  //border: 5px solid blue;
-  position: absolute;
-  bottom: 25px;
-}
-
-.welcome-page-terminal {
-  //border: 5px solid purple;
-  display: flex;
-  padding-left: 16px;
-  align-items: center;
-}
-
-.welcome-page-trello {
-  //border: 5px solid red;
-  padding-right: 24px;
-  min-height: 450px;
-}
-
-
-
-@media (max-width: 1300px) {
-  .welcome-page-content {
-    height: auto;
-  }
-  .welcome-page-windows {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .welcome-page-trello {
-    margin-bottom: 1rem;
-    position: relative;
-    top:0;
-    padding-left: 0;
-
-  }
-  .welcome-page-terminal {
-    margin-bottom: 1rem;
-    position: relative;
-    top: 0;
-    padding-right: 0;
-  }
-  .welcome-page-top {
-    padding: 1rem 0;
-    text-align: center;
-  }
-  .welcome-page-bottom {
-    display: none;
-  }
-}
-
-@media (max-width: 1024px) {
-  .welcome-page-trello {
-    display: none;
-  }
-}
-
-@media(max-width: 768px) {
-  .welcome-page-terminal {
-    display: none;
-  }
-  .welcome-page-content {
-    height: 100vh;
-  }
-
-}
-
-@media(max-width: 375px) {
-.welcome-page-top {
-    padding: 4rem 0;
-  }
-}
+.Title { grid-area: Title; }
+.TextFullStack { grid-area: TextFullStack; }
+.terminal { grid-area: terminal; }
+.trello { grid-area: trello; }
+.textCTO { grid-area: textCTO; }
 
 
 

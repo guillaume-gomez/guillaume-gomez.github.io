@@ -15,7 +15,8 @@
     "content": "I'm a <0>Full stack</0> developer. I began writing my first lines in C at 15 and have learned a handful of programming languages since - be it in engineering class, for jobs, or just as a hobby. Having a passion for development and computing in general, I try to expand my IT knowledge writing small apps, video games and other oddities listed below. I spend most of my time AFK doing sports and am rarely seen without headphones."
   },
   "welcome-page": {
-    "job-title": "Full Stack Developer"
+    "job-title": "Full Stack Developer",
+    "i-am": "I'm"
   },
   "hobbies": {
     "hobbies": "Hobbies",
@@ -30,7 +31,7 @@
     "todo": "TO DO",
     "wip": "Work in progress",
     "done": "Done",
-    "add-card": "Add a card",
+    "add-card": "Next objective",
     "release-video-game": "Release a video game on itch.io",
     "presentation": "Make a presentation in a conference",
     "article": "Write a blog article",
