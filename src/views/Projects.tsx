@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { uniq, orderBy } from "lodash";
 import { useTranslation } from 'react-i18next';
 import { motion } from "framer-motion";
@@ -12,10 +12,12 @@ interface ProjectInterface {
   refTarget: React.RefObject<HTMLSpanElement>
 }
 
+const stepProjects = 10;
+
 function Projects({refTarget} : ProjectInterface) {
   const { t } = useTranslation();
   const [filter, setFilter] = useState<string>("");
-  const [itemsLoaded, setItemLoaded] = useState<number>(10);
+  const [itemsLoaded, setItemLoaded] = useState<number>(stepProjects);
   const [theme, setTheme] = useState<string>("");
 
   const projectsDataFiltered = useMemo(() => {
@@ -42,8 +44,13 @@ function Projects({refTarget} : ProjectInterface) {
 
   const themes = useMemo(() => uniq(projectsData.map(data => data.theme)),[]);
 
+  useEffect(() => {
+    const itemsLoaded = Math.min(projectsDataFiltered.length, stepProjects);
+    setItemLoaded(itemsLoaded);
+  }, [projectsDataFiltered]);
+
   function loadMore() {
-    const itemsToAdd = Math.min(projectsData.length - itemsLoaded, 10);
+    const itemsToAdd = Math.min(projectsData.length - itemsLoaded, stepProjects);
     setItemLoaded(itemsLoaded + itemsToAdd);
   }
 
@@ -84,7 +91,7 @@ function Projects({refTarget} : ProjectInterface) {
           </div>
           <ProjectsGrid projectsData={projectsDataFiltered.slice(0, itemsLoaded)} />
           {
-            itemsLoaded < projectsData.length ?
+            itemsLoaded < projectsDataFiltered.length ?
             <div className="projects-load-more">
               <a className="load-more-button" onClick={loadMore}>{t("projects.load-more")}</a>
             </div> :

@@ -105,13 +105,13 @@
   box-sizing: border-box;
   width: 100%;
   height: 100%;
+  gap: 16px 0px;
   grid-template-rows: auto auto auto;
 }
 
 .projects-load-more {
   //border: 2px solid darkcyan;
   display: flex;
-  padding: 0.5rem;
   justify-content: center;
 }
 
