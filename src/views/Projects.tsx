@@ -15,17 +15,19 @@ interface ProjectInterface {
 function Projects({refTarget} : ProjectInterface) {
   const { t } = useTranslation();
   const [filter, setFilter] = useState<string>("");
+  const [itemsLoaded, setItemLoaded] = useState<number>(10);
   const [theme, setTheme] = useState<string>("");
 
   const projectsDataFiltered = useMemo(() => {
+    const projectDataByRelevance = orderBy(projectsData, ["relevance"], ['desc']);
     if(theme === "" && filter === "") {
-      return projectsData;
+      return projectDataByRelevance;
     }
     if(theme === "" && filter !== "") {
-      return projectsData.filter(data => data.tags.includes(filter));
+      return projectDataByRelevance.filter(data => data.tags.includes(filter));
     }
    
-    const dataByTheme = projectsData.filter(data => data.theme === theme);
+    const dataByTheme = projectDataByRelevance.filter(data => data.theme === theme);
     if(theme !== "" && filter === "") {
       return dataByTheme;
     }
@@ -39,6 +41,11 @@ function Projects({refTarget} : ProjectInterface) {
   , []);
 
   const themes = useMemo(() => uniq(projectsData.map(data => data.theme)),[]);
+
+  function loadMore() {
+    const itemsToAdd = Math.min(projectsData.length - itemsLoaded, 10);
+    setItemLoaded(itemsLoaded + itemsToAdd);
+  }
 
   function onChangeTheme(theme: string) {
     setTheme(theme);
@@ -66,7 +73,7 @@ function Projects({refTarget} : ProjectInterface) {
                 </select>
               </div>
               <div className="projects-stat">
-                <strong>{projectsDataFiltered.length}</strong> {t("projects.projects")}
+                <strong>{` ${itemsLoaded} / ${projectsDataFiltered.length}`}</strong> {t("projects.projects")}
               </div>
              </div>
             <motion.div
@@ -75,7 +82,14 @@ function Projects({refTarget} : ProjectInterface) {
               <FontAwesomeIcon icon={faChevronDown} />
             </motion.div>
           </div>
-          <ProjectsGrid projectsData={projectsDataFiltered} />
+          <ProjectsGrid projectsData={projectsDataFiltered.slice(0, itemsLoaded)} />
+          {
+            itemsLoaded < projectsData.length ?
+            <div className="projects-load-more">
+              <a className="load-more-button" onClick={loadMore}>{t("projects.load-more")}</a>
+            </div> :
+            null
+          }
         </div>
     </section>
     

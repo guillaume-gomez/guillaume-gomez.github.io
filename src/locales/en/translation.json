@@ -124,7 +124,8 @@
       "slack": "Slack",
       "tool": "Tools",
       "video-games": "Video games"
-    }
+    },
+    "load-more": "Load more projects"
   },
 
   "skills": {
