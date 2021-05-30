@@ -46,8 +46,6 @@ function Projects({refTarget} : ProjectInterface) {
     setFilter("")
   }
 
-  console.log(orderBy(themes).sort())
-
   return (
     <section className="projects-content" id="project">
       <h2>{t("projects.projects")}</h2>
@@ -58,7 +56,7 @@ function Projects({refTarget} : ProjectInterface) {
           }
         </ul>
         <div className="projects-grid">
-          <div style={{display: "flex", justifyContent: "space-between"}}>
+          <div className="projects-grid-header">
             <div className="projects-header-filter-and-stats">
               <div className="project-filter">
                 <span>Tags</span>
