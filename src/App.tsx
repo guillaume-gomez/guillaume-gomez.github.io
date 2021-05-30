@@ -19,12 +19,12 @@ function App() {
       <Header refTarget={toAboutMe}/>
       <div className="App-container">
        <span ref={toHomepage} style={{width: "100%"}}>
-         <WelcomePage refTarget={toProject}/>
+         <WelcomePage/>
        </span>
-       <div className="container">
-        <span ref={toProject} style={{width: "100%"}} >
+      <div className="container">
+        {/*<span ref={toProject} style={{width: "100%"}} >
          <Projects refTarget={toAboutMe} />
-        </span>
+        </span>*/}
         <span ref={toAboutMe} style={{display: "flex", justifyContent: "center"}}>
           <AboutMe />
         </span>
