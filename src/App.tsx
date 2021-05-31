@@ -25,15 +25,15 @@ function App() {
         {/*<span ref={toProject} style={{width: "100%"}} >
          <Projects refTarget={toAboutMe} />
         </span>*/}
-        <span ref={toAboutMe} style={{display: "flex", justifyContent: "center"}}>
+{/*        <span ref={toAboutMe} style={{display: "flex", justifyContent: "center"}}>
           <AboutMe />
         </span>
          <Hobbies />
          <Experience />
-         <Skills />
+         <Skills />*/}
         </div>
       </div>
-      <Footer refTarget={toHomepage}/>
+      {/*<Footer refTarget={toHomepage}/> */}
     </div>
   );
 }
