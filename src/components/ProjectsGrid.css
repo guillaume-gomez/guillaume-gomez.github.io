@@ -1,4 +1,4 @@
-.grid-container {
+.project-grid-grid-container {
   //border:  2px solid blue;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
