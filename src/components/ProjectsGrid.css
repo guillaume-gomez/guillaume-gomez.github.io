@@ -1,5 +1,5 @@
-.grid-container {
-  //border:  2px solid blue;
+.projects-grid-container {
+  border:  2px solid blue;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 24px 24px;

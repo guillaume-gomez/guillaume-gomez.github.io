@@ -30,7 +30,7 @@ function ProjectsGrid({projectsData} : ProjectGridInterface) {
 }, [projectsData, controls])
 
   return (
-    <div className="grid-container">
+    <div className="projects-grid-container">
     {generatedProjectCells}
   </div>
 

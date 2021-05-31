@@ -78,11 +78,11 @@
 }
 
 .container {
+  //border: 5px solid teal;
   display: flex;
   flex-direction: column;
   justify-content: center; 
   align-items: center;
-  border: 5px solid teal;
   width: 90%;
   height: 100%;
 }
