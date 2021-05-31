@@ -1,6 +1,5 @@
 .welcome-page-content {
   //border: 5px solid green;
-  position: relative;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -15,99 +14,13 @@
   background: linear-gradient(356deg, rgba(4,23,70,1) 67%, rgba(48,33,93,1) 79%, rgba(122,33,97,1) 97%);
 }
 
-
-
-//
-.grid-container {
-  padding: 0 12px;
-  border: 2px solid orange;
-  max-width: 1500px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 2.5fr 1fr 1fr;
-  gap: 200px 0px;
-  grid-template-areas:
-    "Title Title Title Title Title Title Title Title Title Title Title Title"
-    "TextFullStack TextFullStack TextFullStack TextFullStack TextFullStack TextFullStack terminal terminal terminal terminal terminal terminal"
-    "trello trello trello trello trello trello textCTO textCTO textCTO textCTO textCTO textCTO";
-}
-.title {
-  grid-area: Title;
-  border: 2px solid blue;
-  display: flex;
-  justify-content: center;
-  max-width: 1500px;
-}
-
-.textFullStack {
-  grid-area: TextFullStack;
-  border: 2px solid green;
-  grid-column-start: 1;
-  grid-column-end: 7;
+.welcome-page-text {
+  //border: 5px solid purple;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
-
-.terminal {
-  grid-area: terminal;
-  border: 2px solid red;
-  grid-column-start: 8;
-  grid-column-end: 13;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.trello {
-  grid-area: trello;
-  grid-column-start: 1;
-  grid-column-end: 7;
-  border: 2px solid purple;
-}
-
-.textCTO {
-  grid-area: textCTO;
-  border: 2px solid pink;
-  grid-column-start: 8;
-  grid-column-end: 13;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-
-@media(max-width: 650px) {
-  .grid-container {
-    grid-template-rows: 2.5fr 1fr 1fr 1fr 1fr;
-  }
-  .textFullStack {
-    grid-column-start: 2;
-    grid-column-end: 12;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-  .terminal {
-    grid-column-start: 2;
-    grid-column-end: 12;
-        grid-row-start: 3;
-    grid-row-end: 4;
-  }
-  .trello {
-    grid-column-start: 2;
-    grid-column-end: 12;
-        grid-row-start: 4;
-    grid-row-end: 5;
-    
-  }
-  .textCTO {
-    grid-column-start: 2;
-    grid-column-end: 12;
-        grid-row-start: 5;
-    grid-row-end: 6;
-  }
-}
-
 
 
 
