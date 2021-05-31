@@ -14,7 +14,7 @@ function App() {
   const toProject = useRef<HTMLSpanElement>(null);
   const toHomepage = useRef<HTMLSpanElement>(null);
   const toAboutMe = useRef<HTMLSpanElement>(null);
-  const toTexts = useRef<HTMLDivElement>(null);
+  const toTexts = useRef<HTMLSpanElement>(null);
   return (
     <div className="App">
       <div className="App-container">
@@ -22,7 +22,9 @@ function App() {
          <WelcomePage toAboutMe={toAboutMe} toTexts={toTexts}/>
        </span>
       <div className="container">
-        <WelcomePageInfos/>
+        <span ref={toTexts} style={{width: "100%"}}>
+          <WelcomePageInfos/>
+        </span>
         <span ref={toProject} style={{width: "100%"}} >
          <Projects refTarget={toAboutMe} />
         </span>

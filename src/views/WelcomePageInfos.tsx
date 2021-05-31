@@ -24,7 +24,7 @@ function WelcomePageInfos() {
 
   return (
     <section className="welcome-page-content">
-      <div className="grid-container">
+      <div className="welcome-page-infos-grid-container">
         <div ref={toTexts} className="textFullStack">
           <h3>Full stack developper</h3>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>

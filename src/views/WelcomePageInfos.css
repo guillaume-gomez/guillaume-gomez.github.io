@@ -1,4 +1,4 @@
-.grid-container {
+.welcome-page-infos-grid-container {
   width: 100%;
   height: 100%;
   //border: 2px solid orange;
@@ -42,10 +42,10 @@
 }
 
 
-@media(max-width: 1201px) {
-  .grid-container {
+@media(max-width: 1151px) {
+  .welcome-page-infos-grid-container {
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 0 0;
+    gap: 0 12px;
   }
   .textFullStack {
     grid-column-start: 1;
@@ -62,7 +62,7 @@
   .trello {
     grid-column-start: 1;
     grid-column-end: 13;
-        grid-row-start: 4;
+    grid-row-start: 4;
     grid-row-end: 5;
     
   }

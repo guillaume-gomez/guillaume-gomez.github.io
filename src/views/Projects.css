@@ -1,5 +1,5 @@
 .projects-content {
-  border:  2px solid green;
+  //border:  2px solid green;
   display: grid;
   box-sizing: border-box;
   width: 100%;
@@ -100,7 +100,7 @@
 }
 
 .projects-grid {
-  border: 2px solid brown;
+  //border: 2px solid brown;
   display: grid;
   box-sizing: border-box;
   width: 100%;

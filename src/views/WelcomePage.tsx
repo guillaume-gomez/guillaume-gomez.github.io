@@ -12,7 +12,7 @@ import Header from "../components/Header";
 
 interface WelcomePageInterface {
   toAboutMe: React.RefObject<HTMLSpanElement>
-  toTexts: React.RefObject<HTMLDivElement>
+  toTexts: React.RefObject<HTMLSpanElement>
 }
 
 function WelcomePage({ toAboutMe, toTexts } : WelcomePageInterface) {
