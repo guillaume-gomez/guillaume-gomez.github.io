@@ -11,7 +11,7 @@ import { GITHUB, LINKEDIN, MAIL } from '../constants';
 function AboutMe() {
   const { t } = useTranslation();
   return (
-    <section className="about-me-content content">
+    <section className="about-me-content">
       <h2>{t("about-me.about-me")}</h2>
       <div className="about-me-infos">
         <div className="about-me-avatar">
