@@ -82,8 +82,9 @@
   flex-direction: column;
   justify-content: center; 
   align-items: center;
-  //border: 5px solid green;
+  border: 5px solid teal;
   width: 90%;
+  height: 100%;
 }
 
 @media(max-width: 1680px) {
@@ -97,7 +98,8 @@
 @media(max-width: 1500px) {
   .container {
     //border: 5px solid orange;
-    width: 85%;
+    width: 90%;
+
   }
 }
 

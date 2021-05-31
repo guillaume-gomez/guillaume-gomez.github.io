@@ -12,11 +12,11 @@ import Header from "../components/Header";
 
 interface WelcomePageInterface {
   toAboutMe: React.RefObject<HTMLSpanElement>
+  toTexts: React.RefObject<HTMLDivElement>
 }
 
-function WelcomePage({toAboutMe} : WelcomePageInterface) {
+function WelcomePage({ toAboutMe, toTexts } : WelcomePageInterface) {
   const { t } = useTranslation();
-  const toTexts = useRef<HTMLDivElement>(null);
   const [displayTerminal, setDisplayTerminal] = useState<boolean>(false);
   const [displayTrello, setDisplayTrello] = useState<boolean>(false);
   
