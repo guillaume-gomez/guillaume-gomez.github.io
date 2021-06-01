@@ -45,6 +45,7 @@
 @media(max-width: 1151px) {
   .welcome-page-infos-grid-container {
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 0 12px;
   }
   .textFullStack {
