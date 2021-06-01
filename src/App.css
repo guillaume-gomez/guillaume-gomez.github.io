@@ -83,6 +83,7 @@
   flex-direction: column;
   justify-content: center; 
   align-items: center;
+  gap: 50px;
   width: 90%;
   height: 100%;
 }
