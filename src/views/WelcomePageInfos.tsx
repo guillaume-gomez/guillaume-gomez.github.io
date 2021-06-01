@@ -81,7 +81,7 @@ function FadeInWhenVisibleAndMove({ children, direction } : FadeInWhenVisibleAnd
       ref={ref}
       animate={controls}
       initial="hidden"
-      transition={{ duration: 1.0 }}
+      transition={{ duration: 2.0, type: "spring", bounce: 0.20  }}
       variants={{
         visible: { opacity: 1, scale: 1 },
         hidden: { opacity: 0, scale: 0, x: direction === "left" ?  "-25vw" : "25vw" },
