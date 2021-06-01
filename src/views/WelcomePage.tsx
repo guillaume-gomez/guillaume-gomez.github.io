@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 import { ReactComponent as MacMouse } from "../macintosh-mouse.svg";
 
 
@@ -27,10 +29,12 @@ function WelcomePage({refTarget} : WelcomePageInterface) {
 
   return (
     <section className="welcome-page-content first-gradient">
-      <div className="welcome-page-top">
-        <h1 className="title-relative"> <span className="about-me-wave-hand">👋</span><strong className="text-primary">Guillaume Gomez</strong></h1>
-        <h2 className="title-relative"> <span className="background--magical">{t("welcome-page.job-title")}</span> </h2>
-      </div>
+      <FromUpToDown>
+        <div className="welcome-page-top">
+          <h1 className="title-relative"> <span className="about-me-wave-hand">👋</span><strong className="text-primary">Guillaume Gomez</strong></h1>
+          <h2 className="title-relative"> <span className="background--magical">{t("welcome-page.job-title")}</span> </h2>
+        </div>
+      </FromUpToDown>
       <div className="welcome-page-windows">
         <div className="welcome-page-terminal">
           {
@@ -59,3 +63,36 @@ function WelcomePage({refTarget} : WelcomePageInterface) {
 }
 
 export default WelcomePage;
+
+
+interface FromUpToDownInterface {
+  children: React.ReactNode;
+}
+
+
+function FromUpToDown({ children } : FromUpToDownInterface) {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+      controls.start("move");
+    }
+  }, [controls, inView]);
+
+  return (
+    <motion.div
+      ref={ref}
+      animate={controls}
+      initial="visible"
+      transition={{ duration: 1.0, type: "spring", bounce: 0.25 }}
+      variants={{
+        visible: { y: -100, scale: 1.5 },
+        move: {y: 100, scale: 1.0 }
+      }}
+    >
+      {children}
+    </motion.div>
+  );
+}
