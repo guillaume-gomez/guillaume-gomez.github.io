@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef} from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -6,9 +6,6 @@ import { ReactComponent as MacMouse } from "../macintosh-mouse.svg";
 
 import "./WelcomePage.scss";
 
-import Terminal from "../components/Terminal";
-import Window from "../components/Window";
-import Trello from "../components/Trello";
 import Header from "../components/Header";
 
 interface WelcomePageInterface {
@@ -18,14 +15,6 @@ interface WelcomePageInterface {
 
 function WelcomePage({ toAboutMe, toTexts } : WelcomePageInterface) {
   const { t } = useTranslation();
-  const [displayTerminal, setDisplayTerminal] = useState<boolean>(false);
-  const [displayTrello, setDisplayTrello] = useState<boolean>(false);
-  
-  useEffect(() => {
-    setTimeout(() => setDisplayTerminal(true) , 2000);
-    setTimeout(() => setDisplayTrello(true) , 6000);
-  }, []);
-
   return (
     <section className="welcome-page-content first-gradient">
       <Header refTarget={toAboutMe}/>

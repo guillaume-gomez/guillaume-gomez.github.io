@@ -18,6 +18,12 @@
     "job-title": "Développeur Full Stack",
     "i-am": "Je suis"
   },
+  "welcome-page-infos": {
+    "full-stack": "Je suis développeur Full Stack",
+    "full-statck-text": "Je programme la plupart du temps en Ruby on rails, en Typescript, du React, et parfois du Javascript vanilla.",
+    "cto": "Mais je suis aussi CTO",
+    "cto-text": "Je manage une équipe de 6 personnes pour améliorer la distribution de contenu à Amuse."
+  },
   "hobbies": {
     "hobbies": "Centre d'intérêts",
     "music": "Musique",
