@@ -1,11 +1,12 @@
 .skills-content {
-  //border: 2px solid #5726FF;
+  border: 2px solid #5726FF;
   width: 100%;
   padding-bottom: 32px;
 }
 
 .skills-title {
   text-align: center;
+  padding-bottom: 32px;
 }
 
 .skills-stats {

@@ -1,14 +1,15 @@
 .projects-content {
-  border:  2px solid green;
+  //border:  2px solid green;
   display: grid;
   box-sizing: border-box;
   width: 100%;
   height: 100%;
+  gap:  32px 0px;
   grid-template-rows: auto auto;
 }
 
 .projects-header {
-  border:  2px solid red;
+  //border:  2px solid red;
   display: flex;
   align-content: center;
   padding-left: 0;
