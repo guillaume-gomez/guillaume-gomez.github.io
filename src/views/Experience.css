@@ -2,7 +2,7 @@
   //border: 2px solid purple;
   display: flex;
   flex-direction: column;
-  gap:  32px 0px;
+  gap:  16px 0px;
 }
 
 .experience-jobs {
