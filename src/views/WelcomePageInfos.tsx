@@ -17,24 +17,30 @@ function WelcomePageInfos() {
     <section className="welcome-page-infos-content">
       <div className="welcome-page-infos-grid-container">
         <div ref={toTexts} className="textFullStack">
-            <h3>{t("welcome-page-infos.full-stack")}</h3>
-            <p>{t("welcome-page-infos.full-statck-text")}</p>
+            <FadeInWhenVisibleAndMove direction="left">
+              <h3>{t("welcome-page-infos.full-stack")}</h3>
+              <p>{t("welcome-page-infos.full-statck-text")}</p>
+            </FadeInWhenVisibleAndMove>
         </div>
         <div className="terminal">
+          <FadeInWhenVisibleAndMove direction="right">
             <Window backgroundColor="black" minHeight={325}>
               <Terminal />
             </Window>
+           </FadeInWhenVisibleAndMove>
         </div>
         <div className="trello">
+          <FadeInWhenVisibleAndMove direction="left">
             <Window backgroundColor="none">
               <Trello />
             </Window>
-          
+          </FadeInWhenVisibleAndMove>
         </div>
         <div className="textCTO">
+          <FadeInWhenVisibleAndMove direction="right">
             <h3>{t("welcome-page-infos.cto")}</h3>
             <p>{t("welcome-page-infos.cto-text")}</p>
-          
+          </FadeInWhenVisibleAndMove>
         </div>
       </div>
     </section>

@@ -12,7 +12,7 @@
   },
   "about-me": {
     "about-me": "A Propos",
-    "content": "Je suis développeur <0>Full stack</0>. J'ai écrit mes premières lignes de C à 15 ans, pour ensuite découvrir beaucoup d'autres langages que ce soit à travers mon cursus universitaire ou professionnel. Passionné par l'informatique, j'essaye à travers des projets personnels d'entrevoir d'autres technologies allant de petites applications aux jeux vidéos, en passant par d'autres concepts farfelus qui me viennent sur le moment :). Quand je ne programme pas, je fais du sport. D'ailleurs il m'arrive très souvent de faire l'une de ses deux activités en musique."
+    "content": "J'ai écrit mes premières lignes de C à 15 ans, pour ensuite découvrir beaucoup d'autres langages que ce soit à travers mon cursus universitaire ou professionnel. Passionné par l'informatique, j'essaye à travers des projets personnels d'entrevoir d'autres technologies allant de petites applications aux jeux vidéos, en passant par d'autres concepts farfelus qui me viennent sur le moment :). Quand je ne programme pas, je fais du sport. D'ailleurs il m'arrive très souvent de faire l'une de ses deux activités en musique."
   },
   "welcome-page": {
     "job-title": "Développeur Full Stack",
@@ -20,7 +20,7 @@
   },
   "welcome-page-infos": {
     "full-stack": "Je suis développeur Full Stack",
-    "full-statck-text": "Je programme la plupart du temps en Ruby on rails, en Typescript, du React, et parfois du Javascript vanilla.",
+    "full-statck-text": "Je programme la plupart du temps en Ruby on rails, en Typescript, du React, et parfois du Javascript vanilla. Sur mon temps libre, je m'interesse à la programmtion de jeux video",
     "cto": "Mais je suis aussi CTO",
     "cto-text": "Je manage une équipe de 6 personnes pour améliorer la distribution de contenu à Amuse."
   },
