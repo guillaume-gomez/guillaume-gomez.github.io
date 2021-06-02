@@ -23,33 +23,28 @@ function WelcomePageInfos() {
   }, []);
 
   return (
-    <section className="welcome-page-content">
+    <section className="welcome-page-infos-content">
       <div className="welcome-page-infos-grid-container">
         <div ref={toTexts} className="textFullStack">
-          <FadeInWhenVisibleAndMove direction="left">
             <h3>Full stack developper</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-          </FadeInWhenVisibleAndMove>
+          
         </div>
         <div className="terminal">
-          <FadeInWhenVisibleAndMove direction="right">
             <Window backgroundColor="black" minHeight={325}>
               <Terminal />
             </Window>
-          </FadeInWhenVisibleAndMove>
         </div>
         <div className="trello">
-          <FadeInWhenVisibleAndMove direction="left">
             <Window backgroundColor="none">
-              <Trello/>
+              <Trello />
             </Window>
-          </FadeInWhenVisibleAndMove>
+          
         </div>
         <div className="textCTO">
-          <FadeInWhenVisibleAndMove direction="right">
             <h3>But a CTO too</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-          </FadeInWhenVisibleAndMove>
+          
         </div>
       </div>
     </section>
