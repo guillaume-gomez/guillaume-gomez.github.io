@@ -28,10 +28,10 @@ function App() {
           <span ref={toProject} style={{width: "100%"}} >
            <Projects refTarget={toAboutMe} />
           </span>
-          <span ref={toAboutMe} style={{width: "100%"}}>
+          <span ref={toAboutMe} style={{width: "100%", display: "flex", flexDirection: "column", alignItems: "center"}}>
             <AboutMe />
+            <Hobbies />
           </span>
-          <Hobbies />
           <Experience />
           <Skills />
         </div>
