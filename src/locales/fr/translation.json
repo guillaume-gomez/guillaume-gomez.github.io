@@ -20,9 +20,9 @@
   },
   "welcome-page-infos": {
     "full-stack": "Je suis développeur Full Stack",
-    "full-statck-text": "Je programme la plupart du temps en Ruby on rails, en Typescript, du React, et parfois du Javascript vanilla. Sur mon temps libre, je m'interesse à la programmtion de jeux video",
+    "full-statck-text": "Je programme la plupart du temps en Ruby on rails, en Typescript, du React, et parfois du Javascript vanilla. Sur mon temps libre, je m'interesse à la programmtion de jeux video.",
     "cto": "Mais je suis aussi CTO",
-    "cto-text": "Je manage une équipe de 6 personnes pour améliorer la distribution de contenu à Amuse."
+    "cto-text": "Je pilote une équipe de 6 personnes pour améliorer la distribution de contenu à Amuse. Je fais de mon mieux en apprenant de nouvelles compétences et me fixant de nouveaux objectifs pour devenir un meilleur manager."
   },
   "hobbies": {
     "hobbies": "Centre d'intérêts",
