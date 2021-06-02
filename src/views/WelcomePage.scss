@@ -1,6 +1,5 @@
 .welcome-page-content {
   //border: 5px solid green;
-  position: relative;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -9,107 +8,18 @@
   flex-direction: column;
 }
 
-.title-relative {
-  postion: relative;
-  top: 60px;
-}
-
 .first-gradient {
   position: relative;
   background: rgb(4,23,70);
   background: linear-gradient(356deg, rgba(4,23,70,1) 67%, rgba(48,33,93,1) 79%, rgba(122,33,97,1) 97%);
 }
 
-
-.welcome-page-top {
-  //border: 5px solid orange;
-  width: inherit;
+.welcome-page-text {
+  //border: 5px solid purple;
   height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-}
-
-.welcome-page-windows {
-  display: flex;
-  width: inherit;
   justify-content: space-between;
-  //border: 5px solid pink;
-}
-
-.welcome-page-bottom {
-  //border: 5px solid blue;
-  position: absolute;
-  bottom: 25px;
-}
-
-.welcome-page-terminal {
-  //border: 5px solid purple;
-  display: flex;
-  padding-left: 16px;
-  align-items: center;
-}
-
-.welcome-page-trello {
-  //border: 5px solid red;
-  padding-right: 24px;
-  min-height: 450px;
-}
-
-
-
-@media (max-width: 1300px) {
-  .welcome-page-content {
-    height: auto;
-  }
-  .welcome-page-windows {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .welcome-page-trello {
-    margin-bottom: 1rem;
-    position: relative;
-    top:0;
-    padding-left: 0;
-
-  }
-  .welcome-page-terminal {
-    margin-bottom: 1rem;
-    position: relative;
-    top: 0;
-    padding-right: 0;
-  }
-  .welcome-page-top {
-    padding: 1rem 0;
-    text-align: center;
-  }
-  .welcome-page-bottom {
-    display: none;
-  }
-}
-
-@media (max-width: 1024px) {
-  .welcome-page-trello {
-    display: none;
-  }
-}
-
-@media(max-width: 768px) {
-  .welcome-page-terminal {
-    display: none;
-  }
-  .welcome-page-content {
-    height: 100vh;
-  }
-
-}
-
-@media(max-width: 375px) {
-.welcome-page-top {
-    padding: 4rem 0;
-  }
 }
 
 

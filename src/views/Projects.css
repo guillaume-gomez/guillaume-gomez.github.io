@@ -4,6 +4,7 @@
   box-sizing: border-box;
   width: 100%;
   height: 100%;
+  gap:  16px 0px;
   grid-template-rows: auto auto;
 }
 
@@ -158,7 +159,7 @@
 
 
 
-@media(max-width: 768px) {
+@media(max-width: 1000px) {
   .projects-header {
     width: 100%;
     overflow: auto;

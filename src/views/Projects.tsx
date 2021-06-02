@@ -62,7 +62,7 @@ function Projects({refTarget} : ProjectInterface) {
 
   return (
     <section className="projects-content" id="project">
-      <h2>{t("projects.projects")}</h2>
+      <h2 style={{textAlign: "center"}}>{t("projects.projects")}</h2>
         <ul className="projects-header">
           <li key={"all"} onClick={() => onChangeTheme("")}><a>{t("projects.theme.all")}</a></li>
           {

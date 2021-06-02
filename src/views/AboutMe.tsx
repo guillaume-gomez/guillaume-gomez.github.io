@@ -12,7 +12,7 @@ function AboutMe() {
   const { t } = useTranslation();
   return (
     <section className="about-me-content">
-      <h2>{t("about-me.about-me")}</h2>
+      <h2 style={{textAlign: "center"}}>{t("about-me.about-me")}</h2>
       <div className="about-me-infos">
         <div className="about-me-avatar">
           <img className="about-me-avatar-img" src={`${process.env.PUBLIC_URL}profile.jpeg`} loading="lazy" alt="my face"/>
