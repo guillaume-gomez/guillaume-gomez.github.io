@@ -112,6 +112,7 @@
 
 .projects-load-more {
   //border: 2px solid darkcyan;
+  cursor:  pointer;
   display: flex;
   justify-content: center;
 }
