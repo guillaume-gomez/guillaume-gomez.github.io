@@ -33,7 +33,9 @@ body {
   font-size: 24px;
   font-family: 'Barlow';
   color: var(--white);
-  background: #121212;
+  background: #000e21;
+//background: rgb(4,23,50);
+//background: linear-gradient(180deg, rgba(4,23,70,0.67) 0%, rgba(13,28,77,1) 50%, rgba(6,14,41,0.81) 100%);
 }
 h1 {
   font-size: 96px;
@@ -91,7 +93,7 @@ a {
 }
 
 a:hover {
-  color: var(--text-primary-dark);
+  color: var(--grey);
 }
 
 ol, ul {

@@ -8,8 +8,10 @@
 }
 
 .job-content {
-  border-radius: 10px;
-  border: 5px solid var(--white);
+  background: #1D1332;
+  border-radius: 8px;
+  padding: 6px;
+  //border: 5px solid var(--white);
 }
 
 /* The circles on the timeline */
