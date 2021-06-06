@@ -26,9 +26,9 @@ function Header({refTarget} : HeaderInterface) {
       </div>
       <div className="header-links">
       <a onClick={() => refTarget!.current!.scrollIntoView({behavior: "smooth"})}>{t("header.about-me")}</a>
-      <select onChange={onChangeLanguage}>
-        <option value="fr">{t("header.french")}</option>
-        <option value="en">{t("header.english")}</option>
+      <select className="custom-select" onChange={onChangeLanguage}>
+        <option className="custom-option" value="fr">{t("header.french")}</option>
+        <option className="custom-option" value="en">{t("header.english")}</option>
       </select>
       <span className="header-separator"></span>
         <a href={LINKEDIN}>
