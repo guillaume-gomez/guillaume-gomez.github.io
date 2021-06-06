@@ -77,21 +77,6 @@
   align-items: center;
 }
 
-
-.custom-select {
-  border: 2px solid var(--white);
-  border-radius: 4px;
-  background: none;
-  color: var(--white);
-  font-family: 'Barlow';
-  font-size: 20px;
-  padding-right:1rem;
-}
-
-.custom-option {
-  color: var(--black);
-}
-
 .projects-grid-header {
   //border:  2px solid greenyellow;
   gap: 12px;
