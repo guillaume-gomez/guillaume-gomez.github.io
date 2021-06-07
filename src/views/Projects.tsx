@@ -67,16 +67,26 @@ function Projects({refTarget} : ProjectInterface) {
     <section className="projects-content" id="project">
       <h2 style={{textAlign: "center"}}>{t("projects.projects")}</h2>
         <ul className="projects-header">
-          <li key={"all"} onClick={() => onChangeTheme("")}><a>{t("projects.theme.all")}</a></li>
+          <motion.li animate={ {x: [-500, 0], opacity: [0, 0.25, 0.5, 0.75, 1]} } transition={{ duration: 1.0}} key={"all"} onClick={() => onChangeTheme("")}>
+            <a>
+              {t("projects.theme.all")}
+            </a>
+          </motion.li>
           {
-            orderBy(themes).map(theme => <li key={theme} onClick={() => onChangeTheme(theme)}><a>{t(`projects.theme.${theme}`)}</a></li>)
+            orderBy(themes).map((theme, index) => 
+              <motion.li animate={ {x: [-500, 0], opacity: [0, 0.25, 0.5, 0.75, 1]} } transition={{ duration: 1.0,  delay: 0.1 * (index+ 1) }} key={theme} onClick={() => onChangeTheme(theme)}>
+                <a>
+                  {t(`projects.theme.${theme}`)}
+                </a>
+              </motion.li>
+            )
           }
         </ul>
         <div className="projects-grid">
           <div className="projects-grid-header">
             <div className="projects-header-filter-and-stats">
               <div className="project-filter">
-                <span>Tags</span>
+                <span className="project-tag-label">Tags</span>
                 <select className="custom-select" onChange={(e) => setFilter(e.target.value)} value={filter}>
                   <option className="custom-option" value="">{t("projects.no-filter")}</option>
                   {orderBy(tags).map(tag => <option className="custom-option" key={tag}>{tag}</option>)}

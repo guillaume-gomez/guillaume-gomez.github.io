@@ -104,9 +104,16 @@
 
 .project-filter {
   //border:  2px solid orangered;
+  align-content: center;
   justify-content: flex-end;
   padding: 8px 8px 8px 0;
   display: flex;
+}
+
+.project-tag-label {
+  //border: 2px solid green;
+  display: flex;
+  align-self: center;
 }
 
 .projects-stat {
@@ -158,6 +165,9 @@
 
 @media(max-width: 375px) {
   .projects-header {
+    font-size: 14px;
+  }
+  .projects-header-filter-and-stats {
     font-size: 14px;
   }
 }
