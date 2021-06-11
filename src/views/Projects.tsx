@@ -8,6 +8,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { projectsData } from "../constants";
 
+import FromLeftToRight from "../components/animations/FromLeftToRight";
+
 interface ProjectInterface {
   refTarget: React.RefObject<HTMLSpanElement>
 }
@@ -63,22 +65,24 @@ function Projects({refTarget} : ProjectInterface) {
     setFilter("")
   }
 
+  console.log(themes)
+
   return (
     <section className="projects-content" id="project">
       <h2 style={{textAlign: "center"}}>{t("projects.projects")}</h2>
         <ul className="projects-header">
-          <motion.li animate={ {x: [-500, 0], opacity: [0, 0.25, 0.5, 0.75, 1]} } transition={{ duration: 1.0}} key={"all"} onClick={() => onChangeTheme("")}>
+          <FromLeftToRight key={"all"} onClick={() => onChangeTheme("")}>
             <a>
               {t("projects.theme.all")}
             </a>
-          </motion.li>
+          </FromLeftToRight>
           {
             orderBy(themes).map((theme, index) => 
-              <motion.li animate={ {x: [-500, 0], opacity: [0, 0.25, 0.5, 0.75, 1]} } transition={{ duration: 1.0,  delay: 0.1 * (index+ 1) }} key={theme} onClick={() => onChangeTheme(theme)}>
+              <FromLeftToRight key={theme} onClick={() => onChangeTheme(theme)}>
                 <a>
                   {t(`projects.theme.${theme}`)}
                 </a>
-              </motion.li>
+              </FromLeftToRight>
             )
           }
         </ul>
