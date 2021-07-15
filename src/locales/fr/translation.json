@@ -20,7 +20,7 @@
   },
   "welcome-page-infos": {
     "full-stack": "Je suis développeur Full Stack",
-    "full-statck-text": "Je programme la plupart du temps en Ruby on rails, en Typescript, du React, et parfois du Javascript vanilla. Sur mon temps libre, je m'interesse à d'autres langages ainsi que la programmtion de jeux video.",
+    "full-statck-text": "Je programme la plupart du temps en Ruby on rails, en Typescript, du React, et parfois du Javascript vanilla. Sur mon temps libre, je m'interesse à d'autres langages ainsi que la programmation de jeux video.",
     "cto": "Mais je suis aussi CTO",
     "cto-text": "J'ai commencé ce nouveau role à Amuse. Pour continuer de progresser dans ce domaine, je me fixe de nouveaux objectifs pour devenir un meilleur ingénieur."
   },
@@ -42,7 +42,7 @@
     "presentation": "Faire une presentation en conférence",
     "article": "Ecrire un article technique",
     "open-source": "Contribuer a un projet open-source",
-    "dev-ops": "M'interesser aux challenges dev-ops",
+    "dev-ops": "M'interesser au dev-ops",
     "manage": "Mieux organiser et manager une équipe",
     "front-end": "Me perfectionner en front",
     "back-end": "Me perfectionner en back",
