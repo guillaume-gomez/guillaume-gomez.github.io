@@ -514,5 +514,15 @@ export const projectsData = [
     theme: "tool",
     year: 2021,
     relevance: 5
+  },
+  {
+    name: "Random Crosses",
+    githubPage: "https://github.com/guillaume-gomez/randomCrosses",
+    demo: "https://guillaume-gomez.github.io/randomCrosses/",
+    preview: "random-crosses.png",
+    tags: ["typescript"],
+    theme: "creative",
+    year: 2021,
+    relevance: 3
   }
 ];
