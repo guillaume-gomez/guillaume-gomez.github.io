@@ -29,6 +29,8 @@ function WelcomePage({ toAboutMe, toTexts } : WelcomePageInterface) {
             </h1>
           </div>
         </FromUpToDown>
+        <div className="three-js-view">
+        </div>
         <div className="welcome-page-bottom" style={{padding: "2rem", display: "flex", justifyContent: "center"}} onClick={() => toTexts!.current!.scrollIntoView({behavior: "smooth"}) }>
           <motion.div whileHover={{ translateY: 5, transition: { duration: 0.5, repeat: Infinity } }}>
             <MacMouse fill="var(--white)" style={{width: "60px"}}/>
