@@ -7,11 +7,11 @@
   flex-direction: column;
 }
 
+
 .welcome-page-infos-grid-container {
   width: 100%;
   height: 100%;
   //border: 2px solid orange;
-  max-width: 1500px;
   gap:  200px 50px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -19,6 +19,10 @@
   grid-template-areas:
     "TextFullStack TextFullStack TextFullStack TextFullStack TextFullStack TextFullStack TextFullStack terminal terminal terminal terminal terminal"
     "trello trello trello trello trello trello trello textCTO textCTO textCTO textCTO textCTO";
+}
+
+.welcome-page-title {
+  padding-bottom: 2rem ;
 }
 
 .textFullStack {

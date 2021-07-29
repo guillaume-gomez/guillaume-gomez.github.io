@@ -18,14 +18,14 @@ function App() {
   return (
     <div className="App">
       <div className="App-container">
-        <span ref={toHomepage} style={{width: "100%"}}>
-          <WelcomePage toAboutMe={toAboutMe} toTexts={toTexts}/>
-        </span>
         <div className="container">
-          <span ref={toTexts} style={{width: "100%"}}>
+          <span ref={toHomepage}>
+            <WelcomePage toAboutMe={toAboutMe} toTexts={toTexts}/>
+          </span>
+          <span ref={toTexts}>
             <WelcomePageInfos/>
           </span>
-          <span ref={toProject} style={{width: "100%"}} >
+          <span ref={toProject}>
            <Projects refTarget={toAboutMe} />
           </span>
           <span ref={toAboutMe} style={{width: "100%", display: "flex", flexDirection: "column", alignItems: "center"}}>

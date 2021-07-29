@@ -17,7 +17,7 @@ function WelcomePageInfos() {
       <div className="welcome-page-infos-grid-container">
         <div ref={toTexts} className="textFullStack">
             <FadeInWhenVisibleAndMove direction="left">
-              <h3>{t("welcome-page-infos.full-stack")}</h3>
+              <h3 className="welcome-page-title">{t("welcome-page-infos.full-stack")}</h3>
               <p>{t("welcome-page-infos.full-statck-text")}</p>
             </FadeInWhenVisibleAndMove>
         </div>
@@ -37,7 +37,7 @@ function WelcomePageInfos() {
         </div>
         <div className="textCTO">
           <FadeInWhenVisibleAndMove direction="right">
-            <h3>{t("welcome-page-infos.cto")}</h3>
+            <h3 className="welcome-page-title">{t("welcome-page-infos.cto")}</h3>
             <p>{t("welcome-page-infos.cto-text")}</p>
           </FadeInWhenVisibleAndMove>
         </div>
