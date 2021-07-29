@@ -32,24 +32,28 @@ function Job({begin, end, jobTitle, jobDescription, company, companyUrl, locatio
             className="job-content"
           >
             <div className="job-header">
-              <div className="job-card-header">
                 <h5>{jobTitle}</h5>
-                  <div> 
-                  { companyUrl ?
-                    <a className="underline-link job-company job-company-name" href={companyUrl}>{company}</a> :
-                    <span className="job-company-name">{ company }</span>
-                  }
-                  <em>({location})</em>
-                </div>
+                <div> 
+                { companyUrl ?
+                  <a className="underline-link job-company job-company-name" href={companyUrl}>{company}</a> :
+                  <span className="job-company-name">{ company }</span>
+                }
               </div>
+            </div>
+            <div className="job-image">
+              <a href={companyUrl}>
+                <img style={{"borderRadius": "9px"}} src="https://picsum.photos/256/256" />
+              </a>
             </div>
             <div className="job-body">
               <div className="job-body-content">
                 {jobDescription ? jobDescription : children}
               </div>
             </div>
+
             <div className="job-footer">
               <em>{formatDate(begin)} - {formatDate(end)}</em>
+              <em>({location})</em>
             </div>
           </div>
       </div>

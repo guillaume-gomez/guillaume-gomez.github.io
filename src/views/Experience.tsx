@@ -100,7 +100,7 @@ function Experience() {
         </Timeline>
       </div>
 
-      <h2 className="experience-title">{t("education.education")}</h2>
+      <SectionHeader text={t("education.education")} />
       <div className="experience-jobs">
         <Timeline>
           <Job 
