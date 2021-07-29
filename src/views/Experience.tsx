@@ -20,6 +20,7 @@ function Experience() {
             begin={new Date(2019,1,1)}
             end={new Date()}
             jobTitle={t("experience.amuse.job-title")}
+            imgSrc={`${process.env.PUBLIC_URL}/amuse.jpg`}
             >
               <p>{t("experience.amuse.bloc1")}</p>
               <p>{t("experience.amuse.bloc2")}</p>
@@ -37,6 +38,7 @@ function Experience() {
             begin={new Date(2017,10,1)}
             end={new Date(2019,1,1)}
             jobTitle={t("experience.amuse.job-title-2")}
+            imgSrc={`${process.env.PUBLIC_URL}/amuse.jpg`}
             >
               <p>{t("experience.amuse.bloc1-1")}</p>
               <ul>
@@ -59,6 +61,7 @@ function Experience() {
             begin={new Date(2015,7,1)}
             end={new Date(2017,10,1)}
             jobTitle={t("experience.applidget.job-title")}
+            imgSrc={`${process.env.PUBLIC_URL}/eventmaker.jpg`}
             >
               <p>{t("experience.applidget.bloc")}</p>
             </Job>
@@ -69,6 +72,7 @@ function Experience() {
             begin={new Date(2015,1,1)}
             end={new Date(2017,5,1)}
             jobTitle={t("experience.masa.job-title")}
+            imgSrc={`${process.env.PUBLIC_URL}/masa.png`}
             >
               <p>{t("experience.masa.bloc")}</p>
            </Job>
@@ -78,11 +82,10 @@ function Experience() {
             begin={new Date(2014,1,1)}
             end={new Date(2013,8,1)}
             jobTitle={t("experience.multiposting.job-title")}
+            imgSrc={`${process.env.PUBLIC_URL}/multiposting.jpg`}
             >
-              <ul>
-                <li>{t("experience.multiposting.bloc1")}</li>
-                <li>{t("experience.multiposting.bloc2")}</li>
-              </ul>
+              <p>{t("experience.multiposting.bloc1")}</p>
+              <p>{t("experience.multiposting.bloc2")}</p>
            </Job>
            <Job
             company={t("experience.arles.company")}
@@ -90,11 +93,10 @@ function Experience() {
             begin={new Date(2012,3,1)}
             end={new Date(2012,1,1)}
             jobTitle={t("experience.arles.job-title")}
+            imgSrc={`${process.env.PUBLIC_URL}/Arles_logo.png`}
             >
-              <ul>
-                <li>{t("experience.arles.bloc1")}</li>
-                <li>{t("experience.arles.bloc2")}</li>
-              </ul>
+            <p>{t("experience.arles.bloc1")}</p>
+            <p>{t("experience.arles.bloc2")}</p>
            </Job>
 
         </Timeline>

@@ -1,0 +1,25 @@
+headerPage
+ -> changer la typo
+ -> le header regler 
+ -> rajouter un modele 3D avec par exemple un ecran
+
+-> pour l'icone generateur de picto
+
+
+Personnal project
+ - fixer l'ombre porté
+ - voir si on peut accelerer l'anim
+ - background blur en hover (en remontant de bas en haut)
+   + gradient
+
+   + au clic faire l'effet carte qui se retourne
+
+
+Sur mobile -> mettre 5/10% de border gauche et droite
+
+
+About me
+
+plus de spacing entre l'image et les icones (github + linkedin + courriel )
+
+

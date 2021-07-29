@@ -14,9 +14,10 @@ interface SchoolInterface {
   schoolUrl?: string;
   diploma: string;
   detail?: string;
+  srcImage: string;
 }
 
-function School({begin, end, diploma, detail, school, schoolUrl, location} : SchoolInterface) {
+function School({begin, end, diploma, detail, school, schoolUrl, location, srcImage} : SchoolInterface) {
   const { t, i18n: {language} } = useTranslation();
   
   function formatDate(date: Date) {
@@ -28,7 +29,7 @@ function School({begin, end, diploma, detail, school, schoolUrl, location} : Sch
     <div className="school-container">
       <div className="school-image-container">
         <a href={schoolUrl}>
-          <img style={{"borderRadius": "10px"}} src="https://picsum.photos/96/96" />
+          <img className="school-image" src={srcImage} />
         </a>
         <a href={schoolUrl}>
           {school}

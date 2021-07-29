@@ -15,9 +15,10 @@ interface JobInterface {
   jobTitle: string;
   jobDescription?: string;
   children?: React.ReactNode;
+  imgSrc: string
 }
 
-function Job({begin, end, jobTitle, jobDescription, company, companyUrl, location, children} : JobInterface) {
+function Job({begin, end, jobTitle, jobDescription, company, companyUrl, location, children, imgSrc} : JobInterface) {
   const { t, i18n: {language} } = useTranslation();
   
   function formatDate(date: Date) {
@@ -40,9 +41,9 @@ function Job({begin, end, jobTitle, jobDescription, company, companyUrl, locatio
                 }
               </div>
             </div>
-            <div className="job-image">
+            <div className="job-image-container">
               <a href={companyUrl}>
-                <img style={{"borderRadius": "9px"}} src="https://picsum.photos/256/256" />
+                <img className="job-image" src={imgSrc} />
               </a>
             </div>
             <div className="job-body">

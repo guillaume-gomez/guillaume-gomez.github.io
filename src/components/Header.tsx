@@ -4,6 +4,7 @@ import i18n from '../i18n';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFile } from '@fortawesome/free-solid-svg-icons';
 
 import { LINKEDIN, GITHUB } from "../constants";
 
@@ -15,7 +16,7 @@ interface HeaderInterface {
 
 
 function Header({refTarget} : HeaderInterface) {
-   const { t } = useTranslation();
+   const { t, i18n: {language} } = useTranslation();
   function onChangeLanguage(e: any) {
     i18n.changeLanguage(e.target.value)
   }
@@ -36,6 +37,9 @@ function Header({refTarget} : HeaderInterface) {
         </a>
         <a href={GITHUB}>
           <FontAwesomeIcon icon={faGithub} size="lg" />
+        </a>
+         <a href={language === "fr" ? `${process.env.PUBLIC_URL}/CV_FR.pdf` : `${process.env.PUBLIC_URL}/CV_EN.pdf`}>
+          <FontAwesomeIcon icon={faFile} size="lg" />
         </a>
       </div>
     </div>

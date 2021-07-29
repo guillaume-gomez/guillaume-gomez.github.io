@@ -11,6 +11,12 @@
   --black: #000;
   --white: #FFF;
   --grey: #454545;
+  --background-layout: #0b080eb3;
+}
+
+#root {
+background-image: linear-gradient(to right top, #030111, #0b091c, #0f1027, #0e1532, #0d1a3e, #0c1d46, #091f4e, #062256, #06245c, #072662, #082769, #0a296f);
+
 }
 
 .parallax {
@@ -95,7 +101,14 @@
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
   grid-gap: 200px 10px;
+}
 
+.stripes {
+  background-size:100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size:cover;
+  transform: rotate(30deg);
 }
 
 

@@ -19,6 +19,7 @@ function App() {
   return (
     <div className="App">
       <div className="App-container">
+        {/*}<img src={`${process.env.PUBLIC_URL}/stripes.svg`} className="stripes" /> */}
         <div className="container">
           <span ref={toHomepage}>
             <WelcomePage toAboutMe={toAboutMe} toTexts={toTexts}/>
