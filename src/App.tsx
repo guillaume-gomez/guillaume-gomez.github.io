@@ -6,6 +6,7 @@ import Skills from "./views/Skills";
 import Projects from "./views/Projects";
 import WelcomePage from "./views/WelcomePage";
 import WelcomePageInfos from "./views/WelcomePageInfos";
+import Education from "./views/Education";
 import Footer from "./views/Footer";
 
 import './App.css';
@@ -28,11 +29,12 @@ function App() {
           <span ref={toProject}>
            <Projects refTarget={toAboutMe} />
           </span>
+          <Experience />
+          <Education />
           <span ref={toAboutMe} style={{width: "100%", display: "flex", flexDirection: "column", alignItems: "center"}}>
             <AboutMe />
             <Hobbies />
           </span>
-          <Experience />
           <Skills />
         </div>
       </div>

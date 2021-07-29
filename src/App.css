@@ -70,10 +70,9 @@
 
 
 .container {
-  border: 5px solid teal;
+  //border: 5px solid teal;
   grid-column-start: 2;
   grid-column-end: 12;
-  //grid-auto-rows: 100vh;
 }
 
 .custom-select {
@@ -94,7 +93,9 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 10px 0px;
+  grid-template-rows: auto;
+  grid-gap: 200px 10px;
+
 }
 
 

@@ -1,0 +1,12 @@
+.education-content {
+  //border: 2px solid purple;
+}
+
+.education-container {
+  //border: 2px solid red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
