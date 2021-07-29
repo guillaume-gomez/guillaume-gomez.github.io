@@ -3,11 +3,6 @@
   width: 100%;
 }
 
-.skills-title {
-  text-align: center;
-  padding-bottom: 16px;
-}
-
 .skills-stats {
   //border: 2px solid blue;
   display: flex;

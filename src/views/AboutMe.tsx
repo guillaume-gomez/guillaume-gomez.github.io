@@ -6,6 +6,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 import FadeInWhenVisibleAndMove from "../components/animations/FadeInWhenVisibleAndMove";
+import SectionHeader from "../components/SectionHeader";
 
 import "./AboutMe.css";
 
@@ -15,7 +16,7 @@ function AboutMe() {
   const { t } = useTranslation();
   return (
     <section className="about-me-content">
-      <h2 style={{textAlign: "center"}}>{t("about-me.about-me")}</h2>
+      <SectionHeader text={t("about-me.about-me")} />
       <div className="about-me-infos">
         <FadeInWhenVisibleAndMove className="about-me-avatar" direction="left">
           <img className="about-me-avatar-img" src={`${process.env.PUBLIC_URL}profile.jpeg`} loading="lazy" alt="my face"/>

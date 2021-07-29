@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Timeline from "../components/Timeline";
 import Job from "../components/Job";
+import SectionHeader from "../components/SectionHeader";
 
 import "./Experience.css";
 
@@ -9,7 +10,7 @@ function Experience() {
   const { t } = useTranslation();
   return (
     <div className="experience-content content">
-      <h2 className="experience-title">{t("experience.experience")}</h2>
+      <SectionHeader text={t("experience.experience")} />
       <div className="experience-jobs">
         <Timeline>
           <Job 

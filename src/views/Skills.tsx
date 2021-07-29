@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import { useTranslation } from 'react-i18next';
+import SectionHeader from "../components/SectionHeader";
 import "./Skills.css";
 
 const BackEndData = [
@@ -98,7 +99,7 @@ function Skills() {
 
   return (
     <section className="skills-content">
-      <h2 className="skills-title">{t("skills.skills")}</h2>
+      <SectionHeader text={t("skills.skills")} />
       <div className="skills">
         <div className="skills-pie-chart">
           <Doughnut ref={ref} data={data} options={options} width={500} height={500}/>

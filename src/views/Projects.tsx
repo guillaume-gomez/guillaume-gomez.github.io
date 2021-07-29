@@ -3,12 +3,13 @@ import { uniq, orderBy } from "lodash";
 import { useTranslation } from 'react-i18next';
 import { motion, useAnimation } from "framer-motion";
 import "./Projects.css";
-import ProjectsGrid from "../components/ProjectsGrid";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { projectsData } from "../constants";
 
 import FromLeftToRight from "../components/animations/FromLeftToRight";
+import ProjectsGrid from "../components/ProjectsGrid";
+import SectionHeader from "../components/SectionHeader";
 
 interface ProjectInterface {
   refTarget: React.RefObject<HTMLSpanElement>
@@ -69,7 +70,7 @@ function Projects({refTarget} : ProjectInterface) {
 
   return (
     <section className="projects-content" id="project">
-      <h2 style={{textAlign: "center"}}>{t("projects.projects")}</h2>
+      <SectionHeader text={t("projects.projects")} />
         <ul className="projects-header">
           <FromLeftToRight key={"all"} onClick={() => onChangeTheme("")}>
             <a>
