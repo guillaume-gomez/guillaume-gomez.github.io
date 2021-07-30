@@ -3,26 +3,18 @@
   width: 100%;
 }
 
-.skills-stats {
-  //border: 2px solid blue;
-  display: flex;
-  flex-direction: row;
+.skill-categories {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 32px 32px;
+  grid-template-areas:
+    ". Front Front Front Front Front Back Back Back Back Back ."
+    ". Languages Languages Languages Languages Languages Tools Tools Tools Tools Tools ."; 
+  //border: 2px solid red;
 }
 
-.skills {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 5rem;
-}
-
-.skills-pie-chart
-{
-  //border: 2px solid pink;
-  max-width: 85%;
-  padding-bottom: 2rem;
-}
-
-
-
+.skills-front { grid-area: Front; }
+.skills-back { grid-area: Back; }
+.skills-languages { grid-area: Languages; }
+.skills-tools { grid-area: Tools; }
