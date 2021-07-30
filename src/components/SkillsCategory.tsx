@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from "framer-motion"
 import "./SkillsCategory.css";
 
 
@@ -21,7 +22,14 @@ function SkillsCategory({ skills, skillCategoryName } : SkillsCategoryInterface)
       <div className="skill-category-content">
         {skills.map(skill => {
           return (
-            <img src={skill.iconSrc} alt={skill.name} />
+            <motion.img
+              src={skill.iconSrc}
+              alt={skill.name}
+              whileHover={{
+                rotateY:[0, 25],
+                transition: { duration: 0.25 }
+              }}
+            />
           )
         })}
       </div>

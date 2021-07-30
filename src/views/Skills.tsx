@@ -43,7 +43,7 @@ function Skills() {
       <SectionHeader text={t("skills.skills")} />
       <div className="skill-categories">
         <div className="skills-front">
-          <SkillCategory skills={Frontends} skillCategoryName={"Frontend"} />
+          <SkillCategory skills={Frontends} skillCategoryName={"Frontend"}  />
         </div>
         <div className="skills-back">
           <SkillCategory skills={Backends} skillCategoryName={"Backend"} />
