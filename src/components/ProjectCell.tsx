@@ -1,6 +1,6 @@
 import React from 'react';
 import "./ProjectCell.css";
-import {motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 export interface ProjectCellInterface {
   name: string;
