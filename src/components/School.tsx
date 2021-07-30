@@ -2,7 +2,6 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { format } from 'date-fns'
 import { fr, enGB } from 'date-fns/locale'
-import FadeInSection from "./FadeInSection";
 
 import "./School.css";
 
@@ -29,7 +28,7 @@ function School({begin, end, diploma, detail, school, schoolUrl, location, srcIm
     <div className="school-container">
       <div className="school-image-container">
         <a href={schoolUrl}>
-          <img className="school-image" src={srcImage} />
+          <img className="school-image" src={srcImage} alt="school-where-i-studied"/>
         </a>
         <a href={schoolUrl}>
           {school}
