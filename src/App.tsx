@@ -9,6 +9,8 @@ import WelcomePageInfos from "./views/WelcomePageInfos";
 import Education from "./views/Education";
 import Footer from "./views/Footer";
 
+import SmoothScroll from "./components/animations/smoothScroll/SmoothScroll";
+
 import './App.css';
 
 function App() {
@@ -17,30 +19,32 @@ function App() {
   const toAboutMe = useRef<HTMLSpanElement>(null);
   const toTexts = useRef<HTMLSpanElement>(null);
   return (
-    <div className="App">
-      <div className="App-container">
-        {/*}<img src={`${process.env.PUBLIC_URL}/stripes.svg`} className="stripes" /> */}
-        <div className="container">
-          <span ref={toHomepage}>
-            <WelcomePage toAboutMe={toAboutMe} toTexts={toTexts}/>
-          </span>
-          <span ref={toTexts}>
-            <WelcomePageInfos/>
-          </span>
-          <span ref={toProject}>
-           <Projects refTarget={toAboutMe} />
-          </span>
-          <Experience />
-          <Education />
-          <span ref={toAboutMe} style={{width: "100%", display: "flex", flexDirection: "column", alignItems: "center"}}>
-            <AboutMe />
-            <Hobbies />
-          </span>
-          <Skills />
+    <SmoothScroll>
+      <div className="App">
+        <div className="App-container">
+          {/*}<img src={`${process.env.PUBLIC_URL}/stripes.svg`} className="stripes" /> */}
+          <div className="container">
+            <span ref={toHomepage}>
+              <WelcomePage toAboutMe={toAboutMe} toTexts={toTexts}/>
+            </span>
+            <span ref={toTexts}>
+              <WelcomePageInfos/>
+            </span>
+            <span ref={toProject}>
+             <Projects refTarget={toAboutMe} />
+            </span>
+            <Experience />
+            <Education />
+            <span ref={toAboutMe} style={{width: "100%", display: "flex", flexDirection: "column", alignItems: "center"}}>
+              <AboutMe />
+              <Hobbies />
+            </span>
+            <Skills />
+          </div>
         </div>
+        <Footer refTarget={toHomepage}/>
       </div>
-      <Footer refTarget={toHomepage}/>
-    </div>
+    </SmoothScroll>
   );
 }
 
