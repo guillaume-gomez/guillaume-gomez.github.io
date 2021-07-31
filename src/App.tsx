@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import useMobileDetect from 'use-mobile-detect-hook';
+import { isBrowser } from 'react-device-detect';
 
 import AboutMe from "./views/AboutMe";
 import Hobbies from "./views/Hobbies";
@@ -16,8 +16,6 @@ import SmoothScroll from "./components/animations/smoothScroll/SmoothScroll";
 import './App.css';
 
 function App() {
-  const detectMobile = useMobileDetect();
-
   const toProject = useRef<HTMLSpanElement>(null);
   const toHomepage = useRef<HTMLSpanElement>(null);
   const toAboutMe = useRef<HTMLSpanElement>(null);
@@ -52,7 +50,7 @@ function App() {
     );
   }
 
-  if(detectMobile.isDesktop()) {
+  if(isBrowser) {
     return (
       <SmoothScroll>
         {renderCommon()}
