@@ -2,9 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './index.css';
-// labels for react chartjs plugin
-import 'chartjs-plugin-datalabels';
-
 import "./i18n";
 
 import App from './App';

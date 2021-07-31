@@ -27,7 +27,6 @@
     "lodash": "^4.17.21",
     "node-sass": "^5.0.0",
     "react": "^17.0.1",
-    "react-chartjs-2": "^2.11.1",
     "react-dom": "^17.0.1",
     "react-i18next": "^11.8.9",
     "react-intersection-observer": "^8.32.0",
