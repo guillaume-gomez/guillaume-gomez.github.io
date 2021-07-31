@@ -1,4 +1,6 @@
 import React, { useRef } from 'react';
+import useMobileDetect from 'use-mobile-detect-hook';
+
 import AboutMe from "./views/AboutMe";
 import Hobbies from "./views/Hobbies";
 import Experience from "./views/Experience";
@@ -14,12 +16,15 @@ import SmoothScroll from "./components/animations/smoothScroll/SmoothScroll";
 import './App.css';
 
 function App() {
+  const detectMobile = useMobileDetect();
+
   const toProject = useRef<HTMLSpanElement>(null);
   const toHomepage = useRef<HTMLSpanElement>(null);
   const toAboutMe = useRef<HTMLSpanElement>(null);
   const toTexts = useRef<HTMLSpanElement>(null);
-  return (
-    <SmoothScroll>
+
+  function renderCommon() {
+    return (
       <div className="App">
         <div className="App-container">
           {/*}<img src={`${process.env.PUBLIC_URL}/stripes.svg`} className="stripes" /> */}
@@ -44,8 +49,18 @@ function App() {
         </div>
         <Footer refTarget={toHomepage}/>
       </div>
-    </SmoothScroll>
-  );
+    );
+  }
+
+  if(detectMobile.isDesktop()) {
+    return (
+      <SmoothScroll>
+        {renderCommon()}
+      </SmoothScroll>
+    );
+  }
+
+  return renderCommon();
 }
 
 export default App;
