@@ -50,13 +50,13 @@ function App() {
     );
   }
 
-  if(isBrowser) {
+  /*if(isBrowser) {
     return (
       <SmoothScroll>
         {renderCommon()}
       </SmoothScroll>
     );
-  }
+  }*/
 
   return renderCommon();
 }

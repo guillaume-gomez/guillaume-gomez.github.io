@@ -1,11 +1,14 @@
 import React, { useEffect } from 'react';
+import { isBrowser } from 'react-device-detect';
 import { useTranslation } from 'react-i18next';
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { ReactComponent as MacMouse } from "../macintosh-mouse.svg";
 
+
 import "./WelcomePage.scss";
 
+import AframeScene from "../components/AframeScene";
 import Header from "../components/Header";
 
 interface WelcomePageInterface {
@@ -30,6 +33,7 @@ function WelcomePage({ toAboutMe, toTexts } : WelcomePageInterface) {
           </div>
         </FromUpToDown>
         <div className="three-js-view">
+          {isBrowser && <AframeScene />}
         </div>
         <div className="welcome-page-bottom" style={{padding: "2rem", display: "flex", justifyContent: "center"}} onClick={() => toTexts!.current!.scrollIntoView({behavior: "smooth"}) }>
           <motion.div whileHover={{ translateY: 5, transition: { duration: 0.5, repeat: Infinity } }}>

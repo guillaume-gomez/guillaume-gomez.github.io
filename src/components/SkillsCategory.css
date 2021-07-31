@@ -1,5 +1,5 @@
 .skill-category-container {
-  border: 2px solid black;
+  //border: 2px solid greenyellow;
   display: flex;
   flex-direction: column;
   background: var(--background-layout);
