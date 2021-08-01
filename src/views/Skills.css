@@ -18,3 +18,20 @@
 .skills-back { grid-area: Back; }
 .skills-languages { grid-area: Languages; }
 .skills-tools { grid-area: Tools; }
+
+
+@media(max-width: 401px) {
+  .skill-categories {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 8px 8px;
+    grid-template-areas:
+      ". Front Front Front Front Front Front Front Front Front Front ."
+      ". Back Back Back Back Back Back Back Back Back Back ."
+      ". Languages Languages Languages Languages Languages Languages Languages Languages Languages Languages ."
+      ". Tools Tools Tools Tools Tools Tools Tools Tools Tools Tools .";
+
+    //border: 2px solid red;
+  }
+}
