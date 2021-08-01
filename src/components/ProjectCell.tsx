@@ -2,6 +2,7 @@ import React from 'react';
 import "./ProjectCell.css";
 import { motion } from "framer-motion";
 
+
 export interface ProjectCellInterface {
   name: string;
   githubPage: string;
@@ -31,12 +32,12 @@ function ProjectCell({name, githubPage, demo, preview, tags, theme, relevance} :
       <div className="project-cell-name">{name}</div>
       
       <div className="project-cell-buttons">
-        <a href={githubPage} className="project-cell-button">github</a>
+        <a href={githubPage} className="project-cell-button">Github</a>
         {
           demo ?
-          <a href={demo} className="project-cell-button">demo</a>
+          <a href={demo} className="project-cell-button">Demo</a>
           :
-          <div className="project-cell-button-disabled strikeout">demo</div>
+          <div className="project-cell-button-disabled strikeout">Demo</div>
         }
 
       </div>

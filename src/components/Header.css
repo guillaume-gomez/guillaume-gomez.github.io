@@ -41,6 +41,12 @@
   color: var(--grey);
 }
 
+.header-logo {
+  //border: 2px solid blue;
+  width: 48px;
+   object-fit: cover;
+}
+
 @media(max-width: 768px) {
   .header-name {
     display: none;

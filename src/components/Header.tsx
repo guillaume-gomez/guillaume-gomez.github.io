@@ -23,7 +23,9 @@ function Header({refTarget} : HeaderInterface) {
   return (
     <div className="header-container">
       <div className="header-name">
-        <p>Guillaume Gomez</p>
+        <a href="https://guillaume-gomez.github.io/avatar-generator/">
+          <img className="header-logo" src={`${process.env.PUBLIC_URL}/icon.png`} alt="one of my generated icon" />
+        </a>
       </div>
       <div className="header-links">
       <a className="about-me-link" onClick={() => refTarget!.current!.scrollIntoView({behavior: "smooth"})}>{t("header.about-me")}</a>

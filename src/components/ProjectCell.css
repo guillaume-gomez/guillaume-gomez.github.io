@@ -56,12 +56,12 @@
 
 .project-cell-button {
   border-radius: 2px;
-  border: 2px solid var(--white);
+  color: var(--white);
+  background: var(--text-primary-dark);
 }
 
 .project-cell-button-disabled {
   border-radius: 2px;
-  border: 2px solid var(--white);
 }
 
 .project-cell-button {
@@ -69,12 +69,8 @@
 }
 
 .project-cell-button:hover, .project-cell-button:active {
-  box-shadow: 0px 0px 5px 1px #40CB70;
-  border: 2px solid #40CB70;
-  background: #121FCF;
-  background:linear-gradient(270deg, #3FD861 6.25%, #3FD761 6.26%, #4C75DD 93.75%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+  background: var(--grey);
+  color: var(--white);
 }
 
 .project-cell-tags {
@@ -106,7 +102,6 @@
 
 .strikeout::after {
   border-bottom: 0.25em solid black;
-  box-shadow: 0px 0px 6px rgba(159, 54, 185, 0.89);
   content: "";
   left: 0;
   margin-top: calc(0.125em / 2 * -1);
