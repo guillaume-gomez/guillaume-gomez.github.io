@@ -1,7 +1,6 @@
 .skills-content {
   //border: 2px solid #5726FF;
   width: 100%;
-  padding-bottom: 16px;
 }
 
 .skill-categories {
@@ -13,6 +12,7 @@
     ". Front Front Front Front Front Back Back Back Back Back ."
     ". Languages Languages Languages Languages Languages Tools Tools Tools Tools Tools ."; 
   //border: 2px solid red;
+  padding: 32px 0;
 }
 
 .skills-front { grid-area: Front; }
