@@ -57,33 +57,12 @@
   border-radius: 10px;
   border: 5px solid var(--dark);
   margin-bottom: 8px;
-}
-
-/*
-@media(max-width: 1500px) {
-  .about-me-infos {
-    width: 85%;
-  }
-}
-
-@media(max-width: 1200px) {
-  .about-me-infos {
-    width: 90%;
-  }
-  .about-me-text {
-    line-height: 1.25em;
-  }
-}*/
-
+} 
 
 @media(max-width: 768px) {
   .about-me-infos {
     grid-template-rows: 0.60fr 1fr;
     grid-template-columns: 1fr;
     gap: 0;
-  }
-  .about-me-avatar {
-    justify-content: flex-start;
-    align-items: flex-start;
   }
 }

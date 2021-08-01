@@ -41,7 +41,7 @@ body {
 h1 {
   font-size: 96px;
   font-weight: bold;
-  font-family: 'Barlow-Black';
+  font-family: 'Barlow-Regular';
 }
 
 h2 {
@@ -71,7 +71,7 @@ h6 {
 
 @media(max-width: 375px) {
   h1 {
-    font-size: 60px;
+    font-size: 55px;
   }
   h2 {
     font-size: 42px;
@@ -156,7 +156,7 @@ code {
 
 
 @font-face {
-  font-family: 'Barlow-Black';
-  src: local('Barlow-Black'), url(fonts/Barlow-Black.ttf) format('truetype');
+  font-family: 'Barlow-Regular';
+  src: local('Barlow-Regular'), url(fonts/Barlow-Regular.ttf) format('truetype');
   font-display: swap;
 }

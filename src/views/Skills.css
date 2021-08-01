@@ -13,6 +13,7 @@
     ". Languages Languages Languages Languages Languages Tools Tools Tools Tools Tools ."; 
   //border: 2px solid red;
   padding: 32px 0;
+  padding-bottom: 4rem;
 }
 
 .skills-front { grid-area: Front; }

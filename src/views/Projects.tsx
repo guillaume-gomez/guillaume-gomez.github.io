@@ -66,8 +66,6 @@ function Projects({refTarget} : ProjectInterface) {
     setFilter("")
   }
 
-  console.log(themes)
-
   return (
     <section className="projects-content" id="project">
       <SectionHeader text={t("projects.projects")} />
@@ -88,7 +86,7 @@ function Projects({refTarget} : ProjectInterface) {
           }
         </ul>
         <div className="projects-grid">
-          <div className="projects-grid-header">
+         { <div className="projects-grid-header">
             <div className="projects-header-filter-and-stats">
               <div className="project-filter">
                 <span className="project-tag-label">Tags</span>
@@ -111,12 +109,7 @@ function Projects({refTarget} : ProjectInterface) {
                 </motion.div>
                 {t("projects.projects")}
              </div>
-            <motion.div
-              whileHover={{ translateY: -5, transition: { duration: 0.5, repeat: Infinity } }}
-              onClick={() => refTarget!.current!.scrollIntoView({behavior: "smooth"}) } >
-              <FontAwesomeIcon icon={faChevronDown} />
-            </motion.div>
-          </div>
+          </div>}
           <ProjectsGrid projectsData={projectsDataFiltered.slice(0, itemsLoaded)} />
           {
             itemsLoaded < projectsDataFiltered.length ?

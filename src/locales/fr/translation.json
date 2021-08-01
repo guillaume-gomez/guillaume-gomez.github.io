@@ -8,21 +8,21 @@
     "experience": "Experience",
     "french": "Français",
     "english": "Anglais",
-    "about-me": "A Propos"
+    "about-me": "À Propos"
   },
   "about-me": {
-    "about-me": "A Propos",
-    "content": "J'ai écrit mes premières lignes de C à 15 ans, pour ensuite découvrir beaucoup d'autres langages que ce soit à travers mon cursus universitaire ou professionnel. Passionné par l'informatique, j'essaye à travers des projets personnels d'entrevoir d'autres technologies allant de petites applications aux jeux vidéos, en passant par d'autres concepts farfelus qui me viennent sur le moment :). Quand je ne programme pas, je fais du sport. D'ailleurs il m'arrive très souvent de faire l'une de ses deux activités en musique."
+    "about-me": "À Propos",
+    "content": "J'ai écrit mes premières lignes de C à 15 ans, pour ensuite découvrir beaucoup d'autres langages que ce soit au travers mon cursus universitaire ou professionnel. Passionné par l'informatique, j'essaye à travers des projets personnels d'entrevoir d'autres technologies allant de petites applications aux jeux vidéos, en passant par d'autres concepts farfelus qui me viennent sur le moment :). Quand je ne programme pas, je fais du sport. D'ailleurs il m'arrive très souvent de faire l'une de ces deux activités en musique."
   },
   "welcome-page": {
     "job-title": "Développeur Full Stack",
-    "i-am": "Je suis"
+    "i-am": "Je m'appelle"
   },
   "welcome-page-infos": {
     "full-stack": "Je suis développeur Full Stack",
-    "full-statck-text": "Je programme la plupart du temps en Ruby on rails, en Typescript, du React, et parfois du Javascript vanilla. Sur mon temps libre, je m'interesse à d'autres langages ainsi que la programmation de jeux video.",
+    "full-statck-text": "Je programme la plupart du temps en Ruby on rails, en Typescript, du React, et parfois du Javascript vanilla. Sur mon temps libre, je m'intéresse à d'autres langages ainsi que la programmation de jeux videos.",
     "cto": "Mais je suis aussi CTO",
-    "cto-text": "J'ai commencé ce nouveau role à Amuse. Pour continuer de progresser dans ce domaine, je me fixe de nouveaux objectifs pour devenir un meilleur ingénieur."
+    "cto-text": "J'ai commencé ce nouveau rôle à Amuse. Pour continuer de progresser dans ce domaine, je me fixe de nouveaux objectifs pour devenir un meilleur ingénieur."
   },
   "hobbies": {
     "hobbies": "Centre d'intérêts",

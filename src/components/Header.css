@@ -44,7 +44,7 @@
 .header-logo {
   //border: 2px solid blue;
   width: 48px;
-   object-fit: cover;
+  object-fit: cover;
 }
 
 @media(max-width: 768px) {

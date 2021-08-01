@@ -122,3 +122,8 @@ background-image: linear-gradient(to right top, #030111, #0b091c, #0f1027, #0e15
   }
 }
 
+@media(max-width: 401px) {
+  .custom-select {
+  font-size: 16px;
+}
+}

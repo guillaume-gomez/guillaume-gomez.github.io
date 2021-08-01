@@ -15,8 +15,8 @@ function Education() {
           school={t("education.u_t_c.company")}
           schoolUrl="https://www.utc.fr/"
           location={t("education.u_t_c.location")}
-          begin={new Date(2015,1,1)}
-          end={new Date(2012,8,1)}
+          begin={new Date(2012,8,1)}
+          end={new Date(2015,1,1)}
           diploma={t("education.u_t_c.job-title")}
           detail={t("education.u_t_c.bloc1")}
           srcImage={"utc.jpg"}
