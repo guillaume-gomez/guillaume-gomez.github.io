@@ -77,6 +77,9 @@ background-image: linear-gradient(to right top, #030111, #0b091c, #0f1027, #0e15
 
 .container {
   //border: 5px solid teal;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
   grid-column-start: 2;
   grid-column-end: 12;
 }
@@ -112,4 +115,9 @@ background-image: linear-gradient(to right top, #030111, #0b091c, #0f1027, #0e15
 }
 
 
+@media(max-width: 1000px) {
+  .container {
+    gap: 32px;
+  }
+}
 

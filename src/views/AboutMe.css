@@ -78,7 +78,12 @@
 
 @media(max-width: 768px) {
   .about-me-infos {
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.60fr 1fr;
     grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .about-me-avatar {
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
