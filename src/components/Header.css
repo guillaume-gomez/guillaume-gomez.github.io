@@ -45,7 +45,13 @@
   .header-name {
     display: none;
   }
+  .about-me-link {
+    display: none;
+  }
   .header-container {
     justify-content: flex-end;
+  }
+  .header-container {
+    justify-content: center;
   }
 }

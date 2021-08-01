@@ -20,7 +20,7 @@ function WelcomePage({ toAboutMe, toTexts } : WelcomePageInterface) {
   const { t } = useTranslation();
   return (
     <section className="welcome-page-content first-gradient">
-      <Header refTarget={toAboutMe}/>
+        <Header refTarget={toAboutMe}/>
         <div className="welcome-page-text">
         <FromUpToDown>
           <div style={{padding: "2rem"}}>
