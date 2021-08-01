@@ -20,7 +20,7 @@ function Experience() {
             begin={new Date(2019,1,1)}
             end={new Date()}
             jobTitle={t("experience.amuse.job-title")}
-            imgSrc={`${process.env.PUBLIC_URL}/amuse.jpg`}
+            imgSrc={"amuse.jpg"}
             >
               <p>{t("experience.amuse.bloc1")}</p>
               <p>{t("experience.amuse.bloc2")}</p>
@@ -38,7 +38,7 @@ function Experience() {
             begin={new Date(2017,10,1)}
             end={new Date(2019,1,1)}
             jobTitle={t("experience.amuse.job-title-2")}
-            imgSrc={`${process.env.PUBLIC_URL}/amuse.jpg`}
+            imgSrc={"amuse.jpg"}
             >
               <p>{t("experience.amuse.bloc1-1")}</p>
               <ul>
@@ -61,7 +61,7 @@ function Experience() {
             begin={new Date(2015,7,1)}
             end={new Date(2017,10,1)}
             jobTitle={t("experience.applidget.job-title")}
-            imgSrc={`${process.env.PUBLIC_URL}/eventmaker.jpg`}
+            imgSrc={"eventmaker.jpg"}
             >
               <p>{t("experience.applidget.bloc")}</p>
             </Job>
@@ -72,7 +72,7 @@ function Experience() {
             begin={new Date(2015,1,1)}
             end={new Date(2017,5,1)}
             jobTitle={t("experience.masa.job-title")}
-            imgSrc={`${process.env.PUBLIC_URL}/masa.png`}
+            imgSrc={"masa.png"}
             >
               <p>{t("experience.masa.bloc")}</p>
            </Job>
@@ -93,7 +93,7 @@ function Experience() {
             begin={new Date(2012,3,1)}
             end={new Date(2012,1,1)}
             jobTitle={t("experience.arles.job-title")}
-            imgSrc={`${process.env.PUBLIC_URL}/Arles_logo.png`}
+            imgSrc={"Arles_logo.png"}
             >
             <p>{t("experience.arles.bloc1")}</p>
             <p>{t("experience.arles.bloc2")}</p>

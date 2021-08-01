@@ -24,8 +24,9 @@ function SkillsCategory({ skills, skillCategoryName } : SkillsCategoryInterface)
           return (
             <motion.img
               key={skill.name}
-              src={skill.iconSrc}
+              src={`${process.env.PUBLIC_URL}/technologies/${skill.iconSrc}`}
               alt={skill.name}
+              height="64px"
               whileHover={{
                 rotateY:[0, 25],
                 transition: { duration: 0.25 }

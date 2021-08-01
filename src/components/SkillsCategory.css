@@ -19,8 +19,11 @@
 }
 
 .skill-category-content {
+  //border: 2px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px;
+  gap: 16px;
+  flex-wrap: wrap;
 }
+

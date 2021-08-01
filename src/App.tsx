@@ -11,7 +11,7 @@ import WelcomePageInfos from "./views/WelcomePageInfos";
 import Education from "./views/Education";
 import Footer from "./views/Footer";
 
-import SmoothScroll from "./components/animations/smoothScroll/SmoothScroll";
+//import SmoothScroll from "./components/animations/smoothScroll/SmoothScroll";
 import Cursor from "./components/Cursor";
 
 import './App.css';

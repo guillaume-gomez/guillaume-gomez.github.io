@@ -19,7 +19,7 @@ function Education() {
           end={new Date(2012,8,1)}
           diploma={t("education.u_t_c.job-title")}
           detail={t("education.u_t_c.bloc1")}
-          srcImage={`${process.env.PUBLIC_URL}/utc.jpg`}
+          srcImage={"utc.jpg"}
           />
           <School
           school={t("education.i_u_t.company")}
@@ -29,7 +29,7 @@ function Education() {
           end={new Date(2012,5,1)}
           diploma={t("education.i_u_t.job-title")}
           detail={t("education.i_u_t.bloc1")}
-          srcImage={`${process.env.PUBLIC_URL}/IUT.png`}
+          srcImage={"IUT.png"}
           />
         </div>
     </div>

@@ -28,7 +28,7 @@ function School({begin, end, diploma, detail, school, schoolUrl, location, srcIm
     <div className="school-container">
       <div className="school-image-container">
         <a href={schoolUrl}>
-          <img className="school-image" src={srcImage} alt="school-where-i-studied"/>
+          <img className="school-image" src={`${process.env.PUBLIC_URL}/schools/${srcImage}`} alt="school-where-i-studied"/>
         </a>
         <a href={schoolUrl}>
           {school}
