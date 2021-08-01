@@ -121,6 +121,7 @@ function Projects({refTarget} : ProjectInterface) {
           {
             itemsLoaded < projectsDataFiltered.length ?
             <div className="projects-load-more">
+              
               <a className="load-more-button" onClick={loadMore}>{t("projects.load-more")}</a>
             </div> :
             null

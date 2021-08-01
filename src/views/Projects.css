@@ -120,15 +120,16 @@
 }
 
 .load-more-button {
-  border: 2px solid white;
+  border: 2px solid var(--white);
   border-radius: 5px;
   padding: 12px;
   text-decoration: none;
-  color:  white;
+  color:  var(--white);
 }
 
 .load-more-button:hover {
-  color:  white;
+  color:  var(--black);
+  background: var(--white);
 }
 
 .project-filter > span {
