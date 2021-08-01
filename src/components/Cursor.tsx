@@ -6,7 +6,7 @@ const Cursor = () => {
   const cursorX = useMotionValue(-10);
   const cursorY = useMotionValue(-10);
 
-  const springConfig = { damping: 100, stiffness: 700 };
+  const springConfig = { damping: 100, stiffness: 1000 };
   const cursorXSpring = useSpring(cursorX, springConfig);
   const cursorYSpring = useSpring(cursorY, springConfig);
 
