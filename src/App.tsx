@@ -12,6 +12,7 @@ import Education from "./views/Education";
 import Footer from "./views/Footer";
 
 import SmoothScroll from "./components/animations/smoothScroll/SmoothScroll";
+import Cursor from "./components/Cursor";
 
 import './App.css';
 
@@ -24,6 +25,7 @@ function App() {
   function renderCommon() {
     return (
       <div className="App">
+        { isBrowser && <Cursor /> }
         <div className="App-container">
           {/*}<img src={`${process.env.PUBLIC_URL}/stripes.svg`} className="stripes" /> */}
           <div className="container">
