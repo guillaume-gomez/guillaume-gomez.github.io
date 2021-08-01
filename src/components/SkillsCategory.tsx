@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 import "./SkillsCategory.css";
 
 
@@ -28,7 +28,8 @@ function SkillsCategory({ skills, skillCategoryName } : SkillsCategoryInterface)
               alt={skill.name}
               height="64px"
               whileHover={{
-                rotateY:[0, 25],
+                scale: [1, 1.4, 1.2],
+                rotate: [0, 10, -10, 0],
                 transition: { duration: 0.25 }
               }}
             />

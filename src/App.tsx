@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import { renderToStaticMarkup } from "react-dom/server";
 import { isBrowser } from 'react-device-detect';
 
 import AboutMe from "./views/AboutMe";
@@ -14,6 +15,8 @@ import Footer from "./views/Footer";
 //import SmoothScroll from "./components/animations/smoothScroll/SmoothScroll";
 import Cursor from "./components/Cursor";
 
+import { ReactComponent as Stripes } from "./stripes.svg";
+
 import './App.css';
 
 function App() {
@@ -22,12 +25,14 @@ function App() {
   const toAboutMe = useRef<HTMLSpanElement>(null);
   const toTexts = useRef<HTMLSpanElement>(null);
 
+  const svgString =  encodeURIComponent(renderToStaticMarkup(<Stripes />));
+
   function renderCommon() {
     return (
       <div className="App">
         { isBrowser && <Cursor /> }
         <div className="App-container">
-          {/*}<img src={`${process.env.PUBLIC_URL}/stripes.svg`} className="stripes" /> */}
+          {/*<div className="stripes" style={{backgroundImage: `url('data:image/svg+xml;utf8, ${svgString}')`, display: "block"}} /> */}
           <div className="container">
             <span ref={toHomepage}>
               <WelcomePage toAboutMe={toAboutMe} toTexts={toTexts}/>
