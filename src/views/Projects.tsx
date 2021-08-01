@@ -93,7 +93,7 @@ function Projects({refTarget} : ProjectInterface) {
               <div className="project-filter">
                 <span className="project-tag-label">Tags</span>
                 <select className="custom-select" onChange={(e) => setFilter(e.target.value)} value={filter}>
-                  <option className="custom-option" value="">{t("projects.no-filter")}</option>
+                  <option className="custom-option" value="" key="no-value">{t("projects.no-filter")}</option>
                   {orderBy(tags).map(tag => <option className="custom-option" key={tag}>{tag}</option>)}
                 </select>
               </div>

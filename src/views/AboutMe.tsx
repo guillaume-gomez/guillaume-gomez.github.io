@@ -21,18 +21,18 @@ function AboutMe() {
         <FadeInWhenVisibleAndMove className="about-me-avatar" direction="left">
           <img className="about-me-avatar-img" src={`${process.env.PUBLIC_URL}profile.jpeg`} loading="lazy" alt="my face"/>
           <ul className="about-me-icons">
-            <li>
+            <li key="GITHUB">
               <a className="icons" href={GITHUB}>
                 <FontAwesomeIcon icon={faGithub} size="lg" />
               </a>
                 
             </li>
-            <li>
+            <li key="LINKEDIN">
               <a className="icons" href={LINKEDIN}>
                 <FontAwesomeIcon icon={faLinkedin} size="lg" />
               </a>
             </li>
-            <li>
+            <li key="MAIL">
               <a className="icons" href={`mailto:${MAIL}`}>
                 <FontAwesomeIcon icon={faEnvelope} size="lg" />
               </a>
@@ -42,7 +42,7 @@ function AboutMe() {
         <FadeInWhenVisibleAndMove className="about-me-text" direction="right">
           <p>
            <Trans i18nKey="about-me.content">
-             {[<i className="var(--text-primary)"/>]}
+             {[<i key="text" className="var(--text-primary)"/>]}
            </Trans>
           </p>
         </FadeInWhenVisibleAndMove>

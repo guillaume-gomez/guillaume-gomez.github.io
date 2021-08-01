@@ -42,7 +42,7 @@ function ProjectCell({name, githubPage, demo, preview, tags, theme, relevance} :
       </div>
       <div className="project-cell-tags">
         {  tags.map(tag =>
-            <div className="project-cell-tag">{tag}</div>
+            <div className="project-cell-tag" key={tag}>{tag}</div>
           )
       }
       </div>

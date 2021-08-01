@@ -23,6 +23,7 @@ function SkillsCategory({ skills, skillCategoryName } : SkillsCategoryInterface)
         {skills.map(skill => {
           return (
             <motion.img
+              key={skill.name}
               src={skill.iconSrc}
               alt={skill.name}
               whileHover={{

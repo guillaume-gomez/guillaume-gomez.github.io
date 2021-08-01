@@ -29,6 +29,7 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 body {
+  cursor: none;
   line-height: 1.25;
   font-size: 24px;
   font-family: 'Barlow';
