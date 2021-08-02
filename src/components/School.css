@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 40%;
+  width: 100%;
   gap: 16px;
   padding: 8px;
   background: var(--background-layout);
@@ -42,11 +42,4 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-
-@media(max-width: 921px) {
-  .school-container {
-     width: 60%;
-  }
 }
