@@ -3,8 +3,6 @@ import { uniq, orderBy } from "lodash";
 import { useTranslation } from 'react-i18next';
 import { motion, useAnimation } from "framer-motion";
 import "./Projects.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { projectsData } from "../constants";
 
 import FromLeftToRight from "../components/animations/FromLeftToRight";

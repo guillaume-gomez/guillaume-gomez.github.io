@@ -2,6 +2,9 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import SectionHeader from "../components/SectionHeader";
 import SkillCategory from "../components/SkillsCategory";
+
+import FromUpToDown from "../components/animations/FromUpToDown";
+
 import "./Skills.css";
 
 const Frontends = [
@@ -115,16 +118,24 @@ function Skills() {
       <SectionHeader text={t("skills.skills")} />
       <div className="skill-categories">
         <div className="skills-front">
-          <SkillCategory skills={Frontends} skillCategoryName={"Frontend"}  />
+          <FromUpToDown>
+            <SkillCategory skills={Frontends} skillCategoryName={"Frontend"}  />
+          </FromUpToDown>
         </div>
         <div className="skills-back">
-          <SkillCategory skills={Backends} skillCategoryName={"Backend"} />
+          <FromUpToDown>
+            <SkillCategory skills={Backends} skillCategoryName={"Backend"} />
+          </FromUpToDown>
         </div>
         <div className="skills-languages">
-          <SkillCategory skills={Languages} skillCategoryName={"Languages"} />
+          <FromUpToDown>
+            <SkillCategory skills={Languages} skillCategoryName={"Languages"} />
+          </FromUpToDown>
         </div>
         <div className="skills-tools">
-          <SkillCategory skills={Tools} skillCategoryName={"Tools"} />
+          <FromUpToDown>
+            <SkillCategory skills={Tools} skillCategoryName={"Tools"} />
+          </FromUpToDown>
         </div>
       </div>
     </section>

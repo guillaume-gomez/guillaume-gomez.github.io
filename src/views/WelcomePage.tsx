@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { isBrowser } from 'react-device-detect';
 import { useTranslation } from 'react-i18next';
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 import { ReactComponent as MacMouse } from "../macintosh-mouse.svg";
 
 
@@ -10,6 +9,7 @@ import "./WelcomePage.scss";
 
 import AframeScene from "../components/AframeScene";
 import Header from "../components/Header";
+import FromUpToDown from "../components/animations/FromUpToDown";
 
 interface WelcomePageInterface {
   toAboutMe: React.RefObject<HTMLSpanElement>
@@ -46,35 +46,3 @@ function WelcomePage({ toAboutMe, toTexts } : WelcomePageInterface) {
 }
 
 export default WelcomePage;
-
-interface FromUpToDownInterface {
-  children: React.ReactNode;
-}
-
-
-function FromUpToDown({ children } : FromUpToDownInterface) {
-  const controls = useAnimation();
-  const [ref, inView] = useInView();
-
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-      controls.start("move");
-    }
-  }, [controls, inView]);
-
-  return (
-    <motion.div
-      ref={ref}
-      animate={controls}
-      initial="visible"
-      transition={{ duration: 1.0, type: "spring", bounce: 0.25 }}
-      variants={{
-        visible: { y: -100, scale: 1.5 },
-        move: {y: 100, scale: 1.0 }
-      }}
-    >
-      {children}
-    </motion.div>
-  );
-}
