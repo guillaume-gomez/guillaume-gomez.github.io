@@ -45,6 +45,8 @@ function Projects({refTarget} : ProjectInterface) {
         .reduce<string[]>((acc, curValue) => [...acc, ...curValue.tags], []))
   , []);
 
+  console.log(tags)
+
   const themes = useMemo(() => uniq(projectsData.map(data => data.theme)),[]);
 
   useEffect(() => {

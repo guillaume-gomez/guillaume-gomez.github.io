@@ -120,7 +120,7 @@ export const projectsData = [
     githubPage: "https://github.com/guillaume-gomez/phaserEs6Sandbox",
     demo: "https://guillaume-gomez.github.io/phaserEs6Sandbox/build/",
     preview: "phaser-sandbox.png",
-    tags: ["phaser JS", "javascript"],
+    tags: ["phaser", "javascript"],
     theme: "learning",
     year: 2016,
     relevance: 4
@@ -400,7 +400,7 @@ export const projectsData = [
     githubPage: "https://github.com/guillaume-gomez/LD37",
     demo: "https://guillaume-gomez.github.io/LD37/build/",
     preview: "LD37.png",
-    tags: ["javascript", "phaser JS", "LD"],
+    tags: ["javascript", "phaser", "LD"],
     theme: "video-games",
     year:2017,
     relevance: 3
@@ -410,7 +410,7 @@ export const projectsData = [
     githubPage: "https://github.com/guillaume-gomez/LD36",
     demo: "https://guillaume-gomez.github.io/LD36/build/",
     preview: "LD36.png",
-    tags: ["javascript", "phaser JS", "LD"],
+    tags: ["javascript", "phaser", "LD"],
     theme: "video-games",
     year: 2017,
     relevance: 2
