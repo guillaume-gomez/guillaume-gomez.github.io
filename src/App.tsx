@@ -25,14 +25,14 @@ function App() {
   const toAboutMe = useRef<HTMLSpanElement>(null);
   const toTexts = useRef<HTMLSpanElement>(null);
 
-  const svgString =  encodeURIComponent(renderToStaticMarkup(<Stripes />));
+  const svgString = encodeURIComponent(renderToStaticMarkup(<Stripes />));
 
   function renderCommon() {
     return (
       <div className="App">
         { isBrowser && <Cursor /> }
         <div className="App-container">
-          {/*<div className="stripes" style={{backgroundImage: `url('data:image/svg+xml;utf8, ${svgString}')`, display: "block"}} /> */}
+          <div className="stripes" style={{backgroundImage: `url('data:image/svg+xml;utf8, ${svgString}')`, display: "block"}} />
           <div className="container">
             <span ref={toHomepage}>
               <WelcomePage toAboutMe={toAboutMe} toTexts={toTexts}/>
