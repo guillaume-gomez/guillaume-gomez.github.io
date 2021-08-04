@@ -56,8 +56,8 @@
 
 .project-cell-button {
   border-radius: 2px;
+  border: 2px solid var(--white);
   color: var(--white);
-  background: var(--text-primary-dark);
 }
 
 .project-cell-button-disabled {
@@ -69,8 +69,8 @@
 }
 
 .project-cell-button:hover, .project-cell-button:active {
-  background: var(--grey);
-  color: var(--white);
+  color: var(--text-primary-dark);
+  background: var(--white);
 }
 
 .project-cell-tags {

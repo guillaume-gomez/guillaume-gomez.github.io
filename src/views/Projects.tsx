@@ -8,6 +8,7 @@ import { projectsData } from "../constants";
 import FromLeftToRight from "../components/animations/FromLeftToRight";
 import ProjectsGrid from "../components/ProjectsGrid";
 import SectionHeader from "../components/SectionHeader";
+import CustomButton from "../components/CustomButton";
 
 interface ProjectInterface {
   refTarget: React.RefObject<HTMLSpanElement>
@@ -112,8 +113,12 @@ function Projects({refTarget} : ProjectInterface) {
           {
             itemsLoaded < projectsDataFiltered.length ?
             <div className="projects-load-more">
-              
-              <a className="load-more-button" onClick={loadMore}>{t("projects.load-more")}</a>
+              <CustomButton
+                className="load-more-button"
+                onClick={loadMore}
+                >
+                  {t("projects.load-more")}
+              </CustomButton>
             </div> :
             null
           }

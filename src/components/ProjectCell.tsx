@@ -1,7 +1,8 @@
 import React from 'react';
-import "./ProjectCell.css";
 import { motion } from "framer-motion";
+import CustomButton from "../components/CustomButton";
 
+import "./ProjectCell.css";
 
 export interface ProjectCellInterface {
   name: string;
@@ -32,10 +33,20 @@ function ProjectCell({name, githubPage, demo, preview, tags, theme, relevance} :
       <div className="project-cell-name">{name}</div>
       
       <div className="project-cell-buttons">
-        <a href={githubPage} className="project-cell-button">Github</a>
+        <CustomButton
+          href={githubPage}
+          className="project-cell-button"
+          >
+            Github
+         </CustomButton>
         {
           demo ?
-          <a href={demo} className="project-cell-button">Demo</a>
+          <CustomButton
+            href={demo} 
+            className="project-cell-button"
+            >
+              Demo
+            </CustomButton>
           :
           <div className="project-cell-button-disabled strikeout">Demo</div>
         }
