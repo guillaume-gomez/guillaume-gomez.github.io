@@ -2,7 +2,6 @@
   display: block;
   height: 300px;
   min-width: 300px;
-  background: rgba(51, 51, 51, 0.8);
   border-radius: 8px;
 }
 
@@ -15,15 +14,16 @@
 
 .project-cell-details {
   opacity: 0;
-  background: #17181782;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.47);
+  backdrop-filter: blur(4px);
   display: flex;
   flex-direction: column;
   position: relative;
   justify-content: center;
   align-items: center;
-  top: -310px;
   width: 100%;
-  height: calc(100% + 10px);
+  height: calc(100% + 6px)
 }
 
 
@@ -112,5 +112,8 @@
 @media (max-width: 1024px) {
   .project-cell-details {
     opacity: 1.0;
+    top: -306px;
+    background: rgba(0, 0, 0, 0.47);
+    backdrop-filter: blur(4px);
   }
 }

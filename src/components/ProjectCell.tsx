@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import CustomButton from "../components/CustomButton";
 
 import "./ProjectCell.css";
@@ -53,11 +53,13 @@ const tagToColor :  { [key: string]: string }  = {
 };
 
 function ProjectCell({name, githubPage, demo, preview, tags, theme, relevance} : ProjectCellInterface) {
+  const controls = useAnimation();
   return (
   <motion.div
     className="project-cell-content"
-    transition={{ duration: 0.5 }}
-    whileHover={{ scale: [1, 0.9, 1.1], boxShadow: "0px 2px 50px rgba(0, 0, 0, 0.25)"}}
+    onHoverStart={() => controls.start("visible")}
+    onHoverEnd={() => controls.start("hidden")}
+    whileHover={{ scale: [1, 0.9, 1.1], transition: { duration: 0.5 }}}
   >
    <motion.img
       className={preview ? "project-cell-image" : "project-cell-image project-cell-gray"}
@@ -66,7 +68,13 @@ function ProjectCell({name, githubPage, demo, preview, tags, theme, relevance} :
       alt={name}
     />  
     <motion.div className="project-cell-details"
-      whileHover={{opacity: 1.0, transition: { duration: 0.2 }}} >
+      transition={{ duration: 0.25 }}
+      animate={controls}
+      variants={{
+        visible: { opacity: 1, top: ["0px", "-100px", "-200px", "-306px"] },
+        hidden: { opacity: 0, },
+      }}
+      >
       <div className="project-cell-name">{name}</div>
       
       <div className="project-cell-buttons">
