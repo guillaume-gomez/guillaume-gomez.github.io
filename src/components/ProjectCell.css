@@ -15,7 +15,7 @@
 .project-cell-details {
   opacity: 0;
   border-radius: 8px;
-  background: rgba(0, 0, 0, 0.47);
+  background: var(--background-layout);
   backdrop-filter: blur(4px);
   display: flex;
   flex-direction: column;
@@ -57,7 +57,7 @@
 .project-cell-button {
   border-radius: 2px;
   border: 2px solid var(--white);
-  color: var(--white);
+  color: var(--text-primary);
 }
 
 .project-cell-button-disabled {

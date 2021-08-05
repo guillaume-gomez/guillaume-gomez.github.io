@@ -1,57 +1,16 @@
 :root {
   --primary: #2962ff;
-  --primary-light: #768fff;
-  --primary-dark: #0039cb;
-  --secondary: #c62828;
-  --secondary-light: #ff5f52;
-  --secondary-dark: #8e0000;
   --text-primary: #ffffff;
   --text-primary-dark: #000000;
-  --text-secondary: #ffffff;
-  --black: #000;
   --white: #FFF;
   --grey: #454545;
   --background-layout: #0b080eb3;
 }
 
 #root {
-background-image: linear-gradient(to right top, #030111, #0b091c, #0f1027, #0e1532, #0d1a3e, #0c1d46, #091f4e, #062256, #06245c, #072662, #082769, #0a296f);
-
+  background-image: linear-gradient(to right top, #030111, #0b091c, #0f1027, #0e1532, #0d1a3e, #0c1d46, #091f4e, #062256, #06245c, #072662, #082769, #0a296f);
 }
 
-.parallax {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.dynamic-parallax::after {
-  background: rgb(15, 34, 94);
-  /* Display and position the pseudo-element */
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  /* Move the pseudo-element back away from the camera,
-   * then scale it back up to fill the viewport.
-   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-  transform: translateZ(-1px) scale(1.5);
-  /* Force the background image to fill the whole element. */
-  background-size: 100%;
-  /* Keep the image from overlapping sibling elements. */
-  z-index: -1;
-}
-
-/* The styling for the static div. */
-.static-parallax {
-  background: white;
-}
 
 .underline-link {
   text-decoration: underline;
@@ -89,14 +48,14 @@ background-image: linear-gradient(to right top, #030111, #0b091c, #0f1027, #0e15
   border: 2px solid var(--white);
   border-radius: 4px;
   background: none;
-  color: var(--white);
+  color: var(--text-primary);
   font-family: 'Barlow';
   font-size: 20px;
   padding-right:1rem;
 }
 
 .custom-option {
-  color: var(--black);
+  color: var(--text-primary-black);
 }
 
 .App-container {

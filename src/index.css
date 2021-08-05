@@ -33,10 +33,8 @@ body {
   line-height: 1.25;
   font-size: 24px;
   font-family: 'Barlow';
-  color: var(--white);
-  background: #000e21;
-//background: rgb(4,23,50);
-//background: linear-gradient(180deg, rgba(4,23,70,0.67) 0%, rgba(13,28,77,1) 50%, rgba(6,14,41,0.81) 100%);
+  color: var(--text-primary);
+
 }
 h1 {
   font-size: 96px;
