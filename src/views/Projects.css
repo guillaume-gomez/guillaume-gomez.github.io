@@ -129,7 +129,7 @@
 }
 
 .load-more-button:hover {
-  color:  var(--text-primary-black);
+  color:  var(--text-primary-dark);
   background: var(--white);
 }
 

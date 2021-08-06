@@ -37,10 +37,6 @@
   padding: 8px;
 }
 
-.header-links:hover {
-  color: var(--grey);
-}
-
 .header-logo {
   //border: 2px solid blue;
   width: 48px;
