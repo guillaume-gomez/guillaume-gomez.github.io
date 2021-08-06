@@ -7,10 +7,10 @@ function AframeScene() {
     <a-scene  loading-screen="dotsColor: red; backgroundColor: #062859" embedded vr-mode-ui="enabled: false">
       <a-assets>
         {/*<img id="my-image" src={`${process.env.PUBLIC_URL}/terminal.jpg`} /> */}
-        <a-asset-item id="computer-obj" src={`${process.env.PUBLIC_URL}/3d-assets/mainframe.obj`}></a-asset-item>
         <a-asset-item id="computer-mtl" src={`${process.env.PUBLIC_URL}/3d-assets/mainframe.mtl`}></a-asset-item>
+        <a-asset-item id="computer-obj" src={`${process.env.PUBLIC_URL}/3d-assets/mainframe.obj`}></a-asset-item>
         <a-asset-item id="balloon" src={`${process.env.PUBLIC_URL}/3d-assets/ball.gltf`}></a-asset-item>
-         <a-asset-item id="cassette" src={`${process.env.PUBLIC_URL}/3d-assets/scene.gltf`}></a-asset-item>
+         <a-asset-item id="cassette" src={`${process.env.PUBLIC_URL}/3d-assets/cassette.gltf`}></a-asset-item>
       </a-assets>
       <a-camera camera="fov: 80;" id="camera" rotation-reader position="0 1.6 0" listener wasd-controls-enabled="false">
 </a-camera>
