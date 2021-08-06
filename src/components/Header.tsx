@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import i18n from '../i18n';
 
@@ -16,15 +16,24 @@ interface HeaderInterface {
 
 
 function Header({refTarget} : HeaderInterface) {
-   const { t, i18n: {language} } = useTranslation();
+  const { t, i18n: {language} } = useTranslation();
+  const [iconNumber, setIconNumber] = useState<number>(1);
+
   function onChangeLanguage(e: any) {
     i18n.changeLanguage(e.target.value)
   }
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIconNumber(oldNumber => (oldNumber + 1) % 10)
+    }, 1000);
+  }, [iconNumber]);
+
   return (
     <div className="header-container">
       <div className="header-name">
         <a href="https://guillaume-gomez.github.io/avatar-generator/">
-          <img className="header-logo" src={`${process.env.PUBLIC_URL}/icon.png`} alt="one of my generated icon" />
+          <img className="header-logo" src={`${process.env.PUBLIC_URL}/icons/${iconNumber}.png`} alt="one of my generated icon" />
         </a>
       </div>
       <div className="header-links">
