@@ -17,13 +17,12 @@ function Footer({refTarget} : FooterInterface) {
 
   return (
     <footer className="footer-content">
-      <div className="footer-up">
+      <div className="footer-up" onClick={() => refTarget!.current!.scrollIntoView({behavior: "smooth"}) }>
         <motion.div 
           whileHover={{ translateY: -5, transition: { duration: 0.5, repeat: Infinity } }}
-          onClick={() => refTarget!.current!.scrollIntoView({behavior: "smooth"}) } >
+        >
           <FontAwesomeIcon icon={faChevronUp} size="2x"/>
         </motion.div>
-      
       </div>
       <div className="about-website">
         <p>Guillaume Gomez © 2021 </p>

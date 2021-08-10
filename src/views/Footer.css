@@ -9,6 +9,7 @@
 }
 
 .footer-up {
+  z-index: 2;
   display: flex;
   justify-content: center;
   position: relative;
