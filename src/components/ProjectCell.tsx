@@ -71,8 +71,8 @@ function ProjectCell({name, githubPage, demo, preview, tags, theme, relevance} :
       transition={{ duration: 0.25 }}
       animate={controls}
       variants={{
-        visible: { opacity: 1, top: ["0px", "-100px", "-200px", "-306px"] },
-        hidden: { opacity: 0, },
+        visible: { opacity: 1, height: "100%" },
+        hidden: { opacity: 0, height: "0%", top: "-306px" },
       }}
       >
       <div className="project-cell-name">{name}</div>
