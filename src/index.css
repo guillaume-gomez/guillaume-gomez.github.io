@@ -97,12 +97,6 @@ a:hover {
   color: var(--grey);
 }
 
-ol, ul {
-  list-style: none;
-  padding-left: 2rem
-}
-
-
 blockquote, q {
   quotes: none;
 }

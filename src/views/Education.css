@@ -1,15 +1,22 @@
 .education-content {
-  //border: 2px solid purple;
+  //border: 2px solid green;
+  display: flex;
+  flex-direction: column;
+  gap: 64px 0px;
 }
 
 .education-container {
   //border: 2px solid red;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
-  flex-shrink: 0;
-  flex-flow: row wrap;
+  //flex-wrap: wrap;
+  //flex-flow: row wrap;
+  
+  align-items: flex-start;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  
   width: 100%;
   height: 100%;
   gap: 16px;
@@ -18,8 +25,11 @@
 @media(max-width: 921px) {
   .education-container {
     flex-direction: column;
-    //gap: 32px 0;
+    //gap: 3px 0;
     justify-content: center;
     align-items: center;
+  }
+  .education-content {
+    gap: 45px 0px;
   }
 }

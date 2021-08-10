@@ -68,6 +68,7 @@ function Projects({refTarget} : ProjectInterface) {
   return (
     <section className="projects-content" id="project">
       <SectionHeader text={t("projects.projects")} />
+        <div className="projects-header-content">
         <ul className="projects-header">
           <FromLeftToRight key={"all"} onClick={() => onChangeTheme("")}>
             <a>
@@ -84,8 +85,7 @@ function Projects({refTarget} : ProjectInterface) {
             )
           }
         </ul>
-        <div className="projects-grid">
-         { <div className="projects-grid-header">
+          <div className="projects-grid-header">
             <div className="projects-header-filter-and-stats">
               <div className="project-filter">
                 <span className="project-tag-label">Tags</span>
@@ -108,7 +108,9 @@ function Projects({refTarget} : ProjectInterface) {
                 </motion.div>
                 {t("projects.projects")}
              </div>
-          </div>}
+          </div>
+        </div>
+        <div className="projects-grid">
           <ProjectsGrid projectsData={projectsDataFiltered.slice(0, itemsLoaded)} />
           {
             itemsLoaded < projectsDataFiltered.length ?

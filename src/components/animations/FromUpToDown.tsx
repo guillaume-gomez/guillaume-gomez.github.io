@@ -25,7 +25,7 @@ function FromUpToDown({ children } : FromUpToDownInterface) {
       initial="visible"
       transition={{ duration: 1.0, type: "spring", bounce: 0.25 }}
       variants={{
-        visible: { y: -100, scale: 1.5 },
+        visible: { y: -100, scale: 0 },
         move: {y: 0, scale: 1.0 }
       }}
     >

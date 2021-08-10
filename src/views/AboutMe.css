@@ -2,14 +2,14 @@
   //border: 5px solid blue;
   width:  100%;
   height:  100%;
-  gap:  32px 0px;
+  gap:  64px 0px;
   display: grid;
   box-sizing: border-box;
   grid-template-rows: auto auto;
 }
 
 .about-me-infos {
-  //border: 5px solid orange;
+  //order: 5px solid orange;
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
@@ -57,12 +57,15 @@
   border-radius: 10px;
   border: 5px solid var(--dark);
   margin-bottom: 8px;
-} 
+}
 
 @media(max-width: 768px) {
+  .about-me-content {
+    gap: 0;
+  }
   .about-me-infos {
     grid-template-rows: 0.60fr 1fr;
     grid-template-columns: 1fr;
-    gap: 0;
+    gap: 8px;
   }
 }

@@ -11,7 +11,8 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(197px);
   border-radius: 12px;
-   display: grid; 
+  padding: 12px;
+  display: grid; 
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
   grid-template-rows: 0.25fr 1fr 0.25fr; 
   gap: 12px 12px; 
@@ -20,7 +21,6 @@
     "Image Text Text Text Text Text Text Text Text Text"
     "Image Footer Footer Footer Footer Footer Footer Footer Footer Footer"; 
   //border: 5px solid var(--white);
-  padding: 16px;
 }
 
 .job-header {
@@ -48,6 +48,12 @@
   align-items: center;
   padding: 0 8px;
 }
+
+.job-body > ol, ul {
+  //list-style: none;
+  padding-left: 2rem
+}
+
 
 .job-footer {
   //border: 2px solid brown;
@@ -121,6 +127,12 @@
   .job-body-content > ul {
     padding-left: 0;
   }
+
+  .job-body > ol, ul {
+    list-style: none;
+    padding-left: 2rem
+  }
+
 }
 
 
