@@ -35,11 +35,11 @@ background-image: linear-gradient(to right bottom, #062859, #062d62, #06326c, #0
 
 
 .container {
-  //border: 5px solid teal;
+  border: 5px solid teal;
   z-index: 1;
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 128px;
   grid-column-start: 2;
   grid-column-end: 12;
 }
