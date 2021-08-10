@@ -1,5 +1,6 @@
 import React from 'react';
-import 'aframe'
+import 'aframe';
+import 'aframe-orbit-controls';
 import "./AframeScene.css";
 
 function AframeScene() {
@@ -12,7 +13,7 @@ function AframeScene() {
         <a-asset-item id="balloon" src={`${process.env.PUBLIC_URL}/3d-assets/ball.gltf`}></a-asset-item>
          <a-asset-item id="cassette" src={`${process.env.PUBLIC_URL}/3d-assets/cassette.gltf`}></a-asset-item>
       </a-assets>
-      <a-camera camera="fov: 80;" id="camera" rotation-reader position="0 1.6 0" listener wasd-controls-enabled="false">
+      <a-camera camera="fov: 80;" id="camera" look-controls orbit-controls="target: 0 1.6 0; minDistance: 0.5; maxDistance: 180; initialPosition: 0 0 1.6" listener wasd-controls-enabled="false">
 </a-camera>
       <a-entity
             animation="property: object3D.position.y; to: 0.5; dir: alternate; dur: 2000; loop: true"
