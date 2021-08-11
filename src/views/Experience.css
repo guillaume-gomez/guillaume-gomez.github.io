@@ -1,5 +1,5 @@
 .experience-content {
-  border: 2px solid purple;
+  //border: 2px solid purple;
   display: flex;
   flex-direction: column;
   line-height: 1.5;
@@ -8,7 +8,7 @@
 }
 
 .experience-jobs {
-  border: 2px solid blue;
+  //border: 2px solid blue;
   //padding: 64px 0;
   max-width: 100%;
 }

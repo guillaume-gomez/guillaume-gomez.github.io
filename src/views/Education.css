@@ -1,12 +1,12 @@
 .education-content {
-  border: 2px solid green;
+  //border: 2px solid green;
   display: flex;
   flex-direction: column;
   gap: 0px 0px;
 }
 
 .education-container {
-  border: 2px solid red;
+  //border: 2px solid red;
   display: flex;
   justify-content: space-around;
   //flex-wrap: wrap;

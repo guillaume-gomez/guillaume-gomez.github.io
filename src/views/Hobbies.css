@@ -1,5 +1,5 @@
 .hobbies-content {
-  border: 2px solid purple;
+  //border: 2px solid purple;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +10,7 @@
 
 
 .hobbies-icons {
-  border: 2px solid green;
+  //border: 2px solid green;
   display: flex;
   width: 100%;
   gap: 24px;

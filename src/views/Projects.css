@@ -1,5 +1,5 @@
 .projects-content {
-  border:  2px solid green;
+  //border:  2px solid green;
   display: grid;
   box-sizing: border-box;
   width: 100%;
@@ -19,7 +19,7 @@
 }
 
 .projects-header {
-  border:  2px solid red;
+  //border:  2px solid red;
   //width: 50%;
   display: flex;
   align-content: center;
@@ -88,7 +88,7 @@
 }
 
 .projects-header-filter-and-stats {
-  border:  2px solid blueviolet;
+  //border:  2px solid blueviolet;
   display: flex;
   gap: 12px;
   justify-content: flex-start;
@@ -96,7 +96,7 @@
 }
 
 .projects-grid-header {
-  border:  2px solid greenyellow;
+  //border:  2px solid greenyellow;
   gap: 12px;
   display: flex;
   align-items: center;
@@ -105,7 +105,7 @@
 
 .projects-grid {
   padding-top: 32px;
-  border: 2px solid brown;
+  //border: 2px solid brown;
   display: grid;
   box-sizing: border-box;
   width: 100%;

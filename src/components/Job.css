@@ -1,6 +1,6 @@
 /* Container around content */
 .job-container {
-  border: 2px solid green;
+  //border: 2px solid green;
   padding: 0px 40px;
   position: relative;
   background-color: inherit;
