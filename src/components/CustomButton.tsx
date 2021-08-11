@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { motion, useMotionValue, useSpring } from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
 
 interface CustomButtonInterface {
  children: React.ReactNode;

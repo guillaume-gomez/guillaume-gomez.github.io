@@ -2,7 +2,7 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { uniq, orderBy } from "lodash";
 import { useTranslation } from 'react-i18next';
 import { motion, useAnimation } from "framer-motion";
-import "./Projects.css";
+import { isBrowser } from 'react-device-detect';
 import { projectsData } from "../constants";
 
 import FromLeftToRight from "../components/animations/FromLeftToRight";
@@ -10,6 +10,8 @@ import FadeInWhenVisible from "../components/animations/FadeInWhenVisible";
 import ProjectsGrid from "../components/ProjectsGrid";
 import SectionHeader from "../components/SectionHeader";
 import CustomButton from "../components/CustomButton";
+
+import "./Projects.css";
 
 interface ProjectInterface {
   refTarget: React.RefObject<HTMLSpanElement>
@@ -66,26 +68,51 @@ function Projects({refTarget} : ProjectInterface) {
     setFilter("")
   }
 
+   function renderHeader() {
+     const desktop = (
+       <ul className="projects-header">
+        <FromLeftToRight key={"all"} onClick={() => onChangeTheme("")}>
+          <a className={theme === "" ? "projects-header-selected" : ""}>
+            {t("projects.theme.all")}
+          </a>
+        </FromLeftToRight>
+        {
+          orderBy(themes).map((_theme, index) => 
+            <FromLeftToRight key={_theme} onClick={() => onChangeTheme(_theme)}>
+              <a className={theme === _theme ? "projects-header-selected" : ""}>
+                {t(`projects.theme.${_theme}`)}
+              </a>
+            </FromLeftToRight>
+          )
+        }
+      </ul>);
+
+     const mobile = (
+       <ul className="projects-header">
+        <li key="all">
+          <a>
+            {t("projects.theme.all")}
+          </a>
+        </li>
+        {
+          orderBy(themes).map((_theme, index) => 
+            <li key={_theme} onClick={() => onChangeTheme(_theme)}>
+              <a>
+                {t(`projects.theme.${_theme}`)}
+              </a>
+            </li>
+          )
+        }
+      </ul>);
+
+     return isBrowser ? desktop : mobile;
+   }
+
   return (
     <section className="projects-content" id="project">
       <SectionHeader text={t("projects.projects")} />
       <div className="projects-header-content">
-        <ul className="projects-header">
-          <FromLeftToRight key={"all"} onClick={() => onChangeTheme("")}>
-            <a className={theme == "" ? "projects-header-selected" : ""}>
-              {t("projects.theme.all")}
-            </a>
-          </FromLeftToRight>
-          {
-            orderBy(themes).map((_theme, index) => 
-              <FromLeftToRight key={_theme} onClick={() => onChangeTheme(_theme)}>
-                <a className={theme === _theme ? "projects-header-selected" : ""}>
-                  {t(`projects.theme.${_theme}`)}
-                </a>
-              </FromLeftToRight>
-            )
-          }
-        </ul>
+        {renderHeader()}
           <div className="projects-grid-header">
             <div className="projects-header-filter-and-stats">
               <div className="project-filter">
@@ -112,9 +139,18 @@ function Projects({refTarget} : ProjectInterface) {
           </div>
         </div>
         <div className="projects-grid">
-          <FadeInWhenVisible duration={1}>
-          <ProjectsGrid projectsData={projectsDataFiltered} itemsLoaded={itemsLoaded} />
           {
+            // project grid
+            isBrowser ? (
+              <FadeInWhenVisible duration={1}>
+                <ProjectsGrid projectsData={projectsDataFiltered} itemsLoaded={itemsLoaded} />
+              </FadeInWhenVisible>
+            ) :
+            <ProjectsGrid projectsData={projectsDataFiltered} itemsLoaded={itemsLoaded} />
+          }
+          
+          {
+            // buttons
             itemsLoaded < projectsDataFiltered.length ?
             <div className="projects-load-more">
               <CustomButton
@@ -126,7 +162,6 @@ function Projects({refTarget} : ProjectInterface) {
             </div> :
             null
           }
-          </FadeInWhenVisible>
         </div>
     </section>
     
