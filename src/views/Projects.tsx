@@ -6,6 +6,7 @@ import "./Projects.css";
 import { projectsData } from "../constants";
 
 import FromLeftToRight from "../components/animations/FromLeftToRight";
+import FadeInWhenVisible from "../components/animations/FadeInWhenVisible";
 import ProjectsGrid from "../components/ProjectsGrid";
 import SectionHeader from "../components/SectionHeader";
 import CustomButton from "../components/CustomButton";
@@ -111,6 +112,7 @@ function Projects({refTarget} : ProjectInterface) {
           </div>
         </div>
         <div className="projects-grid">
+          <FadeInWhenVisible duration={1}>
           <ProjectsGrid projectsData={projectsDataFiltered} itemsLoaded={itemsLoaded} />
           {
             itemsLoaded < projectsDataFiltered.length ?
@@ -124,6 +126,7 @@ function Projects({refTarget} : ProjectInterface) {
             </div> :
             null
           }
+          </FadeInWhenVisible>
         </div>
     </section>
     
