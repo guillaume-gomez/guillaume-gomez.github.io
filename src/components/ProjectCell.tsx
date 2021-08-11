@@ -59,7 +59,6 @@ function ProjectCell({name, githubPage, demo, preview, tags, theme, relevance} :
     className="project-cell-content"
     onHoverStart={() => controls.start("visible")}
     onHoverEnd={() => controls.start("hidden")}
-    whileHover={{ scale: [1, 0.9, 1.1], transition: { duration: 0.5 }}}
   >
    <motion.img
       className={preview ? "project-cell-image" : "project-cell-image project-cell-gray"}

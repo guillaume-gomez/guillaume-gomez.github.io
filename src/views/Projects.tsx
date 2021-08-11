@@ -111,7 +111,7 @@ function Projects({refTarget} : ProjectInterface) {
           </div>
         </div>
         <div className="projects-grid">
-          <ProjectsGrid projectsData={projectsDataFiltered.slice(0, itemsLoaded)} />
+          <ProjectsGrid projectsData={projectsDataFiltered} itemsLoaded={itemsLoaded} />
           {
             itemsLoaded < projectsDataFiltered.length ?
             <div className="projects-load-more">
