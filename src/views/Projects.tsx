@@ -72,15 +72,15 @@ function Projects({refTarget} : ProjectInterface) {
       <div className="projects-header-content">
         <ul className="projects-header">
           <FromLeftToRight key={"all"} onClick={() => onChangeTheme("")}>
-            <a>
+            <a className={theme == "" ? "projects-header-selected" : ""}>
               {t("projects.theme.all")}
             </a>
           </FromLeftToRight>
           {
-            orderBy(themes).map((theme, index) => 
-              <FromLeftToRight key={theme} onClick={() => onChangeTheme(theme)}>
-                <a>
-                  {t(`projects.theme.${theme}`)}
+            orderBy(themes).map((_theme, index) => 
+              <FromLeftToRight key={_theme} onClick={() => onChangeTheme(_theme)}>
+                <a className={theme === _theme ? "projects-header-selected" : ""}>
+                  {t(`projects.theme.${_theme}`)}
                 </a>
               </FromLeftToRight>
             )
