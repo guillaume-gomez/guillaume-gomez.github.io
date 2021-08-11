@@ -1,9 +1,8 @@
 .projects-content {
-  //border:  2px solid green;
+  border:  2px solid green;
   display: grid;
   box-sizing: border-box;
   width: 100%;
-  gap:  64px 0px;
   grid-template-rows: auto auto;
 }
 
@@ -20,7 +19,7 @@
 }
 
 .projects-header {
-  //border:  2px solid red;
+  border:  2px solid red;
   //width: 50%;
   display: flex;
   align-content: center;
@@ -82,7 +81,7 @@
 }
 
 .projects-header-filter-and-stats {
-  //border:  2px solid blueviolet;
+  border:  2px solid blueviolet;
   display: flex;
   gap: 12px;
   justify-content: flex-start;
@@ -90,7 +89,7 @@
 }
 
 .projects-grid-header {
-  //border:  2px solid greenyellow;
+  border:  2px solid greenyellow;
   gap: 12px;
   display: flex;
   align-items: center;
@@ -98,7 +97,8 @@
 }
 
 .projects-grid {
-  //border: 2px solid brown;
+  padding-top: 32px;
+  border: 2px solid brown;
   display: grid;
   box-sizing: border-box;
   width: 100%;
@@ -188,9 +188,6 @@
     overflow: auto;
     display: flex;
     align-items: flex-start;
-  }
-  .projects-content {
-    gap: 32px 0;
   }
 }
 

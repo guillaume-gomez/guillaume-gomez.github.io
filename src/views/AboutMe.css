@@ -1,15 +1,15 @@
 .about-me-content {
-  //border: 5px solid blue;
+  border: 5px solid blue;
   width:  100%;
   height:  100%;
-  gap:  64px 0px;
+  gap: 0px 0px;
   display: grid;
   box-sizing: border-box;
   grid-template-rows: auto auto;
 }
 
 .about-me-infos {
-  //order: 5px solid orange;
+  border: 5px solid orange;
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;

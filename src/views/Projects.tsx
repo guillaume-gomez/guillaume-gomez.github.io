@@ -68,7 +68,7 @@ function Projects({refTarget} : ProjectInterface) {
   return (
     <section className="projects-content" id="project">
       <SectionHeader text={t("projects.projects")} />
-        <div className="projects-header-content">
+      <div className="projects-header-content">
         <ul className="projects-header">
           <FromLeftToRight key={"all"} onClick={() => onChangeTheme("")}>
             <a>

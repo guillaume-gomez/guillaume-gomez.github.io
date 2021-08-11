@@ -1,3 +1,17 @@
 .section-header-container {
   width: "100%";
+  padding-bottom: 128px;
+}
+
+@media(max-width: 1001px) {
+  .section-header-container {
+    padding-bottom: 64px;
+  }
+}
+
+
+@media(max-width: 601px) {
+  .section-header-container {
+    padding-bottom: 32px;
+  }
 }

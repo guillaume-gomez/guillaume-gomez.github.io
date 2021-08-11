@@ -8,7 +8,7 @@ interface TimelineInterface {
 function Timeline({children}: TimelineInterface) {
   return (
     <div className="timeline">
-    <div>
+    <div className="timeline-items">
       {children}
     </div>
     </div>

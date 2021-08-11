@@ -14,3 +14,9 @@
   left: 0%;
   margin-left: -4px;
 }
+
+.timeline-items {
+  display: flex;
+  flex-direction: column;
+  gap: 32px 0;
+}
