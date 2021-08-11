@@ -1,11 +1,13 @@
 .section-header-container {
   width: "100%";
-  padding-bottom: 128px;
+  padding-bottom: 64px;
+  padding-top: 128px;
 }
 
 @media(max-width: 1001px) {
   .section-header-container {
     padding-bottom: 64px;
+    padding-top: 32px;
   }
 }
 
@@ -13,5 +15,7 @@
 @media(max-width: 601px) {
   .section-header-container {
     padding-bottom: 32px;
+    padding-top: 16px;
+    //border: 2px solid aliceblue;
   }
 }

@@ -25,11 +25,11 @@
 @media(max-width: 921px) {
   .education-container {
     flex-direction: column;
-    //gap: 3px 0;
+    gap: 32px 0;
     justify-content: center;
     align-items: center;
   }
   .education-content {
-    gap: 45px 0px;
+    //gap: 45px 0px;
   }
 }

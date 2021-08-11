@@ -64,8 +64,9 @@
     gap: 0;
   }
   .about-me-infos {
-    grid-template-rows: 0.60fr 1fr;
+    //border:  2px solid saddlebrown;
+    grid-template-rows: 0.50fr 1fr;
     grid-template-columns: 1fr;
-    gap: 8px;
+    gap: 8px 0px;
   }
 }

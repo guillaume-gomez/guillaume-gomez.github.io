@@ -27,6 +27,7 @@
 
 @media(max-width: 601px) {
   .skill-categories {
+    //border: 2px solid limegreen;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -36,11 +37,6 @@
       ". Back Back Back Back Back Back Back Back Back Back ."
       ". Languages Languages Languages Languages Languages Languages Languages Languages Languages Languages ."
       ". Tools Tools Tools Tools Tools Tools Tools Tools Tools Tools .";
-
-    //border: 2px solid red;
     padding: 16px 0;
-  }
-  .skills-content {
-    gap: 45px 0;
   }
 }
