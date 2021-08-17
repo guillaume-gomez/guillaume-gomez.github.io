@@ -8,7 +8,7 @@
 
 ## Version 2
 
-[source code ](https://github.com/guillaume-gomez/guillaume-gomez.github.io/releases/tag/2.0)
+[source code ](https://github.com/guillaume-gomez/guillaume-gomez.github.io/releases/tag/v2)
 
 ## External resources
 
