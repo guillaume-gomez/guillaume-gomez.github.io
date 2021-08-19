@@ -142,7 +142,7 @@ function Projects({refTarget} : ProjectInterface) {
           {
             // project grid
             isBrowser ? (
-              <FadeInWhenVisible duration={1}>
+              <FadeInWhenVisible>
                 <ProjectsGrid projectsData={projectsDataFiltered} itemsLoaded={itemsLoaded} />
               </FadeInWhenVisible>
             ) :

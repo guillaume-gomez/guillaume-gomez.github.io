@@ -5,10 +5,9 @@ import { motion, useAnimation } from "framer-motion";
 interface FadeInWhenVisibleInterface {
   children: React.ReactNode;
   className?: string;
-  duration?: number
 }
 
-function FadeInWhenVisible({ children, className, duration= 2.0 } : FadeInWhenVisibleInterface) {
+function FadeAndGrowInWhenVisible({ children, className } : FadeInWhenVisibleInterface) {
   const controls = useAnimation();
   const [ref, inView] = useInView();
 
@@ -24,10 +23,10 @@ function FadeInWhenVisible({ children, className, duration= 2.0 } : FadeInWhenVi
       animate={controls}
       className={className}
       initial="hidden"
-      transition={{ duration, type: "spring", bounce: 0.20 }}
+      transition={{ duration: 2.0,  type: "spring", bounce: 0.20 }}
       variants={{
-        visible: { opacity: 1 },
-        hidden: { opacity: 0},
+        visible: { opacity: 1, scale: 1 },
+        hidden: { opacity: 0, scale: 0,},
       }}
     >
       {children}
@@ -35,4 +34,4 @@ function FadeInWhenVisible({ children, className, duration= 2.0 } : FadeInWhenVi
   );
 }
 
-export default FadeInWhenVisible;
+export default FadeAndGrowInWhenVisible;

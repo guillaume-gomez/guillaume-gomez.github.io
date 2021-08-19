@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import School from "../components/School";
 import SectionHeader from "../components/SectionHeader";
-import FadeInWhenVisible from "../components/animations/FadeInWhenVisible";
+import FadeInAndGrowWhenVisible from "../components/animations/FadeInAndGrowWhenVisible";
 
 
 import "./Education.css";
@@ -13,7 +13,7 @@ function Education() {
     <div className="education-content">
       <SectionHeader text={t("education.education")} />
         <div className="education-container">
-          <FadeInWhenVisible>
+          <FadeInAndGrowWhenVisible>
             <School
               school={t("education.u_t_c.company")}
               schoolUrl="https://www.utc.fr/"
@@ -24,8 +24,8 @@ function Education() {
               detail={t("education.u_t_c.bloc1")}
               srcImage={"utc.jpg"}
               />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible>
+            </FadeInAndGrowWhenVisible>
+            <FadeInAndGrowWhenVisible>
               <School
               school={t("education.i_u_t.company")}
               schoolUrl="https://iut.univ-amu.fr/sites/arles"
@@ -36,7 +36,7 @@ function Education() {
               detail={t("education.i_u_t.bloc1")}
               srcImage={"IUT.png"}
               />
-            </FadeInWhenVisible>
+            </FadeInAndGrowWhenVisible>
         </div>
     </div>
   );

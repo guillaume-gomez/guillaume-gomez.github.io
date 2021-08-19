@@ -70,7 +70,7 @@ function ProjectCell({name, githubPage, demo, preview, tags, theme, relevance} :
       transition={{ duration: 0.25 }}
       animate={controls}
       variants={{
-        visible: { opacity: 1, height: "100%" },
+        visible: { opacity: 1, height: "101%" },
         hidden: { opacity: 0, height: "0%", top: "-306px" },
       }}
       >
