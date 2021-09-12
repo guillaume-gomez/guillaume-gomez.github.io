@@ -18,8 +18,8 @@ i18n
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
     resources,
-    lng: "fr",
-    fallbackLng: "fr", // use en if detected lng is not available
+    lng: "en",
+    fallbackLng: "en", // use en if detected lng is not available
     interpolation: {
       escapeValue: false // react already safes from xss
     }
