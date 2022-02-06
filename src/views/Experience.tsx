@@ -70,7 +70,7 @@ function Experience() {
             companyUrl="https://masasim.com/"
             location={t("experience.masa.location")}
             begin={new Date(2015,1,1)}
-            end={new Date(2017,5,1)}
+            end={new Date(2015,5,1)}
             jobTitle={t("experience.masa.job-title")}
             imgSrc={"masa.png"}
             >
