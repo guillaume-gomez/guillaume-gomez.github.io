@@ -217,8 +217,8 @@ export const projectsData = [
   },
   {
     name: "Gif Wall",
-    githubPage: "https://github.com/guillaume-gomez/giffWall",
-    demo: "https://guillaume-gomez.github.io/giffWall/index.html",
+    githubPage: "https://github.com/guillaume-gomez/gifWall",
+    demo: "https://guillaume-gomez.github.io/gifWall/index.html",
     preview: "giffWall.png",
     tags: ["javascript"],
     theme: "creative",
@@ -524,5 +524,25 @@ export const projectsData = [
     theme: "creative",
     year: 2021,
     relevance: 3
-  }
+  },
+  {
+    name: "To pointillism",
+    githubPage: "https://github.com/guillaume-gomez/to-pointillism",
+    demo: "https://guillaume-gomez.github.io/to-pointillism",
+    preview: "to-pointillism.jpeg",
+    tags: ["typescript"],
+    theme: "creative",
+    year: 2021,
+    relevance: 5
+  },
+  {
+    name: "Squared words",
+    githubPage: "https://github.com/guillaume-gomez/squared_words",
+    demo: "https://guillaume-gomez.github.io/squared_words",
+    preview: "squared_words.png",
+    tags: ["typescript", "threejs"],
+    theme: "creative",
+    year: 2022,
+    relevance: 5
+  },
 ];
