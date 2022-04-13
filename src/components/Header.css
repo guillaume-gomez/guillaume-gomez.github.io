@@ -1,5 +1,4 @@
 .header-container {
-  //border:  2px solid darkgoldenrod;
   height: 65px;
   width: 100%;
   display: flex;
@@ -19,7 +18,7 @@
 }
 
 .header-name {
-  //border: 5px solid green;
+  /*border: 5px solid green;*/
 }
 
 .header-name {
@@ -28,7 +27,7 @@
 }
 
 .header-links {
-  //border: 5px solid blue;
+  /*border: 5px solid blue;*/
   display: flex;
   align-items: center;
 }
@@ -38,7 +37,7 @@
 }
 
 .header-logo {
-  //border: 2px solid blue;
+  /*border: 2px solid blue;*/
   width: 48px;
   object-fit: cover;
 }

@@ -1,6 +1,6 @@
 /* Container around content */
 .job-container {
-  //border: 2px solid green;
+  /*border: 2px solid green;*/
   padding: 0px 40px;
   position: relative;
   background-color: inherit;
@@ -20,12 +20,12 @@
     "Header Header Header Header Header Header Header Header Header Header"
     "Image Text Text Text Text Text Text Text Text Text"
     "Image Footer Footer Footer Footer Footer Footer Footer Footer Footer"; 
-  //border: 5px solid var(--white);
+  /*border: 5px solid var(--white);*/
 }
 
 .job-header {
   grid-area: Header;
-  //border: 2px solid blue;
+  /*border: 2px solid blue;*/
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,7 +33,7 @@
 
 .job-image-container {
   grid-area: Image;
-  //border: 2px solid orange;
+  /*border: 2px solid orange;*/
 }
 
 .job-image {
@@ -43,20 +43,20 @@
 
 .job-body {
   grid-area: Text;
-  //border: 2px solid purple;
+  /*border: 2px solid purple;*/
   display: flex;
   align-items: center;
   padding: 0 8px;
 }
 
 .job-body > ol, ul {
-  //list-style: none;
+  /*list-style: none;*/
   padding-left: 2rem
 }
 
 
 .job-footer {
-  //border: 2px solid brown;
+  /*border: 2px solid brown;*/
   grid-area: Footer;
   display: flex;
   align-items: center;
@@ -99,8 +99,8 @@
   z-index: 10;
   left: 25px;
   border-width: 15px 15px 15px 0;
-  //content: " ";
-  //border-color: transparent var(--white) transparent transparent;
+  /*content: " ";*/
+  /*border-color: transparent var(--white) transparent transparent;*/
 }
 
 /* Fix the circle for containers on the right side */
@@ -149,7 +149,7 @@
   }
   .job-image-container {
     grid-area: Image;
-    //border: 2px solid red;
+    /*border: 2px solid red;*/
     display: flex;
     justify-content: center;
   }

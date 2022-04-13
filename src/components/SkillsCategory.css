@@ -1,5 +1,5 @@
 .skill-category-container {
-  //border: 2px solid greenyellow;
+  /*border: 2px solid greenyellow;*/
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -14,7 +14,7 @@
 }
 
 .skill-category-header {
-  //border: 2px solid blue;
+  /*border: 2px solid blue;*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,7 +24,7 @@
 }
 
 .skill-category-content {
-  //border: 2px solid red;
+  /*border: 2px solid red;*/
   display: flex;
   align-items: center;
   justify-content: center;
