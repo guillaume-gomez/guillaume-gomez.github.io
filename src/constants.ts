@@ -53,7 +53,7 @@ export const projectsData = [
     tags: ["javascript"],
     theme: "creative",
     year: 2018,
-    relevance: 5
+    relevance: 19
   },
   {
     name: "Vocal Assistant Valentine",
@@ -73,7 +73,7 @@ export const projectsData = [
     tags: ["javascript"],
     theme: "video-games",
     year: 2018,
-    relevance: 5
+    relevance: 18.5
   },
   {
     name: "My lastFm albums",
@@ -93,7 +93,7 @@ export const projectsData = [
     tags: ["unity"],
     theme: "video-games",
     year: 2020,
-    relevance: 5
+    relevance: 18
   },
   {
     name: "Tilt Shift Rust",
@@ -103,7 +103,7 @@ export const projectsData = [
     tags: ["rust"],
     theme: "image-processing",
     year: 2017,
-    relevance: 4.75
+    relevance: 15.5
   },
   {
     name: "Youtube Channels Shortcuts",
@@ -113,7 +113,7 @@ export const projectsData = [
     tags: ["extension", "javascript", "youtube"],
     theme: "tool",
     year: 2017,
-    relevance: 4
+    relevance: 12
   },
   {
     name: "Phaser Es6 Sandbox",
@@ -143,7 +143,7 @@ export const projectsData = [
     tags: ["C++", "SFML"],
     theme: "video-games",
     year: 2013,
-    relevance: 4
+    relevance: 13
   },
   {
     name: "Image to Ascii",
@@ -153,7 +153,7 @@ export const projectsData = [
     tags: ["typescript", "react"],
     theme: "image-processing",
     year: 2021,
-    relevance: 4.75
+    relevance: 15
   },
   {
     name: "Aniki 90's",
@@ -183,7 +183,7 @@ export const projectsData = [
     tags: ["unity", "LD"],
     theme: "video-games",
     year: 2018,
-    relevance: 5
+    relevance: 17.5
   },
   {
     name: "My watchfaces",
@@ -223,7 +223,7 @@ export const projectsData = [
     tags: ["javascript"],
     theme: "creative",
     year: 2018,
-    relevance: 4.5
+    relevance: 16.4
   },
       {
     name: "Roboto",
@@ -253,7 +253,7 @@ export const projectsData = [
     tags: ["javascript", "phaser"],
     theme: "video-games",
     year: 2018,
-    relevance: 4.5
+    relevance: 12
   },
      {
     name: "Animate Name",
@@ -293,7 +293,7 @@ export const projectsData = [
     tags: ["javascript", "jaws", "LD"],
     theme: "video-games",
     year: 2018,
-    relevance: 4
+    relevance: 11
   },
     {
     name: "Another techno cover album",
@@ -303,7 +303,7 @@ export const projectsData = [
     tags: ["javascript", "canvas"],
     theme: "creative",
     year: 2018,
-    relevance: 4
+    relevance: 15
   },
    {
     name: "I'm not a hero",
@@ -513,17 +513,17 @@ export const projectsData = [
     tags: ["typescript", "rails", "ruby", "graphql"],
     theme: "tool",
     year: 2021,
-    relevance: 5
+    relevance: 14.5
   },
   {
     name: "Random Crosses",
     githubPage: "https://github.com/guillaume-gomez/randomCrosses",
     demo: "https://guillaume-gomez.github.io/randomCrosses/",
     preview: "random-crosses.png",
-    tags: ["typescript"],
+    tags: ["typescript", "canvas"],
     theme: "creative",
     year: 2021,
-    relevance: 3
+    relevance: 10
   },
   {
     name: "To pointillism",
@@ -531,18 +531,78 @@ export const projectsData = [
     demo: "https://guillaume-gomez.github.io/to-pointillism",
     preview: "to-pointillism.jpeg",
     tags: ["typescript"],
-    theme: "creative",
+    theme: "image-processing",
     year: 2021,
-    relevance: 5
+    relevance: 20
   },
   {
     name: "Squared words",
     githubPage: "https://github.com/guillaume-gomez/squared_words",
-    demo: "https://guillaume-gomez.github.io/squared_words",
+    demo: "https://guillaume-gomez.github.io/squared_words/dist",
     preview: "squared_words.png",
     tags: ["typescript", "threejs"],
     theme: "creative",
     year: 2022,
+    relevance: 17
+  },
+/*  {
+    name: "Life In Grid",
+    githubPage: "https://github.com/guillaume-gomez/life-in-grid",
+    demo: "https://guillaume-gomez.github.io/life-in-grid",
+    preview: "",
+    tags: ["typescript", "react"],
+    theme: "creative",
+    year: 2022,
     relevance: 5
+  },*/
+  {
+    name: "Rainbow Road",
+    githubPage: "https://github.com/guillaume-gomez/rainbow-road",
+    demo: "https://guillaume-gomez.github.io/rainbow-road",
+    preview: "rainbow-road.png",
+    tags: ["javascript"],
+    theme: "creative",
+    year: 2022,
+    relevance: 16.5
+  },
+  {
+    name: "Steganography",
+    githubPage: "https://github.com/guillaume-gomez/Steganography",
+    demo: "",
+    preview: "steganography.png",
+    tags: ["rust"],
+    theme: "image-processing",
+    year: 2022,
+    relevance: 11
+  },
+  {
+    name: "SpectrumIV",
+    githubPage: "https://github.com/guillaume-gomez/SpectrumIV_shader",
+    demo: "https://guillaume-gomez.github.io/SpectrumIV_shader",
+    preview: "spectrum_iv_shader.jpg",
+    tags: ["shaders"],
+    theme: "creative",
+    year: 2022,
+    relevance: 16
+  },
+  {
+    name: "Image Collection Generator",
+    githubPage: "https://github.com/guillaume-gomez/image-collection-generator",
+    demo: "",
+    preview: "image_collection_generator.png",
+    tags: ["ruby"],
+    theme: "tool",
+    year: 2022,
+    relevance: 2
+  },
+  {
+    name: "Gazette Gazette",
+    githubPage: "https://github.com/guillaume-gomez/gazette-gazette",
+    demo: "https://guillaume-gomez.github.io/gazette-gazette",
+    preview: "gazette-gazette.png",
+    tags: ["react", "typescript"],
+    theme: "creative",
+    year: 2022,
+    relevance: 14
   },
 ];
