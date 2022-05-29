@@ -253,7 +253,7 @@ export const projectsData = [
     tags: ["javascript", "phaser"],
     theme: "video-games",
     year: 2018,
-    relevance: 12
+    relevance: 13
   },
      {
     name: "Animate Name",
@@ -516,6 +516,16 @@ export const projectsData = [
     relevance: 14.5
   },
   {
+    name: "Tile and square",
+    githubPage: "https://github.com/guillaume-gomez/tile-and-square",
+    demo: "https://guillaume-gomez.github.io/tile-and-square/",
+    preview: "tile-and-square.png",
+    tags: ["typescript", "canvas"],
+    theme: "creative",
+    year: 2021,
+    relevance: 11
+  },
+  {
     name: "Random Crosses",
     githubPage: "https://github.com/guillaume-gomez/randomCrosses",
     demo: "https://guillaume-gomez.github.io/randomCrosses/",
@@ -545,16 +555,16 @@ export const projectsData = [
     year: 2022,
     relevance: 17
   },
-/*  {
+  {
     name: "Life In Grid",
     githubPage: "https://github.com/guillaume-gomez/life-in-grid",
     demo: "https://guillaume-gomez.github.io/life-in-grid",
-    preview: "",
+    preview: "life-in-grid.png",
     tags: ["typescript", "react"],
     theme: "creative",
     year: 2022,
     relevance: 5
-  },*/
+  },
   {
     name: "Rainbow Road",
     githubPage: "https://github.com/guillaume-gomez/rainbow-road",
@@ -605,4 +615,5 @@ export const projectsData = [
     year: 2022,
     relevance: 14
   },
+  
 ];
