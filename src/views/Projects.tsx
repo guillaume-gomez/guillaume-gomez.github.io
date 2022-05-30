@@ -57,7 +57,7 @@ function Projects({refTarget} : ProjectInterface) {
   }, [projectsDataFiltered, controls]);
 
   function loadMore() {
-    const itemsToAdd = Math.min(projectsData.length - itemsLoaded, stepProjects);
+    const itemsToAdd = Math.min(projectsDataFiltered.length - itemsLoaded, stepProjects);
     setItemLoaded(itemsLoaded + itemsToAdd);
     controls.start("scaleUp");
   }
