@@ -615,5 +615,16 @@ export const projectsData = [
     year: 2022,
     relevance: 14
   },
+
+  {
+    name: "Three-js-cameras",
+    githubPage: "https://github.com/guillaume-gomez/gazette-gazette",
+    demo: "https://guillaume-gomez.github.io/gazette-gazette",
+    preview: "gazette-gazette.png",
+    tags: ["threejs", "typescript"],
+    theme: "creative",
+    year: 2022,
+    relevance: 14
+  },
   
 ];
