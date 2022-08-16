@@ -615,7 +615,6 @@ export const projectsData = [
     year: 2022,
     relevance: 14
   },
-
   {
     name: "Three-js-cameras",
     githubPage: "https://github.com/guillaume-gomez/gazette-gazette",
@@ -624,7 +623,27 @@ export const projectsData = [
     tags: ["threejs", "typescript"],
     theme: "creative",
     year: 2022,
-    relevance: 14
+    relevance: 13
+  },
+  {
+    name: "Wasm Game Of Life",
+    githubPage: "https://github.com/guillaume-gomez/wasm-game-of-life",
+    demo: "https://guillaume-gomez.github.io/wasm-game-of-life",
+    preview: "wasm-game-of-life.png",
+    tags: ["webassembly", "typescript", "rust"],
+    theme: "creative",
+    year: 2021,
+    relevance: 13
+  },
+    {
+    name: "Burning Earth",
+    githubPage: "https://github.com/guillaume-gomez/burningEarth",
+    demo: "https://guillaume-gomez.github.io/burningEarth",
+    preview: "burning-earth.png",
+    tags: ["threejs", "typescript"],
+    theme: "creative",
+    year: 2022,
+    relevance: 12.5
   },
   
 ];
