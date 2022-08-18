@@ -49,7 +49,9 @@ const tagToColor :  { [key: string]: string }  = {
   "java": "#e72f1d",
   "processing": "#022440",
   "boostrap": "#563484",
-  "rails": "#c61900"
+  "rails": "#c61900",
+  "threejs": "#705df2",
+  "webassembly": "#705df2"
 };
 
 function ProjectCell({name, githubPage, demo, preview, tags, theme, relevance} : ProjectCellInterface) {
