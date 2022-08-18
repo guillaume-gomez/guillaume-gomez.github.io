@@ -83,7 +83,7 @@ export const projectsData = [
     tags: ["javascript", "react"],
     theme: "tool",
     year: 2018,
-    relevance: 2
+    relevance: 3.25
   },
   {
     name: "Downwell Copycat",
@@ -123,7 +123,7 @@ export const projectsData = [
     tags: ["phaser", "javascript"],
     theme: "learning",
     year: 2016,
-    relevance: 4
+    relevance: 2
   },
   {
     name: "Advent of code 2020",
@@ -133,7 +133,7 @@ export const projectsData = [
     tags: ["elixir"],
     theme: "learning",
     year: 2020,
-    relevance: 4
+    relevance: 2
   },
   {
     name: "Math Game",
@@ -203,7 +203,7 @@ export const projectsData = [
     tags: ["slack", "ruby"],
     theme: "slack",
     year: 2018,
-    relevance: 4
+    relevance: 3
   },
   {
     name: "Roguelike Rust",
@@ -263,7 +263,7 @@ export const projectsData = [
     tags: ["experiment"],
     theme: "creative",
     year: 2018,
-    relevance: 4
+    relevance: 4.5
   },
   {
     name: "LD35",
@@ -273,7 +273,7 @@ export const projectsData = [
     tags: ["javascript", "jaws", "LD"],
     theme: "video-games",
     year:2016,
-    relevance: 3
+    relevance: 2.80
   },
     {
     name: "LD38 Editor",
@@ -313,7 +313,7 @@ export const projectsData = [
     tags: ["unity", "LD"],
     theme: "video-games",
     year: 2018,
-    relevance: 3
+    relevance: 4
   },
      {
     name: "Hi bot",
@@ -403,7 +403,7 @@ export const projectsData = [
     tags: ["javascript", "phaser", "LD"],
     theme: "video-games",
     year:2017,
-    relevance: 3
+    relevance: 3.5
   },
     {
     name: "LD: Ancient Technology",
@@ -423,7 +423,7 @@ export const projectsData = [
     tags: ["erlang"],
     theme: "mooc",
     year: 2017,
-    relevance: 4
+    relevance: 3
   },
   {
     name: "Node Race",
@@ -453,7 +453,7 @@ export const projectsData = [
     tags: ["javascript", "phaser"],
     theme: "experiment",
     year: 2016,
-    relevance: 4
+    relevance: 2.75
   },
   {
     name: "Window ray",
@@ -473,7 +473,7 @@ export const projectsData = [
     tags: ["typescript", "canvas"],
     theme: "creative",
     year: 2021,
-    relevance: 3
+    relevance: 4.5
   },
   {
     name: "Ber Mode",
