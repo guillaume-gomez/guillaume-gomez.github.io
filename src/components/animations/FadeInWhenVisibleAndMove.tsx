@@ -25,7 +25,7 @@ function FadeInWhenVisibleAndMove({ children, direction, className } : FadeInWhe
       animate={controls}
       className={className}
       initial="hidden"
-      transition={{ duration: 2.0, type: "spring", bounce: 0.20 }}
+      transition={{ duration: 2.0, type: "spring", bounce: 0.30 }}
       variants={{
         visible: { opacity: 1, scale: 1 },
         hidden: { opacity: 0, scale: 0, x: direction === "left" ?  "-20vw" : "20vw" },
