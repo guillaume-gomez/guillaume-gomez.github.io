@@ -34,7 +34,7 @@
     "react-dom": "^17.0.1",
     "react-i18next": "^11.8.9",
     "react-intersection-observer": "^8.32.0",
-    "react-scripts": "4.0.3",
+    "react-scripts": "5.0.1",
     "resize-observer-polyfill": "^1.5.1",
     "typescript": "^4.6.3",
     "typewriter-effect": "^2.18.2",
