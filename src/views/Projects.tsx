@@ -72,16 +72,16 @@ function Projects({refTarget} : ProjectInterface) {
      const desktop = (
        <ul className="projects-header">
         <FromLeftToRight key={"all"} onClick={() => onChangeTheme("")}>
-          <a className={theme === "" ? "projects-header-selected" : ""}>
+          <button className={theme === "" ? "projects-header-selected" : ""}>
             {t("projects.theme.all")}
-          </a>
+          </button>
         </FromLeftToRight>
         {
           orderBy(themes).map((_theme, index) => 
             <FromLeftToRight key={_theme} onClick={() => onChangeTheme(_theme)}>
-              <a className={theme === _theme ? "projects-header-selected" : ""}>
+              <button className={theme === _theme ? "projects-header-selected" : ""}>
                 {t(`projects.theme.${_theme}`)}
-              </a>
+              </button>
             </FromLeftToRight>
           )
         }
@@ -90,16 +90,12 @@ function Projects({refTarget} : ProjectInterface) {
      const mobile = (
        <ul className="projects-header">
         <li key="all">
-          <a>
             {t("projects.theme.all")}
-          </a>
         </li>
         {
           orderBy(themes).map((_theme, index) => 
             <li key={_theme} onClick={() => onChangeTheme(_theme)}>
-              <a>
-                {t(`projects.theme.${_theme}`)}
-              </a>
+              {t(`projects.theme.${_theme}`)}
             </li>
           )
         }

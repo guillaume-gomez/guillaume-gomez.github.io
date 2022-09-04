@@ -33,11 +33,16 @@ function Header({refTarget} : HeaderInterface) {
     <div className="header-container">
       <div className="header-name">
         <a href="https://guillaume-gomez.github.io/avatar-generator/">
-          <img className="header-logo" src={`${process.env.PUBLIC_URL}/icons/${iconNumber}.png`} alt="one of my generated icon" />
+          <img
+            width="48px"
+            className="header-logo"
+            src={`${process.env.PUBLIC_URL}/icons/${iconNumber}.png`}
+            alt="one of my generated icon"
+          />
         </a>
       </div>
       <div className="header-links">
-      <a className="about-me-link" onClick={() => refTarget!.current!.scrollIntoView({behavior: "smooth"})}>{t("header.about-me")}</a>
+      <button className="about-me-link" onClick={() => refTarget!.current!.scrollIntoView({behavior: "smooth"})}>{t("header.about-me")}</button>
       <select className="custom-select" onChange={onChangeLanguage} value={language}>
         <option className="custom-option" value="en">{t("header.english")}</option>
         <option className="custom-option" value="fr">{t("header.french")}</option>

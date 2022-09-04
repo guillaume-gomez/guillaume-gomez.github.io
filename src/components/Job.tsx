@@ -43,7 +43,13 @@ function Job({begin, end, jobTitle, jobDescription, company, companyUrl, locatio
             </div>
             <div className="job-image-container">
               <a href={companyUrl}>
-                <img className="job-image" src={`${process.env.PUBLIC_URL}/companies/${imgSrc}`} alt="company-that-i-worked-for" />
+                <img
+                  width="128px"
+                  loading="lazy"
+                  className="job-image"
+                  src={`${process.env.PUBLIC_URL}/companies/${imgSrc}`}
+                  alt="company-that-i-have-worked-for"
+                />
               </a>
             </div>
             <div className="job-body">
