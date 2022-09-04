@@ -10,14 +10,13 @@ interface CustomButtonInterface {
 
 function CustomButton({ children, className, onClick, href }: CustomButtonInterface): React.ReactElement {
   return (
-    <motion.a
-      href={href}
+    <motion.button
       className={className}
       onClick={onClick}
       whileHover={{ borderRadius: ["5px", "10px", "25px", "30px"], transition: { duration: 0.2 } }}
     >
       {children}
-    </motion.a>
+    </motion.button>
   );
 
 };
