@@ -42,7 +42,8 @@ function Job({begin, end, jobTitle, jobDescription, company, companyUrl, locatio
               </div>
             </div>
             <div className="job-image-container">
-              <a href={companyUrl}>
+              { companyUrl ?
+                <a href={companyUrl}>
                 <img
                   width="128px"
                   loading="lazy"
@@ -51,6 +52,16 @@ function Job({begin, end, jobTitle, jobDescription, company, companyUrl, locatio
                   alt="company-that-i-have-worked-for"
                 />
               </a>
+              :
+                <img
+                  width="128px"
+                  loading="lazy"
+                  className="job-image"
+                  src={`${process.env.PUBLIC_URL}/companies/${imgSrc}`}
+                  alt="company-that-i-have-worked-for"
+                />
+              }
+
             </div>
             <div className="job-body">
               <div className="job-body-content">
