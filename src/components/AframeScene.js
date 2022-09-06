@@ -1,47 +1,67 @@
 import React from 'react';
-import 'aframe';
-import 'aframe-orbit-controls';
+import * as THREE from 'three'
+import { Canvas, useFrame, createPortal, Group } from '@react-three/fiber'
+import { Stage, Sky, useFBO, OrbitControls, PerspectiveCamera, useGLTF } from '@react-three/drei'
+
 import "./AframeScene.css";
+
+function Cassette(props) {
+  const { scene } = useGLTF(`${process.env.PUBLIC_URL}/3d-assets/cassette.gltf`);
+  return <primitive object={scene} {...props} />
+}
+
+function FootBall(props) {
+  const { scene } = useGLTF(`${process.env.PUBLIC_URL}/3d-assets/ball/scene.gltf`);
+  return <primitive object={scene} {...props} />
+}
+
+
+function TennisRaquette(props) {
+  const { scene } = useGLTF(`${process.env.PUBLIC_URL}/3d-assets/racket/scene.gltf`);
+  return <primitive object={scene} {...props} />
+}
+
+function Weights(props) {
+  const { scene } = useGLTF(`${process.env.PUBLIC_URL}/3d-assets/weights/scene.gltf`);
+  return <primitive object={scene} {...props} />
+}
+
+
+function Dekstop(props) {
+  const { scene } = useGLTF(`${process.env.PUBLIC_URL}/3d-assets/workplace/scene.gltf`);
+  return <primitive object={scene} {...props} />
+}
+
 
 function AframeScene() {
   return (
-    <a-scene  loading-screen="dotsColor: red; backgroundColor: #062859" embedded vr-mode-ui="enabled: false">
-      <a-assets>
-        {/*<img id="my-image" src={`${process.env.PUBLIC_URL}/terminal.jpg`} /> */}
-        <a-asset-item id="computer-mtl" src={`${process.env.PUBLIC_URL}/3d-assets/mainframe.mtl`}></a-asset-item>
-        <a-asset-item id="computer-obj" src={`${process.env.PUBLIC_URL}/3d-assets/mainframe.obj`}></a-asset-item>
-        <a-asset-item id="balloon" src={`${process.env.PUBLIC_URL}/3d-assets/ball.gltf`}></a-asset-item>
-         <a-asset-item id="cassette" src={`${process.env.PUBLIC_URL}/3d-assets/cassette.gltf`}></a-asset-item>
-      </a-assets>
-      <a-camera camera="fov: 80;" id="camera" look-controls orbit-controls="enablePan: false; enableZoom: false;target: 0 0 -15; minDistance: 0.5; maxDistance: 180; initialPosition: 0 0 -1.5" listener wasd-controls-enabled="false">
-</a-camera>
-      <a-entity
-            animation="property: object3D.position.y; to: 0.5; dir: alternate; dur: 2000; loop: true"
-            obj-model="obj: #computer-obj; mtl: #computer-mtl;"
-            scale="0.5 0.5 0.5"
-            position="-10 0 -15"
-            rotation="0 90 0"
-   ></a-entity>
-   <a-gltf-model src="#balloon"
-        animation="property: object3D.position.y; to: 0; dir: alternate; dur: 1500; loop: true"
-        scale="0.01 0.01 0.01"
-        position="5 -5.5 -12.5"
-        rotation="0 -90 0"
+     <Canvas
+      camera={{ position: [0, 2, -4], fov: 75, far: 15 }}
+      dpr={window.devicePixelRatio}
       >
-      </a-gltf-model>
-       <a-gltf-model src="#cassette"
-        animation="property: object3D.position.y; to: -6; dir: alternate; dur: 2000; loop: true"
-        scale="1 1 1"
-        position="2 -6.5 -10"
-        rotation="0 0 0"
-      >
-      </a-gltf-model>
-       {/*<a-image src="#my-image"  scale="2 2 2"
-            position="0 -6.5 -13"
-            rotation="-10 0 0"></a-image>
-     */}
-    </a-scene>
+        <OrbitControls makeDefault />
+        <ambientLight intensity={0.5}/>
+        /*<spotLight color={"#ff8d00"} intensity={0.20} distance={100} position={[0, 0, -5]} />*/
+        <group rotation={[0, Math.PI + Math.PI/6, 0]}>
+          <mesh scale={[0.30, 0.1, 0.30]} position={[-0.57,2.3,-0.25]}>
+            <boxGeometry />
+            <meshStandardMaterial color="red" />
+          </mesh>
+          <TennisRaquette scale={3} position={[1.5, 0.5, 1]} rotation={[Math.PI/2, 0, Math.PI/2]} />
+          <FootBall scale={0.005} position={[1.5, 0.35, 1]} rotation={[0, 0, 0]} />
+          <Weights scale={0.1} position={[1.5, 0.35, 1.75]} rotation={[0, Math.PI/2, 0]} />
+          <Cassette scale={0.20} position={[0, 2.30, -0.22]} rotation={[0, 0, 0]} />
+          <Dekstop scale={0.05} />
+        </group>
+    </Canvas>
   );
+
 }
 
 export default AframeScene;
+
+//"Desktop" (https://skfb.ly/o7xVF) by Sublime is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+//"Work place" (https://skfb.ly/6XFGs) by vladunna is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+//"racket" (https://skfb.ly/ovVur) by gohean33 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+//"Low Poly Cartoon Football Ball Free" (https://skfb.ly/6UyIM) by chroma3d is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+//"Simple Weight" (https://skfb.ly/6AUsL) by Blender3D is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).

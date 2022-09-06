@@ -19,7 +19,7 @@ function SmoothScroll({ children } : SmoothScrollInterface) : React.ReactElement
   const [pageHeight, setPageHeight] = useState(0)
 
   // update scrollable height when browser is resizing
-  const resizePageHeight = useCallback(entries => {
+  const resizePageHeight = useCallback((entries: any) => {
     for (let entry of entries) {
       setPageHeight(entry.contentRect.height)
     }
