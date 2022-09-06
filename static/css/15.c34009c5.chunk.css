@@ -1,2 +1,0 @@
-.hobbies-content{//border:2px solid purple;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:16px;min-height:25vh}.hobbies-icons{//border:2px solid green;display:flex;width:100%;grid-gap:24px;gap:24px;margin:0;padding:0;justify-content:space-around;list-style-type:none}.hobbies-icons>li{display:flex;flex-direction:column;align-items:center}@media(max-width:375px){.hobbies-content,.hobbies-icons{flex-direction:column}.hobbies-icons{display:flex}}
-/*# sourceMappingURL=15.c34009c5.chunk.css.map */
