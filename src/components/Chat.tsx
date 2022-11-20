@@ -72,8 +72,8 @@ function Chat({} : ChatInterface) {
       <div className="chat-reply chat-bubble">
         <div className="chat-message-content">
             <ul>
-              <li>Par mail à <a className="underline-link" href={`mailto:${MAIL}`} description="my professional email"><strong>guillaume.gomez846@gmail.com</strong></a></li>
-              <li>Ou via <a className="chat-underline-message" href={LINKEDIN} description="my linkedin account">Linkedin</a></li>
+              <li>Par mail à <a className="underline-link" href={`mailto:${MAIL}`} data-description="my professional email"><strong>guillaume.gomez846@gmail.com</strong></a></li>
+              <li>Ou via <a className="chat-underline-message" href={LINKEDIN} data-description="my linkedin account">Linkedin</a></li>
             </ul>
          </div>
       </div>

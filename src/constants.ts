@@ -635,7 +635,7 @@ export const projectsData = [
     year: 2021,
     relevance: 13
   },
-    {
+  {
     name: "Burning Earth",
     githubPage: "https://github.com/guillaume-gomez/burningEarth",
     demo: "https://guillaume-gomez.github.io/burningEarth",
@@ -645,5 +645,15 @@ export const projectsData = [
     year: 2022,
     relevance: 12.5
   },
-  
+  {
+    name: "Fun with flags",
+    githubPage: "https://github.com/guillaume-gomez/fun-with-flags",
+    demo: "https://guillaume-gomez.github.io/fun-with-flags/",
+    preview: "fun-with-flags.png",
+    tags: ["threejs", "typescript"],
+    theme: "creative",
+    year: 2022,
+    relevance: 14
+  },
 ];
+
