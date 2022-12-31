@@ -619,7 +619,7 @@ export const projectsData = [
     name: "Three-js-cameras",
     githubPage: "https://github.com/guillaume-gomez/gazette-gazette",
     demo: "https://guillaume-gomez.github.io/gazette-gazette",
-    preview: "gazette-gazette.png",
+    preview: "three-js-cameras.png",
     tags: ["threejs", "typescript"],
     theme: "creative",
     year: 2022,
@@ -654,6 +654,26 @@ export const projectsData = [
     theme: "creative",
     year: 2022,
     relevance: 14
+  },
+    {
+    name: "FromImage2Geometries",
+    githubPage: "https://github.com/guillaume-gomez/fromImage2Geometries",
+    demo: "https://guillaume-gomez.github.io/fromImage2Geometries/",
+    preview: "FromImage2Geometries.png",
+    tags: ["threejs", "typescript"],
+    theme: "creative",
+    year: 2022,
+    relevance: 14.1
+  },
+  {
+    name: "Split my heart",
+    githubPage: "https://github.com/guillaume-gomez/split-my-heart",
+    demo: "https://guillaume-gomez.github.io/split-my-heart/",
+    preview: "split-my-heart.png",
+    tags: ["react", "typescript"],
+    theme: "wtf",
+    year: 2022,
+    relevance: 12.5
   },
 ];
 
