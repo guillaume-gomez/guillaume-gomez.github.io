@@ -7,7 +7,7 @@ import { ReactComponent as MacMouse } from "../macintosh-mouse.svg";
 
 import "./WelcomePage.scss";
 
-import AframeScene from "../components/AframeScene";
+import Scene from "../components/Scene";
 import Header from "../components/Header";
 import FromUpToDown from "../components/animations/FromUpToDown";
 
@@ -33,7 +33,7 @@ function WelcomePage({ toAboutMe, toTexts } : WelcomePageInterface) {
           </div>
         </FromUpToDown>
         <div className="three-js-view">
-          {isBrowser && <AframeScene />}
+          {isBrowser && <Scene />}
         </div>
         <div className="welcome-page-bottom" style={{padding: "2rem", display: "flex", justifyContent: "center"}} onClick={() => toTexts!.current!.scrollIntoView({behavior: "smooth"}) }>
           <motion.div whileHover={{ translateY: 5, transition: { duration: 0.5, repeat: Infinity } }}>

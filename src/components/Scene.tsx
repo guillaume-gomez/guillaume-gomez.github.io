@@ -1,40 +1,53 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import * as THREE from 'three'
-import { Canvas, useFrame, createPortal, Group, SpotLight } from '@react-three/fiber'
-import { Stage, Sky, useFBO, OrbitControls, PerspectiveCamera, useGLTF } from '@react-three/drei'
+import { Canvas, useFrame, ThreeElements } from '@react-three/fiber'
+import { OrbitControls, useGLTF } from '@react-three/drei'
 
 import "./AframeScene.css";
 
-function Cassette(props) {
+function Cassette(props :  ThreeElements['mesh']) {
   const { scene } = useGLTF(`${process.env.PUBLIC_URL}/3d-assets/cassette.gltf`);
   return <primitive object={scene} {...props} />
 }
 
-function FootBall(props) {
+function FootBall(props : ThreeElements['mesh']) {
+  const [hovered, setHover] = useState<boolean>(false);
+  const mesh = useRef<THREE.Mesh>(null!)
+  useFrame((state, delta) => {
+    if(hovered) {
+      mesh.current.rotation.y += delta;
+    }
+  })
   const { scene } = useGLTF(`${process.env.PUBLIC_URL}/3d-assets/ball/scene.gltf`);
-  return <primitive object={scene} {...props} />
+  return <primitive
+      ref={mesh}
+      object={scene}
+      onPointerOver={() => setHover(true)}
+      onPointerOut={() => setHover(false)}
+      {...props}
+    />
 }
 
 
-function TennisRaquette(props) {
+function TennisRaquette(props : ThreeElements['mesh']) {
   const { scene } = useGLTF(`${process.env.PUBLIC_URL}/3d-assets/racket/scene.gltf`);
   return <primitive object={scene} {...props} />
 }
 
-function Weights(props) {
+function Weights(props :  ThreeElements['mesh']) {
   const { scene } = useGLTF(`${process.env.PUBLIC_URL}/3d-assets/weights/scene.gltf`);
   return <primitive object={scene} {...props} />
 }
 
 
-function Dekstop(props) {
+function Dekstop(props :  ThreeElements['mesh']) {
   const { scene } = useGLTF(`${process.env.PUBLIC_URL}/3d-assets/workplace/scene.gltf`);
   return <primitive object={scene} {...props} />
 }
 
 
-function AframeScene() {
-  const controls = useRef()
+function Scene() {
+  const controls = useRef<any>(null);
   return (
      <Canvas
       camera={{ position: [0, 2, -11], fov: 25, far: 25 }}
@@ -73,7 +86,7 @@ function AframeScene() {
 
 }
 
-export default AframeScene;
+export default Scene;
 
 //"Desktop" (https://skfb.ly/o7xVF) by Sublime is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 //"Work place" (https://skfb.ly/6XFGs) by vladunna is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
