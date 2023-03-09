@@ -223,7 +223,7 @@ export const projectsData = [
     tags: ["javascript"],
     theme: "creative",
     year: 2018,
-    relevance: 16.4
+    relevance: 15
   },
       {
     name: "Roboto",
@@ -653,7 +653,7 @@ export const projectsData = [
     tags: ["threejs", "typescript"],
     theme: "creative",
     year: 2022,
-    relevance: 14
+    relevance: 15.4
   },
     {
     name: "FromImage2Geometries",
@@ -663,7 +663,7 @@ export const projectsData = [
     tags: ["threejs", "typescript"],
     theme: "creative",
     year: 2022,
-    relevance: 14.1
+    relevance: 15.5
   },
   {
     name: "Split my heart",
@@ -675,5 +675,25 @@ export const projectsData = [
     year: 2022,
     relevance: 12.5
   },
+  {
+    name: "Mondrian verse",
+    githubPage: "https://github.com/guillaume-gomez/mondrian-verse",
+    demo: "https://guillaume-gomez.github.io/mondrian-verse/",
+    preview: "mondrian-verse.png",
+    tags: ["react", "typescript"],
+    theme: "creative",
+    year: 2022,
+    relevance: 17
+  },
+  {
+    name: "Shred Image",
+    githubPage: "https://github.com/guillaume-gomez/shred-image",
+    demo: "https://guillaume-gomez.github.io/shred-image/",
+    preview: "shred-image.png",
+    tags: ["react", "typescript"],
+    theme: "creative",
+    year: 2023,
+    relevance: 16.8
+  }
 ];
 
