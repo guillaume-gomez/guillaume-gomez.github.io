@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.64425ac6.css",
-    "main.js": "/static/js/main.bc14e615.js",
+    "main.js": "/static/js/main.2d022f53.js",
     "static/css/803.07b27faf.chunk.css": "/static/css/803.07b27faf.chunk.css",
     "static/js/803.7c4d09d4.chunk.js": "/static/js/803.7c4d09d4.chunk.js",
     "static/css/953.92cbfaf5.chunk.css": "/static/css/953.92cbfaf5.chunk.css",
@@ -17,7 +17,7 @@
     "static/css/279.ae3bf435.chunk.css": "/static/css/279.ae3bf435.chunk.css",
     "static/js/279.78ea4385.chunk.js": "/static/js/279.78ea4385.chunk.js",
     "static/js/787.ec7239b2.chunk.js": "/static/js/787.ec7239b2.chunk.js",
-    "static/js/186.eeae1086.chunk.js": "/static/js/186.eeae1086.chunk.js",
+    "static/js/186.5c051ff7.chunk.js": "/static/js/186.5c051ff7.chunk.js",
     "static/js/969.f900ebbe.chunk.js": "/static/js/969.f900ebbe.chunk.js",
     "static/js/165.e26c0962.chunk.js": "/static/js/165.e26c0962.chunk.js",
     "static/media/Inconsolata-VariableFont_wdth,wght.ttf": "/static/media/Inconsolata-VariableFont_wdth,wght.d436e6cbc31e78bb4421.ttf",
@@ -28,7 +28,7 @@
     "index.html": "/index.html",
     "static/media/macintosh-mouse.svg": "/static/media/macintosh-mouse.753529623872fbddfd7c3e71beb33668.svg",
     "main.64425ac6.css.map": "/static/css/main.64425ac6.css.map",
-    "main.bc14e615.js.map": "/static/js/main.bc14e615.js.map",
+    "main.2d022f53.js.map": "/static/js/main.2d022f53.js.map",
     "803.07b27faf.chunk.css.map": "/static/css/803.07b27faf.chunk.css.map",
     "803.7c4d09d4.chunk.js.map": "/static/js/803.7c4d09d4.chunk.js.map",
     "953.92cbfaf5.chunk.css.map": "/static/css/953.92cbfaf5.chunk.css.map",
@@ -44,12 +44,12 @@
     "279.ae3bf435.chunk.css.map": "/static/css/279.ae3bf435.chunk.css.map",
     "279.78ea4385.chunk.js.map": "/static/js/279.78ea4385.chunk.js.map",
     "787.ec7239b2.chunk.js.map": "/static/js/787.ec7239b2.chunk.js.map",
-    "186.eeae1086.chunk.js.map": "/static/js/186.eeae1086.chunk.js.map",
+    "186.5c051ff7.chunk.js.map": "/static/js/186.5c051ff7.chunk.js.map",
     "969.f900ebbe.chunk.js.map": "/static/js/969.f900ebbe.chunk.js.map",
     "165.e26c0962.chunk.js.map": "/static/js/165.e26c0962.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.64425ac6.css",
-    "static/js/main.bc14e615.js"
+    "static/js/main.2d022f53.js"
   ]
 }
