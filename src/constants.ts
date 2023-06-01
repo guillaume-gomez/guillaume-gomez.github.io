@@ -694,6 +694,16 @@ export const projectsData = [
     theme: "creative",
     year: 2023,
     relevance: 16.8
+  },
+  {
+    name: "Woven Image",
+    githubPage: "https://github.com/guillaume-gomez/woven-images",
+    demo: "https://guillaume-gomez.github.io/woven-images/",
+    preview: "woven-images.jpeg",
+    tags: ["react", "typescript"],
+    theme: "creative",
+    year: 2023,
+    relevance: 14.9
   }
 ];
 
