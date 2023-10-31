@@ -1,0 +1,145 @@
+{
+  "date-format":"MMM yyyy",
+  "header": {
+    "resume": "résumé",
+    "contact": "Contact",
+    "portfolio": "Portfolio",
+    "skills": "Skills",
+    "experience": "Experience",
+    "french": "French",
+    "english": "English",
+    "about-me": "About me"
+  },
+  "about-me": {
+    "about-me": "About me",
+    "content": "I began writing my first lines in C at 15 and have learned a handful of programming languages since - be it in engineering class, for jobs, or just as a hobby. Having a passion for development and computing in general, I try to expand my IT knowledge writing small apps, video games and other oddities listed below. I spend most of my time AFK doing sports and am rarely seen without headphones."
+  },
+  "welcome-page": {
+    "job-title": "Full Stack Developer",
+    "i-am": "I'm"
+  },
+  "welcome-page-infos": {
+    "full-stack": "I'am Full Stack Developer",
+    "full-statck-text": "I have been programming mostly in Ruby on rails, Typescript and react...and sometimes in Vanilla Js. During my free times i'm interesting about video games programming.",
+    "cto": "But I'm also a CTO too",
+    "cto-text": "I started this role for Amuse in order to improve content deliveries. I do my best to keep learnings new things and set new objectives to be a better engineer."
+  },
+  "hobbies": {
+    "hobbies": "Hobbies",
+    "music": "Music",
+    "sports": "Sports",
+    "cinema": "Cinema",
+    "video-games": "Video games"
+  },
+  "trello": {
+    "trello-title": "Kanban App",
+    "trello-board": "Personnal Challenges",
+    "todo": "TO DO",
+    "wip": "Work in progress",
+    "done": "Done",
+    "add-card": "Next objective",
+    "release-video-game": "Release a video game on itch.io",
+    "presentation": "Make a presentation in a conference",
+    "article": "Write a blog article",
+    "open-source": "Contribute to open-source",
+    "dev-ops": "Learn more about dev-ops ",
+    "manage": "Improve my scheduling and management skills",
+    "front-end": "Improve in front end",
+    "back-end": "Improve in back-end",
+    "integration": "Keep progress in HTML/CSS",
+    "hackathon": "Attend to a hackathon",
+    "portfolio": "Upgrade my portfolio",
+    "repos": "Reach 100 repositories on github"
+  },
+  "experience": {
+    "experience": "Work experience",
+    "current": "currently",
+    "amuse": {
+      "company": "Amuse",
+      "location": "Paris",
+      "job-title": "Chief Technical Officer",
+      "job-title-2": "Back-end developer",
+      "context": "Amuse targets animated shows for pre-school (0-3 years old) children.  Its Paris site handles both production and distribution of such shows on OTT platforms (YouTube, Amazon, Youku, Baidu...). My job in this company focuses on production and distribution pipelines, enabling artists delivering as fast and effective as possible.",
+      "bloc1": "As a Chief Technical Officer I play an active role in every phase for all our projects : product design, team management, day-to-day operations, developement...",
+      "bloc2": "Managing a pluridisciplinary team of six",
+      "bloc3": "Implemented a 'pipeline' creation app with such languages/frameworks as",
+      "bloc4": "Rails + API GraphQL",
+      "bloc5": "React 16.8 (hooks) + Apollo client",
+      "bloc6": "Implemented a Ruby on rails-based video distribution app",
+      "bloc1-1": "Enhanced and maintained the company's tool managing production and distribution pipelines (Ruby on Rails).",
+      "bloc1-2": "Debugging",
+      "bloc1-3": "Implemented new features",
+      "bloc1-4": "Integrated new React views",
+      "bloc1-5": "Developed a GraphQL API exposing our data to Shotgun Software",
+      "bloc1-6": "Helped maintaining internal tools like",
+      "bloc1-7": "an automated job application software for artists (Rails + ActiveAdmin)",
+      "bloc1-8": "a streaming application on YouTube"
+    },
+    "applidget": {
+      "company": "EventMaker",
+      "location": "Paris, France",
+      "job-title": "Back-end developer",
+      "bloc": "Developed and maintained the company's main project, a guest registration and check-in application for professional event organizers (Ruby/ReactJS)."
+    },
+    "masa": {
+      "company": "Masa group",
+      "location": "Paris, France",
+      "job-title": "3D Programmer internship",
+      "bloc": "Helped optimizing a 3D military simulation written in C++/OpenGL. Brought new features as well as a more intuitive UX."
+    },
+    "multiposting": {
+      "company": "Multiposting",
+      "location": "Paris, France",
+      "job-title": "Web development internship",
+      "bloc1": "Maintained various PHP and Python-based tools",
+      "bloc2": "Developed focus crawlers for employment websites"
+    },
+    "arles": {
+      "company": "Mairie d'Arles",
+      "location": "Arles, France",
+      "job-title": "Web development internship",
+      "bloc1": "Helped the mayor's office issuing their official statements with a PHP website.",
+      "bloc2": "Groomed and upgraded the local administration's database."
+    }
+  },
+  "education": {
+    "education": "Education",
+    "u_t_c": {
+      "company": "Université de Technologie de Compiègne",
+      "location": "Compiègne, France",
+      "job-title": "Degree in engineering",
+      "bloc1": "Software engineering"
+    },
+    "i_u_t": {
+      "company": "IUT d'Aix Marseille",
+      "location": "Arles, France",
+      "job-title": "Undergraduate university degree in IT",
+      "bloc1" : "2D/3D image design and rendering"
+    }
+  },
+  "projects": {
+    "projects": "Projects",
+    "no-filter": "No filter",
+    "theme": {
+      "all": "All",
+      "wtf":"WTF",
+      "creative": "Creative",
+      "experiment": "Experiences",
+      "image-processing": "Image processing",
+      "learning": "Learning",
+      "mooc": "MOOC",
+      "slack": "Slack",
+      "tool": "Tools",
+      "video-games": "Video games"
+    },
+    "load-more": "Load more projects"
+  },
+
+  "skills": {
+    "skills": "Skills",
+    "legend": "Click on doughnut chart for more information"
+  },
+  "footer": {
+    "design-by":"Designed by "
+  }
+}
