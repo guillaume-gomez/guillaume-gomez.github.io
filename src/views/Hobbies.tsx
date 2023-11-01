@@ -12,28 +12,28 @@ import "./Hobbies.css";
 function Hobbies() {
   const { t } = useTranslation();
   return (
-    <section className="hobbies-content content">
-      <h4 className="hobbies-title">{t("hobbies.hobbies")}</h4>
-      <ul className="hobbies-icons">
-        <li>
+    <section className="flex flex-col gap-3 items-center">
+      <h4 className="font-bold">{t("hobbies.hobbies")}</h4>
+      <ul className="flex flex-row gap-1">
+        <li className="badge badge-ghost gap-2 p-4">
           <FlipX>
             <FontAwesomeIcon icon={faRunning} size="lg" />
           </FlipX>
           <p>{t("hobbies.sports")}</p>
         </li>
-        <li>
+        <li className="badge badge-ghost gap-2 p-4">
           <FlipX>
             <FontAwesomeIcon icon={faMusic} size="lg"/>
           </FlipX>
           <p>{t("hobbies.music")}</p> 
         </li>
-        <li>
+        <li className="badge badge-ghost gap-2 p-4">
           <FlipX>
             <FontAwesomeIcon icon={faGamepad} size="lg"/>
           </FlipX>
           <p>{t("hobbies.video-games")}</p>
         </li>
-        <li>
+        <li className="badge badge-ghost gap-2 p-4">
           <FlipX>
             <FontAwesomeIcon icon={faFilm} size="lg"/>
           </FlipX>
