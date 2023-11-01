@@ -8,7 +8,7 @@ interface TimelineInterface {
 function Timeline({children}: TimelineInterface) {
   return (
     <div className="timeline">
-    <div className="timeline-items">
+    <div className="flex flex-col gap-8">
       {children}
     </div>
     </div>

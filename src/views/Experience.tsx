@@ -82,7 +82,7 @@ function Experience() {
             begin={new Date(2014,1,1)}
             end={new Date(2013,8,1)}
             jobTitle={t("experience.multiposting.job-title")}
-            imgSrc={`${process.env.PUBLIC_URL}/multiposting.jpg`}
+            imgSrc={`multiposting.jpg`}
             >
               <p>{t("experience.multiposting.bloc1")}</p>
               <p>{t("experience.multiposting.bloc2")}</p>

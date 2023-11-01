@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { format } from 'date-fns'
 import { fr, enGB } from 'date-fns/locale'
 import FadeInSection from "./FadeInSection";
+import Image from 'next/image';
 
 import "./Job.css";
 
@@ -28,54 +29,56 @@ function Job({begin, end, jobTitle, jobDescription, company, companyUrl, locatio
 
   return (
     <FadeInSection>
-       <div className="job-container job-right">
-         <div
-            className="job-content"
-          >
-            <div className="job-header">
-                <h5>{jobTitle}</h5>
-                <div> 
-                { companyUrl ?
-                  <a className="underline-link job-company job-company-name" href={companyUrl}>{company}</a> :
-                  <span className="job-company-name">{ company }</span>
-                }
-              </div>
+      <div className="job-container job-right">
+        <div className="card w-100 bg-primary text-primary-content">
+          <div className="card-body">
+            <div className="flex flex-row justify-between">
+              <h2 className="card-title">
+                {jobTitle}
+              </h2>
+              { companyUrl ?
+                <a className="underline-link job-company job-company-name" href={companyUrl}>{company}</a> :
+                <span className="pr-2">{ company }</span>
+              }
             </div>
-            <div className="job-image-container">
+
+            <div className="flex flex-row gap-2">
               { companyUrl ?
                 <a href={companyUrl}>
-                <img
-                  width="128px"
-                  loading="lazy"
-                  className="job-image"
-                  src={`${process.env.PUBLIC_URL}/companies/${imgSrc}`}
-                  alt="company-that-i-have-worked-for"
-                />
+                  <Image
+                    width={128}
+                    height={128}
+                    loading="lazy"
+                    className="rounded-xl"
+                    src={`/companies/${imgSrc}`}
+                    alt={`${company} is a company that I have worked for`}
+                  />
               </a>
               :
-                <img
-                  width="128px"
+                <Image
+                  width={128}
+                  height={128}
                   loading="lazy"
-                  className="job-image"
-                  src={`${process.env.PUBLIC_URL}/companies/${imgSrc}`}
-                  alt="company-that-i-have-worked-for"
+                  className="rounded-xl"
+                  src={`/companies/${imgSrc}`}
+                  alt={`A company that I have worked for`}
                 />
               }
 
-            </div>
-            <div className="job-body">
-              <div className="job-body-content">
-                {jobDescription ? jobDescription : children}
+              <div className="flex flex-col gap-3 w-full justify-end">
+                <div>
+                  {jobDescription ? jobDescription : children}
+                </div>
+                <div className="flex flex-row justify-between">
+                  <em>{formatDate(begin)} - {formatDate(end)}</em>
+                  <em>({location})</em>
+                </div>
               </div>
-            </div>
-
-            <div className="job-footer">
-              <em>{formatDate(begin)} - {formatDate(end)}</em>
-              <em>({location})</em>
+             </div>
             </div>
           </div>
-      </div>
-    </FadeInSection>
+        </div>
+     </FadeInSection>
   );
 }
 

@@ -1,17 +1,8 @@
-.welcome-page-infos-content {
-  //border: 5px solid green;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
 
 .welcome-page-infos-grid-container {
   width: 100%;
   height: 100%;
-  //border: 2px solid orange;
+  border: 2px solid orange;
   gap:  200px 50px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -21,14 +12,9 @@
     "trello trello trello trello trello trello trello textCTO textCTO textCTO textCTO textCTO";
 }
 
-.welcome-page-title {
-  padding-bottom: 2rem ;
-  font-weight: bold;
-}
-
 .textFullStack {
   grid-area: TextFullStack;
-  //border: 2px solid green;
+  border: 2px solid green;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,23 +22,17 @@
 
 .terminal {
   grid-area: terminal;
- //border: 2px solid red;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  border: 2px solid red;
 }
 
 .trello {
   grid-area: trello;
-  //border: 2px solid purple;
+  border: 2px solid purple;
 }
 
 .textCTO {
   grid-area: textCTO;
-  //border: 2px solid pink;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  border: 2px solid pink;
 }
 
 
@@ -62,6 +42,7 @@
     grid-template-columns: 1fr;
     gap: 0 12px;
     grid-template-areas: none;
+    padding: 12px;
   }
   .textFullStack {
     grid-column-start: 1;

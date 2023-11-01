@@ -13,15 +13,15 @@ function WelcomePageInfos() {
   const toTexts = useRef<HTMLDivElement>(null);
 
   return (
-    <section className="welcome-page-infos-content">
+    <section className="w-100 flex flex-col items-center justify-between">
       <div className="welcome-page-infos-grid-container">
         <div ref={toTexts} className="textFullStack">
             <FadeInWhenVisibleAndMove direction="left">
-              <h3 className="welcome-page-title">{t("welcome-page-infos.full-stack")}</h3>
+              <h3 className="font-bold pb-8 text-4xl">{t("welcome-page-infos.full-stack")}</h3>
               <p>{t("welcome-page-infos.full-statck-text")}</p>
             </FadeInWhenVisibleAndMove>
         </div>
-        <div className="terminal">
+        <div className="flex flex-col justify-center terminal">
           <FadeInWhenVisibleAndMove direction="right">
             <Window backgroundColor="black" minHeight={325}>
               <Terminal />
@@ -35,9 +35,9 @@ function WelcomePageInfos() {
             </Window>
           </FadeInWhenVisibleAndMove>
         </div>
-        <div className="textCTO">
+        <div className="textCTO flex flex-col justify-center">
           <FadeInWhenVisibleAndMove direction="right">
-            <h3 className="welcome-page-title">{t("welcome-page-infos.cto")}</h3>
+            <h3 className="font-bold pb-8 text-4xl">{t("welcome-page-infos.cto")}</h3>
             <p>{t("welcome-page-infos.cto-text")}</p>
           </FadeInWhenVisibleAndMove>
         </div>

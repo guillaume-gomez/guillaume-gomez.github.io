@@ -6,73 +6,14 @@
   background-color: inherit;
 }
 
-.job-content {
-  background: var(--background-layout);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(197px);
-  border-radius: 12px;
-  padding: 24px;
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-  grid-template-rows: 0.25fr 1fr 0.25fr; 
-  gap: 12px 12px; 
-  grid-template-areas: 
-    "Header Header Header Header Header Header Header Header Header Header"
-    "Image Text Text Text Text Text Text Text Text Text"
-    "Image Footer Footer Footer Footer Footer Footer Footer Footer Footer"; 
-  /*border: 5px solid var(--white);*/
-}
-
-.job-header {
-  grid-area: Header;
-  /*border: 2px solid blue;*/
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.job-image-container {
-  grid-area: Image;
-  /*border: 2px solid orange;*/
-}
-
-.job-image {
-  border-radius: 9px;
-  width: 128px;
-}
-
-.job-body {
-  grid-area: Text;
-  /*border: 2px solid purple;*/
-  display: flex;
-  align-items: center;
-  padding: 0 8px;
-}
-
-.job-body > ol, ul {
-  /*list-style: none;*/
-  padding-left: 2rem
-}
-
-
-.job-footer {
-  /*border: 2px solid brown;*/
-  grid-area: Footer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 8px;
-}
-
-
 /* The circles on the timeline */
 .job-container::after {
   content: '';
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: var(--white);
-  border: 2px solid var(--dark);
+  background-color: white;
+  border: 2px solid green;
   top: 27px;
   border-radius: 50%;
   z-index: 1;
@@ -80,9 +21,9 @@
 
 .job-container::before {
   left: 60px;
-  border: medium solid var(--primary);
+  border: medium solid purple;
   border-width: 10px 10px 10px 0;
-  border-color: transparent var(--primary) transparent transparent;
+  border-color: transparent orange transparent transparent;
   }
 
   /* Place the container to the right */
@@ -106,58 +47,4 @@
 /* Fix the circle for containers on the right side */
 .job-right::after {
   left: -13px;
-}
-
-
-.job-company {
-  color: var(--dark);
-}
-
-.job-company:hover {
-  color: var(--grey);
-}
-
-
-.job-company-name {
-  padding-right: 8px;
-}
-
-
-@media(max-width: 768px) {
-  .job-body-content > ul {
-    padding-left: 0;
-  }
-
-  .job-body > ol, ul {
-    list-style: none;
-    padding-left: 2rem
-  }
-
-}
-
-
-@media(max-width: 680px) {
-  .job-content {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 0.15fr 0.15fr 1fr 0.15fr; 
-    gap: 12px 12px;
-    grid-template-areas: 
-      "Header Header Header Header Header Header Header Header Header Header"
-      "Image Image Image Image Image Image Image Image Image Image"
-      "Text Text Text Text Text Text Text Text Text Text"
-      "Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer"; 
-  }
-  .job-image-container {
-    grid-area: Image;
-    /*border: 2px solid red;*/
-    display: flex;
-    justify-content: center;
-  }
-
-}
-
-@media(max-width: 446px) {
-  .job-header {
-    flex-direction: column;
-  }
 }

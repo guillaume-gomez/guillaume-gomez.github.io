@@ -36,6 +36,7 @@
     "react-intersection-observer": "^8.32.0",
     "react-scripts": "5.0.1",
     "resize-observer-polyfill": "^1.5.1",
+    "sass": "^1.69.5",
     "typescript": "^4.6.3",
     "typewriter-effect": "^2.18.2",
     "web-vitals": "^1.0.1",
