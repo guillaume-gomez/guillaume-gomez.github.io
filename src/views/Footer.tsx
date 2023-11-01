@@ -16,17 +16,21 @@ function Footer({refTarget} : FooterInterface) {
   const { t } = useTranslation();
 
   return (
-    <footer className="footer-content">
-      <div className="footer-up" onClick={() => refTarget!.current!.scrollIntoView({behavior: "smooth"}) }>
+    <footer className="bg-base-200 flex flex-col items-center justify-center w-full h-28">
+      <div className="btn btn-outline btn-primary relative -top-6" onClick={() => refTarget!.current!.scrollIntoView({behavior: "smooth"}) }>
         <motion.div 
           whileHover={{ translateY: -5, transition: { duration: 0.5, repeat: Infinity } }}
         >
           <FontAwesomeIcon icon={faChevronUp} size="2x"/>
         </motion.div>
       </div>
-      <div className="about-website">
-        <p>Guillaume Gomez © 2021 </p>
-        <p className="designed-by">{t("footer.design-by")}<a className="underline-link" href="http://allanictheo.com/">Theo Allanic</a></p>
+      <div>
+        <p className="font-semibold">Guillaume Gomez © 2021-2023 </p>
+        <p className="font-italic">{t("footer.design-by")}
+          <a className="link" href="http://allanictheo.com/">
+            Theo Allanic
+          </a>
+        </p>
       </div>
     </footer>
   );

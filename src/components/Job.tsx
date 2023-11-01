@@ -44,37 +44,39 @@ function Job({begin, end, jobTitle, jobDescription, company, companyUrl, locatio
 
             <div className="flex flex-row gap-2">
               { companyUrl ?
-                <a href={companyUrl}>
+                  <a href={companyUrl}>
+                    <Image
+                      width={128}
+                      height={128}
+                      loading="lazy"
+                      className="rounded-xl"
+                      src={`/companies/${imgSrc}`}
+                      alt={`${company} is a company that I have worked for`}
+                    />
+                </a>
+                :
+                  <div>
                   <Image
                     width={128}
                     height={128}
                     loading="lazy"
                     className="rounded-xl"
                     src={`/companies/${imgSrc}`}
-                    alt={`${company} is a company that I have worked for`}
+                    alt={`A company that I have worked for`}
                   />
-              </a>
-              :
-                <Image
-                  width={128}
-                  height={128}
-                  loading="lazy"
-                  className="rounded-xl"
-                  src={`/companies/${imgSrc}`}
-                  alt={`A company that I have worked for`}
-                />
-              }
+                  </div>
+                }
 
-              <div className="flex flex-col gap-3 w-full justify-end">
-                <div style={{lineHeight: 1.75}}>
-                  {jobDescription ? jobDescription : children}
-                </div>
-                <div className="flex flex-row justify-between">
-                  <em>{formatDate(begin)} - {formatDate(end)}</em>
-                  <em>({location})</em>
+                <div className="flex flex-col gap-3 w-full justify-end">
+                  <div style={{lineHeight: 1.75}}>
+                    {jobDescription ? jobDescription : children}
+                  </div>
+                  <div className="flex flex-row justify-between">
+                    <em>{formatDate(begin)} - {formatDate(end)}</em>
+                    <em>({location})</em>
+                  </div>
                 </div>
               </div>
-             </div>
             </div>
           </div>
         </div>
