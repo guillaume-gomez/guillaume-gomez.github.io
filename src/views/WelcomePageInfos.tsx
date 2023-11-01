@@ -18,7 +18,7 @@ function WelcomePageInfos() {
         <div ref={toTexts} className="textFullStack">
             <FadeInWhenVisibleAndMove direction="left">
               <h3 className="font-bold pb-8 text-4xl">{t("welcome-page-infos.full-stack")}</h3>
-              <p>{t("welcome-page-infos.full-statck-text")}</p>
+              <p style={{lineHeight: 1.75}}>{t("welcome-page-infos.full-statck-text")}</p>
             </FadeInWhenVisibleAndMove>
         </div>
         <div className="flex flex-col justify-center terminal">
@@ -38,7 +38,7 @@ function WelcomePageInfos() {
         <div className="textCTO flex flex-col justify-center">
           <FadeInWhenVisibleAndMove direction="right">
             <h3 className="font-bold pb-8 text-4xl">{t("welcome-page-infos.cto")}</h3>
-            <p>{t("welcome-page-infos.cto-text")}</p>
+            <p style={{lineHeight: 1.75}}>{t("welcome-page-infos.cto-text")}</p>
           </FadeInWhenVisibleAndMove>
         </div>
       </div>

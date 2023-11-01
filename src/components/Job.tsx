@@ -37,7 +37,7 @@ function Job({begin, end, jobTitle, jobDescription, company, companyUrl, locatio
                 {jobTitle}
               </h2>
               { companyUrl ?
-                <a className="underline-link job-company job-company-name" href={companyUrl}>{company}</a> :
+                <a className="link" href={companyUrl}>{company}</a> :
                 <span className="pr-2">{ company }</span>
               }
             </div>
@@ -66,7 +66,7 @@ function Job({begin, end, jobTitle, jobDescription, company, companyUrl, locatio
               }
 
               <div className="flex flex-col gap-3 w-full justify-end">
-                <div>
+                <div style={{lineHeight: 1.75}}>
                   {jobDescription ? jobDescription : children}
                 </div>
                 <div className="flex flex-row justify-between">
