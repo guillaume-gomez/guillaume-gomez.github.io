@@ -9,7 +9,7 @@ import "./Experience.css";
 function Experience() {
   const { t } = useTranslation();
   return (
-    <div className="experience-content content">
+    <div>
       <SectionHeader text={t("experience.experience")} />
       <div className="experience-jobs">
         <Timeline>
