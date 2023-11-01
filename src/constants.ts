@@ -656,7 +656,7 @@ export const projectsData = [
     relevance: 15.4
   },
     {
-    name: "FromImage2Geometries",
+    name: "Image To Geometries",
     githubPage: "https://github.com/guillaume-gomez/fromImage2Geometries",
     demo: "https://guillaume-gomez.github.io/fromImage2Geometries/",
     preview: "FromImage2Geometries.png",

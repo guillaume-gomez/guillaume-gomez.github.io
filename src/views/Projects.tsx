@@ -2,7 +2,6 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { uniq, orderBy } from "lodash";
 import { useTranslation } from 'react-i18next';
 import { motion, useAnimation } from "framer-motion";
-import { isBrowser } from 'react-device-detect';
 import { projectsData } from "../constants";
 
 import FromLeftToRight from "../components/animations/FromLeftToRight";
@@ -17,7 +16,7 @@ interface ProjectInterface {
   refTarget: React.RefObject<HTMLSpanElement>
 }
 
-const stepProjects = 10;
+const stepProjects = 8;
 
 function Projects({refTarget} : ProjectInterface) {
   const { t } = useTranslation();
@@ -68,57 +67,44 @@ function Projects({refTarget} : ProjectInterface) {
     setFilter("")
   }
 
-   function renderHeader() {
-     const desktop = (
-       <ul className="projects-header">
-        <FromLeftToRight key={"all"} onClick={() => onChangeTheme("")}>
-          <button className={theme === "" ? "projects-header-selected" : ""}>
-            {t("projects.theme.all")}
-          </button>
-        </FromLeftToRight>
-        {
-          orderBy(themes).map((_theme, index) => 
-            <FromLeftToRight key={_theme} onClick={() => onChangeTheme(_theme)}>
-              <button className={theme === _theme ? "projects-header-selected" : ""}>
-                {t(`projects.theme.${_theme}`)}
+  function renderHeader() {
+    return (
+      <div className="card w-full bg-base-200 shadow-xl">
+        <div className="card-body">
+          <ul className="tabs tabs-boxed overflow-x-auto flex-nowrap">
+            <FromLeftToRight
+              key={"all"}
+              onClick={() => onChangeTheme("")}
+              className={theme === "" ? "tab tab-lg tab-active" : "tab tab-lg"}
+            >
+              <button>
+                {t("projects.theme.all")}
               </button>
             </FromLeftToRight>
-          )
-        }
-      </ul>);
-
-     const mobile = (
-       <ul className="projects-header">
-        <li key="all">
-            {t("projects.theme.all")}
-        </li>
-        {
-          orderBy(themes).map((_theme, index) => 
-            <li key={_theme} onClick={() => onChangeTheme(_theme)}>
-              {t(`projects.theme.${_theme}`)}
-            </li>
-          )
-        }
-      </ul>);
-
-     return isBrowser ? desktop : mobile;
-   }
-
-  return (
-    <section className="projects-content" id="project">
-      <SectionHeader text={t("projects.projects")} />
-      <div className="projects-header-content">
-        {renderHeader()}
-          <div className="projects-grid-header">
-            <div className="projects-header-filter-and-stats">
-              <div className="project-filter">
-                <span className="project-tag-label">Tags</span>
-                <select className="custom-select" onChange={(e) => setFilter(e.target.value)} value={filter}>
-                  <option className="custom-option" value="" key="no-value">{t("projects.no-filter")}</option>
-                  {orderBy(tags).map(tag => <option className="custom-option" key={tag}>{tag}</option>)}
-                </select>
-              </div>
-                <motion.div className="projects-stat"
+            {
+              orderBy(themes).map((_theme, index) => 
+                <FromLeftToRight
+                  key={_theme}
+                  onClick={() => onChangeTheme(_theme)}
+                  className={theme === _theme ? "tab tab-lg tab-active" : "tab tab-lg"}
+                >
+                  <button>
+                    {t(`projects.theme.${_theme}`)}
+                  </button>
+                </FromLeftToRight>
+              )
+            }
+          </ul>
+          <div className="flex flex-row gap-4">
+            <div className="flex flex-row gap-2 items-center">
+              <span className="font-semibold">Tags</span>
+              <select className="select select-bordered w-full max-w-xs" onChange={(e) => setFilter(e.target.value)} value={filter}>
+                <option value="" key="no-value">{t("projects.no-filter")}</option>
+                {orderBy(tags).map(tag => <option className="custom-option" key={tag}>{tag}</option>)}
+              </select>
+            </div>
+            <div className="flex flex-col gap-1">
+              <motion.div className="font-bold"
                   animate={controls}
                   initial="idle"
                   variants={ {
@@ -130,35 +116,33 @@ function Projects({refTarget} : ProjectInterface) {
                   {` ${itemsLoaded} / ${projectsDataFiltered.length}`}
                 </strong>
                 </motion.div>
-                {t("projects.projects")}
-             </div>
+                <span className="font-semibold">{t("projects.projects")}</span>
+            </div>
+
           </div>
         </div>
-        <div className="projects-grid">
-          {
-            // project grid
-            isBrowser ? (
-              <FadeInWhenVisible>
-                <ProjectsGrid projectsData={projectsDataFiltered} itemsLoaded={itemsLoaded} />
-              </FadeInWhenVisible>
-            ) :
-            <ProjectsGrid projectsData={projectsDataFiltered} itemsLoaded={itemsLoaded} />
-          }
-          
-          {
-            // buttons
-            itemsLoaded < projectsDataFiltered.length ?
-            <div className="projects-load-more">
-              <CustomButton
-                className="load-more-button"
-                onClick={loadMore}
-                >
-                  {t("projects.load-more")}
-              </CustomButton>
-            </div> :
-            null
-          }
-        </div>
+      </div>
+    )
+  }
+
+  return (
+    <section id="project" className="flex flex-col items-center gap-4">
+      <SectionHeader text={t("projects.projects")} />
+      {renderHeader()}
+      <FadeInWhenVisible>
+        <ProjectsGrid projectsData={projectsDataFiltered} itemsLoaded={itemsLoaded} />
+      </FadeInWhenVisible>
+      {
+        // buttons
+        itemsLoaded < projectsDataFiltered.length ?
+        <CustomButton
+          onClick={loadMore}
+          >
+            {t("projects.load-more")}
+        </CustomButton>
+        :
+        null
+      }
     </section>
     
   );

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import "./ProjectsGrid.css";
-import { isBrowser } from 'react-device-detect';
 import ProjectCell, { ProjectCellInterface } from "./ProjectCell";
 
 import { useAnimation, motion } from "framer-motion";
@@ -14,18 +13,17 @@ interface ProjectGridInterface {
 }
 
 
-function ProjectsGrid({projectsData, itemsLoaded } : ProjectGridInterface) {
+function ProjectsGrid({ projectsData, itemsLoaded } : ProjectGridInterface) {
   const controls = useAnimation();
   const [nbItemLoaded, setNbItemLoaded] = useState<number>(0);
   const generatedProjectCells = projectsData.slice(0, itemsLoaded)
   .map((data, index) => {
     return (
       <motion.div
-        className="project-grid-cell"
         key={index}
         custom={index}
         animate={controls}
-        initial={isBrowser ? "hidden" : "mobile"}
+        initial={"hidden"}// : "mobile"}
         transition={{ duration: 1.0 }}
         variants={{
           mobile: { opacity: 1 },
@@ -50,14 +48,12 @@ function ProjectsGrid({projectsData, itemsLoaded } : ProjectGridInterface) {
 
 
   useEffect(() => {
-    if(isBrowser) {
-      controls.start("showUp");
-      setNbItemLoaded(itemsLoaded);
-    }
+    controls.start("showUp");
+    setNbItemLoaded(itemsLoaded);
   }, [itemsLoaded, controls]);
 
   return (
-  <div className="project-grid-grid-container">
+  <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
     {generatedProjectCells}
   </div>
 

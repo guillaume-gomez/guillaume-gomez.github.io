@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion, useAnimation } from "framer-motion";
 import CustomButton from "../components/CustomButton";
+import Image from 'next/image';
 
 import "./ProjectCell.css";
 
@@ -57,17 +58,65 @@ const tagToColor :  { [key: string]: string }  = {
 function ProjectCell({name, githubPage, demo, preview, tags, theme, relevance} : ProjectCellInterface) {
   const controls = useAnimation();
   return (
+    <div className="card bg-base-100 h-72 shadow-xl image-full">
+      <figure>
+         <Image
+            width={300}
+            height={300}
+            className={preview ? "project-cell-image" : "project-cell-image project-cell-gray"}
+            loading="lazy"
+            src={ preview ? `/projects/${preview}` : `/projects/noise.jpg` }
+            alt={name}
+          />  
+      </figure>
+      <div className="card-body flex-col items-center justify-between">
+        <h2 className="card-title font-bold text-4xl text-center">{name}</h2>
+        <div className="flex flex-row gap-8 items-center">
+        <CustomButton
+          size="small"
+          href={githubPage}
+          className="project-cell-button"
+          >
+            Github
+        </CustomButton>
+        {
+          demo ?
+          <CustomButton
+            size="small"
+            href={demo} 
+            className="project-cell-button"
+            >
+              Demo
+            </CustomButton>
+          :
+          <div className="project-cell-button-disabled strikeout">Demo</div>
+        }
+        </div>
+        <div className="card-actions items-center">
+          {  tags.map(tag =>
+                <div className="badge badge-neutral" key={tag} style={{background: tagToColor[tag]}}>{tag}</div>
+              )
+          }
+        </div>
+      </div>
+    </div>
+  );
+
+
+  return (
   <motion.div
     className="project-cell-content"
     onHoverStart={() => controls.start("visible")}
     onHoverEnd={() => controls.start("hidden")}
   >
-   <motion.img
-      className={preview ? "project-cell-image" : "project-cell-image project-cell-gray"}
-      loading="lazy"
-      src={ preview ? `${process.env.PUBLIC_URL}/projects/${preview}` : `${process.env.PUBLIC_URL}/projects/noise.jpg` }
-      alt={name}
-    />  
+      <Image
+        width={300}
+        height={300}
+        className={preview ? "project-cell-image" : "project-cell-image project-cell-gray"}
+        loading="lazy"
+        src={ preview ? `/projects/${preview}` : `/projects/noise.jpg` }
+        alt={name}
+      />  
     <motion.div className="project-cell-details"
       transition={{ duration: 0.25 }}
       animate={controls}

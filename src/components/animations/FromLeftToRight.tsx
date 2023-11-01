@@ -5,9 +5,10 @@ import { motion, useAnimation } from "framer-motion";
 interface FromLeftToRightInterface {
   children: React.ReactNode;
   onClick: () => void;
+  className?: string;
 }
 
-function FromLeftToRight({ children, onClick } : FromLeftToRightInterface) {
+function FromLeftToRight({ children, onClick, className = "" } : FromLeftToRightInterface) {
   const controls = useAnimation();
   const [ref, inView] = useInView();
   const [rendered, setRendered] = useState<boolean>(false);
@@ -22,6 +23,7 @@ function FromLeftToRight({ children, onClick } : FromLeftToRightInterface) {
   return (
     <motion.li
       ref={ref}
+      className={className}
       animate={controls}
       onClick={onClick}
       initial="hidden"
