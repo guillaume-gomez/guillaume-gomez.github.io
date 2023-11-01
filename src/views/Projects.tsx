@@ -126,7 +126,7 @@ function Projects({refTarget} : ProjectInterface) {
   }
 
   return (
-    <section id="project" className="flex flex-col items-center gap-4">
+    <section id="project" className="flex flex-col gap-4">
       <SectionHeader text={t("projects.projects")} />
       {renderHeader()}
       <FadeInWhenVisible>
@@ -135,11 +135,13 @@ function Projects({refTarget} : ProjectInterface) {
       {
         // buttons
         itemsLoaded < projectsDataFiltered.length ?
-        <CustomButton
-          onClick={loadMore}
-          >
-            {t("projects.load-more")}
-        </CustomButton>
+        <div className="self-center">
+          <CustomButton
+            onClick={loadMore}
+            >
+              {t("projects.load-more")}
+          </CustomButton>
+        </div>
         :
         null
       }
