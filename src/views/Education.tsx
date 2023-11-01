@@ -10,9 +10,9 @@ import "./Education.css";
 function Education() {
   const { t } = useTranslation();
   return (
-    <div className="education-content">
+    <div>
       <SectionHeader text={t("education.education")} />
-        <div className="education-container">
+        <div className="flex lg:flex-row flex-col lg:justify-around justify-center items-center md:gap-8 gap-4">
           <FadeInAndGrowWhenVisible>
             <School
               school={t("education.u_t_c.company")}
