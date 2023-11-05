@@ -69,7 +69,7 @@ function Projects({refTarget} : ProjectInterface) {
 
   function renderHeader() {
     return (
-      <div className="card w-full bg-base-200 shadow-xl">
+      <div className="card w-full bg-primary shadow-xl">
         <div className="card-body">
           <ul className="tabs tabs-boxed overflow-x-auto flex-nowrap">
             <FromLeftToRight
