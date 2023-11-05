@@ -1,0 +1,682 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 1145,
+      "max": [
+        7.273196220397949,
+        1.0336270332336426,
+        -0.6841679811477661
+      ],
+      "min": [
+        3.55297589302063,
+        0.043533001095056534,
+        -8.082368850708008
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 13740,
+      "componentType": 5126,
+      "count": 1145,
+      "max": [
+        0.9999316930770874,
+        0.9998692274093628,
+        0.9928062558174133
+      ],
+      "min": [
+        -0.9971790909767151,
+        -0.9999933838844299,
+        -0.9984937310218811
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 1145,
+      "max": [
+        1.0,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 6336,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 27480,
+      "componentType": 5126,
+      "count": 5863,
+      "max": [
+        5.002604007720947,
+        0.6186829805374146,
+        16.75692367553711
+      ],
+      "min": [
+        -5.311026096343994,
+        -0.03506999835371971,
+        -1.051522970199585
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 97836,
+      "componentType": 5126,
+      "count": 5863,
+      "max": [
+        0.999859094619751,
+        0.9999832510948181,
+        0.9997854828834534
+      ],
+      "min": [
+        -0.999859094619751,
+        -0.9996721148490906,
+        -0.9997854828834534
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 9160,
+      "componentType": 5126,
+      "count": 5863,
+      "max": [
+        0.9994999766349792,
+        0.9994999766349792
+      ],
+      "min": [
+        0.0005000000237487257,
+        0.0005000000237487257
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 25344,
+      "componentType": 5125,
+      "count": 29910,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 168192,
+      "componentType": 5126,
+      "count": 444,
+      "max": [
+        4.47736120223999,
+        0.38298299908638,
+        6.516932010650635
+      ],
+      "min": [
+        -1.0024930238723755,
+        0.3214389979839325,
+        3.5747830867767334
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 173520,
+      "componentType": 5126,
+      "count": 444,
+      "max": [
+        0.9999748468399048,
+        0.9998693466186523,
+        0.9597432613372803
+      ],
+      "min": [
+        -0.8320825695991516,
+        -0.9998691082000732,
+        -0.9912938475608826
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 144984,
+      "componentType": 5125,
+      "count": 2244,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 178848,
+      "componentType": 5126,
+      "count": 9295,
+      "max": [
+        7.1711249351501465,
+        1.0720759630203247,
+        -0.6529390215873718
+      ],
+      "min": [
+        3.6363399028778076,
+        -0.007784999907016754,
+        -7.934678077697754
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 290388,
+      "componentType": 5126,
+      "count": 9295,
+      "max": [
+        0.9911912679672241,
+        0.9998691082000732,
+        0.98398357629776
+      ],
+      "min": [
+        -0.9991517066955566,
+        -0.9999995827674866,
+        -0.9903160929679871
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 56064,
+      "componentType": 5126,
+      "count": 9295,
+      "max": [
+        0.5926330089569092,
+        0.9825019836425781
+      ],
+      "min": [
+        0.407370001077652,
+        0.01754399947822094
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 153960,
+      "componentType": 5125,
+      "count": 40320,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 401928,
+      "componentType": 5126,
+      "count": 5148,
+      "max": [
+        4.865346908569336,
+        0.4115299880504608,
+        16.61994743347168
+      ],
+      "min": [
+        -5.173605918884277,
+        0.09037599712610245,
+        4.171288013458252
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 463704,
+      "componentType": 5126,
+      "count": 5148,
+      "max": [
+        0.950386106967926,
+        0.9998691082000732,
+        0.9504485726356506
+      ],
+      "min": [
+        -0.950386106967926,
+        -0.9998691082000732,
+        -0.9504485726356506
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 130424,
+      "componentType": 5126,
+      "count": 5148,
+      "max": [
+        0.9994999766349792,
+        0.9994999766349792
+      ],
+      "min": [
+        0.0005000000237487257,
+        0.0005000000237487257
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 315240,
+      "componentType": 5125,
+      "count": 10080,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "gohean33 (https://sketchfab.com/gohean33)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/racket-9ea2a4c4054740fe9e215eff5fcc94e6",
+      "title": "racket"
+    },
+    "generator": "Sketchfab-13.64.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 355560,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 171608,
+      "byteOffset": 355560,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 525480,
+      "byteOffset": 527168,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 1052648,
+      "uri": "scene.bin"
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_materials_clearcoat"
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "pla_wht",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.01002746754039801,
+          0.13558157557178444,
+          0.008670395629674267,
+          1.0
+        ],
+        "metallicFactor": 0.21139813072915395,
+        "roughnessFactor": 0.5079240934591687
+      }
+    },
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_clearcoat": {
+          "clearcoatFactor": 1.0,
+          "clearcoatRoughnessFactor": 0.04
+        }
+      },
+      "name": "plastic_navy",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.48254567877220805,
+          0.47501092910152337,
+          0.6833450904279361,
+          1.0
+        ],
+        "metallicFactor": 0.9374993333724063,
+        "roughnessFactor": 0.2211446268689765
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "suede",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.03127635202144477,
+          0.09172814633963486,
+          0.37454308601541797,
+          1.0
+        ],
+        "metallicFactor": 0.8398722809161707,
+        "roughnessFactor": 0.5079240934591687
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "racket_B",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.2458266074525209,
+          0.44377908224628093,
+          0.5189317649195507,
+          1.0
+        ],
+        "metallicFactor": 0.47377083420528715,
+        "roughnessFactor": 0.6
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "arch_v27_tennisballetc:Arch27_002_02_pla_wht_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "arch_v27_tennisballetc:Arch27_002_03_plastic_navy_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "arch_v27_tennisballetc:Arch27_002_04_plastic_navy_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 9,
+            "POSITION": 8
+          },
+          "indices": 10,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "arch_v27_tennisballetc:Arch27_002_12_suede_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 12,
+            "POSITION": 11,
+            "TEXCOORD_0": 13
+          },
+          "indices": 14,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "arch_v27_tennisballetc:Arch27_002_13_racket_B_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 16,
+            "POSITION": 15,
+            "TEXCOORD_0": 17
+          },
+          "indices": 18,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        -0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "f386165ebc354feead71c87768f2b9f7.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4,
+        6,
+        8,
+        10,
+        12
+      ],
+      "matrix": [
+        0.9956306686520561,
+        0.0012591003114292717,
+        -0.09337015746942635,
+        0.0,
+        -8.673617379884035e-19,
+        0.9999090892462952,
+        0.013483814098559472,
+        0.0,
+        0.09337864659256802,
+        -0.013424898846928787,
+        0.9955401551175573,
+        0.0,
+        41.07802200317383,
+        0.148360013961792,
+        -24.90290641784668,
+        1.0
+      ],
+      "name": "group3"
+    },
+    {
+      "children": [
+        5
+      ],
+      "matrix": [
+        -0.9695319228455193,
+        1.1873341659839436e-16,
+        0.24496499869056743,
+        0.0,
+        1.5246424006968917e-16,
+        1.0,
+        1.187334165983944e-16,
+        0.0,
+        -0.24496499869056743,
+        1.524642400696892e-16,
+        -0.9695319228455193,
+        0.0,
+        7.105427357601002e-15,
+        0.0,
+        -3.552713678800501e-15,
+        1.0
+      ],
+      "name": "arch_v27_tennisballetc:Arch27_002_02"
+    },
+    {
+      "mesh": 0,
+      "name": "arch_v27_tennisballetc:Arch27_002_02_pla_wht_0"
+    },
+    {
+      "children": [
+        7
+      ],
+      "matrix": [
+        -0.9695319228455193,
+        1.1873341659839436e-16,
+        0.24496499869056743,
+        0.0,
+        1.5246424006968917e-16,
+        1.0,
+        1.187334165983944e-16,
+        0.0,
+        -0.24496499869056743,
+        1.524642400696892e-16,
+        -0.9695319228455193,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "arch_v27_tennisballetc:Arch27_002_03"
+    },
+    {
+      "mesh": 1,
+      "name": "arch_v27_tennisballetc:Arch27_002_03_plastic_navy_0"
+    },
+    {
+      "children": [
+        9
+      ],
+      "matrix": [
+        -0.9695319228455193,
+        1.1873341659839436e-16,
+        0.24496499869056743,
+        0.0,
+        1.5246424006968917e-16,
+        1.0,
+        1.187334165983944e-16,
+        0.0,
+        -0.24496499869056743,
+        1.524642400696892e-16,
+        -0.9695319228455193,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "arch_v27_tennisballetc:Arch27_002_04"
+    },
+    {
+      "mesh": 2,
+      "name": "arch_v27_tennisballetc:Arch27_002_04_plastic_navy_0"
+    },
+    {
+      "children": [
+        11
+      ],
+      "matrix": [
+        -0.9695319228455193,
+        1.1873341659839436e-16,
+        0.24496499869056743,
+        0.0,
+        1.5246424006968917e-16,
+        1.0,
+        1.187334165983944e-16,
+        0.0,
+        -0.24496499869056743,
+        1.524642400696892e-16,
+        -0.9695319228455193,
+        0.0,
+        0.0,
+        -2.7755575615628914e-17,
+        -7.105427357601002e-15,
+        1.0
+      ],
+      "name": "arch_v27_tennisballetc:Arch27_002_12"
+    },
+    {
+      "mesh": 3,
+      "name": "arch_v27_tennisballetc:Arch27_002_12_suede_0"
+    },
+    {
+      "children": [
+        13
+      ],
+      "matrix": [
+        -0.9695319228455193,
+        1.1873341659839436e-16,
+        0.24496499869056743,
+        0.0,
+        1.5246424006968917e-16,
+        1.0,
+        1.187334165983944e-16,
+        0.0,
+        -0.24496499869056743,
+        1.524642400696892e-16,
+        -0.9695319228455193,
+        0.0,
+        0.0,
+        2.7755575615628914e-17,
+        7.105427357601002e-15,
+        1.0
+      ],
+      "name": "arch_v27_tennisballetc:Arch27_002_13"
+    },
+    {
+      "mesh": 4,
+      "name": "arch_v27_tennisballetc:Arch27_002_13_racket_B_0"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
