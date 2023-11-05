@@ -21,31 +21,31 @@ const stepProjects = 8;
 function Projects({refTarget} : ProjectInterface) {
   const { t } = useTranslation();
   const controls = useAnimation();
-  const [filter, setFilter] = useState<string>("");
+  const [tag, setTag] = useState<string>("");
   const [itemsLoaded, setItemLoaded] = useState<number>(stepProjects);
   const [theme, setTheme] = useState<string>("");
 
   const projectsDataFiltered = useMemo(() => {
     const projectDataByRelevance = orderBy(projectsData, ["relevance"], ['desc']);
-    if(theme === "" && filter === "") {
+    if(theme === "" && tag === "") {
       return projectDataByRelevance;
     }
-    if(theme === "" && filter !== "") {
-      return projectDataByRelevance.filter(data => data.tags.includes(filter));
+    if(theme === "" && tag !== "") {
+      return projectDataByRelevance.filter(data => data.tags.includes(tag));
     }
    
     const dataByTheme = projectDataByRelevance.filter(data => data.theme === theme);
-    if(theme !== "" && filter === "") {
+    if(theme !== "" && tag === "") {
       return dataByTheme;
     }
     // if theme !== "" && filter !== ""
-    return dataByTheme.filter(data => data.tags.includes(filter))
-  }, [filter, theme]);
+    return dataByTheme.filter(data => data.tags.includes(tag))
+  }, [tag, theme]);
 
   const tags = useMemo(
-      () => uniq(projectsData
+      () => uniq(projectsDataFiltered
         .reduce<string[]>((acc, curValue) => [...acc, ...curValue.tags], []))
-  , []);
+  , [projectsDataFiltered]);
 
   const themes = useMemo(() => uniq(projectsData.map(data => data.theme)),[]);
 
@@ -64,7 +64,7 @@ function Projects({refTarget} : ProjectInterface) {
   function onChangeTheme(theme: string) {
     setTheme(theme);
     //remove selected filter
-    setFilter("")
+    setTag("")
   }
 
   function renderHeader() {
@@ -98,7 +98,7 @@ function Projects({refTarget} : ProjectInterface) {
           <div className="flex flex-row gap-4">
             <div className="flex flex-row gap-2 items-center">
               <span className="font-semibold">Tags</span>
-              <select className="select select-bordered w-full max-w-xs" onChange={(e) => setFilter(e.target.value)} value={filter}>
+              <select className="select select-bordered w-full max-w-xs" onChange={(e) => setTag(e.target.value)} value={tag}>
                 <option value="" key="no-value">{t("projects.no-filter")}</option>
                 {orderBy(tags).map(tag => <option className="custom-option" key={tag}>{tag}</option>)}
               </select>
