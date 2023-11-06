@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from "framer-motion";
 import "./SkillsCategory.css";
 
+import Image from 'next/image';
 
 interface SkillInterface {
   iconSrc: string;
@@ -15,28 +16,35 @@ interface SkillsCategoryInterface {
 
 function SkillsCategory({ skills, skillCategoryName } : SkillsCategoryInterface) {
   return (
-    <div className="skill-category-container">
-      <div className="skill-category-header">
-      {skillCategoryName}
+    <div className="card w-full bg-primary text-neutral-content h-full">
+      <div className="card-body items-center text-center">
+        <h2 className="card-title">{skillCategoryName}</h2>
+        <div className="flex flex-row gap-4 justify-center items-center">
+          {skills.map(skill => {
+            return (
+              <motion.div
+                className="tooltip" data-tip={skill.name}
+                key={skill.name}
+                whileHover={{
+                  scale: [1, 1.4, 1.2],
+                  rotate: [0, 10, -10, 0],
+                  transition: { duration: 0.25 }
+                }}
+              >
+                <Image
+                  src={`/technologies/${skill.iconSrc}`}
+                  alt={skill.name}
+                  width={64}
+                  height={64}
+                  alt={skill.name}
+
+                />
+
+              </motion.div>
+            )
+          })}
+        </div>
       </div>
-      <div className="skill-category-content">
-        {skills.map(skill => {
-          return (
-            <motion.img
-              key={skill.name}
-              src={`${process.env.PUBLIC_URL}/technologies/${skill.iconSrc}`}
-              alt={skill.name}
-              height="64px"
-              whileHover={{
-                scale: [1, 1.4, 1.2],
-                rotate: [0, 10, -10, 0],
-                transition: { duration: 0.25 }
-              }}
-            />
-          )
-        })}
-      </div>
-      
     </div>
   );
 }

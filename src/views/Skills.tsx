@@ -114,29 +114,21 @@ function Skills() {
   const { t } = useTranslation();
 
   return (
-    <section className="skills-content">
+    <section>
       <SectionHeader text={t("skills.skills")} />
-      <div className="skill-categories">
-        <div className="skills-front">
-          <FromUpToDown>
-            <SkillCategory skills={Frontends} skillCategoryName={"Frontend"}  />
-          </FromUpToDown>
-        </div>
-        <div className="skills-back">
-          <FromUpToDown>
-            <SkillCategory skills={Backends} skillCategoryName={"Backend"} />
-          </FromUpToDown>
-        </div>
-        <div className="skills-languages">
-          <FromUpToDown>
-            <SkillCategory skills={Languages} skillCategoryName={"Languages"} />
-          </FromUpToDown>
-        </div>
-        <div className="skills-tools">
-          <FromUpToDown>
-            <SkillCategory skills={Tools} skillCategoryName={"Tools"} />
-          </FromUpToDown>
-        </div>
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-4 justify-stretch items-stretch">
+        <FromUpToDown>
+          <SkillCategory skills={Frontends} skillCategoryName={"Frontend"}  />
+        </FromUpToDown>
+        <FromUpToDown>
+          <SkillCategory skills={Backends} skillCategoryName={"Backend"} />
+        </FromUpToDown>
+        <FromUpToDown>
+          <SkillCategory skills={Languages} skillCategoryName={"Languages"} />
+        </FromUpToDown>
+        <FromUpToDown>
+          <SkillCategory skills={Tools} skillCategoryName={"Tools"} />
+        </FromUpToDown>
       </div>
     </section>
   );
