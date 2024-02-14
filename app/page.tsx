@@ -10,6 +10,7 @@ import AboutMe from "/src/views/AboutMe";
 import Hobbies from "/src/views/Hobbies";
 import Footer from "/src/views/Footer";
 import Projects from "/src/views/Projects";
+import Skills from "src/views/Skills";
 
 export default function Page() {
   const toProject = useRef<HTMLSpanElement>(null);
@@ -36,6 +37,7 @@ export default function Page() {
           <AboutMe />
           <Hobbies />
         </span>
+        <Skills />
       </div>
       <Footer refTarget={toHomepage}/>
 

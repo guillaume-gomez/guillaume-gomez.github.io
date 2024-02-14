@@ -56,14 +56,13 @@ const tagToColor :  { [key: string]: string }  = {
 };
 
 function ProjectCell({name, githubPage, demo, preview, tags, theme, relevance} : ProjectCellInterface) {
-  const controls = useAnimation();
   return (
     <div className="card bg-base-100 h-72 shadow-xl image-full">
       <figure>
          <Image
             width={300}
             height={300}
-            className={preview ? "project-cell-image" : "project-cell-image project-cell-gray"}
+            className={"w-full h-full object-cover"}
             loading="lazy"
             src={ preview ? `/projects/${preview}` : `/projects/noise.jpg` }
             alt={name}
@@ -100,61 +99,6 @@ function ProjectCell({name, githubPage, demo, preview, tags, theme, relevance} :
         </div>
       </div>
     </div>
-  );
-
-
-  return (
-  <motion.div
-    className="project-cell-content"
-    onHoverStart={() => controls.start("visible")}
-    onHoverEnd={() => controls.start("hidden")}
-  >
-      <Image
-        width={300}
-        height={300}
-        className={preview ? "project-cell-image" : "project-cell-image project-cell-gray"}
-        loading="lazy"
-        src={ preview ? `/projects/${preview}` : `/projects/noise.jpg` }
-        alt={name}
-      />  
-    <motion.div className="project-cell-details"
-      transition={{ duration: 0.25 }}
-      animate={controls}
-      variants={{
-        visible: { opacity: 1, height: "101%" },
-        hidden: { opacity: 0, height: "0%", top: "-306px" },
-      }}
-      >
-      <div className="project-cell-name">{name}</div>
-      
-      <div className="project-cell-buttons">
-        <CustomButton
-          href={githubPage}
-          className="project-cell-button"
-          >
-            Github
-         </CustomButton>
-        {
-          demo ?
-          <CustomButton
-            href={demo} 
-            className="project-cell-button"
-            >
-              Demo
-            </CustomButton>
-          :
-          <div className="project-cell-button-disabled strikeout">Demo</div>
-        }
-
-      </div>
-      <div className="project-cell-tags">
-        {  tags.map(tag =>
-            <div className="project-cell-tag" key={tag} style={{background: tagToColor[tag]}}>{tag}</div>
-          )
-      }
-      </div>
-    </motion.div>
-  </motion.div>
   );
 }
 
