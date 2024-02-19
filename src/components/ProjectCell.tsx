@@ -2,6 +2,7 @@ import React from 'react';
 import { motion, useAnimation } from "framer-motion";
 import CustomButton from "../components/CustomButton";
 import Image from 'next/image';
+import Tag from "../components/Tag";
 
 import "./ProjectCell.css";
 
@@ -15,6 +16,45 @@ export interface ProjectCellInterface {
   relevance: number;
   year: number;
 }
+
+const tagToTextColor :  { [key: string]: string }  = {
+  "typescript": "black",
+  "canvas": "white",
+  "elixir": "white",
+  "react": "black",
+  "javascript": "white",
+  "unity": "white",
+  "rust":"black",
+  "extension": "white",
+  "youtube":"black",
+  "phaser": "black",
+  "C++": "black",
+  "SFML": "black",
+  "HTML":"black",
+  "CSS": "black",
+  "LD": "black",
+  "smart watch": "white",
+  "slack": "black",
+  "ruby": "white",
+  "GMTK": "white",
+  "experiment": "white",
+  "jaws": "white",
+  "graphql": "white",
+  "music": "white",
+  "shaders" : "white",
+  "GLSL": "white",
+  "SDL": "white",
+  "haskell": "white",
+  "python": "black",
+  "erlang": "white",
+  "network": "white",
+  "java": "white",
+  "processing": "white",
+  "boostrap": "black",
+  "rails": "white",
+  "threejs": "black",
+  "webassembly": "black"
+};
 
 const tagToColor :  { [key: string]: string }  = {
   "typescript": "#2f74c0",
@@ -93,8 +133,8 @@ function ProjectCell({name, githubPage, demo, preview, tags, theme, relevance} :
         </div>
         <div className="card-actions items-center">
           {  tags.map(tag =>
-                <div className="badge badge-neutral" key={tag} style={{background: tagToColor[tag]}}>{tag}</div>
-              )
+              <Tag tag={tag} background={tagToColor[tag]} color={tagToTextColor[tag]} />
+            )
           }
         </div>
       </div>

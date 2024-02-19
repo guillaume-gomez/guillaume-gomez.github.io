@@ -7,7 +7,13 @@ interface TagProps {
 
 function Tag({tag, background, color} : TagProps) {
   return (
-    <div className="badge badge-neutral" key={tag} style={{background, color}}>{tag}</div>
+    <div
+      className="badge badge-neutral text-base p-3"
+      key={tag}
+      style={{background, color }}
+    >
+      {tag}
+    </div>
   )
 }
 
