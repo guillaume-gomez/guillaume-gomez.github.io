@@ -704,6 +704,16 @@ export const projectsData = [
     theme: "creative",
     year: 2023,
     relevance: 14.9
-  }
+  },
+  {
+    name: "Rubiks Image",
+    githubPage: "https://github.com/guillaume-gomez/rubiks-image",
+    demo: "https://guillaume-gomez.github.io/rubiks-image/",
+    preview: "rubiks-image.png",
+    tags: ["typescript", "canvas"],
+    theme: "creative",
+    year: 2023,
+    relevance: 17.5
+  },
 ];
 
