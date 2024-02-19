@@ -27,9 +27,10 @@ function Footer({refTarget} : FooterInterface) {
       <div>
         <p className="font-semibold">Guillaume Gomez © 2021-2023 </p>
         <p className="font-italic">{t("footer.design-by")}
-          <a className="link" href="http://allanictheo.com/">
+          <a className="link px-1" href="http://allanictheo.com/">
             Theo Allanic
           </a>
+          and myself
         </p>
       </div>
     </footer>
