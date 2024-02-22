@@ -715,5 +715,15 @@ export const projectsData = [
     year: 2023,
     relevance: 17.5
   },
+  {
+    name: "Embodiment",
+    githubPage: "https://github.com/guillaume-gomez/embodiment",
+    demo: "https://guillaume-gomez.github.io/embodiment/",
+    preview: "embodiment.png",
+    tags: ["typescript", "canvas"],
+    theme: "creative",
+    year: 2024,
+    relevance: 16.5
+  },
 ];
 
