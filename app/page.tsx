@@ -18,7 +18,7 @@ export default function Page() {
   const toTexts = useRef<HTMLSpanElement>(null);
 
   return (
-    <div className="flex flex-col items-center gap-6">
+    <div className="flex flex-col items-center gap-6 bg-gradient-to-bl from-blue-900 via-indigo-700 to-slate-500">
       <div className="container">
         <Header/>
         <span ref={toHomepage}>

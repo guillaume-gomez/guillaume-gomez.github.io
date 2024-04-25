@@ -28,7 +28,7 @@ function App() {
 
   function renderCommon() {
     return (
-      <div className="App">
+      <div className="bg-primary">
         { isBrowser && <Cursor /> }
           <div className="App-container">
             <Suspense fallback={renderLoader()}>

@@ -8,6 +8,8 @@ import { ReactComponent as MacMouse } from "../macintosh-mouse.svg";
 
 import AframeScene from "../components/AframeScene";
 import FromUpToDown from "../components/animations/FromUpToDown";
+import ThreeJsRenderer from "../components/ThreeJsRenderer";
+
 
 interface WelcomePageInterface {
   toAboutMe: React.RefObject<HTMLSpanElement>
@@ -17,20 +19,20 @@ interface WelcomePageInterface {
 function WelcomePage({ toAboutMe, toTexts } : WelcomePageInterface) {
   const { t } = useTranslation();
   return (
-    <section className="welcome-page-content first-gradient">
-        <div className="welcome-page-text">
+    <section className="first-gradient flex flex-col items-center justify-between h-screen">
+        <div className="flex flex-col justify-between">
         <FromUpToDown>
           <div style={{padding: "2rem"}}>
-            <h2>{t("welcome-page.i-am")}</h2>
+            <h2 className="md:text-4xl text-3xl">{t("welcome-page.i-am")}</h2>
             <h1>
-              <strong className="text-primary">
+              <strong className="md:text-8xl text-5xl">
                 Guillaume Gomez
               </strong>
             </h1>
           </div>
         </FromUpToDown>
-        <div className="three-js-view">
-          <AframeScene />
+        <div style={{height: "60%", border: "2px solid"}}>
+          <ThreeJsRenderer />
         </div>
         <div className="welcome-page-bottom" style={{padding: "2rem", display: "flex", justifyContent: "center"}} onClick={() => toTexts!.current!.scrollIntoView({behavior: "smooth"}) }>
           {/*
