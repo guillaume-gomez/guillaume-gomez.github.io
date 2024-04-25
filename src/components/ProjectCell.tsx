@@ -2,6 +2,7 @@ import React from 'react';
 import { motion, useAnimation } from "framer-motion";
 import CustomButton from "../components/CustomButton";
 import Image from 'next/image';
+import Tag from "../components/Tag";
 
 import "./ProjectCell.css";
 
@@ -15,6 +16,45 @@ export interface ProjectCellInterface {
   relevance: number;
   year: number;
 }
+
+const tagToTextColor :  { [key: string]: string }  = {
+  "typescript": "black",
+  "canvas": "white",
+  "elixir": "white",
+  "react": "black",
+  "javascript": "white",
+  "unity": "white",
+  "rust":"black",
+  "extension": "white",
+  "youtube":"black",
+  "phaser": "black",
+  "C++": "black",
+  "SFML": "black",
+  "HTML":"black",
+  "CSS": "black",
+  "LD": "black",
+  "smart watch": "white",
+  "slack": "black",
+  "ruby": "white",
+  "GMTK": "white",
+  "experiment": "white",
+  "jaws": "white",
+  "graphql": "white",
+  "music": "white",
+  "shaders" : "white",
+  "GLSL": "white",
+  "SDL": "white",
+  "haskell": "white",
+  "python": "black",
+  "erlang": "white",
+  "network": "white",
+  "java": "white",
+  "processing": "white",
+  "boostrap": "black",
+  "rails": "white",
+  "threejs": "black",
+  "webassembly": "black"
+};
 
 const tagToColor :  { [key: string]: string }  = {
   "typescript": "#2f74c0",
@@ -56,14 +96,13 @@ const tagToColor :  { [key: string]: string }  = {
 };
 
 function ProjectCell({name, githubPage, demo, preview, tags, theme, relevance} : ProjectCellInterface) {
-  const controls = useAnimation();
   return (
     <div className="card bg-base-100 h-72 shadow-xl image-full">
       <figure>
          <Image
             width={300}
             height={300}
-            className={preview ? "project-cell-image" : "project-cell-image project-cell-gray"}
+            className={"w-full h-full object-cover"}
             loading="lazy"
             src={ preview ? `/projects/${preview}` : `/projects/noise.jpg` }
             alt={name}
@@ -94,67 +133,12 @@ function ProjectCell({name, githubPage, demo, preview, tags, theme, relevance} :
         </div>
         <div className="card-actions items-center">
           {  tags.map(tag =>
-                <div className="badge badge-neutral" key={tag} style={{background: tagToColor[tag]}}>{tag}</div>
-              )
+              <Tag tag={tag} background={tagToColor[tag]} color={tagToTextColor[tag]} />
+            )
           }
         </div>
       </div>
     </div>
-  );
-
-
-  return (
-  <motion.div
-    className="project-cell-content"
-    onHoverStart={() => controls.start("visible")}
-    onHoverEnd={() => controls.start("hidden")}
-  >
-      <Image
-        width={300}
-        height={300}
-        className={preview ? "project-cell-image" : "project-cell-image project-cell-gray"}
-        loading="lazy"
-        src={ preview ? `/projects/${preview}` : `/projects/noise.jpg` }
-        alt={name}
-      />  
-    <motion.div className="project-cell-details"
-      transition={{ duration: 0.25 }}
-      animate={controls}
-      variants={{
-        visible: { opacity: 1, height: "101%" },
-        hidden: { opacity: 0, height: "0%", top: "-306px" },
-      }}
-      >
-      <div className="project-cell-name">{name}</div>
-      
-      <div className="project-cell-buttons">
-        <CustomButton
-          href={githubPage}
-          className="project-cell-button"
-          >
-            Github
-         </CustomButton>
-        {
-          demo ?
-          <CustomButton
-            href={demo} 
-            className="project-cell-button"
-            >
-              Demo
-            </CustomButton>
-          :
-          <div className="project-cell-button-disabled strikeout">Demo</div>
-        }
-
-      </div>
-      <div className="project-cell-tags">
-        {  tags.map(tag =>
-            <div className="project-cell-tag" key={tag} style={{background: tagToColor[tag]}}>{tag}</div>
-          )
-      }
-      </div>
-    </motion.div>
-  </motion.div>
   );
 }
 
