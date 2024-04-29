@@ -21,7 +21,7 @@
   "welcome-page-infos": {
     "full-stack": "I'am Full Stack Developer",
     "full-statck-text": "I have been programming mostly in Ruby on rails, Typescript and react...and sometimes in Vanilla Js. During my free times i'm interesting about video games programming.",
-    "cto": "But I'm also a CTO too",
+    "cto": "But I'm also a Manager too",
     "cto-text": "I started this role for Amuse in order to improve content deliveries. I do my best to keep learnings new things and set new objectives to be a better engineer."
   },
   "hobbies": {
@@ -54,6 +54,24 @@
   "experience": {
     "experience": "Work experience",
     "current": "currently",
+    "ecotree": {
+      "company": "Ecotree",
+      "location": "Paris",
+      "job-title": "Tech lead",
+      "context": "Ecotree is a green tech company to consolidate forests in both France and Danmark. My work at Ecotree is to maintain and improve the ecotree marketplace.",
+      "bloc1": "My mission was to :" ,
+      "bloc2": "Reduce the code legacy",
+      "bloc3": "Implement best practices in terms of code",
+      "bloc4": "Hire and manage a team of 8 members (4 back-end, 4 front-end)",
+      "bloc5": "Decrease the carbon footprint of the company on the tech team",
+
+      "bloc1-1": "The tech team has worked on :",
+      "bloc1-2": "Rationalize and improve the GraphQL api (API platform)",
+      "bloc1-3": "Improve the performences of the website",
+      "bloc1-4": "Reimplement the subscription plan",
+      "bloc1-5": "Create an asset management for Ecotree forests",
+      "bloc1-6": "passing from symfony 4 (2022) to symfony 6.2 (2024)"
+    },
     "amuse": {
       "company": "Amuse",
       "location": "Paris",

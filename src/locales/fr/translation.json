@@ -21,7 +21,7 @@
   "welcome-page-infos": {
     "full-stack": "Je suis développeur Full Stack",
     "full-statck-text": "Je programme la plupart du temps en Ruby on rails, en Typescript, du React, et parfois du Javascript vanilla. Sur mon temps libre, je m'intéresse à d'autres langages ainsi que la programmation de jeux videos.",
-    "cto": "Mais je suis aussi CTO",
+    "cto": "Mais je suis aussi un Manager",
     "cto-text": "J'ai commencé ce nouveau rôle à Amuse. Pour continuer de progresser dans ce domaine, je me fixe de nouveaux objectifs pour devenir un meilleur ingénieur."
   },
   "hobbies": {
@@ -54,6 +54,25 @@
   "experience": {
     "experience": "Expériences",
     "current": "présent",
+    "ecotree": {
+      "company": "Ecotree",
+      "location": "Paris",
+      "job-title": "Tech lead",
+      "context": "Ecotree est une entreprise 'green tech' ayant pour but de garantir l'etats de forets en France et au Danemark. Mon travail la bas fut de maintenir et d'ameliorer le marketplace du site.",
+      "bloc1": "Ma mission fut de :" ,
+      "bloc2": "Reduire le code legacy",
+      "bloc3": "Implementer de bonnes pratiques au seins de l'equipe",
+      "bloc4": "Engager et Accompagner 8 personnes (4 back-end, 4 front-end)",
+      "bloc5": "Reduire l'impact carbon du site et de son infrastructure",
+
+      "bloc1-1": "L'équipe a travaillé sur :",
+      "bloc1-2": "La rationalisation de l'api GraphQL ainsi que son amélioration (API platform)",
+      "bloc1-3": "Booster les performences du site",
+      "bloc1-4": "Reimplementer la fonctionnalités d'abonnements",
+      "bloc1-5": "Creer un systeme de gestion des forets d'Ecotree",
+      "bloc1-6": "Passer de symfony 4 (2022) a symfony 6.2 (2024)"
+    },
+
     "amuse": {
       "company": "Amuse",
       "location": "Paris",
