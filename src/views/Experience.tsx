@@ -14,11 +14,39 @@ function Experience() {
       <div className="experience-jobs">
         <Timeline>
           <Job 
+            company={t("experience.ecotree.company")}
+            companyUrl="https://www.ecotree.green/"
+            location={t("experience.ecotree.location")}
+            begin={new Date(2022,0,1)}
+            end={new Date()}
+            jobTitle={t("experience.ecotree.job-title")}
+            imgSrc={"ecotree.jpg"}
+            >
+              <p>{t("experience.ecotree.context")}</p>
+              <p>{t("experience.ecotree.bloc1")}</p>
+              <ul>
+                <li>{t("experience.ecotree.bloc2")}</li>
+                <li>{t("experience.ecotree.bloc3")}</li>
+                <li>{t("experience.ecotree.bloc4")}</li>
+                <li>{t("experience.ecotree.bloc5")}</li>
+              </ul>
+
+              <p>{t("experience.ecotree.bloc1-1")}</p>
+              <ul>
+                <li>{t("experience.ecotree.bloc1-2")}</li>
+                <li>{t("experience.ecotree.bloc1-3")}</li>
+                <li>{t("experience.ecotree.bloc1-4")}</li>
+                <li>{t("experience.ecotree.bloc1-5")}</li>
+                <li>{t("experience.ecotree.bloc1-6")}</li>
+              </ul>
+          </Job>
+          
+          <Job 
             company={t("experience.amuse.company")}
             companyUrl="https://www.amuseanimation.com/"
             location={t("experience.amuse.location")}
             begin={new Date(2019,1,1)}
-            end={new Date()}
+            end={new Date(2021, 11, 1)}
             jobTitle={t("experience.amuse.job-title")}
             imgSrc={"amuse.jpg"}
             >
@@ -31,6 +59,7 @@ function Experience() {
               </ul>
               <p>{t("experience.amuse.bloc6")}</p>
             </Job>
+            
             <Job
             company={t("experience.amuse.company")}
             companyUrl="https://www.amuseanimation.com/"
@@ -54,6 +83,7 @@ function Experience() {
              </ul>
 
             </Job>
+            
             <Job
             company={t("experience.applidget.company")}
             companyUrl="https://www.eventmaker.com/"
@@ -64,7 +94,8 @@ function Experience() {
             imgSrc={"eventmaker.jpg"}
             >
               <p>{t("experience.applidget.bloc")}</p>
-            </Job>
+           </Job>
+           
            <Job
             company={t("experience.masa.company")}
             companyUrl="https://masasim.com/"
@@ -76,6 +107,7 @@ function Experience() {
             >
               <p>{t("experience.masa.bloc")}</p>
            </Job>
+           
            <Job
             company={t("experience.multiposting.company")}
             location={t("experience.multiposting.location")}
@@ -87,6 +119,7 @@ function Experience() {
               <p>{t("experience.multiposting.bloc1")}</p>
               <p>{t("experience.multiposting.bloc2")}</p>
            </Job>
+           
            <Job
             company={t("experience.arles.company")}
             location={t("experience.arles.location")}

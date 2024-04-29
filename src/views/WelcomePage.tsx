@@ -6,7 +6,8 @@ import { ReactComponent as MacMouse } from "../macintosh-mouse.svg";
 
 //import "./WelcomePage.scss";
 
-import AframeScene from "../components/AframeScene";
+import Scene from "../components/Scene";
+import Header from "../components/Header";
 import FromUpToDown from "../components/animations/FromUpToDown";
 import ThreeJsRenderer from "../components/ThreeJsRenderer";
 
@@ -32,7 +33,7 @@ function WelcomePage({ toAboutMe, toTexts } : WelcomePageInterface) {
           </div>
         </FromUpToDown>
         <div style={{height: "60%", border: "2px solid"}}>
-          <ThreeJsRenderer />
+           <ThreeJsRenderer />
         </div>
         <div className="welcome-page-bottom" style={{padding: "2rem", display: "flex", justifyContent: "center"}} onClick={() => toTexts!.current!.scrollIntoView({behavior: "smooth"}) }>
           {/*
