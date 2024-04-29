@@ -1,5 +1,4 @@
 import React from 'react';
-import "./SectionHeader.css";
 
 interface SectionHeaderInterface {
   text: string;

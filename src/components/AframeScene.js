@@ -1,7 +1,6 @@
 import React from 'react';
 import 'aframe';
 import 'aframe-orbit-controls';
-import "./AframeScene.css";
 
 function AframeScene() {
   return (

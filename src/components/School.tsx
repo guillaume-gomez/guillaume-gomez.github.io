@@ -4,8 +4,6 @@ import { format } from 'date-fns'
 import { fr, enGB } from 'date-fns/locale'
 import Image from 'next/image';
 
-import "./School.css";
-
 interface SchoolInterface {
   begin: Date;
   end: Date;

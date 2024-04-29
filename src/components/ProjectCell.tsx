@@ -4,8 +4,6 @@ import CustomButton from "../components/CustomButton";
 import Image from 'next/image';
 import Tag from "../components/Tag";
 
-import "./ProjectCell.css";
-
 export interface ProjectCellInterface {
   name: string;
   githubPage: string;

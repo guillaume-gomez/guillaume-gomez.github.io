@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import "./ProjectsGrid.css";
 import ProjectCell, { ProjectCellInterface } from "./ProjectCell";
 
 import { useAnimation, motion } from "framer-motion";
