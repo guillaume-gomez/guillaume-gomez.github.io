@@ -616,6 +616,16 @@ export const projectsData = [
     relevance: 14
   },
   {
+    name: "Gazette Gazette",
+    githubPage: "https://github.com/guillaume-gomez/donjon-et-procrastination",
+    demo: "https://guillaume-gomez.github.io/donjon-et-procrastination",
+    preview: "donjon_et_procrastination.png",
+    tags: ["react", "typescript"],
+    theme: "creative",
+    year: 2022,
+    relevance: 13.9
+  },
+  {
     name: "Three-js-cameras",
     githubPage: "https://github.com/guillaume-gomez/gazette-gazette",
     demo: "https://guillaume-gomez.github.io/gazette-gazette",
