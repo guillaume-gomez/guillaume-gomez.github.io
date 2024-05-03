@@ -723,7 +723,7 @@ export const projectsData = [
     tags: ["typescript", "canvas"],
     theme: "creative",
     year: 2023,
-    relevance: 17.5
+    relevance: 19.5
   },
   {
     name: "Embodiment",
