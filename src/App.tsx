@@ -20,6 +20,7 @@ useGSAP(
         gsap.context(() => {
           const secondState = Flip.getState(".second .marker");
           const thirdState = Flip.getState(".third .marker");
+          const fourthState = Flip.getState(".fourth .marker")
           const flipConfig = {
             ease: "none",
             duration: 4
@@ -36,10 +37,14 @@ useGSAP(
             }
           });
 
-          tl.current.add(
-            Flip.fit(".box", secondState, flipConfig)).add(
+          tl.current
+          .add(
+            Flip.fit(".box", secondState, flipConfig)
+          ).add(
             Flip.fit(".box", thirdState, flipConfig),
             "+=0.5"
+          ).add(
+            Flip.fit(".box", fourthState, flipConfig)
           );
         });
     },
@@ -81,6 +86,9 @@ useGSAP(
           <div className="marker"></div>
         </div>
         <div className="container third">
+          <div className="marker"></div>
+        </div>
+        <div className="container fourth">
           <div className="marker"></div>
         </div>
       </div>

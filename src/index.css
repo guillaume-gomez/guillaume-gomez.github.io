@@ -136,10 +136,20 @@
 
 .third {
   right: 10%;
-  top: 100%;
+  top: 70%;
 }
 
 .third .marker {
+  width: 100px;
+  height: 100px;
+}
+
+.fourth {
+  left: 10%;
+  top: 120%;
+}
+
+.fourth .marker {
   width: 100px;
   height: 100px;
 }
