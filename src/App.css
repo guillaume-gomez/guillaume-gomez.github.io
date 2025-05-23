@@ -1,91 +1,42 @@
-:root {
-  --primary: #2962ff;
-  --text-primary: #ffffff;
-  --text-primary-dark: #000000;
-  --white: #FFF;
-  --grey: #C1C1C1;
-  --background-layout: #0b080eb3;
-}
-
 #root {
-background-image: linear-gradient(to right bottom, #062859, #062d62, #06326c, #063875, #053d7f, #143e7f, #1d407e, #24417e, #2e3f74, #343d6a, #373b60, #393957);
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
-
-.underline-link {
-  text-decoration: underline;
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-.underline--magical {
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: 0 88%;
-  transition: background-size 0.25s ease-in;
-  &:hover {
-    background-size: 100% 88%;
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 
-.background--magical {
-  background-image: linear-gradient(120deg, #fcec0cd4 0%, #b47700 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 90%;
-}
-
-
-.container {
-  /*border: 2px solid teal;*/
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  /*gap: 128px;*/
-  grid-column-start: 2;
-  grid-column-end: 12;
-}
-
-.custom-select {
-  border: 2px solid var(--white);
-  border-radius: 4px;
-  background: none;
-  color: var(--text-primary);
-  font-family: 'Barlow';
-  font-size: 20px;
-  padding-right:1rem;
-}
-
-.custom-option {
-  color: var(--text-primary-dark);
-}
-
-.App-container {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
-  grid-gap: 200px 10px;
-}
-
-.stripes {
-  z-index: 0;
-  background-size: cover;
-  width: 100%;
-  height: 400%;
-  opacity: 0.40;
-  float: right;
-  top: -100%;
-  position: absolute;
-}
-
-
-@media(max-width: 1000px) {
-  .container {
-    gap: 32px;
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
   }
 }
 
-@media(max-width: 401px) {
-  .custom-select {
-  font-size: 16px;
+.card {
+  padding: 2em;
 }
+
+.read-the-docs {
+  color: #888;
 }
