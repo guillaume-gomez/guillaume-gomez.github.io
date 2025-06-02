@@ -1,0 +1,20 @@
+.gridProjectContainer {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  gap: 8px;
+}
+
+.gridProjectContainer > div {
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+
+.bigProject1 { grid-area: 1 / 7 / 3 / 9; }
+.bigProject2 { grid-area: 2 / 2 / 4 / 4; }
+.bigProject3 { grid-area: 3 / 5 / 5 / 7; }
+.bigProject4 { grid-area: 4 / 8 / 6 / 10; }
+.bigProject5 { grid-area: 4 / 3 / 6 / 5; }
