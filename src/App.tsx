@@ -3,11 +3,15 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 
 import Header from "./components/Header";
+import ThreeJsArtwork from "./components/ThreeJsArtwork";
+import MoreAboutMe from "./components/MoreAboutMe";
+import GridProject from "./components/GridProject";
 
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Flip } from "gsap/Flip";
+
 gsap.registerPlugin(useGSAP, ScrollTrigger, Flip);
 
 function App() {
@@ -33,18 +37,20 @@ useGSAP(
               endTrigger: ".final",
               end: "clamp(top center)",
               scrub: 1,
-              markers: true
+             // markers: true
             }
           });
 
           tl.current
           .add(
-            Flip.fit(".box", secondState, flipConfig)
+            Flip.fit(".box", secondState, flipConfig),
+            "+=2.0"
           ).add(
             Flip.fit(".box", thirdState, flipConfig),
             "+=0.5"
           ).add(
-            Flip.fit(".box", fourthState, flipConfig)
+            Flip.fit(".box", fourthState, flipConfig),
+            "+=0.5"
           );
         });
     },
@@ -52,7 +58,7 @@ useGSAP(
   );
 
   return (
-    <div className="h-screen bg-base-100">
+    <div className="h-screen bg-base-100 px-2">
       <div className="relative top-6">
         <Header />
       </div>
@@ -73,14 +79,19 @@ useGSAP(
               </div>
             </div>
         </div>
-         <div className="w-1/2 bg-accent">
-            <canvas width={600} height={400} style={{backgroud: "black"}}/>
-          </div>
+         <div className="w-1/2 flex flex-col items-center justify-center gap-5" style={{zIndex: 11}}>
+            <ThreeJsArtwork />
+        </div>
       </div>
 
-      <div ref={container} className="main">
+
+      <div ref={container} className="main bg-secondary">
+        <div className="w-1/4">
+          <MoreAboutMe />
+        </div>
+
         <div className="container initial">
-          <div className="box gradient-blue">toto</div>
+          <div className="box gradient-blue text-black">toto</div>
         </div>
         <div className="container second">
           <div className="marker"></div>
@@ -94,6 +105,7 @@ useGSAP(
       </div>
       <div className="spacer final"></div>
 
+      <GridProject />
     </div>
   )
 }

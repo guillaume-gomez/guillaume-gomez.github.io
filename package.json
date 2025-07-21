@@ -11,18 +11,27 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
+    "@react-three/drei": "^10.0.8",
+    "@react-three/fiber": "^9.1.2",
+    "@react-three/postprocessing": "^3.0.4",
     "@tailwindcss/vite": "^4.1.7",
-    "daisyui": "^5.0.37",
+    "@types/lodash": "^4.17.20",
+    "framer-motion": "^12.23.6",
     "gsap": "^3.13.0",
+    "lodash": "^4.17.21",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "tailwindcss": "^4.1.7"
+    "tailwindcss": "^4.1.7",
+    "three": "^0.176.0",
+    "typewriter-effect": "^2.22.0",
+    "vite-plugin-checker": "^0.9.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react-swc": "^3.9.0",
+    "daisyui": "^5.0.37",
     "eslint": "^9.25.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
@@ -30,5 +39,6 @@
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.30.1",
     "vite": "^6.3.5"
-  }
+  },
+  "packageManager": "yarn@1.22.19+sha512.ff4579ab459bb25aa7c0ff75b62acebe576f6084b36aa842971cf250a5d8c6cd3bc9420b22ce63c7f93a0857bc6ef29291db39c3e7a23aab5adfd5a4dd6c5d71"
 }

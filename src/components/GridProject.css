@@ -10,6 +10,12 @@
 .gridProjectContainer > div {
   border: 2px solid black;
   border-radius: 8px;
+  height: ;
+}
+
+.other {
+  max-width: 200px;
+  max-height: 200px;
 }
 
 
