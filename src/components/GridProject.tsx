@@ -1,7 +1,10 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useMemo } from "react";
 import "./GridProject.css"
-import { projectsData } from "../constants";
+import { projectsData, type ProjectData } from "../constants";
 import { sortBy } from "lodash";
+import BigProjectCard from "./BigProjectCard";
+import Modal from './Modal';
+import ProjectDetail from './ProjectDetail';
 
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
@@ -10,8 +13,10 @@ import { Flip } from "gsap/Flip";
 
 
 function GridProject() {
+  const [selectedProject, setSelectedProject] = useState<ProjectData|null>(null);
   const container = useRef();
   const tl = useRef();
+  const filteredItems = useMemo(() => sortBy(projectsData, [function(o) { return -o.relevance; }]) ,[])
 
 
   useGSAP(
@@ -21,42 +26,48 @@ function GridProject() {
       { scope: container  }
     );
 
+  console.log(selectedProject)
 
   return (
-    <div ref={container} className="gridProjectContainer h-screen bg-primary" style={{perspective: "500px"}}>
-      <div className="bigProject1">
-        
-      </div>
-      <div className="bigProject2">
-        
-      </div>
-      <div className="bigProject3">
-        
-      </div>
-      <div className="bigProject4">
-        
-      </div>
-      <div className="bigProject5">
-
-      </div>
-
-      {
-        sortBy(projectsData, [function(o) { return -o.relevance; }]).map(projectData => {
-          return (
-            <div
-              key={projectData.name}
-              className="other"
-              //style={{transform: `translateZ(${0}px)`}}
-            >
-              <img src={`./projects/${projectData.preview}`} style={{objectFit: "fill", width: "100%", height:"100%", borderRadius: 8}} />
-              <div className="absolute top-1/2 left-2 font-bold">
-                {projectData.name}
+    <>
+      <Modal visible={!!selectedProject} onClose={() => setSelectedProject(null)} >
+        {!!selectedProject && <ProjectDetail projectData={selectedProject!}/>}
+      </Modal>
+      <div ref={container} className="container p-2 m-auto gridProjectContainer bg-primary" style={{perspective: "500px"}}>
+        {
+          filteredItems.slice(0, 10).map((projectData, index) => {
+            return (
+              <BigProjectCard
+                key={index}
+                projectId={index +1 }
+                projectData={projectData}
+                onClick={() => setSelectedProject(projectData)}
+              />
+            );
+          })
+        }
+       
+        {
+          filteredItems.slice(10, filteredItems.length).map(projectData => {
+            return (
+              <div
+                key={projectData.name}
+                className="other"
+                //style={{transform: `translateZ(${0}px)`}}
+              >
+                <img 
+                  className="object-fill w-full h-full rounded-3xl"
+                  src={`./projects/${projectData.preview}`}
+                />
+                <div className="absolute top-1/2 m-auto font-bold">
+                  {projectData.name}
+                </div>
               </div>
-            </div>
-          );
-        })
-      }
-    </div>
+            );
+          })
+        }
+      </div>
+    </>
   );
 
 }

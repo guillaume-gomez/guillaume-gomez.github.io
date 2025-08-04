@@ -15,7 +15,7 @@ const data = [
 
 function Terminal() {
   return (
-    <div style={{padding: "5px 10px", color: "#1FC110", fontFamily: "Inconsolata"}}>
+    <div style={{padding: "5px 10px", color: "#1FC110", fontFamily: "Inconsolata", fontSize: "1.25rem"}}>
       { data.map((d, index) => (
         <div key={d} >
           <Typewriter

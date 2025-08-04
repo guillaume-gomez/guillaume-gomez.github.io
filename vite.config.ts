@@ -8,7 +8,9 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
     react(),
-    checker({typescript: true}),
+    checker({
+      typescript: "tsconfig.app.json"
+    }),
   ],
 })
 

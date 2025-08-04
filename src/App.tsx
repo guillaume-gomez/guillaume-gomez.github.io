@@ -85,6 +85,8 @@ useGSAP(
       </div>
 
 
+      <GridProject />
+      
       <div ref={container} className="main bg-secondary">
         <div className="w-1/4">
           <MoreAboutMe />
@@ -105,7 +107,6 @@ useGSAP(
       </div>
       <div className="spacer final"></div>
 
-      <GridProject />
     </div>
   )
 }

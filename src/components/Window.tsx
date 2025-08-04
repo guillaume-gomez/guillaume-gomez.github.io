@@ -23,7 +23,6 @@ function Window({minHeight = 0, backgroundColor, children} : WindowInterface) {
       </div>
       <div style={{
         borderRadius: "0 0 10px 10px",
-
         width: "100%",
         height: "100%",
         minHeight: minHeight - footerHeight,

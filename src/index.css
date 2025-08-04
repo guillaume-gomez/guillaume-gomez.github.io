@@ -97,16 +97,6 @@
   min-height: 800px;
 }
 
-.container {
-  position: absolute;
-  width: 140px;
-  height: 140px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px dashed blueviolet;
-  border-radius: 10px;
-}
 
 .initial {
   left: 70%;
