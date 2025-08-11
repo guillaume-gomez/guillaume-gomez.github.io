@@ -56,7 +56,7 @@ function GridProject() {
                 //style={{transform: `translateZ(${0}px)`}}
               >
                 <img 
-                  className="object-fill w-full h-full rounded-3xl"
+                  className="object-fill w-full h-full"
                   src={`./projects/${projectData.preview}`}
                 />
                 <div className="absolute top-1/2 m-auto font-bold">

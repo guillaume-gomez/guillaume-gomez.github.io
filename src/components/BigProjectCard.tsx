@@ -17,11 +17,11 @@ function BigProjectCard({ projectId, projectData, onClick } : BigProjectCardProp
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      <video autoPlay muted controls className={`${hover ? 'block' : 'hidden' } object-fill w-full h-full rounded-3xl`}> 
+      <video autoPlay muted controls className={`${hover ? 'block' : 'hidden' } object-fill w-full h-full`}> 
          <source src={projectData.videoUrl} type="video/mp4" />
       </video>
       <img 
-        className={`${hover ? 'hidden' : 'block'} object-fill w-full h-full rounded-3xl`}
+        className={`${hover ? 'hidden' : 'block'} object-fill w-full h-full`}
         src={`./projects/${projectData.preview}`}
       />
     </div>

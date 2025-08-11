@@ -5,11 +5,14 @@
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   gap: 1rem;
+  backdrop-filter: blur(10px);
 }
 
 .gridProjectContainer > div {
-  border: 2px solid black;
-  border-radius: 1.5rem;
+  border: 8px solid black;
+  //padding: 1rem;
+  //background: white;
+  //border-radius: 1.5rem;
 }
 
 .other {

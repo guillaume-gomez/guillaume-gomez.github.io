@@ -30,6 +30,7 @@
 }
 
 
+
 @plugin "daisyui/theme" {
   name: "guillaume";
   default: true;
@@ -66,6 +67,11 @@
 }
 
 @utility btn {
+  border: 3px solid black;
+  border-radius: 4px;
+}
+
+@utility badge {
   border: 3px solid black;
   border-radius: 4px;
 }
