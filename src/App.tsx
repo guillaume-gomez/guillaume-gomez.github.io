@@ -17,6 +17,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger, Flip);
 function App() {
   const container = useRef();
   const tl = useRef();
+  const [hideSquare, setHideSquare] = useState<boolean>(false);
 
 
 useGSAP(
@@ -32,7 +33,7 @@ useGSAP(
 
           tl.current = gsap.timeline({
             scrollTrigger: {
-              trigger: ".container.initial",
+              trigger: ".start.initial",
               start: "clamp(top center)",
               endTrigger: ".final",
               end: "clamp(top center)",
@@ -63,13 +64,14 @@ useGSAP(
       <div className="relative top-6">
         <Header />
       </div>
-      <div className="flex flex-row h-screen">
+      <div ref={container} className="main flex flex-row h-screen">
         <div className="w-1/2 flex flex-col items-center justify-center gap-5">
             <div>
               <p className="text-secondary text-xl">Hello, I'm</p>
               <p className="text-9xl bold font-display">Guillaume</p>
               <p className="text-9xl bold font-display">Gomez</p>
-              <p className="text-2xl">A Full Stack Web developper</p>
+              <p className="text-2xl">A Full Stack Web developper,</p>
+              <p className="text-2xl linear-wipe ">doing creative things</p>
               <div className="flex flex-col gap-3 w-70">
                 <button className="btn btn-primary">My Resume</button>
                 <div className="flex flex-row gap-3 w-full">
@@ -82,31 +84,42 @@ useGSAP(
         </div>
          <div className="w-1/2 flex flex-col items-center justify-center gap-5" style={{zIndex: 11}}>
             <ThreeJsArtwork />
+            <div>
+              <label>Hide stuff</label>
+              <input
+                type="checkbox"
+                className="toggle toggle-primary"
+                value={hideSquare}
+                onToggle={ () => setHideSquare(!hideSquare) }
+              />
+            </div>
         </div>
       </div>
 
+      <div className="container m-auto">
+        <GridProject />
+        
+        <div  className="bg-secondary">
+          <div className="w-1/4">
+            <MoreAboutMe />
+          </div>
 
-      <GridProject />
+          <div className="start initial">
+            <div className="box gradient-blue text-black">toto</div>
+          </div>
+          <div className="container second">
+            <div className="marker"></div>
+          </div>
+          <div className="container third">
+            <div className="marker"></div>
+          </div>
+          <div className="container fourth">
+            <div className="marker"></div>
+          </div>
+        </div>
+        <div className="spacer final"></div>
       
-      <div ref={container} className="main bg-secondary">
-        <div className="w-1/4">
-          <MoreAboutMe />
-        </div>
-
-        <div className="container initial">
-          <div className="box gradient-blue text-black">toto</div>
-        </div>
-        <div className="container second">
-          <div className="marker"></div>
-        </div>
-        <div className="container third">
-          <div className="marker"></div>
-        </div>
-        <div className="container fourth">
-          <div className="marker"></div>
-        </div>
       </div>
-      <div className="spacer final"></div>
 
     </div>
   )

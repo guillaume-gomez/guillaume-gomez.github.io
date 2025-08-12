@@ -3,6 +3,7 @@ import "./GridProject.css"
 import { projectsData, type ProjectData } from "../constants";
 import { sortBy } from "lodash";
 import BigProjectCard from "./BigProjectCard";
+import NormalProjectCard from "./NormalProjectCard";
 import Modal from './Modal';
 import ProjectDetail from './ProjectDetail';
 
@@ -33,13 +34,13 @@ function GridProject() {
       <Modal visible={!!selectedProject} onClose={() => setSelectedProject(null)} >
         {!!selectedProject && <ProjectDetail projectData={selectedProject!}/>}
       </Modal>
-      <div ref={container} className="container p-2 m-auto gridProjectContainer bg-primary" style={{perspective: "500px"}}>
+      <div ref={container} className="gridProjectContainer" style={{perspective: "500px"}}>
         {
           filteredItems.slice(0, 10).map((projectData, index) => {
             return (
               <BigProjectCard
-                key={index}
-                projectId={index +1 }
+                key={projectData.name}
+                projectId={index + 1 }
                 projectData={projectData}
                 onClick={() => setSelectedProject(projectData)}
               />
@@ -50,19 +51,11 @@ function GridProject() {
         {
           filteredItems.slice(10, filteredItems.length).map(projectData => {
             return (
-              <div
+              <NormalProjectCard
                 key={projectData.name}
-                className="other"
-                //style={{transform: `translateZ(${0}px)`}}
-              >
-                <img 
-                  className="object-fill w-full h-full"
-                  src={`./projects/${projectData.preview}`}
-                />
-                <div className="absolute top-1/2 m-auto font-bold">
-                  {projectData.name}
-                </div>
-              </div>
+                projectData={projectData}
+                onClick={() => {}}
+              />
             );
           })
         }
