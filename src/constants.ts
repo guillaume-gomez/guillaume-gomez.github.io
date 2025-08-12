@@ -16,6 +16,105 @@ export interface ProjectData {
 }
 
 export const projectsData : ProjectData[] = [
+  /*  {
+    name: "Ber Mode",
+    githubPage: "https://github.com/guillaume-gomez/BerMode",
+    demoUrl: null,
+    preview: "berMode.png",
+    videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
+    tags: ["ruby", "slack"],
+    theme: "slack",
+    year: 2017,
+    relevance: 3
+  },*/
+  /*   {
+    name: "Hi bot",
+    githubPage: "https://github.com/guillaume-gomez/hi-bot",
+    demoUrl: null,
+    preview: null,
+    videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
+    tags: ["slack"],
+    theme: "slack",
+    year: 2018,
+    relevance: 1
+  },*/
+  /*{
+    name: "Graphql Clone",
+    githubPage: "https://github.com/guillaume-gomez/graphql-hackerClone",
+    demoUrl: null,
+    preview: "hacker-news-clone.png",
+    videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
+    tags: ["graphql", "javascript"],
+    theme: "learning",
+    year: 2018,
+    relevance: 1
+  },*/
+ /* {
+    name: "Mario Sokoban Editor",
+    githubPage: "https://github.com/guillaume-gomez/sokoban-editor",
+    demoUrl: null,
+    preview: "sokoban-editor.png",
+    videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
+    tags: ["C++", "SDL"],
+    theme: "videoUrl-games",
+    year: 2010,
+    relevance: 1
+  },*/
+    /*{
+    name: "Haskell Mooc",
+    githubPage: "https://github.com/guillaume-gomez/haskell-mooc",
+    demoUrl: null,
+    preview: "haskell.png",
+    videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
+    tags: ["haskell"],
+    theme: "mooc",
+    year: 2017,
+    relevance: 2
+  },*/
+   /*   {
+    name: "Basics Python",
+    githubPage: "https://github.com/guillaume-gomez/basics-python",
+    demoUrl: null,
+    preview: "python.png",
+    videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
+    tags: ["python"],
+    theme: "learning",
+    year: 2017,
+    relevance: 1
+  },*/
+   /*{
+    name: "Erlang mooc",
+    githubPage: "https://github.com/guillaume-gomez/erlangMooc",
+    demoUrl: null,
+    preview: "Erlang.png",
+    videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
+    tags: ["erlang"],
+    theme: "mooc",
+    year: 2017,
+    relevance: 3
+  },*/
+  /*   {
+    name: "NF11-project",
+    githubPage: "https://github.com/guillaume-gomez/NF11-project",
+    demoUrl: null,
+    preview: "NF11.png",
+    videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
+    tags: ["java"],
+    theme: "learning",
+    year: 2016,
+    relevance: 1
+  },*/
+ /* {
+    name: "Window ray",
+    githubPage: "https://github.com/guillaume-gomez/window-ray",
+    demoUrl: null,
+    preview: null,
+    videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
+    tags: ["javascript", "jaws"],
+    theme: "videoUrl-games",
+    year: 2015,
+    relevance: 1
+  },*/
   {
     name: "Orage et parapluie",
     githubPage: "https://github.com/guillaume-gomez/orage-et-parapluie",
@@ -358,28 +457,6 @@ export const projectsData : ProjectData[] = [
     year: 2018,
     relevance: 4
   },
-     {
-    name: "Hi bot",
-    githubPage: "https://github.com/guillaume-gomez/hi-bot",
-    demoUrl: null,
-    preview: null,
-    videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
-    tags: ["slack"],
-    theme: "slack",
-    year: 2018,
-    relevance: 1
-  },
-  {
-    name: "Graphql Clone",
-    githubPage: "https://github.com/guillaume-gomez/graphql-hackerClone",
-    demoUrl: null,
-    preview: "hacker-news-clone.png",
-    videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
-    tags: ["graphql", "javascript"],
-    theme: "learning",
-    year: 2018,
-    relevance: 1
-  },
   {
     name: "Music Mooc",
     githubPage: "https://github.com/guillaume-gomez/music-mooc",
@@ -413,39 +490,7 @@ export const projectsData : ProjectData[] = [
     year: 2010,
     relevance: 2
   },
-  {
-    name: "Mario Sokoban Editor",
-    githubPage: "https://github.com/guillaume-gomez/sokoban-editor",
-    demoUrl: null,
-    preview: "sokoban-editor.png",
-    videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
-    tags: ["C++", "SDL"],
-    theme: "videoUrl-games",
-    year: 2010,
-    relevance: 1
-  },
-    {
-    name: "Haskell Mooc",
-    githubPage: "https://github.com/guillaume-gomez/haskell-mooc",
-    demoUrl: null,
-    preview: "haskell.png",
-    videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
-    tags: ["haskell"],
-    theme: "mooc",
-    year: 2017,
-    relevance: 2
-  },
-      {
-    name: "Basics Python",
-    githubPage: "https://github.com/guillaume-gomez/basics-python",
-    demoUrl: null,
-    preview: "python.png",
-    videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
-    tags: ["python"],
-    theme: "learning",
-    year: 2017,
-    relevance: 1
-  },
+
   {
     name: "LD: One Room",
     githubPage: "https://github.com/guillaume-gomez/LD37",
@@ -468,17 +513,7 @@ export const projectsData : ProjectData[] = [
     year: 2017,
     relevance: 2
   },
-     {
-    name: "Erlang mooc",
-    githubPage: "https://github.com/guillaume-gomez/erlangMooc",
-    demoUrl: null,
-    preview: "Erlang.png",
-    videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
-    tags: ["erlang"],
-    theme: "mooc",
-    year: 2017,
-    relevance: 3
-  },
+  
   {
     name: "Node Race",
     githubPage: "https://github.com/guillaume-gomez/NodeRace",
@@ -490,17 +525,7 @@ export const projectsData : ProjectData[] = [
     year: 2016,
     relevance: 2
   },
-    {
-    name: "NF11-project",
-    githubPage: "https://github.com/guillaume-gomez/NF11-project",
-    demoUrl: null,
-    preview: "NF11.png",
-    videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
-    tags: ["java"],
-    theme: "learning",
-    year: 2016,
-    relevance: 1
-  },
+ 
       {
     name: "Langton ant phaser",
     githubPage: "https://github.com/guillaume-gomez/langton-ant-phaser",
@@ -513,17 +538,6 @@ export const projectsData : ProjectData[] = [
     relevance: 2.75
   },
   {
-    name: "Window ray",
-    githubPage: "https://github.com/guillaume-gomez/window-ray",
-    demoUrl: null,
-    preview: null,
-    videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
-    tags: ["javascript", "jaws"],
-    theme: "videoUrl-games",
-    year: 2015,
-    relevance: 1
-  },
-  {
     name: "Avatar Generator",
     githubPage: "https://github.com/guillaume-gomez/avatar-generator",
     demoUrl: "https://guillaume-gomez.github.io/avatar-generator",
@@ -533,17 +547,6 @@ export const projectsData : ProjectData[] = [
     theme: "creative",
     year: 2021,
     relevance: 4.5
-  },
-  {
-    name: "Ber Mode",
-    githubPage: "https://github.com/guillaume-gomez/BerMode",
-    demoUrl: null,
-    preview: "berMode.png",
-    videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
-    tags: ["ruby", "slack"],
-    theme: "slack",
-    year: 2017,
-    relevance: 3
   },
   {
     name: "P5 Sandbox",
