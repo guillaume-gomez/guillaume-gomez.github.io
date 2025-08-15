@@ -27,7 +27,6 @@ function GridProject() {
       { scope: container  }
     );
 
-  console.log(selectedProject)
 
   return (
     <>
@@ -54,7 +53,7 @@ function GridProject() {
               <NormalProjectCard
                 key={projectData.name}
                 projectData={projectData}
-                onClick={() => {}}
+                onClick={() => setSelectedProject(projectData)}
               />
             );
           })

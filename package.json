@@ -19,6 +19,7 @@
     "framer-motion": "^12.23.6",
     "gsap": "^3.13.0",
     "lodash": "^4.17.21",
+    "open-simplex-noise": "^2.5.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "tailwindcss": "^4.1.7",

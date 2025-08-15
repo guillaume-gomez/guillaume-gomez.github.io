@@ -113,16 +113,11 @@
   justify-content: center;
 }
 
-.main {
-  position: relative;
-  height: 120vh;
-  min-height: 800px;
-}
-
 
 .initial {
   left: 70%;
   top: -50%;
+  background: red;
 }
 
 .box {
@@ -140,6 +135,7 @@
 
 .marker {
   border-radius: 10px;
+  background: blue;
 }
 
 .second .marker {

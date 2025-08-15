@@ -12,7 +12,7 @@ function ProjectCard({ projectData, onClick, className } : BigProjectCardProps) 
 
   return (
     <div
-      className={className}
+      className={`${className} ${hover ? 'cursor-pointer' : '' }`}
       onClick={onClick}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
