@@ -2,7 +2,8 @@ import { useRef, useMemo, Suspense, useEffect } from "react";
 import { Color, DoubleSide, MathUtils, Object3D } from "three";
 import { Canvas, useFrame } from '@react-three/fiber';
 import { makeNoise2D  } from "open-simplex-noise";
-import { GizmoHelper, GizmoViewport, Stage, Grid, Stats, Gltf, Text, RoundedBox, CameraControls, SoftShadows } from '@react-three/drei';
+import CustomCameraControls from "./CustomCameraControls";
+import { GizmoHelper, GizmoViewport, Stage, Grid, Stats, Gltf, Text, RoundedBox, SoftShadows } from '@react-three/drei';
 import { EffectComposer, Noise, DotScreen } from "@react-three/postprocessing";
 import { BlendFunction } from "postprocessing";
 
@@ -161,8 +162,13 @@ interface ThreeJsArtworkProps {
 function ThreeJsArtwork({ hideSquare } : ThreeJsArtworkProps) {
 
   return (
-    <div style={{backgroud: "black", border: "20px solid black"}} className="shadow-[20px_25px_0px_0px_rgba(0,_0,_0,_0.4)]">
-      <div style={{backgroud: "white", border: "15px solid white", width:500, height:600}}>
+    <div 
+      style={{backgroud: "black", border: "20px solid black"}}
+      className="shadow-[20px_25px_0px_0px_rgba(0,_0,_0,_0.4)] hover:cursor-grabbing"
+    >
+      <div
+        style={{backgroud: "white", border: "15px solid white", width:500, height:600}}
+      >
         <Canvas
             camera={{ position: [-10,0, 75], fov: 75, far: 200 }}
             dpr={window.devicePixelRatio}
@@ -209,7 +215,14 @@ function ThreeJsArtwork({ hideSquare } : ThreeJsArtworkProps) {
 
          </Suspense>
 
-          <CameraControls makeDefault aut />
+          <CustomCameraControls
+            minAzimuthAngle={-Math.PI/4}
+            maxAzimuthAngle={Math.PI /3.1}
+            minPolarAngle={Math.PI/4}
+            maxPolarAngle={Math.PI / 1.9}
+            maxDistance={80}
+            speed={3}
+          />
           <GizmoHelper alignment="bottom-right" margin={[20, 20]}>
             <GizmoViewport labelColor="white" axisHeadScale={1} />
           </GizmoHelper>
