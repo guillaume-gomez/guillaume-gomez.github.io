@@ -12,7 +12,7 @@ function ProjectCard({ projectData, onClick, className } : BigProjectCardProps) 
 
   return (
     <div
-      className={`${className} ${hover ? 'cursor-pointer' : '' }`}
+      className={`projectCard ${className} ${hover ? 'cursor-pointer' : '' }`}
       onClick={onClick}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
@@ -21,11 +21,11 @@ function ProjectCard({ projectData, onClick, className } : BigProjectCardProps) 
         projectData.videoUrl ? 
           (
             <>
-              <video autoPlay muted controls className={`${hover ? 'block' : 'hidden' } object-fill w-full h-full`}> 
+              <video autoPlay muted /*controls*/ className={`${hover ? 'block' : 'hidden' } object-fill w-full h-full`}> 
                  <source src={projectData.videoUrl} type="video/mp4" />
               </video>
               <img 
-                className={`${hover ? 'hidden' : 'block'} object-fill w-full h-full`}
+                className={`sepia-40 ${hover ? 'hidden' : 'block'} object-fill w-full h-full`}
                 src={`./projects/${projectData.preview}`}
               />
             </>
