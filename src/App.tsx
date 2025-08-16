@@ -19,7 +19,7 @@ function App() {
   const tl = useRef();
   
 
-useGSAP(
+  useGSAP(
     () => {
         gsap.context(() => {
           const secondState = Flip.getState(".second .marker");
@@ -64,6 +64,7 @@ useGSAP(
         <Header />
       </div>
       
+      <div>
       <Presentation />
       
       <div className="container m-auto">

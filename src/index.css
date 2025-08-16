@@ -76,6 +76,13 @@
   border-radius: 4px;
 }
 
+@utility text-gradient {
+  background: linear-gradient(to top, #FFFFFF, var(--color-base-300));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+}
 
 @theme {
   --font-display: "Kupertino", "sans-serif"; 

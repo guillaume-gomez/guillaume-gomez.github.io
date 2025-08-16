@@ -124,7 +124,7 @@ export const projectsData : ProjectData[] = [
     tags: ["typescript", "canvas"],
     theme: "creative",
     year: 2021,
-    relevance: 2
+    relevance: 2,
   },
   {
     name: "Workshop Elixir Paris",
