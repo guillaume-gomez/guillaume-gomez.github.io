@@ -3,8 +3,10 @@ import { useState, useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { SplitText } from "gsap/all";
+import { useTranslation, Trans } from 'react-i18next';
 
 function Presentation(){
+  const { t } = useTranslation();
   const [hideSquare, setHideSquare] = useState<boolean>(false);
 
   useGSAP(() => {
@@ -66,7 +68,7 @@ function Presentation(){
                 <p className="name-gsap text-9xl bold font-display -my-7" /*style={{border: "2px solid brown"}}*/>Gomez</p>
               </div>
               <div className="role-gsap">
-                <p className="text-2xl" /*style={{border: "2px solid olive"}}*/>A Full Stack Web developper,</p>
+                <p className="text-2xl" /*style={{border: "2px solid olive"}}*/>{t("presentation.title")},</p>
                 <p className="text-2xl linear-wipe" /*style={{border: "2px solid grey"}}*/>doing creative things</p>
               </div>
               <div className="buttons-gsap flex flex-col gap-3 w-70" /*style={{border: "2px solid purple"}}*/>

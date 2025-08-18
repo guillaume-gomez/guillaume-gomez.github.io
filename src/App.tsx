@@ -64,7 +64,6 @@ function App() {
         <Header />
       </div>
       
-      <div>
       <Presentation />
       
       <div className="container m-auto">

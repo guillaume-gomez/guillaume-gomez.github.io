@@ -1,0 +1,73 @@
+{
+  "date-format":"MMM yyyy",
+  "header": {
+    "resume": "CV",
+    "contact": "Contact",
+    "portfolio": "Portfolio",
+    "skills": "Compétences",
+    "experience": "Experience",
+    "french": "Français",
+    "english": "Anglais",
+    "about-me": "À Propos"
+  },
+  "presentation": {
+    "title" : "Un developpeur Full Stack",
+    "subtitle": "qui fait des trucs créatifs"
+  },
+  "about-me": {
+    "about-me": "À Propos",
+    "content": "J'ai écrit mes premières lignes de C à 15 ans, pour ensuite découvrir beaucoup d'autres langages que ce soit au travers mon cursus universitaire ou professionnel. Passionné par l'informatique, j'essaye à travers des projets personnels d'entrevoir d'autres technologies allant de petites applications aux jeux vidéos, en passant par d'autres concepts farfelus qui me viennent sur le moment :). Quand je ne programme pas, je fais du sport. D'ailleurs il m'arrive très souvent de faire l'une de ces deux activités en musique."
+  },
+  "hobbies": {
+    "hobbies": "Centre d'intérêts",
+    "music": "Musique",
+    "sports": "Sports",
+    "cinema": "Cinema",
+    "video-games": "Jeux vidéos"
+  },
+  "education": {
+    "education": "Formation",
+    "u_t_c": {
+      "company": "Université de Technologie de Compiègne",
+      "location": "Compiègne",
+      "job-title": "Diplôme d'ingénieur",
+      "bloc1": "Option Génie Logiciel"
+    },
+    "i_u_t": {
+      "company": "IUT d'Aix Marseille",
+      "location": "Arles",
+      "job-title": "DUT Informatique",
+      "bloc1" : "Conception et synthèse d'image 2D-3D"
+    }
+  },
+  "projects": {
+    "intentions": {
+      "orage-et-parapluie": "Projet très personnel qui mixe un travail d'une amie et le désir d'ajouter d'autres composantes (sonores, effects numériques)",
+      "poisson-disk": "Dans un jeu entre graphisme et Math (algorithme de monte carlo), j'ai souhaité realiser un outil pour faire une somme de points structuré. L 'objectif final était d'utiliser le resultat pour l'imprimer sur différent formats. ",
+      "pinch&scape": "Lors de ma participation au LD39, je suis tombé sur une lib JS qui permettait la connexion de plusieurs ecrans. J'ai decidé de l'utiliser dans ce projet pour ensuite faire un puzzle game ou le déplacement ce faisait à l'aide de deux ecrans. J'ai eu une bonne note pour la partie innovation.",
+      "downwell-copycat": "Pendant le covid, j'ai pas mal joué à downwell. J'ai voulu en recreer un pendant le premier confinement pour rendre la courbe de progression plus aisé. En resulte un projet toujours en cours mais qui continue d'evoluer au fil du temps. Ps: Il faudrait que je trouve un nom à ce jeu :) ",
+      "tilt-shift-rust": "Je voulais apprendre rust et l'effet tilt shift m'a toujours emmerveillé. J'ai donc voulu mixer ces deux centres d'interets dans le travail",
+      "math-game": "Lors de m'école d'ingénieur, les diverses révisions mathematique m'ont donner l'envie de creer un jeu vidéo qui ajouterai de la physique aux courbes mathématiques. Il faudra dans ce jeu être capable de profiter des propriétés des fonctions pour récuperer les gemmes reparties dans le niveau",
+      "image-to-ascii": "C'est cool le ascii, mais avec la coloration des caractères c'est mieux non !",
+      "aniki-90": "Un désir de créer un site qui rappelle les composants des début d'internet en fin 1990",
+      "the-capitalist-fireman": "Pour la participation au LD44, je voulais critiquer le cynisme de certaines politiques qui privatise des services qui devraient rester publiques. Quoi de mieux qu'incarner un pompier qui est payé au résultat et non pour sa mission d'aider les gens",
+      "defrag": "Lors du LD42, au vu de l'équipe on est partie du schema de fragmentation sur ubuntu. L'equipe a voulu faire un time attack runner circulaire avec une ambiance tron",
+      "roguelike-rust": "Pour continuer mon apprentissage de Rust, faire un rogue like à l'ancienne",
+      "gif-wall": "Les gifs c'est super mais c'est encore mieux quand on en a pleins !",
+      "roboto": "Projet de jeux video avec une gestion de la 3D. Le personnage principal perd ces membres en fonction des interactions qu'il fait",
+      "rogue-level": "Expérimentation sous unity pour generer des niveau rogue like",
+      "rough-x-phaser": "Je travaillais sur phaser depuis un certain temps. Or je trouvais que le resultat manquais d'authencité. En utilisant la libririe Rough JS, j'ai pu faire une demo qui donne un resultat dessin à la main",
+      "animate-name": "Expérimentation pour donner une forme 3D à du texte. Celui ci se place dans l'espace comme pour lui donner une plus grande place",
+      "LD35": "Je voulais faire un jeu de piste, j'ai donc avec phaser JS réaliser cela lors du LD35"
+      
+    }
+  },
+
+  "skills": {
+    "skills": "Compétences",
+    "legend": "Cliquez sur le diagramme pour plus informations"
+  },
+  "footer": {
+    "design-by":"Design par "
+  }
+}
