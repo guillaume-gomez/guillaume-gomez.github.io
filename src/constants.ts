@@ -13,6 +13,7 @@ export interface ProjectData {
   relevance: number
   demoUrl?: string;
   videoUrl?: string;
+  intentionNoteTag: string;
 }
 
 export const projectsData : ProjectData[] = [
@@ -114,17 +115,6 @@ export const projectsData : ProjectData[] = [
     theme: "videoUrl-games",
     year: 2015,
     relevance: 1
-  },*/
-  {
-    name: "Orage et parapluie",
-    githubPage: "https://github.com/guillaume-gomez/orage-et-parapluie",
-    demoUrl: "https://guillaume-gomez.github.io/orage-et-parapluie/",
-    preview: "orage-et-parapluie.png",
-    videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
-    tags: ["typescript", "canvas"],
-    theme: "creative",
-    year: 2021,
-    relevance: 2,
   },
   {
     name: "Workshop Elixir Paris",
@@ -137,7 +127,7 @@ export const projectsData : ProjectData[] = [
     relevance: 3
 
   },
-    {
+  {
     name: "react-hook-context-reducer",
     githubPage: "https://github.com/guillaume-gomez/react-hook-context-reducer",
     demoUrl: null,
@@ -147,7 +137,7 @@ export const projectsData : ProjectData[] = [
     year: 2019,
     relevance: 3
   },
-    {
+  {
     name: "linkedListTDD",
     githubPage: "https://github.com/guillaume-gomez/linkedListTDD",
     demoUrl: null,
@@ -156,17 +146,6 @@ export const projectsData : ProjectData[] = [
     theme: "learning",
     year: 2019,
     relevance:1
-  },
-  {
-    name: "Poisson Disk",
-    githubPage: "https://github.com/guillaume-gomez/poisson-disk",
-    demoUrl: "https://guillaume-gomez.github.io/poisson-disk/",
-    preview: "poisson-disk.png",
-    videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
-    tags: ["javascript"],
-    theme: "creative",
-    year: 2018,
-    relevance: 19
   },
   {
     name: "Vocal Assistant Valentine",
@@ -178,6 +157,104 @@ export const projectsData : ProjectData[] = [
     year: 2017,
     relevance: 1
   },
+   {
+    name: "My lastFm albums",
+    githubPage: "https://github.com/guillaume-gomez/my-lastFm-albums",
+    demoUrl: null,
+    preview: "last-fm-albums.png",
+    tags: ["javascript", "react"],
+    theme: "tool",
+    year: 2018,
+    relevance: 3.25
+  },
+  {
+    name: "Youtube Channels Shortcuts",
+    githubPage: "https://github.com/guillaume-gomez/youtube-channels-shortcuts",
+    demoUrl: null,
+    preview: "youtube-channel-switcher.png",
+    tags: ["extension", "javascript", "youtube"],
+    theme: "tool",
+    year: 2017,
+    relevance: 12
+  },
+  {
+    name: "Boostrap-treeview",
+    githubPage: "https://github.com/guillaume-gomez/boostrap-treeview",
+    demoUrl: "https://guillaume-gomez.github.io/boostrap-treeview/",
+    preview: "preview-boostrap-treeview.png",
+    videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
+    tags: ["typescript", "boostrap"],
+    theme: "tool",
+    year: 2021,
+    relevance: 2
+  },
+  {
+    name: "Tech' Watch",
+    githubPage: "https://github.com/guillaume-gomez/technology-watch",
+    demoUrl: "https://technology-watch.herokuapp.com/",
+    preview: "tech-watch-preview.png",
+    videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
+    tags: ["typescript", "rails", "ruby", "graphql"],
+    theme: "tool",
+    year: 2021,
+    relevance: 14.5
+  },
+  {
+    name: "Advent of code 2020",
+    githubPage: "https://github.com/guillaume-gomez/Advent-of-code-2020",
+    demoUrl: null,
+    preview: "advent-of-code-2020.png",
+    tags: ["elixir"],
+    theme: "learning",
+    year: 2020,
+    relevance: 2
+  },
+  {
+    name: "My watchfaces",
+    githubPage: "https://github.com/guillaume-gomez/my_watch_faces",
+    demoUrl: null,
+    preview: "my-watch-faces.png",
+    tags: ["smart watch"],
+    theme: "creative",
+    year: 2018,
+    relevance: 4
+  },
+  {
+    name: "Slack RATP",
+    githubPage: "https://github.com/guillaume-gomez/Slack-Ratp",
+    demoUrl: null,
+    preview: "ratp.png",
+    videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
+    tags: ["slack", "ruby"],
+    theme: "slack",
+    year: 2018,
+    relevance: 3
+  },
+  */
+  {
+    name: "Orage et parapluie",
+    githubPage: "https://github.com/guillaume-gomez/orage-et-parapluie",
+    demoUrl: "https://guillaume-gomez.github.io/orage-et-parapluie/",
+    preview: "orage-et-parapluie.png",
+    videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
+    tags: ["typescript", "canvas"],
+    theme: "creative",
+    year: 2021,
+    relevance: 2,
+  },
+    
+  {
+    name: "Poisson Disk",
+    githubPage: "https://github.com/guillaume-gomez/poisson-disk",
+    demoUrl: "https://guillaume-gomez.github.io/poisson-disk/",
+    preview: "poisson-disk.png",
+    videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
+    tags: ["javascript"],
+    theme: "creative",
+    year: 2018,
+    relevance: 19
+  },
+  
   {
     name: "Pinch&Scape",
     githubPage: "https://github.com/guillaume-gomez/LD39",
@@ -189,16 +266,7 @@ export const projectsData : ProjectData[] = [
     year: 2018,
     relevance: 18.5
   },
-  {
-    name: "My lastFm albums",
-    githubPage: "https://github.com/guillaume-gomez/my-lastFm-albums",
-    demoUrl: null,
-    preview: "last-fm-albums.png",
-    tags: ["javascript", "react"],
-    theme: "tool",
-    year: 2018,
-    relevance: 3.25
-  },
+ 
   {
     name: "Downwell Copycat",
     githubPage: "https://github.com/guillaume-gomez/downWellCopycat",
@@ -220,16 +288,7 @@ export const projectsData : ProjectData[] = [
     year: 2017,
     relevance: 15.5
   },
-  {
-    name: "Youtube Channels Shortcuts",
-    githubPage: "https://github.com/guillaume-gomez/youtube-channels-shortcuts",
-    demoUrl: null,
-    preview: "youtube-channel-switcher.png",
-    tags: ["extension", "javascript", "youtube"],
-    theme: "tool",
-    year: 2017,
-    relevance: 12
-  },
+  
   {
     name: "Phaser Es6 Sandbox",
     githubPage: "https://github.com/guillaume-gomez/phaserEs6Sandbox",
@@ -239,16 +298,6 @@ export const projectsData : ProjectData[] = [
     tags: ["phaser", "javascript"],
     theme: "learning",
     year: 2016,
-    relevance: 2
-  },
-  {
-    name: "Advent of code 2020",
-    githubPage: "https://github.com/guillaume-gomez/Advent-of-code-2020",
-    demoUrl: null,
-    preview: "advent-of-code-2020.png",
-    tags: ["elixir"],
-    theme: "learning",
-    year: 2020,
     relevance: 2
   },
   {
@@ -306,27 +355,7 @@ export const projectsData : ProjectData[] = [
     year: 2018,
     relevance: 17.5
   },
-  {
-    name: "My watchfaces",
-    githubPage: "https://github.com/guillaume-gomez/my_watch_faces",
-    demoUrl: null,
-    preview: "my-watch-faces.png",
-    tags: ["smart watch"],
-    theme: "creative",
-    year: 2018,
-    relevance: 4
-  },
-  {
-    name: "Slack RATP",
-    githubPage: "https://github.com/guillaume-gomez/Slack-Ratp",
-    demoUrl: null,
-    preview: "ratp.png",
-    videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
-    tags: ["slack", "ruby"],
-    theme: "slack",
-    year: 2018,
-    relevance: 3
-  },
+  
   {
     name: "Roguelike Rust",
     githubPage: "https://github.com/guillaume-gomez/roguelike-rust",
@@ -549,28 +578,6 @@ export const projectsData : ProjectData[] = [
     theme: "creative",
     year: 2017,
     relevance: 2
-  },
-  {
-    name: "Boostrap-treeview",
-    githubPage: "https://github.com/guillaume-gomez/boostrap-treeview",
-    demoUrl: "https://guillaume-gomez.github.io/boostrap-treeview/",
-    preview: "preview-boostrap-treeview.png",
-    videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
-    tags: ["typescript", "boostrap"],
-    theme: "tool",
-    year: 2021,
-    relevance: 2
-  },
-  {
-    name: "Tech' Watch",
-    githubPage: "https://github.com/guillaume-gomez/technology-watch",
-    demoUrl: "https://technology-watch.herokuapp.com/",
-    preview: "tech-watch-preview.png",
-    videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
-    tags: ["typescript", "rails", "ruby", "graphql"],
-    theme: "tool",
-    year: 2021,
-    relevance: 14.5
   },
   {
     name: "Tile and square",
