@@ -1,13 +1,13 @@
 import { useState } from "react"
-import { ProjectData } from "../../constants";
+import { type ProjectData } from "../constants";
 
 interface ProjectCardProps {
   projectData: ProjectData;
-  inClick: () => void;
+  onClick: () => void;
   className: string;
 }
 
-function ProjectCard({ projectData, onClick, className } : BigProjectCardProps) {
+function ProjectCard({ projectData, onClick, className } : ProjectCardProps) {
   const [hover, setHover] = useState<boolean>(false);
 
   return (
@@ -18,19 +18,19 @@ function ProjectCard({ projectData, onClick, className } : BigProjectCardProps) 
       onMouseLeave={() => setHover(false)}
     >
       {
-        projectData.videoUrl ? 
+        projectData.videoUrl ?
           (
             <>
               <video autoPlay muted /*controls*/ className={`${hover ? 'block' : 'hidden' } object-fill w-full h-full`}> 
                  <source src={projectData.videoUrl} type="video/mp4" />
               </video>
-              <img 
+              <img
                 className={`sepia-40 ${hover ? 'hidden' : 'block'} object-fill w-full h-full`}
                 src={`./projects/${projectData.preview}`}
               />
             </>
           ) :
-          <img 
+          <img
             className="object-fill w-full h-full"
             src={`./projects/${projectData.preview}`}
           />

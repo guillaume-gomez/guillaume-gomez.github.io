@@ -1,6 +1,4 @@
-import { useState, useRef } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useRef } from 'react'
 
 import Header from "./components/Header";
 import MoreAboutMe from "./components/MoreAboutMe";
@@ -17,7 +15,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger, Flip);
 function App() {
   const container = useRef();
   const tl = useRef();
-  
+
 
   useGSAP(
     () => {
@@ -58,17 +56,17 @@ function App() {
   );
 
   return (
-    
+
     <div className="h-screen bg-base-100 px-2">
       <div className="relative top-6">
         <Header />
       </div>
-      
+
       <Presentation />
-      
+
       <div className="container m-auto">
         <GridProject />
-        
+
         <div  className="bg-secondary">
           <div className="w-1/4">
             <MoreAboutMe />
@@ -88,7 +86,7 @@ function App() {
           </div>
         </div>
         <div className="spacer final"></div>
-      
+
       </div>
 
     </div>

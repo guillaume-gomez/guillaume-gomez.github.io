@@ -1,11 +1,9 @@
 import { useRef, useMemo, Suspense, useEffect } from "react";
-import { Color, DoubleSide, MathUtils, Object3D } from "three";
-import { Canvas, useFrame } from '@react-three/fiber';
+import { Color, DoubleSide, MathUtils, Object3D, InstancedMesh } from "three";
+import { Canvas } from '@react-three/fiber';
 import { makeNoise2D  } from "open-simplex-noise";
 import CustomCameraControls from "./CustomCameraControls";
-import { GizmoHelper, GizmoViewport, Stage, Grid, Stats, Gltf, Text, RoundedBox, SoftShadows } from '@react-three/drei';
-import { EffectComposer, Noise, DotScreen } from "@react-three/postprocessing";
-import { BlendFunction } from "postprocessing";
+import { GizmoHelper, GizmoViewport, Stage, Stats, RoundedBox } from '@react-three/drei';
 
 const width = 50;
 const height = 80;
@@ -149,7 +147,7 @@ function Artwork() {
         transparent
         side={DoubleSide}
       />
-    </instancedMesh> 
+    </instancedMesh>
   );
 
 }
@@ -162,12 +160,12 @@ interface ThreeJsArtworkProps {
 function ThreeJsArtwork({ hideSquare } : ThreeJsArtworkProps) {
 
   return (
-    <div 
-      style={{backgroud: "black", border: "20px solid black"}}
+    <div
+      style={{background: "black", border: "20px solid black"}}
       className="shadow-[20px_25px_0px_0px_rgba(0,_0,_0,_0.4)] hover:cursor-grabbing"
     >
       <div
-        style={{backgroud: "white", border: "15px solid white", width:500, height:600}}
+        style={{background: "white", border: "15px solid white", width:500, height:600}}
       >
         <Canvas
             camera={{ position: [-10,0, 75], fov: 75, far: 200 }}
@@ -186,10 +184,10 @@ function ThreeJsArtwork({ hideSquare } : ThreeJsArtworkProps) {
             />
 
           <Suspense>
-            <Stage adjustCamera={false} preset="portrait" shadows="contact" environment="city">  
+            <Stage adjustCamera={false} preset="portrait" shadows="contact" environment="city">
               <group position={[0, 0, 0]}>
                 <Artwork />
-              </group> 
+              </group>
               {hideSquare && (<RoundedBox
                     position={[0,1,0]}
                     args={[25, 25, 25]} // Width, height, depth. Default is [1, 1, 1]
@@ -203,7 +201,7 @@ function ThreeJsArtwork({ hideSquare } : ThreeJsArtworkProps) {
               }
 
             </Stage>
-            
+
             {/*<EffectComposer>
               <Noise premultiply blendFunction={3} />
               <DotScreen

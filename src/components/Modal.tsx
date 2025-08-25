@@ -1,6 +1,6 @@
 import { type ReactNode } from "react";
 
-interface ModelProps {
+interface ModalProps {
   visible: boolean;
   children: ReactNode;
   onClose: () => void;

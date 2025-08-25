@@ -1,9 +1,10 @@
 import ProjectCard from "./ProjectCard";
+import { type ProjectData} from "../constants";
 
 interface BigProjectCardProps {
   projectId: number;
   projectData: ProjectData;
-  inClick: () => void;
+  onClick: () => void;
 }
 
 function BigProjectCard({ projectId, projectData, onClick } : BigProjectCardProps) {

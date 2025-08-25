@@ -281,7 +281,7 @@ export const projectsData : ProjectData[] = [
   {
     name: "Tilt Shift Rust",
     githubPage: "https://github.com/guillaume-gomez/tilt-shift-rust",
-    demoUrl: null,
+    demoUrl: undefined,
     preview: "tilt-shift-rust.png",
     tags: ["rust"],
     theme: "image-processing",
@@ -303,7 +303,7 @@ export const projectsData : ProjectData[] = [
   {
     name: "Math Game",
     githubPage: "https://github.com/guillaume-gomez/MathGame",
-    demoUrl: null,
+    demoUrl: undefined,
     preview: "math-game.png",
     videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
     tags: ["C++", "SFML"],
@@ -325,8 +325,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Aniki 90's",
     githubPage: "https://github.com/guillaume-gomez/aniki-90s",
-    demoUrl: null,
-    preview: null,
+    demoUrl: undefined,
+    preview: undefined,
     videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
     tags: ["HTML", "CSS"],
     theme: "wtf",
@@ -359,7 +359,7 @@ export const projectsData : ProjectData[] = [
   {
     name: "Roguelike Rust",
     githubPage: "https://github.com/guillaume-gomez/roguelike-rust",
-    demoUrl: null,
+    demoUrl: undefined,
     preview: "roguelike-rust.png",
     videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
     tags: ["rust"],

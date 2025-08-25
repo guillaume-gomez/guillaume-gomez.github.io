@@ -1,9 +1,9 @@
 import ThreeJsArtwork from "./ThreeJsArtwork";
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { SplitText } from "gsap/all";
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 function Presentation(){
   const { t } = useTranslation();
