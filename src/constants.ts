@@ -5,6 +5,7 @@ export const GITHUB = "https://github.com/guillaume-gomez";
 
 export interface ProjectData {
   name: string;
+  link: string;
   githubPage: string;
   preview: string;
   tags: string[];
@@ -233,6 +234,7 @@ export const projectsData : ProjectData[] = [
   */
   {
     name: "Orage et parapluie",
+    internalLink: "orage-et-parapluie",
     githubPage: "https://github.com/guillaume-gomez/orage-et-parapluie",
     demoUrl: "https://guillaume-gomez.github.io/orage-et-parapluie/",
     preview: "orage-et-parapluie.png",
@@ -245,6 +247,7 @@ export const projectsData : ProjectData[] = [
     
   {
     name: "Poisson Disk",
+    internalLink: "poisson-disk",
     githubPage: "https://github.com/guillaume-gomez/poisson-disk",
     demoUrl: "https://guillaume-gomez.github.io/poisson-disk/",
     preview: "poisson-disk.png",
@@ -257,6 +260,7 @@ export const projectsData : ProjectData[] = [
   
   {
     name: "Pinch&Scape",
+    internalLink: "pinch-scape",
     githubPage: "https://github.com/guillaume-gomez/LD39",
     demoUrl: "https://www.youtube.com/watch?v=j-0KVw4JqFs",
     preview: "pinch-scape.png",
@@ -269,6 +273,7 @@ export const projectsData : ProjectData[] = [
  
   {
     name: "Downwell Copycat",
+    internalLink: "downwell",
     githubPage: "https://github.com/guillaume-gomez/downWellCopycat",
     demoUrl: "https://guillaume-gomez.github.io/downWellCopycat/Build/",
     preview: "downwell.png",
@@ -280,6 +285,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "Tilt Shift Rust",
+    internalLink: "tilt-shift-rust",
     githubPage: "https://github.com/guillaume-gomez/tilt-shift-rust",
     demoUrl: undefined,
     preview: "tilt-shift-rust.png",
@@ -291,6 +297,7 @@ export const projectsData : ProjectData[] = [
   
   {
     name: "Phaser Es6 Sandbox",
+    internalLink: "phaser-sandbox",    
     githubPage: "https://github.com/guillaume-gomez/phaserEs6Sandbox",
     demoUrl: "https://guillaume-gomez.github.io/phaserEs6Sandbox/build/",
     preview: "phaser-sandbox.png",
@@ -302,6 +309,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "Math Game",
+    internalLink: "math-game",  
     githubPage: "https://github.com/guillaume-gomez/MathGame",
     demoUrl: undefined,
     preview: "math-game.png",
@@ -313,6 +321,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "Image to Ascii",
+    internalLink: "image-to-ascii",
     githubPage: "https://github.com/guillaume-gomez/image-to-ascii",
     demoUrl: "https://guillaume-gomez.github.io/image-to-ascii",
     preview: "image-to-ascii.png",
@@ -324,6 +333,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "Aniki 90's",
+    internalLink: "aniki-90s",
     githubPage: "https://github.com/guillaume-gomez/aniki-90s",
     demoUrl: undefined,
     preview: undefined,
@@ -335,6 +345,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "The Capitalist Fireman",
+    internalLink: "LD44",
     githubPage: "https://github.com/guillaume-gomez/LD44",
     demoUrl: "https://guillaume-gomez.github.io/LD44/Build/postMortemLudumDare/",
     preview: "LD44.png",
@@ -346,6 +357,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "Defrag",
+    internalLink: "LD42",
     githubPage: "https://github.com/guillaume-gomez/LD42",
     demoUrl: "https://guillaume-gomez.github.io/LD42/PostMortemBuild/",
     preview: "defrag.png",
@@ -358,6 +370,7 @@ export const projectsData : ProjectData[] = [
   
   {
     name: "Roguelike Rust",
+    internalLink: "roguelike-rust",
     githubPage: "https://github.com/guillaume-gomez/roguelike-rust",
     demoUrl: undefined,
     preview: "roguelike-rust.png",
@@ -369,6 +382,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "Gif Wall",
+    internalLink: "gif-wall",
     githubPage: "https://github.com/guillaume-gomez/gifWall",
     demoUrl: "https://guillaume-gomez.github.io/gifWall/index.html",
     preview: "giffWall.png",
@@ -380,6 +394,7 @@ export const projectsData : ProjectData[] = [
   },
       {
     name: "Roboto",
+    internalLink: "roboto",
     githubPage: "https://github.com/guillaume-gomez/GMTK_2019",
     demoUrl: "https://guillaume-gomez.github.io/GMTK_2019/",
     preview: "Roboto.png",
@@ -391,6 +406,7 @@ export const projectsData : ProjectData[] = [
   },
    {
     name: "Rogue Level",
+    internalLink: "rogue-level",
     githubPage: "https://github.com/guillaume-gomez/rogueLevel",
     demoUrl: null,
     preview: "rogueLevel.png",
@@ -402,6 +418,7 @@ export const projectsData : ProjectData[] = [
   },
    {
     name: "Rough-JS-x-Phaser",
+    internalLink: "rough-js-x-phaser",
     githubPage: "https://github.com/guillaume-gomez/Rough-JS-x-Phaser",
     demoUrl: "https://guillaume-gomez.github.io/phaserEs6Sandbox/build/rough.html",
     preview: "preview-phaser.png",
@@ -413,6 +430,7 @@ export const projectsData : ProjectData[] = [
   },
      {
     name: "Animate Name",
+    internalLink: "animate-name",
     githubPage: "https://github.com/guillaume-gomez/AnimateName",
     demoUrl: "https://guillaume-gomez.github.io/AnimateName",
     preview: "preview-animate-name.png",
@@ -424,6 +442,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "LD35",
+    internalLink: "ld35",
     githubPage: "https://github.com/guillaume-gomez/LD35",
     demoUrl: "https://guillaume-gomez.github.io/LD35/",
     preview: "LD35.png",
@@ -435,6 +454,7 @@ export const projectsData : ProjectData[] = [
   },
     {
     name: "LD38 Editor",
+    internalLink: "ld38-editor",
     githubPage: "https://github.com/guillaume-gomez/LD38-editor",
     demoUrl: null,
     preview: "LD-38-editor.png",
@@ -446,6 +466,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "Yokai",
+    internalLink: "yokai",
     githubPage: "https://github.com/guillaume-gomez/LD38",
     demoUrl: "https://guillaume-gomez.github.io/LD38/build/",
     preview: "yokai.png",
@@ -457,6 +478,7 @@ export const projectsData : ProjectData[] = [
   },
     {
     name: "Another techno cover album",
+    internalLink: "another-techno-cover",
     githubPage: "https://github.com/guillaume-gomez/another-techno-cover",
     demoUrl: "https://guillaume-gomez.github.io/another-techno-cover/",
     preview: "another-techno-cover.png",
@@ -468,6 +490,7 @@ export const projectsData : ProjectData[] = [
   },
    {
     name: "I'm not a hero",
+    internalLink: "ld41",
     githubPage: "https://github.com/guillaume-gomez/LD41",
     demoUrl: "https://guillaume-gomez.github.io/LD41/build/JamVersion/",
     preview: "LD42.png",
@@ -479,6 +502,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "Music Mooc",
+    internalLink: "music-mooc",
     githubPage: "https://github.com/guillaume-gomez/music-mooc",
     demoUrl: "https://guillaume-gomez.github.io/music-mooc/src/week4/week4.html",
     preview: "music-mooc.png",
@@ -490,6 +514,7 @@ export const projectsData : ProjectData[] = [
   },
     {
     name: "Shaders links",
+    internalLink: "shader-links",
     githubPage: "https://github.com/guillaume-gomez/shaders_links",
     demoUrl: null,
     preview: "shader-links.png",
@@ -501,6 +526,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "Mario Sokoban",
+    internalLink: "mario-sokoban",
     githubPage: "https://github.com/guillaume-gomez/mario_sokoban",
     demoUrl: null,
     preview: "mario-sokban.png",
@@ -513,6 +539,7 @@ export const projectsData : ProjectData[] = [
 
   {
     name: "LD: One Room",
+    internalLink: "ld37",
     githubPage: "https://github.com/guillaume-gomez/LD37",
     demoUrl: "https://guillaume-gomez.github.io/LD37/build/",
     preview: "LD37.png",
@@ -524,6 +551,7 @@ export const projectsData : ProjectData[] = [
   },
     {
     name: "LD: Ancient Technology",
+    internalLink: "ld36",
     githubPage: "https://github.com/guillaume-gomez/LD36",
     demoUrl: "https://guillaume-gomez.github.io/LD36/build/",
     preview: "LD36.png",
@@ -536,6 +564,7 @@ export const projectsData : ProjectData[] = [
   
   {
     name: "Node Race",
+    internalLink: "node-race",
     githubPage: "https://github.com/guillaume-gomez/NodeRace",
     demoUrl: null,
     preview: "node-race.png",
@@ -548,6 +577,7 @@ export const projectsData : ProjectData[] = [
  
       {
     name: "Langton ant phaser",
+    internalLink: "langton-ant-phaser",
     githubPage: "https://github.com/guillaume-gomez/langton-ant-phaser",
     demoUrl: "https://guillaume-gomez.github.io/langton-ant-phaser/build",
     preview: "langton-ant-phaser.png",
@@ -559,6 +589,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "Avatar Generator",
+    internalLink: "avatar-generator",
     githubPage: "https://github.com/guillaume-gomez/avatar-generator",
     demoUrl: "https://guillaume-gomez.github.io/avatar-generator",
     preview: "avatar-generator.png",
@@ -570,6 +601,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "P5 Sandbox",
+    internalLink: "p5-sandbox",
     githubPage: "https://github.com/guillaume-gomez/p5-sandbox",
     demoUrl: null,
     preview: "p5-sandbox.png",
@@ -581,6 +613,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "Tile and square",
+    internalLink: "tile-and-square",
     githubPage: "https://github.com/guillaume-gomez/tile-and-square",
     demoUrl: "https://guillaume-gomez.github.io/tile-and-square/",
     preview: "tile-and-square.png",
@@ -592,6 +625,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "Random Crosses",
+    internalLink: "random-crosses",
     githubPage: "https://github.com/guillaume-gomez/randomCrosses",
     demoUrl: "https://guillaume-gomez.github.io/randomCrosses/",
     preview: "random-crosses.png",
@@ -603,6 +637,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "To pointillism",
+    internalLink: "to-pointillism",
     githubPage: "https://github.com/guillaume-gomez/to-pointillism",
     demoUrl: "https://guillaume-gomez.github.io/to-pointillism",
     preview: "to-pointillism.jpeg",
@@ -614,6 +649,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "Squared words",
+    internalLink: "squared-words",
     githubPage: "https://github.com/guillaume-gomez/squared_words",
     demoUrl: "https://guillaume-gomez.github.io/squared_words/dist",
     preview: "squared_words.png",
@@ -625,6 +661,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "Life In Grid",
+    internalLink: "life-in-grid",
     githubPage: "https://github.com/guillaume-gomez/life-in-grid",
     demoUrl: "https://guillaume-gomez.github.io/life-in-grid",
     preview: "life-in-grid.png",
@@ -636,6 +673,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "Rainbow Road",
+    internalLink: "rainbow-road",
     githubPage: "https://github.com/guillaume-gomez/rainbow-road",
     demoUrl: "https://guillaume-gomez.github.io/rainbow-road",
     preview: "rainbow-road.png",
@@ -647,6 +685,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "Steganography",
+    internalLink: "steganography",
     githubPage: "https://github.com/guillaume-gomez/Steganography",
     demoUrl: "",
     preview: "steganography.png",
@@ -658,6 +697,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "SpectrumIV",
+    internalLink: "spectrum-iv-shader",
     githubPage: "https://github.com/guillaume-gomez/SpectrumIV_shader",
     demoUrl: "https://guillaume-gomez.github.io/SpectrumIV_shader",
     preview: "spectrum_iv_shader.jpg",
@@ -669,6 +709,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "Image Collection Generator",
+    internalLink: "image-collection-generator",
     githubPage: "https://github.com/guillaume-gomez/image-collection-generator",
     demoUrl: "",
     preview: "image_collection_generator.png",
@@ -680,6 +721,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "Gazette Gazette",
+    internalLink: "gazette-gazette",
     githubPage: "https://github.com/guillaume-gomez/gazette-gazette",
     demoUrl: "https://guillaume-gomez.github.io/gazette-gazette",
     preview: "gazette-gazette.png",
@@ -691,6 +733,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "Three-js-cameras",
+    internalLink: "three-js-cameras",
     githubPage: "https://github.com/guillaume-gomez/gazette-gazette",
     demoUrl: "https://guillaume-gomez.github.io/gazette-gazette",
     preview: "three-js-cameras.png",
@@ -702,6 +745,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "Wasm Game Of Life",
+    internalLink: "wasm-game-of-life",
     githubPage: "https://github.com/guillaume-gomez/wasm-game-of-life",
     demoUrl: "https://guillaume-gomez.github.io/wasm-game-of-life",
     preview: "wasm-game-of-life.png",
@@ -713,6 +757,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "Burning Earth",
+    internalLink: "burning-earth",
     githubPage: "https://github.com/guillaume-gomez/burningEarth",
     demoUrl: "https://guillaume-gomez.github.io/burningEarth",
     preview: "burning-earth.png",
@@ -724,6 +769,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "Fun with flags",
+    internalLink: "fun-with-flags",
     githubPage: "https://github.com/guillaume-gomez/fun-with-flags",
     demoUrl: "https://guillaume-gomez.github.io/fun-with-flags/",
     preview: "fun-with-flags.png",
@@ -735,6 +781,7 @@ export const projectsData : ProjectData[] = [
   },
     {
     name: "FromImage2Geometries",
+    internalLink: "from-image-to-geometries",
     githubPage: "https://github.com/guillaume-gomez/fromImage2Geometries",
     demoUrl: "https://guillaume-gomez.github.io/fromImage2Geometries/",
     preview: "FromImage2Geometries.png",
@@ -746,6 +793,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "Split my heart",
+    internalLink: "split-my-heart",
     githubPage: "https://github.com/guillaume-gomez/split-my-heart",
     demoUrl: "https://guillaume-gomez.github.io/split-my-heart/",
     preview: "split-my-heart.png",
@@ -757,6 +805,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "Mondrian verse",
+    internalLink: "mondrian-verse",
     githubPage: "https://github.com/guillaume-gomez/mondrian-verse",
     demoUrl: "https://guillaume-gomez.github.io/mondrian-verse/",
     preview: "mondrian-verse.png",
@@ -768,6 +817,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "Shred Image",
+    internalLink: "shred-image",
     githubPage: "https://github.com/guillaume-gomez/shred-image",
     demoUrl: "https://guillaume-gomez.github.io/shred-image/",
     preview: "shred-image.png",
@@ -779,6 +829,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "Woven Image",
+    internalLink: "woven-image",
     githubPage: "https://github.com/guillaume-gomez/woven-images",
     demoUrl: "https://guillaume-gomez.github.io/woven-images/",
     preview: "woven-images.jpeg",
@@ -790,6 +841,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "Rubiks Image",
+    internalLink: "rubiks-image",
     githubPage: "https://github.com/guillaume-gomez/rubiks-image",
     demoUrl: "https://guillaume-gomez.github.io/rubiks-image/",
     preview: "rubiks-image.png",
@@ -801,6 +853,7 @@ export const projectsData : ProjectData[] = [
   },
   {
     name: "Embodiment",
+    internalLink: "embodiment",
     githubPage: "https://github.com/guillaume-gomez/embodiment",
     demoUrl: "https://guillaume-gomez.github.io/embodiment/",
     preview: "embodiment.png",
@@ -811,4 +864,3 @@ export const projectsData : ProjectData[] = [
     relevance: 16.5
   },
 ];
-
