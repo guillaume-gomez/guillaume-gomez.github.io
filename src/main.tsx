@@ -7,26 +7,29 @@ import './index.css';
 import "./i18n";
 import App from './App.tsx';
 import ProjectPage from "./ProjectPage";
+import AnimationLayout from "./components/AnimationLayout";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route
-          path="/"
-          element={<App />}
-        />
-        {
-          projectsData.map(projectData => 
-            (
-              <Route
-                path={`${projectData.internalLink}`}
-                element={<ProjectPage projectData={projectData} />}
-              />
+      <AnimationLayout>
+        <Routes>
+          <Route
+            path="/"
+            element={<App />}
+          />
+          {
+            projectsData.map(projectData => 
+              (
+                <Route
+                  path={`${projectData.internalLink}`}
+                  element={<ProjectPage projectData={projectData} />}
+                />
+              )
             )
-          )
-        }
-      </Routes>
+          }
+        </Routes>
+      </AnimationLayout>
     </BrowserRouter>
   </StrictMode>,
 )

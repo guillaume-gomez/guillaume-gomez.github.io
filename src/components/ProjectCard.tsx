@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { type ProjectData } from "../constants";
+import TransitionButton from "./TransitionButton";
 
 interface ProjectCardProps {
   projectData: ProjectData;
@@ -13,7 +14,7 @@ function ProjectCard({ projectData, onClick, className } : ProjectCardProps) {
   return (
     <div
       className={`projectCard ${className} ${hover ? 'cursor-pointer' : '' }`}
-      onClick={onClick}
+     // onClick={onClick}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
@@ -36,6 +37,7 @@ function ProjectCard({ projectData, onClick, className } : ProjectCardProps) {
           />
 
       }
+      <TransitionButton href={projectData.internalLink} label="About ->" />
     </div>
   )
 }

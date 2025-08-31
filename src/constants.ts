@@ -14,6 +14,7 @@ export interface ProjectData {
   relevance: number
   demoUrl?: string;
   videoUrl?: string;
+  internalLink: string;
   intentionNoteTag: string;
 }
 
