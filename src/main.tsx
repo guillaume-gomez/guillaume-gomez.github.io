@@ -1,12 +1,10 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router";
-import { projectsData } from "./constants"; 
+import RouteWithQueryStringParams from "./components/RouteWithQueryStringParams";
 import './index.css';
 
 import "./i18n";
-import App from './App.tsx';
-import ProjectPage from "./ProjectPage";
 import AnimationLayout from "./components/AnimationLayout";
 
 createRoot(document.getElementById('root')!).render(
@@ -16,18 +14,8 @@ createRoot(document.getElementById('root')!).render(
         <Routes>
           <Route
             path="/"
-            element={<App />}
+            element={<RouteWithQueryStringParams />}
           />
-          {
-            projectsData.map(projectData => 
-              (
-                <Route
-                  path={`${projectData.internalLink}`}
-                  element={<ProjectPage projectData={projectData} />}
-                />
-              )
-            )
-          }
         </Routes>
       </AnimationLayout>
     </BrowserRouter>

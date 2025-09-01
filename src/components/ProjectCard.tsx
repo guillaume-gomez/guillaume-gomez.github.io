@@ -37,7 +37,7 @@ function ProjectCard({ projectData, onClick, className } : ProjectCardProps) {
           />
 
       }
-      <TransitionButton href={projectData.internalLink} label="About ->" />
+      <TransitionButton href={`/?project=${projectData.internalLink}`} label="About ->" />
     </div>
   )
 }
