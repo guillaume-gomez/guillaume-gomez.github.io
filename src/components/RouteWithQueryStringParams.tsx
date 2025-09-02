@@ -1,4 +1,4 @@
-import App from "../App";
+import Home from "../pages/Home";
 import ProjectPage from "../pages/ProjectPage";
 import { useSearchParams } from "react-router-dom";
 import { projectsData } from "../constants"; 
@@ -9,13 +9,13 @@ function RouteWithQueryStringParams() {
   const projectName = searchParams.get("project");
 
   if(!projectName) {
-    return <App />;
+    return <Home />;
   }
 
   const projectData = projectsData.find(projectData => projectData.internalLink === projectName);
 
   if(!projectData) {
-    return <App />;
+    return <Home />;
   }
 
 
