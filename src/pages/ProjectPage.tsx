@@ -1,4 +1,5 @@
-import { type ProjectData } from "../constants"
+import { useEffect } from "react";
+import { type ProjectData } from "../constants";
 
 
 interface ProjectPageProps {
@@ -11,45 +12,45 @@ Il n'a pas fait que survivre cinq siècles.`;
 
 
 function ProjectPage({ projectData } : ProjectPageProps) {
-
-
   return (
-    <div className="grid grid-cols-6 grid-rows-6 gap-4">
-        <div className="col-span-2 col-start-3">
-          <p className="text-4xl underline">{projectData.name}</p>
-        </div>
-        <div className="col-span-3 col-start-1 row-start-2">
-          <ul className="flex flex-row gap-2">
-            {
-              projectData.tags.map(tag => (
-                (
-                  <li className="badge">
-                    {tag}
-                  </li>
-                )
-              ))
-            }
-          </ul>
-        </div>
-        <div className="col-span-3 col-start-4 row-start-2">
-          <button>toto</button>
-        </div>
-        <div className="col-span-3 row-span-3 col-start-1 row-start-3">
-          <video autoPlay muted controls className={`object-fill w-full h-full rounded-3xl`}> 
-           <source src={projectData.videoUrl} type="video/mp4" />
-          </video>
-        </div>
-        <div className="col-span-3 row-span-3 col-start-4 row-start-3">
-          <img 
-            className={`object-fill w-full h-full rounded-3xl`}
-            src={`./projects/${projectData.preview}`}
-          />
-        </div>
-        <div className="col-span-4 col-start-2 row-start-6">
-          <p>
-            {dataProject}
-          </p>
-        </div>
+    <div className="container mx-auto">
+      <div className="grid grid-cols-6 grid-rows-6 gap-4">
+          <div className="col-span-2 col-start-3">
+            <p className="text-4xl underline">{projectData.name}</p>
+          </div>
+          <div className="col-span-3 col-start-1 row-start-2">
+            <ul className="flex flex-row gap-2">
+              {
+                projectData.tags.map(tag => (
+                  (
+                    <li className="badge">
+                      {tag}
+                    </li>
+                  )
+                ))
+              }
+            </ul>
+          </div>
+          <div className="col-span-3 col-start-4 row-start-2">
+            <button>toto</button>
+          </div>
+          <div className="col-span-3 row-span-3 col-start-1 row-start-3">
+            <video autoPlay muted controls className={`object-fill w-full h-full rounded-3xl`}> 
+             <source src={projectData.videoUrl} type="video/mp4" />
+            </video>
+          </div>
+          <div className="col-span-3 row-span-3 col-start-4 row-start-3">
+            <img 
+              className={`object-fill w-full h-full rounded-3xl`}
+              src={`./projects/${projectData.preview}`}
+            />
+          </div>
+          <div className="col-span-4 col-start-2 row-start-6">
+            <p>
+              {dataProject}
+            </p>
+          </div>
+      </div>
     </div>
   );
 }

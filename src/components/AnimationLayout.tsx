@@ -7,6 +7,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     animatePageIn();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [location]);
 
   return (
