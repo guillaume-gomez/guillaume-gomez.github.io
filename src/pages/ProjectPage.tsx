@@ -1,5 +1,7 @@
-import { useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 import { type ProjectData } from "../constants";
+import { animatePageOut } from "../animations";
+
 
 
 interface ProjectPageProps {
@@ -12,9 +14,23 @@ Il n'a pas fait que survivre cinq siècles.`;
 
 
 function ProjectPage({ projectData } : ProjectPageProps) {
+  const navigate = useNavigate();
+
+  function onBack() {
+    animatePageOut(() => {
+      navigate(-1);
+    });
+  }
+
   return (
     <div className="container mx-auto">
       <div className="grid grid-cols-6 grid-rows-6 gap-4">
+          <button className="btn btn-outline btn-accent" onClick={onBack}>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+            </svg>
+            Back
+          </button>
           <div className="col-span-2 col-start-3">
             <p className="text-4xl underline">{projectData.name}</p>
           </div>

@@ -1,6 +1,7 @@
 import { useState } from "react"
+import { useNavigate } from 'react-router-dom';
+import { animatePageOut } from "../animations";
 import { type ProjectData } from "../constants";
-import TransitionButton from "./TransitionButton";
 
 interface ProjectCardProps {
   projectData: ProjectData;
@@ -10,11 +11,20 @@ interface ProjectCardProps {
 
 function ProjectCard({ projectData, onClick, className } : ProjectCardProps) {
   const [hover, setHover] = useState<boolean>(false);
+  const navigate = useNavigate();
+
+  function goToProject() {
+
+    animatePageOut(() => {
+      navigate(`/?project=${projectData.internalLink}`);
+    });
+    onClick();
+  }
 
   return (
     <div
       className={`projectCard ${className} ${hover ? 'cursor-pointer' : '' }`}
-     // onClick={onClick}
+      onClick={goToProject}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
@@ -37,7 +47,6 @@ function ProjectCard({ projectData, onClick, className } : ProjectCardProps) {
           />
 
       }
-      <TransitionButton href={`/?project=${projectData.internalLink}`} label="About ->" />
     </div>
   )
 }
