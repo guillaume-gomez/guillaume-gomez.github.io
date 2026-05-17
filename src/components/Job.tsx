@@ -48,7 +48,7 @@ function Job({begin, end, jobTitle, jobDescription, company, companyUrl, locatio
                   width="128px"
                   loading="lazy"
                   className="job-image"
-                  src={`${process.env.PUBLIC_URL}/companies/${imgSrc}`}
+                  src={`${import.meta.env.BASE_URL}companies/${imgSrc}`}
                   alt="company-that-i-have-worked-for"
                 />
               </a>
@@ -57,7 +57,7 @@ function Job({begin, end, jobTitle, jobDescription, company, companyUrl, locatio
                   width="128px"
                   loading="lazy"
                   className="job-image"
-                  src={`${process.env.PUBLIC_URL}/companies/${imgSrc}`}
+                  src={`${import.meta.env.BASE_URL}companies/${imgSrc}`}
                   alt="company-that-i-have-worked-for"
                 />
               }

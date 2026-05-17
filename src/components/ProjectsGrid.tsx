@@ -30,7 +30,7 @@ function ProjectsGrid({projectsData, itemsLoaded } : ProjectGridInterface) {
         variants={{
           mobile: { opacity: 1 },
           hidden: { opacity: 0 },
-          showUp: (i) => {
+          showUp: (i: number) => {
             if(i > nbItemLoaded) {
               return {opacity: 1, translateY: [(nbItemLoaded - i) * -200, 0]}
             } else {
