@@ -53,7 +53,6 @@ function Projects({refTarget} : ProjectInterface) {
   useEffect(() => {
     const itemsLoaded = Math.min(projectsDataFiltered.length, stepProjects);
     setItemLoaded(itemsLoaded);
-    controls.start("scaleUp");
   }, [projectsDataFiltered, controls]);
 
   function loadMore() {
@@ -64,6 +63,7 @@ function Projects({refTarget} : ProjectInterface) {
 
   function onChangeTheme(theme: string) {
     setTheme(theme);
+    controls.start("scaleUp");
     //remove selected filter
     setFilter("")
   }
