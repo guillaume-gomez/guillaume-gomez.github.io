@@ -65,7 +65,7 @@ function ProjectCell({name, githubPage, demo, preview, tags, theme, relevance} :
    <motion.img
       className={preview ? "project-cell-image" : "project-cell-image project-cell-gray"}
       loading="lazy"
-      src={ preview ? `${process.env.PUBLIC_URL}/projects/${preview}` : `${process.env.PUBLIC_URL}/projects/noise.jpg` }
+      src={ preview ? `${import.meta.env.BASE_URL}projects/${preview}` : `${import.meta.env.BASE_URL}projects/noise.jpg` }
       alt={name}
     />  
     <motion.div className="project-cell-details"

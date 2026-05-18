@@ -5,7 +5,7 @@ import { isBrowser } from 'react-device-detect';
 import WelcomePage from "./views/WelcomePage";
 import Footer from "./views/Footer";
 import Cursor from "./components/Cursor";
-import { ReactComponent as Stripes } from "./stripes.svg";
+import Stripes from "./stripes.svg?react";
 import './App.css';
 
 // lazy components

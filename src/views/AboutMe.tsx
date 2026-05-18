@@ -19,7 +19,7 @@ function AboutMe() {
       <SectionHeader text={t("about-me.about-me")} />
       <div className="about-me-infos">
         <FadeInWhenVisibleAndMove className="about-me-avatar" direction="left">
-          <img className="about-me-avatar-img" src={`${process.env.PUBLIC_URL}profile.jpeg`} loading="lazy" alt="my face"/>
+          <img className="about-me-avatar-img" src={`${import.meta.env.BASE_URL}profile.jpeg`} loading="lazy" alt="my face"/>
           <ul className="about-me-icons">
             <li key="GITHUB">
               <a className="icons" href={GITHUB}>
