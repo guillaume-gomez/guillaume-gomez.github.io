@@ -6,7 +6,7 @@ import { OrbitControls, useGLTF } from '@react-three/drei'
 import "./AframeScene.css";
 
 function Cassette(props :  ThreeElements['mesh']) {
-  const { scene } = useGLTF(`${process.env.PUBLIC_URL}/3d-assets/cassette.gltf`);
+  const { scene } = useGLTF(`${import.meta.env.BASE_URL}3d-assets/cassette.gltf`);
   return <primitive object={scene} {...props} />
 }
 
@@ -18,7 +18,7 @@ function FootBall(props : ThreeElements['mesh']) {
       mesh.current.rotation.y += delta;
     }
   })
-  const { scene } = useGLTF(`${process.env.PUBLIC_URL}/3d-assets/ball/scene.gltf`);
+  const { scene } = useGLTF(`${import.meta.env.BASE_URL}3d-assets/ball/scene.gltf`);
   return <primitive
       ref={mesh}
       object={scene}
@@ -30,18 +30,18 @@ function FootBall(props : ThreeElements['mesh']) {
 
 
 function TennisRaquette(props : ThreeElements['mesh']) {
-  const { scene } = useGLTF(`${process.env.PUBLIC_URL}/3d-assets/racket/scene.gltf`);
+  const { scene } = useGLTF(`${import.meta.env.BASE_URL}3d-assets/racket/scene.gltf`);
   return <primitive object={scene} {...props} />
 }
 
 function Weights(props :  ThreeElements['mesh']) {
-  const { scene } = useGLTF(`${process.env.PUBLIC_URL}/3d-assets/weights/scene.gltf`);
+  const { scene } = useGLTF(`${import.meta.env.BASE_URL}3d-assets/weights/scene.gltf`);
   return <primitive object={scene} {...props} />
 }
 
 
 function Dekstop(props :  ThreeElements['mesh']) {
-  const { scene } = useGLTF(`${process.env.PUBLIC_URL}/3d-assets/workplace/scene.gltf`);
+  const { scene } = useGLTF(`${import.meta.env.BASE_URL}3d-assets/workplace/scene.gltf`);
   return <primitive object={scene} {...props} />
 }
 

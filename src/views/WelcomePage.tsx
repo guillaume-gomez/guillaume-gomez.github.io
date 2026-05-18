@@ -2,7 +2,7 @@ import React from 'react';
 import { isBrowser } from 'react-device-detect';
 import { useTranslation } from 'react-i18next';
 import { motion } from "framer-motion";
-import { ReactComponent as MacMouse } from "../macintosh-mouse.svg";
+import MacMouse from "../macintosh-mouse.svg?react";
 
 
 import "./WelcomePage.scss";

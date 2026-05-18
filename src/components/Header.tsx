@@ -8,6 +8,8 @@ import { faFile } from '@fortawesome/free-solid-svg-icons';
 
 import { LINKEDIN, GITHUB } from "../constants";
 
+const { BASE_URL } = import.meta.env;
+
 import "./Header.css";
 
 interface HeaderInterface {
@@ -36,7 +38,7 @@ function Header({refTarget} : HeaderInterface) {
           <img
             width="48px"
             className="header-logo"
-            src={`${process.env.PUBLIC_URL}/icons/${iconNumber}.png`}
+            src={`${BASE_URL}icons/${iconNumber}.png`}
             alt="one of my generated icon"
           />
         </a>
@@ -54,7 +56,7 @@ function Header({refTarget} : HeaderInterface) {
         <a href={GITHUB}>
           <FontAwesomeIcon icon={faGithub} size="lg" />
         </a>
-         <a href={language === "fr" ? `${process.env.PUBLIC_URL}/CV_FR.pdf` : `${process.env.PUBLIC_URL}/CV_EN.pdf`}>
+         <a href={language === "fr" ? `${BASE_URL}CV_FR.pdf` : `${import.meta.env.BASE_URL}CV_EN.pdf`}>
           <FontAwesomeIcon icon={faFile} size="lg" />
         </a>
       </div>
