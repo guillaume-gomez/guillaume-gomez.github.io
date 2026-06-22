@@ -25,8 +25,7 @@ function Footer({refTarget} : FooterInterface) {
         </motion.div>
       </div>
       <div className="about-website">
-        <p>Guillaume Gomez © 2021 </p>
-        <p className="designed-by">{t("footer.design-by")}<a className="underline-link" href="http://allanictheo.com/">Theo Allanic</a></p>
+        <p>Guillaume Gomez © 2026 </p>
       </div>
     </footer>
   );
