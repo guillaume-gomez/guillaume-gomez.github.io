@@ -19,17 +19,9 @@
   top: -40px;
 }
 
-.footer-tel {
-  width: 30%;
-}
-
 .about-website {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.designed-by {
-  font-size: 20px;
 }
