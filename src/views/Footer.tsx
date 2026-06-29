@@ -14,7 +14,7 @@ function Footer({refTarget} : FooterInterface) {
   const { t } = useTranslation();
 
   return (
-    <footer className="footer-content">
+    <footer className="d-flex flex-col justify-center items-center footer-content pb-8">
       <div className="footer-up" onClick={() => refTarget!.current!.scrollIntoView({behavior: "smooth"}) }>
         <motion.div 
           whileHover={{ translateY: -5, transition: { duration: 0.5, repeat: Infinity } }}

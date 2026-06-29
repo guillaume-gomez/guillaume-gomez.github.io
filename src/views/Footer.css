@@ -1,11 +1,6 @@
 .footer-content {
   min-height: 15vh;
-  display: flex;
-  flex-direction: column;
-  justify-content:  center;
-  align-items: center;
   background: rgba(4,23,70,1);
-  padding-bottom: 2rem;
 }
 
 .footer-up {
