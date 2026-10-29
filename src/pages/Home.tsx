@@ -13,8 +13,8 @@ import { Flip } from "gsap/Flip";
 gsap.registerPlugin(useGSAP, ScrollTrigger, Flip);
 
 function Home() {
-  const container = useRef();
-  const tl = useRef();
+  const container = useRef<HTMLDivElement>(null);
+  const tl = useRef<gsap.core.Timeline>(null);
 
 
   useGSAP(
@@ -41,13 +41,13 @@ function Home() {
 
           tl.current
           .add(
-            Flip.fit(".box", secondState, flipConfig),
+            Flip.fit(".box", secondState, flipConfig) as gsap.core.Tween,
             "+=2.0"
           ).add(
-            Flip.fit(".box", thirdState, flipConfig),
+            Flip.fit(".box", thirdState, flipConfig) as gsap.core.Tween,
             "+=0.5"
           ).add(
-            Flip.fit(".box", fourthState, flipConfig),
+            Flip.fit(".box", fourthState, flipConfig) as gsap.core.Tween,
             "+=0.5"
           );
         });

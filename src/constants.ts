@@ -22,7 +22,7 @@ export const projectsData : ProjectData[] = [
   /*  {
     name: "Ber Mode",
     githubPage: "https://github.com/guillaume-gomez/BerMode",
-    demoUrl: null,
+    demoUrl: undefined,
     preview: "berMode.png",
     videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
     tags: ["ruby", "slack"],
@@ -33,7 +33,7 @@ export const projectsData : ProjectData[] = [
   /*   {
     name: "Hi bot",
     githubPage: "https://github.com/guillaume-gomez/hi-bot",
-    demoUrl: null,
+    demoUrl: undefined,
     preview: null,
     videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
     tags: ["slack"],
@@ -44,7 +44,7 @@ export const projectsData : ProjectData[] = [
   /*{
     name: "Graphql Clone",
     githubPage: "https://github.com/guillaume-gomez/graphql-hackerClone",
-    demoUrl: null,
+    demoUrl: undefined,
     preview: "hacker-news-clone.png",
     videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
     tags: ["graphql", "javascript"],
@@ -55,7 +55,7 @@ export const projectsData : ProjectData[] = [
  /* {
     name: "Mario Sokoban Editor",
     githubPage: "https://github.com/guillaume-gomez/sokoban-editor",
-    demoUrl: null,
+    demoUrl: undefined,
     preview: "sokoban-editor.png",
     videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
     tags: ["C++", "SDL"],
@@ -66,7 +66,7 @@ export const projectsData : ProjectData[] = [
     /*{
     name: "Haskell Mooc",
     githubPage: "https://github.com/guillaume-gomez/haskell-mooc",
-    demoUrl: null,
+    demoUrl: undefined,
     preview: "haskell.png",
     videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
     tags: ["haskell"],
@@ -77,7 +77,7 @@ export const projectsData : ProjectData[] = [
    /*   {
     name: "Basics Python",
     githubPage: "https://github.com/guillaume-gomez/basics-python",
-    demoUrl: null,
+    demoUrl: undefined,
     preview: "python.png",
     videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
     tags: ["python"],
@@ -88,7 +88,7 @@ export const projectsData : ProjectData[] = [
    /*{
     name: "Erlang mooc",
     githubPage: "https://github.com/guillaume-gomez/erlangMooc",
-    demoUrl: null,
+    demoUrl: undefined,
     preview: "Erlang.png",
     videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
     tags: ["erlang"],
@@ -99,7 +99,7 @@ export const projectsData : ProjectData[] = [
   /*   {
     name: "NF11-project",
     githubPage: "https://github.com/guillaume-gomez/NF11-project",
-    demoUrl: null,
+    demoUrl: undefined,
     preview: "NF11.png",
     videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
     tags: ["java"],
@@ -110,7 +110,7 @@ export const projectsData : ProjectData[] = [
  /* {
     name: "Window ray",
     githubPage: "https://github.com/guillaume-gomez/window-ray",
-    demoUrl: null,
+    demoUrl: undefined,
     preview: null,
     videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
     tags: ["javascript", "jaws"],
@@ -121,7 +121,7 @@ export const projectsData : ProjectData[] = [
   {
     name: "Workshop Elixir Paris",
     githubPage: "https://github.com/guillaume-gomez/workshop_elixir_paris",
-    demoUrl: null,
+    demoUrl: undefined,
     preview: "elixir-paris.jpeg",
     tags: ["elixir"],
     theme: "mooc",
@@ -132,7 +132,7 @@ export const projectsData : ProjectData[] = [
   {
     name: "react-hook-context-reducer",
     githubPage: "https://github.com/guillaume-gomez/react-hook-context-reducer",
-    demoUrl: null,
+    demoUrl: undefined,
     preview: "react-hook-context-reducer.png",
     tags: ["typescript", "react"],
     theme: "learning",
@@ -142,7 +142,7 @@ export const projectsData : ProjectData[] = [
   {
     name: "linkedListTDD",
     githubPage: "https://github.com/guillaume-gomez/linkedListTDD",
-    demoUrl: null,
+    demoUrl: undefined,
     preview: "linked-list.png",
     tags: ["typescript", "react"],
     theme: "learning",
@@ -152,7 +152,7 @@ export const projectsData : ProjectData[] = [
   {
     name: "Vocal Assistant Valentine",
     githubPage: "https://github.com/guillaume-gomez/vocal-assistant-clementine",
-    demoUrl: null,
+    demoUrl: undefined,
     preview: "vocal-assistant-clementine.png",
     tags: ["javascript"],
     theme: "learning",
@@ -162,7 +162,7 @@ export const projectsData : ProjectData[] = [
    {
     name: "My lastFm albums",
     githubPage: "https://github.com/guillaume-gomez/my-lastFm-albums",
-    demoUrl: null,
+    demoUrl: undefined,
     preview: "last-fm-albums.png",
     tags: ["javascript", "react"],
     theme: "tool",
@@ -172,7 +172,7 @@ export const projectsData : ProjectData[] = [
   {
     name: "Youtube Channels Shortcuts",
     githubPage: "https://github.com/guillaume-gomez/youtube-channels-shortcuts",
-    demoUrl: null,
+    demoUrl: undefined,
     preview: "youtube-channel-switcher.png",
     tags: ["extension", "javascript", "youtube"],
     theme: "tool",
@@ -204,7 +204,7 @@ export const projectsData : ProjectData[] = [
   {
     name: "Advent of code 2020",
     githubPage: "https://github.com/guillaume-gomez/Advent-of-code-2020",
-    demoUrl: null,
+    demoUrl: undefined,
     preview: "advent-of-code-2020.png",
     tags: ["elixir"],
     theme: "learning",
@@ -214,7 +214,7 @@ export const projectsData : ProjectData[] = [
   {
     name: "My watchfaces",
     githubPage: "https://github.com/guillaume-gomez/my_watch_faces",
-    demoUrl: null,
+    demoUrl: undefined,
     preview: "my-watch-faces.png",
     tags: ["smart watch"],
     theme: "creative",
@@ -224,7 +224,7 @@ export const projectsData : ProjectData[] = [
   {
     name: "Slack RATP",
     githubPage: "https://github.com/guillaume-gomez/Slack-Ratp",
-    demoUrl: null,
+    demoUrl: undefined,
     preview: "ratp.png",
     videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
     tags: ["slack", "ruby"],
@@ -236,6 +236,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Orage et parapluie",
     internalLink: "orage-et-parapluie",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/orage-et-parapluie",
     demoUrl: "https://guillaume-gomez.github.io/orage-et-parapluie/",
     preview: "orage-et-parapluie.png",
@@ -249,6 +251,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Poisson Disk",
     internalLink: "poisson-disk",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/poisson-disk",
     demoUrl: "https://guillaume-gomez.github.io/poisson-disk/",
     preview: "poisson-disk.png",
@@ -262,6 +266,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Pinch&Scape",
     internalLink: "pinch-scape",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/LD39",
     demoUrl: "https://www.youtube.com/watch?v=j-0KVw4JqFs",
     preview: "pinch-scape.png",
@@ -275,6 +281,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Downwell Copycat",
     internalLink: "downwell",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/downWellCopycat",
     demoUrl: "https://guillaume-gomez.github.io/downWellCopycat/Build/",
     preview: "downwell.png",
@@ -287,6 +295,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Tilt Shift Rust",
     internalLink: "tilt-shift-rust",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/tilt-shift-rust",
     demoUrl: undefined,
     preview: "tilt-shift-rust.png",
@@ -299,6 +309,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Phaser Es6 Sandbox",
     internalLink: "phaser-sandbox",    
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/phaserEs6Sandbox",
     demoUrl: "https://guillaume-gomez.github.io/phaserEs6Sandbox/build/",
     preview: "phaser-sandbox.png",
@@ -311,6 +323,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Math Game",
     internalLink: "math-game",  
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/MathGame",
     demoUrl: undefined,
     preview: "math-game.png",
@@ -323,6 +337,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Image to Ascii",
     internalLink: "image-to-ascii",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/image-to-ascii",
     demoUrl: "https://guillaume-gomez.github.io/image-to-ascii",
     preview: "image-to-ascii.png",
@@ -335,9 +351,11 @@ export const projectsData : ProjectData[] = [
   {
     name: "Aniki 90's",
     internalLink: "aniki-90s",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/aniki-90s",
     demoUrl: undefined,
-    preview: undefined,
+    preview: "https://placehold.co/600x400",
     videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
     tags: ["HTML", "CSS"],
     theme: "wtf",
@@ -347,6 +365,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "The Capitalist Fireman",
     internalLink: "LD44",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/LD44",
     demoUrl: "https://guillaume-gomez.github.io/LD44/Build/postMortemLudumDare/",
     preview: "LD44.png",
@@ -359,6 +379,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Defrag",
     internalLink: "LD42",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/LD42",
     demoUrl: "https://guillaume-gomez.github.io/LD42/PostMortemBuild/",
     preview: "defrag.png",
@@ -372,6 +394,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Roguelike Rust",
     internalLink: "roguelike-rust",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/roguelike-rust",
     demoUrl: undefined,
     preview: "roguelike-rust.png",
@@ -384,6 +408,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Gif Wall",
     internalLink: "gif-wall",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/gifWall",
     demoUrl: "https://guillaume-gomez.github.io/gifWall/index.html",
     preview: "giffWall.png",
@@ -396,6 +422,8 @@ export const projectsData : ProjectData[] = [
       {
     name: "Roboto",
     internalLink: "roboto",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/GMTK_2019",
     demoUrl: "https://guillaume-gomez.github.io/GMTK_2019/",
     preview: "Roboto.png",
@@ -408,8 +436,10 @@ export const projectsData : ProjectData[] = [
    {
     name: "Rogue Level",
     internalLink: "rogue-level",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/rogueLevel",
-    demoUrl: null,
+    demoUrl: undefined,
     preview: "rogueLevel.png",
     videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
     tags: ["unity"],
@@ -420,6 +450,8 @@ export const projectsData : ProjectData[] = [
    {
     name: "Rough-JS-x-Phaser",
     internalLink: "rough-js-x-phaser",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/Rough-JS-x-Phaser",
     demoUrl: "https://guillaume-gomez.github.io/phaserEs6Sandbox/build/rough.html",
     preview: "preview-phaser.png",
@@ -432,6 +464,8 @@ export const projectsData : ProjectData[] = [
      {
     name: "Animate Name",
     internalLink: "animate-name",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/AnimateName",
     demoUrl: "https://guillaume-gomez.github.io/AnimateName",
     preview: "preview-animate-name.png",
@@ -444,6 +478,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "LD35",
     internalLink: "ld35",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/LD35",
     demoUrl: "https://guillaume-gomez.github.io/LD35/",
     preview: "LD35.png",
@@ -456,8 +492,10 @@ export const projectsData : ProjectData[] = [
     {
     name: "LD38 Editor",
     internalLink: "ld38-editor",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/LD38-editor",
-    demoUrl: null,
+    demoUrl: undefined,
     preview: "LD-38-editor.png",
     videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
     tags: ["javascript", "jaws", "LD"],
@@ -468,6 +506,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Yokai",
     internalLink: "yokai",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/LD38",
     demoUrl: "https://guillaume-gomez.github.io/LD38/build/",
     preview: "yokai.png",
@@ -480,6 +520,8 @@ export const projectsData : ProjectData[] = [
     {
     name: "Another techno cover album",
     internalLink: "another-techno-cover",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/another-techno-cover",
     demoUrl: "https://guillaume-gomez.github.io/another-techno-cover/",
     preview: "another-techno-cover.png",
@@ -492,6 +534,8 @@ export const projectsData : ProjectData[] = [
    {
     name: "I'm not a hero",
     internalLink: "ld41",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/LD41",
     demoUrl: "https://guillaume-gomez.github.io/LD41/build/JamVersion/",
     preview: "LD42.png",
@@ -504,6 +548,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Music Mooc",
     internalLink: "music-mooc",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/music-mooc",
     demoUrl: "https://guillaume-gomez.github.io/music-mooc/src/week4/week4.html",
     preview: "music-mooc.png",
@@ -516,8 +562,10 @@ export const projectsData : ProjectData[] = [
     {
     name: "Shaders links",
     internalLink: "shader-links",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/shaders_links",
-    demoUrl: null,
+    demoUrl: undefined,
     preview: "shader-links.png",
     videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
     tags: ["shaders", "GLSL"],
@@ -528,8 +576,10 @@ export const projectsData : ProjectData[] = [
   {
     name: "Mario Sokoban",
     internalLink: "mario-sokoban",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/mario_sokoban",
-    demoUrl: null,
+    demoUrl: undefined,
     preview: "mario-sokban.png",
     videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
     tags: ["C++", "SDL"],
@@ -541,6 +591,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "LD: One Room",
     internalLink: "ld37",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/LD37",
     demoUrl: "https://guillaume-gomez.github.io/LD37/build/",
     preview: "LD37.png",
@@ -553,6 +605,8 @@ export const projectsData : ProjectData[] = [
     {
     name: "LD: Ancient Technology",
     internalLink: "ld36",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/LD36",
     demoUrl: "https://guillaume-gomez.github.io/LD36/build/",
     preview: "LD36.png",
@@ -566,8 +620,10 @@ export const projectsData : ProjectData[] = [
   {
     name: "Node Race",
     internalLink: "node-race",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/NodeRace",
-    demoUrl: null,
+    demoUrl: undefined,
     preview: "node-race.png",
     videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
     tags: ["javascript", "phaser", "network"],
@@ -579,6 +635,8 @@ export const projectsData : ProjectData[] = [
       {
     name: "Langton ant phaser",
     internalLink: "langton-ant-phaser",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/langton-ant-phaser",
     demoUrl: "https://guillaume-gomez.github.io/langton-ant-phaser/build",
     preview: "langton-ant-phaser.png",
@@ -591,6 +649,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Avatar Generator",
     internalLink: "avatar-generator",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/avatar-generator",
     demoUrl: "https://guillaume-gomez.github.io/avatar-generator",
     preview: "avatar-generator.png",
@@ -603,8 +663,10 @@ export const projectsData : ProjectData[] = [
   {
     name: "P5 Sandbox",
     internalLink: "p5-sandbox",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/p5-sandbox",
-    demoUrl: null,
+    demoUrl: undefined,
     preview: "p5-sandbox.png",
     videoUrl: "https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4",
     tags: ["javascript", "processing"],
@@ -615,6 +677,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Tile and square",
     internalLink: "tile-and-square",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/tile-and-square",
     demoUrl: "https://guillaume-gomez.github.io/tile-and-square/",
     preview: "tile-and-square.png",
@@ -627,6 +691,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Random Crosses",
     internalLink: "random-crosses",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/randomCrosses",
     demoUrl: "https://guillaume-gomez.github.io/randomCrosses/",
     preview: "random-crosses.png",
@@ -639,6 +705,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "To pointillism",
     internalLink: "to-pointillism",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/to-pointillism",
     demoUrl: "https://guillaume-gomez.github.io/to-pointillism",
     preview: "to-pointillism.jpeg",
@@ -651,6 +719,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Squared words",
     internalLink: "squared-words",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/squared_words",
     demoUrl: "https://guillaume-gomez.github.io/squared_words/dist",
     preview: "squared_words.png",
@@ -663,6 +733,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Life In Grid",
     internalLink: "life-in-grid",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/life-in-grid",
     demoUrl: "https://guillaume-gomez.github.io/life-in-grid",
     preview: "life-in-grid.png",
@@ -675,6 +747,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Rainbow Road",
     internalLink: "rainbow-road",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/rainbow-road",
     demoUrl: "https://guillaume-gomez.github.io/rainbow-road",
     preview: "rainbow-road.png",
@@ -687,6 +761,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Steganography",
     internalLink: "steganography",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/Steganography",
     demoUrl: "",
     preview: "steganography.png",
@@ -699,6 +775,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "SpectrumIV",
     internalLink: "spectrum-iv-shader",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/SpectrumIV_shader",
     demoUrl: "https://guillaume-gomez.github.io/SpectrumIV_shader",
     preview: "spectrum_iv_shader.jpg",
@@ -711,6 +789,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Image Collection Generator",
     internalLink: "image-collection-generator",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/image-collection-generator",
     demoUrl: "",
     preview: "image_collection_generator.png",
@@ -723,6 +803,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Gazette Gazette",
     internalLink: "gazette-gazette",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/gazette-gazette",
     demoUrl: "https://guillaume-gomez.github.io/gazette-gazette",
     preview: "gazette-gazette.png",
@@ -735,6 +817,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Three-js-cameras",
     internalLink: "three-js-cameras",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/gazette-gazette",
     demoUrl: "https://guillaume-gomez.github.io/gazette-gazette",
     preview: "three-js-cameras.png",
@@ -747,6 +831,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Wasm Game Of Life",
     internalLink: "wasm-game-of-life",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/wasm-game-of-life",
     demoUrl: "https://guillaume-gomez.github.io/wasm-game-of-life",
     preview: "wasm-game-of-life.png",
@@ -759,6 +845,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Burning Earth",
     internalLink: "burning-earth",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/burningEarth",
     demoUrl: "https://guillaume-gomez.github.io/burningEarth",
     preview: "burning-earth.png",
@@ -771,6 +859,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Fun with flags",
     internalLink: "fun-with-flags",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/fun-with-flags",
     demoUrl: "https://guillaume-gomez.github.io/fun-with-flags/",
     preview: "fun-with-flags.png",
@@ -783,6 +873,8 @@ export const projectsData : ProjectData[] = [
     {
     name: "FromImage2Geometries",
     internalLink: "from-image-to-geometries",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/fromImage2Geometries",
     demoUrl: "https://guillaume-gomez.github.io/fromImage2Geometries/",
     preview: "FromImage2Geometries.png",
@@ -795,6 +887,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Split my heart",
     internalLink: "split-my-heart",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/split-my-heart",
     demoUrl: "https://guillaume-gomez.github.io/split-my-heart/",
     preview: "split-my-heart.png",
@@ -807,6 +901,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Mondrian verse",
     internalLink: "mondrian-verse",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/mondrian-verse",
     demoUrl: "https://guillaume-gomez.github.io/mondrian-verse/",
     preview: "mondrian-verse.png",
@@ -819,6 +915,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Shred Image",
     internalLink: "shred-image",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/shred-image",
     demoUrl: "https://guillaume-gomez.github.io/shred-image/",
     preview: "shred-image.png",
@@ -831,6 +929,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Woven Image",
     internalLink: "woven-image",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/woven-images",
     demoUrl: "https://guillaume-gomez.github.io/woven-images/",
     preview: "woven-images.jpeg",
@@ -843,6 +943,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Rubiks Image",
     internalLink: "rubiks-image",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/rubiks-image",
     demoUrl: "https://guillaume-gomez.github.io/rubiks-image/",
     preview: "rubiks-image.png",
@@ -855,6 +957,8 @@ export const projectsData : ProjectData[] = [
   {
     name: "Embodiment",
     internalLink: "embodiment",
+    link: GITHUB,
+    intentionNoteTag: "Lorem ipsum",
     githubPage: "https://github.com/guillaume-gomez/embodiment",
     demoUrl: "https://guillaume-gomez.github.io/embodiment/",
     preview: "embodiment.png",

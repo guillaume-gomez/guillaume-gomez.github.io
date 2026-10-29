@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { MathUtils, Group } from "three";
+import { MathUtils } from "three";
 import { CameraControls } from '@react-three/drei';
 
 interface CustomCameraControlsProps {
@@ -20,7 +20,7 @@ function CustomCameraControls({
   maxAzimuthAngle = 2 * Math.PI,
   minPolarAngle = 0 ,
   maxPolarAngle = Math.PI,
-  maxDistance = Math.Infinity
+  maxDistance = Infinity
 } : CustomCameraControlsProps) {
   const cameraRef = useRef<CameraControls>(null);
   const [autoRotate, setAutoRotate] = useState<boolean>(true);

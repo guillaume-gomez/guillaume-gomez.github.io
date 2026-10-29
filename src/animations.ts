@@ -25,7 +25,7 @@ export function animatePageIn() {
 }
 
 
-export function animatePageOut(onComplete?: Function) {
+export function animatePageOut(onComplete?: () => void) {
   const animationWrapper = document.getElementById("transition-element");
 
   if (animationWrapper) {

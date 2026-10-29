@@ -4,7 +4,7 @@ import { useSearchParams } from "react-router-dom";
 import { projectsData } from "../constants"; 
 
 function RouteWithQueryStringParams() {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
 
   const projectName = searchParams.get("project");
 

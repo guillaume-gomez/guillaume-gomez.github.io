@@ -25,8 +25,8 @@ const c = new Color();
 const noise = makeNoise2D(10);
 
 function Artwork() {
-  const mesh = useRef<InstancedMesh>();
-  const gridColorsRef = useRef([]);
+  const mesh = useRef<InstancedMesh>(null);
+  const gridColorsRef = useRef<string[]>([]);
 
   const smallColumns = useMemo(() => {
     const baseColumns = [2, 4, 6, 9];
@@ -43,7 +43,7 @@ function Artwork() {
     return [...new Set([...baseColumns, ...additionalColumns])].sort(
       (a, b) => a - b
     );
-  }, [columns]);
+  }, []);
 
   // display colors on grid
   const colors = useMemo(() => {
@@ -61,7 +61,7 @@ function Artwork() {
       }
     }
     return new Float32Array(temp.flat());
-  }, [columns, rows, palette, smallColumns]);
+  }, [smallColumns]);
 
   const squares = useMemo(() => {
     const temp = [];
@@ -108,14 +108,14 @@ function Artwork() {
       x += column;
     }
     return temp;
-  }, [height, width, rows, columns, smallColumns]);
+  }, [smallColumns]);
 
   useEffect(() => {
     if(!mesh.current) {
       return;
     }
     for (let i = 0; i < squares.length; i++) {
-      const { x, y, z, scaleX, scaleY, color } = squares[i];
+      const { x, y, z, scaleX, scaleY } = squares[i];
       dummy.position.set(x, y, z);
       dummy.scale.set(scaleX, scaleY, 4);
       //if(color === palette[0]) {
@@ -133,7 +133,7 @@ function Artwork() {
     <instancedMesh
       ref={mesh}
       scale={[1, 1, 1]}
-      args={[null, null, columns * rows]}
+      args={[undefined, undefined, columns * rows]}
     >
       <boxGeometry args={[1, 1, 1]}>
         <instancedBufferAttribute
