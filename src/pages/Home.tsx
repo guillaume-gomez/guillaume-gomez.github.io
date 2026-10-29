@@ -56,7 +56,6 @@ function Home() {
   );
 
   return (
-
     <div className="min-h-screen bg-base-100 px-2">
       <div className="relative top-6">
         <Header />
