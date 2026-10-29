@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { MathUtils, Object3D, Group } from "three";
+import { MathUtils, Group } from "three";
 import { CameraControls } from '@react-three/drei';
 
 interface CustomCameraControlsProps {
@@ -12,8 +12,6 @@ interface CustomCameraControlsProps {
   maxPolarAngle?:number;
   maxDistance?: number;
 }
-
-
 
 function CustomCameraControls({
   speed = 20,

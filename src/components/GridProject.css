@@ -5,6 +5,12 @@
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   gap: 1rem;
+}
+
+/* Le flou est porte par les cartes et non par le conteneur : sur le conteneur
+   il peignait une bande floue sur toute sa boite (gaps compris), visible sous
+   le titre tant que les cartes sont encore transparentes pendant l'intro. */
+.projectCard {
   backdrop-filter: blur(10px);
 }
 
@@ -38,3 +44,17 @@
 .bigProject8 { grid-area: 12 / 1 / 14 / 3; }
 .bigProject9 { grid-area: 13 / 4 / 15 / 6; }
 .bigProject10 { grid-area: 15 / 2 / 17 / 4; }
+/* Hauteur calee sur la largeur du titre, puisqu'il demarre a la verticale.
+   Elle ne coute plus de scroll : toute la section est pinnee en une fois. */
+.titleWrapper {
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.title-gsap {
+  white-space: nowrap;
+  transform-origin: 50% 50%;
+  will-change: transform;
+}

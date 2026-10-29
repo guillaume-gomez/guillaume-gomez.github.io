@@ -32,7 +32,7 @@ function ProjectDetail({projectData} : ProjectDetailProps) {
         </div>
         <div className="col-span-3 row-span-3 col-start-1 row-start-3">
           <video autoPlay muted controls className={`object-fill w-full h-full rounded-3xl`}> 
-           <source src={projectData.videoUrl} type="video/mp4" />
+           <source src={projectData.videoUrl} type="video/mp4"/>
           </video>
         </div>
         <div className="col-span-3 row-span-3 col-start-4 row-start-3">

@@ -1,4 +1,6 @@
 import { useState } from "react"
+import { useNavigate } from 'react-router-dom';
+import { animatePageOut } from "../animations";
 import { type ProjectData } from "../constants";
 
 interface ProjectCardProps {
@@ -9,11 +11,20 @@ interface ProjectCardProps {
 
 function ProjectCard({ projectData, onClick, className } : ProjectCardProps) {
   const [hover, setHover] = useState<boolean>(false);
+  const navigate = useNavigate();
+
+  function goToProject() {
+
+    animatePageOut(() => {
+      navigate(`/?project=${projectData.internalLink}`);
+    });
+    onClick();
+  }
 
   return (
     <div
       className={`projectCard ${className} ${hover ? 'cursor-pointer' : '' }`}
-      onClick={onClick}
+      onClick={goToProject}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
@@ -21,7 +32,7 @@ function ProjectCard({ projectData, onClick, className } : ProjectCardProps) {
         projectData.videoUrl ?
           (
             <>
-              <video autoPlay muted /*controls*/ className={`${hover ? 'block' : 'hidden' } object-fill w-full h-full`}> 
+              <video autoPlay muted loop /*controls*/ className={`${hover ? 'block' : 'hidden' } object-fill w-full h-full`}> 
                  <source src={projectData.videoUrl} type="video/mp4" />
               </video>
               <img
